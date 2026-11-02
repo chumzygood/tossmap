@@ -1,6 +1,6 @@
 import json,html,re,os,shutil
-BASE="https://example.com"  # TODO: set to final domain
-D=json.load(open("data/facilities.json")); OUT="site"
+BASE="https://tossmap.com"
+D=json.load(open("data/facilities.json")); OUT="docs"
 shutil.rmtree(OUT,ignore_errors=True); os.makedirs(OUT)
 e=html.escape
 slug=lambda s:re.sub(r"[^a-z0-9]+","-",s.lower()).strip("-")
@@ -45,3 +45,4 @@ page("/privacy.html","Privacy","Privacy policy","<h1>Privacy</h1><p>We collect n
 open(f"{OUT}/robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
 open(f"{OUT}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+"".join(f"<url><loc>{BASE}{u}</loc><lastmod>2026-11-02</lastmod></url>" for u in urls)+"</urlset>\n")
 print(len(urls),"pages;",len(states),"states;",n,"facilities")
+open(f"{OUT}/CNAME","w").write("tossmap.com\n"); open(f"{OUT}/.nojekyll","w").write("")

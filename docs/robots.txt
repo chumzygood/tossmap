@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tossmap.com/sitemap.xml
