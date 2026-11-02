@@ -1,0 +1,1209 @@
+[
+ {
+  "city": "New York",
+  "state": "New York",
+  "st": "NY",
+  "facilities": [
+   {
+    "name": "DSNY Special Waste Drop-Off – Bronx",
+    "address": "Farragut St & East River, Hunts Point, Bronx, NY",
+    "hours": "Tue–Sat 9am–3pm",
+    "accepts": "Aerosols, batteries, e-waste, vapes, fluorescent bulbs/CFLs, motor oil (10 qt), oil filters (2), paint (5 gal), passenger tires (4), mercury devices (2)",
+    "fees": "Free",
+    "notes": "NYC residents only; proof of residency required",
+    "source": "https://www.nyc.gov/site/dsny/what-we-do/programs/special-waste-drop-off.page",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "DSNY Special Waste Drop-Off – Brooklyn",
+    "address": "459 North Henry St, Greenpoint, Brooklyn, NY",
+    "hours": "Tue–Sat 9am–3pm",
+    "accepts": "Aerosols, batteries, e-waste, vapes, fluorescent bulbs/CFLs, motor oil (10 qt), oil filters (2), paint (5 gal), passenger tires (4), mercury devices (2)",
+    "fees": "Free",
+    "notes": "NYC residents only; proof of residency required",
+    "source": "https://www.nyc.gov/site/dsny/what-we-do/programs/special-waste-drop-off.page",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "DSNY Special Waste Drop-Off – Manhattan",
+    "address": "74 Pike Slip, New York, NY",
+    "hours": "Tue–Sat 9am–3pm",
+    "accepts": "Aerosols, batteries, e-waste, vapes, fluorescent bulbs/CFLs, motor oil (10 qt), oil filters (2), paint (5 gal), passenger tires (4), mercury devices (2)",
+    "fees": "Free",
+    "notes": "NYC residents only; proof of residency required",
+    "source": "https://www.nyc.gov/site/dsny/what-we-do/programs/special-waste-drop-off.page",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "DSNY Special Waste Drop-Off – Queens",
+    "address": "30th Ave between 120th & 122nd St, College Point, Queens, NY",
+    "hours": "Tue–Sat 9am–3pm",
+    "accepts": "Aerosols, batteries, e-waste, vapes, fluorescent bulbs/CFLs, motor oil (10 qt), oil filters (2), paint (5 gal), passenger tires (4), mercury devices (2)",
+    "fees": "Free",
+    "notes": "NYC residents only; proof of residency required",
+    "source": "https://www.nyc.gov/site/dsny/what-we-do/programs/special-waste-drop-off.page",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "DSNY Special Waste Drop-Off – Staten Island",
+    "address": "Fresh Kills, off Muldoon Ave exit of West Shore Expwy, Staten Island, NY",
+    "hours": "Tue–Sat 9am–3pm",
+    "accepts": "Aerosols, batteries, e-waste, vapes, fluorescent bulbs/CFLs, motor oil (10 qt), oil filters (2), paint (5 gal), passenger tires (4), mercury devices (2)",
+    "fees": "Free",
+    "notes": "NYC residents only; proof of residency required",
+    "source": "https://www.nyc.gov/site/dsny/what-we-do/programs/special-waste-drop-off.page",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Los Angeles",
+  "state": "California",
+  "st": "CA",
+  "facilities": [
+   {
+    "name": "S.A.F.E. Center – Nicole Bernson",
+    "address": "10241 N Balboa Blvd, Northridge, CA 91325",
+    "hours": "Sat–Sun 9am–3pm",
+    "accepts": "Motor oil & filters, paint & solvents, e-waste, cleaners, batteries, fluorescent bulbs, sharps, unused medicine (no tires)",
+    "fees": "Free",
+    "notes": "",
+    "source": "https://sanitation.lacity.gov/programs/safe-centers-and-household-hazardous-waste",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "S.A.F.E. Center – Gaffey St",
+    "address": "1400 N Gaffey St, San Pedro, CA 90731",
+    "hours": "Sat–Sun 9am–3pm",
+    "accepts": "Motor oil & filters, paint & solvents, e-waste, cleaners, batteries, fluorescent bulbs, sharps, unused medicine (no tires)",
+    "fees": "Free",
+    "notes": "",
+    "source": "https://sanitation.lacity.gov/programs/safe-centers-and-household-hazardous-waste",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "S.A.F.E. Center – Hyperion",
+    "address": "7660 W Imperial Hwy, Gate B, Playa del Rey, CA 90293",
+    "hours": "Sat–Sun 9am–3pm",
+    "accepts": "Motor oil & filters, paint & solvents, e-waste, cleaners, batteries, fluorescent bulbs, sharps, unused medicine (no tires)",
+    "fees": "Free",
+    "notes": "",
+    "source": "https://sanitation.lacity.gov/programs/safe-centers-and-household-hazardous-waste",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "S.A.F.E. Center – Randall St",
+    "address": "11025 Randall St, Sun Valley, CA 91352",
+    "hours": "Sat–Sun 9am–3pm",
+    "accepts": "Motor oil & filters, paint & solvents, e-waste, cleaners, batteries, fluorescent bulbs, sharps, unused medicine (no tires)",
+    "fees": "Free",
+    "notes": "",
+    "source": "https://sanitation.lacity.gov/programs/safe-centers-and-household-hazardous-waste",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "S.A.F.E. Center – Washington Blvd",
+    "address": "2649 E Washington Blvd, Los Angeles, CA 90021",
+    "hours": "Sat–Sun 9am–3pm",
+    "accepts": "Motor oil & filters, paint & solvents, e-waste, cleaners, batteries, fluorescent bulbs, sharps, unused medicine (no tires)",
+    "fees": "Free",
+    "notes": "",
+    "source": "https://sanitation.lacity.gov/programs/safe-centers-and-household-hazardous-waste",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "UCLA S.A.F.E. Collection Center",
+    "address": "550 Charles E Young Dr, Los Angeles, CA",
+    "hours": "Fri, Sat & first Sun 9am–3pm",
+    "accepts": "Motor oil & filters, paint & solvents, e-waste, cleaners, batteries, fluorescent bulbs, sharps, unused medicine (no tires)",
+    "fees": "Free",
+    "notes": "",
+    "source": "https://ehs.ucla.edu/safe-collection-center-operations-ucla",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": "LA-Glendale S.A.F.E. Center (4600 Colorado Blvd) is listed by the city as temporarily closed."
+ },
+ {
+  "city": "Chicago",
+  "state": "Illinois",
+  "st": "IL",
+  "facilities": [
+   {
+    "name": "Household Chemicals & Computer Recycling Facility",
+    "address": "1150 N North Branch St, Chicago, IL 60642",
+    "hours": "Tue 7am–12pm; Thu 2–7pm; 1st Sat 8am–3pm",
+    "accepts": "Chemicals, oil-based paint, solvents, CFLs, computers & electronics, cell phones (no latex paint)",
+    "fees": "Free",
+    "notes": "",
+    "source": "https://www.chicago.gov/hccrf/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Houston",
+  "state": "Texas",
+  "st": "TX",
+  "facilities": [
+   {
+    "name": "Environmental Service Center – South",
+    "address": "11500 S Post Oak Rd, Houston, TX 77035",
+    "hours": "Tue, Wed, Fri, Sat 8am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Texas ID or City utility bill required",
+    "source": "https://houstontx.gov/solidwaste/esc.html",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Environmental Service Center – North",
+    "address": "5614 Neches St, Houston, TX 77026",
+    "hours": "2nd Thursday 9am–3pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Texas ID or City utility bill required",
+    "source": "https://houstontx.gov/solidwaste/esc.html",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Phoenix",
+  "state": "Arizona",
+  "st": "AZ",
+  "facilities": [],
+  "note": "Phoenix has no public HHW drop-off; residential customers get one at-home HHW collection per year. The 27th Ave Transfer Station does not accept HHW. Source: https://www.phoenix.gov/administration/departments/publicworks/residential-trash-recycling/household-hazardous-waste-collection.html"
+ },
+ {
+  "city": "Philadelphia",
+  "state": "Pennsylvania",
+  "st": "PA",
+  "facilities": [
+   {
+    "name": "HHW Collection Event – Streets Dept NE Facility",
+    "address": "3901 N Delaware Ave, Philadelphia, PA 19137",
+    "hours": "Event: Sat Nov 7, 2026, 9am–3pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free",
+    "notes": "Event-only program; no permanent site",
+    "source": "https://www.phila.gov/services/trash-recycling-city-upkeep/dispose-of-household-hazardous-waste/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "San Antonio",
+  "state": "Texas",
+  "st": "TX",
+  "facilities": [
+   {
+    "name": "Household Hazardous Waste Drop-Off Center",
+    "address": "7030 Culebra Rd, San Antonio, TX 78238",
+    "hours": "Tue–Fri 8am–5pm; Sat 8am–noon",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Bring CPS Energy bill showing Environmental Fee + photo ID",
+    "source": "https://www.sa.gov/Directory/Departments/SWMD/HHW",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "San Diego",
+  "state": "California",
+  "st": "CA",
+  "facilities": [
+   {
+    "name": "HHW Transfer Facility (Miramar Landfill)",
+    "address": "5161 Convoy St, San Diego, CA 92111",
+    "hours": "Wed & Sat 9am–3pm, by appointment",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free for City residents",
+    "notes": "Appointment required",
+    "source": "https://www.sandiego.gov/environmental-services/ep/hazardous",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Dallas",
+  "state": "Texas",
+  "st": "TX",
+  "facilities": [
+   {
+    "name": "Dallas County Home Chemical Collection Center",
+    "address": "11234 Plano Rd, Dallas, TX 75243",
+    "hours": "Tue 9am–7:30pm; Wed–Thu 8:30am–5pm; 2nd & 4th Sat 9am–3pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Residents of participating cities; 214-553-1765",
+    "source": "http://www.dallascounty.org/departments/consolidated-services/hhw/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Austin",
+  "state": "Texas",
+  "st": "TX",
+  "facilities": [
+   {
+    "name": "Recycle & Reuse Drop-off Center",
+    "address": "2514 Business Center Dr, Austin, TX 78744",
+    "hours": "By appointment (hours not published)",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Appointment required",
+    "source": "https://www.austintexas.gov/resource-recovery/locations/recycle-and-reuse-drop-center",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Jacksonville",
+  "state": "Florida",
+  "st": "FL",
+  "facilities": [
+   {
+    "name": "Household Hazardous Waste Facility",
+    "address": "2675 Commonwealth Ave, Jacksonville, FL 32254",
+    "hours": "Tue–Sat 8am–5pm",
+    "accepts": "Paint, motor oil, batteries, fluorescent/CFL bulbs, aerosols, fertilizers, photo chemicals, drain cleaners, fuels, fireworks, household e-waste",
+    "fees": "",
+    "notes": "Paint/oil limit 27 gal each per 30 days; CRT TVs/monitors max 3; 904-387-8847",
+    "source": "https://www.jacksonville.gov/departments/office-of-administrative-services/solid-waste/disposal-operations/household-hazardous-wastes-(hhw)",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Fort Worth",
+  "state": "Texas",
+  "st": "TX",
+  "facilities": [
+   {
+    "name": "Environmental Collection Center",
+    "address": "6400 Bridge St, Fort Worth, TX 76112",
+    "hours": "Thu–Fri 11am–7pm; Sat 9am–3pm",
+    "accepts": "Automotive fluids, batteries, cleaners/chemicals, paint, lawn & pool chemicals, bulbs, cooking oil",
+    "fees": "",
+    "notes": "",
+    "source": "https://www.fortworthtexas.gov/departments/environmental-services/solidwaste/environmental-collection-center/environmental-collection-center",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Columbus",
+  "state": "Ohio",
+  "st": "OH",
+  "facilities": [
+   {
+    "name": "SWACO Household Hazardous Waste Drop-Off",
+    "address": "645 E 8th Ave, Columbus, OH 43201",
+    "hours": "Mon–Fri 9am–5pm; 1st Sat 9am–2pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "614-294-1300; closed holidays",
+    "source": "https://www.swaco.org/diversion/residents/household-hazardous-waste/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Charlotte",
+  "state": "North Carolina",
+  "st": "NC",
+  "facilities": [
+   {
+    "name": "Compost Central Disposal & Recycling Center",
+    "address": "140 Valleydale Rd, Charlotte, NC 28214",
+    "hours": "Mon–Sat 7am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Mecklenburg residents; no business HHW; tell staff you have hazardous materials",
+    "source": "https://wipeoutwaste.mecknc.gov/where-can-i-recycle",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Foxhole Disposal & Recycling Center",
+    "address": "17131 Lancaster Hwy, Charlotte, NC 28277",
+    "hours": "Mon–Sat 7am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Mecklenburg residents; no business HHW; tell staff you have hazardous materials",
+    "source": "https://wipeoutwaste.mecknc.gov/where-can-i-recycle",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Hickory Grove Disposal & Recycling Center",
+    "address": "8007 Pence Rd, Charlotte, NC 28215",
+    "hours": "Mon–Sat 7am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Mecklenburg residents; no business HHW; tell staff you have hazardous materials",
+    "source": "https://wipeoutwaste.mecknc.gov/where-can-i-recycle",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "North Mecklenburg Disposal & Recycling Center",
+    "address": "12300 Statesville Rd, Huntersville, NC 28078",
+    "hours": "Mon–Sat 7am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Mecklenburg residents; no business HHW; tell staff you have hazardous materials",
+    "source": "https://wipeoutwaste.mecknc.gov/where-can-i-recycle",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Seattle",
+  "state": "Washington",
+  "st": "WA",
+  "facilities": [
+   {
+    "name": "North Seattle HHW Facility",
+    "address": "12550 Stone Ave N, Seattle, WA 98133",
+    "hours": "Sun–Tue 9am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free",
+    "notes": "King County residents; no appointment",
+    "source": "https://kingcounty.gov/en/dept/dnrp/waste-services/hazardous-waste-program/household/disposal-facilities",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "South Seattle HHW Facility",
+    "address": "8100 2nd Ave S, Seattle, WA 98108",
+    "hours": "Thu–Sat 9am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free",
+    "notes": "King County residents; no appointment",
+    "source": "https://kingcounty.gov/en/dept/dnrp/waste-services/hazardous-waste-program/household/disposal-facilities",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Denver",
+  "state": "Colorado",
+  "st": "CO",
+  "facilities": [
+   {
+    "name": "Rooney Road Recycling Center",
+    "address": "151 S Rooney Rd, Golden, CO 80401",
+    "hours": "Wed & Sat 8am–2pm, by appointment",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Appointment required",
+    "source": "https://www.rooneyroadrecycling.org/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": "Denver's own program is at-your-door pickup ($15, once per year; 1-800-449-7587). Source: https://denvergov.org/My-Property/Recycle-Compost-Trash/Recycle/Household-Hazardous-Waste/Household-Hazardous-Waste-At-Your-Door-Collection"
+ },
+ {
+  "city": "Indianapolis",
+  "state": "Indiana",
+  "st": "IN",
+  "facilities": [
+   {
+    "name": "ToxDrop – Traders Point Collection Facility",
+    "address": "7550 N Lafayette Rd, Indianapolis, IN",
+    "hours": "1st Sat 9am–2pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs); electronics",
+    "fees": "Free for Marion County residents",
+    "notes": "",
+    "source": "https://www.indy.gov/activity/hazardous-waste-dropoff-sites",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "ToxDrop – Perry Township Government Center",
+    "address": "4925 S Shelby St, Indianapolis, IN",
+    "hours": "2nd & 4th Sat 9am–2pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs); electronics",
+    "fees": "Free for Marion County residents",
+    "notes": "",
+    "source": "https://www.indy.gov/activity/hazardous-waste-dropoff-sites",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "San Francisco",
+  "state": "California",
+  "st": "CA",
+  "facilities": [
+   {
+    "name": "Recology SF Household Hazardous Waste Facility",
+    "address": "501 Tunnel Ave, San Francisco, CA",
+    "hours": "Thu–Sat 8am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "SF residents only; proof of residency",
+    "source": "https://www.recology.com/recology-san-francisco/hazardous-waste/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Portland",
+  "state": "Oregon",
+  "st": "OR",
+  "facilities": [
+   {
+    "name": "Metro Central Hazardous Waste",
+    "address": "6161 NW 61st Ave, Portland, OR 97210",
+    "hours": "Mon–Sat 9am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free for households (up to 35 gal/visit)",
+    "notes": "",
+    "source": "https://www.oregonmetro.gov/waste-disposal-and-prevention/need-get-rid-something/household-hazardous-waste",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Metro South Hazardous Waste",
+    "address": "2001 Washington St, Oregon City, OR 97045",
+    "hours": "Daily 9am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free for households (up to 35 gal/visit)",
+    "notes": "",
+    "source": "https://www.oregonmetro.gov/waste-disposal-and-prevention/need-get-rid-something/household-hazardous-waste",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Nashville",
+  "state": "Tennessee",
+  "st": "TN",
+  "facilities": [
+   {
+    "name": "East Convenience Center",
+    "address": "943A Doctor Richard G. Adams Dr, Nashville, TN 37207",
+    "hours": "Tue–Sat 8:30am–4:30pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free",
+    "notes": "Davidson County residents; TN driver's license; 15 gal or 100 lb/month",
+    "source": "https://www.nashville.gov/departments/waste-services/convenience-centers/household-hazardous-waste",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Ezell Pike Convenience Center",
+    "address": "3254 Ezell Pike, Nashville, TN 37211",
+    "hours": "Tue–Sat 8:30am–4:30pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free",
+    "notes": "Davidson County residents; TN driver's license; 15 gal or 100 lb/month",
+    "source": "https://www.nashville.gov/departments/waste-services/convenience-centers/household-hazardous-waste",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Washington",
+  "state": "District of Columbia",
+  "st": "DC",
+  "facilities": [],
+  "note": "DC has no permanent HHW drop-off; DPW runs registered special-waste events (Fort Totten does not take HHW). Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding"
+ },
+ {
+  "city": "Boston",
+  "state": "Massachusetts",
+  "st": "MA",
+  "facilities": [
+   {
+    "name": "Zero Waste Day Drop-Off – Millennium Park",
+    "address": "315 Gardner St, West Roxbury, MA 02132",
+    "hours": "Event: Sat Nov 21, 2026, 8:30am–noon",
+    "accepts": "Hazardous chemicals, batteries, electronics, oil-based paint",
+    "fees": "Free",
+    "notes": "Boston residents; photo ID, utility bill or lease",
+    "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Las Vegas",
+  "state": "Nevada",
+  "st": "NV",
+  "facilities": [
+   {
+    "name": "Republic Services HHW – North Las Vegas",
+    "address": "333 W Gowan Rd (Gate B), North Las Vegas, NV 89032",
+    "hours": "Wed–Sat 9am–1pm on scheduled dates",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Sites rotate; check 2026 HHW calendar",
+    "source": "https://www.republicservices.com/municipality/southern-nevada/service-information",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Republic Services HHW – Henderson",
+    "address": "560 Cape Horn Dr, Henderson, NV 89011",
+    "hours": "Wed–Sat 9am–1pm on scheduled dates",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Sites rotate; check 2026 HHW calendar",
+    "source": "https://www.republicservices.com/municipality/southern-nevada/service-information",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Atlanta",
+  "state": "Georgia",
+  "st": "GA",
+  "facilities": [
+   {
+    "name": "CHaRM – Center for Hard to Recycle Materials",
+    "address": "1110 Hill St SE, Atlanta, GA 30315",
+    "hours": "Tue & Thu 9am–2pm; Sat 8am–2pm, by appointment",
+    "accepts": "Household chemicals, paint, electronics, appliances, tires, mattresses, glass, metals, Styrofoam and more",
+    "fees": "Fees vary by item",
+    "notes": "Appointment only; 404-600-6386",
+    "source": "https://livethrive.org/charm/location/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Minneapolis",
+  "state": "Minnesota",
+  "st": "MN",
+  "facilities": [
+   {
+    "name": "Hennepin County Drop-off – Brooklyn Park",
+    "address": "8100 Jefferson Hwy, Brooklyn Park, MN",
+    "hours": "Tue–Sat 9am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://www.hennepincounty.gov/services/environment/hazardous-waste-households/drop-off-household-hazardous-waste-recycling",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Hennepin County Drop-off – Bloomington",
+    "address": "1400 W 96th St, Bloomington, MN",
+    "hours": "Tue–Sat 9am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://www.hennepincounty.gov/services/environment/hazardous-waste-households/drop-off-household-hazardous-waste-recycling",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Miami",
+  "state": "Florida",
+  "st": "FL",
+  "facilities": [
+   {
+    "name": "Home Chemical Collection Center – West Dade",
+    "address": "8801 NW 58th St, Doral, FL 33178",
+    "hours": "Wed–Sun 9am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Residential only; no appointment",
+    "source": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1464798615648535",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Home Chemical Collection Center – South Dade",
+    "address": "23707 SW 97th Ave, Gate B, Homestead, FL 33032",
+    "hours": "Wed–Sun 9am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Residential only; no appointment",
+    "source": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1464798615648535",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Tampa",
+  "state": "Florida",
+  "st": "FL",
+  "facilities": [
+   {
+    "name": "Sheldon Road HHW Collection Center",
+    "address": "9805 Sheldon Rd, Tampa, FL 33635",
+    "hours": "1st Sat 8am–2pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Photo ID with Hillsborough address",
+    "source": "https://hcfl.gov/locations/sheldon-road-household-hazardous-collection-center",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "South County HHW Collection",
+    "address": "13000 US Hwy 41, Gibsonton, FL",
+    "hours": "2nd Sat 8am–2pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Hillsborough Heights HHW Collection Site",
+    "address": "6209 County Road 579, Seffner, FL",
+    "hours": "3rd Sat 8am–2pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://hcfl.gov/locations/hillsborough-heights-household-hazardous-waste-collection-site",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Orlando",
+  "state": "Florida",
+  "st": "FL",
+  "facilities": [
+   {
+    "name": "Porter Transfer Station HHW",
+    "address": "1326 Good Homes Rd, Orlando, FL 32818",
+    "hours": "Mon–Sat 8am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free for Orange County residents",
+    "notes": "Paint/chemicals max 25 gal per vehicle",
+    "source": "https://www.orangecountyfl.net/watergarbagerecycling/householdhazardouswaste.aspx",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Baltimore",
+  "state": "Maryland",
+  "st": "MD",
+  "facilities": [
+   {
+    "name": "Sisson Street Residential Recycling Center (HHW days)",
+    "address": "2840 Sisson St, Baltimore, MD",
+    "hours": "Collection days Nov 6–7 & Dec 4–5, 2026, 9am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Baltimore residents only; 410-396-7250",
+    "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Sacramento",
+  "state": "California",
+  "st": "CA",
+  "facilities": [
+   {
+    "name": "North Area Recovery Station HHW Drop-Off",
+    "address": "4450 Roseville Rd, North Highlands, CA",
+    "hours": "Tue, Thu, Fri, Sat 8:30am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/north-area-recovery-station/nars-hhw-drop-off.html",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Kansas City",
+  "state": "Missouri",
+  "st": "MO",
+  "facilities": [
+   {
+    "name": "Household Hazardous Waste Facility",
+    "address": "4707 Deramus Ave, Kansas City, MO 64120",
+    "hours": "Thu–Fri 9am–6pm; Sat 9am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "No appointment under 600 lb; 816-513-8400",
+    "source": "https://www.kcwater.us/programs/hhw/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Milwaukee",
+  "state": "Wisconsin",
+  "st": "WI",
+  "facilities": [
+   {
+    "name": "MMSD South Drop Off Center",
+    "address": "3879 W Lincoln Ave, Milwaukee, WI 53215",
+    "hours": "Thu–Sat 7am–3pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Milwaukee County households",
+    "source": "https://www.mmsd.com/what-you-can-do/home-haz-mat-collection",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "MMSD 13th Street Drop Off",
+    "address": "6060 S 13th St, Milwaukee, WI 53221",
+    "hours": "Tue 11am–6pm; Sat 8am–2pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Milwaukee County households",
+    "source": "https://www.mmsd.com/what-you-can-do/home-haz-mat-collection",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Oklahoma City",
+  "state": "Oklahoma",
+  "st": "OK",
+  "facilities": [
+   {
+    "name": "Household Hazardous Waste Collection Center",
+    "address": "1621 S Portland Ave, Oklahoma City, OK 73108",
+    "hours": "Tue–Fri 9:30am–6pm; Sat 8:30–11:30am",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "405-682-7038",
+    "source": "https://www.okc.gov/Services/Water-Trash-Recycling/Household-Hazardous-Waste-Collection-Center",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Louisville",
+  "state": "Kentucky",
+  "st": "KY",
+  "facilities": [
+   {
+    "name": "Haz Bin",
+    "address": "7501 Grade Ln, Louisville, KY 40219",
+    "hours": "Tue–Sat 9:30am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://louisvilleky.gov/government/public-works/services/hazardous-materials-disposal-haz-bin",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Memphis",
+  "state": "Tennessee",
+  "st": "TN",
+  "facilities": [
+   {
+    "name": "Shelby County HHW Facility",
+    "address": "6305 Haley Rd, Memphis, TN 38134",
+    "hours": "Tue, Thu, Sat 8am–1pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Shelby County residents; 901-222-7729",
+    "source": "https://www.shelbycountytn.gov/439/Household-Hazardous-Waste",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Albuquerque",
+  "state": "New Mexico",
+  "st": "NM",
+  "facilities": [
+   {
+    "name": "HHW Collection Center (Safety-Kleen)",
+    "address": "2720 Girard Blvd NE, Albuquerque, NM 87107",
+    "hours": "Mon, Wed, Fri 8am–2pm; Sat 8am–3pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free for City/Bernalillo County residents",
+    "notes": "505-884-2277",
+    "source": "https://www.cabq.gov/solidwaste/hazardous-waste/household-hazardous-waste",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Tucson",
+  "state": "Arizona",
+  "st": "AZ",
+  "facilities": [
+   {
+    "name": "Los Reales Sustainability Campus HHW",
+    "address": "5300 E Los Reales Rd, Tucson, AZ 85756",
+    "hours": "Thu–Sat 7am–2pm (closed 2nd Sat except summer)",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free for Tucson residents; $15 for listed nearby residents",
+    "notes": "Proof of residency",
+    "source": "https://www.tucsonaz.gov/Departments/Environmental-Services/Household-Hazardous-Waste",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Raleigh",
+  "state": "North Carolina",
+  "st": "NC",
+  "facilities": [
+   {
+    "name": "North Wake HHW Facility",
+    "address": "9037 Deponie Dr, Raleigh, NC 27614",
+    "hours": "Sat 8am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Wake County residents",
+    "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/household-hazardous-waste-facilities/north-wake-household-hazardous-waste-facility",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "South Wake HHW Facility",
+    "address": "6150 Old Smithfield Rd, Apex, NC 27539",
+    "hours": "Mon–Sat 8am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Wake County residents",
+    "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/household-hazardous-waste-facilities/south-wake-household-hazardous-waste-facility",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "East Wake HHW Facility",
+    "address": "5051 Wendell Blvd, Wendell, NC 27591",
+    "hours": "Sat–Sun 8am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Wake County residents",
+    "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/household-hazardous-waste-facilities/east-wake-household-hazardous-waste-facility",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Salt Lake City",
+  "state": "Utah",
+  "st": "UT",
+  "facilities": [
+   {
+    "name": "Salt Lake County HHW Collection Center",
+    "address": "8805 S 700 W, Sandy, UT 84070",
+    "hours": "Mon–Sat 7am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://www.saltlakecounty.gov/health/household-hazardous-waste/",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Trans-Jordan Landfill HHW",
+    "address": "10473 S Bacchus Hwy, South Jordan, UT",
+    "hours": "Mon–Sat 8am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://www.saltlakecounty.gov/health/household-hazardous-waste/",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Salt Lake Valley Landfill HHW",
+    "address": "6030 W California Ave, Salt Lake City, UT",
+    "hours": "Mon, Fri, Sat 7am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://www.saltlakecounty.gov/health/household-hazardous-waste/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Omaha",
+  "state": "Nebraska",
+  "st": "NE",
+  "facilities": [
+   {
+    "name": "Under The Sink",
+    "address": "4001 S 120th St, Omaha, NE 68137",
+    "hours": "Wed 9am–4:45pm; Thu 9am–6:15pm; Fri 9am–4:45pm; Sat by appointment",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "402-444-7465",
+    "source": "https://www.underthesink.org/drop-off-info/location-hours/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "San Jose",
+  "state": "California",
+  "st": "CA",
+  "facilities": [
+   {
+    "name": "Santa Clara County HHW – San Jose",
+    "address": "1608 Las Plumas Ave, San Jose, CA 95133",
+    "hours": "Thu–Sat, by appointment",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free",
+    "notes": "Appointment + proof of residency; (408) 299-7300",
+    "source": "https://hhw.santaclaracounty.gov/drop-household-waste",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "St. Louis",
+  "state": "Missouri",
+  "st": "MO",
+  "facilities": [
+   {
+    "name": "St. Louis County HHW – South",
+    "address": "291 E Hoffmeister Ave, St. Louis, MO 63125",
+    "hours": "Thu–Fri 8:30am–12pm & 1–5:30pm; select Sats",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Reservation + proof of address",
+    "source": "https://www.hhwstl.com/locations",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "St. Louis County HHW – North",
+    "address": "4100 Seven Hills Dr, Florissant, MO 63033",
+    "hours": "Wed 8:30am–12pm & 1–5:30pm; select Sats",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Reservation + proof of address",
+    "source": "https://www.hhwstl.com/locations",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Detroit",
+  "state": "Michigan",
+  "st": "MI",
+  "facilities": [
+   {
+    "name": "ERG Environmental Services (Wayne County HHW)",
+    "address": "13040 Merriman Rd, Livonia, MI 48150",
+    "hours": "Mon–Fri 9am–5pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free with Wayne County voucher (limited)",
+    "notes": "",
+    "source": "https://www.waynecountymi.gov/Government/Departments/Environmental-Services/Land-Resource-Management",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Tulsa",
+  "state": "Oklahoma",
+  "st": "OK",
+  "facilities": [
+   {
+    "name": "Household Pollutant Collection Facility",
+    "address": "4502 S Galveston Ave, Tulsa, OK 74107",
+    "hours": "Wed & Sat 8–11:30am, noon–4:30pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://www.cityoftulsa.org/government/departments/public-works/household-pollutant-collection-facility/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Riverside",
+  "state": "California",
+  "st": "CA",
+  "facilities": [
+   {
+    "name": "Agua Mansa Permanent HHW Facility",
+    "address": "1780 Agua Mansa Rd, Jurupa Valley, CA",
+    "hours": "Sat 9am–2pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://rcwaste.org/agua-mansa-permanent-hhw-facility",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Lake Elsinore HHW Facility",
+    "address": "512 N Langstaff St, Lake Elsinore, CA",
+    "hours": "Sat; Oct–May 9am–2pm, Jun–Sep 7am–noon",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://rcwaste.org/household-hazardous-waste",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Palm Springs HHW Facility",
+    "address": "1100 Vella Rd, Palm Springs, CA",
+    "hours": "Sat; Oct–May 9am–2pm, Jun–Sep 7am–noon",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "",
+    "source": "https://rcwaste.org/household-hazardous-waste",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Virginia Beach",
+  "state": "Virginia",
+  "st": "VA",
+  "facilities": [
+   {
+    "name": "Landfill & Resource Recovery Center HHW",
+    "address": "1989 Jake Sears Rd, Virginia Beach, VA 23455",
+    "hours": "Tue–Sat 7am–4:30pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Proof of residency; 5 gal liquid or 75 lb per visit",
+    "source": "https://pw.virginiabeach.gov/trash-recycling/landfill-and-rrc/household-hazardous-waste",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Pittsburgh",
+  "state": "Pennsylvania",
+  "st": "PA",
+  "facilities": [
+   {
+    "name": "Noble Environmental HHW & Electronics Drop-off",
+    "address": "3001 Railroad St, Pittsburgh, PA 15201",
+    "hours": "By appointment",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs); electronics",
+    "fees": "",
+    "notes": "Appointment required",
+    "source": "https://www.pittsburghpa.gov/Resident-Services/Trash-Recycling/Drop-Off-Info-Additional-Resources/Electronic-Waste-and-Household-Hazardous-Waste-Disposal",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Fresno",
+  "state": "California",
+  "st": "CA",
+  "facilities": [
+   {
+    "name": "Environmental Compliance Center",
+    "address": "1327 W Dan Ronquillo Dr, Fresno, CA 93706",
+    "hours": "Thu–Sat 9am–3pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "Free",
+    "notes": "(559) 600-4259",
+    "source": "https://cleanupfresnocounty.com/drop-off-locations/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "El Paso",
+  "state": "Texas",
+  "st": "TX",
+  "facilities": [
+   {
+    "name": "Citizen Collection Station – Northeast",
+    "address": "4501 Hondo Pass Dr, El Paso, TX",
+    "hours": "Tue–Sat 8am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Pass, current water bill and matching ID; 915-212-6000",
+    "source": "https://www.elpasotexas.gov/environmental-services/collection-stations/",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Citizen Collection Station – Central",
+    "address": "2492 Harrison Ave, El Paso, TX",
+    "hours": "Tue–Sat 8am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Pass, current water bill and matching ID; 915-212-6000",
+    "source": "https://www.elpasotexas.gov/environmental-services/collection-stations/",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Citizen Collection Station – Westside",
+    "address": "121 Atlantic Rd, El Paso, TX",
+    "hours": "Tue–Sat 8am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Pass, current water bill and matching ID; 915-212-6000",
+    "source": "https://www.elpasotexas.gov/environmental-services/collection-stations/",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Citizen Collection Station – Mission Valley",
+    "address": "1034 Pendale Rd, El Paso, TX",
+    "hours": "Tue–Sat 8am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Pass, current water bill and matching ID; 915-212-6000",
+    "source": "https://www.elpasotexas.gov/environmental-services/collection-stations/",
+    "checked": "2026-11-02"
+   },
+   {
+    "name": "Citizen Collection Station – Eastside",
+    "address": "3500 Confederate Dr, El Paso, TX",
+    "hours": "Tue–Sat 8am–4pm",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "fees": "",
+    "notes": "Pass, current water bill and matching ID; 915-212-6000",
+    "source": "https://www.elpasotexas.gov/environmental-services/collection-stations/",
+    "checked": "2026-11-02"
+   }
+  ],
+  "note": ""
+ },
+ {
+  "city": "Cincinnati",
+  "state": "Ohio",
+  "st": "OH",
+  "facilities": [],
+  "note": "Hamilton County's HHW program is event-based with registration; no permanent public site. Source: https://hamiltoncountyresource.org/recycling_guide/hazardous_products.php"
+ }
+]
