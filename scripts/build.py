@@ -35,7 +35,7 @@ for (sn,st),ms in sorted(states.items()):
         note=f'<p class="note">{e(m["note"])}</p>' if m["note"] else ""
         body=f'<p><a href="/">Home</a> › <a href="{sp}">{e(sn)}</a></p><h1>Hazardous waste drop-off in {e(m["city"])}, {st}</h1>{note}'+AD("city-top")+"".join(fac(f) for f in m["facilities"])+(("<p>No permanent drop-off site found in official sources.</p>") if not m["facilities"] else "")+AD("city-bottom")
         ld='<script type="application/ld+json">'+json.dumps({"@context":"https://schema.org","@graph":[ldj(f) for f in m["facilities"]]})+"</script>" if m["facilities"] else ""
-        page(cp,f"Where to dump paint, chemicals & e-waste in {m['city']}, {st}",f"{len(m['facilities'])} verified drop-off sites in {m['city']} with hours, accepted items and official sources.",body,ld)
+        page(cp,f"Where to dump paint, chemicals & e-waste in {m['city']}, {st}",f"{len(m["facilities"])} verified drop-off site{"" if len(m["facilities"])==1 else "s"} in {m['city']} with hours, accepted items and official sources.",body,ld)
     page(sp,f"Hazardous waste drop-off in {sn}",f"Verified household hazardous waste drop-off sites in {sn}.",f'<p><a href="/">Home</a></p><h1>{e(sn)}</h1>'+AD("state-top")+"<ul>"+"".join(f'<li><a href="{sp}{slug(m["city"])}/">{e(m["city"])}</a> ({len(m["facilities"])} sites)</li>' for m in ms)+"</ul>")
 n=sum(len(m["facilities"]) for m in D)
 page("/","Where to Toss It – hazardous waste & e-waste drop-off by city","Find official drop-off sites for paint, chemicals, batteries, electronics and tires in 50 US metros.",
