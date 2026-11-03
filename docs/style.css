@@ -1,5 +1,5 @@
 *{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,sans-serif;color:#1d2a24;background:#f7f8f6}
 header,footer{background:#1f4d3a;color:#fff;padding:14px 20px}header a,footer a{color:#fff}main{max-width:900px;margin:0 auto;padding:20px}
 a{color:#1f6b4d}.card{background:#fff;border:1px solid #dfe5e0;border-radius:8px;padding:16px;margin:14px 0}
-.card h3{margin:0 0 6px}.meta{font-size:13px;color:#5b6b63}.ad{border:1px dashed #b9c4bd;color:#8a978f;text-align:center;padding:24px;margin:18px 0;font-size:12px}
-ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4px solid #e0b030;padding:10px 14px}
+.card h3{margin:0 0 6px}.meta{font-size:13px;color:#5b6b63}.crumbs{font-size:14px}
+ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4px solid #e0b030;padding:10px 14px}.tags a{display:inline-block;margin:0 8px 6px 0}

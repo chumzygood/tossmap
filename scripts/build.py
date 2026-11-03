@@ -1,48 +1,97 @@
-import json,html,re,os,shutil
+import json,html,re,os,shutil,datetime
 BASE="https://tossmap.com"
 D=json.load(open("data/facilities.json")); OUT="docs"
+TODAY=datetime.date.today().isoformat()
 shutil.rmtree(OUT,ignore_errors=True); os.makedirs(OUT)
 e=html.escape
 slug=lambda s:re.sub(r"[^a-z0-9]+","-",s.lower()).strip("-")
 CSS="""*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,sans-serif;color:#1d2a24;background:#f7f8f6}
 header,footer{background:#1f4d3a;color:#fff;padding:14px 20px}header a,footer a{color:#fff}main{max-width:900px;margin:0 auto;padding:20px}
 a{color:#1f6b4d}.card{background:#fff;border:1px solid #dfe5e0;border-radius:8px;padding:16px;margin:14px 0}
-.card h3{margin:0 0 6px}.meta{font-size:13px;color:#5b6b63}.ad{border:1px dashed #b9c4bd;color:#8a978f;text-align:center;padding:24px;margin:18px 0;font-size:12px}
-ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4px solid #e0b030;padding:10px 14px}"""
+.card h3{margin:0 0 6px}.meta{font-size:13px;color:#5b6b63}.crumbs{font-size:14px}
+ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4px solid #e0b030;padding:10px 14px}.tags a{display:inline-block;margin:0 8px 6px 0}"""
 open(f"{OUT}/style.css","w").write(CSS)
 GC="<!-- GoatCounter: replace CODE then uncomment\n<script data-goatcounter=\"https://CODE.goatcounter.com/count\" async src=\"//gc.zgo.at/count.js\"></script> -->"
-AD=lambda n:f'<div class="ad" data-ad-slot="{n}">Ad slot ({n})</div>'
+# Material pages: keyword patterns matched against each listing's "accepts" text
+MAT=[("paint","Paint","paint"),("e-waste","Electronics (e-waste)",r"e-waste|electronic|computer|tv|cell phone|monitor"),
+     ("tires","Tires",r"\btires?\b"),("batteries","Batteries",r"batter"),("motor-oil","Motor oil",r"motor oil|automotive fluid|car fluid|used oil"),
+     ("household-chemicals","Household chemicals",r"chemical|pesticide|solvent|cleaner")]
+def mats(f):
+    t=f["accepts"].lower()
+    neg=re.findall(r"\((?:[^)]*?)(?:no|not)\s[^)]*\)|no [a-z ,]+",t)
+    tt=t
+    for n in neg: tt=tt.replace(n,"")
+    return [m for m in MAT if re.search(m[2],tt)]
 urls=[]
-def page(path,title,desc,body,ld=""):
-    urls.append(path); p=f"{OUT}{path}"+("index.html" if path.endswith("/") else "")
+def ldscript(o): return '<script type="application/ld+json">'+json.dumps(o,ensure_ascii=False)+"</script>"
+def crumbs(items):
+    vis='<p class="crumbs">'+" › ".join(f'<a href="{u}">{e(n)}</a>' for n,u in items)+"</p>"
+    ld={"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":i+1,"name":n,"item":BASE+u} for i,(n,u) in enumerate(items)]}
+    return vis,ld
+def page(path,title,desc,body,graph=(),checked=None):
+    urls.append((path,checked or TODAY)); p=f"{OUT}{path}"+("index.html" if path.endswith("/") else "")
     os.makedirs(os.path.dirname(p),exist_ok=True)
+    ld=ldscript({"@context":"https://schema.org","@graph":list(graph)}) if graph else ""
+    foot=f"Data from official government and operator sources{', checked '+checked if checked else ''}. Always confirm with the source before driving."
     open(p,"w").write(f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{BASE}{path}"><link rel="stylesheet" href="/style.css">{ld}
-{GC}</head><body><header><a href="/"><strong>Where to Toss It</strong></a> · hazardous waste, paint, e-waste &amp; tire drop-offs</header><main>{body}</main>
-<footer>Data from official government sources, checked 2026-11-02. Always confirm with the source before driving. · <a href="/privacy.html">Privacy</a></footer></body></html>""")
+<title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{BASE}{path}">
+<meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{BASE}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="TossMap">
+<link rel="stylesheet" href="/style.css">{ld}
+{GC}</head><body><header><a href="/"><strong>TossMap</strong></a> · where to toss hazardous waste, paint, e-waste &amp; tires</header><main>{body}</main>
+<footer>{foot} · <a href="/privacy.html">Privacy</a></footer></body></html>""")
 states={}
 for m in D: states.setdefault((m["state"],m["st"]),[]).append(m)
+cpath=lambda m:f"/{slug(m['st'])}/{slug(m['city'])}/"
 def fac(f):
+    tags=" ".join(f'<a href="/{s}/">{e(n)}</a>' for s,n,_ in mats(f))
     return f"""<div class="card"><h3>{e(f['name'])}</h3><div>{e(f['address'])}</div>
 <p><b>Accepts:</b> {e(f['accepts'])}<br><b>Hours:</b> {e(f['hours'])}{'<br><b>Fees:</b> '+e(f['fees']) if f['fees'] else ''}{'<br><b>Notes:</b> '+e(f['notes']) if f['notes'] else ''}</p>
-<div class="meta">Source: <a href="{e(f['source'])}" rel="nofollow noopener">{e(f['source'])}</a> · Last checked {f['checked']}</div></div>"""
+{'<p class="tags">'+tags+'</p>' if tags else ''}<div class="meta">Source: <a href="{e(f['source'])}" rel="nofollow noopener">{e(f['source'])}</a> · Last checked {f['checked']}</div></div>"""
 def ldj(f):
-    return {"@type":"LocalBusiness","name":f["name"],"address":{"@type":"PostalAddress","streetAddress":f["address"]},"openingHours":f["hours"],"url":f["source"]}
+    return {"@type":"Place","name":f["name"],"address":{"@type":"PostalAddress","streetAddress":f["address"]},"description":"Accepts: "+f["accepts"],"url":f["source"]}
+def plural(n,w): return f"{n} {w}{'' if n==1 else 's'}"
+matidx={s:[] for s,_,_ in MAT}
+for m in D:
+    for f in m["facilities"]:
+        for s,_,_ in mats(f):
+            if m not in matidx[s]: matidx[s].append(m)
 for (sn,st),ms in sorted(states.items()):
     sp=f"/{slug(st)}/"
     for m in ms:
-        cp=f"{sp}{slug(m['city'])}/"
+        cp=cpath(m); fs=m["facilities"]
+        chk=max([f["checked"] for f in fs],default=None)
         note=f'<p class="note">{e(m["note"])}</p>' if m["note"] else ""
-        body=f'<p><a href="/">Home</a> › <a href="{sp}">{e(sn)}</a></p><h1>Hazardous waste drop-off in {e(m["city"])}, {st}</h1>{note}'+AD("city-top")+"".join(fac(f) for f in m["facilities"])+(("<p>No permanent drop-off site found in official sources.</p>") if not m["facilities"] else "")+AD("city-bottom")
-        ld='<script type="application/ld+json">'+json.dumps({"@context":"https://schema.org","@graph":[ldj(f) for f in m["facilities"]]})+"</script>" if m["facilities"] else ""
-        page(cp,f"Where to dump paint, chemicals & e-waste in {m['city']}, {st}",f"{len(m["facilities"])} verified drop-off site{"" if len(m["facilities"])==1 else "s"} in {m['city']} with hours, accepted items and official sources.",body,ld)
-    page(sp,f"Hazardous waste drop-off in {sn}",f"Verified household hazardous waste drop-off sites in {sn}.",f'<p><a href="/">Home</a></p><h1>{e(sn)}</h1>'+AD("state-top")+"<ul>"+"".join(f'<li><a href="{sp}{slug(m["city"])}/">{e(m["city"])}</a> ({len(m["facilities"])} sites)</li>' for m in ms)+"</ul>")
+        vis,bl=crumbs([("Home","/"),(sn,sp),(m["city"],cp)])
+        have=[(s,n) for s,n,_ in MAT if m in matidx[s]]
+        nearby=[o for o in ms if o is not m]
+        body=(vis+f'<h1>Where to dump hazardous waste, paint &amp; e-waste in {e(m["city"])}, {st}</h1>'+note
+              +"".join(fac(f) for f in fs)+("<p>No permanent drop-off site found in official sources.</p>" if not fs else "")
+              +(f'<h2>By material</h2><p class="tags">'+" ".join(f'<a href="/{s}/">{e(n)} drop-off</a>' for s,n in have)+"</p>" if have else "")
+              +(f'<h2>Other cities in {e(sn)}</h2><ul>'+"".join(f'<li><a href="{cpath(o)}">{e(o["city"])}</a></li>' for o in nearby)+"</ul>" if nearby else ""))
+        short={"Electronics (e-waste)":"e-waste","Household chemicals":"chemicals"}
+        tl=[short.get(n,n).lower() for _,n in have if n!="Household chemicals"][:3]
+        title=f"Where to dump {', '.join(tl[:-1])+' & '+tl[-1] if len(tl)>1 else (tl[0] if tl else 'hazardous waste')} in {m['city']}, {st} | TossMap"
+        what=", ".join(n.split(" (")[0].lower() for _,n in have[:4]) or "household hazardous waste"
+        desc=(f"{plural(len(fs),'official drop-off site')} in {m['city']}, {st} for {what}: addresses, hours, fees and source links, last checked {chk}." if fs
+              else f"How {m['city']}, {st} handles household hazardous waste, from official sources.")
+        page(cp,title,desc,body,[bl]+[ldj(f) for f in fs],chk)
+    vis,bl=crumbs([("Home","/"),(sn,sp)])
+    page(sp,f"Hazardous waste, paint & e-waste drop-off in {sn} | TossMap",f"Official household hazardous waste, paint, e-waste and tire drop-off sites in {sn}, by city.",
+         vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1><ul>'+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}</a> ({plural(len(m["facilities"]),"site")})</li>' for m in ms)+"</ul>",[bl])
+for s,n,_ in MAT:
+    ms=sorted(matidx[s],key=lambda x:x["city"]); low=n.split(" (")[0].lower()
+    vis,bl=crumbs([("Home","/"),(n,f"/{s}/")])
+    body=vis+f"<h1>Where to drop off {e(low)} near you</h1><p>These {plural(len(ms),'metro area')} have at least one official drop-off site that lists {e(low)} as accepted. Rules, limits and residency requirements vary, so check each listing's source link.</p><ul class=grid>"+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in ms)+"</ul><p>Other materials: "+" · ".join(f'<a href="/{o}/">{e(on)}</a>' for o,on,_ in MAT if o!=s)+"</p>"
+    page(f"/{s}/",f"Where to recycle or dispose of {low}: drop-off sites by city | TossMap",f"Official {low} drop-off locations in {len(ms)} US metro areas, with hours, limits and source links.",body,[bl])
 n=sum(len(m["facilities"]) for m in D)
-page("/","Where to Toss It – hazardous waste & e-waste drop-off by city","Find official drop-off sites for paint, chemicals, batteries, electronics and tires in 50 US metros.",
- f"<h1>Where do I take paint, chemicals, batteries &amp; electronics?</h1><p>{n} verified government drop-off sites across {len(D)} US metros. Every listing links to its official source.</p>"+AD("home-top")+
- "<h2>By city</h2><ul class=grid>"+"".join(f'<li><a href="/{slug(m["st"])}/{slug(m["city"])}/">{e(m["city"])}, {m["st"]}</a></li>' for m in sorted(D,key=lambda x:x["city"]))+"</ul><h2>By state</h2><ul class=grid>"+"".join(f'<li><a href="/{slug(st)}/">{e(sn)}</a></li>' for sn,st in sorted(states))+"</ul>")
-page("/privacy.html","Privacy","Privacy policy","<h1>Privacy</h1><p>We collect no personal data and set no cookies. We may use GoatCounter, a privacy-friendly analytics service that does not track individuals. If ads are added, ad partners may use cookies; this page will be updated before that happens.</p><p>Listings come from public government sources and may change; confirm with the source before visiting.</p>")
+home=(f"<h1>Where do I take paint, chemicals, batteries, electronics &amp; tires?</h1><p>{n} drop-off sites from official government and operator sources across {len(D)} US metros. Every listing links to its source and shows when we last checked it.</p>"
+ "<h2>By material</h2><p class=tags>"+" ".join(f'<a href="/{s}/">{e(nm)}</a>' for s,nm,_ in MAT)+"</p>"
+ "<h2>By city</h2><ul class=grid>"+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in sorted(D,key=lambda x:x["city"]))+"</ul><h2>By state</h2><ul class=grid>"+"".join(f'<li><a href="/{slug(st)}/">{e(sn)}</a></li>' for sn,st in sorted(states))+"</ul>")
+page("/","TossMap: where to dump paint, hazardous waste, e-waste & tires by city","Find official drop-off sites for paint, chemicals, batteries, electronics and tires in 50+ US metros, with hours and source links.",home,
+     [{"@type":"WebSite","name":"TossMap","url":BASE+"/"},{"@type":"Organization","name":"TossMap","url":BASE+"/"}])
+page("/privacy.html","Privacy | TossMap","TossMap privacy policy: no cookies, no personal data.","<h1>Privacy</h1><p>We collect no personal data and set no cookies. We may use GoatCounter, a privacy-friendly analytics service that does not track individuals. If ads are added, ad partners may use cookies; this page will be updated before that happens.</p><p>Listings come from public government sources and may change; confirm with the source before visiting.</p>")
+open(f"{OUT}/404.html","w").write(open(f"{OUT}/index.html").read().replace("<h1>","<h1>Page not found.</h1><h2>",1).replace("</h1><p>","</h2><p>",1).replace(f'<link rel="canonical" href="{BASE}/">','<meta name="robots" content="noindex">'))
 open(f"{OUT}/robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
-open(f"{OUT}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+"".join(f"<url><loc>{BASE}{u}</loc><lastmod>2026-11-02</lastmod></url>" for u in urls)+"</urlset>\n")
+open(f"{OUT}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+"".join(f"<url><loc>{BASE}{u}</loc><lastmod>{d}</lastmod></url>" for u,d in urls)+"</urlset>\n")
 print(len(urls),"pages;",len(states),"states;",n,"facilities")
 open(f"{OUT}/CNAME","w").write("tossmap.com\n"); open(f"{OUT}/.nojekyll","w").write("")

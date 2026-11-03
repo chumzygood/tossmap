@@ -167,6 +167,66 @@
     "notes": "Texas ID or City utility bill required",
     "source": "https://houstontx.gov/solidwaste/esc.html",
     "checked": "2026-11-02"
+   },
+   {
+    "name": "Residential Drop-Off Center – North",
+    "address": "9003 N Main, Houston, TX 77022",
+    "hours": "Tue–Sat 9am–6pm",
+    "accepts": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)",
+    "fees": "Free",
+    "notes": "Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",
+    "source": "https://houstontx.gov/solidwaste/depository.html",
+    "checked": "2026-11-03"
+   },
+   {
+    "name": "Residential Drop-Off Center – Northwest",
+    "address": "14400 Sommermeyer, Houston, TX 77041",
+    "hours": "Tue–Sat 9am–6pm",
+    "accepts": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)",
+    "fees": "Free",
+    "notes": "Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",
+    "source": "https://houstontx.gov/solidwaste/depository.html",
+    "checked": "2026-11-03"
+   },
+   {
+    "name": "Residential Drop-Off Center – Northeast",
+    "address": "5565 Kirkpatrick, Houston, TX 77028",
+    "hours": "Tue–Sat 9am–6pm",
+    "accepts": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)",
+    "fees": "Free",
+    "notes": "Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",
+    "source": "https://houstontx.gov/solidwaste/depository.html",
+    "checked": "2026-11-03"
+   },
+   {
+    "name": "Residential Drop-Off Center – Southeast",
+    "address": "2240 Central Street, Houston, TX 77017",
+    "hours": "Tue–Sat 9am–6pm",
+    "accepts": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)",
+    "fees": "Free",
+    "notes": "Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",
+    "source": "https://houstontx.gov/solidwaste/depository.html",
+    "checked": "2026-11-03"
+   },
+   {
+    "name": "Residential Drop-Off Center – South",
+    "address": "5100 Sunbeam, Houston, TX 77033",
+    "hours": "Tue–Sat 9am–6pm",
+    "accepts": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)",
+    "fees": "Free",
+    "notes": "Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",
+    "source": "https://houstontx.gov/solidwaste/depository.html",
+    "checked": "2026-11-03"
+   },
+   {
+    "name": "Residential Drop-Off Center – Southwest",
+    "address": "10785 SW Freeway, Houston, TX 77074",
+    "hours": "Tue–Sat 9am–6pm",
+    "accepts": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)",
+    "fees": "Free",
+    "notes": "Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",
+    "source": "https://houstontx.gov/solidwaste/depository.html",
+    "checked": "2026-11-03"
    }
   ],
   "note": ""
@@ -191,7 +251,7 @@
     "fees": "Free",
     "notes": "Event-only program; no permanent site",
     "source": "https://www.phila.gov/services/trash-recycling-city-upkeep/dispose-of-household-hazardous-waste/",
-    "checked": "2026-11-02"
+    "checked": "2026-11-03"
    }
   ],
   "note": ""
@@ -538,7 +598,7 @@
     "fees": "Free",
     "notes": "Boston residents; photo ID, utility bill or lease",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "checked": "2026-11-02"
+    "checked": "2026-11-03"
    }
   ],
   "note": ""
@@ -714,7 +774,7 @@
     "fees": "",
     "notes": "Baltimore residents only; 410-396-7250",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "checked": "2026-11-02"
+    "checked": "2026-11-03"
    }
   ],
   "note": ""
