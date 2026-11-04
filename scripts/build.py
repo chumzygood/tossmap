@@ -38,7 +38,7 @@ def page(path,title,desc,body,graph=(),checked=None):
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{BASE}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="TossMap">
 <link rel="stylesheet" href="/style.css">{ld}
 {GC}</head><body><header><a href="/"><strong>TossMap</strong></a> · where to toss hazardous waste, paint, e-waste &amp; tires</header><main>{body}</main>
-<footer>{foot} · <a href="/privacy.html">Privacy</a></footer></body></html>""")
+<footer>{foot} · <a href="/privacy.html">Privacy</a> · <a href="/embed/">Embed widget</a></footer></body></html>""")
 states={}
 for m in D: states.setdefault((m["state"],m["st"]),[]).append(m)
 cpath=lambda m:f"/{slug(m['st'])}/{slug(m['city'])}/"
@@ -67,7 +67,7 @@ for (sn,st),ms in sorted(states.items()):
         body=(vis+f'<h1>Where to dump hazardous waste, paint &amp; e-waste in {e(m["city"])}, {st}</h1>'+note
               +"".join(fac(f) for f in fs)+("<p>No permanent drop-off site found in official sources.</p>" if not fs else "")
               +(f'<h2>By material</h2><p class="tags">'+" ".join(f'<a href="/{s}/">{e(n)} drop-off</a>' for s,n in have)+"</p>" if have else "")
-              +(f'<h2>Other cities in {e(sn)}</h2><ul>'+"".join(f'<li><a href="{cpath(o)}">{e(o["city"])}</a></li>' for o in nearby)+"</ul>" if nearby else ""))
+              +f'<p class="meta">Run a local site? <a href="/embed/">Embed this list for free</a>.</p>'+(f'<h2>Other cities in {e(sn)}</h2><ul>'+"".join(f'<li><a href="{cpath(o)}">{e(o["city"])}</a></li>' for o in nearby)+"</ul>" if nearby else ""))
         short={"Electronics (e-waste)":"e-waste","Household chemicals":"chemicals"}
         tl=[short.get(n,n).lower() for _,n in have if n!="Household chemicals"][:3]
         title=f"Where to dump {', '.join(tl[:-1])+' & '+tl[-1] if len(tl)>1 else (tl[0] if tl else 'hazardous waste')} in {m['city']}, {st} | TossMap"
@@ -91,6 +91,18 @@ page("/","TossMap: where to dump paint, hazardous waste, e-waste & tires by city
      [{"@type":"WebSite","name":"TossMap","url":BASE+"/"},{"@type":"Organization","name":"TossMap","url":BASE+"/"}])
 page("/privacy.html","Privacy | TossMap","TossMap privacy policy: no cookies, no personal data.","<h1>Privacy</h1><p>We collect no personal data and set no cookies. We use GoatCounter, a privacy-friendly analytics service that does not track individuals. If ads are added, ad partners may use cookies; this page will be updated before that happens.</p><p>Listings come from public government sources and may change; confirm with the source before visiting.</p>")
 open(f"{OUT}/404.html","w").write(open(f"{OUT}/index.html").read().replace("<h1>","<h1>Page not found.</h1><h2>",1).replace("</h1><p>","</h2><p>",1).replace(f'<link rel="canonical" href="{BASE}/">','<meta name="robots" content="noindex">'))
+# EMBED: compact, noindex widget per city for other sites (free iframe snippet)
+EMB_CSS="body{margin:0;font:14px/1.45 system-ui,sans-serif;color:#1d2a24;background:#fff}.w{padding:12px}.w h2{font-size:16px;margin:0 0 8px}.f{border-top:1px solid #e3e8e4;padding:8px 0}.f b{display:block}.m{font-size:12px;color:#5b6b63}a{color:#1f6b4d}.by{font-size:12px;margin-top:8px}"
+def snippet(m): return f'<iframe src="{BASE}/embed{cpath(m)}" title="Hazardous waste drop-off sites in {e(m["city"])} (TossMap)" width="100%" height="460" style="border:1px solid #dfe5e0;border-radius:8px" loading="lazy"></iframe>'
+for m in D:
+    p=f"{OUT}/embed{cpath(m)}index.html"; os.makedirs(os.path.dirname(p),exist_ok=True)
+    fs="".join(f'<div class="f"><b>{e(f["name"])}</b>{e(f["address"])}<br>Accepts: {e(f["accepts"])}<br>Hours: {e(f["hours"])}<div class="m"><a href="{e(f["source"])}" target="_blank" rel="nofollow noopener">Official source</a> · checked {f["checked"]}</div></div>' for f in m["facilities"]) or f'<p>{e(m["note"]) or "No permanent drop-off site found in official sources."}</p>'
+    open(p,"w").write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><link rel="canonical" href="{BASE}{cpath(m)}"><title>Drop-off sites in {e(m["city"])} | TossMap</title><style>{EMB_CSS}</style>{GC}</head><body><div class="w"><h2>Where to drop off hazardous waste in {e(m["city"])}, {m["st"]}</h2>{fs}<div class="by">Full list and updates at <a href="{BASE}{cpath(m)}" target="_blank">TossMap</a></div></div></body></html>')
+ex=sorted(D,key=lambda x:-len(x["facilities"]))[0]
+emb_body=(crumbs([("Home","/"),("Embed","/embed/")])[0]+"<h1>Free drop-off map widget for your website</h1><p>City pages, libraries, neighborhood groups and local news sites can embed TossMap's list of official drop-off sites for any metro. It's free, needs no account, sets no cookies, and updates whenever we re-check the listings.</p>"
+ f"<h2>How to add it</h2><p>Copy this snippet into your page and change the city path if you like:</p><pre style='white-space:pre-wrap;background:#fff;border:1px solid #dfe5e0;padding:10px'>{e(snippet(ex))}</pre>"
+ f"<h2>Preview ({e(ex['city'])})</h2>{snippet(ex)}<h2>Snippet for every city</h2><ul class=grid>"+"".join(f'<li><a href="/embed{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in sorted(D,key=lambda x:x["city"]))+"</ul>")
+page("/embed/","Free hazardous waste drop-off widget for your website | TossMap","Embed a free, cookie-free list of official paint, chemical, e-waste and tire drop-off sites for your city on any website.",emb_body,[crumbs([("Home","/"),("Embed","/embed/")])[1]])
 open(f"{OUT}/robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
 open(f"{OUT}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+"".join(f"<url><loc>{BASE}{u}</loc><lastmod>{d}</lastmod></url>" for u,d in urls)+"</urlset>\n")
 print(len(urls),"pages;",len(states),"states;",n,"facilities")
