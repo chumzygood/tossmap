@@ -11,7 +11,7 @@ a{color:#1f6b4d}.card{background:#fff;border:1px solid #dfe5e0;border-radius:8px
 .card h3{margin:0 0 6px}.meta{font-size:13px;color:#5b6b63}.crumbs{font-size:14px}
 ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4px solid #e0b030;padding:10px 14px}.tags a{display:inline-block;margin:0 8px 6px 0}"""
 open(f"{OUT}/style.css","w").write(CSS)
-GC='<script data-goatcounter="https://tossmap.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
+GC='<meta name="google-site-verification" content="jAhRn0yYvjC37jRpBEzda-xllydn360g3kgkVonTDKA" /><script data-goatcounter="https://tossmap.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
 # Material pages: keyword patterns matched against each listing's "accepts" text
 MAT=[("paint","Paint","paint"),("e-waste","Electronics (e-waste)",r"e-waste|electronic|computer|tv|cell phone|monitor"),
      ("tires","Tires",r"\btires?\b"),("batteries","Batteries",r"batter"),("motor-oil","Motor oil",r"motor oil|automotive fluid|car fluid|used oil"),
