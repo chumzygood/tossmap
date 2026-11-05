@@ -291,9 +291,49 @@
     "notes": "Bring CPS Energy bill showing Environmental Fee + photo ID",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/HHW",
     "checked": "2026-11-02"
+   },
+   {
+    "name": "Bulky Waste Collection Center – Bitters",
+    "address": "1800 Wurzbach Parkway, San Antonio, TX 78216",
+    "hours": "Tue–Fri 8am–5pm; Sat 8am–4pm",
+    "accepts": "Car tires (6 or fewer, no rims), large appliances, furniture, mattresses, carpeting, auto parts, water heaters & AC units, construction material (1 cu yd or less)",
+    "fees": "Free with City environmental fee",
+    "notes": "Residential customers only; bring a recent CPS Energy bill + photo ID; no household trash or hazardous material",
+    "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
+    "checked": "2026-11-05"
+   },
+   {
+    "name": "Bulky Waste Collection Center – Frio City Road",
+    "address": "1531 Frio City Road, San Antonio, TX 78226",
+    "hours": "Tue–Fri 8am–5pm; Sat 8am–4pm",
+    "accepts": "Car tires (6 or fewer, no rims), large appliances, furniture, mattresses, carpeting, auto parts, water heaters & AC units, construction material (1 cu yd or less)",
+    "fees": "Free with City environmental fee",
+    "notes": "Residential customers only; bring a recent CPS Energy bill + photo ID; no household trash or hazardous material",
+    "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
+    "checked": "2026-11-05"
+   },
+   {
+    "name": "Bulky Waste Collection Center – Culebra",
+    "address": "7030 Culebra Road, San Antonio, TX 78238",
+    "hours": "Tue–Fri 8am–5pm; Sat 8am–4pm",
+    "accepts": "Car tires (6 or fewer, no rims), large appliances, furniture, mattresses, carpeting, auto parts, water heaters & AC units, construction material (1 cu yd or less)",
+    "fees": "Free with City environmental fee",
+    "notes": "Residential customers only; bring a recent CPS Energy bill + photo ID; no household trash or hazardous material",
+    "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
+    "checked": "2026-11-05"
+   },
+   {
+    "name": "Bulky Waste Collection Center – Rigsby Road",
+    "address": "2755 Rigsby Road, San Antonio, TX 78222",
+    "hours": "Tue–Fri 8am–5pm; Sat 8am–4pm",
+    "accepts": "Car tires (6 or fewer, no rims), large appliances, furniture, mattresses, carpeting, auto parts, water heaters & AC units, construction material (1 cu yd or less)",
+    "fees": "Free with City environmental fee",
+    "notes": "Residential customers only; bring a recent CPS Energy bill + photo ID; no household trash or hazardous material",
+    "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
+    "checked": "2026-11-05"
    }
   ],
-  "note": ""
+  "note": "Next Free Landfill Day: Sat Nov 14, 2026, 8am–1pm at Republic Services Landfill (7000 IH 10 E) and Waste Management Landfill (8611 Covel Rd); tires limit 6 passenger car tires per household (checked 2026-11-05). Source: https://www.sa.gov/Directory/Departments/SWMD/Garbage/Landfill"
  },
  {
   "city": "San Diego",
@@ -381,6 +421,46 @@
     "notes": "",
     "source": "https://www.fortworthtexas.gov/departments/environmental-services/solidwaste/environmental-collection-center/environmental-collection-center",
     "checked": "2026-11-02"
+   },
+   {
+    "name": "Brennan Drop-Off Station",
+    "address": "2400 Brennan Ave, Fort Worth, TX",
+    "hours": "Tue–Fri 8am–5pm; Sat 8am–noon; closed Sun–Mon and city holidays (incl. Thanksgiving and the day after)",
+    "accepts": "Passenger tires (4 per household every 6 months, rims separated), computers & TVs (2 every 6 months), household chemicals incl. paint and motor oil (20 gal every 3 months), all batteries, light bulbs, appliances, bulky trash, recycling",
+    "fees": "Free for residents",
+    "notes": "Fort Worth residents with a City solid waste account: bring a water bill (within 6 months) + matching driver's license; apartment residents may bring recycling and HHW with a driver's license",
+    "source": "https://www.fortworthtexas.gov/departments/environmental-services/solidwaste/dropoff",
+    "checked": "2026-11-05"
+   },
+   {
+    "name": "Southeast Drop-Off Station",
+    "address": "5150 Martin Luther King Fwy, Fort Worth, TX",
+    "hours": "Tue–Fri 8am–5pm; Sat 8am–noon; closed Sun–Mon and city holidays (incl. Thanksgiving and the day after)",
+    "accepts": "Passenger tires (4 per household every 6 months, rims separated), computers & TVs (2 every 6 months), household chemicals incl. paint and motor oil (20 gal every 3 months), all batteries, light bulbs, appliances, bulky trash, recycling",
+    "fees": "Free for residents",
+    "notes": "Fort Worth residents with a City solid waste account: bring a water bill (within 6 months) + matching driver's license; apartment residents may bring recycling and HHW with a driver's license",
+    "source": "https://www.fortworthtexas.gov/departments/environmental-services/solidwaste/dropoff",
+    "checked": "2026-11-05"
+   },
+   {
+    "name": "Old Hemphill Road Drop-Off Station",
+    "address": "6260 Old Hemphill Rd, Fort Worth, TX",
+    "hours": "Tue–Fri 8am–5pm; Sat 8am–noon; closed Sun–Mon and city holidays (incl. Thanksgiving and the day after)",
+    "accepts": "Passenger tires (4 per household every 6 months, rims separated), computers & TVs (2 every 6 months), household chemicals incl. paint and motor oil (20 gal every 3 months), all batteries, light bulbs, appliances, bulky trash, recycling",
+    "fees": "Free for residents",
+    "notes": "Fort Worth residents with a City solid waste account: bring a water bill (within 6 months) + matching driver's license; apartment residents may bring recycling and HHW with a driver's license",
+    "source": "https://www.fortworthtexas.gov/departments/environmental-services/solidwaste/dropoff",
+    "checked": "2026-11-05"
+   },
+   {
+    "name": "Hillshire (North Service Center) Drop-Off Station",
+    "address": "301 Hillshire Dr, Fort Worth, TX",
+    "hours": "Tue–Fri 8am–5pm; Sat 8am–noon; closed Sun–Mon and city holidays (incl. Thanksgiving and the day after)",
+    "accepts": "Passenger tires (4 per household every 6 months, rims separated), computers & TVs (2 every 6 months), household chemicals incl. paint and motor oil (20 gal every 3 months), all batteries, light bulbs, appliances, bulky trash, recycling",
+    "fees": "Free for residents",
+    "notes": "Fort Worth residents with a City solid waste account: bring a water bill (within 6 months) + matching driver's license; apartment residents may bring recycling and HHW with a driver's license",
+    "source": "https://www.fortworthtexas.gov/departments/environmental-services/solidwaste/dropoff",
+    "checked": "2026-11-05"
    }
   ],
   "note": ""
@@ -795,7 +875,7 @@
     "fees": "",
     "notes": "Baltimore residents only; 410-396-7250",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "checked": "2026-11-03"
+    "checked": "2026-11-05"
    }
   ],
   "note": ""
