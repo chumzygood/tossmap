@@ -38,7 +38,7 @@ def page(path,title,desc,body,graph=(),checked=None):
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{BASE}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="TossMap">
 <link rel="stylesheet" href="/style.css">{ld}
 {GC}</head><body><header><a href="/"><strong>TossMap</strong></a> · where to toss hazardous waste, paint, e-waste &amp; tires</header><main>{body}</main>
-<footer>{foot} · <a href="/privacy.html">Privacy</a> · <a href="/embed/">Embed widget</a></footer></body></html>""")
+<footer>{foot} · <a href="/privacy.html">Privacy</a> · <a href="/embed/">Embed widget</a> · <a href="/for-cities/">For cities</a> · <a href="/partners/">Partners</a> · <a href="mailto:toolshed@mail.grokbot.com">Support</a></footer></body></html>""")
 states={}
 for m in D: states.setdefault((m["state"],m["st"]),[]).append(m)
 cpath=lambda m:f"/{slug(m['st'])}/{slug(m['city'])}/"
@@ -103,6 +103,43 @@ emb_body=(crumbs([("Home","/"),("Embed","/embed/")])[0]+"<h1>Free drop-off map w
  f"<h2>How to add it</h2><p>Copy this snippet into your page and change the city path if you like:</p><pre style='white-space:pre-wrap;background:#fff;border:1px solid #dfe5e0;padding:10px'>{e(snippet(ex))}</pre>"
  f"<h2>Preview ({e(ex['city'])})</h2>{snippet(ex)}<h2>Snippet for every city</h2><ul class=grid>"+"".join(f'<li><a href="/embed{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in sorted(D,key=lambda x:x["city"]))+"</ul>")
 page("/embed/","Free hazardous waste drop-off widget for your website | TossMap","Embed a free, cookie-free list of official paint, chemical, e-waste and tire drop-off sites for your city on any website.",emb_body,[crumbs([("Home","/"),("Embed","/embed/")])[1]])
+
+SUPPORT="toolshed@mail.grokbot.com"
+city_vis,city_bl=crumbs([("Home","/"),("For cities","/for-cities/")])
+city_body=(city_vis+"<h1>TossMap for cities and waste districts</h1>"
+ "<p>Give residents one accurate place to find tire, paint, e-waste, and household-chemical drop-offs—without building another directory. Official listings stay free and sourced. Support: <a href=\"mailto:"+SUPPORT+"\">"+SUPPORT+"</a>.</p>"
+ "<div class=card><h3>What you get</h3><ul>"
+ "<li><b>Branded city embed</b> — your city name (seal optional), hosted and updated when official sources change.</li>"
+ "<li><b>Verified listings only</b> — every site has a source link and a last-checked date.</li>"
+ "<li><b>Event callouts</b> — upcoming HHW or free-landfill days when your city publishes them.</li>"
+ "<li><b>Simple analytics</b> — quarterly note on embed traffic (cookie-free on our side).</li></ul></div>"
+ "<div class=card><h3>Suggested annual pricing</h3><ul>"
+ "<li><b>Starter</b> — city embed + listing updates: $500–$1,200</li>"
+ "<li><b>Standard</b> — Starter + event callouts + quarterly traffic note: $1,500–$3,000</li>"
+ "<li><b>District</b> — multi-city / county coverage: custom</li></ul>"
+ "<p>Pilot: 90 days free for one city page if you publish the embed on an official .gov page and share one sentence of feedback.</p></div>"
+ "<div class=card><h3>Next step</h3><p>Email <a href=\"mailto:"+SUPPORT+"\">"+SUPPORT+"</a> with your city and preferred package. We send a one-line embed snippet and a short terms sheet. Free embed docs: <a href=\"/embed/\">/embed/</a>.</p></div>")
+page("/for-cities/","TossMap for cities | branded drop-off embed","Offer for municipalities: embed TossMap’s verified hazardous-waste drop-off list on your .gov site.",city_body,[city_bl])
+partner_vis,partner_bl=crumbs([("Home","/"),("Partners","/partners/")])
+partner_body=(partner_vis+"<h1>TossMap partner placements</h1>"
+ "<p>For tire shops, e-waste recyclers, and paint / HHW handlers. Partner spots are clearly labeled and never replace official city listings. Support: <a href=\"mailto:"+SUPPORT+"\">"+SUPPORT+"</a>.</p>"
+ "<div class=card><h3>What you get</h3><ul>"
+ "<li><b>Labeled partner card</b> — name, address, materials, hours, and link, marked Partner.</li>"
+ "<li><b>City + material pages</b> — your metro page and matching material hubs where relevant.</li>"
+ "<li><b>Source &amp; check date</b> — we verify acceptance rules; stale partners come down.</li>"
+ "<li><b>Optional pickup leads</b> — haul-away inquiries routed to you (separate per-lead fee).</li></ul></div>"
+ "<div class=card><h3>Suggested pricing</h3><ul>"
+ "<li><b>City partner</b> — one metro, one materials set: $99–$249 / month</li>"
+ "<li><b>Metro + materials</b> — city page plus 1–2 material hubs: $199–$399 / month</li>"
+ "<li><b>Pickup leads</b> — qualified inquiry: $15–$40 / lead</li></ul>"
+ "<p>First month free with proof of materials accepted and a website or photo we can cite. Cancel anytime; we remove the card within a week.</p></div>"
+ "<div class=card><h3>Trust rules</h3><ul>"
+ "<li>Official government and operator listings stay free and are not buried.</li>"
+ "<li>No fake reviews and no “#1 dump site” claims.</li>"
+ "<li>Tell us when acceptance rules change.</li></ul></div>"
+ "<div class=card><h3>Next step</h3><p>Email <a href=\"mailto:"+SUPPORT+"\">"+SUPPORT+"</a> with your city, materials, website, and preferred package. We send a draft partner card for approval before it goes live.</p></div>")
+page("/partners/","TossMap partners | tire & e-waste placements","Labeled partner placements on TossMap for tire shops and e-waste recyclers. Official listings stay free.",partner_body,[partner_bl])
+
 open(f"{OUT}/robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
 open(f"{OUT}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+"".join(f"<url><loc>{BASE}{u}</loc><lastmod>{d}</lastmod></url>" for u,d in urls)+"</urlset>\n")
 print(len(urls),"pages;",len(states),"states;",n,"facilities")
