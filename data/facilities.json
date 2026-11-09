@@ -263,19 +263,8 @@
   "city": "Philadelphia",
   "state": "Pennsylvania",
   "st": "PA",
-  "facilities": [
-   {
-    "name": "HHW Collection Event – Streets Dept NE Facility",
-    "address": "3901 N Delaware Ave, Philadelphia, PA 19137",
-    "hours": "Event: Sat Nov 7, 2026, 9am–3pm",
-    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
-    "fees": "Free",
-    "notes": "Event-only program; no permanent site",
-    "source": "https://www.phila.gov/services/trash-recycling-city-upkeep/dispose-of-household-hazardous-waste/",
-    "checked": "2026-11-03"
-   }
-  ],
-  "note": ""
+  "facilities": [],
+  "note": "Philadelphia HHW is event-only. The last 2026 event was Sat Nov 7, 2026 (Port Richmond, 3901 N Delaware Ave); no remaining 2026 dates. Watch the city page for 2027 dates. Electronics are not accepted at HHW events — take them to a Sanitation Convenience Center. Source: https://www.phila.gov/services/trash-recycling-city-upkeep/dispose-of-household-hazardous-waste/"
  },
  {
   "city": "San Antonio",
@@ -333,7 +322,7 @@
     "checked": "2026-11-05"
    }
   ],
-  "note": "Next Free Landfill Day: Sat Nov 14, 2026, 8am–1pm at Republic Services Landfill (7000 IH 10 E) and Waste Management Landfill (8611 Covel Rd); tires limit 6 passenger car tires per household (checked 2026-11-05). Source: https://www.sa.gov/Directory/Departments/SWMD/Garbage/Landfill"
+  "note": "Next Free Landfill Day: Sat Nov 14, 2026, 8am–1pm at Republic Services Landfill (7000 IH 10 E) and Waste Management Landfill (8611 Covel Rd); tires limit 6 passenger car tires per household (re-verified 2026-11-09). Source: https://www.sa.gov/Directory/Departments/SWMD/Garbage/Landfill"
  },
  {
   "city": "San Diego",
@@ -683,8 +672,29 @@
   "city": "Washington",
   "state": "District of Columbia",
   "st": "DC",
-  "facilities": [],
-  "note": "DC has no permanent HHW drop-off; DPW runs registered special-waste events (Fort Totten does not take HHW). Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding"
+  "facilities": [
+   {
+    "name": "Fort Totten Transfer Station (tires)",
+    "address": "4900 John McCormack Rd NE, Washington, DC 20011",
+    "hours": "Tue–Fri 10am–2pm; Sat 7am–2pm; closed Mon & District holidays",
+    "accepts": "Passenger tires (up to 4); bulk trash, recycling, yard waste and appliances during regular hours",
+    "fees": "Free for DC residents",
+    "notes": "DC residents only; proof of residency required. HHW and electronics are NOT accepted here — use Special Waste Collection Events.",
+    "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
+    "checked": "2026-11-09"
+   },
+   {
+    "name": "DPW Special Waste Collection Event – RFK Stadium Lot 8",
+    "address": "2500 Independence Ave SE, Washington, DC 20003",
+    "hours": "Event: Sat Nov 14, 2026, 8am–2pm (registration required; no entry after 2pm)",
+    "accepts": "HHW (paints, chemicals, batteries, CFLs, motor oil, auto fluids, propane ≤20 lb); e-waste (computers, TVs, phones, printers, monitors); document shredding (up to 5 boxes)",
+    "fees": "Free",
+    "notes": "DC residents only; register in advance on Eventbrite; bring proof of residency and registration. Next listed event after this: Sat Dec 12, 2026, also at RFK Lot 8.",
+    "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
+    "checked": "2026-11-09"
+   }
+  ],
+  "note": "No permanent HHW or e-cycling drop-off. Fort Totten takes up to 4 tires during regular hours. HHW and electronics are collected at registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding"
  },
  {
   "city": "Boston",
@@ -695,11 +705,11 @@
     "name": "Zero Waste Day Drop-Off – Millennium Park",
     "address": "315 Gardner St, West Roxbury, MA 02132",
     "hours": "Event: Sat Nov 21, 2026, 8:30am–noon",
-    "accepts": "Hazardous chemicals, batteries, electronics, oil-based paint",
+    "accepts": "Hazardous chemicals (20 gal limit), oil-based paint, rechargeable/lithium batteries, electronics (computers, phones, TVs, printers), fluorescent bulbs/mercury items, car & bike tires (8 each), car batteries, propane tanks, fire extinguishers",
     "fees": "Free",
-    "notes": "Boston residents; photo ID, utility bill or lease",
+    "notes": "Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. Do not arrive before 8:30am; no entry after noon.",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "checked": "2026-11-03"
+    "checked": "2026-11-09"
    }
   ],
   "note": ""
@@ -869,13 +879,13 @@
   "facilities": [
    {
     "name": "Sisson Street Residential Recycling Center (HHW days)",
-    "address": "2840 Sisson St, Baltimore, MD",
-    "hours": "Collection days Nov 6–7 & Dec 4–5, 2026, 9am–5pm",
-    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
-    "fees": "",
-    "notes": "Baltimore residents only; 410-396-7250",
+    "address": "2840 Sisson St, Baltimore, MD 21211",
+    "hours": "Collection days: Dec 4–5, 2026, 9am–5pm (Nov 6–7 already held)",
+    "accepts": "Automotive fluids, batteries, household cleaners, fungicides/herbicides, insecticides/pesticides, oil paint, thinners, pool chemicals, propane tanks, rust removers, solvents, fire extinguishers, thermometers, fluorescent bulbs",
+    "fees": "Free",
+    "notes": "Baltimore City residents only; materials in original labeled packaging; no commercial vehicles. 410-396-7250",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "checked": "2026-11-05"
+    "checked": "2026-11-09"
    }
   ],
   "note": ""
@@ -1364,8 +1374,19 @@
   "city": "Cincinnati",
   "state": "Ohio",
   "st": "OH",
-  "facilities": [],
-  "note": "Hamilton County's HHW program is event-based with registration; no permanent public site. Source: https://hamiltoncountyresource.org/recycling_guide/hazardous_products.php"
+  "facilities": [
+   {
+    "name": "Cincinnati Recycling & Reuse Hub",
+    "address": "911 Evans Street, Cincinnati, OH 45204",
+    "hours": "Tue 10am–2pm; Thu 12–6pm; Sat 10am–2pm (closed Nov 26–28 and Dec 22–Jan 1)",
+    "accepts": "E-waste (computers, laptops, phones, printers, speakers, home entertainment, mixed electronics); TVs and monitors; car and bike tires (on or off rim) and bike inner tubes; batteries; lightbulbs (LED, CFL, tube)",
+    "fees": "Electronics: small amounts free, car trunk $10 / SUV $15; TVs $5–$40; car tire off-rim $10 / on-rim $25; bike tire $5–$10",
+    "notes": "Park on Woodrow Street (rear of building). Listed in Hamilton County Resource outlets directory. Household chemical HHW is NOT accepted here — county HHW is event-based.",
+    "source": "https://www.cincinnatirecyclingandreusehub.org/accepted-items",
+    "checked": "2026-11-09"
+   }
+  ],
+  "note": "Hamilton County's HHW chemical program is event-based with registration; no permanent public HHW site. Year-round tires and e-waste: Cincinnati Recycling & Reuse Hub. Source: https://hamiltoncountyresource.org/recycling_guide/hazardous_products.php"
  },
  {
   "city": "Cleveland",
@@ -1375,22 +1396,22 @@
    {
     "name": "Carr Center (Division of Waste)",
     "address": "5600 Carnegie Ave., Cleveland, OH 44103",
-    "hours": "HHW: first Friday of each month only, 9am–3pm. Recycling, shredding & computer disposal: Mon–Fri 9am–3pm",
-    "accepts": "Household hazardous waste (oil, cleaners, solvents, pesticides, household chemicals) on first Fridays; computers and cell phones (e-waste) Mon–Fri",
-    "fees": "",
-    "notes": "City of Cleveland residents only; latex paint not accepted",
+    "hours": "Recycling, shredding & computer/cell-phone disposal: Mon–Fri 9am–3pm. HHW: first Friday of each month only, 9am–3pm (next: Fri Dec 4, 2026)",
+    "accepts": "E-waste: computers and cell phones (Mon–Fri; no TVs). HHW on first Fridays only: oil, cleaners, solvents, pesticides, household chemicals (latex paint not accepted)",
+    "fees": "Free",
+    "notes": "City of Cleveland residents only",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "checked": "2026-11-02"
+    "checked": "2026-11-09"
    },
    {
     "name": "Ridge Road Transfer Station",
     "address": "3727 Ridge Rd., Cleveland, OH 44144",
-    "hours": "HHW: first Friday of each month only, 9am–3pm",
-    "accepts": "Household hazardous waste (oil, cleaners, solvents, pesticides, household chemicals)",
-    "fees": "",
-    "notes": "City of Cleveland residents only; latex paint not accepted",
+    "hours": "Recycling: Mon–Sat 9am–3pm. Regular waste disposal: Sat 9am–3pm. HHW: first Friday of each month only, 9am–3pm (next: Fri Dec 4, 2026). Bulky/tire drop-off for residents (limits apply)",
+    "accepts": "Passenger tires without rims (residents; up to 4 free dumps/year including tires; fee beyond 4 tires); bulky waste; recycling; HHW on first Fridays only (oil, cleaners, solvents, pesticides, household chemicals; latex paint not accepted)",
+    "fees": "Free for qualifying resident drop-offs; fee may apply beyond tire/dump limits",
+    "notes": "City of Cleveland residents only; proof of residency required for drop-off",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "checked": "2026-11-02"
+    "checked": "2026-11-09"
    }
   ],
   "note": ""
@@ -1404,11 +1425,21 @@
     "name": "East Richmond Road Convenience Center",
     "address": "3800 East Richmond Road, Richmond, VA 23223",
     "hours": "Mon–Fri 7am–3:30pm; Sat 8:30am–2pm; closed Sun & holidays",
-    "accepts": "Paints (20 gal/month/household), solvents, thinners, stains, varnish, motor oil, antifreeze, car fluids, lead-acid car batteries, cooking oil, fuels, propane tanks",
+    "accepts": "Paints (20 gal/month/household), solvents, thinners, stains, varnish, motor oil, antifreeze, car fluids, lead-acid car batteries, cooking oil, fuels; passenger tires without rims (limit 4; no off-road or oversized)",
     "fees": "Free",
-    "notes": "Richmond residents with proof of residency; no pesticides, herbicides, acetone, fire extinguishers",
-    "source": "https://rva.gov/sites/default/files/2021-07/DPW_RecyclingFlyer_HowtoProperlyDisposeVariousItems_071521.pdf",
-    "checked": "2026-11-02"
+    "notes": "Richmond residents with proof of residency (license, utility bill, or registration). No pesticides, herbicides, fire extinguishers, asbestos, explosives. 804-646-4706",
+    "source": "https://www.rva.gov/public-works/trash-collection",
+    "checked": "2026-11-09"
+   },
+   {
+    "name": "Richmond Southside Transfer Station",
+    "address": "3520 North Hopkins Road, Richmond, VA",
+    "hours": "Mon–Fri 6:30am–4:30pm; Sat 8:30am–2pm; closed Sun & holidays",
+    "accepts": "Passenger tires without rims (limit 4 free; $1 each beyond 4; tractor-trailer tires $5 each); large bulk items, appliances, brush/yard waste; glass, cardboard, aluminum cans, newspapers",
+    "fees": "Tires: 4 free then $1 each (passenger); tractor-trailer $5 each",
+    "notes": "City residents; no commercial/contractor debris. 804-232-8488",
+    "source": "https://www.rva.gov/public-works/trash-collection",
+    "checked": "2026-11-09"
    }
   ],
   "note": ""
@@ -1422,11 +1453,11 @@
     "name": "Recycling Drop-Off Center",
     "address": "2829 Elysian Fields Ave, New Orleans, LA",
     "hours": "Saturdays 8am–1pm",
-    "accepts": "E-waste (computers, phones, monitors, printers, TVs limit 4), household batteries, light bulbs, tires (limit 5), glass (50 lbs), paper, plastics #1–2, cans",
-    "fees": "",
-    "notes": "Orleans Parish residents only. Household hazardous waste only on the annual HHW Collection Day (2026 date was April 11)",
+    "accepts": "E-waste (computers, laptops, phones, keyboards, monitors, printers, TVs limit 4, game consoles, cables, cameras); batteries (AA–D, 6V, 9V, lithium); light bulbs; tires (limit 5); glass (50 lbs); plastics #1–2; paper; cardboard; cans",
+    "fees": "Free",
+    "notes": "Orleans Parish residents only; businesses excluded. Household chemical HHW is annual Collection Day only (2026 was April 11).",
     "source": "https://nola.gov/recycling-drop-off/",
-    "checked": "2026-11-02"
+    "checked": "2026-11-09"
    }
   ],
   "note": ""
@@ -1439,14 +1470,24 @@
    {
     "name": "Kapaʻa Transfer Station",
     "address": "100 Kapaʻa Quarry Road, Kailua, HI",
-    "hours": "Mon–Fri 10am–6pm",
-    "accepts": "Household trash, bulky items, large metal appliances, tires, lead-acid batteries, lithium/NiMH/NiCad batteries, propane and helium tanks, fire extinguishers",
+    "hours": "Mon–Fri 10am–6pm; Sat–Sun 7am–6pm (closed Christmas and New Year's Day)",
+    "accepts": "Household trash, bulky items, large appliances, tires, lead-acid batteries, standalone lithium/lithium-ion/NiMH/NiCad batteries, propane and helium tanks, butane, MAPP, fire extinguishers, green waste",
     "fees": "",
-    "notes": "Residential waste only; sedans, SUVs, pickups, minivans",
+    "notes": "Phone (808) 768-4248. Residential drop-off rules apply.",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "checked": "2026-11-02"
+    "checked": "2026-11-09"
+   },
+   {
+    "name": "Kawailoa Transfer Station",
+    "address": "62-180 Kawailoa Road, Haleiwa, HI",
+    "hours": "Daily 7am–6pm (closed Christmas and New Year's Day)",
+    "accepts": "Household trash, bulky items, large metal appliances, tires, lead-acid batteries, standalone lithium/lithium-ion/NiMH/NiCad batteries, propane and helium tanks, butane, MAPP, fire extinguishers, green waste",
+    "fees": "",
+    "notes": "Phone (808) 637-5511. Residential drop-off rules apply.",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "checked": "2026-11-09"
    }
   ],
-  "note": "Household hazardous waste is accepted only at appointment-only drop-off events (12-item limit, 200 appointments per event). The last 2026 event (Sat Nov 7) is full and registration is closed; the city lists 2027 dates as TBD (checked 2026-11-04). Register via (808) 768-3201 or hhw@honolulu.gov. Source: https://www.honolulu.gov/env/ref/hhw-2/"
+  "note": "Household chemical HHW is appointment-only at city drop-off events (200-appointment cap). The last 2026 event (Sat Nov 7) is closed at capacity; 2027 dates TBD. Call (808) 768-3201 or email hhw@honolulu.gov. Source: https://www.honolulu.gov/env/ref/hhw-2/"
  }
 ]

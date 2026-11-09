@@ -48,7 +48,14 @@ def fac(f):
 <p><b>Accepts:</b> {e(f['accepts'])}<br><b>Hours:</b> {e(f['hours'])}{'<br><b>Fees:</b> '+e(f['fees']) if f['fees'] else ''}{'<br><b>Notes:</b> '+e(f['notes']) if f['notes'] else ''}</p>
 {'<p class="tags">'+tags+'</p>' if tags else ''}<div class="meta">Source: <a href="{e(f['source'])}" rel="nofollow noopener">{e(f['source'])}</a> · Last checked {f['checked']}</div></div>"""
 def ldj(f):
-    return {"@type":"Place","name":f["name"],"address":{"@type":"PostalAddress","streetAddress":f["address"]},"description":"Accepts: "+f["accepts"],"url":f["source"]}
+    place={"@type":"Place","name":f["name"],"address":{"@type":"PostalAddress","streetAddress":f["address"]},"description":"Accepts: "+f["accepts"],"url":f["source"]}
+    # Emit Event schema when hours clearly describe a dated drop-off event
+    hm=re.search(r"Event:\s*(?:Sat|Sun|Mon|Tue|Wed|Thu|Fri)\s+(Nov|Dec|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct)\s+(\d{1,2}),\s*(20\d{2})", f.get("hours",""))
+    if hm:
+        mon={"Jan":"01","Feb":"02","Mar":"03","Apr":"04","May":"05","Jun":"06","Jul":"07","Aug":"08","Sep":"09","Oct":"10","Nov":"11","Dec":"12"}[hm.group(1)]
+        day=int(hm.group(2)); year=hm.group(3)
+        return {"@type":"Event","name":f["name"],"startDate":f"{year}-{mon}-{day:02d}","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","location":place,"description":"Accepts: "+f["accepts"],"url":f["source"],"organizer":{"@type":"Organization","name":"Official source","url":f["source"]}}
+    return place
 def plural(n,w): return f"{n} {w}{'' if n==1 else 's'}"
 matidx={s:[] for s,_,_ in MAT}
 for m in D:
@@ -65,7 +72,7 @@ for (sn,st),ms in sorted(states.items()):
         have=[(s,n) for s,n,_ in MAT if m in matidx[s]]
         nearby=[o for o in ms if o is not m]
         body=(vis+f'<h1>Where to dump hazardous waste, paint &amp; e-waste in {e(m["city"])}, {st}</h1>'+note
-              +"".join(fac(f) for f in fs)+("<p>No permanent drop-off site found in official sources.</p>" if not fs else "")
+              +"".join(fac(f) for f in fs)+("<p>No permanent drop-off site listed yet. See the note above for event-based or alternate official options, and check back after the next source review.</p>" if not fs else "")
               +(f'<h2>By material</h2><p class="tags">'+" ".join(f'<a href="/{s}/">{e(n)} drop-off</a>' for s,n in have)+"</p>" if have else "")
               +f'<p class="meta">Run a local site? <a href="/embed/">Embed this list for free</a>.</p>'+(f'<h2>Other cities in {e(sn)}</h2><ul>'+"".join(f'<li><a href="{cpath(o)}">{e(o["city"])}</a></li>' for o in nearby)+"</ul>" if nearby else ""))
         short={"Electronics (e-waste)":"e-waste","Household chemicals":"chemicals"}
@@ -87,7 +94,7 @@ n=sum(len(m["facilities"]) for m in D)
 home=(f"<h1>Where do I take paint, chemicals, batteries, electronics &amp; tires?</h1><p>{n} drop-off sites from official government and operator sources across {len(D)} US metros. Every listing links to its source and shows when we last checked it.</p>"
  "<h2>By material</h2><p class=tags>"+" ".join(f'<a href="/{s}/">{e(nm)}</a>' for s,nm,_ in MAT)+"</p>"
  "<h2>By city</h2><ul class=grid>"+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in sorted(D,key=lambda x:x["city"]))+"</ul><h2>By state</h2><ul class=grid>"+"".join(f'<li><a href="/{slug(st)}/">{e(sn)}</a></li>' for sn,st in sorted(states))+"</ul>")
-page("/","TossMap: where to dump paint, hazardous waste, e-waste & tires by city","Find official drop-off sites for paint, chemicals, batteries, electronics and tires in 50+ US metros, with hours and source links.",home,
+page("/","TossMap: where to dump paint, hazardous waste, e-waste & tires by city","Find official drop-off sites for paint, chemicals, batteries, electronics and tires in 50+ US metros—addresses, hours, fees and source links, checked regularly.",home,
      [{"@type":"WebSite","name":"TossMap","url":BASE+"/"},{"@type":"Organization","name":"TossMap","url":BASE+"/"}])
 page("/privacy.html","Privacy | TossMap","TossMap privacy policy: no cookies, no personal data.","<h1>Privacy</h1><p>We collect no personal data and set no cookies. We use GoatCounter, a privacy-friendly analytics service that does not track individuals. If ads are added, ad partners may use cookies; this page will be updated before that happens.</p><p>Listings come from public government sources and may change; confirm with the source before visiting.</p>")
 open(f"{OUT}/404.html","w").write(open(f"{OUT}/index.html").read().replace("<h1>","<h1>Page not found.</h1><h2>",1).replace("</h1><p>","</h2><p>",1).replace(f'<link rel="canonical" href="{BASE}/">','<meta name="robots" content="noindex">'))
