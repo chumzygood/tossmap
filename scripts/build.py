@@ -1,8 +1,9 @@
-import json,html,re,os,shutil,datetime
+import json,html,re,os,datetime
 BASE="https://tossmap.com"
 D=json.load(open("data/facilities.json")); OUT="docs"
 TODAY=datetime.date.today().isoformat()
-shutil.rmtree(OUT,ignore_errors=True); os.makedirs(OUT)
+os.makedirs(OUT,exist_ok=True)  # Never remove existing published pages during a build.
+from facility_questions import QUESTIONS, UNKNOWN
 e=html.escape
 slug=lambda s:re.sub(r"[^a-z0-9]+","-",s.lower()).strip("-")
 CSS="""*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,sans-serif;color:#1d2a24;background:#f7f8f6}
@@ -17,7 +18,7 @@ ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4
 .signup-form input[type=email]{flex:1 1 220px;font:inherit;padding:8px 10px;border:1px solid #c5d0ca;border-radius:6px}
 .signup-form button{font:inherit;padding:8px 14px;border:0;border-radius:6px;background:#1f4d3a;color:#fff;cursor:pointer}
 .signup .meta{margin:0}
-.answers h2{font-size:1.15em;margin:1.15em 0 6px}.answers p{margin:0 0 12px}"""
+.questions{width:100%;border-collapse:collapse;background:#fff}.questions th,.questions td{padding:12px;border:1px solid #dfe5e0;text-align:left;vertical-align:top;overflow-wrap:anywhere}.questions th{width:30%}dd{margin:0 0 12px}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #ad5700;outline-offset:3px}@media(max-width:600px){.questions,.questions tbody,.questions tr,.questions th,.questions td{display:block;width:100%}.questions thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.questions th{padding-bottom:4px;border-bottom:0}.questions td{padding-top:4px;border-top:0;margin-bottom:8px}} .answers h2{font-size:1.15em;margin:1.15em 0 6px}.answers p{margin:0 0 12px}"""
 open(f"{OUT}/style.css","w").write(CSS)
 GC='<meta name="google-site-verification" content="jAhRn0yYvjC37jRpBEzda-xllydn360g3kgkVonTDKA" /><script data-goatcounter="https://tossmap.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
 KIT_ACTION="https://app.kit.com/forms/10171028/subscriptions"
@@ -41,9 +42,12 @@ def mats(f):
     neg=re.findall(r"\((?:[^)]*?)(?:no|not)\s[^)]*\)|no [a-z ,]+",t)
     tt=re.sub(r"not accepted:[^.;]*","",t)
     for n in neg: tt=tt.replace(n,"")
+    if "questions" in f:
+        keys={"e-waste":"e_waste","motor-oil":"motor_oil","household-chemicals":"household_chemicals"}
+        return [m for m in MAT if f["questions"][keys.get(m[0],m[0])]["answer"]=="yes"]
     return [m for m in MAT if re.search(m[2],tt)]
 urls=[]
-def ldscript(o): return '<script type="application/ld+json">'+json.dumps(o,ensure_ascii=False)+"</script>"
+def ldscript(o): return '<script type="application/ld+json">'+json.dumps(o,ensure_ascii=False).replace("<", "\\u003c")+"</script>"
 def crumbs(items):
     vis='<p class="crumbs">'+" › ".join(f'<a href="{u}">{e(n)}</a>' for n,u in items)+"</p>"
     ld={"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":i+1,"name":n,"item":BASE+u} for i,(n,u) in enumerate(items)]}
@@ -62,6 +66,7 @@ def page(path,title,desc,body,graph=(),checked=None):
 states={}
 for m in D: states.setdefault((m["state"],m["st"]),[]).append(m)
 cpath=lambda m:f"/{slug(m['st'])}/{slug(m['city'])}/"
+fpath=lambda f,m:cpath(m)+f["slug"]+"/"
 
 MAT_SHORT={"e-waste":"electronics","household-chemicals":"household chemicals","motor-oil":"motor oil","paint":"paint","tires":"tires","batteries":"batteries"}
 ORG_ID=BASE+"/#organization"
@@ -376,11 +381,13 @@ def faq_block(qas):
 
 def facility_place(f, m):
     place={"@type":"Place","@id":f"{BASE}{cpath(m)}#{slug(f['name'])}","name":f["name"],
-           "address":parse_address(f["address"]),"description":"Accepts: "+f["accepts"],"url":f["source"]}
+           "address":parse_address(f["address"]),"description":"Accepts: "+f["accepts"],"url":BASE+fpath(f,m),"sameAs":f["source"]}
     props=[{"@type":"PropertyValue","name":"Accepted materials","value":f["accepts"]}]
     if f.get("checked"): props.append({"@type":"PropertyValue","name":"Last checked","value":f["checked"]})
     if (f.get("notes") or "").strip(): props.append({"@type":"PropertyValue","name":"Eligibility notes","value":f["notes"]})
     if f.get("fees"): props.append({"@type":"PropertyValue","name":"Fees","value":f["fees"]})
+    if f.get("operator") and f["operator"]!=UNKNOWN:
+        props.append({"@type":"PropertyValue","name":"Operator","value":f["operator"]})
     place["additionalProperty"]=props
     spec=opening_hours_spec(f["hours"])
     if spec: place["openingHoursSpecification"]=spec
@@ -429,6 +436,10 @@ def write_llms(matidx):
     lines += ["","## Cities"]
     for m in sorted(D, key=lambda x:x["city"]):
         lines.append(f"- [{m['city']}, {m['st']}]({BASE}{cpath(m)})")
+    lines += ["", "## Facilities"]
+    for m in sorted(D,key=lambda x:(x["city"],x["st"])):
+        for f in m["facilities"]:
+            lines.append(f"- [{f['name']} — {m['city']}, {m['st']}]({BASE}{fpath(f,m)})")
     lines += ["","## Optional",f"- [Privacy]({BASE}/privacy.html)",f"- [Newsletter]({BASE}/newsletter/): local drop-off updates",""]
     open(f"{OUT}/llms.txt","w").write("\n".join(lines))
 
@@ -443,11 +454,42 @@ def ldj(f, m):
             "organizer":{"@type":"Organization","name":"Official source","url":f["source"]}})
     return place
 
-def fac(f):
+def fac(f,m):
     tags=" ".join(f'<a href="/{s}/">{e(n)}</a>' for s,n,_ in mats(f))
-    return f"""<div class="card" id="{slug(f['name'])}"><h3>{e(f['name'])}</h3><div>{e(f['address'])}</div>
+    return f"""<div class="card" id="{slug(f['name'])}"><h3><a href="{fpath(f,m)}">{e(f['name'])}</a></h3><div>{e(f['address'])}</div>
 <p><b>Accepts:</b> {e(f['accepts'])}<br><b>Hours:</b> {e(f['hours'])}{'<br><b>Fees:</b> '+e(f['fees']) if f['fees'] else ''}{'<br><b>Notes:</b> '+e(f['notes']) if f['notes'] else ''}</p>
-{'<p class="tags">'+tags+'</p>' if tags else ''}<div class="meta">Source: <a href="{e(f['source'])}" rel="nofollow noopener">{e(f['source'])}</a> · Last checked {f['checked']}</div></div>"""
+{'<p class="note">'+e(f['source_notice'])+'</p>' if f.get('source_notice') else ''}{'<p class="tags">'+tags+'</p>' if tags else ''}<div class="meta">Source: <a href="{e(f['source'])}" rel="nofollow noopener">{e(f['source'])}</a> · Last checked {f['checked']}</div></div>"""
+def facility_page(f,m):
+    fp=fpath(f,m)
+    vis,bl=crumbs([("Home","/"),(m["state"],f"/{slug(m['st'])}/"),(m["city"],cpath(m)),(f["name"],fp)])
+    rows=[]; entities=[]
+    for key,label in QUESTIONS:
+        answer=f["questions"][key]
+        text=answer["answer"].capitalize()
+        if answer["evidence"]: text+=" — "+answer["evidence"]
+        rows.append(f'<tr><th scope="row">{e(label)}</th><td>{e(text)}</td></tr>')
+        entities.append({"@type":"Question","name":label,"acceptedAnswer":{"@type":"Answer","text":text}})
+    materials=" · ".join(f'<a href="/{ms}/">{e(n)}</a>' for ms,n,_ in mats(f))
+    others=[o for o in m["facilities"] if o is not f]
+    body=(vis+f'<h1>{e(f["name"])}</h1><p>Waste and recycling drop-off information for {e(m["city"])}, {e(m["st"])}. This is an independent source-backed listing, not the operator’s website.</p>'
+          +(f'<p class="note">{e(f["source_notice"])}</p>' if f.get("source_notice") else "")
+          +'<section class="card"><h2>Before you go</h2><dl>'
+          +''.join(f'<dt><strong>{e(label)}</strong></dt><dd>{e(value or UNKNOWN)}</dd>' for label,value in [
+              ("Operator",f["operator"]),("Full address",f["address"]),("Accepted materials",f["accepts"]),
+              ("Hours / collection schedule",f["hours"]),("Fees",f["fees"]),("Eligibility, ID and other notes",f["notes"])])
+          +f'</dl><p><a href="{e(f["source"])}" rel="noopener">Official source and current rules</a> · Last checked {e(f["checked"])}</p></section>'
+          +f'<h2>Common questions</h2><p class="meta">Question set reviewed {e(f.get("questions_reviewed",f["checked"]))}.</p><p>Yes and no apply only to the material types, users and conditions in the accompanying evidence. A fee answer of no means the listed service is free under those conditions; it does not waive eligibility rules. “Not stated by source” means no explicit answer is recorded in our source-backed listing, not that the source has no further information. Check the official source before driving.</p>'
+          +'<table class="questions"><caption>Facility requirements and material acceptance</caption><thead><tr><th scope="col">Question</th><th scope="col">Answer and source-backed detail</th></tr></thead><tbody>'+''.join(rows)+'</tbody></table>'
+          +(f'<h2>Browse accepted materials</h2><p>{materials}</p>' if materials else '')
+          +f'<p><a href="{cpath(m)}">All drop-off options in {e(m["city"])}</a></p>'
+          +('<h2>Other facilities in this city directory</h2><ul>'+''.join(f'<li><a href="{fpath(o,m)}">{e(o["name"])}</a> — {e(o["address"])}</li>' for o in others)+'</ul>' if others else '<p>No other facilities are currently listed in this city directory. Follow the city link above for local guidance.</p>')
+          +'<p class="note">Use the exact acceptance notes above: paint types, battery types, item limits and event dates matter. Do not mix chemicals or assume a material is accepted because a similar item is listed. Confirm availability with the operator.</p>')
+    place=facility_place(f,m)
+    webpage={"@type":"WebPage","@id":BASE+fp+"#page","url":BASE+fp,"name":f["name"],"mainEntity":{"@id":place["@id"]},"publisher":{"@id":ORG_ID},"citation":f["source"]}
+    page(fp,f'{f["name"]}: hours, materials & rules | TossMap',
+         f'{f["name"]} in {m["city"]}, {m["st"]}: address, accepted materials, hours, fees, eligibility and official source. Last checked {f["checked"]}.',
+         body,[bl,webpage,place,{"@type":"FAQPage","mainEntity":entities}],f["checked"])
+
 def plural(n,w): return f"{n} {w}{'' if n==1 else 's'}"
 matidx={s:[] for s,_,_ in MAT}
 for m in D:
@@ -466,7 +508,7 @@ for (sn,st),ms in sorted(states.items()):
         ans_html,faq=faq_block(city_qas(m, have))
         h1=f'Where to dump hazardous waste, paint & e-waste in {m["city"]}, {st}'
         body=(vis+f'<h1>Where to dump hazardous waste, paint &amp; e-waste in {e(m["city"])}, {st}</h1>'+note+ans_html
-              +"".join(fac(f) for f in fs)+("<p>No permanent drop-off site listed yet. See the note above for event-based or alternate official options, and check back after the next source review.</p>" if not fs else "")
+              +"".join(fac(f,m) for f in fs)+("<p>No permanent drop-off site listed yet. See the note above for event-based or alternate official options, and check back after the next source review.</p>" if not fs else "")
               +(f'<h2>By material</h2><p class="tags">'+" ".join(f'<a href="/{s}/">{e(n)} drop-off</a>' for s,n in have)+"</p>" if have else "")
               +f'<p class="meta">Run a local site? <a href="/embed/">Embed this list for free</a>.</p>'+(f'<h2>Other cities in {e(sn)}</h2><ul>'+"".join(f'<li><a href="{cpath(o)}">{e(o["city"])}</a></li>' for o in nearby)+"</ul>" if nearby else "")
               +signup_box())
@@ -495,10 +537,10 @@ for s,n,_ in MAT:
       +ans_html
       +"<ul class=grid>"+"".join(f'<li><a href="#{slug(m["city"])}-{slug(m["st"])}">{e(m["city"])}, {m["st"]}</a></li>' for m in ms)+"</ul>"
       +"".join(f'<h2 id="{slug(m["city"])}-{slug(m["st"])}">{e(low.capitalize())} drop-off in <a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></h2><ul>'
-               +"".join(f'<li><a href="{cpath(m)}#{slug(f["name"])}">{e(f["name"])}</a> — {e(f["address"])}<span class="meta"> · checked {f["checked"]}</span></li>' for f in fs)+"</ul>" for m,fs in hits)
+               +"".join(f'<li><a href="{fpath(f,m)}">{e(f["name"])}</a> — {e(f["address"])}<span class="meta"> · checked {f["checked"]}</span></li>' for f in fs)+"</ul>" for m,fs in hits)
       +"<p>Other materials: "+" · ".join(f'<a href="/{o}/">{e(on)}</a>' for o,on,_ in MAT if o!=s)+"</p>"
       +signup_box())
-    il={"@type":"ItemList","name":f"{n} drop-off sites by city","numberOfItems":nsites,"itemListElement":[{"@type":"ListItem","position":k+1,"name":f'{f["name"]} ({m["city"]}, {m["st"]})',"url":f'{BASE}{cpath(m)}#{slug(f["name"])}'} for k,(m,f) in enumerate((m,f) for m,fs in hits for f in fs)]}
+    il={"@type":"ItemList","name":f"{n} drop-off sites by city","numberOfItems":nsites,"itemListElement":[{"@type":"ListItem","position":k+1,"name":f'{f["name"]} ({m["city"]}, {m["st"]})',"url":f'{BASE}{fpath(f,m)}'} for k,(m,f) in enumerate((m,f) for m,fs in hits for f in fs)]}
     collection={"@type":"CollectionPage","@id":BASE+f"/{s}/#page","url":BASE+f"/{s}/","name":f"Where to drop off {low} near you","publisher":{"@id":ORG_ID}}
     graph=[bl,collection,il]+([faq] if faq else [])
     page(f"/{s}/",f"Where to recycle or dispose of {low}: {nsites} drop-off sites by city | TossMap",f"{plural(nsites,'official '+low+' drop-off location')} in {len(ms)} US metro areas, with addresses, hours, limits and source links.",body,graph,
@@ -568,6 +610,15 @@ nl_body=(nl_vis+"<h1>Get local drop-off updates, hazardous-waste days and new lo
  "<p>If the form does not work, you can also use the <a href=\""+KIT_HOSTED+"\">hosted sign-up page</a>.</p>"
  "<h2>Privacy</h2><p>This form does not set cookies or add any trackers beyond the GoatCounter analytics already used on TossMap. Your email is stored by Kit so we can send the newsletter. See our <a href=\"/privacy.html\">privacy policy</a>.</p>")
 page("/newsletter/","Get local drop-off updates | TossMap","Free TossMap newsletter: local drop-off updates, hazardous-waste days and new locations. About weekly, unsubscribe anytime. Confirmation email first; we do not sell your email.",nl_body,[nl_bl])
+
+# This is a queue, not an automatic indexing submission. Request in small daily batches.
+priority=["Richmond","Philadelphia","Dallas","San Antonio","Atlanta","Boston","Cleveland","Louisville","New York","Los Angeles","Houston","Phoenix","Chicago"]
+facility_queue=[]
+for m in sorted(D,key=lambda x:(priority.index(x["city"]) if x["city"] in priority else len(priority),-len(x["facilities"]),x["city"])):
+    for f in m["facilities"]:
+        facility_page(f,m)
+        facility_queue.append(BASE+fpath(f,m))
+open("data/facility-indexing-queue.txt","w").write("\n".join(facility_queue)+"\n")
 
 write_llms(matidx)
 open(f"{OUT}/robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")

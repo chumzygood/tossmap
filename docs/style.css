@@ -10,4 +10,4 @@ ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4
 .signup-form input[type=email]{flex:1 1 220px;font:inherit;padding:8px 10px;border:1px solid #c5d0ca;border-radius:6px}
 .signup-form button{font:inherit;padding:8px 14px;border:0;border-radius:6px;background:#1f4d3a;color:#fff;cursor:pointer}
 .signup .meta{margin:0}
-.answers h2{font-size:1.15em;margin:1.15em 0 6px}.answers p{margin:0 0 12px}
+.questions{width:100%;border-collapse:collapse;background:#fff}.questions th,.questions td{padding:12px;border:1px solid #dfe5e0;text-align:left;vertical-align:top;overflow-wrap:anywhere}.questions th{width:30%}dd{margin:0 0 12px}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #ad5700;outline-offset:3px}@media(max-width:600px){.questions,.questions tbody,.questions tr,.questions th,.questions td{display:block;width:100%}.questions thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.questions th{padding-bottom:4px;border-bottom:0}.questions td{padding-top:4px;border-top:0;margin-bottom:8px}} .answers h2{font-size:1.15em;margin:1.15em 0 6px}.answers p{margin:0 0 12px}

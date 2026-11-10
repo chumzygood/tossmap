@@ -122,5 +122,23 @@ for m in M:
     for f in m["facilities"]:
         if m["city"] in("Washington","Boston","Baltimore") and f["checked"]=="2026-11-09" and ("Event" in f["hours"] or "Collection days" in f["hours"]):
             f["checked"]=D10
+# Stable facility URLs and reviewed answers live in a separate source-backed seed file.
+# A changed listing invalidates old answers instead of silently carrying them forward.
+import hashlib, re
+from facility_questions import unknown_questions
+DETAILS=json.load(open("data/facility_details.json"))
+for m in M:
+    for f in m["facilities"]:
+        key=m["st"]+"|"+m["city"]+"|"+f["name"]
+        detail=DETAILS.get(key,{})
+        f["slug"]=detail.get("slug") or re.sub(r"[^a-z0-9]+","-",f["name"].lower()).strip("-")
+        fingerprint=hashlib.sha256(json.dumps({k:f[k] for k in ["accepts","fees","notes","hours"]},sort_keys=True).encode()).hexdigest()
+        fresh=(detail.get("listing_fingerprint")==fingerprint and detail.get("source")==f["source"] and detail.get("source_checked")==f["checked"])
+        f["questions"]=detail["questions"] if fresh else unknown_questions()
+        f["operator"]=detail.get("operator","not stated by source") if fresh else "not stated by source"
+        if fresh:
+            f.update(detail.get("source_fields",{}))
+            f["source_notice"]=detail.get("source_notice", "")
+            f["questions_reviewed"]=detail.get("questions_reviewed",f["checked"])
 json.dump(M,open("data/facilities.json","w"),indent=1,ensure_ascii=False)
 print(len(M),"metros",sum(len(m["facilities"]) for m in M),"facilities")
