@@ -9,9 +9,28 @@ CSS="""*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,sans-serif
 header,footer{background:#1f4d3a;color:#fff;padding:14px 20px}header a,footer a{color:#fff}main{max-width:900px;margin:0 auto;padding:20px}
 a{color:#1f6b4d}.card{background:#fff;border:1px solid #dfe5e0;border-radius:8px;padding:16px;margin:14px 0}
 .card h3{margin:0 0 6px}.meta{font-size:13px;color:#5b6b63}.crumbs{font-size:14px}
-ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4px solid #e0b030;padding:10px 14px}.tags a{display:inline-block;margin:0 8px 6px 0}"""
+ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4px solid #e0b030;padding:10px 14px}.tags a{display:inline-block;margin:0 8px 6px 0}
+.signup{background:#fff;border:1px solid #dfe5e0;border-radius:8px;padding:16px;margin:14px 0}
+.signup h2{margin:0 0 6px;font-size:1.15em}.signup p{margin:0 0 10px}
+.signup-form{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;margin:10px 0}
+.signup-form label{flex:1 1 100%;font-size:14px}
+.signup-form input[type=email]{flex:1 1 220px;font:inherit;padding:8px 10px;border:1px solid #c5d0ca;border-radius:6px}
+.signup-form button{font:inherit;padding:8px 14px;border:0;border-radius:6px;background:#1f4d3a;color:#fff;cursor:pointer}
+.signup .meta{margin:0}"""
 open(f"{OUT}/style.css","w").write(CSS)
 GC='<meta name="google-site-verification" content="jAhRn0yYvjC37jRpBEzda-xllydn360g3kgkVonTDKA" /><script data-goatcounter="https://tossmap.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
+KIT_ACTION="https://app.kit.com/forms/10171028/subscriptions"
+KIT_HOSTED="https://tossmap.kit.com/f14ed9078b"
+def signup_form():
+    return (f'<form class="signup-form" action="{KIT_ACTION}" method="post">'
+            '<label for="newsletter-email">Email address</label>'
+            '<input type="email" id="newsletter-email" name="email_address" required autocomplete="email" placeholder="you@example.com">'
+            '<button type="submit">Sign me up</button></form>')
+def signup_box():
+    return ('<div class="signup" id="newsletter"><h2>Get local drop-off updates</h2>'
+            '<p>Hazardous-waste days, new locations and a short weekly tip. Free, and you can unsubscribe anytime.</p>'
+            +signup_form()+
+            '<p class="meta">You will get a confirmation email first. We do not sell your email. <a href="/newsletter/">About the newsletter</a></p></div>')
 # Material pages: keyword patterns matched against each listing's "accepts" text
 MAT=[("paint","Paint","paint"),("e-waste","Electronics (e-waste)",r"e-waste|electronic|computer|tv|cell phone|monitor"),
      ("tires","Tires",r"\btires?\b"),("batteries","Batteries",r"batter"),("motor-oil","Motor oil",r"motor oil|automotive fluid|car fluid|used oil"),
@@ -37,8 +56,8 @@ def page(path,title,desc,body,graph=(),checked=None):
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{BASE}{path}">
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{BASE}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="TossMap">
 <link rel="stylesheet" href="/style.css">{ld}
-{GC}</head><body><header><a href="/"><strong>TossMap</strong></a> · where to toss hazardous waste, paint, e-waste &amp; tires</header><main>{body}</main>
-<footer>{foot} · <a href="/privacy.html">Privacy</a> · <a href="/embed/">Embed widget</a> · <a href="/for-cities/">For cities</a> · <a href="/partners/">Partners</a> · <a href="mailto:toolshed@mail.grokbot.com">Support</a></footer></body></html>""")
+{GC}</head><body><header><a href="/"><strong>TossMap</strong></a> · where to toss hazardous waste, paint, e-waste &amp; tires · <a href="/newsletter/">Newsletter</a></header><main>{body}</main>
+<footer>{foot} · <a href="/newsletter/">Newsletter</a> · <a href="/privacy.html">Privacy</a> · <a href="/embed/">Embed widget</a> · <a href="/for-cities/">For cities</a> · <a href="/partners/">Partners</a> · <a href="mailto:toolshed@mail.grokbot.com">Support</a></footer></body></html>""")
 states={}
 for m in D: states.setdefault((m["state"],m["st"]),[]).append(m)
 cpath=lambda m:f"/{slug(m['st'])}/{slug(m['city'])}/"
@@ -74,7 +93,8 @@ for (sn,st),ms in sorted(states.items()):
         body=(vis+f'<h1>Where to dump hazardous waste, paint &amp; e-waste in {e(m["city"])}, {st}</h1>'+note
               +"".join(fac(f) for f in fs)+("<p>No permanent drop-off site listed yet. See the note above for event-based or alternate official options, and check back after the next source review.</p>" if not fs else "")
               +(f'<h2>By material</h2><p class="tags">'+" ".join(f'<a href="/{s}/">{e(n)} drop-off</a>' for s,n in have)+"</p>" if have else "")
-              +f'<p class="meta">Run a local site? <a href="/embed/">Embed this list for free</a>.</p>'+(f'<h2>Other cities in {e(sn)}</h2><ul>'+"".join(f'<li><a href="{cpath(o)}">{e(o["city"])}</a></li>' for o in nearby)+"</ul>" if nearby else ""))
+              +f'<p class="meta">Run a local site? <a href="/embed/">Embed this list for free</a>.</p>'+(f'<h2>Other cities in {e(sn)}</h2><ul>'+"".join(f'<li><a href="{cpath(o)}">{e(o["city"])}</a></li>' for o in nearby)+"</ul>" if nearby else "")
+              +signup_box())
         short={"Electronics (e-waste)":"e-waste","Household chemicals":"chemicals"}
         tl=[short.get(n,n).lower() for _,n in have if n!="Household chemicals"][:3]
         title=f"Where to dump {', '.join(tl[:-1])+' & '+tl[-1] if len(tl)>1 else (tl[0] if tl else 'hazardous waste')} in {m['city']}, {st} | TossMap"
@@ -95,17 +115,18 @@ for s,n,_ in MAT:
       +"<ul class=grid>"+"".join(f'<li><a href="#{slug(m["city"])}-{slug(m["st"])}">{e(m["city"])}, {m["st"]}</a></li>' for m in ms)+"</ul>"
       +"".join(f'<h2 id="{slug(m["city"])}-{slug(m["st"])}">{e(low.capitalize())} drop-off in <a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></h2><ul>'
                +"".join(f'<li><a href="{cpath(m)}#{slug(f["name"])}">{e(f["name"])}</a> — {e(f["address"])}<span class="meta"> · checked {f["checked"]}</span></li>' for f in fs)+"</ul>" for m,fs in hits)
-      +"<p>Other materials: "+" · ".join(f'<a href="/{o}/">{e(on)}</a>' for o,on,_ in MAT if o!=s)+"</p>")
+      +"<p>Other materials: "+" · ".join(f'<a href="/{o}/">{e(on)}</a>' for o,on,_ in MAT if o!=s)+"</p>"
+      +signup_box())
     il={"@type":"ItemList","name":f"{n} drop-off sites by city","numberOfItems":nsites,"itemListElement":[{"@type":"ListItem","position":k+1,"name":f'{f["name"]} ({m["city"]}, {m["st"]})',"url":f'{BASE}{cpath(m)}#{slug(f["name"])}'} for k,(m,f) in enumerate((m,f) for m,fs in hits for f in fs)]}
     page(f"/{s}/",f"Where to recycle or dispose of {low}: {nsites} drop-off sites by city | TossMap",f"{plural(nsites,'official '+low+' drop-off location')} in {len(ms)} US metro areas, with addresses, hours, limits and source links.",body,[bl,il],
          max([f["checked"] for _,fs in hits for f in fs],default=None))
 n=sum(len(m["facilities"]) for m in D)
 home=(f"<h1>Where do I take paint, chemicals, batteries, electronics &amp; tires?</h1><p>{n} drop-off sites from official government and operator sources across {len(D)} US metros. Every listing links to its source and shows when we last checked it.</p>"
  "<h2>By material</h2><p class=tags>"+" ".join(f'<a href="/{s}/">{e(nm)}</a>' for s,nm,_ in MAT)+"</p>"
- "<h2>By city</h2><ul class=grid>"+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in sorted(D,key=lambda x:x["city"]))+"</ul><h2>By state</h2><ul class=grid>"+"".join(f'<li><a href="/{slug(st)}/">{e(sn)}</a></li>' for sn,st in sorted(states))+"</ul>")
+ "<h2>By city</h2><ul class=grid>"+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in sorted(D,key=lambda x:x["city"]))+"</ul><h2>By state</h2><ul class=grid>"+"".join(f'<li><a href="/{slug(st)}/">{e(sn)}</a></li>' for sn,st in sorted(states))+"</ul>"+signup_box())
 page("/","TossMap: where to dump paint, hazardous waste, e-waste & tires by city","Find official drop-off sites for paint, chemicals, batteries, electronics and tires in 50+ US metros—addresses, hours, fees and source links, checked regularly.",home,
      [{"@type":"WebSite","name":"TossMap","url":BASE+"/"},{"@type":"Organization","name":"TossMap","url":BASE+"/"}],max(f["checked"] for m in D for f in m["facilities"]))
-page("/privacy.html","Privacy | TossMap","TossMap privacy policy: no cookies, no personal data.","<h1>Privacy</h1><p>We collect no personal data and set no cookies. We use GoatCounter, a privacy-friendly analytics service that does not track individuals. If ads are added, ad partners may use cookies; this page will be updated before that happens.</p><p>Listings come from public government sources and may change; confirm with the source before visiting.</p>")
+page("/privacy.html","Privacy | TossMap","TossMap privacy policy: no cookies on our pages; newsletter sign-ups are handled by Kit and we do not sell your email.","<h1>Privacy</h1><p>TossMap sets no cookies. We use GoatCounter, a privacy-friendly analytics service that does not track individuals.</p><p>If you sign up for the <a href=\"/newsletter/\">TossMap newsletter</a>, your email is collected by Kit, our email provider, so we can send drop-off updates. We do not sell your email. Kit will send a confirmation email first, and you can unsubscribe anytime.</p><p>If ads are added, ad partners may use cookies; this page will be updated before that happens.</p><p>Listings come from public government sources and may change; confirm with the source before visiting.</p>")
 open(f"{OUT}/404.html","w").write(open(f"{OUT}/index.html").read().replace("<h1>","<h1>Page not found.</h1><h2>",1).replace("</h1><p>","</h2><p>",1).replace(f'<link rel="canonical" href="{BASE}/">','<meta name="robots" content="noindex">'))
 # EMBED: compact, noindex widget per city for other sites (free iframe snippet)
 EMB_CSS="body{margin:0;font:14px/1.45 system-ui,sans-serif;color:#1d2a24;background:#fff}.w{padding:12px}.w h2{font-size:16px;margin:0 0 8px}.f{border-top:1px solid #e3e8e4;padding:8px 0}.f b{display:block}.m{font-size:12px;color:#5b6b63}a{color:#1f6b4d}.by{font-size:12px;margin-top:8px}"
@@ -155,6 +176,15 @@ partner_body=(partner_vis+"<h1>TossMap partner placements</h1>"
  "<li>Tell us when acceptance rules change.</li></ul></div>"
  "<div class=card><h3>Next step</h3><p>Email <a href=\"mailto:"+SUPPORT+"\">"+SUPPORT+"</a> with your city, materials, website, and preferred package. We send a draft partner card for approval before it goes live.</p></div>")
 page("/partners/","TossMap partners | tire & e-waste placements","Labeled partner placements on TossMap for tire shops and e-waste recyclers. Official listings stay free.",partner_body,[partner_bl])
+
+nl_vis,nl_bl=crumbs([("Home","/"),("Newsletter","/newsletter/")])
+nl_body=(nl_vis+"<h1>Get local drop-off updates, hazardous-waste days and new locations</h1>"
+ "<p>The TossMap newsletter is free. About once a week we send new official listings, upcoming household hazardous-waste collection days, and one short disposal tip. You can unsubscribe anytime.</p>"
+ "<div class=\"signup\">"+signup_form()+
+ "<p class=\"meta\">When you sign up, Kit (our email provider) will send a confirmation email first. We will not add you until you confirm that address. We do not sell your email.</p></div>"
+ "<p>If the form does not work, you can also use the <a href=\""+KIT_HOSTED+"\">hosted sign-up page</a>.</p>"
+ "<h2>Privacy</h2><p>This form does not set cookies or add any trackers beyond the GoatCounter analytics already used on TossMap. Your email is stored by Kit so we can send the newsletter. See our <a href=\"/privacy.html\">privacy policy</a>.</p>")
+page("/newsletter/","Get local drop-off updates | TossMap","Free TossMap newsletter: local drop-off updates, hazardous-waste days and new locations. About weekly, unsubscribe anytime. Confirmation email first; we do not sell your email.",nl_body,[nl_bl])
 
 open(f"{OUT}/robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
 open(f"{OUT}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+"".join(f"<url><loc>{BASE}{u}</loc><lastmod>{d}</lastmod></url>" for u,d in urls)+"</urlset>\n")
