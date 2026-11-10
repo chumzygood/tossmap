@@ -84,5 +84,43 @@ metro("Cleveland","Ohio","OH",[F("Carr Center (Division of Waste)","5600 Carnegi
 metro("Richmond","Virginia","VA",[F("East Richmond Road Convenience Center","3800 East Richmond Road, Richmond, VA 23223","Mon–Fri 7am–3:30pm; Sat 8:30am–2pm; closed Sun & holidays","https://www.rva.gov/public-works/trash-collection",accepts="Paints (20 gal/month/household), solvents, thinners, stains, varnish, motor oil, antifreeze, car fluids, lead-acid car batteries, cooking oil, fuels; passenger tires without rims (limit 4; no off-road or oversized)",fees="Free",notes="Richmond residents with proof of residency (license, utility bill, or registration). No pesticides, herbicides, fire extinguishers, asbestos, explosives. 804-646-4706",checked="2026-11-09"),F("Richmond Southside Transfer Station","3520 North Hopkins Road, Richmond, VA","Mon–Fri 6:30am–4:30pm; Sat 8:30am–2pm; closed Sun & holidays","https://www.rva.gov/public-works/trash-collection",accepts="Passenger tires without rims (limit 4 free; $1 each beyond 4; tractor-trailer tires $5 each); large bulk items, appliances, brush/yard waste; glass, cardboard, aluminum cans, newspapers",fees="Tires: 4 free then $1 each (passenger); tractor-trailer $5 each",notes="City residents; no commercial/contractor debris. 804-232-8488",checked="2026-11-09")])
 metro("New Orleans","Louisiana","LA",[F("Recycling Drop-Off Center","2829 Elysian Fields Ave, New Orleans, LA","Saturdays 8am–1pm","https://nola.gov/recycling-drop-off/",accepts="E-waste (computers, laptops, phones, keyboards, monitors, printers, TVs limit 4, game consoles, cables, cameras); batteries (AA–D, 6V, 9V, lithium); light bulbs; tires (limit 5); glass (50 lbs); plastics #1–2; paper; cardboard; cans",fees="Free",notes="Orleans Parish residents only; businesses excluded. Household chemical HHW is annual Collection Day only (2026 was April 11).",checked="2026-11-09")])
 metro("Honolulu","Hawaii","HI",[F("Kapaʻa Transfer Station","100 Kapaʻa Quarry Road, Kailua, HI","Mon–Fri 10am–6pm; Sat–Sun 7am–6pm (closed Christmas and New Year's Day)","https://www.honolulu.gov/env/ref/waste-drop-off-locations/",accepts="Household trash, bulky items, large appliances, tires, lead-acid batteries, standalone lithium/lithium-ion/NiMH/NiCad batteries, propane and helium tanks, butane, MAPP, fire extinguishers, green waste",fees="",notes="Phone (808) 768-4248. Residential drop-off rules apply.",checked="2026-11-09"),F("Kawailoa Transfer Station","62-180 Kawailoa Road, Haleiwa, HI","Daily 7am–6pm (closed Christmas and New Year's Day)","https://www.honolulu.gov/env/ref/waste-drop-off-locations/",accepts="Household trash, bulky items, large metal appliances, tires, lead-acid batteries, standalone lithium/lithium-ion/NiMH/NiCad batteries, propane and helium tanks, butane, MAPP, fire extinguishers, green waste",fees="",notes="Phone (808) 637-5511. Residential drop-off rules apply.",checked="2026-11-09")],"Household chemical HHW is appointment-only at city drop-off events (200-appointment cap). The last 2026 event (Sat Nov 7) is closed at capacity; 2027 dates TBD. Call (808) 768-3201 or email hhw@honolulu.gov. Source: https://www.honolulu.gov/env/ref/hhw-2/")
+# --- Nov 10 2026 daily pass additions (each verified against cited official source on 2026-11-10) ---
+def add(city,*fs):
+    next(m for m in M if m["city"]==city)["facilities"].extend(fs)
+D10="2026-11-10"
+HEN="https://henrico.gov/services/public-use-areas-for-disposal/"
+henacc="Passenger/automotive tires (tire trailer; up to 4 included in trip fee, max 6 per trip); free drop-off of used motor oil, old gasoline, antifreeze and oil-based paints & solvents; lead-acid batteries; recycling; yard waste"
+henfee="$5 per trash/tire trip (includes up to 4 tires; $5 each beyond 4); HHW items (oil, gas, antifreeze, oil-based paint/solvents) free; recycling and yard waste free; $20 per refrigerant appliance"
+hennote="Henrico County residents only (driver's license with Henrico address); no rental-property, vacant-lot or business waste. Closed New Year's Day, Independence Day, Thanksgiving, Christmas Eve and Christmas Day. (804) 727-8770. HHW program: https://henrico.gov/utility/solid-waste/household-hazardous-waste-disposal/"
+add("Richmond",
+  F("Henrico Springfield Road Public Use Area (West End)","10600 Fords Country Lane, Glen Allen, VA 23059","Daily 7:30am–7pm (closed listed holidays)",HEN,henacc,henfee,hennote,D10),
+  F("Henrico Charles City Road Public Use Area (East End)","2075 Charles City Road, Henrico, VA 23231","Daily 7:30am–7pm (closed listed holidays)",HEN,henacc,henfee,hennote,D10))
+JP="https://www.jeffparish.gov/1337/Drop-Off-Sites"
+jpacc="Waste tires (5 per resident per day); motor oil (5 gal/day), oil filters (2/day), antifreeze (5 gal/day), gasoline (2 gal/day); lead-acid batteries; cooking oil (5 gal/day); e-waste: flat-screen TVs/monitors, computers, laptops, tablets, phones, printers, cable boxes, game consoles, networking gear, UPS units. Not accepted: CRT TVs/monitors, light bulbs, copiers, stereos, toner"
+jpnote="Free self-service site for Jefferson Parish residents (driver's license or water bill required); commercial users may not drop off tires, auto fluids, e-waste or batteries. Unload items yourself. (504) 731-4612"
+add("New Orleans",
+  F("Jefferson Parish Metairie Drop-Off Site","400 David Drive, Metairie, LA 70003","Tue–Sun 9am–5:30pm (closed observed holidays)",JP,jpacc,"Free for residents",jpnote,D10),
+  F("Jefferson Parish Marrero Drop-Off Site","6440 Lapalco Boulevard, Marrero, LA 70072","Tue–Sun 9am–5:30pm (closed observed holidays)",JP,jpacc,"Free for residents",jpnote,D10))
+add("Honolulu",
+  F("Keʻehi Transfer Station","606 Middle Street, Honolulu, HI","Mon–Fri 10am–6pm; Sat 7am–6pm; closed Sun, Christmas and New Year's Day","https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "Lead-acid batteries; standalone lithium, lithium-ion, NiMH and NiCad batteries; household trash, combustible bulky items, metal items. NOT accepted: tires, large metal appliances, propane/helium/butane/MAPP tanks, fire extinguishers","",
+    "Phone (808) 768-4884. For tires use Kapaʻa or Kawailoa Transfer Station.",D10))
+add("Cleveland",
+  F("Cuyahoga County Solid Waste District HQ (electronics drop-off bins)","4750 East 131 Street, Garfield Heights, OH 44105","Mon–Fri 8:30am–4:30pm; seasonal Special Saturdays (closed county holidays incl. Veterans Day, Thanksgiving, Christmas)","https://cuyahogarecycles.org/what_we_accept/",
+    "Computer equipment, printers and peripherals; cell phones, tablets and handheld electronics (recycled by RET3 Job Corp.). NOT accepted: TVs, appliances, bulbs, batteries, smoke detectors","",
+    "Open to Cuyahoga County residents; marked bins in the building vestibule; no bags or boxes; don't leave items outside after hours. (216) 443-3749",D10))
+add("Louisville",
+  F("Waste Reduction Center","636 Meriwether Avenue, Louisville, KY 40217 (entrance on Bland Street)","Tue–Fri 8am–12pm & 1–4:30pm; Sat 8am–3pm","https://louisvilleky.gov/government/public-works/waste-reduction-center",
+    "Passenger car tires (up to 4/day free for residents); electronics (up to 3 items/day free for residents; computers, monitors, TVs, printers, phones, game systems); up to 4 large household items/day; truck tires (fee)",
+    "Residents: 4 tires, 3 electronics and 4 large items per day free; business passenger tires $4 each; truck tires $10 ($25 on rims); extra electronics $0.60/lb by appointment; debit/credit only",
+    "Louisville/Jefferson County residents and businesses; holidays may change hours (closed Thanksgiving Day and day after). 502-574-2796",D10))
+for m in M:
+    if m["city"]=="Honolulu":
+        m["note"]="Household chemical HHW is appointment-only at city drop-off events (200-appointment cap). The final 2026 event was held Sat Nov 7; 2027 dates are TBD. Call (808) 768-3201 or email hhw@honolulu.gov. Source: https://www.honolulu.gov/env/ref/hhw-2/ (checked 2026-11-10)"
+    if m["city"]=="San Antonio":
+        m["note"]=m["note"].replace("(re-verified 2026-11-09)","(re-verified 2026-11-10). Later dates: Sat Feb 13, Apr 10 and Jul 10, 2027, 8am–1pm")
+    for f in m["facilities"]:
+        if m["city"] in("Washington","Boston","Baltimore") and f["checked"]=="2026-11-09" and ("Event" in f["hours"] or "Collection days" in f["hours"]):
+            f["checked"]=D10
 json.dump(M,open("data/facilities.json","w"),indent=1,ensure_ascii=False)
 print(len(M),"metros",sum(len(m["facilities"]) for m in M),"facilities")

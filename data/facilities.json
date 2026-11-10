@@ -322,7 +322,7 @@
     "checked": "2026-11-05"
    }
   ],
-  "note": "Next Free Landfill Day: Sat Nov 14, 2026, 8am–1pm at Republic Services Landfill (7000 IH 10 E) and Waste Management Landfill (8611 Covel Rd); tires limit 6 passenger car tires per household (re-verified 2026-11-09). Source: https://www.sa.gov/Directory/Departments/SWMD/Garbage/Landfill"
+  "note": "Next Free Landfill Day: Sat Nov 14, 2026, 8am–1pm at Republic Services Landfill (7000 IH 10 E) and Waste Management Landfill (8611 Covel Rd); tires limit 6 passenger car tires per household (re-verified 2026-11-10). Later dates: Sat Feb 13, Apr 10 and Jul 10, 2027, 8am–1pm. Source: https://www.sa.gov/Directory/Departments/SWMD/Garbage/Landfill"
  },
  {
   "city": "San Diego",
@@ -691,7 +691,7 @@
     "fees": "Free",
     "notes": "DC residents only; register in advance on Eventbrite; bring proof of residency and registration. Next listed event after this: Sat Dec 12, 2026, also at RFK Lot 8.",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    }
   ],
   "note": "No permanent HHW or e-cycling drop-off. Fort Totten takes up to 4 tires during regular hours. HHW and electronics are collected at registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding"
@@ -709,7 +709,7 @@
     "fees": "Free",
     "notes": "Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. Do not arrive before 8:30am; no entry after noon.",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    }
   ],
   "note": ""
@@ -885,7 +885,7 @@
     "fees": "Free",
     "notes": "Baltimore City residents only; materials in original labeled packaging; no commercial vehicles. 410-396-7250",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "checked": "2026-11-09"
+    "checked": "2026-11-10"
    }
   ],
   "note": ""
@@ -986,6 +986,16 @@
     "notes": "",
     "source": "https://louisvilleky.gov/government/public-works/services/hazardous-materials-disposal-haz-bin",
     "checked": "2026-11-02"
+   },
+   {
+    "name": "Waste Reduction Center",
+    "address": "636 Meriwether Avenue, Louisville, KY 40217 (entrance on Bland Street)",
+    "hours": "Tue–Fri 8am–12pm & 1–4:30pm; Sat 8am–3pm",
+    "accepts": "Passenger car tires (up to 4/day free for residents); electronics (up to 3 items/day free for residents; computers, monitors, TVs, printers, phones, game systems); up to 4 large household items/day; truck tires (fee)",
+    "fees": "Residents: 4 tires, 3 electronics and 4 large items per day free; business passenger tires $4 each; truck tires $10 ($25 on rims); extra electronics $0.60/lb by appointment; debit/credit only",
+    "notes": "Louisville/Jefferson County residents and businesses; holidays may change hours (closed Thanksgiving Day and day after). 502-574-2796",
+    "source": "https://louisvilleky.gov/government/public-works/waste-reduction-center",
+    "checked": "2026-11-10"
    }
   ],
   "note": ""
@@ -1412,6 +1422,16 @@
     "notes": "City of Cleveland residents only; proof of residency required for drop-off",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
     "checked": "2026-11-09"
+   },
+   {
+    "name": "Cuyahoga County Solid Waste District HQ (electronics drop-off bins)",
+    "address": "4750 East 131 Street, Garfield Heights, OH 44105",
+    "hours": "Mon–Fri 8:30am–4:30pm; seasonal Special Saturdays (closed county holidays incl. Veterans Day, Thanksgiving, Christmas)",
+    "accepts": "Computer equipment, printers and peripherals; cell phones, tablets and handheld electronics (recycled by RET3 Job Corp.). NOT accepted: TVs, appliances, bulbs, batteries, smoke detectors",
+    "fees": "",
+    "notes": "Open to Cuyahoga County residents; marked bins in the building vestibule; no bags or boxes; don't leave items outside after hours. (216) 443-3749",
+    "source": "https://cuyahogarecycles.org/what_we_accept/",
+    "checked": "2026-11-10"
    }
   ],
   "note": ""
@@ -1440,6 +1460,26 @@
     "notes": "City residents; no commercial/contractor debris. 804-232-8488",
     "source": "https://www.rva.gov/public-works/trash-collection",
     "checked": "2026-11-09"
+   },
+   {
+    "name": "Henrico Springfield Road Public Use Area (West End)",
+    "address": "10600 Fords Country Lane, Glen Allen, VA 23059",
+    "hours": "Daily 7:30am–7pm (closed listed holidays)",
+    "accepts": "Passenger/automotive tires (tire trailer; up to 4 included in trip fee, max 6 per trip); free drop-off of used motor oil, old gasoline, antifreeze and oil-based paints & solvents; lead-acid batteries; recycling; yard waste",
+    "fees": "$5 per trash/tire trip (includes up to 4 tires; $5 each beyond 4); HHW items (oil, gas, antifreeze, oil-based paint/solvents) free; recycling and yard waste free; $20 per refrigerant appliance",
+    "notes": "Henrico County residents only (driver's license with Henrico address); no rental-property, vacant-lot or business waste. Closed New Year's Day, Independence Day, Thanksgiving, Christmas Eve and Christmas Day. (804) 727-8770. HHW program: https://henrico.gov/utility/solid-waste/household-hazardous-waste-disposal/",
+    "source": "https://henrico.gov/services/public-use-areas-for-disposal/",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "Henrico Charles City Road Public Use Area (East End)",
+    "address": "2075 Charles City Road, Henrico, VA 23231",
+    "hours": "Daily 7:30am–7pm (closed listed holidays)",
+    "accepts": "Passenger/automotive tires (tire trailer; up to 4 included in trip fee, max 6 per trip); free drop-off of used motor oil, old gasoline, antifreeze and oil-based paints & solvents; lead-acid batteries; recycling; yard waste",
+    "fees": "$5 per trash/tire trip (includes up to 4 tires; $5 each beyond 4); HHW items (oil, gas, antifreeze, oil-based paint/solvents) free; recycling and yard waste free; $20 per refrigerant appliance",
+    "notes": "Henrico County residents only (driver's license with Henrico address); no rental-property, vacant-lot or business waste. Closed New Year's Day, Independence Day, Thanksgiving, Christmas Eve and Christmas Day. (804) 727-8770. HHW program: https://henrico.gov/utility/solid-waste/household-hazardous-waste-disposal/",
+    "source": "https://henrico.gov/services/public-use-areas-for-disposal/",
+    "checked": "2026-11-10"
    }
   ],
   "note": ""
@@ -1458,6 +1498,26 @@
     "notes": "Orleans Parish residents only; businesses excluded. Household chemical HHW is annual Collection Day only (2026 was April 11).",
     "source": "https://nola.gov/recycling-drop-off/",
     "checked": "2026-11-09"
+   },
+   {
+    "name": "Jefferson Parish Metairie Drop-Off Site",
+    "address": "400 David Drive, Metairie, LA 70003",
+    "hours": "Tue–Sun 9am–5:30pm (closed observed holidays)",
+    "accepts": "Waste tires (5 per resident per day); motor oil (5 gal/day), oil filters (2/day), antifreeze (5 gal/day), gasoline (2 gal/day); lead-acid batteries; cooking oil (5 gal/day); e-waste: flat-screen TVs/monitors, computers, laptops, tablets, phones, printers, cable boxes, game consoles, networking gear, UPS units. Not accepted: CRT TVs/monitors, light bulbs, copiers, stereos, toner",
+    "fees": "Free for residents",
+    "notes": "Free self-service site for Jefferson Parish residents (driver's license or water bill required); commercial users may not drop off tires, auto fluids, e-waste or batteries. Unload items yourself. (504) 731-4612",
+    "source": "https://www.jeffparish.gov/1337/Drop-Off-Sites",
+    "checked": "2026-11-10"
+   },
+   {
+    "name": "Jefferson Parish Marrero Drop-Off Site",
+    "address": "6440 Lapalco Boulevard, Marrero, LA 70072",
+    "hours": "Tue–Sun 9am–5:30pm (closed observed holidays)",
+    "accepts": "Waste tires (5 per resident per day); motor oil (5 gal/day), oil filters (2/day), antifreeze (5 gal/day), gasoline (2 gal/day); lead-acid batteries; cooking oil (5 gal/day); e-waste: flat-screen TVs/monitors, computers, laptops, tablets, phones, printers, cable boxes, game consoles, networking gear, UPS units. Not accepted: CRT TVs/monitors, light bulbs, copiers, stereos, toner",
+    "fees": "Free for residents",
+    "notes": "Free self-service site for Jefferson Parish residents (driver's license or water bill required); commercial users may not drop off tires, auto fluids, e-waste or batteries. Unload items yourself. (504) 731-4612",
+    "source": "https://www.jeffparish.gov/1337/Drop-Off-Sites",
+    "checked": "2026-11-10"
    }
   ],
   "note": ""
@@ -1486,8 +1546,18 @@
     "notes": "Phone (808) 637-5511. Residential drop-off rules apply.",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
     "checked": "2026-11-09"
+   },
+   {
+    "name": "Keʻehi Transfer Station",
+    "address": "606 Middle Street, Honolulu, HI",
+    "hours": "Mon–Fri 10am–6pm; Sat 7am–6pm; closed Sun, Christmas and New Year's Day",
+    "accepts": "Lead-acid batteries; standalone lithium, lithium-ion, NiMH and NiCad batteries; household trash, combustible bulky items, metal items. NOT accepted: tires, large metal appliances, propane/helium/butane/MAPP tanks, fire extinguishers",
+    "fees": "",
+    "notes": "Phone (808) 768-4884. For tires use Kapaʻa or Kawailoa Transfer Station.",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "checked": "2026-11-10"
    }
   ],
-  "note": "Household chemical HHW is appointment-only at city drop-off events (200-appointment cap). The last 2026 event (Sat Nov 7) is closed at capacity; 2027 dates TBD. Call (808) 768-3201 or email hhw@honolulu.gov. Source: https://www.honolulu.gov/env/ref/hhw-2/"
+  "note": "Household chemical HHW is appointment-only at city drop-off events (200-appointment cap). The final 2026 event was held Sat Nov 7; 2027 dates are TBD. Call (808) 768-3201 or email hhw@honolulu.gov. Source: https://www.honolulu.gov/env/ref/hhw-2/ (checked 2026-11-10)"
  }
 ]

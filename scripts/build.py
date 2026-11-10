@@ -19,7 +19,7 @@ MAT=[("paint","Paint","paint"),("e-waste","Electronics (e-waste)",r"e-waste|elec
 def mats(f):
     t=f["accepts"].lower()
     neg=re.findall(r"\((?:[^)]*?)(?:no|not)\s[^)]*\)|no [a-z ,]+",t)
-    tt=t
+    tt=re.sub(r"not accepted:[^.;]*","",t)
     for n in neg: tt=tt.replace(n,"")
     return [m for m in MAT if re.search(m[2],tt)]
 urls=[]
@@ -44,7 +44,7 @@ for m in D: states.setdefault((m["state"],m["st"]),[]).append(m)
 cpath=lambda m:f"/{slug(m['st'])}/{slug(m['city'])}/"
 def fac(f):
     tags=" ".join(f'<a href="/{s}/">{e(n)}</a>' for s,n,_ in mats(f))
-    return f"""<div class="card"><h3>{e(f['name'])}</h3><div>{e(f['address'])}</div>
+    return f"""<div class="card" id="{slug(f['name'])}"><h3>{e(f['name'])}</h3><div>{e(f['address'])}</div>
 <p><b>Accepts:</b> {e(f['accepts'])}<br><b>Hours:</b> {e(f['hours'])}{'<br><b>Fees:</b> '+e(f['fees']) if f['fees'] else ''}{'<br><b>Notes:</b> '+e(f['notes']) if f['notes'] else ''}</p>
 {'<p class="tags">'+tags+'</p>' if tags else ''}<div class="meta">Source: <a href="{e(f['source'])}" rel="nofollow noopener">{e(f['source'])}</a> · Last checked {f['checked']}</div></div>"""
 def ldj(f):
@@ -84,18 +84,27 @@ for (sn,st),ms in sorted(states.items()):
         page(cp,title,desc,body,[bl]+[ldj(f) for f in fs],chk)
     vis,bl=crumbs([("Home","/"),(sn,sp)])
     page(sp,f"Hazardous waste, paint & e-waste drop-off in {sn} | TossMap",f"Official household hazardous waste, paint, e-waste and tire drop-off sites in {sn}, by city.",
-         vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1><ul>'+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}</a> ({plural(len(m["facilities"]),"site")})</li>' for m in ms)+"</ul>",[bl])
+         vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1><ul>'+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}</a> ({plural(len(m["facilities"]),"site")})</li>' for m in ms)+"</ul>",[bl],
+         max([f["checked"] for m in ms for f in m["facilities"]],default=None))
 for s,n,_ in MAT:
     ms=sorted(matidx[s],key=lambda x:x["city"]); low=n.split(" (")[0].lower()
     vis,bl=crumbs([("Home","/"),(n,f"/{s}/")])
-    body=vis+f"<h1>Where to drop off {e(low)} near you</h1><p>These {plural(len(ms),'metro area')} have at least one official drop-off site that lists {e(low)} as accepted. Rules, limits and residency requirements vary, so check each listing's source link.</p><ul class=grid>"+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in ms)+"</ul><p>Other materials: "+" · ".join(f'<a href="/{o}/">{e(on)}</a>' for o,on,_ in MAT if o!=s)+"</p>"
-    page(f"/{s}/",f"Where to recycle or dispose of {low}: drop-off sites by city | TossMap",f"Official {low} drop-off locations in {len(ms)} US metro areas, with hours, limits and source links.",body,[bl])
+    hits=[(m,[f for f in m["facilities"] if any(x[0]==s for x in mats(f))]) for m in ms]
+    nsites=sum(len(fs) for _,fs in hits)
+    body=(vis+f"<h1>Where to drop off {e(low)} near you</h1><p>{plural(nsites,'official drop-off site')} in {plural(len(ms),'metro area')} list {e(low)} as accepted. Rules, limits and residency requirements vary, so check each listing's source link before you go.</p>"
+      +"<ul class=grid>"+"".join(f'<li><a href="#{slug(m["city"])}-{slug(m["st"])}">{e(m["city"])}, {m["st"]}</a></li>' for m in ms)+"</ul>"
+      +"".join(f'<h2 id="{slug(m["city"])}-{slug(m["st"])}">{e(low.capitalize())} drop-off in <a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></h2><ul>'
+               +"".join(f'<li><a href="{cpath(m)}#{slug(f["name"])}">{e(f["name"])}</a> — {e(f["address"])}<span class="meta"> · checked {f["checked"]}</span></li>' for f in fs)+"</ul>" for m,fs in hits)
+      +"<p>Other materials: "+" · ".join(f'<a href="/{o}/">{e(on)}</a>' for o,on,_ in MAT if o!=s)+"</p>")
+    il={"@type":"ItemList","name":f"{n} drop-off sites by city","numberOfItems":nsites,"itemListElement":[{"@type":"ListItem","position":k+1,"name":f'{f["name"]} ({m["city"]}, {m["st"]})',"url":f'{BASE}{cpath(m)}#{slug(f["name"])}'} for k,(m,f) in enumerate((m,f) for m,fs in hits for f in fs)]}
+    page(f"/{s}/",f"Where to recycle or dispose of {low}: {nsites} drop-off sites by city | TossMap",f"{plural(nsites,'official '+low+' drop-off location')} in {len(ms)} US metro areas, with addresses, hours, limits and source links.",body,[bl,il],
+         max([f["checked"] for _,fs in hits for f in fs],default=None))
 n=sum(len(m["facilities"]) for m in D)
 home=(f"<h1>Where do I take paint, chemicals, batteries, electronics &amp; tires?</h1><p>{n} drop-off sites from official government and operator sources across {len(D)} US metros. Every listing links to its source and shows when we last checked it.</p>"
  "<h2>By material</h2><p class=tags>"+" ".join(f'<a href="/{s}/">{e(nm)}</a>' for s,nm,_ in MAT)+"</p>"
  "<h2>By city</h2><ul class=grid>"+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in sorted(D,key=lambda x:x["city"]))+"</ul><h2>By state</h2><ul class=grid>"+"".join(f'<li><a href="/{slug(st)}/">{e(sn)}</a></li>' for sn,st in sorted(states))+"</ul>")
 page("/","TossMap: where to dump paint, hazardous waste, e-waste & tires by city","Find official drop-off sites for paint, chemicals, batteries, electronics and tires in 50+ US metros—addresses, hours, fees and source links, checked regularly.",home,
-     [{"@type":"WebSite","name":"TossMap","url":BASE+"/"},{"@type":"Organization","name":"TossMap","url":BASE+"/"}])
+     [{"@type":"WebSite","name":"TossMap","url":BASE+"/"},{"@type":"Organization","name":"TossMap","url":BASE+"/"}],max(f["checked"] for m in D for f in m["facilities"]))
 page("/privacy.html","Privacy | TossMap","TossMap privacy policy: no cookies, no personal data.","<h1>Privacy</h1><p>We collect no personal data and set no cookies. We use GoatCounter, a privacy-friendly analytics service that does not track individuals. If ads are added, ad partners may use cookies; this page will be updated before that happens.</p><p>Listings come from public government sources and may change; confirm with the source before visiting.</p>")
 open(f"{OUT}/404.html","w").write(open(f"{OUT}/index.html").read().replace("<h1>","<h1>Page not found.</h1><h2>",1).replace("</h1><p>","</h2><p>",1).replace(f'<link rel="canonical" href="{BASE}/">','<meta name="robots" content="noindex">'))
 # EMBED: compact, noindex widget per city for other sites (free iframe snippet)
