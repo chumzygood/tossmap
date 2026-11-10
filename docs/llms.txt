@@ -1,0 +1,74 @@
+# TossMap
+
+> TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
+
+Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 113 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+
+## Find a drop-off
+- [Cities and materials](https://tossmap.com/): directory index
+- [Paint](https://tossmap.com/paint/): 88 official listings in 48 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 32 official listings in 15 metro areas
+- [Tires](https://tossmap.com/tires/): 36 official listings in 14 metro areas
+- [Batteries](https://tossmap.com/batteries/): 93 official listings in 49 metro areas
+- [Motor oil](https://tossmap.com/motor-oil/): 93 official listings in 46 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 84 official listings in 48 metro areas
+
+## Cities
+- [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
+- [Atlanta, GA](https://tossmap.com/ga/atlanta/)
+- [Austin, TX](https://tossmap.com/tx/austin/)
+- [Baltimore, MD](https://tossmap.com/md/baltimore/)
+- [Boston, MA](https://tossmap.com/ma/boston/)
+- [Charlotte, NC](https://tossmap.com/nc/charlotte/)
+- [Chicago, IL](https://tossmap.com/il/chicago/)
+- [Cincinnati, OH](https://tossmap.com/oh/cincinnati/)
+- [Cleveland, OH](https://tossmap.com/oh/cleveland/)
+- [Columbus, OH](https://tossmap.com/oh/columbus/)
+- [Dallas, TX](https://tossmap.com/tx/dallas/)
+- [Denver, CO](https://tossmap.com/co/denver/)
+- [Detroit, MI](https://tossmap.com/mi/detroit/)
+- [El Paso, TX](https://tossmap.com/tx/el-paso/)
+- [Fort Worth, TX](https://tossmap.com/tx/fort-worth/)
+- [Fresno, CA](https://tossmap.com/ca/fresno/)
+- [Honolulu, HI](https://tossmap.com/hi/honolulu/)
+- [Houston, TX](https://tossmap.com/tx/houston/)
+- [Indianapolis, IN](https://tossmap.com/in/indianapolis/)
+- [Jacksonville, FL](https://tossmap.com/fl/jacksonville/)
+- [Kansas City, MO](https://tossmap.com/mo/kansas-city/)
+- [Las Vegas, NV](https://tossmap.com/nv/las-vegas/)
+- [Los Angeles, CA](https://tossmap.com/ca/los-angeles/)
+- [Louisville, KY](https://tossmap.com/ky/louisville/)
+- [Memphis, TN](https://tossmap.com/tn/memphis/)
+- [Miami, FL](https://tossmap.com/fl/miami/)
+- [Milwaukee, WI](https://tossmap.com/wi/milwaukee/)
+- [Minneapolis, MN](https://tossmap.com/mn/minneapolis/)
+- [Nashville, TN](https://tossmap.com/tn/nashville/)
+- [New Orleans, LA](https://tossmap.com/la/new-orleans/)
+- [New York, NY](https://tossmap.com/ny/new-york/)
+- [Oklahoma City, OK](https://tossmap.com/ok/oklahoma-city/)
+- [Omaha, NE](https://tossmap.com/ne/omaha/)
+- [Orlando, FL](https://tossmap.com/fl/orlando/)
+- [Philadelphia, PA](https://tossmap.com/pa/philadelphia/)
+- [Phoenix, AZ](https://tossmap.com/az/phoenix/)
+- [Pittsburgh, PA](https://tossmap.com/pa/pittsburgh/)
+- [Portland, OR](https://tossmap.com/or/portland/)
+- [Raleigh, NC](https://tossmap.com/nc/raleigh/)
+- [Richmond, VA](https://tossmap.com/va/richmond/)
+- [Riverside, CA](https://tossmap.com/ca/riverside/)
+- [Sacramento, CA](https://tossmap.com/ca/sacramento/)
+- [Salt Lake City, UT](https://tossmap.com/ut/salt-lake-city/)
+- [San Antonio, TX](https://tossmap.com/tx/san-antonio/)
+- [San Diego, CA](https://tossmap.com/ca/san-diego/)
+- [San Francisco, CA](https://tossmap.com/ca/san-francisco/)
+- [San Jose, CA](https://tossmap.com/ca/san-jose/)
+- [Seattle, WA](https://tossmap.com/wa/seattle/)
+- [St. Louis, MO](https://tossmap.com/mo/st-louis/)
+- [Tampa, FL](https://tossmap.com/fl/tampa/)
+- [Tucson, AZ](https://tossmap.com/az/tucson/)
+- [Tulsa, OK](https://tossmap.com/ok/tulsa/)
+- [Virginia Beach, VA](https://tossmap.com/va/virginia-beach/)
+- [Washington, DC](https://tossmap.com/dc/washington/)
+
+## Optional
+- [Privacy](https://tossmap.com/privacy.html)
+- [Newsletter](https://tossmap.com/newsletter/): local drop-off updates
