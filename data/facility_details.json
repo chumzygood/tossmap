@@ -1314,7 +1314,7 @@
     "slug": "bulky-waste-collection-center-bitters",
     "operator": "not stated by source",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
-    "source_checked": "2026-11-05",
+    "source_checked": "2026-11-11",
     "listing_fingerprint": "8beea91151e9876b4fcd89e01d2ad61dc7a19673df525deefe1ff5597761a86e",
     "questions": {
       "residents_only": {
@@ -1354,24 +1354,25 @@
         "evidence": ""
       },
       "household_chemicals": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "San Antonio Bulky Waste Collection Centers page, Unaccepted Materials: “Hazardous material”."
       },
       "quantity_limits": {
         "answer": "yes",
         "evidence": "Car tires (6 or fewer, no rims), large appliances, furniture, mattresses, carpeting, auto parts, water heaters & AC units, construction material (1 cu yd or less); Free with City environmental fee; Residential customers only; bring a recent CPS Energy bill + photo ID; no household trash or hazardous material"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "San Antonio Bulky Waste Collection Centers page: “Bulky waste collection centers are for our residential customers only.” “Materials from commercial waste haulers are not accepted.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-11"
   },
   "TX|San Antonio|Bulky Waste Collection Center – Frio City Road": {
     "slug": "bulky-waste-collection-center-frio-city-road",
     "operator": "not stated by source",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
-    "source_checked": "2026-11-05",
+    "source_checked": "2026-11-11",
     "listing_fingerprint": "8beea91151e9876b4fcd89e01d2ad61dc7a19673df525deefe1ff5597761a86e",
     "questions": {
       "residents_only": {
@@ -1411,24 +1412,25 @@
         "evidence": ""
       },
       "household_chemicals": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "San Antonio Bulky Waste Collection Centers page, Unaccepted Materials: “Hazardous material”."
       },
       "quantity_limits": {
         "answer": "yes",
         "evidence": "Car tires (6 or fewer, no rims), large appliances, furniture, mattresses, carpeting, auto parts, water heaters & AC units, construction material (1 cu yd or less); Free with City environmental fee; Residential customers only; bring a recent CPS Energy bill + photo ID; no household trash or hazardous material"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "San Antonio Bulky Waste Collection Centers page: “Bulky waste collection centers are for our residential customers only.” “Materials from commercial waste haulers are not accepted.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-11"
   },
   "TX|San Antonio|Bulky Waste Collection Center – Culebra": {
     "slug": "bulky-waste-collection-center-culebra",
     "operator": "not stated by source",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
-    "source_checked": "2026-11-05",
+    "source_checked": "2026-11-11",
     "listing_fingerprint": "8beea91151e9876b4fcd89e01d2ad61dc7a19673df525deefe1ff5597761a86e",
     "questions": {
       "residents_only": {
@@ -1468,24 +1470,25 @@
         "evidence": ""
       },
       "household_chemicals": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "San Antonio Bulky Waste Collection Centers page, Unaccepted Materials: “Hazardous material”."
       },
       "quantity_limits": {
         "answer": "yes",
         "evidence": "Car tires (6 or fewer, no rims), large appliances, furniture, mattresses, carpeting, auto parts, water heaters & AC units, construction material (1 cu yd or less); Free with City environmental fee; Residential customers only; bring a recent CPS Energy bill + photo ID; no household trash or hazardous material"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "San Antonio Bulky Waste Collection Centers page: “Bulky waste collection centers are for our residential customers only.” “Materials from commercial waste haulers are not accepted.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-11"
   },
   "TX|San Antonio|Bulky Waste Collection Center – Rigsby Road": {
     "slug": "bulky-waste-collection-center-rigsby-road",
     "operator": "not stated by source",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
-    "source_checked": "2026-11-05",
+    "source_checked": "2026-11-11",
     "listing_fingerprint": "8beea91151e9876b4fcd89e01d2ad61dc7a19673df525deefe1ff5597761a86e",
     "questions": {
       "residents_only": {
@@ -1525,18 +1528,19 @@
         "evidence": ""
       },
       "household_chemicals": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "San Antonio Bulky Waste Collection Centers page, Unaccepted Materials: “Hazardous material”."
       },
       "quantity_limits": {
         "answer": "yes",
         "evidence": "Car tires (6 or fewer, no rims), large appliances, furniture, mattresses, carpeting, auto parts, water heaters & AC units, construction material (1 cu yd or less); Free with City environmental fee; Residential customers only; bring a recent CPS Energy bill + photo ID; no household trash or hazardous material"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "San Antonio Bulky Waste Collection Centers page: “Bulky waste collection centers are for our residential customers only.” “Materials from commercial waste haulers are not accepted.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-11"
   },
   "CA|San Diego|HHW Transfer Facility (Miramar Landfill)": {
     "slug": "hhw-transfer-facility-miramar-landfill",
@@ -2979,7 +2983,7 @@
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "operator": "not stated by source",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "source_checked": "2026-11-10",
+    "source_checked": "2026-11-11",
     "listing_fingerprint": "1eef173e050db0ac049c93a628146ea9afb74741637535a51b32a6edf76a197c",
     "questions": {
       "residents_only": {
@@ -2991,8 +2995,8 @@
         "evidence": "DC residents only; register in advance on Eventbrite; bring proof of residency and registration. Next listed event after this: Sat Dec 12, 2026, also at RFK Lot 8."
       },
       "appointment_required": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "DC DPW page: “DPW now requires registration for the Special Waste Collection Events. District residents can sign up for one 30-minute arrival period per event.”"
       },
       "fee_charged": {
         "answer": "no",
@@ -3027,16 +3031,17 @@
         "evidence": "HHW (paints, chemicals, batteries, CFLs, motor oil, auto fluids, propane ≤20 lb); e-waste (computers, TVs, phones, printers, monitors); document shredding (up to 5 boxes); Free; DC residents only; register in advance on Eventbrite; bring proof of residency and registration. Next listed event after this: Sat Dec 12, 2026, also at RFK Lot 8."
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "DC DPW page: “No commercial waste will be allowed.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-11"
   },
   "MA|Boston|Zero Waste Day Drop-Off – Millennium Park": {
     "slug": "zero-waste-day-drop-off-millennium-park",
     "operator": "not stated by source",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "source_checked": "2026-11-10",
+    "source_checked": "2026-11-11",
     "listing_fingerprint": "25db1143915ef4a9ac14857da9db0662ca46ff7122b422578f7a458373b26ad0",
     "questions": {
       "residents_only": {
@@ -3088,7 +3093,7 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-10"
+    "questions_reviewed": "2026-11-11"
   },
   "NV|Las Vegas|Republic Services HHW – North Las Vegas": {
     "slug": "republic-services-hhw-north-las-vegas",
@@ -3721,7 +3726,7 @@
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "operator": "not stated by source",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "source_checked": "2026-11-10",
+    "source_checked": "2026-11-11",
     "listing_fingerprint": "318c7d7e979e297128ceb0a17516118269fdaa7fcbac89846caa312d1448952b",
     "questions": {
       "residents_only": {
@@ -3773,7 +3778,7 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-10"
+    "questions_reviewed": "2026-11-11"
   },
   "CA|Sacramento|North Area Recovery Station HHW Drop-Off": {
     "slug": "north-area-recovery-station-hhw-drop-off",
@@ -5741,7 +5746,7 @@
     "slug": "carr-center-division-of-waste",
     "operator": "not stated by source",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "source_checked": "2026-11-09",
+    "source_checked": "2026-11-11",
     "listing_fingerprint": "4ad530d9788cd4468e8e8f28795e0091f72248f4a84bdbdf24a8f26c2820a956",
     "questions": {
       "residents_only": {
@@ -5792,13 +5797,14 @@
         "answer": "not stated by source",
         "evidence": ""
       }
-    }
+    },
+    "questions_reviewed": "2026-11-11"
   },
   "OH|Cleveland|Ridge Road Transfer Station": {
     "slug": "ridge-road-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "source_checked": "2026-11-09",
+    "source_checked": "2026-11-11",
     "listing_fingerprint": "8faa0e6a7049ca9f7444519102fe20c5f240cf2b0cd08cad06684154e484b398",
     "questions": {
       "residents_only": {
@@ -5849,7 +5855,8 @@
         "answer": "not stated by source",
         "evidence": ""
       }
-    }
+    },
+    "questions_reviewed": "2026-11-11"
   },
   "OH|Cleveland|Cuyahoga County Solid Waste District HQ (electronics drop-off bins)": {
     "slug": "cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins",
@@ -6311,12 +6318,12 @@
     "slug": "kapa-a-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "source_checked": "2026-11-09",
+    "source_checked": "2026-11-11",
     "listing_fingerprint": "3596a0388259965974f6e84108aba20253dd8cbfb65f21626982c2310e16f1f2",
     "questions": {
       "residents_only": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
       },
       "id_required": {
         "answer": "not stated by source",
@@ -6355,25 +6362,26 @@
         "evidence": ""
       },
       "quantity_limits": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.”"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-11"
   },
   "HI|Honolulu|Kawailoa Transfer Station": {
     "slug": "kawailoa-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "source_checked": "2026-11-09",
+    "source_checked": "2026-11-11",
     "listing_fingerprint": "01cd0100b127e5ad079b0a4159fb8e5f44afb5cb85a1ab7e982d0b2a2f157c75",
     "questions": {
       "residents_only": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
       },
       "id_required": {
         "answer": "not stated by source",
@@ -6412,25 +6420,26 @@
         "evidence": ""
       },
       "quantity_limits": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.”"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-11"
   },
   "HI|Honolulu|Keʻehi Transfer Station": {
     "slug": "ke-ehi-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "source_checked": "2026-11-10",
+    "source_checked": "2026-11-11",
     "listing_fingerprint": "12881a69c9776b163e1b14bf57095ec30b273b7a7edfa501a698313ad0a0897e",
     "questions": {
       "residents_only": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
       },
       "id_required": {
         "answer": "not stated by source",
@@ -6473,9 +6482,474 @@
         "evidence": ""
       },
       "businesses_accepted": {
+        "answer": "yes",
+        "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
+      }
+    },
+    "questions_reviewed": "2026-11-11"
+  },
+  "TX|Dallas|McCommas Bluff Landfill": {
+    "slug": "mccommas-bluff-landfill",
+    "operator": "City of Dallas Sanitation Services",
+    "source": "https://dallascityhall.com/departments/sanitation/pages/mccommas_bluff.aspx",
+    "source_checked": "2026-11-11",
+    "listing_fingerprint": "dfc901b62f6c5181dcfc3234765a0b44554c5a1fd1a38d6386d3807ac7910704",
+    "questions": {
+      "residents_only": {
+        "answer": "no",
+        "evidence": "McCommas Bluff page: “McCommas Bluff Landfill is open to commercial and residential customers.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "For free resident disposal: “A current, valid Texas driver’s license showing a Dallas address or a current Dallas water utilities bill is required as proof of residency.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Residents: Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste; commercial customers pay posted rates; uncovered loads $40"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); household waste, furniture, appliances (refrigerants removed), grass clippings/brush"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); household waste, furniture, appliances (refrigerants removed), grass clippings/brush"
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); household waste, furniture, appliances (refrigerants removed), grass clippings/brush; Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste; commercial customers pay posted rates; uncovered loads $40; Open to commercial and residential customers. Residents: current, valid Texas driver's license showing a Dallas address or a current Dallas water utilities bill. (214) 670-0977"
+      },
+      "businesses_accepted": {
+        "answer": "yes",
+        "evidence": "McCommas Bluff page: “McCommas Bluff Landfill is open to commercial and residential customers.”"
+      }
+    },
+    "questions_reviewed": "2026-11-11"
+  },
+  "TX|Dallas|Northwest (Bachman) Transfer Station": {
+    "slug": "northwest-bachman-transfer-station",
+    "operator": "City of Dallas Sanitation Services",
+    "source": "https://dallascityhall.com/departments/sanitation/Pages/northwest_bachman.aspx",
+    "source_checked": "2026-11-11",
+    "listing_fingerprint": "7db66eab5942702a8e7d449eb4619697bd0f04081db5c3d37c33d0c6b9977061",
+    "questions": {
+      "residents_only": {
+        "answer": "no",
+        "evidence": "Bachman page: “Open only to small commercial customers and Dallas residents.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Open only to Dallas residents and small commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). (214) 670-6161"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, grass clippings. NOT accepted: chemicals, paint and other hazardous waste; refrigerators, freezers, AC units"
+      },
+      "paint": {
+        "answer": "no",
+        "evidence": "Bachman page, Materials Not Accepted: “Chemicals, paint, and other hazardous waste”."
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, grass clippings. NOT accepted: chemicals, paint and other hazardous waste; refrigerators, freezers, AC units"
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "no",
+        "evidence": "Bachman page, Materials Not Accepted: “Chemicals, paint, and other hazardous waste”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, grass clippings. NOT accepted: chemicals, paint and other hazardous waste; refrigerators, freezers, AC units; Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste; Open only to Dallas residents and small commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). (214) 670-6161"
+      },
+      "businesses_accepted": {
+        "answer": "yes",
+        "evidence": "Bachman page: “Open only to small commercial customers and Dallas residents.”"
+      }
+    },
+    "questions_reviewed": "2026-11-11"
+  },
+  "TX|Dallas|Northeast (Fair Oaks) Transfer Station": {
+    "slug": "northeast-fair-oaks-transfer-station",
+    "operator": "City of Dallas Sanitation Services",
+    "source": "https://dallascityhall.com/departments/sanitation/Pages/Landfill-and-Transfer-Stations.aspx",
+    "source_checked": "2026-11-11",
+    "listing_fingerprint": "59956a9112c2de885138c84490b0fd281105984948359b73d45f62e7d9ae1c06",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-6126"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-6126"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, furniture, grass clippings/brush"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, furniture, grass clippings/brush"
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, furniture, grass clippings/brush; Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste; Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-6126"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Dallas Landfill and Transfer Stations page: “Open to Dallas residents only. NO commercial customers.”"
+      }
+    },
+    "questions_reviewed": "2026-11-11"
+  },
+  "TX|Dallas|Southwest (Westmoreland) Transfer Station": {
+    "slug": "southwest-westmoreland-transfer-station",
+    "operator": "City of Dallas Sanitation Services",
+    "source": "https://dallascityhall.com/departments/sanitation/Pages/Landfill-and-Transfer-Stations.aspx",
+    "source_checked": "2026-11-11",
+    "listing_fingerprint": "3c8d308843718322f979852bc892a9a5f6aa3cc8fe889852fb819fe41abdd985",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-1927"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-1927"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, furniture, grass clippings/brush"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, furniture, grass clippings/brush"
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, furniture, grass clippings/brush; Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste; Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-1927"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Dallas Landfill and Transfer Stations page: “Open to Dallas residents only. NO commercial customers.”"
+      }
+    },
+    "questions_reviewed": "2026-11-11"
+  },
+  "VA|Richmond|Chesterfield Northern Area Convenience Center": {
+    "slug": "chesterfield-northern-area-convenience-center",
+    "operator": "Chesterfield County",
+    "source": "https://www.chesterfield.gov/539/Convenience-Centers",
+    "source_checked": "2026-11-11",
+    "listing_fingerprint": "b168a0acb566545f613aa4925764dd557ab403ce1bf5deda66e331757000a648",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Chesterfield County residents; be prepared to show ID/proof of county residency. Closed Veterans Day (Nov 11), Thanksgiving and the day after (Nov 26–27), Christmas Eve and Day; closes at noon Dec 31. Card or cash ($1–$50 bills). 804-748-1297"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Chesterfield County residents; be prepared to show ID/proof of county residency. Closed Veterans Day (Nov 11), Thanksgiving and the day after (Nov 26–27), Christmas Eve and Day; closes at noon Dec 31. Card or cash ($1–$50 bills). 804-748-1297"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "yes",
+        "evidence": "Tires $2 each off-rim, $5 each on-rim; used oil and antifreeze free; electronics/TVs $9; trash or yard debris $9 per pickup load; Freon appliances $15, other appliances $10"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb"
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb"
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb; Tires $2 each off-rim, $5 each on-rim; used oil and antifreeze free; electronics/TVs $9; trash or yard debris $9 per pickup load; Freon appliances $15, other appliances $10; Chesterfield County residents; be prepared to show ID/proof of county residency. Closed Veterans Day (Nov 11), Thanksgiving and the day after (Nov 26–27), Christmas Eve and Day; closes at noon Dec 31. Card or cash ($1–$50 bills). 804-748-1297"
+      },
+      "businesses_accepted": {
         "answer": "not stated by source",
         "evidence": ""
       }
-    }
+    },
+    "questions_reviewed": "2026-11-11"
+  },
+  "VA|Richmond|Chesterfield Southern Area Convenience Center": {
+    "slug": "chesterfield-southern-area-convenience-center",
+    "operator": "Chesterfield County",
+    "source": "https://www.chesterfield.gov/539/Convenience-Centers",
+    "source_checked": "2026-11-11",
+    "listing_fingerprint": "b168a0acb566545f613aa4925764dd557ab403ce1bf5deda66e331757000a648",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Chesterfield County residents; be prepared to show ID/proof of county residency. Closed Veterans Day (Nov 11), Thanksgiving and the day after (Nov 26–27), Christmas Eve and Day; closes at noon Dec 31. Card or cash ($1–$50 bills). 804-748-1297"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Chesterfield County residents; be prepared to show ID/proof of county residency. Closed Veterans Day (Nov 11), Thanksgiving and the day after (Nov 26–27), Christmas Eve and Day; closes at noon Dec 31. Card or cash ($1–$50 bills). 804-748-1297"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "yes",
+        "evidence": "Tires $2 each off-rim, $5 each on-rim; used oil and antifreeze free; electronics/TVs $9; trash or yard debris $9 per pickup load; Freon appliances $15, other appliances $10"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb"
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb"
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb; Tires $2 each off-rim, $5 each on-rim; used oil and antifreeze free; electronics/TVs $9; trash or yard debris $9 per pickup load; Freon appliances $15, other appliances $10; Chesterfield County residents; be prepared to show ID/proof of county residency. Closed Veterans Day (Nov 11), Thanksgiving and the day after (Nov 26–27), Christmas Eve and Day; closes at noon Dec 31. Card or cash ($1–$50 bills). 804-748-1297"
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-11"
+  },
+  "HI|Honolulu|Waipahu Convenience Center": {
+    "slug": "waipahu-convenience-center",
+    "operator": "City and County of Honolulu",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "source_checked": "2026-11-11",
+    "listing_fingerprint": "f621fe061648924583f420511276c7a5bdbe4885fa3082c310d47b01f3161c5a",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Residents only (no businesses); sedans, SUVs, pickups or minivans only, no trailers; 2 loads per day. Rules: https://www.honolulu.gov/env/ref/opala2-waste-drop-off-rules-residents/. Phone (808) 676-8878"
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Passenger or light truck tires, with or without rims (limit 4 per month); household rubbish, furniture, bulky items, large metal appliances (limit 2 per month), green waste. NOT accepted: heavy truck or equipment tires"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Passenger or light truck tires, with or without rims (limit 4 per month); household rubbish, furniture, bulky items, large metal appliances (limit 2 per month), green waste. NOT accepted: heavy truck or equipment tires; Residents only (no businesses); sedans, SUVs, pickups or minivans only, no trailers; 2 loads per day. Rules: https://www.honolulu.gov/env/ref/opala2-waste-drop-off-rules-residents/. Phone (808) 676-8878"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; “Commercial, industrial, or agricultural waste” is prohibited."
+      }
+    },
+    "questions_reviewed": "2026-11-11"
+  },
+  "HI|Honolulu|Kapolei Convenience Center": {
+    "slug": "kapolei-convenience-center",
+    "operator": "City and County of Honolulu",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "source_checked": "2026-11-11",
+    "listing_fingerprint": "a0d3949b86e87596f0478e483e3d821690b11b003d988f0f7af1ca98c95f80a6",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Residents only (no businesses); sedans, SUVs, pickups or minivans only, no trailers; 2 loads per day. Rules: https://www.honolulu.gov/env/ref/opala2-waste-drop-off-rules-residents/. Phone (808) 260-2801"
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Passenger or light truck tires, with or without rims (limit 4 per month); household rubbish, furniture, bulky items, large metal appliances (limit 2 per month), green waste. NOT accepted: heavy truck or equipment tires"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Passenger or light truck tires, with or without rims (limit 4 per month); household rubbish, furniture, bulky items, large metal appliances (limit 2 per month), green waste. NOT accepted: heavy truck or equipment tires; Residents only (no businesses); sedans, SUVs, pickups or minivans only, no trailers; 2 loads per day. Rules: https://www.honolulu.gov/env/ref/opala2-waste-drop-off-rules-residents/. Phone (808) 260-2801"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; “Commercial, industrial, or agricultural waste” is prohibited."
+      }
+    },
+    "questions_reviewed": "2026-11-11"
   }
 }

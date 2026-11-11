@@ -1,66 +1,66 @@
 {
-  "generated": "2026-11-10",
-  "facilities": 113,
-  "indexable_pages": 210,
-  "html_files": 265,
+  "generated": "2026-11-11",
+  "facilities": 121,
+  "indexable_pages": 218,
+  "html_files": 273,
   "questions": {
     "residents_only": {
-      "yes": 49,
-      "not stated by source": 60,
-      "no": 4
+      "yes": 55,
+      "not stated by source": 57,
+      "no": 9
     },
     "id_required": {
-      "yes": 45,
-      "not stated by source": 68
+      "yes": 51,
+      "not stated by source": 70
     },
     "appointment_required": {
-      "not stated by source": 95,
-      "yes": 13,
+      "not stated by source": 102,
+      "yes": 14,
       "no": 5
     },
     "fee_charged": {
-      "no": 45,
-      "not stated by source": 53,
-      "yes": 15
+      "no": 49,
+      "not stated by source": 55,
+      "yes": 17
     },
     "tires": {
-      "yes": 39,
+      "yes": 47,
       "no": 7,
       "not stated by source": 67
     },
     "paint": {
       "yes": 88,
-      "no": 6,
-      "not stated by source": 19
+      "no": 7,
+      "not stated by source": 26
     },
     "e_waste": {
-      "yes": 32,
-      "not stated by source": 80,
+      "yes": 38,
+      "not stated by source": 82,
       "no": 1
     },
     "batteries": {
       "yes": 93,
-      "not stated by source": 19,
+      "not stated by source": 27,
       "no": 1
     },
     "motor_oil": {
-      "yes": 51,
-      "not stated by source": 62
+      "yes": 53,
+      "not stated by source": 68
     },
     "household_chemicals": {
-      "not stated by source": 21,
+      "not stated by source": 24,
       "yes": 84,
-      "no": 8
+      "no": 13
     },
     "quantity_limits": {
-      "yes": 44,
-      "not stated by source": 69
+      "yes": 54,
+      "not stated by source": 67
     },
     "businesses_accepted": {
-      "not stated by source": 99,
-      "no": 11,
-      "yes": 3
+      "not stated by source": 93,
+      "no": 20,
+      "yes": 8
     }
   },
-  "operator_recorded": 22
+  "operator_recorded": 30
 }

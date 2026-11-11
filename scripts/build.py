@@ -2,6 +2,8 @@ import json,html,re,os,datetime
 BASE="https://tossmap.com"
 D=json.load(open("data/facilities.json")); OUT="docs"
 TODAY=datetime.date.today().isoformat()
+# Sitemap lastmod for pages without dated listings: bump only when their content actually changes.
+STATIC_LASTMOD="2026-11-10"
 os.makedirs(OUT,exist_ok=True)  # Never remove existing published pages during a build.
 from facility_questions import QUESTIONS, UNKNOWN
 e=html.escape
@@ -53,7 +55,7 @@ def crumbs(items):
     ld={"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":i+1,"name":n,"item":BASE+u} for i,(n,u) in enumerate(items)]}
     return vis,ld
 def page(path,title,desc,body,graph=(),checked=None):
-    urls.append((path,checked or TODAY)); p=f"{OUT}{path}"+("index.html" if path.endswith("/") else "")
+    urls.append((path,checked or STATIC_LASTMOD)); p=f"{OUT}{path}"+("index.html" if path.endswith("/") else "")
     os.makedirs(os.path.dirname(p),exist_ok=True)
     ld=ldscript({"@context":"https://schema.org","@graph":list(graph)}) if graph else ""
     foot=f"Data from official government and operator sources{', checked '+checked if checked else ''}. Always confirm with the source before driving."
@@ -490,6 +492,7 @@ def facility_page(f,m):
          f'{f["name"]} in {m["city"]}, {m["st"]}: address, accepted materials, hours, fees, eligibility and official source. Last checked {f["checked"]}.',
          body,[bl,webpage,place,{"@type":"FAQPage","mainEntity":entities}],f["checked"])
 
+def and_list(xs): return ", ".join(xs[:-1])+" and "+xs[-1] if len(xs)>1 else "".join(xs)
 def plural(n,w): return f"{n} {w}{'' if n==1 else 's'}"
 matidx={s:[] for s,_,_ in MAT}
 for m in D:
@@ -524,8 +527,14 @@ for (sn,st),ms in sorted(states.items()):
         graph=[bl,collection]+[ldj(f,m) for f in fs]+([faq] if faq else [])
         page(cp,title,desc,body,graph,chk)
     vis,bl=crumbs([("Home","/"),(sn,sp)])
-    page(sp,f"Hazardous waste, paint & e-waste drop-off in {sn} | TossMap",f"Official household hazardous waste, paint, e-waste and tire drop-off sites in {sn}, by city.",
-         vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1><ul>'+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}</a> ({plural(len(m["facilities"]),"site")})</li>' for m in ms)+"</ul>",[bl],
+    nst=sum(len(m["facilities"]) for m in ms)
+    def state_li(m):
+        mh=[(s,n) for s,n,_ in MAT if m in matidx[s]]
+        return (f'<li><a href="{cpath(m)}">{e(m["city"])}</a> ({plural(len(m["facilities"]),"site")})'
+                +(' — '+", ".join(f'<a href="/{s}/">{e(n.split(" (")[0].lower())}</a>' for s,n in mh) if mh else "")+"</li>")
+    page(sp,f"Hazardous waste, paint & e-waste drop-off in {sn} | TossMap",
+         f"{plural(nst,'official drop-off site')} in {sn} ({', '.join(m['city'] for m in ms)}) for {and_list([n.split(" (")[0].lower() for s,n,_ in MAT if any(m in matidx[s] for m in ms)]) or "household hazardous waste"}, with source links.",
+         vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1><p>{plural(nst,"official drop-off site")} across {plural(len(ms),"metro area")} in {e(sn)}. Each city page lists addresses, hours, fees, eligibility rules and a link to the official source, with the date we last checked it.</p><ul>'+"".join(state_li(m) for m in ms)+"</ul>",[bl],
          max([f["checked"] for m in ms for f in m["facilities"]],default=None))
 for s,n,_ in MAT:
     ms=sorted(matidx[s],key=lambda x:x["city"]); low=n.split(" (")[0].lower()

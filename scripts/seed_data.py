@@ -122,6 +122,44 @@ for m in M:
     for f in m["facilities"]:
         if m["city"] in("Washington","Boston","Baltimore") and f["checked"]=="2026-11-09" and ("Event" in f["hours"] or "Collection days" in f["hours"]):
             f["checked"]=D10
+# --- Nov 11 2026 daily pass additions (each verified against cited official source on 2026-11-11) ---
+D11="2026-11-11"
+DAL="https://dallascityhall.com/departments/sanitation/Pages/Landfill-and-Transfer-Stations.aspx"
+daltire="Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only)"
+dalfree="Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste"
+dalid="valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill)"
+add("Dallas",
+  F("McCommas Bluff Landfill","5100 Youngblood Road, Dallas, TX","Mon–Fri 5am–8pm; Sat 6am–4pm; closed Sun","https://dallascityhall.com/departments/sanitation/pages/mccommas_bluff.aspx",
+    daltire+"; household waste, furniture, appliances (refrigerants removed), grass clippings/brush",dalfree+"; commercial customers pay posted rates; uncovered loads $40",
+    "Open to commercial and residential customers. Residents: current, valid Texas driver's license showing a Dallas address or a current Dallas water utilities bill. (214) 670-0977",D11),
+  F("Northwest (Bachman) Transfer Station","9500 Harry Hines Boulevard, Dallas, TX","Mon–Sat 7am–4:30pm; closed Sun","https://dallascityhall.com/departments/sanitation/Pages/northwest_bachman.aspx",
+    daltire+"; recyclables, scrap metal, household waste, grass clippings. NOT accepted: chemicals, paint and other hazardous waste; refrigerators, freezers, AC units",dalfree,
+    "Open only to Dallas residents and small commercial customers; "+dalid+". (214) 670-6161",D11),
+  F("Northeast (Fair Oaks) Transfer Station","7677 Fair Oaks Avenue, Dallas, TX","Temporarily closed Oct 28–Nov 15, 2026 (reopens Mon Nov 16); then Mon–Fri 7am–9am; Sat 7am–4pm; closed Sun",DAL,
+    daltire+"; recyclables, scrap metal, household waste, furniture, grass clippings/brush",dalfree,
+    "Dallas residents only; no commercial customers; "+dalid+". During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-6126",D11),
+  F("Southwest (Westmoreland) Transfer Station","4610 S. Westmoreland Road, Dallas, TX","Temporarily closed Oct 14–Nov 15, 2026 (reopens Mon Nov 16); then Mon–Fri 7am–9am; Sat 7am–4pm; closed Sun",DAL,
+    daltire+"; recyclables, scrap metal, household waste, furniture, grass clippings/brush",dalfree,
+    "Dallas residents only; no commercial customers; "+dalid+". During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-1927",D11))
+CHE="https://www.chesterfield.gov/539/Convenience-Centers"
+cheacc="Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb"
+chefee="Tires $2 each off-rim, $5 each on-rim; used oil and antifreeze free; electronics/TVs $9; trash or yard debris $9 per pickup load; Freon appliances $15, other appliances $10"
+chenote="Chesterfield County residents; be prepared to show ID/proof of county residency. Closed Veterans Day (Nov 11), Thanksgiving and the day after (Nov 26–27), Christmas Eve and Day; closes at noon Dec 31. Card or cash ($1–$50 bills). 804-748-1297"
+add("Richmond",
+  F("Chesterfield Northern Area Convenience Center","3200 Warbro Road, Midlothian, VA 23112","Daily 7am–6pm (closed listed county holidays)",CHE,cheacc,chefee,chenote,D11),
+  F("Chesterfield Southern Area Convenience Center","6700 Landfill Drive, Chester, VA 23831","Daily 7am–6pm (closed listed county holidays)",CHE,cheacc,chefee,chenote,D11))
+HNLCC="https://www.honolulu.gov/env/ref/waste-drop-off-locations/"
+hnlacc="Passenger or light truck tires, with or without rims (limit 4 per month); household rubbish, furniture, bulky items, large metal appliances (limit 2 per month), green waste. NOT accepted: heavy truck or equipment tires"
+hnlnote="Residents only (no businesses); sedans, SUVs, pickups or minivans only, no trailers; 2 loads per day. Rules: https://www.honolulu.gov/env/ref/opala2-waste-drop-off-rules-residents/"
+add("Honolulu",
+  F("Waipahu Convenience Center","94-071 Waipahu Depot Street, Waipahu, HI","Daily 7am–6pm (closed Christmas and New Year's Day)",HNLCC,hnlacc,"",hnlnote+". Phone (808) 676-8878",D11),
+  F("Kapolei Convenience Center","91-184 Kaomi Loop, Kapolei, HI","Daily 7am–6pm (closed Christmas and New Year's Day)",HNLCC,hnlacc,"",hnlnote+". Phone (808) 260-2801",D11))
+# Re-verified against the official page on 2026-11-11 (no listing text changed).
+REVERIFIED={"DPW Special Waste Collection Event – RFK Stadium Lot 8","Zero Waste Day Drop-Off – Millennium Park","Sisson Street Residential Recycling Center (HHW days)","Carr Center (Division of Waste)","Ridge Road Transfer Station","Kapaʻa Transfer Station","Kawailoa Transfer Station","Keʻehi Transfer Station"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED or f["name"].startswith("Bulky Waste Collection Center –"): f["checked"]=D11
+    if m["city"]=="San Antonio": m["note"]=m["note"].replace("(re-verified 2026-11-10)","(re-verified 2026-11-11)")
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

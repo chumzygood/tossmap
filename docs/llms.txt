@@ -2,15 +2,15 @@
 
 > TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
 
-Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 113 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 121 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
 - [Paint](https://tossmap.com/paint/): 88 official listings in 48 metro areas
-- [Electronics (e-waste)](https://tossmap.com/e-waste/): 32 official listings in 15 metro areas
-- [Tires](https://tossmap.com/tires/): 39 official listings in 15 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 38 official listings in 17 metro areas
+- [Tires](https://tossmap.com/tires/): 47 official listings in 16 metro areas
 - [Batteries](https://tossmap.com/batteries/): 93 official listings in 49 metro areas
-- [Motor oil](https://tossmap.com/motor-oil/): 51 official listings in 19 metro areas
+- [Motor oil](https://tossmap.com/motor-oil/): 53 official listings in 19 metro areas
 - [Household chemicals](https://tossmap.com/household-chemicals/): 84 official listings in 48 metro areas
 
 ## Cities
@@ -86,6 +86,10 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Cuyahoga County Solid Waste District HQ (electronics drop-off bins) — Cleveland, OH](https://tossmap.com/oh/cleveland/cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins/)
 - [SWACO Household Hazardous Waste Drop-Off — Columbus, OH](https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/)
 - [Dallas County Home Chemical Collection Center — Dallas, TX](https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/)
+- [McCommas Bluff Landfill — Dallas, TX](https://tossmap.com/tx/dallas/mccommas-bluff-landfill/)
+- [Northwest (Bachman) Transfer Station — Dallas, TX](https://tossmap.com/tx/dallas/northwest-bachman-transfer-station/)
+- [Northeast (Fair Oaks) Transfer Station — Dallas, TX](https://tossmap.com/tx/dallas/northeast-fair-oaks-transfer-station/)
+- [Southwest (Westmoreland) Transfer Station — Dallas, TX](https://tossmap.com/tx/dallas/southwest-westmoreland-transfer-station/)
 - [Rooney Road Recycling Center — Denver, CO](https://tossmap.com/co/denver/rooney-road-recycling-center/)
 - [ERG Environmental Services (Wayne County HHW) — Detroit, MI](https://tossmap.com/mi/detroit/erg-environmental-services-wayne-county-hhw/)
 - [Citizen Collection Station – Northeast — El Paso, TX](https://tossmap.com/tx/el-paso/citizen-collection-station-northeast/)
@@ -102,6 +106,8 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Kapaʻa Transfer Station — Honolulu, HI](https://tossmap.com/hi/honolulu/kapa-a-transfer-station/)
 - [Kawailoa Transfer Station — Honolulu, HI](https://tossmap.com/hi/honolulu/kawailoa-transfer-station/)
 - [Keʻehi Transfer Station — Honolulu, HI](https://tossmap.com/hi/honolulu/ke-ehi-transfer-station/)
+- [Waipahu Convenience Center — Honolulu, HI](https://tossmap.com/hi/honolulu/waipahu-convenience-center/)
+- [Kapolei Convenience Center — Honolulu, HI](https://tossmap.com/hi/honolulu/kapolei-convenience-center/)
 - [Environmental Service Center – South — Houston, TX](https://tossmap.com/tx/houston/environmental-service-center-south/)
 - [Environmental Service Center – North — Houston, TX](https://tossmap.com/tx/houston/environmental-service-center-north/)
 - [Residential Drop-Off Center – North — Houston, TX](https://tossmap.com/tx/houston/residential-drop-off-center-north/)
@@ -156,6 +162,8 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Richmond Southside Transfer Station — Richmond, VA](https://tossmap.com/va/richmond/richmond-southside-transfer-station/)
 - [Henrico Springfield Road Public Use Area (West End) — Richmond, VA](https://tossmap.com/va/richmond/henrico-springfield-road-public-use-area-west-end/)
 - [Henrico Charles City Road Public Use Area (East End) — Richmond, VA](https://tossmap.com/va/richmond/henrico-charles-city-road-public-use-area-east-end/)
+- [Chesterfield Northern Area Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/chesterfield-northern-area-convenience-center/)
+- [Chesterfield Southern Area Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/chesterfield-southern-area-convenience-center/)
 - [Agua Mansa Permanent HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/agua-mansa-permanent-hhw-facility/)
 - [Lake Elsinore HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/lake-elsinore-hhw-facility/)
 - [Palm Springs HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/palm-springs-hhw-facility/)
