@@ -2,16 +2,16 @@
 
 > TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
 
-Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 121 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 129 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
 - [Paint](https://tossmap.com/paint/): 88 official listings in 48 metro areas
 - [Electronics (e-waste)](https://tossmap.com/e-waste/): 38 official listings in 17 metro areas
-- [Tires](https://tossmap.com/tires/): 47 official listings in 16 metro areas
-- [Batteries](https://tossmap.com/batteries/): 93 official listings in 49 metro areas
-- [Motor oil](https://tossmap.com/motor-oil/): 53 official listings in 19 metro areas
-- [Household chemicals](https://tossmap.com/household-chemicals/): 84 official listings in 48 metro areas
+- [Tires](https://tossmap.com/tires/): 55 official listings in 16 metro areas
+- [Batteries](https://tossmap.com/batteries/): 98 official listings in 49 metro areas
+- [Motor oil](https://tossmap.com/motor-oil/): 56 official listings in 19 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 87 official listings in 48 metro areas
 
 ## Cities
 - [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
@@ -108,6 +108,11 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Keʻehi Transfer Station — Honolulu, HI](https://tossmap.com/hi/honolulu/ke-ehi-transfer-station/)
 - [Waipahu Convenience Center — Honolulu, HI](https://tossmap.com/hi/honolulu/waipahu-convenience-center/)
 - [Kapolei Convenience Center — Honolulu, HI](https://tossmap.com/hi/honolulu/kapolei-convenience-center/)
+- [Waimānalo Convenience Center — Honolulu, HI](https://tossmap.com/hi/honolulu/waimanalo-convenience-center/)
+- [Waiʻanae Convenience Center — Honolulu, HI](https://tossmap.com/hi/honolulu/waianae-convenience-center/)
+- [ʻEwa Beach Convenience Center — Honolulu, HI](https://tossmap.com/hi/honolulu/ewa-beach-convenience-center/)
+- [Lāʻie Convenience Center — Honolulu, HI](https://tossmap.com/hi/honolulu/laie-convenience-center/)
+- [Wahiawā Convenience Center — Honolulu, HI](https://tossmap.com/hi/honolulu/wahiawa-convenience-center/)
 - [Environmental Service Center – South — Houston, TX](https://tossmap.com/tx/houston/environmental-service-center-south/)
 - [Environmental Service Center – North — Houston, TX](https://tossmap.com/tx/houston/environmental-service-center-north/)
 - [Residential Drop-Off Center – North — Houston, TX](https://tossmap.com/tx/houston/residential-drop-off-center-north/)
@@ -164,6 +169,9 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Henrico Charles City Road Public Use Area (East End) — Richmond, VA](https://tossmap.com/va/richmond/henrico-charles-city-road-public-use-area-east-end/)
 - [Chesterfield Northern Area Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/chesterfield-northern-area-convenience-center/)
 - [Chesterfield Southern Area Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/chesterfield-southern-area-convenience-center/)
+- [Hanover Mechanicsville Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hanover-mechanicsville-convenience-center/)
+- [Hanover Courthouse Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hanover-courthouse-convenience-center/)
+- [Hanover Elmont Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hanover-elmont-convenience-center/)
 - [Agua Mansa Permanent HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/agua-mansa-permanent-hhw-facility/)
 - [Lake Elsinore HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/lake-elsinore-hhw-facility/)
 - [Palm Springs HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/palm-springs-hhw-facility/)

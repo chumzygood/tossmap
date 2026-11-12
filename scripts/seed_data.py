@@ -160,6 +160,29 @@ for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED or f["name"].startswith("Bulky Waste Collection Center –"): f["checked"]=D11
     if m["city"]=="San Antonio": m["note"]=m["note"].replace("(re-verified 2026-11-10)","(re-verified 2026-11-11)")
+# --- Nov 12 2026 daily pass additions (each verified against cited official source on 2026-11-12) ---
+D12="2026-11-12"
+hnlacc_nogreen=hnlacc.replace(", green waste. NOT accepted:",". No green waste at this site. NOT accepted:")
+add("Honolulu",
+  F("Waimānalo Convenience Center","41-241 Hihimanu Street, Waimānalo, HI","Daily 7am–6pm (closed Christmas and New Year's Day)",HNLCC,hnlacc,"",hnlnote+". Phone (808) 259-7182",D12),
+  F("Waiʻanae Convenience Center","85-572 Waiʻanae Valley Road, Waiʻanae, HI","Daily 7am–6pm (closed Christmas and New Year's Day)",HNLCC,hnlacc,"",hnlnote+". Phone (808) 696-4203",D12),
+  F("ʻEwa Beach Convenience Center","91-1000 Geiger Road, ʻEwa Beach, HI","Daily 7am–6pm (closed Christmas and New Year's Day)",HNLCC,hnlacc,"",hnlnote+". Phone (808) 226-2996",D12),
+  F("Lāʻie Convenience Center","56-020 Kamehameha Highway, Lāʻie, HI","Daily 7am–6pm (closed Christmas and New Year's Day)",HNLCC,hnlacc,"",hnlnote+". Phone (808) 293-8714",D12),
+  F("Wahiawā Convenience Center","71-129 Wilikina Drive, Wahiawā, HI","Daily 7am–6pm (closed Christmas and New Year's Day)",HNLCC,hnlacc_nogreen,"",hnlnote+". Phone (808) 621-3648",D12))
+HAN="https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-"
+hanacc="Passenger vehicle tires up to 32 in. diameter (4 per day, no fee); used oil, oil filters, antifreeze, gasoline, automobile fluids and solvents; lead-acid batteries; household trash, bulky waste (furniture, appliances), recyclables, clothing. Liquid paint is not accepted for recycling (dry it to a paste and place it in the trash); electronics go to the county's e-waste collection events (typically spring and fall)"
+hanfee="No cost for residents' household trash and recyclables; up to 4 passenger tires per day without fee"
+hannote="Hanover County residents only; bring ID or vehicle registration (staff may verify residency). No commercial vehicles, U-Hauls or box trucks; businesses must use the Route 301 Transfer Station. Closed New Year's Day, MLK Day, Presidents Day, Easter Sunday, Memorial Day, Juneteenth, Independence Day, Labor Day, Veterans Day, Thanksgiving and the day after, Christmas Eve and Christmas Day. Call Before You Haul: 804-365-3388. Tires/batteries/paint details: https://www.hanovercounty.gov/230/What-Can-Be-Recycled"
+add("Richmond",
+  F("Hanover Mechanicsville Convenience Center","7427 Verdi Lane, Mechanicsville, VA 23116","Daily 7am–7pm (closed listed county holidays)",HAN,hanacc+"; grass, unbagged leaves and brush (up to 4 in. thick, 6 ft long; no bamboo); Goodwill donations",hanfee,hannote,D12),
+  F("Hanover Courthouse Convenience Center","7234 Courtland Farm Road, Hanover, VA 23069","Daily 7am–7pm (closed listed county holidays)",HAN,hanacc+"; grass and unbagged leaves; mattresses and box springs (limit 2 per day)",hanfee,hannote,D12),
+  F("Hanover Elmont Convenience Center","11045 Lewistown Road, Ashland, VA 23005","Daily 7am–7pm (closed listed county holidays)",HAN,hanacc+"; grass and unbagged leaves",hanfee,hannote,D12))
+# Re-verified against the official page on 2026-11-12 (no listing text changed).
+REVERIFIED12={"DPW Special Waste Collection Event – RFK Stadium Lot 8","Zero Waste Day Drop-Off – Millennium Park","Sisson Street Residential Recycling Center (HHW days)","Kapaʻa Transfer Station","Kawailoa Transfer Station","Keʻehi Transfer Station","Waipahu Convenience Center","Kapolei Convenience Center","Chesterfield Northern Area Convenience Center","Chesterfield Southern Area Convenience Center"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED12 or f["name"].startswith("Bulky Waste Collection Center –"): f["checked"]=D12
+    if m["city"]=="San Antonio": m["note"]=m["note"].replace("(re-verified 2026-11-11)","(re-verified 2026-11-12)")
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

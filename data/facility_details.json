@@ -1314,7 +1314,7 @@
     "slug": "bulky-waste-collection-center-bitters",
     "operator": "not stated by source",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "8beea91151e9876b4fcd89e01d2ad61dc7a19673df525deefe1ff5597761a86e",
     "questions": {
       "residents_only": {
@@ -1366,13 +1366,13 @@
         "evidence": "San Antonio Bulky Waste Collection Centers page: “Bulky waste collection centers are for our residential customers only.” “Materials from commercial waste haulers are not accepted.”"
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "TX|San Antonio|Bulky Waste Collection Center – Frio City Road": {
     "slug": "bulky-waste-collection-center-frio-city-road",
     "operator": "not stated by source",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "8beea91151e9876b4fcd89e01d2ad61dc7a19673df525deefe1ff5597761a86e",
     "questions": {
       "residents_only": {
@@ -1424,13 +1424,13 @@
         "evidence": "San Antonio Bulky Waste Collection Centers page: “Bulky waste collection centers are for our residential customers only.” “Materials from commercial waste haulers are not accepted.”"
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "TX|San Antonio|Bulky Waste Collection Center – Culebra": {
     "slug": "bulky-waste-collection-center-culebra",
     "operator": "not stated by source",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "8beea91151e9876b4fcd89e01d2ad61dc7a19673df525deefe1ff5597761a86e",
     "questions": {
       "residents_only": {
@@ -1482,13 +1482,13 @@
         "evidence": "San Antonio Bulky Waste Collection Centers page: “Bulky waste collection centers are for our residential customers only.” “Materials from commercial waste haulers are not accepted.”"
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "TX|San Antonio|Bulky Waste Collection Center – Rigsby Road": {
     "slug": "bulky-waste-collection-center-rigsby-road",
     "operator": "not stated by source",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "8beea91151e9876b4fcd89e01d2ad61dc7a19673df525deefe1ff5597761a86e",
     "questions": {
       "residents_only": {
@@ -1540,7 +1540,7 @@
         "evidence": "San Antonio Bulky Waste Collection Centers page: “Bulky waste collection centers are for our residential customers only.” “Materials from commercial waste haulers are not accepted.”"
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "CA|San Diego|HHW Transfer Facility (Miramar Landfill)": {
     "slug": "hhw-transfer-facility-miramar-landfill",
@@ -2983,7 +2983,7 @@
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "operator": "not stated by source",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "1eef173e050db0ac049c93a628146ea9afb74741637535a51b32a6edf76a197c",
     "questions": {
       "residents_only": {
@@ -3003,8 +3003,8 @@
         "evidence": "Free"
       },
       "tires": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "DC DPW page, Household Hazardous Waste Items, Not Accepted: “Tires (Up to four tires may be taken to the Fort Totten Transfer Station during regular business hours.)”"
       },
       "paint": {
         "answer": "yes",
@@ -3035,13 +3035,13 @@
         "evidence": "DC DPW page: “No commercial waste will be allowed.”"
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "MA|Boston|Zero Waste Day Drop-Off – Millennium Park": {
     "slug": "zero-waste-day-drop-off-millennium-park",
     "operator": "not stated by source",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "25db1143915ef4a9ac14857da9db0662ca46ff7122b422578f7a458373b26ad0",
     "questions": {
       "residents_only": {
@@ -3089,11 +3089,11 @@
         "evidence": "Hazardous chemicals (20 gal limit), oil-based paint, rechargeable/lithium batteries, electronics (computers, phones, TVs, printers), fluorescent bulbs/mercury items, car & bike tires (8 each), car batteries, propane tanks, fire extinguishers; Free; Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. Do not arrive before 8:30am; no entry after noon."
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Boston Zero Waste Day page: “We will not accept waste from businesses.”"
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "NV|Las Vegas|Republic Services HHW – North Las Vegas": {
     "slug": "republic-services-hhw-north-las-vegas",
@@ -3726,7 +3726,7 @@
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "operator": "not stated by source",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "318c7d7e979e297128ceb0a17516118269fdaa7fcbac89846caa312d1448952b",
     "questions": {
       "residents_only": {
@@ -3774,11 +3774,11 @@
         "evidence": ""
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Baltimore DPW HHW page: “Businesses & Commercial Users must use a private vendor. Commercial Vehicles are not permitted.”"
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "CA|Sacramento|North Area Recovery Station HHW Drop-Off": {
     "slug": "north-area-recovery-station-hhw-drop-off",
@@ -6318,7 +6318,7 @@
     "slug": "kapa-a-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "3596a0388259965974f6e84108aba20253dd8cbfb65f21626982c2310e16f1f2",
     "questions": {
       "residents_only": {
@@ -6370,13 +6370,13 @@
         "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "HI|Honolulu|Kawailoa Transfer Station": {
     "slug": "kawailoa-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "01cd0100b127e5ad079b0a4159fb8e5f44afb5cb85a1ab7e982d0b2a2f157c75",
     "questions": {
       "residents_only": {
@@ -6428,13 +6428,13 @@
         "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "HI|Honolulu|Keʻehi Transfer Station": {
     "slug": "ke-ehi-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "12881a69c9776b163e1b14bf57095ec30b273b7a7edfa501a698313ad0a0897e",
     "questions": {
       "residents_only": {
@@ -6486,7 +6486,7 @@
         "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "TX|Dallas|McCommas Bluff Landfill": {
     "slug": "mccommas-bluff-landfill",
@@ -6724,7 +6724,7 @@
     "slug": "chesterfield-northern-area-convenience-center",
     "operator": "Chesterfield County",
     "source": "https://www.chesterfield.gov/539/Convenience-Centers",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "b168a0acb566545f613aa4925764dd557ab403ce1bf5deda66e331757000a648",
     "questions": {
       "residents_only": {
@@ -6756,8 +6756,8 @@
         "evidence": "Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb"
       },
       "batteries": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Chesterfield Convenience Centers page, Convenience Center HHW Disposal: “Lead acid batteries (limit of five) - Car batteries and sealed UPS batteries.”"
       },
       "motor_oil": {
         "answer": "yes",
@@ -6776,13 +6776,13 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "VA|Richmond|Chesterfield Southern Area Convenience Center": {
     "slug": "chesterfield-southern-area-convenience-center",
     "operator": "Chesterfield County",
     "source": "https://www.chesterfield.gov/539/Convenience-Centers",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "b168a0acb566545f613aa4925764dd557ab403ce1bf5deda66e331757000a648",
     "questions": {
       "residents_only": {
@@ -6814,8 +6814,8 @@
         "evidence": "Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb"
       },
       "batteries": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Chesterfield Convenience Centers page, Convenience Center HHW Disposal: “Lead acid batteries (limit of five) - Car batteries and sealed UPS batteries.”"
       },
       "motor_oil": {
         "answer": "yes",
@@ -6834,13 +6834,13 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "HI|Honolulu|Waipahu Convenience Center": {
     "slug": "waipahu-convenience-center",
     "operator": "City and County of Honolulu",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "f621fe061648924583f420511276c7a5bdbe4885fa3082c310d47b01f3161c5a",
     "questions": {
       "residents_only": {
@@ -6892,13 +6892,13 @@
         "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; “Commercial, industrial, or agricultural waste” is prohibited."
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
   },
   "HI|Honolulu|Kapolei Convenience Center": {
     "slug": "kapolei-convenience-center",
     "operator": "City and County of Honolulu",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-12",
     "listing_fingerprint": "a0d3949b86e87596f0478e483e3d821690b11b003d988f0f7af1ca98c95f80a6",
     "questions": {
       "residents_only": {
@@ -6950,6 +6950,470 @@
         "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; “Commercial, industrial, or agricultural waste” is prohibited."
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
+  },
+  "VA|Richmond|Hanover Mechanicsville Convenience Center": {
+    "slug": "hanover-mechanicsville-convenience-center",
+    "operator": "Hanover County",
+    "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
+    "source_checked": "2026-11-12",
+    "listing_fingerprint": "c70d65cfecf36526dd66251ef402c34de5106b9a2a29aa417898b5636cff2146",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Hanover County page: “Hanover County operates six convenience centers where residents can drop off household trash and recyclables at no cost.” “Businesses must use the Route 301 Transfer Station.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Hanover County page: “Bring ID or vehicle registration. Staff may verify residency.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Hanover County page: residents drop off household trash and recyclables “at no cost”; What Can Be Recycled: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee”."
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "Hanover What Can Be Recycled page: “Lead acid batteries can be recycled at any of our convenience centers”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Hanover County page, What You Can Bring: “Oil, oil filters, antifreeze, gasoline, and other automobile fluids/solvents”."
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "Hanover County page, What You Can Bring: “Oil, oil filters, antifreeze, gasoline, and other automobile fluids/solvents”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
+      }
+    },
+    "questions_reviewed": "2026-11-12"
+  },
+  "VA|Richmond|Hanover Courthouse Convenience Center": {
+    "slug": "hanover-courthouse-convenience-center",
+    "operator": "Hanover County",
+    "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
+    "source_checked": "2026-11-12",
+    "listing_fingerprint": "e9c25f3700d1f315d6d0bf2e2f404ff3478c7593466ba0dec04fc2b291800d29",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Hanover County page: “Hanover County operates six convenience centers where residents can drop off household trash and recyclables at no cost.” “Businesses must use the Route 301 Transfer Station.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Hanover County page: “Bring ID or vehicle registration. Staff may verify residency.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Hanover County page: residents drop off household trash and recyclables “at no cost”; What Can Be Recycled: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee”."
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "Hanover What Can Be Recycled page: “Lead acid batteries can be recycled at any of our convenience centers”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Hanover County page, What You Can Bring: “Oil, oil filters, antifreeze, gasoline, and other automobile fluids/solvents”."
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "Hanover County page, What You Can Bring: “Oil, oil filters, antifreeze, gasoline, and other automobile fluids/solvents”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
+      }
+    },
+    "questions_reviewed": "2026-11-12"
+  },
+  "VA|Richmond|Hanover Elmont Convenience Center": {
+    "slug": "hanover-elmont-convenience-center",
+    "operator": "Hanover County",
+    "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
+    "source_checked": "2026-11-12",
+    "listing_fingerprint": "0ae4da44e1bf0666a9e811f0def125fa7bf4c56ec63f95c13167edc4989c6599",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Hanover County page: “Hanover County operates six convenience centers where residents can drop off household trash and recyclables at no cost.” “Businesses must use the Route 301 Transfer Station.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Hanover County page: “Bring ID or vehicle registration. Staff may verify residency.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Hanover County page: residents drop off household trash and recyclables “at no cost”; What Can Be Recycled: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee”."
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "Hanover What Can Be Recycled page: “Lead acid batteries can be recycled at any of our convenience centers”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Hanover County page, What You Can Bring: “Oil, oil filters, antifreeze, gasoline, and other automobile fluids/solvents”."
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "Hanover County page, What You Can Bring: “Oil, oil filters, antifreeze, gasoline, and other automobile fluids/solvents”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
+      }
+    },
+    "questions_reviewed": "2026-11-12"
+  },
+  "HI|Honolulu|Waimānalo Convenience Center": {
+    "slug": "waimanalo-convenience-center",
+    "operator": "City and County of Honolulu",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "source_checked": "2026-11-12",
+    "listing_fingerprint": "e1d90e723fd6bff1168f6f9f23705d49cf03bbd3a2be4491d0d4ecd8b904cde9",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Honolulu drop-off locations page: Convenience Centers “RESIDENTS ONLY”."
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.”"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.” Large appliances: “Limit 2 per month”. “Residents are allowed two (2) loads per day.”"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
+      }
+    },
+    "questions_reviewed": "2026-11-12"
+  },
+  "HI|Honolulu|Waiʻanae Convenience Center": {
+    "slug": "waianae-convenience-center",
+    "operator": "City and County of Honolulu",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "source_checked": "2026-11-12",
+    "listing_fingerprint": "883d0aac723a8b980b238066c556a204dcb6ad9ba8938b83eeddfdcda7d4b7cf",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Honolulu drop-off locations page: Convenience Centers “RESIDENTS ONLY”."
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.”"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.” Large appliances: “Limit 2 per month”. “Residents are allowed two (2) loads per day.”"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
+      }
+    },
+    "questions_reviewed": "2026-11-12"
+  },
+  "HI|Honolulu|ʻEwa Beach Convenience Center": {
+    "slug": "ewa-beach-convenience-center",
+    "operator": "City and County of Honolulu",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "source_checked": "2026-11-12",
+    "listing_fingerprint": "010aa8391bf0a1b238155522eca4524922d609fd84280ff03244bd25405313ba",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Honolulu drop-off locations page: Convenience Centers “RESIDENTS ONLY”."
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.”"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.” Large appliances: “Limit 2 per month”. “Residents are allowed two (2) loads per day.”"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
+      }
+    },
+    "questions_reviewed": "2026-11-12"
+  },
+  "HI|Honolulu|Lāʻie Convenience Center": {
+    "slug": "laie-convenience-center",
+    "operator": "City and County of Honolulu",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "source_checked": "2026-11-12",
+    "listing_fingerprint": "eee1006d77fba23964c8a7e7107662fb790bc747c3ececf3dff075b6e8d7e1c1",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Honolulu drop-off locations page: Convenience Centers “RESIDENTS ONLY”."
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.”"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.” Large appliances: “Limit 2 per month”. “Residents are allowed two (2) loads per day.”"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
+      }
+    },
+    "questions_reviewed": "2026-11-12"
+  },
+  "HI|Honolulu|Wahiawā Convenience Center": {
+    "slug": "wahiawa-convenience-center",
+    "operator": "City and County of Honolulu",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "source_checked": "2026-11-12",
+    "listing_fingerprint": "4157ba506e2130488e6f21ae70aa5d23a0a85a2ad5a74fc8de9fa57d2f39cb26",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Honolulu drop-off locations page: Convenience Centers “RESIDENTS ONLY”."
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.”"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.” Large appliances: “Limit 2 per month”. “Residents are allowed two (2) loads per day.”"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
+      }
+    },
+    "questions_reviewed": "2026-11-12"
   }
 }

@@ -488,8 +488,13 @@ def facility_page(f,m):
           +'<p class="note">Use the exact acceptance notes above: paint types, battery types, item limits and event dates matter. Do not mix chemicals or assume a material is accepted because a similar item is listed. Confirm availability with the operator.</p>')
     place=facility_place(f,m)
     webpage={"@type":"WebPage","@id":BASE+fp+"#page","url":BASE+fp,"name":f["name"],"mainEntity":{"@id":place["@id"]},"publisher":{"@id":ORG_ID},"citation":f["source"]}
-    page(fp,f'{f["name"]}: hours, materials & rules | TossMap',
-         f'{f["name"]} in {m["city"]}, {m["st"]}: address, accepted materials, hours, fees, eligibility and official source. Last checked {f["checked"]}.',
+    # Many facility names are generic ("Waste Reduction Center"), so the city goes in the title.
+    ttl=f'{f["name"]}, {m["city"]} {m["st"]}: hours & rules | TossMap'
+    if m["city"].lower() in f["name"].lower(): ttl=f'{f["name"]} ({m["st"]}): hours, materials & rules | TossMap'
+    mnames=[n.split(" (")[0].lower() for _,n,_ in mats(f)]
+    takes=f' Takes {and_list(mnames)}.' if mnames else ''
+    page(fp,ttl,
+         f'{f["name"]} {"in" if m["city"].lower() in f["address"].lower() else "in the"} {m["city"]}, {m["st"]}{"" if m["city"].lower() in f["address"].lower() else " area"}: address, hours, fees, eligibility and official source.{takes} Last checked {f["checked"]}.',
          body,[bl,webpage,place,{"@type":"FAQPage","mainEntity":entities}],f["checked"])
 
 def and_list(xs): return ", ".join(xs[:-1])+" and "+xs[-1] if len(xs)>1 else "".join(xs)

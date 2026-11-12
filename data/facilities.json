@@ -1531,7 +1531,7 @@
     "fees": "Free with City environmental fee",
     "notes": "Residential customers only; bring a recent CPS Energy bill + photo ID; no household trash or hazardous material",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "bulky-waste-collection-center-bitters",
     "questions": {
      "residents_only": {
@@ -1585,7 +1585,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
    },
    {
     "name": "Bulky Waste Collection Center – Frio City Road",
@@ -1595,7 +1595,7 @@
     "fees": "Free with City environmental fee",
     "notes": "Residential customers only; bring a recent CPS Energy bill + photo ID; no household trash or hazardous material",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "bulky-waste-collection-center-frio-city-road",
     "questions": {
      "residents_only": {
@@ -1649,7 +1649,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
    },
    {
     "name": "Bulky Waste Collection Center – Culebra",
@@ -1659,7 +1659,7 @@
     "fees": "Free with City environmental fee",
     "notes": "Residential customers only; bring a recent CPS Energy bill + photo ID; no household trash or hazardous material",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "bulky-waste-collection-center-culebra",
     "questions": {
      "residents_only": {
@@ -1713,7 +1713,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
    },
    {
     "name": "Bulky Waste Collection Center – Rigsby Road",
@@ -1723,7 +1723,7 @@
     "fees": "Free with City environmental fee",
     "notes": "Residential customers only; bring a recent CPS Energy bill + photo ID; no household trash or hazardous material",
     "source": "https://www.sa.gov/Directory/Departments/SWMD/Brush-Bulky/Bulky-Drop-Off",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "bulky-waste-collection-center-rigsby-road",
     "questions": {
      "residents_only": {
@@ -1777,10 +1777,10 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
    }
   ],
-  "note": "Next Free Landfill Day: Sat Nov 14, 2026, 8am–1pm at Republic Services Landfill (7000 IH 10 E) and Waste Management Landfill (8611 Covel Rd); tires limit 6 passenger car tires per household (re-verified 2026-11-11). Later dates: Sat Feb 13, Apr 10 and Jul 10, 2027, 8am–1pm. Source: https://www.sa.gov/Directory/Departments/SWMD/Garbage/Landfill"
+  "note": "Next Free Landfill Day: Sat Nov 14, 2026, 8am–1pm at Republic Services Landfill (7000 IH 10 E) and Waste Management Landfill (8611 Covel Rd); tires limit 6 passenger car tires per household (re-verified 2026-11-12). Later dates: Sat Feb 13, Apr 10 and Jul 10, 2027, 8am–1pm. Source: https://www.sa.gov/Directory/Departments/SWMD/Garbage/Landfill"
  },
  {
   "city": "San Diego",
@@ -3755,7 +3755,7 @@
     "fees": "Free",
     "notes": "DC residents only; register in advance on Eventbrite; bring proof of residency and registration. Next listed event after this: Sat Dec 12, 2026, also at RFK Lot 8.",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "questions": {
      "residents_only": {
@@ -3775,8 +3775,8 @@
       "evidence": "Free"
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "DC DPW page, Household Hazardous Waste Items, Not Accepted: “Tires (Up to four tires may be taken to the Fort Totten Transfer Station during regular business hours.)”"
      },
      "paint": {
       "answer": "yes",
@@ -3809,7 +3809,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
    }
   ],
   "note": "No permanent HHW or e-cycling drop-off. Fort Totten takes up to 4 tires during regular hours. HHW and electronics are collected at registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding"
@@ -3827,7 +3827,7 @@
     "fees": "Free",
     "notes": "Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. Do not arrive before 8:30am; no entry after noon.",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "zero-waste-day-drop-off-millennium-park",
     "questions": {
      "residents_only": {
@@ -3875,13 +3875,13 @@
       "evidence": "Hazardous chemicals (20 gal limit), oil-based paint, rechargeable/lithium batteries, electronics (computers, phones, TVs, printers), fluorescent bulbs/mercury items, car & bike tires (8 each), car batteries, propane tanks, fire extinguishers; Free; Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. Do not arrive before 8:30am; no entry after noon."
      },
      "businesses_accepted": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Boston Zero Waste Day page: “We will not accept waste from businesses.”"
      }
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
    }
   ],
   "note": ""
@@ -4651,7 +4651,7 @@
     "fees": "Free",
     "notes": "Baltimore City residents only; materials in original labeled packaging; no commercial vehicles. 410-396-7250",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "questions": {
      "residents_only": {
@@ -4699,13 +4699,13 @@
       "evidence": ""
      },
      "businesses_accepted": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Baltimore DPW HHW page: “Businesses & Commercial Users must use a private vendor. Commercial Vehicles are not permitted.”"
      }
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
    }
   ],
   "note": ""
@@ -7523,7 +7523,7 @@
     "fees": "Tires $2 each off-rim, $5 each on-rim; used oil and antifreeze free; electronics/TVs $9; trash or yard debris $9 per pickup load; Freon appliances $15, other appliances $10",
     "notes": "Chesterfield County residents; be prepared to show ID/proof of county residency. Closed Veterans Day (Nov 11), Thanksgiving and the day after (Nov 26–27), Christmas Eve and Day; closes at noon Dec 31. Card or cash ($1–$50 bills). 804-748-1297",
     "source": "https://www.chesterfield.gov/539/Convenience-Centers",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "chesterfield-northern-area-convenience-center",
     "questions": {
      "residents_only": {
@@ -7555,8 +7555,8 @@
       "evidence": "Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb"
      },
      "batteries": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Chesterfield Convenience Centers page, Convenience Center HHW Disposal: “Lead acid batteries (limit of five) - Car batteries and sealed UPS batteries.”"
      },
      "motor_oil": {
       "answer": "yes",
@@ -7577,7 +7577,7 @@
     },
     "operator": "Chesterfield County",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
    },
    {
     "name": "Chesterfield Southern Area Convenience Center",
@@ -7587,7 +7587,7 @@
     "fees": "Tires $2 each off-rim, $5 each on-rim; used oil and antifreeze free; electronics/TVs $9; trash or yard debris $9 per pickup load; Freon appliances $15, other appliances $10",
     "notes": "Chesterfield County residents; be prepared to show ID/proof of county residency. Closed Veterans Day (Nov 11), Thanksgiving and the day after (Nov 26–27), Christmas Eve and Day; closes at noon Dec 31. Card or cash ($1–$50 bills). 804-748-1297",
     "source": "https://www.chesterfield.gov/539/Convenience-Centers",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "chesterfield-southern-area-convenience-center",
     "questions": {
      "residents_only": {
@@ -7619,8 +7619,8 @@
       "evidence": "Tires (limit 5; oversized tires not accepted); used motor oil, antifreeze and residential oil filters (10 gal per visit); electronics and TVs (go in the trash containers for a $9 fee; recycle them at county e-cycling events instead); 1 lb and 20 lb propane tanks (limit 5); appliances; household trash; recyclables. NOT accepted: oil-based paint (county events only), fire extinguishers, propane tanks over 30 lb"
      },
      "batteries": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Chesterfield Convenience Centers page, Convenience Center HHW Disposal: “Lead acid batteries (limit of five) - Car batteries and sealed UPS batteries.”"
      },
      "motor_oil": {
       "answer": "yes",
@@ -7641,7 +7641,199 @@
     },
     "operator": "Chesterfield County",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
+   },
+   {
+    "name": "Hanover Mechanicsville Convenience Center",
+    "address": "7427 Verdi Lane, Mechanicsville, VA 23116",
+    "hours": "Daily 7am–7pm (closed listed county holidays)",
+    "accepts": "Passenger vehicle tires up to 32 in. diameter (4 per day, no fee); used oil, oil filters, antifreeze, gasoline, automobile fluids and solvents; lead-acid batteries; household trash, bulky waste (furniture, appliances), recyclables, clothing. Liquid paint is not accepted for recycling (dry it to a paste and place it in the trash); electronics go to the county's e-waste collection events (typically spring and fall); grass, unbagged leaves and brush (up to 4 in. thick, 6 ft long; no bamboo); Goodwill donations",
+    "fees": "No cost for residents' household trash and recyclables; up to 4 passenger tires per day without fee",
+    "notes": "Hanover County residents only; bring ID or vehicle registration (staff may verify residency). No commercial vehicles, U-Hauls or box trucks; businesses must use the Route 301 Transfer Station. Closed New Year's Day, MLK Day, Presidents Day, Easter Sunday, Memorial Day, Juneteenth, Independence Day, Labor Day, Veterans Day, Thanksgiving and the day after, Christmas Eve and Christmas Day. Call Before You Haul: 804-365-3388. Tires/batteries/paint details: https://www.hanovercounty.gov/230/What-Can-Be-Recycled",
+    "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
+    "checked": "2026-11-12",
+    "slug": "hanover-mechanicsville-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Hanover County page: “Hanover County operates six convenience centers where residents can drop off household trash and recyclables at no cost.” “Businesses must use the Route 301 Transfer Station.”"
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "Hanover County page: “Bring ID or vehicle registration. Staff may verify residency.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "Hanover County page: residents drop off household trash and recyclables “at no cost”; What Can Be Recycled: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee”."
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Lead acid batteries can be recycled at any of our convenience centers”."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Hanover County page, What You Can Bring: “Oil, oil filters, antifreeze, gasoline, and other automobile fluids/solvents”."
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "Hanover County page, What You Can Bring: “Oil, oil filters, antifreeze, gasoline, and other automobile fluids/solvents”."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
+     }
+    },
+    "operator": "Hanover County",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-12"
+   },
+   {
+    "name": "Hanover Courthouse Convenience Center",
+    "address": "7234 Courtland Farm Road, Hanover, VA 23069",
+    "hours": "Daily 7am–7pm (closed listed county holidays)",
+    "accepts": "Passenger vehicle tires up to 32 in. diameter (4 per day, no fee); used oil, oil filters, antifreeze, gasoline, automobile fluids and solvents; lead-acid batteries; household trash, bulky waste (furniture, appliances), recyclables, clothing. Liquid paint is not accepted for recycling (dry it to a paste and place it in the trash); electronics go to the county's e-waste collection events (typically spring and fall); grass and unbagged leaves; mattresses and box springs (limit 2 per day)",
+    "fees": "No cost for residents' household trash and recyclables; up to 4 passenger tires per day without fee",
+    "notes": "Hanover County residents only; bring ID or vehicle registration (staff may verify residency). No commercial vehicles, U-Hauls or box trucks; businesses must use the Route 301 Transfer Station. Closed New Year's Day, MLK Day, Presidents Day, Easter Sunday, Memorial Day, Juneteenth, Independence Day, Labor Day, Veterans Day, Thanksgiving and the day after, Christmas Eve and Christmas Day. Call Before You Haul: 804-365-3388. Tires/batteries/paint details: https://www.hanovercounty.gov/230/What-Can-Be-Recycled",
+    "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
+    "checked": "2026-11-12",
+    "slug": "hanover-courthouse-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Hanover County page: “Hanover County operates six convenience centers where residents can drop off household trash and recyclables at no cost.” “Businesses must use the Route 301 Transfer Station.”"
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "Hanover County page: “Bring ID or vehicle registration. Staff may verify residency.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "Hanover County page: residents drop off household trash and recyclables “at no cost”; What Can Be Recycled: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee”."
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Lead acid batteries can be recycled at any of our convenience centers”."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Hanover County page, What You Can Bring: “Oil, oil filters, antifreeze, gasoline, and other automobile fluids/solvents”."
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "Hanover County page, What You Can Bring: “Oil, oil filters, antifreeze, gasoline, and other automobile fluids/solvents”."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
+     }
+    },
+    "operator": "Hanover County",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-12"
+   },
+   {
+    "name": "Hanover Elmont Convenience Center",
+    "address": "11045 Lewistown Road, Ashland, VA 23005",
+    "hours": "Daily 7am–7pm (closed listed county holidays)",
+    "accepts": "Passenger vehicle tires up to 32 in. diameter (4 per day, no fee); used oil, oil filters, antifreeze, gasoline, automobile fluids and solvents; lead-acid batteries; household trash, bulky waste (furniture, appliances), recyclables, clothing. Liquid paint is not accepted for recycling (dry it to a paste and place it in the trash); electronics go to the county's e-waste collection events (typically spring and fall); grass and unbagged leaves",
+    "fees": "No cost for residents' household trash and recyclables; up to 4 passenger tires per day without fee",
+    "notes": "Hanover County residents only; bring ID or vehicle registration (staff may verify residency). No commercial vehicles, U-Hauls or box trucks; businesses must use the Route 301 Transfer Station. Closed New Year's Day, MLK Day, Presidents Day, Easter Sunday, Memorial Day, Juneteenth, Independence Day, Labor Day, Veterans Day, Thanksgiving and the day after, Christmas Eve and Christmas Day. Call Before You Haul: 804-365-3388. Tires/batteries/paint details: https://www.hanovercounty.gov/230/What-Can-Be-Recycled",
+    "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
+    "checked": "2026-11-12",
+    "slug": "hanover-elmont-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Hanover County page: “Hanover County operates six convenience centers where residents can drop off household trash and recyclables at no cost.” “Businesses must use the Route 301 Transfer Station.”"
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "Hanover County page: “Bring ID or vehicle registration. Staff may verify residency.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "Hanover County page: residents drop off household trash and recyclables “at no cost”; What Can Be Recycled: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee”."
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Lead acid batteries can be recycled at any of our convenience centers”."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Hanover County page, What You Can Bring: “Oil, oil filters, antifreeze, gasoline, and other automobile fluids/solvents”."
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "Hanover County page, What You Can Bring: “Oil, oil filters, antifreeze, gasoline, and other automobile fluids/solvents”."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
+     }
+    },
+    "operator": "Hanover County",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-12"
    }
   ],
   "note": ""
@@ -7859,7 +8051,7 @@
     "fees": "",
     "notes": "Phone (808) 768-4248. Residential drop-off rules apply.",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "kapa-a-transfer-station",
     "questions": {
      "residents_only": {
@@ -7913,7 +8105,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
    },
    {
     "name": "Kawailoa Transfer Station",
@@ -7923,7 +8115,7 @@
     "fees": "",
     "notes": "Phone (808) 637-5511. Residential drop-off rules apply.",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "kawailoa-transfer-station",
     "questions": {
      "residents_only": {
@@ -7977,7 +8169,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
    },
    {
     "name": "Keʻehi Transfer Station",
@@ -7987,7 +8179,7 @@
     "fees": "",
     "notes": "Phone (808) 768-4884. For tires use Kapaʻa or Kawailoa Transfer Station.",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "ke-ehi-transfer-station",
     "questions": {
      "residents_only": {
@@ -8041,7 +8233,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
    },
    {
     "name": "Waipahu Convenience Center",
@@ -8051,7 +8243,7 @@
     "fees": "",
     "notes": "Residents only (no businesses); sedans, SUVs, pickups or minivans only, no trailers; 2 loads per day. Rules: https://www.honolulu.gov/env/ref/opala2-waste-drop-off-rules-residents/. Phone (808) 676-8878",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "waipahu-convenience-center",
     "questions": {
      "residents_only": {
@@ -8105,7 +8297,7 @@
     },
     "operator": "City and County of Honolulu",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
    },
    {
     "name": "Kapolei Convenience Center",
@@ -8115,7 +8307,7 @@
     "fees": "",
     "notes": "Residents only (no businesses); sedans, SUVs, pickups or minivans only, no trailers; 2 loads per day. Rules: https://www.honolulu.gov/env/ref/opala2-waste-drop-off-rules-residents/. Phone (808) 260-2801",
     "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
-    "checked": "2026-11-11",
+    "checked": "2026-11-12",
     "slug": "kapolei-convenience-center",
     "questions": {
      "residents_only": {
@@ -8169,7 +8361,327 @@
     },
     "operator": "City and County of Honolulu",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-12"
+   },
+   {
+    "name": "Waimānalo Convenience Center",
+    "address": "41-241 Hihimanu Street, Waimānalo, HI",
+    "hours": "Daily 7am–6pm (closed Christmas and New Year's Day)",
+    "accepts": "Passenger or light truck tires, with or without rims (limit 4 per month); household rubbish, furniture, bulky items, large metal appliances (limit 2 per month), green waste. NOT accepted: heavy truck or equipment tires",
+    "fees": "",
+    "notes": "Residents only (no businesses); sedans, SUVs, pickups or minivans only, no trailers; 2 loads per day. Rules: https://www.honolulu.gov/env/ref/opala2-waste-drop-off-rules-residents/. Phone (808) 259-7182",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "checked": "2026-11-12",
+    "slug": "waimanalo-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Honolulu drop-off locations page: Convenience Centers “RESIDENTS ONLY”."
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.”"
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.” Large appliances: “Limit 2 per month”. “Residents are allowed two (2) loads per day.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
+     }
+    },
+    "operator": "City and County of Honolulu",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-12"
+   },
+   {
+    "name": "Waiʻanae Convenience Center",
+    "address": "85-572 Waiʻanae Valley Road, Waiʻanae, HI",
+    "hours": "Daily 7am–6pm (closed Christmas and New Year's Day)",
+    "accepts": "Passenger or light truck tires, with or without rims (limit 4 per month); household rubbish, furniture, bulky items, large metal appliances (limit 2 per month), green waste. NOT accepted: heavy truck or equipment tires",
+    "fees": "",
+    "notes": "Residents only (no businesses); sedans, SUVs, pickups or minivans only, no trailers; 2 loads per day. Rules: https://www.honolulu.gov/env/ref/opala2-waste-drop-off-rules-residents/. Phone (808) 696-4203",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "checked": "2026-11-12",
+    "slug": "waianae-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Honolulu drop-off locations page: Convenience Centers “RESIDENTS ONLY”."
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.”"
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.” Large appliances: “Limit 2 per month”. “Residents are allowed two (2) loads per day.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
+     }
+    },
+    "operator": "City and County of Honolulu",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-12"
+   },
+   {
+    "name": "ʻEwa Beach Convenience Center",
+    "address": "91-1000 Geiger Road, ʻEwa Beach, HI",
+    "hours": "Daily 7am–6pm (closed Christmas and New Year's Day)",
+    "accepts": "Passenger or light truck tires, with or without rims (limit 4 per month); household rubbish, furniture, bulky items, large metal appliances (limit 2 per month), green waste. NOT accepted: heavy truck or equipment tires",
+    "fees": "",
+    "notes": "Residents only (no businesses); sedans, SUVs, pickups or minivans only, no trailers; 2 loads per day. Rules: https://www.honolulu.gov/env/ref/opala2-waste-drop-off-rules-residents/. Phone (808) 226-2996",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "checked": "2026-11-12",
+    "slug": "ewa-beach-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Honolulu drop-off locations page: Convenience Centers “RESIDENTS ONLY”."
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.”"
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.” Large appliances: “Limit 2 per month”. “Residents are allowed two (2) loads per day.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
+     }
+    },
+    "operator": "City and County of Honolulu",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-12"
+   },
+   {
+    "name": "Lāʻie Convenience Center",
+    "address": "56-020 Kamehameha Highway, Lāʻie, HI",
+    "hours": "Daily 7am–6pm (closed Christmas and New Year's Day)",
+    "accepts": "Passenger or light truck tires, with or without rims (limit 4 per month); household rubbish, furniture, bulky items, large metal appliances (limit 2 per month), green waste. NOT accepted: heavy truck or equipment tires",
+    "fees": "",
+    "notes": "Residents only (no businesses); sedans, SUVs, pickups or minivans only, no trailers; 2 loads per day. Rules: https://www.honolulu.gov/env/ref/opala2-waste-drop-off-rules-residents/. Phone (808) 293-8714",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "checked": "2026-11-12",
+    "slug": "laie-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Honolulu drop-off locations page: Convenience Centers “RESIDENTS ONLY”."
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.”"
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.” Large appliances: “Limit 2 per month”. “Residents are allowed two (2) loads per day.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
+     }
+    },
+    "operator": "City and County of Honolulu",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-12"
+   },
+   {
+    "name": "Wahiawā Convenience Center",
+    "address": "71-129 Wilikina Drive, Wahiawā, HI",
+    "hours": "Daily 7am–6pm (closed Christmas and New Year's Day)",
+    "accepts": "Passenger or light truck tires, with or without rims (limit 4 per month); household rubbish, furniture, bulky items, large metal appliances (limit 2 per month). No green waste at this site. NOT accepted: heavy truck or equipment tires",
+    "fees": "",
+    "notes": "Residents only (no businesses); sedans, SUVs, pickups or minivans only, no trailers; 2 loads per day. Rules: https://www.honolulu.gov/env/ref/opala2-waste-drop-off-rules-residents/. Phone (808) 621-3648",
+    "source": "https://www.honolulu.gov/env/ref/waste-drop-off-locations/",
+    "checked": "2026-11-12",
+    "slug": "wahiawa-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Honolulu drop-off locations page: Convenience Centers “RESIDENTS ONLY”."
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.”"
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Honolulu residents’ rules: “TIRES (with or without rims) Limit four (4) per month – accepted at all disposal sites except Keehi Transfer Station.” “Passenger or light truck tires only.” Large appliances: “Limit 2 per month”. “Residents are allowed two (2) loads per day.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
+     }
+    },
+    "operator": "City and County of Honolulu",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-12"
    }
   ],
   "note": "Household chemical HHW is appointment-only at city drop-off events (200-appointment cap). The final 2026 event was held Sat Nov 7; 2027 dates are TBD. Call (808) 768-3201 or email hhw@honolulu.gov. Source: https://www.honolulu.gov/env/ref/hhw-2/ (checked 2026-11-10)"
