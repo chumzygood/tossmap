@@ -183,6 +183,44 @@ for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED12 or f["name"].startswith("Bulky Waste Collection Center –"): f["checked"]=D12
     if m["city"]=="San Antonio": m["note"]=m["note"].replace("(re-verified 2026-11-11)","(re-verified 2026-11-12)")
+# --- Nov 13 2026 daily pass additions (each verified against cited official source on 2026-11-13) ---
+D13="2026-11-13"
+add("Richmond",
+  F("Hanover Beaverdam Convenience Center","18400 Beaverdam Road, Beaverdam, VA 23015","Daily 7am–7pm (closed listed county holidays)",HAN,hanacc,hanfee,hannote,D13),
+  F("Hanover Doswell Convenience Center","11224 Doswell Road, Doswell, VA 23047","Daily 7am–7pm (closed listed county holidays)",HAN,hanacc,hanfee,hannote,D13),
+  F("Hanover Montpelier Convenience Center","15188 Clazemont Road, Montpelier, VA 23192","Daily 7am–7pm (closed listed county holidays)",HAN,hanacc+"; mattresses and box springs (limit 2 per day)",hanfee,hannote,D13))
+CUY="Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public."
+add("Cleveland",
+  F("Maple Heights Service Garage (HHW drop-off)","5501 Dunham Road, Maple Heights, OH","Year-round, Mon–Fri 8am–3pm","https://cuyahogarecycles.org/recycle-in/maple-heights/household_hazardous_waste/",
+    "Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint","Free (Cuyahoga County HHW program)",
+    "Maple Heights residents only. "+CUY,D13),
+  F("Warrensville Heights Service Garage (HHW drop-off)","19700 Miles Avenue, Warrensville Heights, OH","Year-round, Mon–Fri 8am–3pm","https://cuyahogarecycles.org/recycle-in/warrensville-heights/household_hazardous_waste/",
+    "Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). Latex paint accepted","Free (Cuyahoga County HHW program)",
+    "Drop-off is at the city service garage; the District says most communities accept waste only from their own residents, so call the city before going. "+CUY,D13))
+add("New Orleans",
+  F("Gretna Burmaster Waste Drop-Off Site","1201 Burmaster Street, Gretna, LA 70053","Tue–Sat 7:30am–4pm; closed Sun–Mon","https://www.gretnala.com/waste-drop-off-site/",
+    "Bulk items: tree debris, furniture, appliances, miscellaneous trash, motor oil. NOT accepted: hazardous waste, tires, batteries, fuel, non-motor oil, electronics",
+    "Free to Gretna residents; $35 gate fee for contractors and residents with small trailers (6 ft or less)",
+    "Operated by the City of Gretna. Replaced Jefferson Parish's Meadowbrook Drop-Off Site (484 Wall Blvd) on Nov 3, 2026; through a parish partnership all Jefferson Parish residents may use it free for residential waste (https://www.jeffparish.gov/1337/Drop-Off-Sites). City contact 504-363-1500",D13))
+NSCC="https://www.nashville.gov/departments/waste-services/convenience-centers"
+add("Nashville",
+  F("Omohundro Convenience Center","1019 Omohundro Pl, Nashville, TN 37210","Tue–Sat 8:30am–4:30pm (closed Metro holidays)",NSCC,
+    "Electronics (free, up to 100 lb per visit); cooking grease; mattresses and box springs ($12 each, 4 per month); construction and demolition material ($20, up to 2 cu yd); 3 bags of household trash plus 1 bulk item free; recycling and compostables. Household hazardous waste and tires go to East or Ezell Pike",
+    "Electronics, recycling and 3 bags + 1 bulk item free; other loads $10 under 1 cu yd or $20 per cu yd; card fee 2.8% (min $1.95); cash not accepted here",
+    "Davidson County residents only; show a Tennessee driver's license with a Davidson County address. No commercial vehicles or commercial waste. Hours/locations: https://www.nashville.gov/departments/waste-services/convenience-centers/hours-and-locations",D13))
+# Nashville East/Ezell: convenience-center fee table (official) adds electronics and tires; re-verified 2026-11-13.
+nsx="; electronics (free, up to 100 lb per visit); tires without rims (free, 4 per month; $5 per tire with rims)"
+for m in M:
+    if m["city"]=="Nashville":
+        for f in m["facilities"]:
+            if f["name"] in ("East Convenience Center","Ezell Pike Convenience Center"):
+                f["accepts"]=HHW+nsx; f["checked"]=D13
+# Re-verified against the official page on 2026-11-13 (no listing text changed).
+REVERIFIED13={"DPW Special Waste Collection Event – RFK Stadium Lot 8","Zero Waste Day Drop-Off – Millennium Park","Sisson Street Residential Recycling Center (HHW days)","Hanover Mechanicsville Convenience Center","Hanover Courthouse Convenience Center","Hanover Elmont Convenience Center"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED13: f["checked"]=D13
+    if m["city"]=="San Antonio": m["note"]=m["note"].replace("(re-verified 2026-11-12)","(re-verified 2026-11-13)")
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

@@ -7,6 +7,9 @@ https://tossmap.com/va/richmond/chesterfield-southern-area-convenience-center/
 https://tossmap.com/va/richmond/hanover-mechanicsville-convenience-center/
 https://tossmap.com/va/richmond/hanover-courthouse-convenience-center/
 https://tossmap.com/va/richmond/hanover-elmont-convenience-center/
+https://tossmap.com/va/richmond/hanover-beaverdam-convenience-center/
+https://tossmap.com/va/richmond/hanover-doswell-convenience-center/
+https://tossmap.com/va/richmond/hanover-montpelier-convenience-center/
 https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/
 https://tossmap.com/tx/dallas/mccommas-bluff-landfill/
 https://tossmap.com/tx/dallas/northwest-bachman-transfer-station/
@@ -22,6 +25,8 @@ https://tossmap.com/ma/boston/zero-waste-day-drop-off-millennium-park/
 https://tossmap.com/oh/cleveland/carr-center-division-of-waste/
 https://tossmap.com/oh/cleveland/ridge-road-transfer-station/
 https://tossmap.com/oh/cleveland/cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins/
+https://tossmap.com/oh/cleveland/maple-heights-service-garage-hhw/
+https://tossmap.com/oh/cleveland/warrensville-heights-service-garage-hhw/
 https://tossmap.com/ky/louisville/haz-bin/
 https://tossmap.com/ky/louisville/waste-reduction-center/
 https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-bronx/
@@ -73,6 +78,10 @@ https://tossmap.com/nc/charlotte/north-mecklenburg-disposal-recycling-center/
 https://tossmap.com/la/new-orleans/recycling-drop-off-center/
 https://tossmap.com/la/new-orleans/jefferson-parish-metairie-drop-off-site/
 https://tossmap.com/la/new-orleans/jefferson-parish-marrero-drop-off-site/
+https://tossmap.com/la/new-orleans/gretna-burmaster-waste-drop-off-site/
+https://tossmap.com/tn/nashville/east-convenience-center/
+https://tossmap.com/tn/nashville/ezell-pike-convenience-center/
+https://tossmap.com/tn/nashville/omohundro-convenience-center/
 https://tossmap.com/nc/raleigh/north-wake-hhw-facility/
 https://tossmap.com/nc/raleigh/south-wake-hhw-facility/
 https://tossmap.com/nc/raleigh/east-wake-hhw-facility/
@@ -95,8 +104,6 @@ https://tossmap.com/wi/milwaukee/mmsd-south-drop-off-center/
 https://tossmap.com/wi/milwaukee/mmsd-13th-street-drop-off/
 https://tossmap.com/mn/minneapolis/hennepin-county-drop-off-brooklyn-park/
 https://tossmap.com/mn/minneapolis/hennepin-county-drop-off-bloomington/
-https://tossmap.com/tn/nashville/east-convenience-center/
-https://tossmap.com/tn/nashville/ezell-pike-convenience-center/
 https://tossmap.com/or/portland/metro-central-hazardous-waste/
 https://tossmap.com/or/portland/metro-south-hazardous-waste/
 https://tossmap.com/wa/seattle/north-seattle-hhw-facility/

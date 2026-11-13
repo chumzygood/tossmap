@@ -1780,7 +1780,7 @@
     "questions_reviewed": "2026-11-12"
    }
   ],
-  "note": "Next Free Landfill Day: Sat Nov 14, 2026, 8am–1pm at Republic Services Landfill (7000 IH 10 E) and Waste Management Landfill (8611 Covel Rd); tires limit 6 passenger car tires per household (re-verified 2026-11-12). Later dates: Sat Feb 13, Apr 10 and Jul 10, 2027, 8am–1pm. Source: https://www.sa.gov/Directory/Departments/SWMD/Garbage/Landfill"
+  "note": "Next Free Landfill Day: Sat Nov 14, 2026, 8am–1pm at Republic Services Landfill (7000 IH 10 E) and Waste Management Landfill (8611 Covel Rd); tires limit 6 passenger car tires per household (re-verified 2026-11-13). Later dates: Sat Feb 13, Apr 10 and Jul 10, 2027, 8am–1pm. Source: https://www.sa.gov/Directory/Departments/SWMD/Garbage/Landfill"
  },
  {
   "city": "San Diego",
@@ -3551,11 +3551,11 @@
     "name": "East Convenience Center",
     "address": "943A Doctor Richard G. Adams Dr, Nashville, TN 37207",
     "hours": "Tue–Sat 8:30am–4:30pm",
-    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs); electronics (free, up to 100 lb per visit); tires without rims (free, 4 per month; $5 per tire with rims)",
     "fees": "Free",
     "notes": "Davidson County residents; TN driver's license; 15 gal or 100 lb/month",
     "source": "https://www.nashville.gov/departments/waste-services/convenience-centers/household-hazardous-waste",
-    "checked": "2026-11-02",
+    "checked": "2026-11-13",
     "slug": "east-convenience-center",
     "questions": {
      "residents_only": {
@@ -3572,19 +3572,19 @@
      },
      "fee_charged": {
       "answer": "no",
-      "evidence": "Free"
+      "evidence": "Nashville HHW page: “There is no fee to drop-off household hazardous waste at the East or the Ezell Pike Convenience Center.” (Fee table: tires with rims $5 each.)"
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Nashville Convenience Center Services page: fee table — “Electronics | East, Ezell, and Omohundro | 1 | Free | Cannot exceed 100 pounds”; “Tires without Rims | East and Ezell | 1 | Free | 4 Tires per Month Limit”; “Tires with Rims | East and Ezell | 1 | $5 per Tire”."
      },
      "paint": {
       "answer": "yes",
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Nashville Convenience Center Services page: fee table — “Electronics | East, Ezell, and Omohundro | 1 | Free | Cannot exceed 100 pounds”; “Tires without Rims | East and Ezell | 1 | Free | 4 Tires per Month Limit”; “Tires with Rims | East and Ezell | 1 | $5 per Tire”."
      },
      "batteries": {
       "answer": "yes",
@@ -3600,26 +3600,26 @@
      },
      "quantity_limits": {
       "answer": "yes",
-      "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs); Free; Davidson County residents; TN driver's license; 15 gal or 100 lb/month"
+      "evidence": "Nashville HHW page: “Metro residents can bring up to 15 gallons or 100 pounds of household hazardous waste.” Nashville Convenience Center Services page: fee table — “Electronics | East, Ezell, and Omohundro | 1 | Free | Cannot exceed 100 pounds”; “Tires without Rims | East and Ezell | 1 | Free | 4 Tires per Month Limit”; “Tires with Rims | East and Ezell | 1 | $5 per Tire”."
      },
      "businesses_accepted": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Nashville Convenience Center Services page: “Waste in any commercial vehicle… is not permitted. Commercial waste materials will not be accepted.” HHW page, Unacceptable Items: “Industrial, commercial or business generated hazardous waste”."
      }
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-10"
+    "questions_reviewed": "2026-11-13"
    },
    {
     "name": "Ezell Pike Convenience Center",
     "address": "3254 Ezell Pike, Nashville, TN 37211",
     "hours": "Tue–Sat 8:30am–4:30pm",
-    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
+    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs); electronics (free, up to 100 lb per visit); tires without rims (free, 4 per month; $5 per tire with rims)",
     "fees": "Free",
     "notes": "Davidson County residents; TN driver's license; 15 gal or 100 lb/month",
     "source": "https://www.nashville.gov/departments/waste-services/convenience-centers/household-hazardous-waste",
-    "checked": "2026-11-02",
+    "checked": "2026-11-13",
     "slug": "ezell-pike-convenience-center",
     "questions": {
      "residents_only": {
@@ -3636,19 +3636,19 @@
      },
      "fee_charged": {
       "answer": "no",
-      "evidence": "Free"
+      "evidence": "Nashville HHW page: “There is no fee to drop-off household hazardous waste at the East or the Ezell Pike Convenience Center.” (Fee table: tires with rims $5 each.)"
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Nashville Convenience Center Services page: fee table — “Electronics | East, Ezell, and Omohundro | 1 | Free | Cannot exceed 100 pounds”; “Tires without Rims | East and Ezell | 1 | Free | 4 Tires per Month Limit”; “Tires with Rims | East and Ezell | 1 | $5 per Tire”."
      },
      "paint": {
       "answer": "yes",
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Nashville Convenience Center Services page: fee table — “Electronics | East, Ezell, and Omohundro | 1 | Free | Cannot exceed 100 pounds”; “Tires without Rims | East and Ezell | 1 | Free | 4 Tires per Month Limit”; “Tires with Rims | East and Ezell | 1 | $5 per Tire”."
      },
      "batteries": {
       "answer": "yes",
@@ -3664,16 +3664,80 @@
      },
      "quantity_limits": {
       "answer": "yes",
-      "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs); Free; Davidson County residents; TN driver's license; 15 gal or 100 lb/month"
+      "evidence": "Nashville HHW page: “Metro residents can bring up to 15 gallons or 100 pounds of household hazardous waste.” Nashville Convenience Center Services page: fee table — “Electronics | East, Ezell, and Omohundro | 1 | Free | Cannot exceed 100 pounds”; “Tires without Rims | East and Ezell | 1 | Free | 4 Tires per Month Limit”; “Tires with Rims | East and Ezell | 1 | $5 per Tire”."
      },
      "businesses_accepted": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Nashville Convenience Center Services page: “Waste in any commercial vehicle… is not permitted. Commercial waste materials will not be accepted.” HHW page, Unacceptable Items: “Industrial, commercial or business generated hazardous waste”."
      }
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-10"
+    "questions_reviewed": "2026-11-13"
+   },
+   {
+    "name": "Omohundro Convenience Center",
+    "address": "1019 Omohundro Pl, Nashville, TN 37210",
+    "hours": "Tue–Sat 8:30am–4:30pm (closed Metro holidays)",
+    "accepts": "Electronics (free, up to 100 lb per visit); cooking grease; mattresses and box springs ($12 each, 4 per month); construction and demolition material ($20, up to 2 cu yd); 3 bags of household trash plus 1 bulk item free; recycling and compostables. Household hazardous waste and tires go to East or Ezell Pike",
+    "fees": "Electronics, recycling and 3 bags + 1 bulk item free; other loads $10 under 1 cu yd or $20 per cu yd; card fee 2.8% (min $1.95); cash not accepted here",
+    "notes": "Davidson County residents only; show a Tennessee driver's license with a Davidson County address. No commercial vehicles or commercial waste. Hours/locations: https://www.nashville.gov/departments/waste-services/convenience-centers/hours-and-locations",
+    "source": "https://www.nashville.gov/departments/waste-services/convenience-centers",
+    "checked": "2026-11-13",
+    "slug": "omohundro-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Nashville Convenience Center Services page: “Residents must present their Tennessee driver’s license showing they live in Davidson County.”"
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "Nashville Convenience Center Services page: “Residents must present their Tennessee driver’s license showing they live in Davidson County.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "Nashville Convenience Center Services page: “3 Bags of Trash… and 1 Bulk Item | All | 1 | Free”; “Mattresses and Box Springs | East, Ezell, and Omohundro | $12 per Mattress”; “Construction and Demolition Material | Omohundro | $20”; volume loads “Less than 1 Cubic Yard | All | $10”."
+     },
+     "tires": {
+      "answer": "no",
+      "evidence": "Nashville Convenience Center Services page: fee table — “Electronics | East, Ezell, and Omohundro | 1 | Free | Cannot exceed 100 pounds”; “Tires without Rims | East and Ezell | 1 | Free | 4 Tires per Month Limit”; “Tires with Rims | East and Ezell | 1 | $5 per Tire”. (Omohundro is not listed for tires)"
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Nashville Convenience Center Services page: fee table — “Electronics | East, Ezell, and Omohundro | 1 | Free | Cannot exceed 100 pounds”; “Tires without Rims | East and Ezell | 1 | Free | 4 Tires per Month Limit”; “Tires with Rims | East and Ezell | 1 | $5 per Tire”."
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "no",
+      "evidence": "Nashville Convenience Center Services page: “Household Hazardous Waste | East and Ezell | 1 | Free” (Omohundro is not listed)."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Nashville Convenience Center Services page: fee table — “Electronics | East, Ezell, and Omohundro | 1 | Free | Cannot exceed 100 pounds”; “Tires without Rims | East and Ezell | 1 | Free | 4 Tires per Month Limit”; “Tires with Rims | East and Ezell | 1 | $5 per Tire”."
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Nashville Convenience Center Services page: “Waste in any commercial vehicle… is not permitted. Commercial waste materials will not be accepted.”"
+     }
+    },
+    "operator": "Metro Nashville Department of Waste Services",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-13"
    }
   ],
   "note": ""
@@ -3755,7 +3819,7 @@
     "fees": "Free",
     "notes": "DC residents only; register in advance on Eventbrite; bring proof of residency and registration. Next listed event after this: Sat Dec 12, 2026, also at RFK Lot 8.",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "checked": "2026-11-12",
+    "checked": "2026-11-13",
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "questions": {
      "residents_only": {
@@ -3809,7 +3873,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-13"
    }
   ],
   "note": "No permanent HHW or e-cycling drop-off. Fort Totten takes up to 4 tires during regular hours. HHW and electronics are collected at registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding"
@@ -3827,7 +3891,7 @@
     "fees": "Free",
     "notes": "Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. Do not arrive before 8:30am; no entry after noon.",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "checked": "2026-11-12",
+    "checked": "2026-11-13",
     "slug": "zero-waste-day-drop-off-millennium-park",
     "questions": {
      "residents_only": {
@@ -3881,7 +3945,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-13"
    }
   ],
   "note": ""
@@ -4651,7 +4715,7 @@
     "fees": "Free",
     "notes": "Baltimore City residents only; materials in original labeled packaging; no commercial vehicles. 410-396-7250",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "checked": "2026-11-12",
+    "checked": "2026-11-13",
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "questions": {
      "residents_only": {
@@ -4705,7 +4769,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-13"
    }
   ],
   "note": ""
@@ -7250,6 +7314,134 @@
     "operator": "not stated by source",
     "source_notice": "",
     "questions_reviewed": "2026-11-10"
+   },
+   {
+    "name": "Maple Heights Service Garage (HHW drop-off)",
+    "address": "5501 Dunham Road, Maple Heights, OH",
+    "hours": "Year-round, Mon–Fri 8am–3pm",
+    "accepts": "Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint",
+    "fees": "Free (Cuyahoga County HHW program)",
+    "notes": "Maple Heights residents only. Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public.",
+    "source": "https://cuyahogarecycles.org/recycle-in/maple-heights/household_hazardous_waste/",
+    "checked": "2026-11-13",
+    "slug": "maple-heights-service-garage-hhw",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Maple Heights page: “Maple Heights has a year-round drop-off for household hazardous waste at the Maple Heights Service Garage… Residents only. No latex paint.”"
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
+     },
+     "tires": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Maple Heights: “No latex paint.”"
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.”"
+     },
+     "quantity_limits": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "businesses_accepted": {
+      "answer": "not stated by source",
+      "evidence": ""
+     }
+    },
+    "operator": "City of Maple Heights (Cuyahoga County Solid Waste District program)",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-13"
+   },
+   {
+    "name": "Warrensville Heights Service Garage (HHW drop-off)",
+    "address": "19700 Miles Avenue, Warrensville Heights, OH",
+    "hours": "Year-round, Mon–Fri 8am–3pm",
+    "accepts": "Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). Latex paint accepted",
+    "fees": "Free (Cuyahoga County HHW program)",
+    "notes": "Drop-off is at the city service garage; the District says most communities accept waste only from their own residents, so call the city before going. Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public.",
+    "source": "https://cuyahogarecycles.org/recycle-in/warrensville-heights/household_hazardous_waste/",
+    "checked": "2026-11-13",
+    "slug": "warrensville-heights-service-garage-hhw",
+    "questions": {
+     "residents_only": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
+     },
+     "tires": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Warrensville Heights page: “Latex paint accepted.”"
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.”"
+     },
+     "quantity_limits": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "businesses_accepted": {
+      "answer": "not stated by source",
+      "evidence": ""
+     }
+    },
+    "operator": "City of Warrensville Heights (Cuyahoga County Solid Waste District program)",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-13"
    }
   ],
   "note": ""
@@ -7651,7 +7843,7 @@
     "fees": "No cost for residents' household trash and recyclables; up to 4 passenger tires per day without fee",
     "notes": "Hanover County residents only; bring ID or vehicle registration (staff may verify residency). No commercial vehicles, U-Hauls or box trucks; businesses must use the Route 301 Transfer Station. Closed New Year's Day, MLK Day, Presidents Day, Easter Sunday, Memorial Day, Juneteenth, Independence Day, Labor Day, Veterans Day, Thanksgiving and the day after, Christmas Eve and Christmas Day. Call Before You Haul: 804-365-3388. Tires/batteries/paint details: https://www.hanovercounty.gov/230/What-Can-Be-Recycled",
     "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
-    "checked": "2026-11-12",
+    "checked": "2026-11-13",
     "slug": "hanover-mechanicsville-convenience-center",
     "questions": {
      "residents_only": {
@@ -7705,7 +7897,7 @@
     },
     "operator": "Hanover County",
     "source_notice": "",
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-13"
    },
    {
     "name": "Hanover Courthouse Convenience Center",
@@ -7715,7 +7907,7 @@
     "fees": "No cost for residents' household trash and recyclables; up to 4 passenger tires per day without fee",
     "notes": "Hanover County residents only; bring ID or vehicle registration (staff may verify residency). No commercial vehicles, U-Hauls or box trucks; businesses must use the Route 301 Transfer Station. Closed New Year's Day, MLK Day, Presidents Day, Easter Sunday, Memorial Day, Juneteenth, Independence Day, Labor Day, Veterans Day, Thanksgiving and the day after, Christmas Eve and Christmas Day. Call Before You Haul: 804-365-3388. Tires/batteries/paint details: https://www.hanovercounty.gov/230/What-Can-Be-Recycled",
     "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
-    "checked": "2026-11-12",
+    "checked": "2026-11-13",
     "slug": "hanover-courthouse-convenience-center",
     "questions": {
      "residents_only": {
@@ -7769,7 +7961,7 @@
     },
     "operator": "Hanover County",
     "source_notice": "",
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-13"
    },
    {
     "name": "Hanover Elmont Convenience Center",
@@ -7779,7 +7971,7 @@
     "fees": "No cost for residents' household trash and recyclables; up to 4 passenger tires per day without fee",
     "notes": "Hanover County residents only; bring ID or vehicle registration (staff may verify residency). No commercial vehicles, U-Hauls or box trucks; businesses must use the Route 301 Transfer Station. Closed New Year's Day, MLK Day, Presidents Day, Easter Sunday, Memorial Day, Juneteenth, Independence Day, Labor Day, Veterans Day, Thanksgiving and the day after, Christmas Eve and Christmas Day. Call Before You Haul: 804-365-3388. Tires/batteries/paint details: https://www.hanovercounty.gov/230/What-Can-Be-Recycled",
     "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
-    "checked": "2026-11-12",
+    "checked": "2026-11-13",
     "slug": "hanover-elmont-convenience-center",
     "questions": {
      "residents_only": {
@@ -7833,7 +8025,199 @@
     },
     "operator": "Hanover County",
     "source_notice": "",
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-13"
+   },
+   {
+    "name": "Hanover Beaverdam Convenience Center",
+    "address": "18400 Beaverdam Road, Beaverdam, VA 23015",
+    "hours": "Daily 7am–7pm (closed listed county holidays)",
+    "accepts": "Passenger vehicle tires up to 32 in. diameter (4 per day, no fee); used oil, oil filters, antifreeze, gasoline, automobile fluids and solvents; lead-acid batteries; household trash, bulky waste (furniture, appliances), recyclables, clothing. Liquid paint is not accepted for recycling (dry it to a paste and place it in the trash); electronics go to the county's e-waste collection events (typically spring and fall)",
+    "fees": "No cost for residents' household trash and recyclables; up to 4 passenger tires per day without fee",
+    "notes": "Hanover County residents only; bring ID or vehicle registration (staff may verify residency). No commercial vehicles, U-Hauls or box trucks; businesses must use the Route 301 Transfer Station. Closed New Year's Day, MLK Day, Presidents Day, Easter Sunday, Memorial Day, Juneteenth, Independence Day, Labor Day, Veterans Day, Thanksgiving and the day after, Christmas Eve and Christmas Day. Call Before You Haul: 804-365-3388. Tires/batteries/paint details: https://www.hanovercounty.gov/230/What-Can-Be-Recycled",
+    "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
+    "checked": "2026-11-13",
+    "slug": "hanover-beaverdam-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Hanover County page: “Hanover County operates six convenience centers where residents can drop off household trash and recyclables at no cost.” “Businesses must use the Route 301 Transfer Station.”"
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "Hanover County page: “Bring ID or vehicle registration. Staff may verify residency.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "Hanover County page: residents drop off household trash and recyclables “at no cost”; What Can Be Recycled: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee”."
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Lead acid batteries can be recycled at any of our convenience centers”."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Hanover County page, items accepted at this site: “Oil, oil filters, antifreeze, gasoline, automobile fluids, solvents”."
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "Hanover County page, items accepted at this site: “Oil, oil filters, antifreeze, gasoline, automobile fluids, solvents”."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
+     }
+    },
+    "operator": "Hanover County",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-13"
+   },
+   {
+    "name": "Hanover Doswell Convenience Center",
+    "address": "11224 Doswell Road, Doswell, VA 23047",
+    "hours": "Daily 7am–7pm (closed listed county holidays)",
+    "accepts": "Passenger vehicle tires up to 32 in. diameter (4 per day, no fee); used oil, oil filters, antifreeze, gasoline, automobile fluids and solvents; lead-acid batteries; household trash, bulky waste (furniture, appliances), recyclables, clothing. Liquid paint is not accepted for recycling (dry it to a paste and place it in the trash); electronics go to the county's e-waste collection events (typically spring and fall)",
+    "fees": "No cost for residents' household trash and recyclables; up to 4 passenger tires per day without fee",
+    "notes": "Hanover County residents only; bring ID or vehicle registration (staff may verify residency). No commercial vehicles, U-Hauls or box trucks; businesses must use the Route 301 Transfer Station. Closed New Year's Day, MLK Day, Presidents Day, Easter Sunday, Memorial Day, Juneteenth, Independence Day, Labor Day, Veterans Day, Thanksgiving and the day after, Christmas Eve and Christmas Day. Call Before You Haul: 804-365-3388. Tires/batteries/paint details: https://www.hanovercounty.gov/230/What-Can-Be-Recycled",
+    "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
+    "checked": "2026-11-13",
+    "slug": "hanover-doswell-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Hanover County page: “Hanover County operates six convenience centers where residents can drop off household trash and recyclables at no cost.” “Businesses must use the Route 301 Transfer Station.”"
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "Hanover County page: “Bring ID or vehicle registration. Staff may verify residency.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "Hanover County page: residents drop off household trash and recyclables “at no cost”; What Can Be Recycled: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee”."
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Lead acid batteries can be recycled at any of our convenience centers”."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Hanover County page, items accepted at this site: “Oil, oil filters, antifreeze, gasoline, automobile fluids, solvents”."
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "Hanover County page, items accepted at this site: “Oil, oil filters, antifreeze, gasoline, automobile fluids, solvents”."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
+     }
+    },
+    "operator": "Hanover County",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-13"
+   },
+   {
+    "name": "Hanover Montpelier Convenience Center",
+    "address": "15188 Clazemont Road, Montpelier, VA 23192",
+    "hours": "Daily 7am–7pm (closed listed county holidays)",
+    "accepts": "Passenger vehicle tires up to 32 in. diameter (4 per day, no fee); used oil, oil filters, antifreeze, gasoline, automobile fluids and solvents; lead-acid batteries; household trash, bulky waste (furniture, appliances), recyclables, clothing. Liquid paint is not accepted for recycling (dry it to a paste and place it in the trash); electronics go to the county's e-waste collection events (typically spring and fall); mattresses and box springs (limit 2 per day)",
+    "fees": "No cost for residents' household trash and recyclables; up to 4 passenger tires per day without fee",
+    "notes": "Hanover County residents only; bring ID or vehicle registration (staff may verify residency). No commercial vehicles, U-Hauls or box trucks; businesses must use the Route 301 Transfer Station. Closed New Year's Day, MLK Day, Presidents Day, Easter Sunday, Memorial Day, Juneteenth, Independence Day, Labor Day, Veterans Day, Thanksgiving and the day after, Christmas Eve and Christmas Day. Call Before You Haul: 804-365-3388. Tires/batteries/paint details: https://www.hanovercounty.gov/230/What-Can-Be-Recycled",
+    "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
+    "checked": "2026-11-13",
+    "slug": "hanover-montpelier-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Hanover County page: “Hanover County operates six convenience centers where residents can drop off household trash and recyclables at no cost.” “Businesses must use the Route 301 Transfer Station.”"
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "Hanover County page: “Bring ID or vehicle registration. Staff may verify residency.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "Hanover County page: residents drop off household trash and recyclables “at no cost”; What Can Be Recycled: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee”."
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Lead acid batteries can be recycled at any of our convenience centers”."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Hanover County page, items accepted at this site: “Oil, oil filters, antifreeze, gasoline, automobile fluids, solvents”."
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "Hanover County page, items accepted at this site: “Oil, oil filters, antifreeze, gasoline, automobile fluids, solvents”."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
+     }
+    },
+    "operator": "Hanover County",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-13"
    }
   ],
   "note": ""
@@ -8034,6 +8418,70 @@
     "operator": "not stated by source",
     "source_notice": "",
     "questions_reviewed": "2026-11-10"
+   },
+   {
+    "name": "Gretna Burmaster Waste Drop-Off Site",
+    "address": "1201 Burmaster Street, Gretna, LA 70053",
+    "hours": "Tue–Sat 7:30am–4pm; closed Sun–Mon",
+    "accepts": "Bulk items: tree debris, furniture, appliances, miscellaneous trash, motor oil. NOT accepted: hazardous waste, tires, batteries, fuel, non-motor oil, electronics",
+    "fees": "Free to Gretna residents; $35 gate fee for contractors and residents with small trailers (6 ft or less)",
+    "notes": "Operated by the City of Gretna. Replaced Jefferson Parish's Meadowbrook Drop-Off Site (484 Wall Blvd) on Nov 3, 2026; through a parish partnership all Jefferson Parish residents may use it free for residential waste (https://www.jeffparish.gov/1337/Drop-Off-Sites). City contact 504-363-1500",
+    "source": "https://www.gretnala.com/waste-drop-off-site/",
+    "checked": "2026-11-13",
+    "slug": "gretna-burmaster-waste-drop-off-site",
+    "questions": {
+     "residents_only": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "City of Gretna Waste Drop-Off page: “Free to Gretna residents… A gate fee of $35.00 will be charged to contractors and residents with small trailers six feet or less.”"
+     },
+     "tires": {
+      "answer": "no",
+      "evidence": "City of Gretna Waste Drop-Off page: “Items NOT accepted include: hazardous waste, tires, batteries, fuel, non motor oil, electronics”."
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "no",
+      "evidence": "City of Gretna Waste Drop-Off page: “Items NOT accepted include: hazardous waste, tires, batteries, fuel, non motor oil, electronics”."
+     },
+     "batteries": {
+      "answer": "no",
+      "evidence": "City of Gretna Waste Drop-Off page: “Items NOT accepted include: hazardous waste, tires, batteries, fuel, non motor oil, electronics”."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "City of Gretna Waste Drop-Off page: accepted bulk items include “motor oil”."
+     },
+     "household_chemicals": {
+      "answer": "no",
+      "evidence": "City of Gretna Waste Drop-Off page: “Items NOT accepted include: hazardous waste, tires, batteries, fuel, non motor oil, electronics”."
+     },
+     "quantity_limits": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "businesses_accepted": {
+      "answer": "yes",
+      "evidence": "City of Gretna Waste Drop-Off page: “A gate fee of $35.00 will be charged to contractors”."
+     }
+    },
+    "operator": "City of Gretna",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-13"
    }
   ],
   "note": ""

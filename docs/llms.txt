@@ -2,16 +2,16 @@
 
 > TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
 
-Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 129 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 136 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
-- [Paint](https://tossmap.com/paint/): 88 official listings in 48 metro areas
-- [Electronics (e-waste)](https://tossmap.com/e-waste/): 38 official listings in 17 metro areas
-- [Tires](https://tossmap.com/tires/): 55 official listings in 16 metro areas
-- [Batteries](https://tossmap.com/batteries/): 98 official listings in 49 metro areas
-- [Motor oil](https://tossmap.com/motor-oil/): 56 official listings in 19 metro areas
-- [Household chemicals](https://tossmap.com/household-chemicals/): 87 official listings in 48 metro areas
+- [Paint](https://tossmap.com/paint/): 90 official listings in 49 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 41 official listings in 18 metro areas
+- [Tires](https://tossmap.com/tires/): 60 official listings in 17 metro areas
+- [Batteries](https://tossmap.com/batteries/): 101 official listings in 49 metro areas
+- [Motor oil](https://tossmap.com/motor-oil/): 60 official listings in 19 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 92 official listings in 48 metro areas
 
 ## Cities
 - [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
@@ -84,6 +84,8 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Carr Center (Division of Waste) — Cleveland, OH](https://tossmap.com/oh/cleveland/carr-center-division-of-waste/)
 - [Ridge Road Transfer Station — Cleveland, OH](https://tossmap.com/oh/cleveland/ridge-road-transfer-station/)
 - [Cuyahoga County Solid Waste District HQ (electronics drop-off bins) — Cleveland, OH](https://tossmap.com/oh/cleveland/cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins/)
+- [Maple Heights Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/maple-heights-service-garage-hhw/)
+- [Warrensville Heights Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/warrensville-heights-service-garage-hhw/)
 - [SWACO Household Hazardous Waste Drop-Off — Columbus, OH](https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/)
 - [Dallas County Home Chemical Collection Center — Dallas, TX](https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/)
 - [McCommas Bluff Landfill — Dallas, TX](https://tossmap.com/tx/dallas/mccommas-bluff-landfill/)
@@ -144,9 +146,11 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Hennepin County Drop-off – Bloomington — Minneapolis, MN](https://tossmap.com/mn/minneapolis/hennepin-county-drop-off-bloomington/)
 - [East Convenience Center — Nashville, TN](https://tossmap.com/tn/nashville/east-convenience-center/)
 - [Ezell Pike Convenience Center — Nashville, TN](https://tossmap.com/tn/nashville/ezell-pike-convenience-center/)
+- [Omohundro Convenience Center — Nashville, TN](https://tossmap.com/tn/nashville/omohundro-convenience-center/)
 - [Recycling Drop-Off Center — New Orleans, LA](https://tossmap.com/la/new-orleans/recycling-drop-off-center/)
 - [Jefferson Parish Metairie Drop-Off Site — New Orleans, LA](https://tossmap.com/la/new-orleans/jefferson-parish-metairie-drop-off-site/)
 - [Jefferson Parish Marrero Drop-Off Site — New Orleans, LA](https://tossmap.com/la/new-orleans/jefferson-parish-marrero-drop-off-site/)
+- [Gretna Burmaster Waste Drop-Off Site — New Orleans, LA](https://tossmap.com/la/new-orleans/gretna-burmaster-waste-drop-off-site/)
 - [DSNY Special Waste Drop-Off – Bronx — New York, NY](https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-bronx/)
 - [DSNY Special Waste Drop-Off – Brooklyn — New York, NY](https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-brooklyn/)
 - [DSNY Special Waste Drop-Off – Manhattan — New York, NY](https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-manhattan/)
@@ -172,6 +176,9 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Hanover Mechanicsville Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hanover-mechanicsville-convenience-center/)
 - [Hanover Courthouse Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hanover-courthouse-convenience-center/)
 - [Hanover Elmont Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hanover-elmont-convenience-center/)
+- [Hanover Beaverdam Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hanover-beaverdam-convenience-center/)
+- [Hanover Doswell Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hanover-doswell-convenience-center/)
+- [Hanover Montpelier Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hanover-montpelier-convenience-center/)
 - [Agua Mansa Permanent HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/agua-mansa-permanent-hhw-facility/)
 - [Lake Elsinore HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/lake-elsinore-hhw-facility/)
 - [Palm Springs HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/palm-springs-hhw-facility/)

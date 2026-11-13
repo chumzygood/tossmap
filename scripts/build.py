@@ -1,6 +1,10 @@
 import json,html,re,os,datetime
 BASE="https://tossmap.com"
 D=json.load(open("data/facilities.json")); OUT="docs"
+# Facility page paths (used so city FAQ answers link straight to each facility page).
+for _m in D:
+    for _f in _m["facilities"]:
+        _f["_fp"]="/"+_m["st"].lower()+"/"+__import__("re").sub(r"[^a-z0-9]+","-",_m["city"].lower()).strip("-")+"/"+_f["slug"]+"/"
 TODAY=datetime.date.today().isoformat()
 # Sitemap lastmod for pages without dated listings: bump only when their content actually changes.
 STATIC_LASTMOD="2026-11-10"
@@ -229,14 +233,14 @@ def names_phrase(fs, html=False):
                 sufs=[n.rsplit(sep,1)[1] for n in names]
                 if len(set(prefs))==1:
                     if html:
-                        bits=[f'<a href="#{slug(f["name"])}">{e(s)}</a>' for f,s in zip(fs,sufs)]
+                        bits=[f'<a href="{f.get("_fp") or "#"+slug(f["name"])}">{e(s)}</a>' for f,s in zip(fs,sufs)]
                     else:
                         bits=list(sufs)
                     mid=f"{bits[0]} and {bits[1]}" if len(bits)==2 else (", ".join(bits[:-1])+", and "+bits[-1])
                     pref=e(prefs[0]) if html else prefs[0]
                     return f"{len(fs)} {pref} sites ({mid})"
     if html:
-        bits=[f'<a href="#{slug(f["name"])}">{e(f["name"])}</a>' for f in fs]
+        bits=[f'<a href="{f.get("_fp") or "#"+slug(f["name"])}">{e(f["name"])}</a>' for f in fs]
     else:
         bits=list(names)
     if len(bits)==1: return bits[0]
@@ -487,7 +491,7 @@ def facility_page(f,m):
           +('<h2>Other facilities in this city directory</h2><ul>'+''.join(f'<li><a href="{fpath(o,m)}">{e(o["name"])}</a> — {e(o["address"])}</li>' for o in others)+'</ul>' if others else '<p>No other facilities are currently listed in this city directory. Follow the city link above for local guidance.</p>')
           +'<p class="note">Use the exact acceptance notes above: paint types, battery types, item limits and event dates matter. Do not mix chemicals or assume a material is accepted because a similar item is listed. Confirm availability with the operator.</p>')
     place=facility_place(f,m)
-    webpage={"@type":"WebPage","@id":BASE+fp+"#page","url":BASE+fp,"name":f["name"],"mainEntity":{"@id":place["@id"]},"publisher":{"@id":ORG_ID},"citation":f["source"]}
+    webpage={"@type":"WebPage","@id":BASE+fp+"#page","url":BASE+fp,"name":f["name"],"mainEntity":{"@id":place["@id"]},"publisher":{"@id":ORG_ID},"citation":f["source"],"dateModified":f["checked"],"isPartOf":{"@id":BASE+"/#website"}}
     # Many facility names are generic ("Waste Reduction Center"), so the city goes in the title.
     ttl=f'{f["name"]}, {m["city"]} {m["st"]}: hours & rules | TossMap'
     if m["city"].lower() in f["name"].lower(): ttl=f'{f["name"]} ({m["st"]}): hours, materials & rules | TossMap'
@@ -564,7 +568,7 @@ home=(f"<h1>Where do I take paint, chemicals, batteries, electronics &amp; tires
  "<h2>By material</h2><p class=tags>"+" ".join(f'<a href="/{s}/">{e(nm)}</a>' for s,nm,_ in MAT)+"</p>"
  "<h2>By city</h2><ul class=grid>"+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in sorted(D,key=lambda x:x["city"]))+"</ul><h2>By state</h2><ul class=grid>"+"".join(f'<li><a href="/{slug(st)}/">{e(sn)}</a></li>' for sn,st in sorted(states))+"</ul>"+signup_box())
 page("/","TossMap: where to dump paint, hazardous waste, e-waste & tires by city","Find official drop-off sites for paint, chemicals, batteries, electronics and tires in 50+ US metros—addresses, hours, fees and source links, checked regularly.",home,
-     [{"@type":"Organization","@id":ORG_ID,"name":"TossMap","url":BASE+"/"},{"@type":"WebSite","name":"TossMap","url":BASE+"/","publisher":{"@id":ORG_ID}}],max(f["checked"] for m in D for f in m["facilities"]))
+     [{"@type":"Organization","@id":ORG_ID,"name":"TossMap","url":BASE+"/"},{"@type":"WebSite","@id":BASE+"/#website","name":"TossMap","url":BASE+"/","publisher":{"@id":ORG_ID}}],max(f["checked"] for m in D for f in m["facilities"]))
 page("/privacy.html","Privacy | TossMap","TossMap privacy policy: no cookies on our pages; newsletter sign-ups are handled by Kit and we do not sell your email.","<h1>Privacy</h1><p>TossMap sets no cookies. We use GoatCounter, a privacy-friendly analytics service that does not track individuals.</p><p>If you sign up for the <a href=\"/newsletter/\">TossMap newsletter</a>, your email is collected by Kit, our email provider, so we can send drop-off updates. We do not sell your email. Kit will send a confirmation email first, and you can unsubscribe anytime.</p><p>If ads are added, ad partners may use cookies; this page will be updated before that happens.</p><p>Listings come from public government sources and may change; confirm with the source before visiting.</p>")
 open(f"{OUT}/404.html","w").write(open(f"{OUT}/index.html").read().replace("<h1>","<h1>Page not found.</h1><h2>",1).replace("</h1><p>","</h2><p>",1).replace(f'<link rel="canonical" href="{BASE}/">','<meta name="robots" content="noindex">'))
 # EMBED: compact, noindex widget per city for other sites (free iframe snippet)
