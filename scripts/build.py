@@ -395,6 +395,10 @@ def facility_place(f, m):
     if f.get("operator") and f["operator"]!=UNKNOWN:
         props.append({"@type":"PropertyValue","name":"Operator","value":f["operator"]})
     place["additionalProperty"]=props
+    # Telephone only when the source-backed notes contain exactly one distinct US phone number (already visible on the page).
+    phones={re.sub(r"\D","",x) for x in re.findall(r"\(?\b\d{3}\)?[ .-]\d{3}-\d{4}\b",f.get("notes") or "")}
+    if len(phones)==1:
+        d=phones.pop(); place["telephone"]=f"+1-{d[:3]}-{d[3:6]}-{d[6:]}"
     spec=opening_hours_spec(f["hours"])
     if spec: place["openingHoursSpecification"]=spec
     elif f.get("hours"):

@@ -48,7 +48,7 @@ class FacilityTests(unittest.TestCase):
                 for k,a in f['questions'].items():
                     self.assertIn(a['answer'],('yes','no',UNKNOWN))
                     if a['answer']!=UNKNOWN: self.assertTrue(a['evidence'],(f['name'],k))
-        self.assertEqual(len(paths),136)
+        self.assertEqual(len(paths),144)
         self.assertEqual(len(set(paths)),len(paths))
     def test_all_facility_pages_and_visible_schema(self):
         sitemap={u.text for u in ET.parse('docs/sitemap.xml').getroot().iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
@@ -75,9 +75,9 @@ class FacilityTests(unittest.TestCase):
                     self.assertIn(norm(qa['acceptedAnswer']['text']),text)
                 for other in m['facilities']:
                     if other is not f: self.assertIn(facility_path(m,other),doc.links)
-        self.assertEqual(len(queue),136); self.assertEqual(len(set(queue)),136)
+        self.assertEqual(len(queue),144); self.assertEqual(len(set(queue)),144)
         self.assertTrue(queue[0].startswith(BASE+'/va/richmond/'))
-        self.assertEqual(len(sitemap),233)
+        self.assertEqual(len(sitemap),241)
     def test_material_links_match_explicit_answers(self):
         for path,key in [('paint','paint'),('tires','tires'),('e-waste','e_waste'),('batteries','batteries'),('motor-oil','motor_oil'),('household-chemicals','household_chemicals')]:
             mat=read('/'+path+'/')

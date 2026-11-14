@@ -2,16 +2,16 @@
 
 > TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
 
-Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 136 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 144 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
-- [Paint](https://tossmap.com/paint/): 90 official listings in 49 metro areas
-- [Electronics (e-waste)](https://tossmap.com/e-waste/): 41 official listings in 18 metro areas
-- [Tires](https://tossmap.com/tires/): 60 official listings in 17 metro areas
-- [Batteries](https://tossmap.com/batteries/): 101 official listings in 49 metro areas
+- [Paint](https://tossmap.com/paint/): 98 official listings in 50 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 47 official listings in 19 metro areas
+- [Tires](https://tossmap.com/tires/): 66 official listings in 18 metro areas
+- [Batteries](https://tossmap.com/batteries/): 107 official listings in 50 metro areas
 - [Motor oil](https://tossmap.com/motor-oil/): 60 official listings in 19 metro areas
-- [Household chemicals](https://tossmap.com/household-chemicals/): 92 official listings in 48 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 95 official listings in 48 metro areas
 
 ## Cities
 - [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
@@ -86,6 +86,8 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Cuyahoga County Solid Waste District HQ (electronics drop-off bins) — Cleveland, OH](https://tossmap.com/oh/cleveland/cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins/)
 - [Maple Heights Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/maple-heights-service-garage-hhw/)
 - [Warrensville Heights Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/warrensville-heights-service-garage-hhw/)
+- [Lakewood Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/lakewood-service-garage-hhw/)
+- [South Euclid Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/south-euclid-service-garage-hhw/)
 - [SWACO Household Hazardous Waste Drop-Off — Columbus, OH](https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/)
 - [Dallas County Home Chemical Collection Center — Dallas, TX](https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/)
 - [McCommas Bluff Landfill — Dallas, TX](https://tossmap.com/tx/dallas/mccommas-bluff-landfill/)
@@ -159,6 +161,12 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Household Hazardous Waste Collection Center — Oklahoma City, OK](https://tossmap.com/ok/oklahoma-city/household-hazardous-waste-collection-center/)
 - [Under The Sink — Omaha, NE](https://tossmap.com/ne/omaha/under-the-sink/)
 - [Porter Transfer Station HHW — Orlando, FL](https://tossmap.com/fl/orlando/porter-transfer-station-hhw/)
+- [Sanitation Convenience Center – Port Richmond — Philadelphia, PA](https://tossmap.com/pa/philadelphia/sanitation-convenience-center-port-richmond/)
+- [Sanitation Convenience Center – Northwest Philadelphia — Philadelphia, PA](https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northwest-philadelphia/)
+- [Sanitation Convenience Center – Northeast Philadelphia — Philadelphia, PA](https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northeast-philadelphia/)
+- [Sanitation Convenience Center – Southwest Philadelphia — Philadelphia, PA](https://tossmap.com/pa/philadelphia/sanitation-convenience-center-southwest-philadelphia/)
+- [Sanitation Convenience Center – Strawberry Mansion — Philadelphia, PA](https://tossmap.com/pa/philadelphia/sanitation-convenience-center-strawberry-mansion/)
+- [Sanitation Convenience Center – West Philadelphia — Philadelphia, PA](https://tossmap.com/pa/philadelphia/sanitation-convenience-center-west-philadelphia/)
 - [North Gateway Transfer Station — Phoenix, AZ](https://tossmap.com/az/phoenix/north-gateway-transfer-station/)
 - [27th Avenue Transfer Station — Phoenix, AZ](https://tossmap.com/az/phoenix/27th-avenue-transfer-station/)
 - [Noble Environmental HHW & Electronics Drop-off — Pittsburgh, PA](https://tossmap.com/pa/pittsburgh/noble-environmental-hhw-electronics-drop-off/)

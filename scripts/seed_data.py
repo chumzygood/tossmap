@@ -221,6 +221,35 @@ for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED13: f["checked"]=D13
     if m["city"]=="San Antonio": m["note"]=m["note"].replace("(re-verified 2026-11-12)","(re-verified 2026-11-13)")
+# --- Nov 14 2026 daily pass additions (each verified against cited official source on 2026-11-14) ---
+D14="2026-11-14"
+PHL="https://www.phila.gov/services/trash-recycling-city-upkeep/find-a-sanitation-convenience-center-to-drop-off-trash-or-recycling/"
+phlacc="Automotive tires (limit 4 per day); electronic waste including computers, monitors and televisions; latex or water-based paint (must be solidified with an absorbent such as kitty litter or newspaper); fluorescent light bulbs; lithium, rechargeable and lead-acid batteries; bulk items, large metal household items and appliances incl. items with refrigerants (limit 2 per day); mattresses and box springs (unwrapped); trash (up to 6 receptacles or 12 bags); recyclables; yard waste (paper bags only); Christmas trees. NOT accepted: construction debris"
+phlfee="Free (Streets Department: “there is no charge to drop-off materials”)"
+phlnote="Philadelphia residents only; present proof that you live in Philadelphia. Regular household items once a day, oversized items once a week. Personal or commercial vehicles under 6,000 lb total vehicle weight; commercial contractors and commercial loads not allowed. Closed City holidays. Address and phone from the City’s Recycling and Donation Finder"
+add("Philadelphia",*[F(f"Sanitation Convenience Center – {n}",a,"Mon–Sat 8am–6pm (closed City holidays)",PHL,phlacc,phlfee,phlnote+f"; {ph}",D14) for n,a,ph in [
+  ("Port Richmond","3901 Delaware Ave, Philadelphia, PA 19137","(215) 685-1358"),
+  ("Northwest Philadelphia","320 Domino Ln, Philadelphia, PA 19128","(215) 685-2502"),
+  ("Northeast Philadelphia","8401 State Rd, Philadelphia, PA 19136","(215) 685-8072"),
+  ("Southwest Philadelphia","3033 S 63rd St, Philadelphia, PA 19153","(215) 685-4290"),
+  ("Strawberry Mansion","2601 W Glenwood Ave, Philadelphia, PA 19121","(215) 685-3955"),
+  ("West Philadelphia","5100 Grays Ave, Philadelphia, PA 19143","(215) 685-2600")]])
+for m in M:
+    if m["city"]=="Philadelphia":
+        m["note"]=m["note"].replace("take them to a Sanitation Convenience Center.","take them to one of the six Sanitation Convenience Centers listed here.")
+add("Cleveland",
+  F("Lakewood Service Garage (HHW drop-off)","12920 Berea Road, Lakewood, OH","Year-round, Mon–Fri 8am–2pm; Sat 8am–12pm","https://cuyahogarecycles.org/recycle-in/lakewood/household_hazardous_waste/",
+    "Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint","Free (Cuyahoga County HHW program)",
+    "Lakewood residents only. "+CUY,D14),
+  F("South Euclid Service Garage (HHW drop-off)","4224 Monticello Boulevard, South Euclid, OH","Year-round, Mon–Fri 8am–3pm","https://cuyahogarecycles.org/recycle-in/south-euclid/household_hazardous_waste/",
+    "Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint","Free (Cuyahoga County HHW program)",
+    "Drop-off is at the city service garage; the District says most communities accept waste only from their own residents, so call the city before going. "+CUY,D14))
+# Re-verified against the official page on 2026-11-14 (no listing text changed).
+REVERIFIED14={"DPW Special Waste Collection Event – RFK Stadium Lot 8","Zero Waste Day Drop-Off – Millennium Park","Sisson Street Residential Recycling Center (HHW days)"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED14: f["checked"]=D14
+    if m["city"]=="San Antonio": m["note"]=m["note"].replace("(re-verified 2026-11-13)","(re-verified 2026-11-14)")
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

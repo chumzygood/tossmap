@@ -849,10 +849,11 @@
         "evidence": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires); Free; Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "City of Houston Residential Drop-Off Centers page (fetched 2026-11-14): Vehicles Not Allowed include “Contractor vehicles/vans”; “No contractors with tools or signs of any kind are allowed.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-14"
   },
   "TX|Houston|Residential Drop-Off Center – Northwest": {
     "slug": "residential-drop-off-center-northwest",
@@ -906,10 +907,11 @@
         "evidence": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires); Free; Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "City of Houston Residential Drop-Off Centers page (fetched 2026-11-14): Vehicles Not Allowed include “Contractor vehicles/vans”; “No contractors with tools or signs of any kind are allowed.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-14"
   },
   "TX|Houston|Residential Drop-Off Center – Northeast": {
     "slug": "residential-drop-off-center-northeast",
@@ -963,10 +965,11 @@
         "evidence": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires); Free; Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "City of Houston Residential Drop-Off Centers page (fetched 2026-11-14): Vehicles Not Allowed include “Contractor vehicles/vans”; “No contractors with tools or signs of any kind are allowed.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-14"
   },
   "TX|Houston|Residential Drop-Off Center – Southeast": {
     "slug": "residential-drop-off-center-southeast",
@@ -1020,10 +1023,11 @@
         "evidence": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires); Free; Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "City of Houston Residential Drop-Off Centers page (fetched 2026-11-14): Vehicles Not Allowed include “Contractor vehicles/vans”; “No contractors with tools or signs of any kind are allowed.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-14"
   },
   "TX|Houston|Residential Drop-Off Center – South": {
     "slug": "residential-drop-off-center-south",
@@ -1077,10 +1081,11 @@
         "evidence": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires); Free; Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "City of Houston Residential Drop-Off Centers page (fetched 2026-11-14): Vehicles Not Allowed include “Contractor vehicles/vans”; “No contractors with tools or signs of any kind are allowed.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-14"
   },
   "TX|Houston|Residential Drop-Off Center – Southwest": {
     "slug": "residential-drop-off-center-southwest",
@@ -1134,10 +1139,11 @@
         "evidence": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires); Free; Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "City of Houston Residential Drop-Off Centers page (fetched 2026-11-14): Vehicles Not Allowed include “Contractor vehicles/vans”; “No contractors with tools or signs of any kind are allowed.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-14"
   },
   "AZ|Phoenix|North Gateway Transfer Station": {
     "slug": "north-gateway-transfer-station",
@@ -2983,7 +2989,7 @@
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "operator": "not stated by source",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "source_checked": "2026-11-13",
+    "source_checked": "2026-11-14",
     "listing_fingerprint": "1eef173e050db0ac049c93a628146ea9afb74741637535a51b32a6edf76a197c",
     "questions": {
       "residents_only": {
@@ -3035,13 +3041,13 @@
         "evidence": "DC DPW page: “No commercial waste will be allowed.”"
       }
     },
-    "questions_reviewed": "2026-11-13"
+    "questions_reviewed": "2026-11-14"
   },
   "MA|Boston|Zero Waste Day Drop-Off – Millennium Park": {
     "slug": "zero-waste-day-drop-off-millennium-park",
     "operator": "not stated by source",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "source_checked": "2026-11-13",
+    "source_checked": "2026-11-14",
     "listing_fingerprint": "25db1143915ef4a9ac14857da9db0662ca46ff7122b422578f7a458373b26ad0",
     "questions": {
       "residents_only": {
@@ -3093,7 +3099,7 @@
         "evidence": "Boston Zero Waste Day page: “We will not accept waste from businesses.”"
       }
     },
-    "questions_reviewed": "2026-11-13"
+    "questions_reviewed": "2026-11-14"
   },
   "NV|Las Vegas|Republic Services HHW – North Las Vegas": {
     "slug": "republic-services-hhw-north-las-vegas",
@@ -3726,7 +3732,7 @@
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "operator": "not stated by source",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "source_checked": "2026-11-13",
+    "source_checked": "2026-11-14",
     "listing_fingerprint": "318c7d7e979e297128ceb0a17516118269fdaa7fcbac89846caa312d1448952b",
     "questions": {
       "residents_only": {
@@ -3778,7 +3784,7 @@
         "evidence": "Baltimore DPW HHW page: “Businesses & Commercial Users must use a private vendor. Commercial Vehicles are not permitted.”"
       }
     },
-    "questions_reviewed": "2026-11-13"
+    "questions_reviewed": "2026-11-14"
   },
   "CA|Sacramento|North Area Recovery Station HHW Drop-Off": {
     "slug": "north-area-recovery-station-hhw-drop-off",
@@ -5844,8 +5850,8 @@
         "evidence": ""
       },
       "household_chemicals": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "City of Cleveland Division of Waste page (fetched 2026-11-14): “Oil, cleaners, solvents, pesticides, and other household chemicals… The Division of Waste accepts household hazardous wastes like these on the first Friday of the month, at two (2) locations: Carr Center (5600 Carnegie Ave.) and the Ridge Road Transfer Station (3727 Ridge Road).” (first Friday only)"
       },
       "quantity_limits": {
         "answer": "yes",
@@ -5856,7 +5862,7 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-14"
   },
   "OH|Cleveland|Cuyahoga County Solid Waste District HQ (electronics drop-off bins)": {
     "slug": "cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins",
@@ -6478,15 +6484,15 @@
         "evidence": ""
       },
       "quantity_limits": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "City and County of Honolulu Waste Drop-Off Locations page (fetched 2026-11-14): “Residents are allowed two (2) loads per day at the city’s disposal sites”."
       },
       "businesses_accepted": {
         "answer": "yes",
         "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
       }
     },
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-14"
   },
   "TX|Dallas|McCommas Bluff Landfill": {
     "slug": "mccommas-bluff-landfill",
@@ -7821,5 +7827,469 @@
       }
     },
     "questions_reviewed": "2026-11-13"
+  },
+  "PA|Philadelphia|Sanitation Convenience Center – Port Richmond": {
+    "slug": "sanitation-convenience-center-port-richmond",
+    "operator": "City of Philadelphia",
+    "source": "https://www.phila.gov/services/trash-recycling-city-upkeep/find-a-sanitation-convenience-center-to-drop-off-trash-or-recycling/",
+    "source_checked": "2026-11-14",
+    "listing_fingerprint": "187da2559a0b5a6cd1d5e5989d3ce62daa302db72a6c6ee64f59ff9acf0c01ec",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “You need to present proof that you live in Philadelphia in order to use the centers.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “You need to present proof that you live in Philadelphia in order to use the centers.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "City of Philadelphia Streets Department (Sanitation Convenience Centers news page): “As always, there is no charge to drop-off materials.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.” (latex/water-based only, solidified)"
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “Automotive tires (limited to four per day)”; bulk items “(limited to two a day)”; “Trash (up to six receptacles or 12 bags)”; “Residents can drop off regular household items once a day and oversized items once a week.”"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "City of Philadelphia sanitation convenience center page: “Commercial contractors and vehicles carrying commercial loads cannot use the facilities.”"
+      }
+    },
+    "questions_reviewed": "2026-11-14"
+  },
+  "PA|Philadelphia|Sanitation Convenience Center – Northwest Philadelphia": {
+    "slug": "sanitation-convenience-center-northwest-philadelphia",
+    "operator": "City of Philadelphia",
+    "source": "https://www.phila.gov/services/trash-recycling-city-upkeep/find-a-sanitation-convenience-center-to-drop-off-trash-or-recycling/",
+    "source_checked": "2026-11-14",
+    "listing_fingerprint": "cefc2a503e9013d2e094282044ee25de90451838c0d7c9159f290176c6817a6b",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “You need to present proof that you live in Philadelphia in order to use the centers.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “You need to present proof that you live in Philadelphia in order to use the centers.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "City of Philadelphia Streets Department (Sanitation Convenience Centers news page): “As always, there is no charge to drop-off materials.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.” (latex/water-based only, solidified)"
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “Automotive tires (limited to four per day)”; bulk items “(limited to two a day)”; “Trash (up to six receptacles or 12 bags)”; “Residents can drop off regular household items once a day and oversized items once a week.”"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "City of Philadelphia sanitation convenience center page: “Commercial contractors and vehicles carrying commercial loads cannot use the facilities.”"
+      }
+    },
+    "questions_reviewed": "2026-11-14"
+  },
+  "PA|Philadelphia|Sanitation Convenience Center – Northeast Philadelphia": {
+    "slug": "sanitation-convenience-center-northeast-philadelphia",
+    "operator": "City of Philadelphia",
+    "source": "https://www.phila.gov/services/trash-recycling-city-upkeep/find-a-sanitation-convenience-center-to-drop-off-trash-or-recycling/",
+    "source_checked": "2026-11-14",
+    "listing_fingerprint": "8e897781cd8253162bbdc921ad7c59d06bff2ceb2fff1e214c3024ac215bb34b",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “You need to present proof that you live in Philadelphia in order to use the centers.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “You need to present proof that you live in Philadelphia in order to use the centers.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "City of Philadelphia Streets Department (Sanitation Convenience Centers news page): “As always, there is no charge to drop-off materials.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.” (latex/water-based only, solidified)"
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “Automotive tires (limited to four per day)”; bulk items “(limited to two a day)”; “Trash (up to six receptacles or 12 bags)”; “Residents can drop off regular household items once a day and oversized items once a week.”"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "City of Philadelphia sanitation convenience center page: “Commercial contractors and vehicles carrying commercial loads cannot use the facilities.”"
+      }
+    },
+    "questions_reviewed": "2026-11-14"
+  },
+  "PA|Philadelphia|Sanitation Convenience Center – Southwest Philadelphia": {
+    "slug": "sanitation-convenience-center-southwest-philadelphia",
+    "operator": "City of Philadelphia",
+    "source": "https://www.phila.gov/services/trash-recycling-city-upkeep/find-a-sanitation-convenience-center-to-drop-off-trash-or-recycling/",
+    "source_checked": "2026-11-14",
+    "listing_fingerprint": "36ece1d9a9b68c131b4b224bb753544c97cfe2c8a6a5dd307980eaac3c02bcf6",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “You need to present proof that you live in Philadelphia in order to use the centers.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “You need to present proof that you live in Philadelphia in order to use the centers.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "City of Philadelphia Streets Department (Sanitation Convenience Centers news page): “As always, there is no charge to drop-off materials.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.” (latex/water-based only, solidified)"
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “Automotive tires (limited to four per day)”; bulk items “(limited to two a day)”; “Trash (up to six receptacles or 12 bags)”; “Residents can drop off regular household items once a day and oversized items once a week.”"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "City of Philadelphia sanitation convenience center page: “Commercial contractors and vehicles carrying commercial loads cannot use the facilities.”"
+      }
+    },
+    "questions_reviewed": "2026-11-14"
+  },
+  "PA|Philadelphia|Sanitation Convenience Center – Strawberry Mansion": {
+    "slug": "sanitation-convenience-center-strawberry-mansion",
+    "operator": "City of Philadelphia",
+    "source": "https://www.phila.gov/services/trash-recycling-city-upkeep/find-a-sanitation-convenience-center-to-drop-off-trash-or-recycling/",
+    "source_checked": "2026-11-14",
+    "listing_fingerprint": "06cc50374cf069c1cbc9a36bbf4736757a291c1d8438d6aad90a95d766dd3ab9",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “You need to present proof that you live in Philadelphia in order to use the centers.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “You need to present proof that you live in Philadelphia in order to use the centers.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "City of Philadelphia Streets Department (Sanitation Convenience Centers news page): “As always, there is no charge to drop-off materials.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.” (latex/water-based only, solidified)"
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “Automotive tires (limited to four per day)”; bulk items “(limited to two a day)”; “Trash (up to six receptacles or 12 bags)”; “Residents can drop off regular household items once a day and oversized items once a week.”"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "City of Philadelphia sanitation convenience center page: “Commercial contractors and vehicles carrying commercial loads cannot use the facilities.”"
+      }
+    },
+    "questions_reviewed": "2026-11-14"
+  },
+  "PA|Philadelphia|Sanitation Convenience Center – West Philadelphia": {
+    "slug": "sanitation-convenience-center-west-philadelphia",
+    "operator": "City of Philadelphia",
+    "source": "https://www.phila.gov/services/trash-recycling-city-upkeep/find-a-sanitation-convenience-center-to-drop-off-trash-or-recycling/",
+    "source_checked": "2026-11-14",
+    "listing_fingerprint": "bbacae98a87bc97440f3ecbca480c99e0dcb20cd2a878edce27853c542df617d",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “You need to present proof that you live in Philadelphia in order to use the centers.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “You need to present proof that you live in Philadelphia in order to use the centers.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "City of Philadelphia Streets Department (Sanitation Convenience Centers news page): “As always, there is no charge to drop-off materials.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.” (latex/water-based only, solidified)"
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: accepted materials include “Automotive tires (limited to four per day)”, “Electronic waste, including computers, monitors, and televisions”, “Latex or water-based paint cans — Must be solidified by adding an absorbent material such as kitty litter or newspaper” and “Fluorescent light bulbs, and lithium, rechargeable, and lead-acid batteries.”"
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "City of Philadelphia sanitation convenience center page: “Automotive tires (limited to four per day)”; bulk items “(limited to two a day)”; “Trash (up to six receptacles or 12 bags)”; “Residents can drop off regular household items once a day and oversized items once a week.”"
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "City of Philadelphia sanitation convenience center page: “Commercial contractors and vehicles carrying commercial loads cannot use the facilities.”"
+      }
+    },
+    "questions_reviewed": "2026-11-14"
+  },
+  "OH|Cleveland|Lakewood Service Garage (HHW drop-off)": {
+    "slug": "lakewood-service-garage-hhw",
+    "operator": "City of Lakewood (Cuyahoga County Solid Waste District program)",
+    "source": "https://cuyahogarecycles.org/recycle-in/lakewood/household_hazardous_waste/",
+    "source_checked": "2026-11-14",
+    "listing_fingerprint": "5a8c9fcf1938e8390aa43fe859a22b145d0510b790896d17d46a731bc358885d",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles Lakewood page: “Lakewood has a year-round drop-off for household hazardous waste at the Lakewood Service Garage… Residents only. No latex paint.”"
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Lakewood: “No latex paint.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.”"
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-14"
+  },
+  "OH|Cleveland|South Euclid Service Garage (HHW drop-off)": {
+    "slug": "south-euclid-service-garage-hhw",
+    "operator": "City of South Euclid (Cuyahoga County Solid Waste District program)",
+    "source": "https://cuyahogarecycles.org/recycle-in/south-euclid/household_hazardous_waste/",
+    "source_checked": "2026-11-14",
+    "listing_fingerprint": "e960f70135e267a54b619b060efde2016a4f36697097c43bd96900534086173a",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” South Euclid: “No latex paint.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.”"
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-14"
   }
 }

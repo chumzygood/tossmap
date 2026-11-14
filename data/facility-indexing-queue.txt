@@ -10,6 +10,12 @@ https://tossmap.com/va/richmond/hanover-elmont-convenience-center/
 https://tossmap.com/va/richmond/hanover-beaverdam-convenience-center/
 https://tossmap.com/va/richmond/hanover-doswell-convenience-center/
 https://tossmap.com/va/richmond/hanover-montpelier-convenience-center/
+https://tossmap.com/pa/philadelphia/sanitation-convenience-center-port-richmond/
+https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northwest-philadelphia/
+https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northeast-philadelphia/
+https://tossmap.com/pa/philadelphia/sanitation-convenience-center-southwest-philadelphia/
+https://tossmap.com/pa/philadelphia/sanitation-convenience-center-strawberry-mansion/
+https://tossmap.com/pa/philadelphia/sanitation-convenience-center-west-philadelphia/
 https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/
 https://tossmap.com/tx/dallas/mccommas-bluff-landfill/
 https://tossmap.com/tx/dallas/northwest-bachman-transfer-station/
@@ -27,6 +33,8 @@ https://tossmap.com/oh/cleveland/ridge-road-transfer-station/
 https://tossmap.com/oh/cleveland/cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins/
 https://tossmap.com/oh/cleveland/maple-heights-service-garage-hhw/
 https://tossmap.com/oh/cleveland/warrensville-heights-service-garage-hhw/
+https://tossmap.com/oh/cleveland/lakewood-service-garage-hhw/
+https://tossmap.com/oh/cleveland/south-euclid-service-garage-hhw/
 https://tossmap.com/ky/louisville/haz-bin/
 https://tossmap.com/ky/louisville/waste-reduction-center/
 https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-bronx/
