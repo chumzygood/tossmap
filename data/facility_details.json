@@ -687,8 +687,8 @@
     "slug": "environmental-service-center-south",
     "operator": "City of Houston Solid Waste Management Department",
     "source": "https://houstontx.gov/solidwaste/esc.html",
-    "source_checked": "2026-11-02",
-    "listing_fingerprint": "d7e0e2ec224c841f92af633596055450c7dc437dc2b6c9efd0a19ba8123b5687",
+    "source_checked": "2026-11-15",
+    "listing_fingerprint": "a8e06866f34ea23113b4a5c174bdcd6cf5ae8f75a3fb0aedb9ba1b7c6ff7abd0",
     "questions": {
       "residents_only": {
         "answer": "not stated by source",
@@ -715,8 +715,8 @@
         "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "City of Houston Environmental Service Centers page (fetched 2026-11-15): “Electronic Waste: Items cannot be dismantled. *A total of 5 large electronic items combined per visit… Computer Equipment & Components, Monitors, Printers, TVs, Small Electrical Appliances”."
       },
       "batteries": {
         "answer": "yes",
@@ -738,14 +738,15 @@
         "answer": "not stated by source",
         "evidence": ""
       }
-    }
+    },
+    "questions_reviewed": "2026-11-15"
   },
   "TX|Houston|Environmental Service Center – North": {
     "slug": "environmental-service-center-north",
     "operator": "City of Houston Solid Waste Management Department",
     "source": "https://houstontx.gov/solidwaste/esc.html",
-    "source_checked": "2026-11-02",
-    "listing_fingerprint": "b34a1cd2369bc7dac1fd7146bfc1b7d8b81c4ae67cb6278da90c7f22a769e31b",
+    "source_checked": "2026-11-15",
+    "listing_fingerprint": "2bf3390c7f75d54e8b3be242043ab318df58ae91612b8199e813e94be9ee925d",
     "questions": {
       "residents_only": {
         "answer": "not stated by source",
@@ -772,8 +773,8 @@
         "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "City of Houston Environmental Service Centers page (fetched 2026-11-15): “Electronic Waste: Items cannot be dismantled. *A total of 5 large electronic items combined per visit… Computer Equipment & Components, Monitors, Printers, TVs, Small Electrical Appliances”."
       },
       "batteries": {
         "answer": "yes",
@@ -795,7 +796,8 @@
         "answer": "not stated by source",
         "evidence": ""
       }
-    }
+    },
+    "questions_reviewed": "2026-11-15"
   },
   "TX|Houston|Residential Drop-Off Center – North": {
     "slug": "residential-drop-off-center-north",
@@ -1149,16 +1151,16 @@
     "slug": "north-gateway-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.phoenix.gov/administration/departments/publicworks/about-us/transfer-stations.html",
-    "source_checked": "2026-11-04",
-    "listing_fingerprint": "5404ca9e39e97390f77a2f2041e8e35c78382d6fbcdd9578f0aa829d9dbad7e3",
+    "source_checked": "2026-11-15",
+    "listing_fingerprint": "e14a3ae570a47eb1dcc9e86111626ad2bfd2a5a68c523fb3190f9e1d47f72f97",
     "questions": {
       "residents_only": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "City of Phoenix Transfer Stations page (fetched 2026-11-15): “All Other Disposal Fees: All loads will be charged $55 per ton of disposal material ($40 minimum charge).” Only the free monthly one-ton load is limited to Phoenix residential solid waste customers."
       },
       "id_required": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "City of Phoenix Transfer Stations page (fetched 2026-11-15): for the free monthly load, residents must “Present photo I.D. with name or address matching the city services bill or account.” (free resident load only)"
       },
       "appointment_required": {
         "answer": "not stated by source",
@@ -1197,25 +1199,26 @@
         "evidence": "Passenger car tires (5 per year, rims removed; no off-road, semi or motorcycle tires), appliances, CRT and non-CRT TVs (2 CRTs/month free), household trash; Residents: one load up to 1 ton/month free with city services bill + matching photo ID; otherwise $55/ton ($40 min); extra CRTs $20 each; Household hazardous waste is prohibited"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "City of Phoenix Transfer Stations page (fetched 2026-11-15): “For commercial loads, cash deposits could be up to $400.” Refrigerators and CFC appliances “are acceptable from commercial sources only if the CFCs have been removed”."
       }
-    }
+    },
+    "questions_reviewed": "2026-11-15"
   },
   "AZ|Phoenix|27th Avenue Transfer Station": {
     "slug": "27th-avenue-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.phoenix.gov/administration/departments/publicworks/about-us/transfer-stations.html",
-    "source_checked": "2026-11-04",
-    "listing_fingerprint": "5404ca9e39e97390f77a2f2041e8e35c78382d6fbcdd9578f0aa829d9dbad7e3",
+    "source_checked": "2026-11-15",
+    "listing_fingerprint": "e14a3ae570a47eb1dcc9e86111626ad2bfd2a5a68c523fb3190f9e1d47f72f97",
     "questions": {
       "residents_only": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "City of Phoenix Transfer Stations page (fetched 2026-11-15): “All Other Disposal Fees: All loads will be charged $55 per ton of disposal material ($40 minimum charge).” Only the free monthly one-ton load is limited to Phoenix residential solid waste customers."
       },
       "id_required": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "City of Phoenix Transfer Stations page (fetched 2026-11-15): for the free monthly load, residents must “Present photo I.D. with name or address matching the city services bill or account.” (free resident load only)"
       },
       "appointment_required": {
         "answer": "not stated by source",
@@ -1254,10 +1257,11 @@
         "evidence": "Passenger car tires (5 per year, rims removed; no off-road, semi or motorcycle tires), appliances, CRT and non-CRT TVs (2 CRTs/month free), household trash; Residents: one load up to 1 ton/month free with city services bill + matching photo ID; otherwise $55/ton ($40 min); extra CRTs $20 each; Household hazardous waste is prohibited"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "City of Phoenix Transfer Stations page (fetched 2026-11-15): “For commercial loads, cash deposits could be up to $400.” Refrigerators and CFC appliances “are acceptable from commercial sources only if the CFCs have been removed”."
       }
-    }
+    },
+    "questions_reviewed": "2026-11-15"
   },
   "TX|San Antonio|Household Hazardous Waste Drop-Off Center": {
     "slug": "household-hazardous-waste-drop-off-center",
@@ -2989,8 +2993,8 @@
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "operator": "not stated by source",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "source_checked": "2026-11-14",
-    "listing_fingerprint": "1eef173e050db0ac049c93a628146ea9afb74741637535a51b32a6edf76a197c",
+    "source_checked": "2026-11-15",
+    "listing_fingerprint": "3cce5280546fd7f5402893d06e443c3764c18a67cf9478d558cfd5acacd92962",
     "questions": {
       "residents_only": {
         "answer": "yes",
@@ -3041,13 +3045,13 @@
         "evidence": "DC DPW page: “No commercial waste will be allowed.”"
       }
     },
-    "questions_reviewed": "2026-11-14"
+    "questions_reviewed": "2026-11-15"
   },
   "MA|Boston|Zero Waste Day Drop-Off – Millennium Park": {
     "slug": "zero-waste-day-drop-off-millennium-park",
     "operator": "not stated by source",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "source_checked": "2026-11-14",
+    "source_checked": "2026-11-15",
     "listing_fingerprint": "25db1143915ef4a9ac14857da9db0662ca46ff7122b422578f7a458373b26ad0",
     "questions": {
       "residents_only": {
@@ -3099,7 +3103,7 @@
         "evidence": "Boston Zero Waste Day page: “We will not accept waste from businesses.”"
       }
     },
-    "questions_reviewed": "2026-11-14"
+    "questions_reviewed": "2026-11-15"
   },
   "NV|Las Vegas|Republic Services HHW – North Las Vegas": {
     "slug": "republic-services-hhw-north-las-vegas",
@@ -3732,7 +3736,7 @@
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "operator": "not stated by source",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "source_checked": "2026-11-14",
+    "source_checked": "2026-11-15",
     "listing_fingerprint": "318c7d7e979e297128ceb0a17516118269fdaa7fcbac89846caa312d1448952b",
     "questions": {
       "residents_only": {
@@ -3784,7 +3788,7 @@
         "evidence": "Baltimore DPW HHW page: “Businesses & Commercial Users must use a private vendor. Commercial Vehicles are not permitted.”"
       }
     },
-    "questions_reviewed": "2026-11-14"
+    "questions_reviewed": "2026-11-15"
   },
   "CA|Sacramento|North Area Recovery Station HHW Drop-Off": {
     "slug": "north-area-recovery-station-hhw-drop-off",
@@ -5752,7 +5756,7 @@
     "slug": "carr-center-division-of-waste",
     "operator": "not stated by source",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-15",
     "listing_fingerprint": "4ad530d9788cd4468e8e8f28795e0091f72248f4a84bdbdf24a8f26c2820a956",
     "questions": {
       "residents_only": {
@@ -5796,21 +5800,21 @@
         "evidence": "E-waste: computers and cell phones (Mon–Fri; no TVs). HHW on first Fridays only: oil, cleaners, solvents, pesticides, household chemicals (latex paint not accepted)"
       },
       "quantity_limits": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "City of Cleveland Division of Waste page (fetched 2026-11-15): “Residents of the City of Cleveland can drop off certain types of bulky waste four (4) times per year at the following locations: Carr Center…”."
       },
       "businesses_accepted": {
         "answer": "not stated by source",
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-15"
   },
   "OH|Cleveland|Ridge Road Transfer Station": {
     "slug": "ridge-road-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "source_checked": "2026-11-11",
+    "source_checked": "2026-11-15",
     "listing_fingerprint": "8faa0e6a7049ca9f7444519102fe20c5f240cf2b0cd08cad06684154e484b398",
     "questions": {
       "residents_only": {
@@ -5862,7 +5866,7 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-14"
+    "questions_reviewed": "2026-11-15"
   },
   "OH|Cleveland|Cuyahoga County Solid Waste District HQ (electronics drop-off bins)": {
     "slug": "cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins",
@@ -8291,5 +8295,411 @@
       }
     },
     "questions_reviewed": "2026-11-14"
+  },
+  "MD|Baltimore|Eastern Residential Recycling Center": {
+    "slug": "eastern-residential-recycling-center",
+    "operator": "Baltimore City Department of Public Works",
+    "source": "https://www.baltimorecity.gov/publicworks/trash-recycling/recycle-drop-off-centers",
+    "source_checked": "2026-11-15",
+    "listing_fingerprint": "a5c64983f56d6de10a16553954b5caa9827af63fc7c80ef559c0a5fd7c3bcc8a",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW: “The Residential Drop-Off Centers are exclusively for use by Baltimore City residents with valid IDs.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW: “The Residential Drop-Off Centers are exclusively for use by Baltimore City residents with valid IDs.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Baltimore City DPW drop-off center guide: “Baltimore City residents may continue to dispose of recycling, electronics, appliances, and household waste at DPW’s five Residential Drop-off Centers at no cost.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW drop-off center guide: Items You Can Drop-Off include “Tires without rims”, “Electronics” and “Used motor oil - up to 5 quarts”."
+      },
+      "paint": {
+        "answer": "no",
+        "evidence": "Baltimore City DPW drop-off center guide: Items You Should Not Drop Off include “Paint”, “Solvents”, “Pesticides”, “Pool chemicals”, “Acids”, “Caustics” and “Batteries”."
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW drop-off center guide: Items You Can Drop-Off include “Tires without rims”, “Electronics” and “Used motor oil - up to 5 quarts”."
+      },
+      "batteries": {
+        "answer": "no",
+        "evidence": "Baltimore City DPW drop-off center guide: Items You Should Not Drop Off include “Paint”, “Solvents”, “Pesticides”, “Pool chemicals”, “Acids”, “Caustics” and “Batteries”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW drop-off center guide: Items You Can Drop-Off include “Tires without rims”, “Electronics” and “Used motor oil - up to 5 quarts”."
+      },
+      "household_chemicals": {
+        "answer": "no",
+        "evidence": "Baltimore City DPW drop-off center guide: Items You Should Not Drop Off include “Paint”, “Solvents”, “Pesticides”, “Pool chemicals”, “Acids”, “Caustics” and “Batteries”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW: “A resident who is not a small hauler is limited to no more than two (2) loads per day and no more than five (5) loads per week.” Used motor oil: “up to 5 quarts”."
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-15"
+  },
+  "MD|Baltimore|Northwest Transfer Station (residential drop-off)": {
+    "slug": "northwest-transfer-station-residential-drop-off",
+    "operator": "Baltimore City Department of Public Works",
+    "source": "https://www.baltimorecity.gov/publicworks/trash-recycling/recycle-drop-off-centers",
+    "source_checked": "2026-11-15",
+    "listing_fingerprint": "74cac5578287ff85418b5ce3ba9838e793a3147aa7494bd379b984b68396cd40",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW: “The Residential Drop-Off Centers are exclusively for use by Baltimore City residents with valid IDs.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW: “The Residential Drop-Off Centers are exclusively for use by Baltimore City residents with valid IDs.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Baltimore City DPW drop-off center guide: “Baltimore City residents may continue to dispose of recycling, electronics, appliances, and household waste at DPW’s five Residential Drop-off Centers at no cost.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW drop-off center guide: Items You Can Drop-Off include “Tires without rims”, “Electronics” and “Used motor oil - up to 5 quarts”."
+      },
+      "paint": {
+        "answer": "no",
+        "evidence": "Baltimore City DPW drop-off center guide: Items You Should Not Drop Off include “Paint”, “Solvents”, “Pesticides”, “Pool chemicals”, “Acids”, “Caustics” and “Batteries”."
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW drop-off center guide: Items You Can Drop-Off include “Tires without rims”, “Electronics” and “Used motor oil - up to 5 quarts”."
+      },
+      "batteries": {
+        "answer": "no",
+        "evidence": "Baltimore City DPW drop-off center guide: Items You Should Not Drop Off include “Paint”, “Solvents”, “Pesticides”, “Pool chemicals”, “Acids”, “Caustics” and “Batteries”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW drop-off center guide: Items You Can Drop-Off include “Tires without rims”, “Electronics” and “Used motor oil - up to 5 quarts”."
+      },
+      "household_chemicals": {
+        "answer": "no",
+        "evidence": "Baltimore City DPW drop-off center guide: Items You Should Not Drop Off include “Paint”, “Solvents”, “Pesticides”, “Pool chemicals”, “Acids”, “Caustics” and “Batteries”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW: “A resident who is not a small hauler is limited to no more than two (2) loads per day and no more than five (5) loads per week.” Used motor oil: “up to 5 quarts”."
+      },
+      "businesses_accepted": {
+        "answer": "yes",
+        "evidence": "Baltimore City DPW: “Small haulers with a valid permit may use the Quarantine Road Landfill (6100 Quarantine Road) and the Drop-off Center at Northwest Transfer Station (5030 Reisterstown Road).” (permitted small haulers only; $20 flat fee up to 7,000 lb)"
+      }
+    },
+    "questions_reviewed": "2026-11-15"
+  },
+  "OH|Cleveland|Beachwood Public Service Center (HHW drop-off)": {
+    "slug": "beachwood-public-service-center-hhw",
+    "operator": "City of Beachwood (Cuyahoga County Solid Waste District program)",
+    "source": "https://cuyahogarecycles.org/recycle-in/beachwood/household_hazardous_waste/",
+    "source_checked": "2026-11-15",
+    "listing_fingerprint": "6a8b463ae76e19d1a47113c57951142496818f3a61634b469476d20ebdc5eab8",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Beachwood: “No latex paint.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.”"
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-15"
+  },
+  "OH|Cleveland|Bedford Heights Service Garage (HHW drop-off)": {
+    "slug": "bedford-heights-service-garage-hhw",
+    "operator": "City of Bedford Heights (Cuyahoga County Solid Waste District program)",
+    "source": "https://cuyahogarecycles.org/recycle-in/bedford-heights/household_hazardous_waste/",
+    "source_checked": "2026-11-15",
+    "listing_fingerprint": "e960f70135e267a54b619b060efde2016a4f36697097c43bd96900534086173a",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Bedford Heights: “No latex paint.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.”"
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-15"
+  },
+  "OH|Cleveland|Brooklyn Service Garage (HHW drop-off)": {
+    "slug": "brooklyn-service-garage-hhw",
+    "operator": "City of Brooklyn (Cuyahoga County Solid Waste District program)",
+    "source": "https://cuyahogarecycles.org/recycle-in/brooklyn/household_hazardous_waste/",
+    "source_checked": "2026-11-15",
+    "listing_fingerprint": "f1be3fe4ee0e50ff9db9fdf6f0bdec42aff236ffd418cdeb89f64ce33febbd22",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Brooklyn: “No latex paint.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.”"
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-15"
+  },
+  "OH|Cleveland|Lyndhurst Service Garage (HHW drop-off)": {
+    "slug": "lyndhurst-service-garage-hhw",
+    "operator": "City of Lyndhurst (Cuyahoga County Solid Waste District program)",
+    "source": "https://cuyahogarecycles.org/recycle-in/lyndhurst/household_hazardous_waste/",
+    "source_checked": "2026-11-15",
+    "listing_fingerprint": "d915a3228f02d8145fa241142606d3976fc6f50fa0357de00cf65efd9764b6a0",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles Lyndhurst page: “Lyndhurst has a year-round drop-off for household hazardous waste Monday-Friday from 7:00 AM-3:00 PM at the Lyndhurst Service Garage… Residents only; proof of residency is required. No latex paint. No businesses or commercial properties.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles Lyndhurst page: “Lyndhurst has a year-round drop-off for household hazardous waste Monday-Friday from 7:00 AM-3:00 PM at the Lyndhurst Service Garage… Residents only; proof of residency is required. No latex paint. No businesses or commercial properties.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Lyndhurst: “No latex paint.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.”"
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles Lyndhurst page: “Lyndhurst has a year-round drop-off for household hazardous waste Monday-Friday from 7:00 AM-3:00 PM at the Lyndhurst Service Garage… Residents only; proof of residency is required. No latex paint. No businesses or commercial properties.”"
+      }
+    },
+    "questions_reviewed": "2026-11-15"
+  },
+  "OH|Cleveland|Solon Service Department (HHW drop-off)": {
+    "slug": "solon-service-department-hhw",
+    "operator": "City of Solon (Cuyahoga County Solid Waste District program)",
+    "source": "https://cuyahogarecycles.org/recycle-in/solon/household_hazardous_waste/",
+    "source_checked": "2026-11-15",
+    "listing_fingerprint": "99eaca39ecc51abb71e9c17d91f0511560dddf929430710be0a29d43c7ff2253",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Solon: “No latex paint.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.”"
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-15"
   }
 }

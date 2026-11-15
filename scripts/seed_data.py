@@ -250,6 +250,47 @@ for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED14: f["checked"]=D14
     if m["city"]=="San Antonio": m["note"]=m["note"].replace("(re-verified 2026-11-13)","(re-verified 2026-11-14)")
+# --- Nov 15 2026 daily pass additions (each verified against cited official source on 2026-11-15) ---
+D15="2026-11-15"
+CUYACC="Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint"
+CUYCALL="the District says most communities accept waste only from their own residents, so call the city before going. "
+add("Cleveland",
+  F("Beachwood Public Service Center (HHW drop-off)","23355 Mercantile Road, Beachwood, OH","Year-round, Mon–Fri 7:30am–3:30pm","https://cuyahogarecycles.org/recycle-in/beachwood/household_hazardous_waste/",
+    CUYACC,"Free (Cuyahoga County HHW program)","Use the west driveway of the Public Service Center; "+CUYCALL+CUY,D15),
+  F("Bedford Heights Service Garage (HHW drop-off)","25401 Solon Road, Bedford Heights, OH","Year-round, Mon–Fri 8am–3pm","https://cuyahogarecycles.org/recycle-in/bedford-heights/household_hazardous_waste/",
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the city service garage; "+CUYCALL+CUY,D15),
+  F("Brooklyn Service Garage (HHW drop-off)","9400 Memphis Avenue, Brooklyn, OH","Year-round, Mon–Fri 7am–2:30pm","https://cuyahogarecycles.org/recycle-in/brooklyn/household_hazardous_waste/",
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the city service garage; "+CUYCALL+CUY,D15),
+  F("Lyndhurst Service Garage (HHW drop-off)","5301 Mayfield Road, Lyndhurst, OH","Year-round, Mon–Fri 7am–3pm; seasonal Sat–Sun 11:30am–3:30pm (April–November)","https://cuyahogarecycles.org/recycle-in/lyndhurst/household_hazardous_waste/",
+    CUYACC,"Free (Cuyahoga County HHW program)","Lyndhurst residents only; proof of residency required. No businesses or commercial properties. "+CUY,D15),
+  F("Solon Service Department (HHW drop-off)","6600 Cochran Road, Solon, OH","Year-round, Mon–Fri 8–11am and 12–3pm","https://cuyahogarecycles.org/recycle-in/solon/household_hazardous_waste/",
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the city service department; "+CUYCALL+CUY,D15))
+BAL="https://www.baltimorecity.gov/publicworks/trash-recycling/recycle-drop-off-centers"
+BALG="https://www.baltimorecity.gov/publicworks/trash-recycling/drop-off-center-guide"
+balacc="Tires without rims; electronics; used motor oil (up to 5 quarts); household trash; furniture and bulk items; appliances; scrap metal; recyclables (cans, glass, plastics, paper, cardboard); bagged yard waste. NOT accepted: paint, solvents, pesticides, pool chemicals, acids, caustics, gasoline, mercury thermometers/thermostats, syringes, fire extinguishers, propane and helium tanks, batteries, fluorescent bulbs"
+balfee="Free for Baltimore City residents"
+balnote="Baltimore City residents with valid ID only; a resident who is not a small hauler is limited to 2 loads per day and 5 per week; passenger car, unmodified van/minivan or unmodified pickup up to 3/4 ton only (commercial vehicles, modified pickups and trailers need a Baltimore City small haulers permit). Accepted-items guide: "+BALG
+add("Baltimore",
+  F("Eastern Residential Recycling Center","6101 Bowley's Lane, Baltimore, MD","Mon–Sat 9am–5pm",BAL,balacc,balfee,balnote+". 410-396-9950",D15),
+  F("Northwest Transfer Station (residential drop-off)","5030 Reisterstown Road, Baltimore, MD","Mon–Sat 7am–5pm",BAL,balacc,balfee+"; permitted small haulers: $20 flat fee for vehicles up to 7,000 lb gross weight, plus $3.38 per 100 lb beyond 7,000 lb (cash or credit/debit)",
+    balnote+". Small haulers with a valid permit may also use this site. 410-396-2706",D15))
+for m in M:
+    for f in m["facilities"]:
+        if f["name"]=="DPW Special Waste Collection Event – RFK Stadium Lot 8":
+            f["hours"]="Event: Sat Dec 12, 2026, 8am–2pm (registration required; no entry after 2pm)"
+            f["notes"]="DC residents only; register in advance on Eventbrite; bring proof of residency and registration. The Nov 14 event has been held; no later 2026–27 date is listed yet."
+            f["checked"]=D15
+        if f["name"] in ("North Gateway Transfer Station","27th Avenue Transfer Station"):
+            f["hours"]="Mon–Fri 5:30am–5pm; Sat 6am–3pm; closed Sun & listed city holidays"; f["checked"]=D15
+        if f["name"].startswith("Environmental Service Center –"):
+            f["accepts"]=HHW+"; electronics (computers, monitors, printers, TVs, small electrical appliances; 5 large items per visit); tires (5 per residence, no commercial vehicle tires)"; f["checked"]=D15
+    if m["city"]=="San Antonio":
+        m["note"]="Next Free Landfill Day: Sat Feb 13, 2027, 8am–1pm at Republic Services Landfill (7000 IH 10 E) and Waste Management Landfill (8611 Covel Rd); tires limit 6 passenger car tires per household (re-verified 2026-11-15; the Nov 14, 2026 event has been held). Later dates: Sat Apr 10 and Jul 10, 2027, 8am–1pm. Source: https://www.sa.gov/Directory/Departments/SWMD/Garbage/Landfill"
+# Re-verified against the official page on 2026-11-15 (no listing text changed).
+REVERIFIED15={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Residential Recycling Center (HHW days)","Carr Center (Division of Waste)","Ridge Road Transfer Station"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED15: f["checked"]=D15
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

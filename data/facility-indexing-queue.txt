@@ -35,6 +35,11 @@ https://tossmap.com/oh/cleveland/maple-heights-service-garage-hhw/
 https://tossmap.com/oh/cleveland/warrensville-heights-service-garage-hhw/
 https://tossmap.com/oh/cleveland/lakewood-service-garage-hhw/
 https://tossmap.com/oh/cleveland/south-euclid-service-garage-hhw/
+https://tossmap.com/oh/cleveland/beachwood-public-service-center-hhw/
+https://tossmap.com/oh/cleveland/bedford-heights-service-garage-hhw/
+https://tossmap.com/oh/cleveland/brooklyn-service-garage-hhw/
+https://tossmap.com/oh/cleveland/lyndhurst-service-garage-hhw/
+https://tossmap.com/oh/cleveland/solon-service-department-hhw/
 https://tossmap.com/ky/louisville/haz-bin/
 https://tossmap.com/ky/louisville/waste-reduction-center/
 https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-bronx/
@@ -87,6 +92,9 @@ https://tossmap.com/la/new-orleans/recycling-drop-off-center/
 https://tossmap.com/la/new-orleans/jefferson-parish-metairie-drop-off-site/
 https://tossmap.com/la/new-orleans/jefferson-parish-marrero-drop-off-site/
 https://tossmap.com/la/new-orleans/gretna-burmaster-waste-drop-off-site/
+https://tossmap.com/md/baltimore/sisson-street-residential-recycling-center-hhw-days/
+https://tossmap.com/md/baltimore/eastern-residential-recycling-center/
+https://tossmap.com/md/baltimore/northwest-transfer-station-residential-drop-off/
 https://tossmap.com/tn/nashville/east-convenience-center/
 https://tossmap.com/tn/nashville/ezell-pike-convenience-center/
 https://tossmap.com/tn/nashville/omohundro-convenience-center/
@@ -122,7 +130,6 @@ https://tossmap.com/dc/washington/fort-totten-transfer-station-tires/
 https://tossmap.com/dc/washington/dpw-special-waste-collection-event-rfk-stadium-lot-8/
 https://tossmap.com/nm/albuquerque/hhw-collection-center-safety-kleen/
 https://tossmap.com/tx/austin/recycle-reuse-drop-off-center/
-https://tossmap.com/md/baltimore/sisson-street-residential-recycling-center-hhw-days/
 https://tossmap.com/oh/cincinnati/cincinnati-recycling-reuse-hub/
 https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/
 https://tossmap.com/co/denver/rooney-road-recycling-center/

@@ -65,7 +65,7 @@ def page(path,title,desc,body,graph=(),checked=None):
     foot=f"Data from official government and operator sources{', checked '+checked if checked else ''}. Always confirm with the source before driving."
     open(p,"w").write(f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{BASE}{path}">
-<meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{BASE}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="TossMap">
+<meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{BASE}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="TossMap"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="{e(title)}"><meta name="twitter:description" content="{e(desc)}">
 <link rel="stylesheet" href="/style.css">{ld}
 {GC}</head><body><header><a href="/"><strong>TossMap</strong></a> · where to toss hazardous waste, paint, e-waste &amp; tires · <a href="/newsletter/">Newsletter</a></header><main>{body}</main>
 <footer>{foot} · <a href="/newsletter/">Newsletter</a> · <a href="/privacy.html">Privacy</a> · <a href="/embed/">Embed widget</a> · <a href="/for-cities/">For cities</a> · <a href="/partners/">Partners</a> · <a href="mailto:toolshed@mail.grokbot.com">Support</a></footer></body></html>""")
@@ -503,7 +503,33 @@ def facility_page(f,m):
     takes=f' Takes {and_list(mnames)}.' if mnames else ''
     page(fp,ttl,
          f'{f["name"]} {"in" if m["city"].lower() in f["address"].lower() else "in the"} {m["city"]}, {m["st"]}{"" if m["city"].lower() in f["address"].lower() else " area"}: address, hours, fees, eligibility and official source.{takes} Last checked {f["checked"]}.',
-         body,[bl,webpage,place,{"@type":"FAQPage","mainEntity":entities}],f["checked"])
+         body,[bl,webpage,place,{"@type":"FAQPage","mainEntity":entities}]+([event_ld(f,m,place)] if event_ld(f,m,place) else []),f["checked"])
+
+# One-day collection events ("Event: Sat Dec 12, 2026, 8am–2pm") get schema.org Event markup, using only the listing's own date/time text.
+STATE_TZ={"DC":"America/New_York","MA":"America/New_York","MD":"America/New_York","PA":"America/New_York","OH":"America/New_York","NY":"America/New_York","VA":"America/New_York","GA":"America/New_York","FL":"America/New_York","NC":"America/New_York","MI":"America/New_York","KY":"America/New_York","TX":"America/Chicago","IL":"America/Chicago","LA":"America/Chicago","TN":"America/Chicago","MO":"America/Chicago","MN":"America/Chicago","WI":"America/Chicago","OK":"America/Chicago","NE":"America/Chicago","CO":"America/Denver","UT":"America/Denver","NM":"America/Denver","AZ":"America/Phoenix","CA":"America/Los_Angeles","WA":"America/Los_Angeles","OR":"America/Los_Angeles","NV":"America/Los_Angeles","HI":"Pacific/Honolulu"}
+MONTHS={m:i+1 for i,m in enumerate(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"])}
+def event_ld(f,m,place):
+    mm=re.search(r"Event:\s*(?:Sat|Sun|Mon|Tue|Wed|Thu|Fri)\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2}),\s*(20\d{2})(?:,\s*([0-9:]+(?:am|pm)?)\s*[–-]\s*([0-9:]+(?:am|pm)|noon))?",f.get("hours") or "")
+    if not mm: return None
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    y,mo,d=int(mm.group(3)),MONTHS[mm.group(1)],int(mm.group(2))
+    def stamp(tok,inherit=None):
+        if not tok: return None
+        t=parse_time(tok,inherit)
+        if not t or m["st"] not in STATE_TZ: return None
+        hh,mi=map(int,t.split(":"))
+        return datetime(y,mo,d,hh,mi,tzinfo=ZoneInfo(STATE_TZ[m["st"]])).isoformat()
+    endtok=mm.group(5); inh=re.search(r"(am|pm)$",endtok or "")
+    start=stamp(mm.group(4),inh.group(1) if inh else None) or f"{y:04d}-{mo:02d}-{d:02d}"
+    end=stamp(endtok)
+    ev={"@type":"Event","name":f'{f["name"]} ({mm.group(1)} {d}, {y})',"startDate":start,"eventStatus":"https://schema.org/EventScheduled",
+        "eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@id":place["@id"]},"url":f["source"],
+        "description":"Accepts: "+f["accepts"]+(". "+f["notes"] if f.get("notes") else "")}
+    if end: ev["endDate"]=end
+    if (f.get("fees") or "").strip().lower().startswith("free"): ev["isAccessibleForFree"]=True
+    if f.get("operator") and f["operator"]!=UNKNOWN: ev["organizer"]={"@type":"Organization","name":f["operator"],"url":f["source"]}
+    return ev
 
 def and_list(xs): return ", ".join(xs[:-1])+" and "+xs[-1] if len(xs)>1 else "".join(xs)
 def plural(n,w): return f"{n} {w}{'' if n==1 else 's'}"
