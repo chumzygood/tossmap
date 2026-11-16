@@ -2,16 +2,16 @@
 
 > TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
 
-Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 151 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 157 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
-- [Paint](https://tossmap.com/paint/): 103 official listings in 50 metro areas
-- [Electronics (e-waste)](https://tossmap.com/e-waste/): 51 official listings in 21 metro areas
+- [Paint](https://tossmap.com/paint/): 109 official listings in 50 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 52 official listings in 22 metro areas
 - [Tires](https://tossmap.com/tires/): 68 official listings in 19 metro areas
 - [Batteries](https://tossmap.com/batteries/): 107 official listings in 50 metro areas
 - [Motor oil](https://tossmap.com/motor-oil/): 62 official listings in 19 metro areas
-- [Household chemicals](https://tossmap.com/household-chemicals/): 100 official listings in 48 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 106 official listings in 48 metro areas
 
 ## Cities
 - [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
@@ -95,6 +95,12 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Brooklyn Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/brooklyn-service-garage-hhw/)
 - [Lyndhurst Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/lyndhurst-service-garage-hhw/)
 - [Solon Service Department (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/solon-service-department-hhw/)
+- [Rocky River Transfer Station (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/rocky-river-transfer-station-hhw/)
+- [Broadview Heights Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/broadview-heights-service-garage-hhw/)
+- [Olmsted Falls Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/olmsted-falls-service-garage-hhw/)
+- [North Royalton Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/north-royalton-service-garage-hhw/)
+- [Moreland Hills Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/moreland-hills-service-garage-hhw/)
+- [Parma Service Garage (HHW drop-off day) — Cleveland, OH](https://tossmap.com/oh/cleveland/parma-service-garage-hhw-drop-off-day/)
 - [SWACO Household Hazardous Waste Drop-Off — Columbus, OH](https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/)
 - [Dallas County Home Chemical Collection Center — Dallas, TX](https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/)
 - [McCommas Bluff Landfill — Dallas, TX](https://tossmap.com/tx/dallas/mccommas-bluff-landfill/)

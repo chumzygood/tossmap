@@ -491,11 +491,11 @@ def facility_page(f,m):
           +f'<h2>Common questions</h2><p class="meta">Question set reviewed {e(f.get("questions_reviewed",f["checked"]))}.</p><p>Yes and no apply only to the material types, users and conditions in the accompanying evidence. A fee answer of no means the listed service is free under those conditions; it does not waive eligibility rules. “Not stated by source” means no explicit answer is recorded in our source-backed listing, not that the source has no further information. Check the official source before driving.</p>'
           +'<table class="questions"><caption>Facility requirements and material acceptance</caption><thead><tr><th scope="col">Question</th><th scope="col">Answer and source-backed detail</th></tr></thead><tbody>'+''.join(rows)+'</tbody></table>'
           +(f'<h2>Browse accepted materials</h2><p>{materials}</p>' if materials else '')
-          +f'<p><a href="{cpath(m)}">All drop-off options in {e(m["city"])}</a></p>'
+          +f'<p><a href="{cpath(m)}">All drop-off options in {e(m["city"])}</a> · <a href="/{slug(m['st'])}/">More drop-off sites in {e(m["state"])}</a></p>'
           +('<h2>Other facilities in this city directory</h2><ul>'+''.join(f'<li><a href="{fpath(o,m)}">{e(o["name"])}</a> — {e(o["address"])}</li>' for o in others)+'</ul>' if others else '<p>No other facilities are currently listed in this city directory. Follow the city link above for local guidance.</p>')
           +'<p class="note">Use the exact acceptance notes above: paint types, battery types, item limits and event dates matter. Do not mix chemicals or assume a material is accepted because a similar item is listed. Confirm availability with the operator.</p>')
     place=facility_place(f,m)
-    webpage={"@type":"WebPage","@id":BASE+fp+"#page","url":BASE+fp,"name":f["name"],"mainEntity":{"@id":place["@id"]},"publisher":{"@id":ORG_ID},"citation":f["source"],"dateModified":f["checked"],"isPartOf":{"@id":BASE+"/#website"}}
+    webpage={"@type":"WebPage","@id":BASE+fp+"#page","url":BASE+fp,"name":f["name"],"mainEntity":{"@id":place["@id"]},"publisher":{"@id":ORG_ID},"citation":f["source"],"dateModified":f["checked"],"inLanguage":"en-US","isPartOf":{"@id":BASE+"/#website"}}
     # Many facility names are generic ("Waste Reduction Center"), so the city goes in the title.
     ttl=f'{f["name"]}, {m["city"]} {m["st"]}: hours & rules | TossMap'
     if m["city"].lower() in f["name"].lower(): ttl=f'{f["name"]} ({m["st"]}): hours, materials & rules | TossMap'

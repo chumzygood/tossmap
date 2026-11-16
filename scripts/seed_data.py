@@ -291,6 +291,28 @@ REVERIFIED15={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Resid
 for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED15: f["checked"]=D15
+# --- Nov 16 2026 daily pass additions (each verified against cited official source on 2026-11-16) ---
+D16="2026-11-16"
+CUYU="https://cuyahogarecycles.org/recycle-in/{}/household_hazardous_waste/"
+add("Cleveland",
+  F("Rocky River Transfer Station (HHW drop-off)","22401 Lake Road, Rocky River, OH","Year-round, Mon–Fri 7am–3pm; Sat 8am–12pm",CUYU.format("rocky-river"),
+    "Household hazardous waste (oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners)","Free (Cuyahoga County HHW program)",
+    "Rocky River also has year-round curbside HHW collection (place items on the tree lawn on your regular trash day); "+CUYCALL+CUY,D16),
+  F("Broadview Heights Service Garage (HHW drop-off)","9543 Broadview Road, Bldg. 11, Broadview Heights, OH","Year-round, Mon–Fri 7am–3pm",CUYU.format("broadview-heights"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Use the Oakes Road Service entrance; "+CUYCALL+CUY,D16),
+  F("Olmsted Falls Service Garage (HHW drop-off)","9234 Columbia Road, Olmsted Falls, OH","Year-round, Mon–Fri 8am–4pm",CUYU.format("olmsted-falls"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the city service garage; "+CUYCALL+CUY,D16),
+  F("North Royalton Service Garage (HHW drop-off)","11545 Royalton Road, North Royalton, OH","Year-round: 1st and 3rd Saturdays (May–September), 1st Saturday only (October–April), 8am–3pm",CUYU.format("north-royalton"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the city service garage; "+CUYCALL+CUY,D16),
+  F("Moreland Hills Service Garage (HHW drop-off)","4350 SOM Center Road, Moreland Hills, OH","Year-round, Mon–Fri 7am–3pm",CUYU.format("moreland-hills"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the village service garage; "+CUYCALL+CUY,D16),
+  F("Parma Service Garage (HHW drop-off day)","5680 Chevrolet Boulevard, Parma, OH","Event: Sat Nov 21, 2026, 8am–noon",CUYU.format("parma"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Parma's 2026 HHW drop-off days were March 28, October 3 and November 21 (the first two have been held); "+CUYCALL+CUY,D16))
+# Re-verified against the official page on 2026-11-16 (no listing text changed).
+REVERIFIED16={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Residential Recycling Center (HHW days)"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED16: f["checked"]=D16
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re
