@@ -97,6 +97,25 @@ class FacilityTests(unittest.TestCase):
                 target=Path('docs'+unquote(u.path))
                 if u.path.endswith('/'): target=target/'index.html'
                 self.assertTrue(target.exists(),f'{path}: broken link {href}')
+    def test_material_hub_seo_uses_live_counts(self):
+        def count(key):
+            n=sum(1 for m in D for f in m['facilities'] if f['questions'][key]['answer']=='yes')
+            metros=sum(1 for m in D if any(f['questions'][key]['answer']=='yes' for f in m['facilities']))
+            return n,metros
+        tn,tm=count('tires'); hn,hm=count('household_chemicals')
+        tires=Path('docs/tires/index.html').read_text()
+        hhw=Path('docs/household-chemicals/index.html').read_text()
+        home=Path('docs/index.html').read_text()
+        self.assertIn(f'<title>Tire disposal near me: {tn} official drop-off sites in {tm} metros | TossMap</title>',tires)
+        self.assertIn('<h1>Tire disposal near you: official drop-off sites by city</h1>',tires)
+        self.assertIn(f'content="Tire disposal near you: {tn} official drop-off sites in {tm} US metros, with addresses, hours, tire limits, fees and a source link for every listing."',tires)
+        self.assertIn('<h2>Where is tire disposal near me?</h2>',tires)
+        self.assertIn(f'TossMap lists {tn} official drop-off sites in {tm} US metro areas that list tires as accepted.',tires)
+        self.assertIn(f'<title>Household hazardous waste disposal near me: {hn} sites by city | TossMap</title>',hhw)
+        self.assertIn('<h1>Household hazardous waste disposal near you</h1>',hhw)
+        self.assertIn(f'content="Household hazardous waste (HHW) disposal near you: {hn} official drop-off sites in {hm} US metros, with hours, limits and source links."',hhw)
+        self.assertIn('metros, addresses, hours, fees and source links, checked regularly.',home)
+        self.assertNotIn('metros—addresses',home)
     def test_known_rejection_and_conditional_cases(self):
         facilities={f['name']:f for m in D for f in m['facilities']}
         self.assertEqual(facilities['Keʻehi Transfer Station']['questions']['tires']['answer'],'no')
