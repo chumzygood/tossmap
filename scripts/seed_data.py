@@ -313,6 +313,31 @@ REVERIFIED16={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Resid
 for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED16: f["checked"]=D16
+# --- Nov 17 2026 daily pass additions (each verified against cited official source on 2026-11-17) ---
+D17="2026-11-17"
+add("Cleveland",
+  F("Brecksville Service Garage (HHW drop-off)","9023 Brecksville Road, Brecksville, OH","Year-round, Saturdays 8am–12pm",CUYU.format("brecksville"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Brecksville residents only. Brecksville also collects HHW curbside on regular recycling days (every other week). Service Department (440) 526-1384. "+CUY,D17),
+  F("Bentleyville Service Department (HHW drop-off)","35075 Cannon Road, Bentleyville, OH","Year-round, Mon–Fri 7am–3pm",CUYU.format("bentleyville"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the village service department; "+CUYCALL+"Village/Service Department (440) 247-5055. "+CUY,D17),
+  F("Hunting Valley Service Garage (HHW drop-off)","38251 Fairmount Boulevard, Hunting Valley, OH","Year-round, Mon–Fri 8am–2pm",CUYU.format("hunting-valley"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Hunting Valley residents only. Items must be labeled, sealed, non-leaking and in the original container. Village/Service Department (440) 247-6106. "+CUY,D17),
+  F("Pepper Pike Service Garage (HHW drop-off)","28000 Shaker Boulevard, Pepper Pike, OH","Last Friday of every month, 7am–2pm",CUYU.format("pepper-pike"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Items must be in rigid, puncture-resistant containers with tight-fitting lids; a special pick-up can also be scheduled. "+CUYCALL+"Service Department (216) 896-6149. "+CUY,D17),
+  F("Olmsted Township Service Garage (HHW drop-off)","7924 Fitch Road, Olmsted Township, OH","Year-round, first Saturday of the month (hours not stated; call ahead)",CUYU.format("olmsted-township"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the township service garage; "+CUYCALL+"Service Department (440) 235-1011. "+CUY,D17),
+  F("Richmond Heights Service Garage (HHW drop-off)","26260 Chardonview Road, Richmond Heights, OH","Every Saturday in January and July, 9–11am",CUYU.format("richmond-heights"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Richmond Heights residents only. Next season: Saturdays in January 2027. Service Department (216) 731-7014. "+CUY,D17))
+add("Richmond",
+  F("Securis First Saturday Electronics Recycling (CVWMA)","8419 Glazebrook Ave, Henrico, VA","First Saturday of each month, 10am–2pm (next: Sat Dec 5, 2026)","https://cvwma.com/cvwma-locations/henrico-2/",
+    "Electronics: computers, laptops, monitors and TVs (including CRTs), printers, cell phones and tablets, cables, game systems, stereos, networking gear, small household electronics, holiday lights. NOT accepted: alkaline batteries, light bulbs, mercury devices, items containing Freon, any liquids, chemicals, oils or powders",
+    "Fees apply to some items (e.g. computers/laptops with hard drives $5, LCD TV $25, CRT TV $28–$35, LCD monitor $10); many items free. Credit or debit cards only (no cash or checks)",
+    "Central Virginia Waste Management Authority (CVWMA) contractor Securis runs this monthly event; CVWMA says it is open to all residents of Central Virginia. Item list and fee table: https://securis.com/events/richmond-recycling-events/",D17))
+# Re-verified against the official page on 2026-11-17 (no listing text changed).
+REVERIFIED17={"Parma Service Garage (HHW drop-off day)"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED17: f["checked"]=D17
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

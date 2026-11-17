@@ -549,6 +549,13 @@ def event_ld(f,m,place):
     return ev
 
 def and_list(xs): return ", ".join(xs[:-1])+" and "+xs[-1] if len(xs)>1 else "".join(xs)
+# Weekend quick list on larger city pages, derived only from each listing's own hours text ("closed Sun" segments ignored).
+WKND=re.compile(r"(?i)\b(Sat|Sun)(urday|day)?s?\b|\bdaily\b|\b(7|seven) days\b")
+def weekend_block(m):
+    fs=[f for f in m["facilities"] if WKND.search(re.sub(r"(?i)closed[^;)]*","",f.get("hours","")))]
+    if len(m["facilities"])<6 or not fs: return ""
+    return (f'<h2>Weekend drop-off options in {e(m["city"])}</h2><p>{plural(len(fs),"listed site")} in this directory show Saturday or Sunday hours. Check the hours on each listing and the official source before you go.</p><ul>'
+            +"".join(f'<li><a href="{fpath(f,m)}">{e(f["name"])}</a>: {e(f["hours"])}</li>' for f in fs)+"</ul>")
 def plural(n,w): return f"{n} {w}{'' if n==1 else 's'}"
 matidx={s:[] for s,_,_ in MAT}
 for m in D:
@@ -568,6 +575,7 @@ for (sn,st),ms in sorted(states.items()):
         h1=f'Where to dump hazardous waste, paint & e-waste in {m["city"]}, {st}'
         body=(vis+f'<h1>Where to dump hazardous waste, paint &amp; e-waste in {e(m["city"])}, {st}</h1>'+note+ans_html
               +"".join(fac(f,m) for f in fs)+("<p>No permanent drop-off site listed yet. See the note above for event-based or alternate official options, and check back after the next source review.</p>" if not fs else "")
+              +weekend_block(m)
               +(f'<h2>By material</h2><p class="tags">'+" ".join(f'<a href="/{s}/">{e(n)} drop-off</a>' for s,n in have)+"</p>" if have else "")
               +f'<p class="meta">Run a local site? <a href="/embed/">Embed this list for free</a>.</p>'+(f'<h2>Other cities in {e(sn)}</h2><ul>'+"".join(f'<li><a href="{cpath(o)}">{e(o["city"])}</a></li>' for o in nearby)+"</ul>" if nearby else "")
               +signup_box())
