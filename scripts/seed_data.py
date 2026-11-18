@@ -338,6 +338,40 @@ REVERIFIED17={"Parma Service Garage (HHW drop-off day)"}
 for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED17: f["checked"]=D17
+# --- Nov 18 2026 daily pass additions (each verified against cited official source on 2026-11-18) ---
+D18="2026-11-18"
+add("Cleveland",
+  F("Linndale Village Service Garage (HHW drop-off)","4016 W. 119 Street, Linndale, OH","Year-round, every Monday (hours not stated; call ahead)",CUYU.format("linndale"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the village service garage; "+CUYCALL+"Service Department (216) 251-6000. "+CUY,D18))
+SPU="https://www.seattle.gov/utilities/your-services/collection-and-disposal/transfer-stations"
+spuacc="Vehicle tires; vehicle batteries and scrap metal (recycling); household garbage and larger items; yard waste; appliances (no commercial appliances); household sharps. NOT accepted: electronics, TVs or monitors (CRTs); hazardous waste, oil paint and household chemicals; sealed drums, fuel/propane/oil tanks, compressed gas, fire extinguishers; asbestos; material over 8 ft long and over 200 lb"
+spufee="Fees apply (see Seattle Public Utilities transfer station rates); cash, check, Visa or MasterCard; checks require a valid ID"
+spunote="Seattle Public Utilities transfer station. Loads must be secured or may incur a fee. Opens 10am on the first Wednesday of the month. SPU directs household chemicals and other hazardous items to Household Hazardous Waste facilities. Rates, hours and accepted materials: (206) 684-8400"
+add("Seattle",
+  F("North Transfer Station (Seattle Public Utilities)","1350 North 34th Street, Seattle, WA 98103","Daily 8am–5:30pm (first Wednesday of the month 10am–5:30pm); closed Thanksgiving, Christmas Day, New Year's Day and July 4",SPU,spuacc,spufee,spunote,D18),
+  F("South Transfer Station (Seattle Public Utilities)","130 South Kenyon Street, Seattle, WA 98108","Daily 8am–5:30pm (first Wednesday of the month 10am–5:30pm); closed Thanksgiving, Christmas Day and New Year's Day",SPU,spuacc,spufee,spunote,D18))
+WMM="https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities"
+wmmacc="Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device); large appliances (A/C and heating units, refrigerators, freezers, washers, dryers, water heaters); motor oil, transmission fluid, hydraulic oils, power steering fluid and antifreeze (no drums; must pour into collection tank); oil filters; cooking oil; cardboard"
+wmmnote="Wake County Solid Waste Management Division recycling drop-off for businesses and residents. Closed New Year's Day, Easter Sunday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Christmas Eve (from noon) and Christmas Day. 919-856-7400"
+add("Raleigh",
+  F("North Wake Multi-Material Recycling Facility","9029 Deponie Drive, Raleigh, NC 27614","Mon–Sat 8am–4pm (closed listed holidays)",WMM,wmmacc+"; scrap metal; wood pallets (limit 10)","",wmmnote,D18),
+  F("South Wake Multi-Material Recycling Facility","6130 Old Smithfield Road, Apex, NC 27539","Mon–Sat 8am–4pm (closed listed holidays)",WMM,wmmacc+"; scrap metal; wood pallets (limit 10)","",wmmnote,D18),
+  F("East Wake Multi-Material Recycling Facility","5051 Wendell Boulevard, Wendell, NC 27591","Sat–Sun only, 8am–4pm (closed listed holidays)",WMM,wmmacc,"",
+    "Open to Wake County residents only. Scrap metal and wood pallets are taken only at North and South Wake. Closed New Year's Day, Easter Sunday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Christmas Eve (from noon) and Christmas Day. 919-856-7400",D18))
+# Dallas Fair Oaks and Westmoreland reopened; the official page (2026-11-18) shows regular hours and no closure notice.
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in ("Northeast (Fair Oaks) Transfer Station","Southwest (Westmoreland) Transfer Station"):
+            f["hours"]="Mon–Fri 7am–9am; Sat 7am–4pm; closed Sun"
+            f["notes"]=f["notes"].replace(" During the closure use another transfer station or McCommas Bluff Landfill.","")
+            f["checked"]=D18
+# Re-verified against the official page on 2026-11-18 (no listing text changed).
+REVERIFIED18={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Residential Recycling Center (HHW days)","DPW Special Waste Collection Event – RFK Stadium Lot 8",
+  "Carr Center (Division of Waste)","Ridge Road Transfer Station","Parma Service Garage (HHW drop-off day)","Securis First Saturday Electronics Recycling (CVWMA)",
+  "North Wake HHW Facility","South Wake HHW Facility","East Wake HHW Facility"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED18: f["checked"]=D18
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

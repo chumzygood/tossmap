@@ -2439,21 +2439,21 @@
    {
     "name": "Northeast (Fair Oaks) Transfer Station",
     "address": "7677 Fair Oaks Avenue, Dallas, TX",
-    "hours": "Temporarily closed Oct 28–Nov 15, 2026 (reopens Mon Nov 16); then Mon–Fri 7am–9am; Sat 7am–4pm; closed Sun",
+    "hours": "Mon–Fri 7am–9am; Sat 7am–4pm; closed Sun",
     "accepts": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, furniture, grass clippings/brush",
     "fees": "Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste",
-    "notes": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-6126",
+    "notes": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). (214) 670-6126",
     "source": "https://dallascityhall.com/departments/sanitation/Pages/Landfill-and-Transfer-Stations.aspx",
-    "checked": "2026-11-11",
+    "checked": "2026-11-18",
     "slug": "northeast-fair-oaks-transfer-station",
     "questions": {
      "residents_only": {
       "answer": "yes",
-      "evidence": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-6126"
+      "evidence": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). (214) 670-6126"
      },
      "id_required": {
       "answer": "yes",
-      "evidence": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-6126"
+      "evidence": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). (214) 670-6126"
      },
      "appointment_required": {
       "answer": "not stated by source",
@@ -2489,7 +2489,7 @@
      },
      "quantity_limits": {
       "answer": "yes",
-      "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, furniture, grass clippings/brush; Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste; Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-6126"
+      "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, furniture, grass clippings/brush; Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste; Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). (214) 670-6126"
      },
      "businesses_accepted": {
       "answer": "no",
@@ -2498,26 +2498,26 @@
     },
     "operator": "City of Dallas Sanitation Services",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-18"
    },
    {
     "name": "Southwest (Westmoreland) Transfer Station",
     "address": "4610 S. Westmoreland Road, Dallas, TX",
-    "hours": "Temporarily closed Oct 14–Nov 15, 2026 (reopens Mon Nov 16); then Mon–Fri 7am–9am; Sat 7am–4pm; closed Sun",
+    "hours": "Mon–Fri 7am–9am; Sat 7am–4pm; closed Sun",
     "accepts": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, furniture, grass clippings/brush",
     "fees": "Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste",
-    "notes": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-1927",
+    "notes": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). (214) 670-1927",
     "source": "https://dallascityhall.com/departments/sanitation/Pages/Landfill-and-Transfer-Stations.aspx",
-    "checked": "2026-11-11",
+    "checked": "2026-11-18",
     "slug": "southwest-westmoreland-transfer-station",
     "questions": {
      "residents_only": {
       "answer": "yes",
-      "evidence": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-1927"
+      "evidence": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). (214) 670-1927"
      },
      "id_required": {
       "answer": "yes",
-      "evidence": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-1927"
+      "evidence": "Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). (214) 670-1927"
      },
      "appointment_required": {
       "answer": "not stated by source",
@@ -2553,7 +2553,7 @@
      },
      "quantity_limits": {
       "answer": "yes",
-      "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, furniture, grass clippings/brush; Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste; Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). During the closure use another transfer station or McCommas Bluff Landfill. (214) 670-1927"
+      "evidence": "Tires (limit 6 per year from Dallas residents, not exceeding 25 inches in diameter); electronics (residents only); recyclables, scrap metal, household waste, furniture, grass clippings/brush; Free for Dallas residents in passenger cars, station wagons, pickups and trailers under 15 ft hauling their own residential waste; Dallas residents only; no commercial customers; valid driver's license plus proof of Dallas residency (Dallas address on the license or a current Dallas water bill). (214) 670-1927"
      },
      "businesses_accepted": {
       "answer": "no",
@@ -2562,7 +2562,7 @@
     },
     "operator": "City of Dallas Sanitation Services",
     "source_notice": "",
-    "questions_reviewed": "2026-11-11"
+    "questions_reviewed": "2026-11-18"
    }
   ],
   "note": ""
@@ -3507,6 +3507,134 @@
     "operator": "not stated by source",
     "source_notice": "",
     "questions_reviewed": "2026-11-02"
+   },
+   {
+    "name": "North Transfer Station (Seattle Public Utilities)",
+    "address": "1350 North 34th Street, Seattle, WA 98103",
+    "hours": "Daily 8am–5:30pm (first Wednesday of the month 10am–5:30pm); closed Thanksgiving, Christmas Day, New Year's Day and July 4",
+    "accepts": "Vehicle tires; vehicle batteries and scrap metal (recycling); household garbage and larger items; yard waste; appliances (no commercial appliances); household sharps. NOT accepted: electronics, TVs or monitors (CRTs); hazardous waste, oil paint and household chemicals; sealed drums, fuel/propane/oil tanks, compressed gas, fire extinguishers; asbestos; material over 8 ft long and over 200 lb",
+    "fees": "Fees apply (see Seattle Public Utilities transfer station rates); cash, check, Visa or MasterCard; checks require a valid ID",
+    "notes": "Seattle Public Utilities transfer station. Loads must be secured or may incur a fee. Opens 10am on the first Wednesday of the month. SPU directs household chemicals and other hazardous items to Household Hazardous Waste facilities. Rates, hours and accepted materials: (206) 684-8400",
+    "source": "https://www.seattle.gov/utilities/your-services/collection-and-disposal/transfer-stations",
+    "checked": "2026-11-18",
+    "slug": "north-transfer-station-seattle-public-utilities",
+    "questions": {
+     "residents_only": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): “Loads coming into the station must be secured or may incur a fee.” Payments: “You can pay with cash, check, Visa, or MasterCard… See rates.”"
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): “Accepted materials include garbage, yard waste, vehicle tires, appliances (no commercial appliances), and household sharps.”"
+     },
+     "paint": {
+      "answer": "no",
+      "evidence": "Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): Items not accepted include “Oil Paint (and Containers)”."
+     },
+     "e_waste": {
+      "answer": "no",
+      "evidence": "Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): Items not accepted include “Electronics, TVs or Monitors (CRTs)”."
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Conditional — Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): “A wide range of items, including tires, scrap metal, and vehicle batteries, can be recycled at our stations.” (vehicle batteries named; other battery types not stated)"
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "no",
+      "evidence": "Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): Items not accepted include “Radioactive and Hazardous Waste, Oil Paint (and Containers), Household Chemicals”."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): Items not accepted include “Material over 8 ft long and over 200 lbs”."
+     },
+     "businesses_accepted": {
+      "answer": "not stated by source",
+      "evidence": ""
+     }
+    },
+    "operator": "Seattle Public Utilities",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-18"
+   },
+   {
+    "name": "South Transfer Station (Seattle Public Utilities)",
+    "address": "130 South Kenyon Street, Seattle, WA 98108",
+    "hours": "Daily 8am–5:30pm (first Wednesday of the month 10am–5:30pm); closed Thanksgiving, Christmas Day and New Year's Day",
+    "accepts": "Vehicle tires; vehicle batteries and scrap metal (recycling); household garbage and larger items; yard waste; appliances (no commercial appliances); household sharps. NOT accepted: electronics, TVs or monitors (CRTs); hazardous waste, oil paint and household chemicals; sealed drums, fuel/propane/oil tanks, compressed gas, fire extinguishers; asbestos; material over 8 ft long and over 200 lb",
+    "fees": "Fees apply (see Seattle Public Utilities transfer station rates); cash, check, Visa or MasterCard; checks require a valid ID",
+    "notes": "Seattle Public Utilities transfer station. Loads must be secured or may incur a fee. Opens 10am on the first Wednesday of the month. SPU directs household chemicals and other hazardous items to Household Hazardous Waste facilities. Rates, hours and accepted materials: (206) 684-8400",
+    "source": "https://www.seattle.gov/utilities/your-services/collection-and-disposal/transfer-stations",
+    "checked": "2026-11-18",
+    "slug": "south-transfer-station-seattle-public-utilities",
+    "questions": {
+     "residents_only": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): “Loads coming into the station must be secured or may incur a fee.” Payments: “You can pay with cash, check, Visa, or MasterCard… See rates.”"
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): “Accepted materials include garbage, yard waste, vehicle tires, appliances (no commercial appliances), and household sharps.”"
+     },
+     "paint": {
+      "answer": "no",
+      "evidence": "Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): Items not accepted include “Oil Paint (and Containers)”."
+     },
+     "e_waste": {
+      "answer": "no",
+      "evidence": "Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): Items not accepted include “Electronics, TVs or Monitors (CRTs)”."
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Conditional — Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): “A wide range of items, including tires, scrap metal, and vehicle batteries, can be recycled at our stations.” (vehicle batteries named; other battery types not stated)"
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "no",
+      "evidence": "Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): Items not accepted include “Radioactive and Hazardous Waste, Oil Paint (and Containers), Household Chemicals”."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Seattle Public Utilities Transfer Stations page (fetched 2026-11-18): Items not accepted include “Material over 8 ft long and over 200 lbs”."
+     },
+     "businesses_accepted": {
+      "answer": "not stated by source",
+      "evidence": ""
+     }
+    },
+    "operator": "Seattle Public Utilities",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-18"
    }
   ],
   "note": ""
@@ -4204,7 +4332,7 @@
     "fees": "Free",
     "notes": "DC residents only; register in advance on Eventbrite; bring proof of residency and registration. The Nov 14 event has been held; no later 2026–27 date is listed yet.",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "checked": "2026-11-15",
+    "checked": "2026-11-18",
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "questions": {
      "residents_only": {
@@ -4258,7 +4386,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-15"
+    "questions_reviewed": "2026-11-18"
    }
   ],
   "note": "No permanent HHW or e-cycling drop-off. Fort Totten takes up to 4 tires during regular hours. HHW and electronics are collected at registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding"
@@ -4276,7 +4404,7 @@
     "fees": "Free",
     "notes": "Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. Do not arrive before 8:30am; no entry after noon.",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "checked": "2026-11-16",
+    "checked": "2026-11-18",
     "slug": "zero-waste-day-drop-off-millennium-park",
     "questions": {
      "residents_only": {
@@ -4330,7 +4458,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-16"
+    "questions_reviewed": "2026-11-18"
    }
   ],
   "note": ""
@@ -5100,7 +5228,7 @@
     "fees": "Free",
     "notes": "Baltimore City residents only; materials in original labeled packaging; no commercial vehicles. 410-396-7250",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "checked": "2026-11-16",
+    "checked": "2026-11-18",
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "questions": {
      "residents_only": {
@@ -5154,7 +5282,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-16"
+    "questions_reviewed": "2026-11-18"
    },
    {
     "name": "Eastern Residential Recycling Center",
@@ -6004,7 +6132,7 @@
     "fees": "",
     "notes": "Wake County residents",
     "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/household-hazardous-waste-facilities/north-wake-household-hazardous-waste-facility",
-    "checked": "2026-11-02",
+    "checked": "2026-11-18",
     "slug": "north-wake-hhw-facility",
     "questions": {
      "residents_only": {
@@ -6048,8 +6176,8 @@
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "quantity_limits": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Wake County North Wake HHW Facility page (fetched 2026-11-18): acceptable items include “Lead Acid (limit 6); vehicle, boat, motorcycle”, “Fluorescent tubes; 12 limit”, “Latex paint (10 gallon limit…)” and fuel “no larger than 5 gallons”."
      },
      "businesses_accepted": {
       "answer": "not stated by source",
@@ -6058,7 +6186,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "North Wake HHW is temporarily closed due to fire damage at the site. In the interim, there will be a HHW collection event every Saturday, from 8 am to 4 pm at the North Wake Facility.",
-    "questions_reviewed": "2026-11-10"
+    "questions_reviewed": "2026-11-18"
    },
    {
     "name": "South Wake HHW Facility",
@@ -6068,7 +6196,7 @@
     "fees": "",
     "notes": "Wake County residents",
     "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/household-hazardous-waste-facilities/south-wake-household-hazardous-waste-facility",
-    "checked": "2026-11-02",
+    "checked": "2026-11-18",
     "slug": "south-wake-hhw-facility",
     "questions": {
      "residents_only": {
@@ -6112,8 +6240,8 @@
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "quantity_limits": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Wake County South Wake HHW Facility page (fetched 2026-11-18): acceptable items include “Lead Acid (limit 6); vehicle, boat, motorcycle”, “Fluorescent tubes; 12 limit”, “Latex paint (10 gallon limit…)” and fuel “no larger than 5 gallons”."
      },
      "businesses_accepted": {
       "answer": "not stated by source",
@@ -6122,7 +6250,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-02"
+    "questions_reviewed": "2026-11-18"
    },
    {
     "name": "East Wake HHW Facility",
@@ -6132,7 +6260,7 @@
     "fees": "",
     "notes": "Wake County residents",
     "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/household-hazardous-waste-facilities/east-wake-household-hazardous-waste-facility",
-    "checked": "2026-11-02",
+    "checked": "2026-11-18",
     "slug": "east-wake-hhw-facility",
     "questions": {
      "residents_only": {
@@ -6176,8 +6304,8 @@
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "quantity_limits": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Wake County East Wake HHW Facility page (fetched 2026-11-18): acceptable items include “Lead Acid (limit 6); vehicle, boat, motorcycle”, “Fluorescent tubes; 12 limit”, “Latex paint (10 gallon limit…)” and fuel “no larger than 5 gallons”."
      },
      "businesses_accepted": {
       "answer": "not stated by source",
@@ -6186,7 +6314,199 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-02"
+    "questions_reviewed": "2026-11-18"
+   },
+   {
+    "name": "North Wake Multi-Material Recycling Facility",
+    "address": "9029 Deponie Drive, Raleigh, NC 27614",
+    "hours": "Mon–Sat 8am–4pm (closed listed holidays)",
+    "accepts": "Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device); large appliances (A/C and heating units, refrigerators, freezers, washers, dryers, water heaters); motor oil, transmission fluid, hydraulic oils, power steering fluid and antifreeze (no drums; must pour into collection tank); oil filters; cooking oil; cardboard; scrap metal; wood pallets (limit 10)",
+    "fees": "",
+    "notes": "Wake County Solid Waste Management Division recycling drop-off for businesses and residents. Closed New Year's Day, Easter Sunday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Christmas Eve (from noon) and Christmas Day. 919-856-7400",
+    "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities",
+    "checked": "2026-11-18",
+    "slug": "north-wake-multi-material-recycling-facility",
+    "questions": {
+     "residents_only": {
+      "answer": "no",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): “Wake County Solid Waste Management Division manages three Multi-Material Recycling Facilities for businesses and residents to drop-off recyclable items.” (only East Wake is stated as residents-only)"
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): Acceptable items include “Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device)”."
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): Acceptable items include “Motor oil, transmission fluid, hydraulic oils, power steering (NO DRUMS, must be able to pour into collection tank)” and “Oil filters”."
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): “Wood Pallets (North and South Wake only, limit of 10)”."
+     },
+     "businesses_accepted": {
+      "answer": "yes",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): “…three Multi-Material Recycling Facilities for businesses and residents to drop-off recyclable items.” (East Wake is residents-only)"
+     }
+    },
+    "operator": "Wake County Solid Waste Management Division",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-18"
+   },
+   {
+    "name": "South Wake Multi-Material Recycling Facility",
+    "address": "6130 Old Smithfield Road, Apex, NC 27539",
+    "hours": "Mon–Sat 8am–4pm (closed listed holidays)",
+    "accepts": "Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device); large appliances (A/C and heating units, refrigerators, freezers, washers, dryers, water heaters); motor oil, transmission fluid, hydraulic oils, power steering fluid and antifreeze (no drums; must pour into collection tank); oil filters; cooking oil; cardboard; scrap metal; wood pallets (limit 10)",
+    "fees": "",
+    "notes": "Wake County Solid Waste Management Division recycling drop-off for businesses and residents. Closed New Year's Day, Easter Sunday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Christmas Eve (from noon) and Christmas Day. 919-856-7400",
+    "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities",
+    "checked": "2026-11-18",
+    "slug": "south-wake-multi-material-recycling-facility",
+    "questions": {
+     "residents_only": {
+      "answer": "no",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): “Wake County Solid Waste Management Division manages three Multi-Material Recycling Facilities for businesses and residents to drop-off recyclable items.” (only East Wake is stated as residents-only)"
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): Acceptable items include “Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device)”."
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): Acceptable items include “Motor oil, transmission fluid, hydraulic oils, power steering (NO DRUMS, must be able to pour into collection tank)” and “Oil filters”."
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): “Wood Pallets (North and South Wake only, limit of 10)”."
+     },
+     "businesses_accepted": {
+      "answer": "yes",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): “…three Multi-Material Recycling Facilities for businesses and residents to drop-off recyclable items.” (East Wake is residents-only)"
+     }
+    },
+    "operator": "Wake County Solid Waste Management Division",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-18"
+   },
+   {
+    "name": "East Wake Multi-Material Recycling Facility",
+    "address": "5051 Wendell Boulevard, Wendell, NC 27591",
+    "hours": "Sat–Sun only, 8am–4pm (closed listed holidays)",
+    "accepts": "Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device); large appliances (A/C and heating units, refrigerators, freezers, washers, dryers, water heaters); motor oil, transmission fluid, hydraulic oils, power steering fluid and antifreeze (no drums; must pour into collection tank); oil filters; cooking oil; cardboard",
+    "fees": "",
+    "notes": "Open to Wake County residents only. Scrap metal and wood pallets are taken only at North and South Wake. Closed New Year's Day, Easter Sunday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Christmas Eve (from noon) and Christmas Day. 919-856-7400",
+    "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities",
+    "checked": "2026-11-18",
+    "slug": "east-wake-multi-material-recycling-facility",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): “East Wake Multi-Material Recycling Facility, 5051 Wendell Boulevard, Wendell NC 27591. Open Saturday & Sunday ONLY, 8 am to 4 pm. Open to Wake County residents only.”"
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): Acceptable items include “Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device)”."
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Wake County Multi-Material Recycling Facilities page (fetched 2026-11-18): Acceptable items include “Motor oil, transmission fluid, hydraulic oils, power steering (NO DRUMS, must be able to pour into collection tank)” and “Oil filters”."
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "businesses_accepted": {
+      "answer": "not stated by source",
+      "evidence": ""
+     }
+    },
+    "operator": "Wake County Solid Waste Management Division",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-18"
    }
   ],
   "note": ""
@@ -7644,7 +7964,7 @@
     "fees": "Free",
     "notes": "City of Cleveland residents only",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "checked": "2026-11-15",
+    "checked": "2026-11-18",
     "slug": "carr-center-division-of-waste",
     "questions": {
      "residents_only": {
@@ -7698,7 +8018,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-15"
+    "questions_reviewed": "2026-11-18"
    },
    {
     "name": "Ridge Road Transfer Station",
@@ -7708,7 +8028,7 @@
     "fees": "Free for qualifying resident drop-offs; fee may apply beyond tire/dump limits",
     "notes": "City of Cleveland residents only; proof of residency required for drop-off",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "checked": "2026-11-15",
+    "checked": "2026-11-18",
     "slug": "ridge-road-transfer-station",
     "questions": {
      "residents_only": {
@@ -7762,7 +8082,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-15"
+    "questions_reviewed": "2026-11-18"
    },
    {
     "name": "Cuyahoga County Solid Waste District HQ (electronics drop-off bins)",
@@ -8732,7 +9052,7 @@
     "fees": "Free (Cuyahoga County HHW program)",
     "notes": "Parma's 2026 HHW drop-off days were March 28, October 3 and November 21 (the first two have been held); the District says most communities accept waste only from their own residents, so call the city before going. Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public.",
     "source": "https://cuyahogarecycles.org/recycle-in/parma/household_hazardous_waste/",
-    "checked": "2026-11-17",
+    "checked": "2026-11-18",
     "slug": "parma-service-garage-hhw-drop-off-day",
     "questions": {
      "residents_only": {
@@ -8786,7 +9106,7 @@
     },
     "operator": "City of Parma (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-18"
    },
    {
     "name": "Brecksville Service Garage (HHW drop-off)",
@@ -9171,6 +9491,70 @@
     "operator": "City of Richmond Heights (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
     "questions_reviewed": "2026-11-17"
+   },
+   {
+    "name": "Linndale Village Service Garage (HHW drop-off)",
+    "address": "4016 W. 119 Street, Linndale, OH",
+    "hours": "Year-round, every Monday (hours not stated; call ahead)",
+    "accepts": "Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint",
+    "fees": "Free (Cuyahoga County HHW program)",
+    "notes": "Drop-off is at the village service garage; the District says most communities accept waste only from their own residents, so call the city before going. Service Department (216) 251-6000. Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public.",
+    "source": "https://cuyahogarecycles.org/recycle-in/linndale/household_hazardous_waste/",
+    "checked": "2026-11-18",
+    "slug": "linndale-village-service-garage-hhw",
+    "questions": {
+     "residents_only": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
+     },
+     "tires": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Linndale: “Linndale has a special drop off for household hazardous waste every Monday at the village service garage. No latex paint.”"
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-18): “Latex paint, batteries, and fluorescent bulbs are not accepted in this program.”"
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.”"
+     },
+     "quantity_limits": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-18): the program “is free to all Cuyahoga County households”; under “Waste from Businesses or Commercial Properties”: “Businesses must contract with a licensed company for proper disposal or recycling.”"
+     }
+    },
+    "operator": "Village of Linndale (Cuyahoga County Solid Waste District program)",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-18"
    }
   ],
   "note": ""
@@ -9956,7 +10340,7 @@
     "fees": "Fees apply to some items (e.g. computers/laptops with hard drives $5, LCD TV $25, CRT TV $28–$35, LCD monitor $10); many items free. Credit or debit cards only (no cash or checks)",
     "notes": "Central Virginia Waste Management Authority (CVWMA) contractor Securis runs this monthly event; CVWMA says it is open to all residents of Central Virginia. Item list and fee table: https://securis.com/events/richmond-recycling-events/",
     "source": "https://cvwma.com/cvwma-locations/henrico-2/",
-    "checked": "2026-11-17",
+    "checked": "2026-11-18",
     "slug": "securis-first-saturday-electronics-recycling-henrico",
     "questions": {
      "residents_only": {
@@ -10010,7 +10394,7 @@
     },
     "operator": "Securis (Central Virginia Waste Management Authority electronics recycling contractor)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-18"
    }
   ],
   "note": ""

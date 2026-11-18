@@ -428,6 +428,15 @@ def material_seo(s, n, nsites, nmetros):
         title=f"Tire disposal near me: {nsites} official drop-off sites in {nmetros} metros | TossMap"
         h1="Tire disposal near you: official drop-off sites by city"
         desc=f"Tire disposal near you: {nsites} official drop-off sites in {nmetros} US metros, with addresses, hours, tire limits, fees and a source link for every listing."
+    elif s=="e-waste":
+        title=f"Electronics recycling near me: {nsites} official e-waste drop-off sites | TossMap"
+        h1="Electronics (e-waste) recycling near you: official drop-off sites by city"
+        desc=f"Electronics and e-waste recycling near you: {nsites} official drop-off sites in {nmetros} US metros, with accepted items, hours, fees and a source link for every listing."
+    elif s=="batteries":
+        title=f"Battery recycling near me: {nsites} official drop-off sites by city | TossMap"
+        h1="Battery recycling and disposal near you"
+        # Battery types differ by site (some take only vehicle/lead-acid batteries); each listing states what it takes.
+        desc=f"Battery recycling and disposal near you: {nsites} official drop-off sites in {nmetros} US metros. Accepted battery types, hours and a source link for every listing."
     elif s=="household-chemicals":
         title=f"Household hazardous waste disposal near me: {nsites} sites by city | TossMap"
         h1="Household hazardous waste disposal near you"
@@ -437,7 +446,7 @@ def material_seo(s, n, nsites, nmetros):
 
 def material_page_qas(s, n, nsites, nmetros):
     low=n.split(" (")[0].lower()
-    lead_q="Where is tire disposal near me?" if s=="tires" else f"Where can I drop off {low} near you?"
+    lead_q={"tires":"Where is tire disposal near me?","e-waste":"Where can I recycle electronics near me?","batteries":"Where can I recycle batteries near me?"}.get(s,f"Where can I drop off {low} near you?")
     lead=(f"TossMap lists {nsites} official drop-off site{'s' if nsites!=1 else ''} in {nmetros} US metro area{'s' if nmetros!=1 else ''} that list {low} as accepted. "
           "Rules, limits and residency requirements vary. Each city section below links to the listing and its official source, with a last-checked date. "
           "Confirm with that source before you go.")

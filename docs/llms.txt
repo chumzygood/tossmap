@@ -2,16 +2,16 @@
 
 > TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
 
-Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 164 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 170 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
-- [Paint](https://tossmap.com/paint/): 115 official listings in 50 metro areas
-- [Electronics (e-waste)](https://tossmap.com/e-waste/): 53 official listings in 22 metro areas
-- [Tires](https://tossmap.com/tires/): 68 official listings in 19 metro areas
-- [Batteries](https://tossmap.com/batteries/): 108 official listings in 50 metro areas
-- [Motor oil](https://tossmap.com/motor-oil/): 62 official listings in 19 metro areas
-- [Household chemicals](https://tossmap.com/household-chemicals/): 112 official listings in 48 metro areas
+- [Paint](https://tossmap.com/paint/): 116 official listings in 50 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 56 official listings in 23 metro areas
+- [Tires](https://tossmap.com/tires/): 70 official listings in 20 metro areas
+- [Batteries](https://tossmap.com/batteries/): 110 official listings in 50 metro areas
+- [Motor oil](https://tossmap.com/motor-oil/): 65 official listings in 20 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 113 official listings in 48 metro areas
 
 ## Cities
 - [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
@@ -107,6 +107,7 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Pepper Pike Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/pepper-pike-service-garage-hhw/)
 - [Olmsted Township Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/olmsted-township-service-garage-hhw/)
 - [Richmond Heights Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/richmond-heights-service-garage-hhw/)
+- [Linndale Village Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/linndale-village-service-garage-hhw/)
 - [SWACO Household Hazardous Waste Drop-Off — Columbus, OH](https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/)
 - [Dallas County Home Chemical Collection Center — Dallas, TX](https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/)
 - [McCommas Bluff Landfill — Dallas, TX](https://tossmap.com/tx/dallas/mccommas-bluff-landfill/)
@@ -194,6 +195,9 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [North Wake HHW Facility — Raleigh, NC](https://tossmap.com/nc/raleigh/north-wake-hhw-facility/)
 - [South Wake HHW Facility — Raleigh, NC](https://tossmap.com/nc/raleigh/south-wake-hhw-facility/)
 - [East Wake HHW Facility — Raleigh, NC](https://tossmap.com/nc/raleigh/east-wake-hhw-facility/)
+- [North Wake Multi-Material Recycling Facility — Raleigh, NC](https://tossmap.com/nc/raleigh/north-wake-multi-material-recycling-facility/)
+- [South Wake Multi-Material Recycling Facility — Raleigh, NC](https://tossmap.com/nc/raleigh/south-wake-multi-material-recycling-facility/)
+- [East Wake Multi-Material Recycling Facility — Raleigh, NC](https://tossmap.com/nc/raleigh/east-wake-multi-material-recycling-facility/)
 - [East Richmond Road Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/east-richmond-road-convenience-center/)
 - [Richmond Southside Transfer Station — Richmond, VA](https://tossmap.com/va/richmond/richmond-southside-transfer-station/)
 - [Henrico Springfield Road Public Use Area (West End) — Richmond, VA](https://tossmap.com/va/richmond/henrico-springfield-road-public-use-area-west-end/)
@@ -224,6 +228,8 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Santa Clara County HHW – San Jose — San Jose, CA](https://tossmap.com/ca/san-jose/santa-clara-county-hhw-san-jose/)
 - [North Seattle HHW Facility — Seattle, WA](https://tossmap.com/wa/seattle/north-seattle-hhw-facility/)
 - [South Seattle HHW Facility — Seattle, WA](https://tossmap.com/wa/seattle/south-seattle-hhw-facility/)
+- [North Transfer Station (Seattle Public Utilities) — Seattle, WA](https://tossmap.com/wa/seattle/north-transfer-station-seattle-public-utilities/)
+- [South Transfer Station (Seattle Public Utilities) — Seattle, WA](https://tossmap.com/wa/seattle/south-transfer-station-seattle-public-utilities/)
 - [St. Louis County HHW – South — St. Louis, MO](https://tossmap.com/mo/st-louis/st-louis-county-hhw-south/)
 - [St. Louis County HHW – North — St. Louis, MO](https://tossmap.com/mo/st-louis/st-louis-county-hhw-north/)
 - [Sheldon Road HHW Collection Center — Tampa, FL](https://tossmap.com/fl/tampa/sheldon-road-hhw-collection-center/)
