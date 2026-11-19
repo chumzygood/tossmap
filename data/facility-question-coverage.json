@@ -1,67 +1,67 @@
 {
- "generated": "2026-11-18",
- "facilities": 170,
- "indexable_pages": 267,
- "html_files": 322,
+ "generated": "2026-11-19",
+ "facilities": 176,
+ "indexable_pages": 273,
+ "html_files": 328,
  "questions": {
   "residents_only": {
    "yes": 82,
-   "not stated by source": 75,
-   "no": 13
+   "not stated by source": 79,
+   "no": 15
   },
   "id_required": {
-   "not stated by source": 100,
-   "yes": 70
+   "not stated by source": 105,
+   "yes": 71
   },
   "appointment_required": {
-   "not stated by source": 151,
+   "not stated by source": 157,
    "yes": 14,
    "no": 5
   },
   "fee_charged": {
-   "no": 85,
+   "no": 88,
    "not stated by source": 63,
-   "yes": 22
+   "yes": 25
   },
   "tires": {
-   "not stated by source": 89,
-   "yes": 70,
-   "no": 11
+   "not stated by source": 91,
+   "yes": 72,
+   "no": 13
   },
   "paint": {
-   "yes": 116,
-   "not stated by source": 42,
-   "no": 12
+   "yes": 119,
+   "not stated by source": 39,
+   "no": 18
   },
   "e_waste": {
-   "not stated by source": 110,
-   "yes": 56,
-   "no": 4
+   "not stated by source": 112,
+   "yes": 59,
+   "no": 5
   },
   "batteries": {
-   "yes": 110,
-   "not stated by source": 34,
-   "no": 26
+   "yes": 111,
+   "not stated by source": 36,
+   "no": 29
   },
   "motor_oil": {
-   "not stated by source": 104,
-   "yes": 65,
-   "no": 1
+   "not stated by source": 108,
+   "yes": 66,
+   "no": 2
   },
   "household_chemicals": {
-   "yes": 113,
-   "not stated by source": 37,
+   "yes": 116,
+   "not stated by source": 40,
    "no": 20
   },
   "quantity_limits": {
-   "not stated by source": 87,
-   "yes": 83
+   "not stated by source": 90,
+   "yes": 86
   },
   "businesses_accepted": {
-   "not stated by source": 85,
-   "no": 71,
-   "yes": 14
+   "not stated by source": 86,
+   "no": 74,
+   "yes": 16
   }
  },
- "operator_recorded": 79
+ "operator_recorded": 85
 }

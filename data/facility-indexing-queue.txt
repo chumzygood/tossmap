@@ -11,6 +11,7 @@ https://tossmap.com/va/richmond/hanover-beaverdam-convenience-center/
 https://tossmap.com/va/richmond/hanover-doswell-convenience-center/
 https://tossmap.com/va/richmond/hanover-montpelier-convenience-center/
 https://tossmap.com/va/richmond/securis-first-saturday-electronics-recycling-henrico/
+https://tossmap.com/va/richmond/hanover-route-301-transfer-station/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-port-richmond/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northwest-philadelphia/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northeast-philadelphia/
@@ -54,6 +55,8 @@ https://tossmap.com/oh/cleveland/pepper-pike-service-garage-hhw/
 https://tossmap.com/oh/cleveland/olmsted-township-service-garage-hhw/
 https://tossmap.com/oh/cleveland/richmond-heights-service-garage-hhw/
 https://tossmap.com/oh/cleveland/linndale-village-service-garage-hhw/
+https://tossmap.com/oh/cleveland/bratenahl-village-service-garage-hhw/
+https://tossmap.com/oh/cleveland/orange-village-service-department-hhw/
 https://tossmap.com/ky/louisville/haz-bin/
 https://tossmap.com/ky/louisville/waste-reduction-center/
 https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-bronx/
@@ -104,14 +107,15 @@ https://tossmap.com/tx/fort-worth/brennan-drop-off-station/
 https://tossmap.com/tx/fort-worth/southeast-drop-off-station/
 https://tossmap.com/tx/fort-worth/old-hemphill-road-drop-off-station/
 https://tossmap.com/tx/fort-worth/hillshire-north-service-center-drop-off-station/
-https://tossmap.com/nc/charlotte/compost-central-disposal-recycling-center/
-https://tossmap.com/nc/charlotte/foxhole-disposal-recycling-center/
-https://tossmap.com/nc/charlotte/hickory-grove-disposal-recycling-center/
-https://tossmap.com/nc/charlotte/north-mecklenburg-disposal-recycling-center/
 https://tossmap.com/la/new-orleans/recycling-drop-off-center/
 https://tossmap.com/la/new-orleans/jefferson-parish-metairie-drop-off-site/
 https://tossmap.com/la/new-orleans/jefferson-parish-marrero-drop-off-site/
 https://tossmap.com/la/new-orleans/gretna-burmaster-waste-drop-off-site/
+https://tossmap.com/la/new-orleans/jefferson-parish-lafitte-drop-off-site/
+https://tossmap.com/nc/charlotte/compost-central-disposal-recycling-center/
+https://tossmap.com/nc/charlotte/foxhole-disposal-recycling-center/
+https://tossmap.com/nc/charlotte/hickory-grove-disposal-recycling-center/
+https://tossmap.com/nc/charlotte/north-mecklenburg-disposal-recycling-center/
 https://tossmap.com/wa/seattle/north-seattle-hhw-facility/
 https://tossmap.com/wa/seattle/south-seattle-hhw-facility/
 https://tossmap.com/wa/seattle/north-transfer-station-seattle-public-utilities/
@@ -122,6 +126,9 @@ https://tossmap.com/md/baltimore/northwest-transfer-station-residential-drop-off
 https://tossmap.com/tn/nashville/east-convenience-center/
 https://tossmap.com/tn/nashville/ezell-pike-convenience-center/
 https://tossmap.com/tn/nashville/omohundro-convenience-center/
+https://tossmap.com/fl/orlando/porter-transfer-station-hhw/
+https://tossmap.com/fl/orlando/orange-county-landfill/
+https://tossmap.com/fl/orlando/mcleod-road-transfer-station/
 https://tossmap.com/ca/riverside/agua-mansa-permanent-hhw-facility/
 https://tossmap.com/ca/riverside/lake-elsinore-hhw-facility/
 https://tossmap.com/ca/riverside/palm-springs-hhw-facility/
@@ -159,7 +166,6 @@ https://tossmap.com/mo/kansas-city/household-hazardous-waste-facility/
 https://tossmap.com/tn/memphis/shelby-county-hhw-facility/
 https://tossmap.com/ok/oklahoma-city/household-hazardous-waste-collection-center/
 https://tossmap.com/ne/omaha/under-the-sink/
-https://tossmap.com/fl/orlando/porter-transfer-station-hhw/
 https://tossmap.com/pa/pittsburgh/noble-environmental-hhw-electronics-drop-off/
 https://tossmap.com/ca/sacramento/north-area-recovery-station-hhw-drop-off/
 https://tossmap.com/ca/san-diego/hhw-transfer-facility-miramar-landfill/

@@ -2,16 +2,16 @@
 
 > TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
 
-Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 170 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 176 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
-- [Paint](https://tossmap.com/paint/): 116 official listings in 50 metro areas
-- [Electronics (e-waste)](https://tossmap.com/e-waste/): 56 official listings in 23 metro areas
-- [Tires](https://tossmap.com/tires/): 70 official listings in 20 metro areas
-- [Batteries](https://tossmap.com/batteries/): 110 official listings in 50 metro areas
-- [Motor oil](https://tossmap.com/motor-oil/): 65 official listings in 20 metro areas
-- [Household chemicals](https://tossmap.com/household-chemicals/): 113 official listings in 48 metro areas
+- [Paint](https://tossmap.com/paint/): 119 official listings in 50 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 59 official listings in 24 metro areas
+- [Tires](https://tossmap.com/tires/): 72 official listings in 21 metro areas
+- [Batteries](https://tossmap.com/batteries/): 111 official listings in 50 metro areas
+- [Motor oil](https://tossmap.com/motor-oil/): 66 official listings in 21 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 116 official listings in 48 metro areas
 
 ## Cities
 - [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
@@ -108,6 +108,8 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Olmsted Township Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/olmsted-township-service-garage-hhw/)
 - [Richmond Heights Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/richmond-heights-service-garage-hhw/)
 - [Linndale Village Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/linndale-village-service-garage-hhw/)
+- [Bratenahl Village Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/bratenahl-village-service-garage-hhw/)
+- [Orange Village Service Department (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/orange-village-service-department-hhw/)
 - [SWACO Household Hazardous Waste Drop-Off — Columbus, OH](https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/)
 - [Dallas County Home Chemical Collection Center — Dallas, TX](https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/)
 - [McCommas Bluff Landfill — Dallas, TX](https://tossmap.com/tx/dallas/mccommas-bluff-landfill/)
@@ -173,6 +175,7 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Jefferson Parish Metairie Drop-Off Site — New Orleans, LA](https://tossmap.com/la/new-orleans/jefferson-parish-metairie-drop-off-site/)
 - [Jefferson Parish Marrero Drop-Off Site — New Orleans, LA](https://tossmap.com/la/new-orleans/jefferson-parish-marrero-drop-off-site/)
 - [Gretna Burmaster Waste Drop-Off Site — New Orleans, LA](https://tossmap.com/la/new-orleans/gretna-burmaster-waste-drop-off-site/)
+- [Jefferson Parish Lafitte Drop-Off Site — New Orleans, LA](https://tossmap.com/la/new-orleans/jefferson-parish-lafitte-drop-off-site/)
 - [DSNY Special Waste Drop-Off – Bronx — New York, NY](https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-bronx/)
 - [DSNY Special Waste Drop-Off – Brooklyn — New York, NY](https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-brooklyn/)
 - [DSNY Special Waste Drop-Off – Manhattan — New York, NY](https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-manhattan/)
@@ -181,6 +184,8 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Household Hazardous Waste Collection Center — Oklahoma City, OK](https://tossmap.com/ok/oklahoma-city/household-hazardous-waste-collection-center/)
 - [Under The Sink — Omaha, NE](https://tossmap.com/ne/omaha/under-the-sink/)
 - [Porter Transfer Station HHW — Orlando, FL](https://tossmap.com/fl/orlando/porter-transfer-station-hhw/)
+- [Orange County Landfill (HHW, electronics & tires) — Orlando, FL](https://tossmap.com/fl/orlando/orange-county-landfill/)
+- [McLeod Road Transfer Station — Orlando, FL](https://tossmap.com/fl/orlando/mcleod-road-transfer-station/)
 - [Sanitation Convenience Center – Port Richmond — Philadelphia, PA](https://tossmap.com/pa/philadelphia/sanitation-convenience-center-port-richmond/)
 - [Sanitation Convenience Center – Northwest Philadelphia — Philadelphia, PA](https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northwest-philadelphia/)
 - [Sanitation Convenience Center – Northeast Philadelphia — Philadelphia, PA](https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northeast-philadelphia/)
@@ -211,6 +216,7 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Hanover Doswell Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hanover-doswell-convenience-center/)
 - [Hanover Montpelier Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hanover-montpelier-convenience-center/)
 - [Securis First Saturday Electronics Recycling (CVWMA) — Richmond, VA](https://tossmap.com/va/richmond/securis-first-saturday-electronics-recycling-henrico/)
+- [Hanover Route 301 Transfer Station — Richmond, VA](https://tossmap.com/va/richmond/hanover-route-301-transfer-station/)
 - [Agua Mansa Permanent HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/agua-mansa-permanent-hhw-facility/)
 - [Lake Elsinore HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/lake-elsinore-hhw-facility/)
 - [Palm Springs HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/palm-springs-hhw-facility/)

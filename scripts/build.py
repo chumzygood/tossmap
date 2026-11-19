@@ -442,11 +442,20 @@ def material_seo(s, n, nsites, nmetros):
         h1="Household hazardous waste disposal near you"
         # Do not claim every listing takes cleaners and pesticides; those appear on some, not all, household-chemicals sites.
         desc=f"Household hazardous waste (HHW) disposal near you: {nsites} official drop-off sites in {nmetros} US metros, with hours, limits and source links."
+    elif s=="paint":
+        title=f"Paint disposal near me: {nsites} official drop-off sites by city | TossMap"
+        h1="Paint disposal near you: where to drop off old paint"
+        # Many sites take only oil-based paint (no latex); each listing states which.
+        desc=f"Paint disposal near you: {nsites} official drop-off sites in {nmetros} US metros. Some take only oil-based paint, not latex; each listing shows what it accepts, hours and a source link."
+    elif s=="motor-oil":
+        title=f"Used motor oil disposal near me: {nsites} official drop-off sites | TossMap"
+        h1="Used motor oil recycling and disposal near you"
+        desc=f"Used motor oil recycling near you: {nsites} official drop-off sites in {nmetros} US metros, with quantity limits, hours, fees and a source link for every listing."
     return title,h1,desc
 
 def material_page_qas(s, n, nsites, nmetros):
     low=n.split(" (")[0].lower()
-    lead_q={"tires":"Where is tire disposal near me?","e-waste":"Where can I recycle electronics near me?","batteries":"Where can I recycle batteries near me?"}.get(s,f"Where can I drop off {low} near you?")
+    lead_q={"tires":"Where is tire disposal near me?","e-waste":"Where can I recycle electronics near me?","batteries":"Where can I recycle batteries near me?","paint":"Where can I get rid of old paint near me?","motor-oil":"Where can I recycle used motor oil near me?","household-chemicals":"Where can I dispose of household hazardous waste near me?"}.get(s,f"Where can I drop off {low} near you?")
     lead=(f"TossMap lists {nsites} official drop-off site{'s' if nsites!=1 else ''} in {nmetros} US metro area{'s' if nmetros!=1 else ''} that list {low} as accepted. "
           "Rules, limits and residency requirements vary. Each city section below links to the listing and its official source, with a last-checked date. "
           "Confirm with that source before you go.")

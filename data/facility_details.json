@@ -2993,7 +2993,7 @@
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "operator": "not stated by source",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "source_checked": "2026-11-18",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "3cce5280546fd7f5402893d06e443c3764c18a67cf9478d558cfd5acacd92962",
     "questions": {
       "residents_only": {
@@ -3045,13 +3045,13 @@
         "evidence": "DC DPW page: “No commercial waste will be allowed.”"
       }
     },
-    "questions_reviewed": "2026-11-18"
+    "questions_reviewed": "2026-11-19"
   },
   "MA|Boston|Zero Waste Day Drop-Off – Millennium Park": {
     "slug": "zero-waste-day-drop-off-millennium-park",
     "operator": "not stated by source",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "source_checked": "2026-11-18",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "25db1143915ef4a9ac14857da9db0662ca46ff7122b422578f7a458373b26ad0",
     "questions": {
       "residents_only": {
@@ -3103,7 +3103,7 @@
         "evidence": "Boston Zero Waste Day page: “We will not accept waste from businesses.”"
       }
     },
-    "questions_reviewed": "2026-11-18"
+    "questions_reviewed": "2026-11-19"
   },
   "NV|Las Vegas|Republic Services HHW – North Las Vegas": {
     "slug": "republic-services-hhw-north-las-vegas",
@@ -3679,7 +3679,7 @@
     "slug": "porter-transfer-station-hhw",
     "operator": "not stated by source",
     "source": "https://www.orangecountyfl.net/watergarbagerecycling/householdhazardouswaste.aspx",
-    "source_checked": "2026-11-02",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "958a17778eb7e6e8f3de752e3be47e34c4cd8e8c3142df6fa2d408e6608e5fcd",
     "questions": {
       "residents_only": {
@@ -3707,8 +3707,8 @@
         "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Orange County Household Hazardous Waste page (fetched 2026-11-19): “Electronic equipment can be dropped off for recycling at HHW collection sites and events. An item is considered electronic waste if it contains a circuit board.” Porter Transfer Station is a listed drop-off location."
       },
       "batteries": {
         "answer": "yes",
@@ -3727,16 +3727,17 @@
         "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs); Free for Orange County residents; Paint/chemicals max 25 gal per vehicle"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Orange County Household Hazardous Waste page (fetched 2026-11-19): “As a free service, Orange County residents may bring their household hazardous and electronic waste to a community collection event or drop-off location. No commercial waste is accepted.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-19"
   },
   "MD|Baltimore|Sisson Street Residential Recycling Center (HHW days)": {
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "operator": "not stated by source",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "source_checked": "2026-11-18",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "318c7d7e979e297128ceb0a17516118269fdaa7fcbac89846caa312d1448952b",
     "questions": {
       "residents_only": {
@@ -3788,7 +3789,7 @@
         "evidence": "Baltimore DPW HHW page: “Businesses & Commercial Users must use a private vendor. Commercial Vehicles are not permitted.”"
       }
     },
-    "questions_reviewed": "2026-11-18"
+    "questions_reviewed": "2026-11-19"
   },
   "CA|Sacramento|North Area Recovery Station HHW Drop-Off": {
     "slug": "north-area-recovery-station-hhw-drop-off",
@@ -5759,7 +5760,7 @@
     "slug": "carr-center-division-of-waste",
     "operator": "not stated by source",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "source_checked": "2026-11-18",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "4ad530d9788cd4468e8e8f28795e0091f72248f4a84bdbdf24a8f26c2820a956",
     "questions": {
       "residents_only": {
@@ -5811,13 +5812,13 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-18"
+    "questions_reviewed": "2026-11-19"
   },
   "OH|Cleveland|Ridge Road Transfer Station": {
     "slug": "ridge-road-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "source_checked": "2026-11-18",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "8faa0e6a7049ca9f7444519102fe20c5f240cf2b0cd08cad06684154e484b398",
     "questions": {
       "residents_only": {
@@ -5869,7 +5870,7 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-18"
+    "questions_reviewed": "2026-11-19"
   },
   "OH|Cleveland|Cuyahoga County Solid Waste District HQ (electronics drop-off bins)": {
     "slug": "cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins",
@@ -6969,7 +6970,7 @@
     "slug": "hanover-mechanicsville-convenience-center",
     "operator": "Hanover County",
     "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
-    "source_checked": "2026-11-13",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "c70d65cfecf36526dd66251ef402c34de5106b9a2a29aa417898b5636cff2146",
     "questions": {
       "residents_only": {
@@ -6993,8 +6994,8 @@
         "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
       },
       "paint": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Hanover County What Can Be Recycled page (fetched 2026-11-19): “Paints – Not accepted for recycling – Must be dried to a paste and placed in trash – Mulch available at all locations to form paste”. Hazardous Waste page: “Oil based paints” are “Collected Semi-Annually at Earth Day and America Recycles Events”."
       },
       "e_waste": {
         "answer": "not stated by source",
@@ -7021,13 +7022,13 @@
         "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
       }
     },
-    "questions_reviewed": "2026-11-13"
+    "questions_reviewed": "2026-11-19"
   },
   "VA|Richmond|Hanover Courthouse Convenience Center": {
     "slug": "hanover-courthouse-convenience-center",
     "operator": "Hanover County",
     "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
-    "source_checked": "2026-11-13",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "e9c25f3700d1f315d6d0bf2e2f404ff3478c7593466ba0dec04fc2b291800d29",
     "questions": {
       "residents_only": {
@@ -7051,8 +7052,8 @@
         "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
       },
       "paint": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Hanover County What Can Be Recycled page (fetched 2026-11-19): “Paints – Not accepted for recycling – Must be dried to a paste and placed in trash – Mulch available at all locations to form paste”. Hazardous Waste page: “Oil based paints” are “Collected Semi-Annually at Earth Day and America Recycles Events”."
       },
       "e_waste": {
         "answer": "not stated by source",
@@ -7079,13 +7080,13 @@
         "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
       }
     },
-    "questions_reviewed": "2026-11-13"
+    "questions_reviewed": "2026-11-19"
   },
   "VA|Richmond|Hanover Elmont Convenience Center": {
     "slug": "hanover-elmont-convenience-center",
     "operator": "Hanover County",
     "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
-    "source_checked": "2026-11-13",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "0ae4da44e1bf0666a9e811f0def125fa7bf4c56ec63f95c13167edc4989c6599",
     "questions": {
       "residents_only": {
@@ -7109,8 +7110,8 @@
         "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
       },
       "paint": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Hanover County What Can Be Recycled page (fetched 2026-11-19): “Paints – Not accepted for recycling – Must be dried to a paste and placed in trash – Mulch available at all locations to form paste”. Hazardous Waste page: “Oil based paints” are “Collected Semi-Annually at Earth Day and America Recycles Events”."
       },
       "e_waste": {
         "answer": "not stated by source",
@@ -7137,7 +7138,7 @@
         "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
       }
     },
-    "questions_reviewed": "2026-11-13"
+    "questions_reviewed": "2026-11-19"
   },
   "HI|Honolulu|Waimānalo Convenience Center": {
     "slug": "waimanalo-convenience-center",
@@ -7607,7 +7608,7 @@
     "slug": "hanover-beaverdam-convenience-center",
     "operator": "Hanover County",
     "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
-    "source_checked": "2026-11-13",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "1981c02e97ba930f7d466f0a2ba6a86ddc2e321bf50900c0f62bd7d87f7deda8",
     "questions": {
       "residents_only": {
@@ -7631,8 +7632,8 @@
         "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
       },
       "paint": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Hanover County What Can Be Recycled page (fetched 2026-11-19): “Paints – Not accepted for recycling – Must be dried to a paste and placed in trash – Mulch available at all locations to form paste”. Hazardous Waste page: “Oil based paints” are “Collected Semi-Annually at Earth Day and America Recycles Events”."
       },
       "e_waste": {
         "answer": "not stated by source",
@@ -7659,13 +7660,13 @@
         "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
       }
     },
-    "questions_reviewed": "2026-11-13"
+    "questions_reviewed": "2026-11-19"
   },
   "VA|Richmond|Hanover Doswell Convenience Center": {
     "slug": "hanover-doswell-convenience-center",
     "operator": "Hanover County",
     "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
-    "source_checked": "2026-11-13",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "1981c02e97ba930f7d466f0a2ba6a86ddc2e321bf50900c0f62bd7d87f7deda8",
     "questions": {
       "residents_only": {
@@ -7689,8 +7690,8 @@
         "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
       },
       "paint": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Hanover County What Can Be Recycled page (fetched 2026-11-19): “Paints – Not accepted for recycling – Must be dried to a paste and placed in trash – Mulch available at all locations to form paste”. Hazardous Waste page: “Oil based paints” are “Collected Semi-Annually at Earth Day and America Recycles Events”."
       },
       "e_waste": {
         "answer": "not stated by source",
@@ -7717,13 +7718,13 @@
         "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
       }
     },
-    "questions_reviewed": "2026-11-13"
+    "questions_reviewed": "2026-11-19"
   },
   "VA|Richmond|Hanover Montpelier Convenience Center": {
     "slug": "hanover-montpelier-convenience-center",
     "operator": "Hanover County",
     "source": "https://www.hanovercounty.gov/225/Residential-Only-Trash-Center-Hours-and-",
-    "source_checked": "2026-11-13",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "f8c8d68a4920036a34c22d8ce456596f51ef53ee9bfc16fe0ac9eeb9c865bc42",
     "questions": {
       "residents_only": {
@@ -7747,8 +7748,8 @@
         "evidence": "Hanover What Can Be Recycled page: “Residents can bring 4 tires up to 32 inches in diameter per day to any location without fee passenger vehicle tires only”."
       },
       "paint": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Hanover County What Can Be Recycled page (fetched 2026-11-19): “Paints – Not accepted for recycling – Must be dried to a paste and placed in trash – Mulch available at all locations to form paste”. Hazardous Waste page: “Oil based paints” are “Collected Semi-Annually at Earth Day and America Recycles Events”."
       },
       "e_waste": {
         "answer": "not stated by source",
@@ -7775,7 +7776,7 @@
         "evidence": "Hanover County page: “Not allowed: Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
       }
     },
-    "questions_reviewed": "2026-11-13"
+    "questions_reviewed": "2026-11-19"
   },
   "LA|New Orleans|Gretna Burmaster Waste Drop-Off Site": {
     "slug": "gretna-burmaster-waste-drop-off-site",
@@ -8999,7 +9000,7 @@
     "slug": "parma-service-garage-hhw-drop-off-day",
     "operator": "City of Parma (Cuyahoga County Solid Waste District program)",
     "source": "https://cuyahogarecycles.org/recycle-in/parma/household_hazardous_waste/",
-    "source_checked": "2026-11-18",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "e183d19caf9278a68d95217b4bd6ccf6fa7dcb38cc044ebd65c8e537f2d40e89",
     "questions": {
       "residents_only": {
@@ -9051,7 +9052,7 @@
         "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-17): the program “is free to all Cuyahoga County households”; under “Waste from Businesses or Commercial Properties”: “Businesses must contract with a licensed company for proper disposal or recycling.”"
       }
     },
-    "questions_reviewed": "2026-11-18"
+    "questions_reviewed": "2026-11-19"
   },
   "OH|Cleveland|Brecksville Service Garage (HHW drop-off)": {
     "slug": "brecksville-service-garage-hhw",
@@ -9405,7 +9406,7 @@
     "slug": "securis-first-saturday-electronics-recycling-henrico",
     "operator": "Securis (Central Virginia Waste Management Authority electronics recycling contractor)",
     "source": "https://cvwma.com/cvwma-locations/henrico-2/",
-    "source_checked": "2026-11-18",
+    "source_checked": "2026-11-19",
     "listing_fingerprint": "ba331cf93621b0fcfe1009a66b9e2d7768fedbe6fbc3f0775b3af0115ac76ad2",
     "questions": {
       "residents_only": {
@@ -9457,7 +9458,7 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-18"
+    "questions_reviewed": "2026-11-19"
   },
   "WA|Seattle|North Transfer Station (Seattle Public Utilities)": {
     "slug": "north-transfer-station-seattle-public-utilities",
@@ -9806,5 +9807,353 @@
       }
     },
     "questions_reviewed": "2026-11-18"
+  },
+  "FL|Orlando|Orange County Landfill (HHW, electronics & tires)": {
+    "slug": "orange-county-landfill",
+    "operator": "Orange County Utilities Solid Waste Division",
+    "source": "https://ocfl.net/WaterGarbageRecycling/LandfillandTransferStations.aspx",
+    "source_checked": "2026-11-19",
+    "listing_fingerprint": "d5523a907b71066fadee2e493908df6b8111d9201116380e3208e8555e417bb8",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "yes",
+        "evidence": "Conditional — Orange County Household Hazardous Waste page (fetched 2026-11-19): “As a free service, Orange County residents may bring their household hazardous and electronic waste to a community collection event or drop-off location.” Orange County Landfill and Transfer Stations page (fetched 2026-11-19): “The minimum charge is $10.00”; “Waste Passenger Tires… $3.00 each”."
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Orange County Landfill and Transfer Stations page (fetched 2026-11-19): “Waste Passenger Tires – Maximum of 8 passenger tires – $3.00 each” (Landfill); “Bulk loads of tires accepted only at the Landfill, Monday through Friday, 8:00 a.m. to 4:00 p.m.” (the HHW drop-off itself does not take tires)"
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "Orange County Household Hazardous Waste page (fetched 2026-11-19): HHW includes “Paint products”; “Paint and chemicals limited to 25 gallons per vehicle.”"
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Orange County Household Hazardous Waste page (fetched 2026-11-19): “Electronic equipment can be dropped off for recycling at HHW collection sites and events. An item is considered electronic waste if it contains a circuit board.” Orange County Landfill is listed as a drop-off location."
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "Orange County Household Hazardous Waste page (fetched 2026-11-19): “Rechargeable batteries: Cover all lithium battery terminals with tape and separate them from other batteries.”"
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Orange County Household Hazardous Waste page (fetched 2026-11-19): HHW includes “Car fluids”."
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "Orange County Household Hazardous Waste page (fetched 2026-11-19): HHW includes “Pesticides… Household cleaning fluids, Pool chemicals”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Orange County Household Hazardous Waste page (fetched 2026-11-19): “Paint and chemicals limited to 25 gallons per vehicle.” Orange County Landfill and Transfer Stations page (fetched 2026-11-19): passenger tires “Maximum of 8”; “Only vehicles/trailer combinations less than 30 feet combined length are allowed to use the small vehicle drop-off area”."
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-19"
+  },
+  "FL|Orlando|McLeod Road Transfer Station": {
+    "slug": "mcleod-road-transfer-station",
+    "operator": "Orange County Utilities Solid Waste Division",
+    "source": "https://ocfl.net/WaterGarbageRecycling/LandfillandTransferStations.aspx",
+    "source_checked": "2026-11-19",
+    "listing_fingerprint": "d876d6e431382855fed58bad901eb80aea1230af91ee953ab98fc6c3ee7b7009",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "yes",
+        "evidence": "Orange County Landfill and Transfer Stations page (fetched 2026-11-19): McLeod Road Transfer Station: “Class I Garbage, putrescible waste $56.40/ton”; “The minimum charge is $10.00”."
+      },
+      "tires": {
+        "answer": "no",
+        "evidence": "Orange County Landfill and Transfer Stations page (fetched 2026-11-19): Waste Passenger Tires at McLeod Road Transfer Station: “Not accepted at this time”."
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-19"
+  },
+  "OH|Cleveland|Bratenahl Village Service Garage (HHW drop-off)": {
+    "slug": "bratenahl-village-service-garage-hhw",
+    "operator": "Village of Bratenahl (Cuyahoga County Solid Waste District program)",
+    "source": "https://cuyahogarecycles.org/recycle-in/bratenahl-village/household_hazardous_waste/",
+    "source_checked": "2026-11-19",
+    "listing_fingerprint": "bd8463de531f79d29622aff4c7903ff87be7f87378af9f021ba76877e0edc818",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Bratenahl: “Bratenahl Village has a year-round drop-off for household hazardous waste at the Bratenahl Service Garage. Hours are Monday-Friday from 7:00 AM-3:00 PM. No latex paint.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-19): “Latex paint, batteries, and fluorescent bulbs are not accepted in this program.”"
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.”"
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-19): the program “is free to all Cuyahoga County households”; under “Waste from Businesses or Commercial Properties”: “Businesses must contract with a licensed company for proper disposal or recycling.”"
+      }
+    },
+    "questions_reviewed": "2026-11-19"
+  },
+  "OH|Cleveland|Orange Village Service Department (HHW drop-off)": {
+    "slug": "orange-village-service-department-hhw",
+    "operator": "Orange Village (Cuyahoga County Solid Waste District program)",
+    "source": "https://cuyahogarecycles.org/recycle-in/orange-village/household_hazardous_waste/",
+    "source_checked": "2026-11-19",
+    "listing_fingerprint": "5280b33bf566858cb8bd886a4ae25c1552235c72e79a45915039ecb05cd1f070",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Orange Village: “Orange Village has a drop-off for household hazardous waste on the first Friday of every month at the Orange Village Service Department. Hours are 7:00 AM-3:00 PM. No latex paint.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-19): “Latex paint, batteries, and fluorescent bulbs are not accepted in this program.”"
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.”"
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-19): the program “is free to all Cuyahoga County households”; under “Waste from Businesses or Commercial Properties”: “Businesses must contract with a licensed company for proper disposal or recycling.”"
+      }
+    },
+    "questions_reviewed": "2026-11-19"
+  },
+  "VA|Richmond|Hanover Route 301 Transfer Station": {
+    "slug": "hanover-route-301-transfer-station",
+    "operator": "Hanover County Department of Public Works",
+    "source": "https://www.hanovercounty.gov/226/Transfer-Station-commercial-and-charged-",
+    "source_checked": "2026-11-19",
+    "listing_fingerprint": "0ce7e876e86be6ca5a5e4b9b16a4110913baaf813a79bd722354ab88a2cd9c15",
+    "questions": {
+      "residents_only": {
+        "answer": "no",
+        "evidence": "Hanover County Transfer Station (Commercial and Charged Waste) page (fetched 2026-11-19): accepts “Commercial and Charged Waste”; residents get listed “Residential Exceptions”."
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "yes",
+        "evidence": "Hanover County Transfer Station (Commercial and Charged Waste) page (fetched 2026-11-19): under “Commercial Items Accepted with Charge”; “Forms of Payment: Credit Card, Debit Card, Check. No cash accepted”; “Call ahead at 804-365-3220 for current rates”."
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Hanover County Transfer Station (Commercial and Charged Waste) page (fetched 2026-11-19): “Commercial Items Accepted with Charge: Municipal solid waste… Electronics, Tires”."
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Hanover County Transfer Station (Commercial and Charged Waste) page (fetched 2026-11-19): “Commercial Items Accepted with Charge: Municipal solid waste… Electronics, Tires”."
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Hanover County Transfer Station (Commercial and Charged Waste) page (fetched 2026-11-19): brush and logs/limbs “up to twelve (12) inches in diameter and six (6) feet long”; residential no-charge brush “up to four (4) inches in diameter and six (6) feet long - volume equal to that which may be secured in a low-sided pickup truck”; oversized-vehicle permit “household waste up to 4,000 lbs. annually”."
+      },
+      "businesses_accepted": {
+        "answer": "yes",
+        "evidence": "Hanover County Residential Only Trash Center page (fetched 2026-11-19): “Commercial vehicles, U-Hauls, or box trucks. Businesses must use the Route 301 Transfer Station.”"
+      }
+    },
+    "questions_reviewed": "2026-11-19"
+  },
+  "LA|New Orleans|Jefferson Parish Lafitte Drop-Off Site": {
+    "slug": "jefferson-parish-lafitte-drop-off-site",
+    "operator": "Jefferson Parish Department of Environmental Affairs",
+    "source": "https://www.jeffparish.gov/1337/Drop-Off-Sites",
+    "source_checked": "2026-11-19",
+    "listing_fingerprint": "d8f2c59c701521f318a7d859ab9d65e93d25e8989f14787492c0cdafc17d740d",
+    "questions": {
+      "residents_only": {
+        "answer": "no",
+        "evidence": "Jefferson Parish Drop-Off Sites page (fetched 2026-11-19): “The fee for contractors, commercial users and Jefferson Parish municipalities (Kenner, Gretna, Westwego, Harahan and Grand Isle) who utilize all three (3) Jefferson Parish drop-off sites is: $14.00 for pick-up trucks, $20.00 for trailers”."
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Jefferson Parish Drop-Off Sites page (fetched 2026-11-19): “All citizens using the three (3) trash drop-off sites will be asked to provide a driver's license or water bill to verify residence before their waste will be accepted.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Jefferson Parish Drop-Off Sites page (fetched 2026-11-19): “a free, self-service to residents who receive curbside garbage collection in the areas of unincorporated Jefferson Parish and the Town of Jean Lafitte.” (contractors, commercial users and other municipalities pay $14 per pickup / $20 per trailer)"
+      },
+      "tires": {
+        "answer": "no",
+        "evidence": "Jefferson Parish Drop-Off Sites page (fetched 2026-11-19): Additional Materials Accepted table: “Lafitte | No additional materials accepted at this site.” (the additional materials at Marrero/Metairie are waste tires, oil filters, motor oil, anti-freeze, gasoline, lead acid batteries, waste cooking oil and e-waste)"
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "no",
+        "evidence": "Jefferson Parish Drop-Off Sites page (fetched 2026-11-19): Additional Materials Accepted table: “Lafitte | No additional materials accepted at this site.” (the additional materials at Marrero/Metairie are waste tires, oil filters, motor oil, anti-freeze, gasoline, lead acid batteries, waste cooking oil and e-waste)"
+      },
+      "batteries": {
+        "answer": "no",
+        "evidence": "Jefferson Parish Drop-Off Sites page (fetched 2026-11-19): Additional Materials Accepted table: “Lafitte | No additional materials accepted at this site.” (the additional materials at Marrero/Metairie are waste tires, oil filters, motor oil, anti-freeze, gasoline, lead acid batteries, waste cooking oil and e-waste)"
+      },
+      "motor_oil": {
+        "answer": "no",
+        "evidence": "Jefferson Parish Drop-Off Sites page (fetched 2026-11-19): Additional Materials Accepted table: “Lafitte | No additional materials accepted at this site.” (the additional materials at Marrero/Metairie are waste tires, oil filters, motor oil, anti-freeze, gasoline, lead acid batteries, waste cooking oil and e-waste)"
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Jefferson Parish Drop-Off Sites page (fetched 2026-11-19): “Residents of unincorporated areas of Jefferson Parish are limited to two (2) visits per day.”; “Dump trailers are not permitted”."
+      },
+      "businesses_accepted": {
+        "answer": "yes",
+        "evidence": "Conditional — Jefferson Parish Drop-Off Sites page (fetched 2026-11-19): commercial users pay “$14.00 for pick-up trucks” / “$20.00 for trailers”; “Commercial users may not dispose of these items [passenger tires, auto fluids, e-waste, batteries, waste cooking oil] at Parish drop-off sites.”"
+      }
+    },
+    "questions_reviewed": "2026-11-19"
   }
 }

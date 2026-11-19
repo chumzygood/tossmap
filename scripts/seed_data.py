@@ -372,6 +372,41 @@ REVERIFIED18={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Resid
 for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED18: f["checked"]=D18
+# --- Nov 19 2026 daily pass additions (each verified against cited official source on 2026-11-19) ---
+D19="2026-11-19"
+add("Cleveland",
+  F("Bratenahl Village Service Garage (HHW drop-off)","57 Garfield Lane, Bratenahl, OH","Year-round, Mon–Fri 7am–3pm",CUYU.format("bratenahl-village"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the village service garage; "+CUYCALL+"Service Department (216) 681-7652. "+CUY,D19),
+  F("Orange Village Service Department (HHW drop-off)","4680 Lander Road, Orange Village, OH","First Friday of every month, 7am–3pm",CUYU.format("orange-village"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the village service department; "+CUYCALL+"Service Department (440) 498-4403. "+CUY,D19))
+add("Richmond",
+  F("Hanover Route 301 Transfer Station","7301 Courtland Farm Road, Hanover, VA 23069","Mon–Sat 8am–4pm; closed New Year's Day, Memorial Day, Fourth of July, Labor Day, Thanksgiving, Christmas Eve and Christmas Day","https://www.hanovercounty.gov/226/Transfer-Station-commercial-and-charged-",
+    "Charged commercial and residential loads: municipal solid waste; electronics; tires; grass, unbagged leaves, brush and logs/limbs up to 12 in. diameter and 6 ft long; loose construction and demolition waste (shingles, roofing, drywall, inert waste, lumber/plywood over 4 ft)",
+    "Charges apply (call 804-365-3220 for current rates); credit card, debit card or check — no cash. Hanover County residents: no charge for brush up to 4 in. diameter and 6 ft long (low-sided pickup volume) or, with a Public Works permit for oversized vehicles, household waste up to 4,000 lb a year",
+    "Hanover County's transfer station for commercial and charged waste; businesses must use this site rather than the residential convenience centers. 804-365-3220",D19))
+add("New Orleans",
+  F("Jefferson Parish Lafitte Drop-Off Site","Treasure Street, Jean Lafitte, LA 70067","Tue–Sun 9am–5:30pm (closed observed holidays)",JP,
+    "Garbage and trash; white goods; bulky waste; scrap metal; tree and yard waste; construction debris. No additional materials (no tires, auto fluids, e-waste or batteries at this site). Not accepted: CRT TVs/monitors, light bulbs, copiers, stereos, toner",
+    "Free for residents with curbside garbage collection in unincorporated Jefferson Parish and Jean Lafitte; contractors, commercial users and other Jefferson Parish municipalities (Kenner, Gretna, Westwego, Harahan, Grand Isle) pay $14 per pickup truck or $20 per trailer (card only, no cash)",
+    "Self-service: unload debris into roll-off containers yourself. Bring a driver's license or water bill to verify residence; residents are limited to 2 visits per day. Dump trailers and rented box trucks are not accepted, and Lafitte may limit trailer size further because the site is small. (504) 731-4612",D19))
+OCL="https://ocfl.net/WaterGarbageRecycling/LandfillandTransferStations.aspx"
+add("Orlando",
+  F("Orange County Landfill (HHW, electronics & tires)","5901 Young Pine Road, Orlando, FL 32829","Mon–Sat 8am–5pm (household hazardous waste Mon–Sat 8am–5pm; bulk tire loads Mon–Fri 8am–4pm); closed Thanksgiving and Christmas",OCL,
+    "Household hazardous waste free for Orange County residents (paint products, pesticides, propane tanks up to 100 lb, cooking oil, fluorescent bulbs, car fluids, rechargeable batteries, household cleaners, pool chemicals) and electronics with a circuit board (phones, computers, tablets, TVs except rear-projection, VCRs, CD players, stereos); waste passenger tires (up to 8 per load); garbage, C&D debris, yard waste; freon appliances. Not accepted at HHW drop-off: tires, rear-projection TVs, ammunition, explosives, fireworks, flares, prescription drugs",
+    "HHW and electronics free for Orange County residents. Disposal: $10 minimum charge; passenger tires $3 each (max 8); more tires or LT/other tires $249/ton; garbage $56.40/ton; C&D $42.70/ton; yard waste $48.70/ton; freon appliances $10 minimum (rates effective Oct 1, 2026). Check, cash and major credit cards",
+    "Orange County Utilities Solid Waste. No commercial waste at the HHW drop-off; paint and chemicals limited to 25 gallons per vehicle. Vehicles/trailers under 30 ft use the small-vehicle drop-off (manual unloading only). HHW details: https://www.orangecountyfl.net/tabid/986/default.aspx. (407) 836-6601",D19),
+  F("McLeod Road Transfer Station","5000 L.B. McLeod Road, Orlando, FL 32811","Mon–Sat 8am–5pm for non-account customers; yard waste Sat only 8am–5pm; closed Thanksgiving and Christmas",OCL,
+    "Garbage (Class I solid waste); yard waste on Saturdays only. Tires not accepted at this time; C&D debris only at the Landfill",
+    "$56.40/ton garbage; yard waste charged at the Class I rate ($56.40/ton); $10 minimum charge (rates effective Oct 1, 2026)",
+    "Orange County Utilities transfer station. For household hazardous waste use the Orange County Landfill or Porter Transfer Station. (407) 836-6601",D19))
+# Re-verified against the official page on 2026-11-19 (no listing text changed).
+REVERIFIED19={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Residential Recycling Center (HHW days)","DPW Special Waste Collection Event – RFK Stadium Lot 8",
+  "Carr Center (Division of Waste)","Ridge Road Transfer Station","Parma Service Garage (HHW drop-off day)","Securis First Saturday Electronics Recycling (CVWMA)",
+  "Porter Transfer Station HHW","Hanover Mechanicsville Convenience Center","Hanover Courthouse Convenience Center","Hanover Elmont Convenience Center",
+  "Hanover Beaverdam Convenience Center","Hanover Doswell Convenience Center","Hanover Montpelier Convenience Center"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED19: f["checked"]=D19
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re
