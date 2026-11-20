@@ -48,7 +48,7 @@ class FacilityTests(unittest.TestCase):
                 for k,a in f['questions'].items():
                     self.assertIn(a['answer'],('yes','no',UNKNOWN))
                     if a['answer']!=UNKNOWN: self.assertTrue(a['evidence'],(f['name'],k))
-        self.assertEqual(len(paths),176)
+        self.assertEqual(len(paths),183)
         self.assertEqual(len(set(paths)),len(paths))
     def test_all_facility_pages_and_visible_schema(self):
         sitemap={u.text for u in ET.parse('docs/sitemap.xml').getroot().iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
@@ -75,9 +75,23 @@ class FacilityTests(unittest.TestCase):
                     self.assertIn(norm(qa['acceptedAnswer']['text']),text)
                 for other in m['facilities']:
                     if other is not f: self.assertIn(facility_path(m,other),doc.links)
-        self.assertEqual(len(queue),176); self.assertEqual(len(set(queue)),176)
+                for ms,key in [('paint','paint'),('tires','tires'),('e-waste','e_waste'),('batteries','batteries'),('motor-oil','motor_oil'),('household-chemicals','household_chemicals')]:
+                    if f['questions'][key]['answer']=='yes':
+                        anchor=f'/{ms}/#{slug(m["city"])}-{slug(m["st"])}'
+                        self.assertIn(anchor,doc.links); self.assertIn(anchor.split('#')[1],read(f'/{ms}/').ids)
+        self.assertEqual(len(queue),183); self.assertEqual(len(set(queue)),183)
         self.assertTrue(queue[0].startswith(BASE+'/va/richmond/'))
-        self.assertEqual(len(sitemap),273)
+        self.assertEqual(len(sitemap),280)
+    def test_state_pages_itemlist_matches_city_links(self):
+        states={}
+        for m in D: states.setdefault(m['st'],[]).append(m)
+        for st,ms in states.items():
+            doc=read(f'/{slug(st)}/'); graph=doc.jsonld[0]['@graph']
+            il=next(x for x in graph if x['@type']=='ItemList')
+            self.assertEqual(il['numberOfItems'],len(ms))
+            self.assertEqual([x['url'] for x in il['itemListElement']],[BASE+city_path(m) for m in ms])
+            for m in ms: self.assertIn(city_path(m),doc.links)
+            self.assertTrue(any(x['@type']=='CollectionPage' for x in graph))
     def test_material_links_match_explicit_answers(self):
         for path,key in [('paint','paint'),('tires','tires'),('e-waste','e_waste'),('batteries','batteries'),('motor-oil','motor_oil'),('household-chemicals','household_chemicals')]:
             mat=read('/'+path+'/')

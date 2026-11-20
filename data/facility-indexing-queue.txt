@@ -91,6 +91,13 @@ https://tossmap.com/hi/honolulu/waianae-convenience-center/
 https://tossmap.com/hi/honolulu/ewa-beach-convenience-center/
 https://tossmap.com/hi/honolulu/laie-convenience-center/
 https://tossmap.com/hi/honolulu/wahiawa-convenience-center/
+https://tossmap.com/fl/miami/home-chemical-collection-center-west-dade/
+https://tossmap.com/fl/miami/home-chemical-collection-center-south-dade/
+https://tossmap.com/fl/miami/golden-glades-trash-and-recycling-center/
+https://tossmap.com/fl/miami/north-dade-trash-and-recycling-center/
+https://tossmap.com/fl/miami/palm-springs-north-trash-and-recycling-center/
+https://tossmap.com/fl/miami/sunset-kendall-trash-and-recycling-center/
+https://tossmap.com/fl/miami/moody-drive-trash-and-recycling-center/
 https://tossmap.com/nc/raleigh/north-wake-hhw-facility/
 https://tossmap.com/nc/raleigh/south-wake-hhw-facility/
 https://tossmap.com/nc/raleigh/east-wake-hhw-facility/
@@ -112,6 +119,11 @@ https://tossmap.com/la/new-orleans/jefferson-parish-metairie-drop-off-site/
 https://tossmap.com/la/new-orleans/jefferson-parish-marrero-drop-off-site/
 https://tossmap.com/la/new-orleans/gretna-burmaster-waste-drop-off-site/
 https://tossmap.com/la/new-orleans/jefferson-parish-lafitte-drop-off-site/
+https://tossmap.com/fl/orlando/porter-transfer-station-hhw/
+https://tossmap.com/fl/orlando/orange-county-landfill/
+https://tossmap.com/fl/orlando/mcleod-road-transfer-station/
+https://tossmap.com/fl/orlando/seminole-county-central-transfer-station/
+https://tossmap.com/fl/orlando/seminole-county-landfill/
 https://tossmap.com/nc/charlotte/compost-central-disposal-recycling-center/
 https://tossmap.com/nc/charlotte/foxhole-disposal-recycling-center/
 https://tossmap.com/nc/charlotte/hickory-grove-disposal-recycling-center/
@@ -126,9 +138,6 @@ https://tossmap.com/md/baltimore/northwest-transfer-station-residential-drop-off
 https://tossmap.com/tn/nashville/east-convenience-center/
 https://tossmap.com/tn/nashville/ezell-pike-convenience-center/
 https://tossmap.com/tn/nashville/omohundro-convenience-center/
-https://tossmap.com/fl/orlando/porter-transfer-station-hhw/
-https://tossmap.com/fl/orlando/orange-county-landfill/
-https://tossmap.com/fl/orlando/mcleod-road-transfer-station/
 https://tossmap.com/ca/riverside/agua-mansa-permanent-hhw-facility/
 https://tossmap.com/ca/riverside/lake-elsinore-hhw-facility/
 https://tossmap.com/ca/riverside/palm-springs-hhw-facility/
@@ -142,8 +151,6 @@ https://tossmap.com/in/indianapolis/toxdrop-traders-point-collection-facility/
 https://tossmap.com/in/indianapolis/toxdrop-perry-township-government-center/
 https://tossmap.com/nv/las-vegas/republic-services-hhw-north-las-vegas/
 https://tossmap.com/nv/las-vegas/republic-services-hhw-henderson/
-https://tossmap.com/fl/miami/home-chemical-collection-center-west-dade/
-https://tossmap.com/fl/miami/home-chemical-collection-center-south-dade/
 https://tossmap.com/wi/milwaukee/mmsd-south-drop-off-center/
 https://tossmap.com/wi/milwaukee/mmsd-13th-street-drop-off/
 https://tossmap.com/mn/minneapolis/hennepin-county-drop-off-brooklyn-park/

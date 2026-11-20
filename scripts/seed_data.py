@@ -407,6 +407,37 @@ REVERIFIED19={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Resid
 for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED19: f["checked"]=D19
+# --- Nov 20 2026 daily pass additions (each verified against cited official source on 2026-11-20) ---
+D20="2026-11-20"
+SEML="https://www.seminolecountyfl.gov/departments-services/environmental-services/solid-waste-management/locations"
+SEMH="https://www.seminolecountyfl.gov/departments-services/environmental-services/solid-waste-management/hazardous-and-special-waste"
+SEMR="https://www.seminolecountyfl.gov/departments-services/environmental-services/solid-waste-management/rates"
+add("Orlando",
+  F("Seminole County Central Transfer Station (HHW, electronics & tires)","1950 State Road 419, Longwood, FL 32750","Mon–Sat 7:30am–5:30pm; Household Hazardous Waste Tunnel Mon–Sat 8am–5pm",SEML,
+    "Household hazardous waste (paints, stains, sealants, thinners and strippers; pesticides and herbicides; pool and lawn chemicals; solvents; glues; mercury devices; fluorescent tubes and CFLs; disinfectants and corrosive liquids); used motor oil (up to 20 gal), antifreeze, car batteries, gasoline (up to 5 gal), brake/transmission/power-steering fluid; lead-acid, Ni-Cd, mercury, gel cell and lithium batteries; propane tanks; sharps in a sealed container; electronics (computers, monitors, TVs, printers, cell phones, audio-visual equipment); waste tires (limit 4 per person); cooking oil; household garbage, yard waste and recyclables",
+    "HHW and electronics free for all Seminole County residents, including residents of incorporated cities. Passenger tires $3.16 each (limit 4); Class I waste and yard waste $41.63/ton covered, $83.25/ton uncovered (rates effective Sept 25, 2024)",
+    "Seminole County Solid Waste Management Division. Businesses are not permitted to drop off hazardous materials through the HHW program. The HHW Tunnel and ReUse Shop (free usable household products, Mon–Sat 8am–4pm) are inside the transfer station. HHW item list: "+SEMH+". 407-665-2262",D20),
+  F("Seminole County Landfill (tires & automotive fluids)","1930 E. Osceola Road, Geneva, FL 32732","Daily 7:30am–5:30pm",SEML,
+    "Waste tires (limit 10 per person; oversized tires charged by weight); used oil, oil filters, lead-acid batteries and propane tanks (the landfill takes automotive fluids and tires only, not other household hazardous waste); Class I and Class II waste; yard waste; construction and demolition debris; white goods and appliances; boats (after inspection, by appointment); asbestos (by appointment)",
+    "Passenger tires $3.16 each (limit 10); oversized tires $211/ton covered; Class I, Class III and yard waste $41.63/ton covered, $83.25/ton uncovered (rates effective Sept 25, 2024). Cash and credit cards (card connectivity may occasionally be limited)",
+    "Seminole County Solid Waste Management Division; serves residents and commercial customers. For paint, chemicals and electronics, use the HHW Tunnel at the Central Transfer Station in Longwood. Rates: "+SEMR,D20))
+MDT="https://www.miamidade.gov/global/service.page?Mduid_service=ser1464797123341331"
+mdthours="Daily 7am–5:30pm; closed Martin Luther King Jr. Day, Independence Day and Christmas Day"
+mdtacc="Up to 4 standard automobile tires (no more than 48 in. diameter); used motor oil; used electronics (computer monitors and TVs, personal computers, keyboards, hard drives, printers, VCRs, audio/video equipment, cell phones, hand-held radios); household trash; tree and yard cuttings; up to 3 cubic yards of construction and demolition debris per day; white goods (stoves, refrigerators, water heaters, washers, dryers, freezers); mattresses; wooden and chain-link fence (up to 3 cubic yards). No garbage (food or kitchen waste)"
+mdtfee="No charge for Miami-Dade Department of Solid Waste Management residential waste fee customers"
+mdtnote="Only residential waste fee customers in unincorporated Miami-Dade County and Aventura, Cutler Bay, Doral, Miami Gardens, Miami Lakes, Opa-locka, Palmetto Bay, Pinecrest, Sunny Isles Beach and Sweetwater may use the centers. Present a valid Florida driver's license or ID card (scanned to match an eligible property address; otherwise submit the TRC Access Form). No oversize vehicles: vans over 11,000 lb GVW, pickups over 15,000 lb GVW, or trailers larger than 10 ft x 6 ft x 6 ft. Questions: call 311"
+add("Miami",*[F(f"{n} Trash and Recycling Center",a,mdthours,MDT,mdtacc+(" Cardboard recycling also accepted." if cb else ""),mdtfee,mdtnote,D20) for n,a,cb in [
+  ("Golden Glades","140 NW 160th Street, Miami, FL 33169",True),
+  ("North Dade","21500 NW 47 Avenue, Miami, FL 33055",False),
+  ("Palm Springs North","7870 NW 178th St, Hialeah, FL 33015",False),
+  ("Sunset Kendall","8000 SW 107th Ave, Miami, FL 33173",True),
+  ("Moody Drive","12970 SW 268th St, Homestead, FL 33032",True)]])
+# Re-verified against the official page on 2026-11-20 (no listing text changed).
+REVERIFIED20={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Residential Recycling Center (HHW days)","DPW Special Waste Collection Event – RFK Stadium Lot 8",
+  "Carr Center (Division of Waste)","Ridge Road Transfer Station","Parma Service Garage (HHW drop-off day)","Securis First Saturday Electronics Recycling (CVWMA)"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED20: f["checked"]=D20
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

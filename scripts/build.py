@@ -526,6 +526,8 @@ def facility_page(f,m):
           +f'<h2>Common questions</h2><p class="meta">Question set reviewed {e(f.get("questions_reviewed",f["checked"]))}.</p><p>Yes and no apply only to the material types, users and conditions in the accompanying evidence. A fee answer of no means the listed service is free under those conditions; it does not waive eligibility rules. “Not stated by source” means no explicit answer is recorded in our source-backed listing, not that the source has no further information. Check the official source before driving.</p>'
           +'<table class="questions"><caption>Facility requirements and material acceptance</caption><thead><tr><th scope="col">Question</th><th scope="col">Answer and source-backed detail</th></tr></thead><tbody>'+''.join(rows)+'</tbody></table>'
           +(f'<h2>Browse accepted materials</h2><p>{materials}</p>' if materials else '')
+          # City-scoped internal links: each material hub has a per-city section (#city-st) listing every site there that takes it.
+          +(f'<p>More in {e(m["city"])}: '+" · ".join(f'<a href="/{ms}/#{slug(m["city"])}-{slug(m["st"])}">{e({"tires":"tire","batteries":"battery"}.get(ms,n.split(" (")[0].lower()))} drop-off in {e(m["city"])}</a>' for ms,n,_ in mats(f))+'</p>' if materials else '')
           +f'<p><a href="{cpath(m)}">All drop-off options in {e(m["city"])}</a> · <a href="/{slug(m['st'])}/">More drop-off sites in {e(m["state"])}</a></p>'
           +('<h2>Other facilities in this city directory</h2><ul>'+''.join(f'<li><a href="{fpath(o,m)}">{e(o["name"])}</a> — {e(o["address"])}</li>' for o in others)+'</ul>' if others else '<p>No other facilities are currently listed in this city directory. Follow the city link above for local guidance.</p>')
           +'<p class="note">Use the exact acceptance notes above: paint types, battery types, item limits and event dates matter. Do not mix chemicals or assume a material is accepted because a similar item is listed. Confirm availability with the operator.</p>')
@@ -616,7 +618,10 @@ for (sn,st),ms in sorted(states.items()):
                 +(' — '+", ".join(f'<a href="/{s}/">{e(n.split(" (")[0].lower())}</a>' for s,n in mh) if mh else "")+"</li>")
     page(sp,f"Hazardous waste, paint & e-waste drop-off in {sn} | TossMap",
          f"{plural(nst,'official drop-off site')} in {sn} ({', '.join(m['city'] for m in ms)}) for {and_list([n.split(" (")[0].lower() for s,n,_ in MAT if any(m in matidx[s] for m in ms)]) or "household hazardous waste"}, with source links.",
-         vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1><p>{plural(nst,"official drop-off site")} across {plural(len(ms),"metro area")} in {e(sn)}. Each city page lists addresses, hours, fees, eligibility rules and a link to the official source, with the date we last checked it.</p><ul>'+"".join(state_li(m) for m in ms)+"</ul>",[bl],
+         vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1><p>{plural(nst,"official drop-off site")} across {plural(len(ms),"metro area")} in {e(sn)}. Each city page lists addresses, hours, fees, eligibility rules and a link to the official source, with the date we last checked it.</p><ul>'+"".join(state_li(m) for m in ms)+"</ul>",
+         # State hubs: CollectionPage + ItemList of the city pages they link to (same names and URLs as the visible list).
+         [bl,{"@type":"CollectionPage","@id":BASE+sp+"#page","url":BASE+sp,"name":f"Hazardous waste drop-off in {sn}","publisher":{"@id":ORG_ID},"isPartOf":{"@id":BASE+"/#website"},"mainEntity":{"@id":BASE+sp+"#cities"}},
+          {"@type":"ItemList","@id":BASE+sp+"#cities","name":f"{sn} metro areas with official drop-off sites","numberOfItems":len(ms),"itemListElement":[{"@type":"ListItem","position":k+1,"name":f'{m["city"]}, {m["st"]}',"url":BASE+cpath(m)} for k,m in enumerate(ms)]}],
          max([f["checked"] for m in ms for f in m["facilities"]],default=None))
 for s,n,_ in MAT:
     ms=sorted(matidx[s],key=lambda x:x["city"]); low=n.split(" (")[0].lower()

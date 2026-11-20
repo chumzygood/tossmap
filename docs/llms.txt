@@ -2,16 +2,16 @@
 
 > TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
 
-Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 176 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 183 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
-- [Paint](https://tossmap.com/paint/): 119 official listings in 50 metro areas
-- [Electronics (e-waste)](https://tossmap.com/e-waste/): 59 official listings in 24 metro areas
-- [Tires](https://tossmap.com/tires/): 72 official listings in 21 metro areas
-- [Batteries](https://tossmap.com/batteries/): 111 official listings in 50 metro areas
-- [Motor oil](https://tossmap.com/motor-oil/): 66 official listings in 21 metro areas
-- [Household chemicals](https://tossmap.com/household-chemicals/): 116 official listings in 48 metro areas
+- [Paint](https://tossmap.com/paint/): 120 official listings in 50 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 67 official listings in 25 metro areas
+- [Tires](https://tossmap.com/tires/): 79 official listings in 22 metro areas
+- [Batteries](https://tossmap.com/batteries/): 113 official listings in 50 metro areas
+- [Motor oil](https://tossmap.com/motor-oil/): 73 official listings in 22 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 117 official listings in 48 metro areas
 
 ## Cities
 - [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
@@ -164,6 +164,11 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Shelby County HHW Facility — Memphis, TN](https://tossmap.com/tn/memphis/shelby-county-hhw-facility/)
 - [Home Chemical Collection Center – West Dade — Miami, FL](https://tossmap.com/fl/miami/home-chemical-collection-center-west-dade/)
 - [Home Chemical Collection Center – South Dade — Miami, FL](https://tossmap.com/fl/miami/home-chemical-collection-center-south-dade/)
+- [Golden Glades Trash and Recycling Center — Miami, FL](https://tossmap.com/fl/miami/golden-glades-trash-and-recycling-center/)
+- [North Dade Trash and Recycling Center — Miami, FL](https://tossmap.com/fl/miami/north-dade-trash-and-recycling-center/)
+- [Palm Springs North Trash and Recycling Center — Miami, FL](https://tossmap.com/fl/miami/palm-springs-north-trash-and-recycling-center/)
+- [Sunset Kendall Trash and Recycling Center — Miami, FL](https://tossmap.com/fl/miami/sunset-kendall-trash-and-recycling-center/)
+- [Moody Drive Trash and Recycling Center — Miami, FL](https://tossmap.com/fl/miami/moody-drive-trash-and-recycling-center/)
 - [MMSD South Drop Off Center — Milwaukee, WI](https://tossmap.com/wi/milwaukee/mmsd-south-drop-off-center/)
 - [MMSD 13th Street Drop Off — Milwaukee, WI](https://tossmap.com/wi/milwaukee/mmsd-13th-street-drop-off/)
 - [Hennepin County Drop-off – Brooklyn Park — Minneapolis, MN](https://tossmap.com/mn/minneapolis/hennepin-county-drop-off-brooklyn-park/)
@@ -186,6 +191,8 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Porter Transfer Station HHW — Orlando, FL](https://tossmap.com/fl/orlando/porter-transfer-station-hhw/)
 - [Orange County Landfill (HHW, electronics & tires) — Orlando, FL](https://tossmap.com/fl/orlando/orange-county-landfill/)
 - [McLeod Road Transfer Station — Orlando, FL](https://tossmap.com/fl/orlando/mcleod-road-transfer-station/)
+- [Seminole County Central Transfer Station (HHW, electronics & tires) — Orlando, FL](https://tossmap.com/fl/orlando/seminole-county-central-transfer-station/)
+- [Seminole County Landfill (tires & automotive fluids) — Orlando, FL](https://tossmap.com/fl/orlando/seminole-county-landfill/)
 - [Sanitation Convenience Center – Port Richmond — Philadelphia, PA](https://tossmap.com/pa/philadelphia/sanitation-convenience-center-port-richmond/)
 - [Sanitation Convenience Center – Northwest Philadelphia — Philadelphia, PA](https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northwest-philadelphia/)
 - [Sanitation Convenience Center – Northeast Philadelphia — Philadelphia, PA](https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northeast-philadelphia/)

@@ -1735,8 +1735,8 @@
     "listing_fingerprint": "b17da068bf686cef96b3f00c63099a09062b8e25676e4b6df99b16f69d2f3d1f",
     "questions": {
       "residents_only": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "City of Jacksonville Household Hazardous Waste page (fetched 2026-11-20): Fee Schedule lists charges for “Conditionally Exempt Small Quantity Generator and Non-Residents” (Duval residents free)."
       },
       "id_required": {
         "answer": "not stated by source",
@@ -1747,8 +1747,8 @@
         "evidence": ""
       },
       "fee_charged": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Conditional — City of Jacksonville Household Hazardous Waste page (fetched 2026-11-20): Fee Schedule: “Duval Residents: Free”; “Others: Conditionally Exempt Small Quantity Generator and Non-Residents — Flammable Liquids – $4.25 / Per Gallon; Latex - $1.25 + Documentation Fee”; “Checks/money orders only”."
       },
       "tires": {
         "answer": "not stated by source",
@@ -1779,8 +1779,8 @@
         "evidence": "Paint, motor oil, batteries, fluorescent/CFL bulbs, aerosols, fertilizers, photo chemicals, drain cleaners, fuels, fireworks, household e-waste; Paint/oil limit 27 gal each per 30 days; CRT TVs/monitors max 3; 904-387-8847"
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Conditional — City of Jacksonville Household Hazardous Waste page (fetched 2026-11-20): Fee Schedule: “Others: Conditionally Exempt Small Quantity Generator and Non-Residents” pay per gallon (flammable liquids $4.25/gal). For e-waste: “Businesses should check for available recycling centers to arrange for the recycling and/or disposal of any e-wastes.”"
       }
     }
   },
@@ -2993,7 +2993,7 @@
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "operator": "not stated by source",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "source_checked": "2026-11-19",
+    "source_checked": "2026-11-20",
     "listing_fingerprint": "3cce5280546fd7f5402893d06e443c3764c18a67cf9478d558cfd5acacd92962",
     "questions": {
       "residents_only": {
@@ -3045,13 +3045,13 @@
         "evidence": "DC DPW page: “No commercial waste will be allowed.”"
       }
     },
-    "questions_reviewed": "2026-11-19"
+    "questions_reviewed": "2026-11-20"
   },
   "MA|Boston|Zero Waste Day Drop-Off – Millennium Park": {
     "slug": "zero-waste-day-drop-off-millennium-park",
     "operator": "not stated by source",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "source_checked": "2026-11-19",
+    "source_checked": "2026-11-20",
     "listing_fingerprint": "25db1143915ef4a9ac14857da9db0662ca46ff7122b422578f7a458373b26ad0",
     "questions": {
       "residents_only": {
@@ -3103,7 +3103,7 @@
         "evidence": "Boston Zero Waste Day page: “We will not accept waste from businesses.”"
       }
     },
-    "questions_reviewed": "2026-11-19"
+    "questions_reviewed": "2026-11-20"
   },
   "NV|Las Vegas|Republic Services HHW – North Las Vegas": {
     "slug": "republic-services-hhw-north-las-vegas",
@@ -3422,8 +3422,8 @@
         "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Miami-Dade Home Chemical Collection Centers page (fetched 2026-11-20): Accepted Items include “Electronic items including: Computer monitors and televisions; Personal computers, keyboards, hard drives and printers; VCR's, audio and video equipment; Communication equipment such as cellular telephones and hand-held radios”."
       },
       "batteries": {
         "answer": "yes",
@@ -3442,8 +3442,8 @@
         "evidence": ""
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Miami-Dade Home Chemical Collection Centers page (fetched 2026-11-20): “Attention businesses: Home Chemical Collection Centers are not for business or commercial use. Businesses must utilize a private company to dispose of the below listed items.”"
       }
     }
   },
@@ -3479,8 +3479,8 @@
         "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Miami-Dade Home Chemical Collection Centers page (fetched 2026-11-20): Accepted Items include “Electronic items including: Computer monitors and televisions; Personal computers, keyboards, hard drives and printers; VCR's, audio and video equipment; Communication equipment such as cellular telephones and hand-held radios”."
       },
       "batteries": {
         "answer": "yes",
@@ -3499,8 +3499,8 @@
         "evidence": ""
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Miami-Dade Home Chemical Collection Centers page (fetched 2026-11-20): “Attention businesses: Home Chemical Collection Centers are not for business or commercial use. Businesses must utilize a private company to dispose of the below listed items.”"
       }
     }
   },
@@ -3737,7 +3737,7 @@
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "operator": "not stated by source",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "source_checked": "2026-11-19",
+    "source_checked": "2026-11-20",
     "listing_fingerprint": "318c7d7e979e297128ceb0a17516118269fdaa7fcbac89846caa312d1448952b",
     "questions": {
       "residents_only": {
@@ -3789,7 +3789,7 @@
         "evidence": "Baltimore DPW HHW page: “Businesses & Commercial Users must use a private vendor. Commercial Vehicles are not permitted.”"
       }
     },
-    "questions_reviewed": "2026-11-19"
+    "questions_reviewed": "2026-11-20"
   },
   "CA|Sacramento|North Area Recovery Station HHW Drop-Off": {
     "slug": "north-area-recovery-station-hhw-drop-off",
@@ -5010,8 +5010,8 @@
     "listing_fingerprint": "6b1fae9747bb00123f6017616e7365c74365b6096b521ca717680e1fb721d79d",
     "questions": {
       "residents_only": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "City of Tulsa Household Pollutant Collection Facility page (fetched 2026-11-20): “Residents living in Bixby, Broken Arrow, Claremore, Collinsville, Glenpool, Jenks, Owasso, Sand Springs, and unincorporated Tulsa County can obtain a voucher from the Metropolitan Environmental Trust (918) 584-0584, to drop-off the first 45 lbs. of pollutants free of charge.”; Sapulpa residents can also get vouchers."
       },
       "id_required": {
         "answer": "yes",
@@ -5022,8 +5022,8 @@
         "evidence": ""
       },
       "fee_charged": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Conditional — City of Tulsa Household Pollutant Collection Facility page (fetched 2026-11-20): “Tulsa residents can drop-off for free by showing a drivers license or City of Tulsa utility bill.”; for voucher communities “If the weight is over 45 lbs, there will be a disposal fee”; without a voucher customers “will be charged the full disposal rate of $1.37 per pound”."
       },
       "tires": {
         "answer": "no",
@@ -5760,7 +5760,7 @@
     "slug": "carr-center-division-of-waste",
     "operator": "not stated by source",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "source_checked": "2026-11-19",
+    "source_checked": "2026-11-20",
     "listing_fingerprint": "4ad530d9788cd4468e8e8f28795e0091f72248f4a84bdbdf24a8f26c2820a956",
     "questions": {
       "residents_only": {
@@ -5812,13 +5812,13 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-19"
+    "questions_reviewed": "2026-11-20"
   },
   "OH|Cleveland|Ridge Road Transfer Station": {
     "slug": "ridge-road-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "source_checked": "2026-11-19",
+    "source_checked": "2026-11-20",
     "listing_fingerprint": "8faa0e6a7049ca9f7444519102fe20c5f240cf2b0cd08cad06684154e484b398",
     "questions": {
       "residents_only": {
@@ -5870,7 +5870,7 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-19"
+    "questions_reviewed": "2026-11-20"
   },
   "OH|Cleveland|Cuyahoga County Solid Waste District HQ (electronics drop-off bins)": {
     "slug": "cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins",
@@ -9000,7 +9000,7 @@
     "slug": "parma-service-garage-hhw-drop-off-day",
     "operator": "City of Parma (Cuyahoga County Solid Waste District program)",
     "source": "https://cuyahogarecycles.org/recycle-in/parma/household_hazardous_waste/",
-    "source_checked": "2026-11-19",
+    "source_checked": "2026-11-20",
     "listing_fingerprint": "e183d19caf9278a68d95217b4bd6ccf6fa7dcb38cc044ebd65c8e537f2d40e89",
     "questions": {
       "residents_only": {
@@ -9052,7 +9052,7 @@
         "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-17): the program “is free to all Cuyahoga County households”; under “Waste from Businesses or Commercial Properties”: “Businesses must contract with a licensed company for proper disposal or recycling.”"
       }
     },
-    "questions_reviewed": "2026-11-19"
+    "questions_reviewed": "2026-11-20"
   },
   "OH|Cleveland|Brecksville Service Garage (HHW drop-off)": {
     "slug": "brecksville-service-garage-hhw",
@@ -9406,7 +9406,7 @@
     "slug": "securis-first-saturday-electronics-recycling-henrico",
     "operator": "Securis (Central Virginia Waste Management Authority electronics recycling contractor)",
     "source": "https://cvwma.com/cvwma-locations/henrico-2/",
-    "source_checked": "2026-11-19",
+    "source_checked": "2026-11-20",
     "listing_fingerprint": "ba331cf93621b0fcfe1009a66b9e2d7768fedbe6fbc3f0775b3af0115ac76ad2",
     "questions": {
       "residents_only": {
@@ -9458,7 +9458,7 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-19"
+    "questions_reviewed": "2026-11-20"
   },
   "WA|Seattle|North Transfer Station (Seattle Public Utilities)": {
     "slug": "north-transfer-station-seattle-public-utilities",
@@ -10155,5 +10155,411 @@
       }
     },
     "questions_reviewed": "2026-11-19"
+  },
+  "FL|Miami|Golden Glades Trash and Recycling Center": {
+    "slug": "golden-glades-trash-and-recycling-center",
+    "operator": "Miami-Dade County Department of Solid Waste Management",
+    "source": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1464797123341331",
+    "source_checked": "2026-11-20",
+    "listing_fingerprint": "b2cf1ced3b28c8390a2b551c718c4cbafd026bd7901559ccca5041b448b5a11f",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Only residential waste fee customers who reside in unincorporated Miami-Dade County and the cities of Aventura, Cutler Bay, Doral, Miami Gardens, Miami Lakes, Opa-locka, Palmetto Bay, Pinecrest, Sunny Isles Beach and Sweetwater may use these facilities.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Present a valid State of Florida driver's license or identification card to verify your property address.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Miami-Dade 2025 Waste Service Guide (https://www.miamidade.gov/resources/solid-waste/documents/brochures/2025-waste-service-guide.pdf, fetched 2026-11-20): “As a customer, you are entitled to unlimited use of the TRCs at no charge.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Most centers will also accept up to four standard automobile tires”; only Chapman Field is listed under “Does not accept tires”."
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Accepts used electronics” list includes Golden Glades; items include “Computer monitors and televisions; personal computers, keyboards, hard drives and printers; VCRs, audio and video equipment; and communication equipment such as cellular telephones and hand-held radios.”"
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Accepts used motor oil” list includes Golden Glades."
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “up to four standard automobile tires”; C&D disposal “is limited to three (3) cubic yards … per customer per day”."
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Only residential waste fee customers … may use these facilities.”"
+      }
+    },
+    "questions_reviewed": "2026-11-20"
+  },
+  "FL|Miami|North Dade Trash and Recycling Center": {
+    "slug": "north-dade-trash-and-recycling-center",
+    "operator": "Miami-Dade County Department of Solid Waste Management",
+    "source": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1464797123341331",
+    "source_checked": "2026-11-20",
+    "listing_fingerprint": "7a7c09ec186926a79cecaae499fbe2478e6206eb84ea5427b8dfc6cd7a5a1e0e",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Only residential waste fee customers who reside in unincorporated Miami-Dade County and the cities of Aventura, Cutler Bay, Doral, Miami Gardens, Miami Lakes, Opa-locka, Palmetto Bay, Pinecrest, Sunny Isles Beach and Sweetwater may use these facilities.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Present a valid State of Florida driver's license or identification card to verify your property address.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Miami-Dade 2025 Waste Service Guide (https://www.miamidade.gov/resources/solid-waste/documents/brochures/2025-waste-service-guide.pdf, fetched 2026-11-20): “As a customer, you are entitled to unlimited use of the TRCs at no charge.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Most centers will also accept up to four standard automobile tires”; only Chapman Field is listed under “Does not accept tires”."
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Accepts used electronics” list includes North Dade; items include “Computer monitors and televisions; personal computers, keyboards, hard drives and printers; VCRs, audio and video equipment; and communication equipment such as cellular telephones and hand-held radios.”"
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Accepts used motor oil” list includes North Dade."
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “up to four standard automobile tires”; C&D disposal “is limited to three (3) cubic yards … per customer per day”."
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Only residential waste fee customers … may use these facilities.”"
+      }
+    },
+    "questions_reviewed": "2026-11-20"
+  },
+  "FL|Miami|Palm Springs North Trash and Recycling Center": {
+    "slug": "palm-springs-north-trash-and-recycling-center",
+    "operator": "Miami-Dade County Department of Solid Waste Management",
+    "source": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1464797123341331",
+    "source_checked": "2026-11-20",
+    "listing_fingerprint": "7a7c09ec186926a79cecaae499fbe2478e6206eb84ea5427b8dfc6cd7a5a1e0e",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Only residential waste fee customers who reside in unincorporated Miami-Dade County and the cities of Aventura, Cutler Bay, Doral, Miami Gardens, Miami Lakes, Opa-locka, Palmetto Bay, Pinecrest, Sunny Isles Beach and Sweetwater may use these facilities.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Present a valid State of Florida driver's license or identification card to verify your property address.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Miami-Dade 2025 Waste Service Guide (https://www.miamidade.gov/resources/solid-waste/documents/brochures/2025-waste-service-guide.pdf, fetched 2026-11-20): “As a customer, you are entitled to unlimited use of the TRCs at no charge.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Most centers will also accept up to four standard automobile tires”; only Chapman Field is listed under “Does not accept tires”."
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Accepts used electronics” list includes Palm Springs North; items include “Computer monitors and televisions; personal computers, keyboards, hard drives and printers; VCRs, audio and video equipment; and communication equipment such as cellular telephones and hand-held radios.”"
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Accepts used motor oil” list includes Palm Springs North."
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “up to four standard automobile tires”; C&D disposal “is limited to three (3) cubic yards … per customer per day”."
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Only residential waste fee customers … may use these facilities.”"
+      }
+    },
+    "questions_reviewed": "2026-11-20"
+  },
+  "FL|Miami|Sunset Kendall Trash and Recycling Center": {
+    "slug": "sunset-kendall-trash-and-recycling-center",
+    "operator": "Miami-Dade County Department of Solid Waste Management",
+    "source": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1464797123341331",
+    "source_checked": "2026-11-20",
+    "listing_fingerprint": "b2cf1ced3b28c8390a2b551c718c4cbafd026bd7901559ccca5041b448b5a11f",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Only residential waste fee customers who reside in unincorporated Miami-Dade County and the cities of Aventura, Cutler Bay, Doral, Miami Gardens, Miami Lakes, Opa-locka, Palmetto Bay, Pinecrest, Sunny Isles Beach and Sweetwater may use these facilities.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Present a valid State of Florida driver's license or identification card to verify your property address.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Miami-Dade 2025 Waste Service Guide (https://www.miamidade.gov/resources/solid-waste/documents/brochures/2025-waste-service-guide.pdf, fetched 2026-11-20): “As a customer, you are entitled to unlimited use of the TRCs at no charge.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Most centers will also accept up to four standard automobile tires”; only Chapman Field is listed under “Does not accept tires”."
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Accepts used electronics” list includes Sunset Kendall; items include “Computer monitors and televisions; personal computers, keyboards, hard drives and printers; VCRs, audio and video equipment; and communication equipment such as cellular telephones and hand-held radios.”"
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Accepts used motor oil” list includes Sunset Kendall."
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “up to four standard automobile tires”; C&D disposal “is limited to three (3) cubic yards … per customer per day”."
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Only residential waste fee customers … may use these facilities.”"
+      }
+    },
+    "questions_reviewed": "2026-11-20"
+  },
+  "FL|Miami|Moody Drive Trash and Recycling Center": {
+    "slug": "moody-drive-trash-and-recycling-center",
+    "operator": "Miami-Dade County Department of Solid Waste Management",
+    "source": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1464797123341331",
+    "source_checked": "2026-11-20",
+    "listing_fingerprint": "b2cf1ced3b28c8390a2b551c718c4cbafd026bd7901559ccca5041b448b5a11f",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Only residential waste fee customers who reside in unincorporated Miami-Dade County and the cities of Aventura, Cutler Bay, Doral, Miami Gardens, Miami Lakes, Opa-locka, Palmetto Bay, Pinecrest, Sunny Isles Beach and Sweetwater may use these facilities.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Present a valid State of Florida driver's license or identification card to verify your property address.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "Miami-Dade 2025 Waste Service Guide (https://www.miamidade.gov/resources/solid-waste/documents/brochures/2025-waste-service-guide.pdf, fetched 2026-11-20): “As a customer, you are entitled to unlimited use of the TRCs at no charge.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Most centers will also accept up to four standard automobile tires”; only Chapman Field is listed under “Does not accept tires”."
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Accepts used electronics” list includes Moody Drive; items include “Computer monitors and televisions; personal computers, keyboards, hard drives and printers; VCRs, audio and video equipment; and communication equipment such as cellular telephones and hand-held radios.”"
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Accepts used motor oil” list includes Moody Drive."
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “up to four standard automobile tires”; C&D disposal “is limited to three (3) cubic yards … per customer per day”."
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Miami-Dade Trash and Recycling Centers page (fetched 2026-11-20): “Only residential waste fee customers … may use these facilities.”"
+      }
+    },
+    "questions_reviewed": "2026-11-20"
+  },
+  "FL|Orlando|Seminole County Central Transfer Station (HHW, electronics & tires)": {
+    "slug": "seminole-county-central-transfer-station",
+    "operator": "Seminole County Solid Waste Management Division",
+    "source": "https://www.seminolecountyfl.gov/departments-services/environmental-services/solid-waste-management/locations",
+    "source_checked": "2026-11-20",
+    "listing_fingerprint": "59a7435ceb0b0c3c936678cef554d5a26eab4eb760f5a4a5fdfde079b24564fb",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "yes",
+        "evidence": "Conditional — Seminole County Rates and Fees page (fetched 2026-11-20): “Household Hazardous Waste: free for all Seminole County residents, including residents of incorporated cities”; “Electronics (E-scrap): free for all Seminole County residents”; “Passenger tires: $3.16 per tire (CTS limit 4; Landfill limit 10)”; “Class I waste: $41.63 per ton (covered)”."
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Seminole County Hazardous and Special Waste page (fetched 2026-11-20): “Central Transfer Station — limit 4 tires per person at $3.16 per tire”."
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "Seminole County Hazardous and Special Waste page (fetched 2026-11-20): Central Transfer Station “(all HHW accepted)”; Accepted HHW Chemicals: “Paints, stains, sealants, thinners, and strippers”."
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Seminole County Hazardous and Special Waste page (fetched 2026-11-20): “Accepted items include computers, monitors, televisions, printers, cell phones, audio-visual equipment, and other household electronics.” Seminole County Drop-Off Locations and Facilities page (fetched 2026-11-20): Central Transfer Station Accepted Materials include “Electronics”."
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "Seminole County Hazardous and Special Waste page (fetched 2026-11-20): Batteries and Propane: “Lead-acid, Ni-Cd, mercury, gel cell, and lithium batteries”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Seminole County Hazardous and Special Waste page (fetched 2026-11-20): Automotive Fluids: “Used motor oil (up to 20 gallons)”."
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "Seminole County Hazardous and Special Waste page (fetched 2026-11-20): Accepted HHW Chemicals: “Pesticides, insecticides, herbicides, and fungicides”; “Pool and lawn chemicals”; “Solvents (mineral spirits, acetone)”; “Disinfectants and corrosive liquids”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Seminole County Hazardous and Special Waste page (fetched 2026-11-20): “limit 4 tires per person” (Central Transfer Station); “Used motor oil (up to 20 gallons)”; “Gasoline and gasoline cans (up to 5 gallons)”."
+      },
+      "businesses_accepted": {
+        "answer": "yes",
+        "evidence": "Conditional — Seminole County Drop-Off Locations and Facilities page (fetched 2026-11-20): “Seminole County operates two primary disposal facilities serving residents and commercial customers.” but “Businesses are not permitted to drop off hazardous materials through the HHW program.”"
+      }
+    },
+    "questions_reviewed": "2026-11-20"
+  },
+  "FL|Orlando|Seminole County Landfill (tires & automotive fluids)": {
+    "slug": "seminole-county-landfill",
+    "operator": "Seminole County Solid Waste Management Division",
+    "source": "https://www.seminolecountyfl.gov/departments-services/environmental-services/solid-waste-management/locations",
+    "source_checked": "2026-11-20",
+    "listing_fingerprint": "ef72b34cff15635259bb8f4218ce1e2c23567e61b981aa624fb800d936cd149a",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "yes",
+        "evidence": "Seminole County Rates and Fees page (fetched 2026-11-20): “Passenger tires: $3.16 per tire (CTS limit 4; Landfill limit 10)”; “Class I waste: $41.63 per ton (covered) / $83.25 per ton (uncovered)”."
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Seminole County Hazardous and Special Waste page (fetched 2026-11-20): “Seminole County Landfill — limit 10 tires per person at $3.16 per tire; oversized tires charged by weight”."
+      },
+      "paint": {
+        "answer": "no",
+        "evidence": "Seminole County Hazardous and Special Waste page (fetched 2026-11-20): Locations: “Seminole County Landfill — 1930 E. Osceola Road, Geneva, FL 32732 (automotive fluid and tires only)”."
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "Lead-acid only — Seminole County Drop-Off Locations and Facilities page (fetched 2026-11-20): Seminole County Landfill Accepted Materials: “Used oil, oil filters, lead-acid batteries, and propane tanks”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Seminole County Drop-Off Locations and Facilities page (fetched 2026-11-20): Seminole County Landfill Accepted Materials: “Used oil, oil filters, lead-acid batteries, and propane tanks”."
+      },
+      "household_chemicals": {
+        "answer": "no",
+        "evidence": "Seminole County Hazardous and Special Waste page (fetched 2026-11-20): Locations: “Seminole County Landfill — 1930 E. Osceola Road, Geneva, FL 32732 (automotive fluid and tires only)”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Seminole County Drop-Off Locations and Facilities page (fetched 2026-11-20): “Waste tires (limit 10 per person)”."
+      },
+      "businesses_accepted": {
+        "answer": "yes",
+        "evidence": "Seminole County Drop-Off Locations and Facilities page (fetched 2026-11-20): “Seminole County operates two primary disposal facilities serving residents and commercial customers.” Seminole County Rates and Fees page (fetched 2026-11-20): Commercial Rates: “Class III waste (Landfill only): $41.63 per ton (covered)”."
+      }
+    },
+    "questions_reviewed": "2026-11-20"
   }
 }
