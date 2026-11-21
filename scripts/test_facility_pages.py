@@ -48,7 +48,7 @@ class FacilityTests(unittest.TestCase):
                 for k,a in f['questions'].items():
                     self.assertIn(a['answer'],('yes','no',UNKNOWN))
                     if a['answer']!=UNKNOWN: self.assertTrue(a['evidence'],(f['name'],k))
-        self.assertEqual(len(paths),183)
+        self.assertEqual(len(paths),188)
         self.assertEqual(len(set(paths)),len(paths))
     def test_all_facility_pages_and_visible_schema(self):
         sitemap={u.text for u in ET.parse('docs/sitemap.xml').getroot().iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
@@ -79,9 +79,9 @@ class FacilityTests(unittest.TestCase):
                     if f['questions'][key]['answer']=='yes':
                         anchor=f'/{ms}/#{slug(m["city"])}-{slug(m["st"])}'
                         self.assertIn(anchor,doc.links); self.assertIn(anchor.split('#')[1],read(f'/{ms}/').ids)
-        self.assertEqual(len(queue),183); self.assertEqual(len(set(queue)),183)
+        self.assertEqual(len(queue),188); self.assertEqual(len(set(queue)),188)
         self.assertTrue(queue[0].startswith(BASE+'/va/richmond/'))
-        self.assertEqual(len(sitemap),280)
+        self.assertEqual(len(sitemap),285)
     def test_state_pages_itemlist_matches_city_links(self):
         states={}
         for m in D: states.setdefault(m['st'],[]).append(m)
@@ -130,6 +130,18 @@ class FacilityTests(unittest.TestCase):
         self.assertIn(f'content="Household hazardous waste (HHW) disposal near you: {hn} official drop-off sites in {hm} US metros, with hours, limits and source links."',hhw)
         self.assertIn('metros, addresses, hours, fees and source links, checked regularly.',home)
         self.assertNotIn('metros—addresses',home)
+    def test_home_links_upcoming_and_recent_listings(self):
+        import datetime
+        home=read('/'); text=norm(''.join(home.visible)); today=datetime.date.today().isoformat()
+        latest=max(f['checked'] for m in D for f in m['facilities'])
+        for m in D:
+            for f in m['facilities']:
+                mm=re.search(r'(?:Event:\s*|Collection days:\s*|next:\s*)(?:(?:Sat|Sun|Mon|Tue|Wed|Thu|Fri)\s+)?(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})(?:[–-]\d{1,2})?,\s*(20\d{2})',f['hours'])
+                if mm:
+                    d=datetime.date(int(mm.group(3)),['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'].index(mm.group(1))+1,int(mm.group(2))).isoformat()
+                    if d>=today: self.assertIn(facility_path(m,f),home.links,f['name'])
+        self.assertIn('Upcoming collection days',text); self.assertIn('Recently added or re-checked',text)
+        self.assertTrue(any(facility_path(m,f) in home.links for m in D for f in m['facilities'] if f['checked']==latest))
     def test_known_rejection_and_conditional_cases(self):
         facilities={f['name']:f for m in D for f in m['facilities']}
         self.assertEqual(facilities['Keʻehi Transfer Station']['questions']['tires']['answer'],'no')

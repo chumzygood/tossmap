@@ -2,16 +2,16 @@
 
 > TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
 
-Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 183 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 188 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
-- [Paint](https://tossmap.com/paint/): 120 official listings in 50 metro areas
-- [Electronics (e-waste)](https://tossmap.com/e-waste/): 67 official listings in 25 metro areas
-- [Tires](https://tossmap.com/tires/): 79 official listings in 22 metro areas
-- [Batteries](https://tossmap.com/batteries/): 113 official listings in 50 metro areas
-- [Motor oil](https://tossmap.com/motor-oil/): 73 official listings in 22 metro areas
-- [Household chemicals](https://tossmap.com/household-chemicals/): 117 official listings in 48 metro areas
+- [Paint](https://tossmap.com/paint/): 124 official listings in 50 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 81 official listings in 26 metro areas
+- [Tires](https://tossmap.com/tires/): 83 official listings in 22 metro areas
+- [Batteries](https://tossmap.com/batteries/): 124 official listings in 50 metro areas
+- [Motor oil](https://tossmap.com/motor-oil/): 76 official listings in 22 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 120 official listings in 48 metro areas
 
 ## Cities
 - [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
@@ -147,6 +147,8 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Residential Drop-Off Center – Southeast — Houston, TX](https://tossmap.com/tx/houston/residential-drop-off-center-southeast/)
 - [Residential Drop-Off Center – South — Houston, TX](https://tossmap.com/tx/houston/residential-drop-off-center-south/)
 - [Residential Drop-Off Center – Southwest — Houston, TX](https://tossmap.com/tx/houston/residential-drop-off-center-southwest/)
+- [Westpark Consumer Recycling Center — Houston, TX](https://tossmap.com/tx/houston/westpark-consumer-recycling-center/)
+- [Ellington/Clear Lake Neighborhood Recycling Center — Houston, TX](https://tossmap.com/tx/houston/ellington-clear-lake-neighborhood-recycling-center/)
 - [ToxDrop – Traders Point Collection Facility — Indianapolis, IN](https://tossmap.com/in/indianapolis/toxdrop-traders-point-collection-facility/)
 - [ToxDrop – Perry Township Government Center — Indianapolis, IN](https://tossmap.com/in/indianapolis/toxdrop-perry-township-government-center/)
 - [Household Hazardous Waste Facility — Jacksonville, FL](https://tossmap.com/fl/jacksonville/household-hazardous-waste-facility/)
@@ -224,6 +226,9 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Hanover Montpelier Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hanover-montpelier-convenience-center/)
 - [Securis First Saturday Electronics Recycling (CVWMA) — Richmond, VA](https://tossmap.com/va/richmond/securis-first-saturday-electronics-recycling-henrico/)
 - [Hanover Route 301 Transfer Station — Richmond, VA](https://tossmap.com/va/richmond/hanover-route-301-transfer-station/)
+- [Goochland Central Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/goochland-central-convenience-center/)
+- [Goochland Western Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/goochland-western-convenience-center/)
+- [Powhatan County Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/powhatan-county-convenience-center/)
 - [Agua Mansa Permanent HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/agua-mansa-permanent-hhw-facility/)
 - [Lake Elsinore HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/lake-elsinore-hhw-facility/)
 - [Palm Springs HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/palm-springs-hhw-facility/)

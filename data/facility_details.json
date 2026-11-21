@@ -2993,7 +2993,7 @@
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "operator": "not stated by source",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "source_checked": "2026-11-20",
+    "source_checked": "2026-11-21",
     "listing_fingerprint": "3cce5280546fd7f5402893d06e443c3764c18a67cf9478d558cfd5acacd92962",
     "questions": {
       "residents_only": {
@@ -3045,14 +3045,14 @@
         "evidence": "DC DPW page: “No commercial waste will be allowed.”"
       }
     },
-    "questions_reviewed": "2026-11-20"
+    "questions_reviewed": "2026-11-21"
   },
   "MA|Boston|Zero Waste Day Drop-Off – Millennium Park": {
     "slug": "zero-waste-day-drop-off-millennium-park",
     "operator": "not stated by source",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "source_checked": "2026-11-20",
-    "listing_fingerprint": "25db1143915ef4a9ac14857da9db0662ca46ff7122b422578f7a458373b26ad0",
+    "source_checked": "2026-11-21",
+    "listing_fingerprint": "847f53974f4a2d0b5655a4af33cdcf6c808048b14aab8130bddd79a472d5029a",
     "questions": {
       "residents_only": {
         "answer": "yes",
@@ -3103,7 +3103,7 @@
         "evidence": "Boston Zero Waste Day page: “We will not accept waste from businesses.”"
       }
     },
-    "questions_reviewed": "2026-11-20"
+    "questions_reviewed": "2026-11-21"
   },
   "NV|Las Vegas|Republic Services HHW – North Las Vegas": {
     "slug": "republic-services-hhw-north-las-vegas",
@@ -3737,7 +3737,7 @@
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "operator": "not stated by source",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "source_checked": "2026-11-20",
+    "source_checked": "2026-11-21",
     "listing_fingerprint": "318c7d7e979e297128ceb0a17516118269fdaa7fcbac89846caa312d1448952b",
     "questions": {
       "residents_only": {
@@ -3789,7 +3789,7 @@
         "evidence": "Baltimore DPW HHW page: “Businesses & Commercial Users must use a private vendor. Commercial Vehicles are not permitted.”"
       }
     },
-    "questions_reviewed": "2026-11-20"
+    "questions_reviewed": "2026-11-21"
   },
   "CA|Sacramento|North Area Recovery Station HHW Drop-Off": {
     "slug": "north-area-recovery-station-hhw-drop-off",
@@ -5760,7 +5760,7 @@
     "slug": "carr-center-division-of-waste",
     "operator": "not stated by source",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "source_checked": "2026-11-20",
+    "source_checked": "2026-11-21",
     "listing_fingerprint": "4ad530d9788cd4468e8e8f28795e0091f72248f4a84bdbdf24a8f26c2820a956",
     "questions": {
       "residents_only": {
@@ -5812,13 +5812,13 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-20"
+    "questions_reviewed": "2026-11-21"
   },
   "OH|Cleveland|Ridge Road Transfer Station": {
     "slug": "ridge-road-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "source_checked": "2026-11-20",
+    "source_checked": "2026-11-21",
     "listing_fingerprint": "8faa0e6a7049ca9f7444519102fe20c5f240cf2b0cd08cad06684154e484b398",
     "questions": {
       "residents_only": {
@@ -5870,7 +5870,7 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-20"
+    "questions_reviewed": "2026-11-21"
   },
   "OH|Cleveland|Cuyahoga County Solid Waste District HQ (electronics drop-off bins)": {
     "slug": "cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins",
@@ -6360,8 +6360,8 @@
         "evidence": ""
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV “E-waste Recycling at City Disposal Sites” page (https://www.honolulu.gov/env/city-ewaste-dropbins/, fetched 2026-11-21): “Acceptable items may be taken to any of the city’s disposal sites.” (lists Kapaʻa, Kawailoa and Keʻehi transfer stations and the ʻEwa, Kapolei, Lāʻie, Wahiawā, Waiʻanae, Waimānalo and Waipahu convenience centers). Acceptable items include PC towers, monitors, laptops, tablets, printers, TVs, routers/modems, cords and video game consoles. Not accepted: “A telephone of any type including a mobile telephone”, GPS units, and electronics inside appliances or vehicles."
       },
       "batteries": {
         "answer": "yes",
@@ -6384,7 +6384,7 @@
         "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
       }
     },
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-21"
   },
   "HI|Honolulu|Kawailoa Transfer Station": {
     "slug": "kawailoa-transfer-station",
@@ -6418,8 +6418,8 @@
         "evidence": ""
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV “E-waste Recycling at City Disposal Sites” page (https://www.honolulu.gov/env/city-ewaste-dropbins/, fetched 2026-11-21): “Acceptable items may be taken to any of the city’s disposal sites.” (lists Kapaʻa, Kawailoa and Keʻehi transfer stations and the ʻEwa, Kapolei, Lāʻie, Wahiawā, Waiʻanae, Waimānalo and Waipahu convenience centers). Acceptable items include PC towers, monitors, laptops, tablets, printers, TVs, routers/modems, cords and video game consoles. Not accepted: “A telephone of any type including a mobile telephone”, GPS units, and electronics inside appliances or vehicles."
       },
       "batteries": {
         "answer": "yes",
@@ -6442,7 +6442,7 @@
         "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
       }
     },
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-21"
   },
   "HI|Honolulu|Keʻehi Transfer Station": {
     "slug": "ke-ehi-transfer-station",
@@ -6476,8 +6476,8 @@
         "evidence": ""
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV “E-waste Recycling at City Disposal Sites” page (https://www.honolulu.gov/env/city-ewaste-dropbins/, fetched 2026-11-21): “Acceptable items may be taken to any of the city’s disposal sites.” (lists Kapaʻa, Kawailoa and Keʻehi transfer stations and the ʻEwa, Kapolei, Lāʻie, Wahiawā, Waiʻanae, Waimānalo and Waipahu convenience centers). Acceptable items include PC towers, monitors, laptops, tablets, printers, TVs, routers/modems, cords and video game consoles. Not accepted: “A telephone of any type including a mobile telephone”, GPS units, and electronics inside appliances or vehicles."
       },
       "batteries": {
         "answer": "yes",
@@ -6500,7 +6500,7 @@
         "evidence": "Honolulu drop-off locations page: transfer stations are listed for “BUSINESSES AND RESIDENTS”; “Commercial users delivering combustible waste may use the city’s transfer stations in Kailua, Haleiwa and Honolulu.”"
       }
     },
-    "questions_reviewed": "2026-11-14"
+    "questions_reviewed": "2026-11-21"
   },
   "TX|Dallas|McCommas Bluff Landfill": {
     "slug": "mccommas-bluff-landfill",
@@ -6882,12 +6882,12 @@
         "evidence": ""
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV “E-waste Recycling at City Disposal Sites” page (https://www.honolulu.gov/env/city-ewaste-dropbins/, fetched 2026-11-21): “Acceptable items may be taken to any of the city’s disposal sites.” (lists Kapaʻa, Kawailoa and Keʻehi transfer stations and the ʻEwa, Kapolei, Lāʻie, Wahiawā, Waiʻanae, Waimānalo and Waipahu convenience centers). Acceptable items include PC towers, monitors, laptops, tablets, printers, TVs, routers/modems, cords and video game consoles. Not accepted: “A telephone of any type including a mobile telephone”, GPS units, and electronics inside appliances or vehicles."
       },
       "batteries": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV Batteries (HHW) page (https://www.honolulu.gov/env/ref/batteries-hhw/, fetched 2026-11-21): “Drop off standalone rechargeable and single-use lithium, lithium-ion, NiMH, and NiCad batteries at any City convenience center or transfer station. Please tape the terminals and place them in a clear plastic bag.” Car and motorcycle batteries: “you can drop off old batteries at City Drop-off Convenience Centers and Transfer Stations.” Not accepted: damaged, defective or recalled (DDR) batteries; regular alkaline batteries go in the trash."
       },
       "motor_oil": {
         "answer": "not stated by source",
@@ -6906,7 +6906,7 @@
         "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; “Commercial, industrial, or agricultural waste” is prohibited."
       }
     },
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-21"
   },
   "HI|Honolulu|Kapolei Convenience Center": {
     "slug": "kapolei-convenience-center",
@@ -6940,12 +6940,12 @@
         "evidence": ""
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV “E-waste Recycling at City Disposal Sites” page (https://www.honolulu.gov/env/city-ewaste-dropbins/, fetched 2026-11-21): “Acceptable items may be taken to any of the city’s disposal sites.” (lists Kapaʻa, Kawailoa and Keʻehi transfer stations and the ʻEwa, Kapolei, Lāʻie, Wahiawā, Waiʻanae, Waimānalo and Waipahu convenience centers). Acceptable items include PC towers, monitors, laptops, tablets, printers, TVs, routers/modems, cords and video game consoles. Not accepted: “A telephone of any type including a mobile telephone”, GPS units, and electronics inside appliances or vehicles."
       },
       "batteries": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV Batteries (HHW) page (https://www.honolulu.gov/env/ref/batteries-hhw/, fetched 2026-11-21): “Drop off standalone rechargeable and single-use lithium, lithium-ion, NiMH, and NiCad batteries at any City convenience center or transfer station. Please tape the terminals and place them in a clear plastic bag.” Car and motorcycle batteries: “you can drop off old batteries at City Drop-off Convenience Centers and Transfer Stations.” Not accepted: damaged, defective or recalled (DDR) batteries; regular alkaline batteries go in the trash."
       },
       "motor_oil": {
         "answer": "not stated by source",
@@ -6964,7 +6964,7 @@
         "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; “Commercial, industrial, or agricultural waste” is prohibited."
       }
     },
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-21"
   },
   "VA|Richmond|Hanover Mechanicsville Convenience Center": {
     "slug": "hanover-mechanicsville-convenience-center",
@@ -7172,12 +7172,12 @@
         "evidence": ""
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV “E-waste Recycling at City Disposal Sites” page (https://www.honolulu.gov/env/city-ewaste-dropbins/, fetched 2026-11-21): “Acceptable items may be taken to any of the city’s disposal sites.” (lists Kapaʻa, Kawailoa and Keʻehi transfer stations and the ʻEwa, Kapolei, Lāʻie, Wahiawā, Waiʻanae, Waimānalo and Waipahu convenience centers). Acceptable items include PC towers, monitors, laptops, tablets, printers, TVs, routers/modems, cords and video game consoles. Not accepted: “A telephone of any type including a mobile telephone”, GPS units, and electronics inside appliances or vehicles."
       },
       "batteries": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV Batteries (HHW) page (https://www.honolulu.gov/env/ref/batteries-hhw/, fetched 2026-11-21): “Drop off standalone rechargeable and single-use lithium, lithium-ion, NiMH, and NiCad batteries at any City convenience center or transfer station. Please tape the terminals and place them in a clear plastic bag.” Car and motorcycle batteries: “you can drop off old batteries at City Drop-off Convenience Centers and Transfer Stations.” Not accepted: damaged, defective or recalled (DDR) batteries; regular alkaline batteries go in the trash."
       },
       "motor_oil": {
         "answer": "not stated by source",
@@ -7196,7 +7196,7 @@
         "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
       }
     },
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-21"
   },
   "HI|Honolulu|Waiʻanae Convenience Center": {
     "slug": "waianae-convenience-center",
@@ -7230,12 +7230,12 @@
         "evidence": ""
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV “E-waste Recycling at City Disposal Sites” page (https://www.honolulu.gov/env/city-ewaste-dropbins/, fetched 2026-11-21): “Acceptable items may be taken to any of the city’s disposal sites.” (lists Kapaʻa, Kawailoa and Keʻehi transfer stations and the ʻEwa, Kapolei, Lāʻie, Wahiawā, Waiʻanae, Waimānalo and Waipahu convenience centers). Acceptable items include PC towers, monitors, laptops, tablets, printers, TVs, routers/modems, cords and video game consoles. Not accepted: “A telephone of any type including a mobile telephone”, GPS units, and electronics inside appliances or vehicles."
       },
       "batteries": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV Batteries (HHW) page (https://www.honolulu.gov/env/ref/batteries-hhw/, fetched 2026-11-21): “Drop off standalone rechargeable and single-use lithium, lithium-ion, NiMH, and NiCad batteries at any City convenience center or transfer station. Please tape the terminals and place them in a clear plastic bag.” Car and motorcycle batteries: “you can drop off old batteries at City Drop-off Convenience Centers and Transfer Stations.” Not accepted: damaged, defective or recalled (DDR) batteries; regular alkaline batteries go in the trash."
       },
       "motor_oil": {
         "answer": "not stated by source",
@@ -7254,7 +7254,7 @@
         "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
       }
     },
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-21"
   },
   "HI|Honolulu|ʻEwa Beach Convenience Center": {
     "slug": "ewa-beach-convenience-center",
@@ -7288,12 +7288,12 @@
         "evidence": ""
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV “E-waste Recycling at City Disposal Sites” page (https://www.honolulu.gov/env/city-ewaste-dropbins/, fetched 2026-11-21): “Acceptable items may be taken to any of the city’s disposal sites.” (lists Kapaʻa, Kawailoa and Keʻehi transfer stations and the ʻEwa, Kapolei, Lāʻie, Wahiawā, Waiʻanae, Waimānalo and Waipahu convenience centers). Acceptable items include PC towers, monitors, laptops, tablets, printers, TVs, routers/modems, cords and video game consoles. Not accepted: “A telephone of any type including a mobile telephone”, GPS units, and electronics inside appliances or vehicles."
       },
       "batteries": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV Batteries (HHW) page (https://www.honolulu.gov/env/ref/batteries-hhw/, fetched 2026-11-21): “Drop off standalone rechargeable and single-use lithium, lithium-ion, NiMH, and NiCad batteries at any City convenience center or transfer station. Please tape the terminals and place them in a clear plastic bag.” Car and motorcycle batteries: “you can drop off old batteries at City Drop-off Convenience Centers and Transfer Stations.” Not accepted: damaged, defective or recalled (DDR) batteries; regular alkaline batteries go in the trash."
       },
       "motor_oil": {
         "answer": "not stated by source",
@@ -7312,7 +7312,7 @@
         "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
       }
     },
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-21"
   },
   "HI|Honolulu|Lāʻie Convenience Center": {
     "slug": "laie-convenience-center",
@@ -7346,12 +7346,12 @@
         "evidence": ""
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV “E-waste Recycling at City Disposal Sites” page (https://www.honolulu.gov/env/city-ewaste-dropbins/, fetched 2026-11-21): “Acceptable items may be taken to any of the city’s disposal sites.” (lists Kapaʻa, Kawailoa and Keʻehi transfer stations and the ʻEwa, Kapolei, Lāʻie, Wahiawā, Waiʻanae, Waimānalo and Waipahu convenience centers). Acceptable items include PC towers, monitors, laptops, tablets, printers, TVs, routers/modems, cords and video game consoles. Not accepted: “A telephone of any type including a mobile telephone”, GPS units, and electronics inside appliances or vehicles."
       },
       "batteries": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV Batteries (HHW) page (https://www.honolulu.gov/env/ref/batteries-hhw/, fetched 2026-11-21): “Drop off standalone rechargeable and single-use lithium, lithium-ion, NiMH, and NiCad batteries at any City convenience center or transfer station. Please tape the terminals and place them in a clear plastic bag.” Car and motorcycle batteries: “you can drop off old batteries at City Drop-off Convenience Centers and Transfer Stations.” Not accepted: damaged, defective or recalled (DDR) batteries; regular alkaline batteries go in the trash."
       },
       "motor_oil": {
         "answer": "not stated by source",
@@ -7370,7 +7370,7 @@
         "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
       }
     },
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-21"
   },
   "HI|Honolulu|Wahiawā Convenience Center": {
     "slug": "wahiawa-convenience-center",
@@ -7404,12 +7404,12 @@
         "evidence": ""
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV “E-waste Recycling at City Disposal Sites” page (https://www.honolulu.gov/env/city-ewaste-dropbins/, fetched 2026-11-21): “Acceptable items may be taken to any of the city’s disposal sites.” (lists Kapaʻa, Kawailoa and Keʻehi transfer stations and the ʻEwa, Kapolei, Lāʻie, Wahiawā, Waiʻanae, Waimānalo and Waipahu convenience centers). Acceptable items include PC towers, monitors, laptops, tablets, printers, TVs, routers/modems, cords and video game consoles. Not accepted: “A telephone of any type including a mobile telephone”, GPS units, and electronics inside appliances or vehicles."
       },
       "batteries": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Honolulu ENV Batteries (HHW) page (https://www.honolulu.gov/env/ref/batteries-hhw/, fetched 2026-11-21): “Drop off standalone rechargeable and single-use lithium, lithium-ion, NiMH, and NiCad batteries at any City convenience center or transfer station. Please tape the terminals and place them in a clear plastic bag.” Car and motorcycle batteries: “you can drop off old batteries at City Drop-off Convenience Centers and Transfer Stations.” Not accepted: damaged, defective or recalled (DDR) batteries; regular alkaline batteries go in the trash."
       },
       "motor_oil": {
         "answer": "not stated by source",
@@ -7428,7 +7428,7 @@
         "evidence": "Honolulu drop-off locations page: convenience centers are “RESIDENTS ONLY”; residents' rules list “Commercial, industrial, or agricultural waste” as prohibited."
       }
     },
-    "questions_reviewed": "2026-11-12"
+    "questions_reviewed": "2026-11-21"
   },
   "TN|Nashville|Omohundro Convenience Center": {
     "slug": "omohundro-convenience-center",
@@ -9000,8 +9000,8 @@
     "slug": "parma-service-garage-hhw-drop-off-day",
     "operator": "City of Parma (Cuyahoga County Solid Waste District program)",
     "source": "https://cuyahogarecycles.org/recycle-in/parma/household_hazardous_waste/",
-    "source_checked": "2026-11-20",
-    "listing_fingerprint": "e183d19caf9278a68d95217b4bd6ccf6fa7dcb38cc044ebd65c8e537f2d40e89",
+    "source_checked": "2026-11-21",
+    "listing_fingerprint": "004ced975635217f2b77300726626228dbfc444853b2556478d43412fc892487",
     "questions": {
       "residents_only": {
         "answer": "not stated by source",
@@ -9052,7 +9052,7 @@
         "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-17): the program “is free to all Cuyahoga County households”; under “Waste from Businesses or Commercial Properties”: “Businesses must contract with a licensed company for proper disposal or recycling.”"
       }
     },
-    "questions_reviewed": "2026-11-20"
+    "questions_reviewed": "2026-11-21"
   },
   "OH|Cleveland|Brecksville Service Garage (HHW drop-off)": {
     "slug": "brecksville-service-garage-hhw",
@@ -9406,7 +9406,7 @@
     "slug": "securis-first-saturday-electronics-recycling-henrico",
     "operator": "Securis (Central Virginia Waste Management Authority electronics recycling contractor)",
     "source": "https://cvwma.com/cvwma-locations/henrico-2/",
-    "source_checked": "2026-11-20",
+    "source_checked": "2026-11-21",
     "listing_fingerprint": "ba331cf93621b0fcfe1009a66b9e2d7768fedbe6fbc3f0775b3af0115ac76ad2",
     "questions": {
       "residents_only": {
@@ -9458,7 +9458,7 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-20"
+    "questions_reviewed": "2026-11-21"
   },
   "WA|Seattle|North Transfer Station (Seattle Public Utilities)": {
     "slug": "north-transfer-station-seattle-public-utilities",
@@ -10561,5 +10561,295 @@
       }
     },
     "questions_reviewed": "2026-11-20"
+  },
+  "TX|Houston|Westpark Consumer Recycling Center": {
+    "slug": "westpark-consumer-recycling-center",
+    "operator": "City of Houston Solid Waste Management Department",
+    "source": "https://www.houstontx.gov/solidwaste/recycling_centers.html",
+    "source_checked": "2026-11-21",
+    "listing_fingerprint": "789d5c730b33d2835db1bae798f9362d880e22fd17f1b4e2e5c7fd741ec0fe5f",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "City of Houston Recycling Centers page (fetched 2026-11-21): “To use any City of Houston Residential Drop‑Off Centers, Recycling Centers, or Environmental Service Centers, residents must present one of the following: A current Texas-issued ID … OR A current City of Houston utility bill or lease/rental agreement”; “For recycling only: A current Texas-issued ID is sufficient.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "City of Houston Recycling Centers page (fetched 2026-11-21): Accepted Materials: “Tires – residents may bring up to 5 (five) tires without rims.” (Westpark Center is the center listed with these accepted materials.)"
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "Latex only — City of Houston Recycling Centers page (fetched 2026-11-21): Accepted Materials: “B.O.P.A. – batteries, Oil, Latex Paint and Antifreeze.” Non-accepted items: “Oil Based Paint”."
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "City of Houston Electronics & Recycling page (fetched 2026-11-21): “WESTPARK CONSUMER RECYCLING CENTER 5900 Westpark, Houston, TX 77057 Accepts residential electronics at no additional charge.” Accepted materials include computers, laptops, monitors, printers, “TVs (CRT TV's up to 36\")”, cell phones."
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "City of Houston Recycling Centers page (fetched 2026-11-21): Accepted Materials: “B.O.P.A. – batteries, Oil, Latex Paint and Antifreeze.” City of Houston Electronics & Recycling page (fetched 2026-11-21): Non Acceptable Materials include “Household Alkaline Batteries (AA, AAA, C, D, 9V)”."
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "no",
+        "evidence": "City of Houston Recycling Centers page (fetched 2026-11-21): Non-accepted items: “Hazardous materials: Chemicals, oil, fuel, etc.”; “Household Hazardous Waste (HHW) Chemicals”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "City of Houston Recycling Centers page (fetched 2026-11-21): “Residents may use the facilities up to four (4) times per month (once per week).”; “residents may bring up to 5 (five) tires without rims.”"
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-21"
+  },
+  "TX|Houston|Ellington/Clear Lake Neighborhood Recycling Center": {
+    "slug": "ellington-clear-lake-neighborhood-recycling-center",
+    "operator": "City of Houston Solid Waste Management Department",
+    "source": "https://www.houstontx.gov/solidwaste/recycling_centers.html",
+    "source_checked": "2026-11-21",
+    "listing_fingerprint": "0e2c4dc14973e02beb50bc7865802ded235ca117e666077cd9c52efde6678fc4",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "City of Houston Recycling Centers page (fetched 2026-11-21): “To use any City of Houston Residential Drop‑Off Centers, Recycling Centers, or Environmental Service Centers, residents must present one of the following: A current Texas-issued ID … OR A current City of Houston utility bill or lease/rental agreement”; “For recycling only: A current Texas-issued ID is sufficient.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Monthly event only — City of Houston Electronics & Recycling page (fetched 2026-11-21): “The monthly Saturday electronics recycling events will be held 9 a.m. to 3 p.m. at the: … Ellington/Clear Lake Neighborhood Recycling Center When: 2nd Saturday of each month Time: 9:00 a.m. – 3:00 p.m.”"
+      },
+      "batteries": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "City of Houston Recycling Centers page (fetched 2026-11-21): “Residents may use the facilities up to four (4) times per month (once per week).”"
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-21"
+  },
+  "VA|Richmond|Goochland Central Convenience Center": {
+    "slug": "goochland-central-convenience-center",
+    "operator": "Goochland County Solid Waste & Recycling",
+    "source": "https://www.goochlandva.us/289/Convenience-Centers",
+    "source_checked": "2026-11-21",
+    "listing_fingerprint": "4974bd32d0d593dc1aa524929d0539fb5b593f3df41efe1e50d3cbf1f3bbc7ea",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Goochland County Solid Waste & Recycling page, County Code Sec. 7-71 (fetched 2026-11-21): “(a) Only county residents may use county-owned waste facilities.” Goochland County Convenience Centers page (fetched 2026-11-21): “The centers are available, free of charge, for use by County residents who have proof of residency”."
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Goochland County Convenience Centers page (fetched 2026-11-21): centers are for “County residents who have proof of residency”; Goochland County Solid Waste & Recycling page, County Code Sec. 7-71 (fetched 2026-11-21): “Persons using a county-owned waste facility may be asked to present evidence of their residency in the county.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "yes",
+        "evidence": "Conditional — Goochland County Convenience Centers page (fetched 2026-11-21): centers are “free of charge” for household trash and recyclable items, but “There is a fee to dispose of certain items such as: Air conditioners, Automobile tires, Brush, Refrigerators and other appliances containing Freon”; tires “up to 19 inches off rim for $2, tires up to 19 inches on rim for $6, tires between 19 inches and 24 inches off rim for $13 … agricultural-type tires between 24.5 inches to 42 inches off rim for $30”."
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Goochland County Convenience Centers page (fetched 2026-11-21): “Tires can be disposed of at the county’s Central Convenience Center and Western Convenience Center.”"
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "Oil-based — CVWMA Recycling in Goochland guide (https://cvwma.com/recycling/goochland/, fetched 2026-11-21): “Recycle oil-based paints, varnish/shellac, stains and tints, lacqueer thinners, polyurethane, primers, paint redcuers, Varsol, mineral spirits, turpentine, other flammable solvents at Goochland County Convenience Centers.” Latex: Goochland County Convenience Centers page (fetched 2026-11-21): latex paint “can usually be thrown in your regular household trash, but only if it is completely dried out first.”"
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "CVWMA Recycling in Goochland guide (https://cvwma.com/recycling/goochland/, fetched 2026-11-21): Computers, televisions, stereos/VCRs and cell phones: “Recycle at permanent electronics trailer located at both Goochland County Convenience Centers”. Goochland County Convenience Centers page (fetched 2026-11-21): “Consumer electronic items will not be accepted through this program. These items include … small appliances (toasters, blenders, hair dryers, vacuums, etc.), handheld power tools, fans, de-humidifiers, or lamps.”"
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "CVWMA Recycling in Goochland guide (https://cvwma.com/recycling/goochland/, fetched 2026-11-21): “Lead acid. Recycle at Goochland County Convenience Centers”; “Rechargeable. Recycle at Goochland County Convenience Centers”; alkaline batteries are “Safe for disposal in your trash”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "CVWMA Recycling in Goochland guide (https://cvwma.com/recycling/goochland/, fetched 2026-11-21): “Motor Oil. Recycle at Goochland County Convenience Centers. Accepted items in the oil drum include: motor oil, automatic transmission fluid, power steering fluid, diesel fuel, gear oil …”; “Oil Filters. Recycle at Goochland County Convenience Centers.”"
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "Limited to fuels and paint solvents — CVWMA Recycling in Goochland guide (https://cvwma.com/recycling/goochland/, fetched 2026-11-21): “Recycle leaded and unleaded gasoline along with paint and solvents in the paint drums at Goochland County Convenience Centers”; “mineral spirits, turpentine, other flammable solvents”; “Antifreeze. Recycle at Goochland County convenience centers.” Note Goochland County Solid Waste & Recycling page, County Code Sec. 7-71 (fetched 2026-11-21): “(e) The following items shall not be disposed of at a county-owned facility: stumps, hazardous waste, asbestos, industrial wastes, ash sludge, solvents, slurry, oil …” — ask the attendant."
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-21"
+  },
+  "VA|Richmond|Goochland Western Convenience Center": {
+    "slug": "goochland-western-convenience-center",
+    "operator": "Goochland County Solid Waste & Recycling",
+    "source": "https://www.goochlandva.us/289/Convenience-Centers",
+    "source_checked": "2026-11-21",
+    "listing_fingerprint": "f72b2752d4223ec914887b8db797ce992ca1c03f878c77d80f7105ef1fc7faf8",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Goochland County Solid Waste & Recycling page, County Code Sec. 7-71 (fetched 2026-11-21): “(a) Only county residents may use county-owned waste facilities.” Goochland County Convenience Centers page (fetched 2026-11-21): “The centers are available, free of charge, for use by County residents who have proof of residency”."
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Goochland County Convenience Centers page (fetched 2026-11-21): centers are for “County residents who have proof of residency”; Goochland County Solid Waste & Recycling page, County Code Sec. 7-71 (fetched 2026-11-21): “Persons using a county-owned waste facility may be asked to present evidence of their residency in the county.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "yes",
+        "evidence": "Conditional — Goochland County Convenience Centers page (fetched 2026-11-21): centers are “free of charge” for household trash and recyclable items, but “There is a fee to dispose of certain items such as: Air conditioners, Automobile tires, Brush, Refrigerators and other appliances containing Freon”; tires “up to 19 inches off rim for $2, tires up to 19 inches on rim for $6, tires between 19 inches and 24 inches off rim for $13 … agricultural-type tires between 24.5 inches to 42 inches off rim for $30”."
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Goochland County Convenience Centers page (fetched 2026-11-21): “Tires can be disposed of at the county’s Central Convenience Center and Western Convenience Center.”"
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "Oil-based — CVWMA Recycling in Goochland guide (https://cvwma.com/recycling/goochland/, fetched 2026-11-21): “Recycle oil-based paints, varnish/shellac, stains and tints, lacqueer thinners, polyurethane, primers, paint redcuers, Varsol, mineral spirits, turpentine, other flammable solvents at Goochland County Convenience Centers.” Latex: Goochland County Convenience Centers page (fetched 2026-11-21): latex paint “can usually be thrown in your regular household trash, but only if it is completely dried out first.”"
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "CVWMA Recycling in Goochland guide (https://cvwma.com/recycling/goochland/, fetched 2026-11-21): Computers, televisions, stereos/VCRs and cell phones: “Recycle at permanent electronics trailer located at both Goochland County Convenience Centers”. Goochland County Convenience Centers page (fetched 2026-11-21): “Consumer electronic items will not be accepted through this program. These items include … small appliances (toasters, blenders, hair dryers, vacuums, etc.), handheld power tools, fans, de-humidifiers, or lamps.”"
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "CVWMA Recycling in Goochland guide (https://cvwma.com/recycling/goochland/, fetched 2026-11-21): “Lead acid. Recycle at Goochland County Convenience Centers”; “Rechargeable. Recycle at Goochland County Convenience Centers”; alkaline batteries are “Safe for disposal in your trash”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "CVWMA Recycling in Goochland guide (https://cvwma.com/recycling/goochland/, fetched 2026-11-21): “Motor Oil. Recycle at Goochland County Convenience Centers. Accepted items in the oil drum include: motor oil, automatic transmission fluid, power steering fluid, diesel fuel, gear oil …”; “Oil Filters. Recycle at Goochland County Convenience Centers.”"
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "Limited to fuels and paint solvents — CVWMA Recycling in Goochland guide (https://cvwma.com/recycling/goochland/, fetched 2026-11-21): “Recycle leaded and unleaded gasoline along with paint and solvents in the paint drums at Goochland County Convenience Centers”; “mineral spirits, turpentine, other flammable solvents”; “Antifreeze. Recycle at Goochland County convenience centers.” Note Goochland County Solid Waste & Recycling page, County Code Sec. 7-71 (fetched 2026-11-21): “(e) The following items shall not be disposed of at a county-owned facility: stumps, hazardous waste, asbestos, industrial wastes, ash sludge, solvents, slurry, oil …” — ask the attendant."
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-21"
+  },
+  "VA|Richmond|Powhatan County Convenience Center": {
+    "slug": "powhatan-county-convenience-center",
+    "operator": "Powhatan County Department of Public Works",
+    "source": "https://www.powhatanva.gov/305/Convenience-Center",
+    "source_checked": "2026-11-21",
+    "listing_fingerprint": "82bc4e3df74cfdfd2ae870f870d2553cffffa390403d48cb0e0f5f0e96921823",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "Powhatan County Convenience Center page (fetched 2026-11-21): “A Convenience Center sticker, properly displayed, is required as proof of County residence to use the Convenience Center.”"
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "Powhatan County Convenience Center page (fetched 2026-11-21): “Please bring your vehicle registration, indicating a Powhatan County address, to the Convenience Center in order to obtain your sticker.”"
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "yes",
+        "evidence": "Powhatan County Fee Schedule page (fetched 2026-11-21): Tires: “Passenger Car/Small Truck Tires $2 each”, “Tires on Rims $7 each”, “Large Truck Tires (Over 19 Inches) $13 each”, “Tractor Tires $26 each”; appliances $25/$15; pickup loads $30–$70; “FREE LOAD - Small amounts of construction and demolition waste … no more than once per month”. CVWMA Recycling in Powhatan guide (https://cvwma.com/recycling/powhatan/, fetched 2026-11-21): “There are no fees to recycle car batteries and rechargeable batteries.”"
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "CVWMA Powhatan County page (https://cvwma.com/cvwma-locations/powhatan-county/, fetched 2026-11-21): “Used tires may be recycled at the Powhatan County Convenience Center. Fees apply.”"
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "Oil-based only — CVWMA Recycling in Powhatan guide (https://cvwma.com/recycling/powhatan/, fetched 2026-11-21): “Recycle oil-based paints, varnish/shellac, stains and tints, lacqueer thinners, polyurethane, primers … at the Powhatan Convenience Center.” “Latex paints. Not accepted for recycling.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "CVWMA Recycling in Powhatan guide (https://cvwma.com/recycling/powhatan/, fetched 2026-11-21): “Lead acid. Recycle at Powhatan Convenience Center”; “Rechargeable. Recycle at Powhatan Convenience Center”; alkaline “Safe for disposal in your trash”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "CVWMA Recycling in Powhatan guide (https://cvwma.com/recycling/powhatan/, fetched 2026-11-21): “Motor Oil. Recycle at Powhatan Convenience Center. … Accepted items include: motor oil, automatic transmission fluid, power steering fluid, diesel fuel, gear oil …”; “Oil Filters. Recycle at Powhatan Convenience Center”."
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "Limited to fuels, antifreeze and paint solvents — CVWMA Recycling in Powhatan guide (https://cvwma.com/recycling/powhatan/, fetched 2026-11-21): “Antifreeze. Recycle at Powhatan Convenience Center”; “Gasoline. Recycle at Powhatan Convenience Center”; “Varsol, mineral spirits, turpentine, other flammable solvents at the Powhatan Convenience Center”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Powhatan County Fee Schedule page (fetched 2026-11-21): “FREE LOAD … no more than once per month, provided such waste is limited to the amount contained in one level pickup truck load without supplemental sides”; “Larger Than Pickup (Not to Exceed 10 Cubic Yards)”."
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "Powhatan County Convenience Center page (fetched 2026-11-21): “Commercial waste is not accepted.”"
+      }
+    },
+    "questions_reviewed": "2026-11-21"
   }
 }

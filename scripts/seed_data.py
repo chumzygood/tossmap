@@ -438,6 +438,50 @@ REVERIFIED20={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Resid
 for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED20: f["checked"]=D20
+# --- Nov 21 2026 daily pass additions (each verified against cited official source on 2026-11-21) ---
+D21="2026-11-21"
+GOOC="https://www.goochlandva.us/289/Convenience-Centers"
+GOOCV="https://cvwma.com/recycling/goochland/"
+goochours="Daily 7:30am–6pm (closed county holidays and other announced closures)"
+goocacc=("Automobile tires (fee; up to 19 in. on or off rim, 19–24 in. off rim, agricultural tires 24.5–42 in. off rim); used motor oil, automatic transmission and power-steering fluid, gear and hydraulic oil, diesel and fuel oil (oil drum); oil filters; antifreeze; "
+  "leaded/unleaded gasoline, motor-oil additives, oil-based paint, stains, varnish/shellac, polyurethane, primer, lacquer and paint thinners, mineral spirits and turpentine (paint drums); rechargeable and lead-acid batteries; propane tanks; "
+  "electronics at the permanent electronics trailer (computers, laptops, monitors, printers, keyboards, TVs, stereos, VCRs, cell phones; small consumer appliances, power tools, fans and lamps not accepted in the electronics program); "
+  "appliances/white goods (Freon recovery); household trash; drop-off recycling (mixed paper, cans, plastic containers #1–7, cartons, glass)")
+goocfee="Free for county residents for household trash and recyclables. Tires: up to 19 in. off rim $2, up to 19 in. on rim $6, 19–24 in. off rim $13, agricultural tires 24.5–42 in. off rim $30 (large loads may be referred to a landfill). Fees also apply to air conditioners, brush and refrigerators/Freon appliances"
+goocnote=("Operated by Goochland County; county residents only with proof of residency (County Code Sec. 7-71: only county residents may use county-owned waste facilities). "
+  "Motor oil, paint/solvent and electronics locations per the Central Virginia Waste Management Authority Goochland recycling guide: "+GOOCV+". "
+  "County Code Sec. 7-71 also lists hazardous waste, solvents and oil among items not to be disposed of at county facilities, so use only the designated oil and paint drums and ask the attendant before unloading. Latex paint: county says dry it out completely and put it in the trash. ")
+add("Richmond",
+  F("Goochland Central Convenience Center","1908 Hidden Rock Lane, Maidens, VA 23102",goochours,GOOC,goocacc,goocfee,goocnote+"804-556-5374",D21),
+  F("Goochland Western Convenience Center","3455 Hadensville-Fife Road, Goochland, VA 23063",goochours,GOOC,goocacc+"; Goodwill clothing and shoe box",goocfee,goocnote+"804-556-5375",D21),
+  F("Powhatan County Convenience Center","2407 Mitchell Road, Powhatan, VA 23139","Tue–Sun 8am–6pm; closed New Year's Day, Memorial Day, Fourth of July, Labor Day, Columbus Day, Veterans Day, Thanksgiving (page lists Nov 25–26) and Christmas (Dec 24–25)","https://www.powhatanva.gov/305/Convenience-Center",
+    "Used tires (fee); used motor oil, automatic transmission and power-steering fluid, gear and hydraulic oil, diesel and fuel oil; motor-oil additives; oil filters; antifreeze; gasoline; oil-based paint, varnish/shellac, stains and tints, lacquer thinners, polyurethane, primers, mineral spirits, turpentine and other flammable solvents; lead-acid and rechargeable batteries (no fee); propane tanks; appliances/white goods; household trash; drop-off recycling (cans, bottles, paper, cardboard, cartons); Goodwill donation trailer. Latex paint not accepted for recycling (dry it out and put it in the trash)",
+    "Tires: passenger car/small truck $2, on rims $7, large truck (over 19 in.) $13, large truck on rim $19, tractor $26. Appliances with CFCs $25, without $15. Pickup-load disposal $30 small / $40 regular / $70 larger (up to 10 cu yd); one free pickup load of residential C&D waste per month. No fee for car and rechargeable batteries",
+    "Operated by Powhatan County Public Works. A Powhatan Convenience Center sticker is required as proof of residency (bring vehicle registration showing a Powhatan County address to get one). Commercial waste is not accepted. Fees: https://www.powhatanva.gov/307/Fee-Schedule. Item locations per the CVWMA Powhatan recycling guide: https://cvwma.com/recycling/powhatan/. Electronics: CVWMA says to use reputable recyclers or special events such as the first-Saturday Securis event in Henrico; the county's Recycling page lists electronics among acceptable items, so call before bringing them. 804-598-5673",D21))
+HOURC="https://www.houstontx.gov/solidwaste/recycling_centers.html"
+HOUE="https://www.houstontx.gov/solidwaste/ewaste"
+houid="Proof of address: a current Texas-issued ID (driver's license, DPS ID, License to Carry or Consulate ID) or a current City of Houston utility bill or lease; for recycling only a current Texas-issued ID is sufficient. Residents may use the recycling centers up to 4 times per month (once per week); arrive at least 15–30 minutes before closing. "
+add("Houston",
+  F("Westpark Consumer Recycling Center","5900 Westpark, Houston, TX 77057","Tue–Sat 8am–5pm",HOURC,
+    "Residential electronics (computers, laptops, monitors, printers, TVs including CRT TVs up to 36 in., cell phones, routers, cables, UPS units, copiers, fax machines, toner and ink cartridges); tires (up to 5, without rims); B.O.P.A. — batteries, oil, latex paint and antifreeze; scrap metal; recyclables (paper, cardboard, cartons, cans, glass, plastics #1–5 and #7). Not accepted: household hazardous waste chemicals, oil-based paint, heavy trash, garbage, alkaline household batteries in the electronics program",
+    "Residential electronics accepted at no additional charge (other fees not stated)",
+    "City of Houston Solid Waste Management Department. "+houid+"The Recycling Centers page lists B.O.P.A. (batteries, oil, latex paint and antifreeze) as accepted but also lists “Hazardous materials: Chemicals, oil, fuel” as not accepted, so call 311 before bringing motor oil. Electronics details: "+HOUE+".",D21),
+  F("Ellington/Clear Lake Neighborhood Recycling Center","246 Loop Rd., Houston, TX 77034","Open 7 days a week 8am–8pm; electronics recycling event 2nd Saturday of each month 9am–3pm",HOURC,
+    "Recyclables (paper, cardboard, cartons, cans, glass, plastics #1–5 and #7); residential electronics at the monthly 2nd-Saturday event (computers, laptops, monitors, printers, TVs including CRT TVs up to 36 in., cell phones, routers, cables, UPS units, copiers, fax machines, toner and ink cartridges). Not accepted at the electronics event: vacuum cleaners, CRT TVs over 36 in., radios, game consoles, microwaves and other appliances, fluorescent bulbs, smoke detectors, alkaline batteries, paint cans",
+    "",
+    "City of Houston Solid Waste Management Department. "+houid+"Electronics are taken only at the monthly 2nd-Saturday event (details: "+HOUE+"). The Recycling Centers page also lists tires and B.O.P.A. in a general accepted-materials list without naming sites, so call 311 before bringing tires, oil or batteries.",D21))
+# Re-verified against the official page on 2026-11-21. Boston and Parma notes updated: today's Nov 21 event is the last date each source lists.
+for m in M:
+    for f in m["facilities"]:
+        if f["name"]=="Zero Waste Day Drop-Off – Millennium Park":
+            f["notes"]="Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. Do not arrive before 8:30am; no entry after noon. This Nov 21 event is the only Zero Waste Day the City currently lists; no later date is posted yet."
+        if f["name"]=="Parma Service Garage (HHW drop-off day)":
+            f["notes"]=f["notes"].replace("March 28, October 3 and November 21 (the first two have been held)","March 28, October 3 and November 21 (the first two have been held; November 21 is the last 2026 date and no 2027 dates are posted yet)")
+REVERIFIED21={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Residential Recycling Center (HHW days)","DPW Special Waste Collection Event – RFK Stadium Lot 8",
+  "Carr Center (Division of Waste)","Ridge Road Transfer Station","Parma Service Garage (HHW drop-off day)","Securis First Saturday Electronics Recycling (CVWMA)"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED21: f["checked"]=D21
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

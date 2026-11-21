@@ -643,9 +643,19 @@ for s,n,_ in MAT:
     page(f"/{s}/",title,desc,body,graph,
          max([f["checked"] for _,fs in hits for f in fs],default=None))
 n=sum(len(m["facilities"]) for m in D)
+# Home page crawl paths: (1) upcoming dated collection days parsed only from each listing's own hours text, dropped once past;
+# (2) the most recently added/re-checked listings so new facility pages get a link from the home page.
+EVDATE=re.compile(r"(?:Event:\s*|Collection days:\s*|next:\s*)(?:(?:Sat|Sun|Mon|Tue|Wed|Thu|Fri)\s+)?(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})(?:[–-]\d{1,2})?,\s*(20\d{2})")
+def next_date(f):
+    mm=EVDATE.search(f.get("hours") or "")
+    return f"{int(mm.group(3)):04d}-{MONTHS[mm.group(1)]:02d}-{int(mm.group(2)):02d}" if mm else None
+upcoming=sorted(((d,m,f) for m in D for f in m["facilities"] for d in [next_date(f)] if d and d>=TODAY),key=lambda x:(x[0],x[1]["city"],x[2]["name"]))
+recent=sorted(((f["checked"],m,f) for m in D for f in m["facilities"]),key=lambda x:(x[0],x[1]["city"],x[2]["name"]),reverse=True)[:12]
+home_events=(f"<h2>Upcoming collection days</h2><p class=\"meta\">As of {TODAY}.</p><ul>"+"".join(f'<li><a href="{fpath(f,m)}">{e(f["name"])}</a> ({e(m["city"])}, {m["st"]}) — {datetime.date.fromisoformat(d).strftime("%a %b %-d, %Y")}</li>' for d,m,f in upcoming)+"</ul><p class=\"meta\">Dates come from each official source; confirm before you go.</p>") if upcoming else ""
+home_recent=("<h2>Recently added or re-checked</h2><ul>"+"".join(f'<li><a href="{fpath(f,m)}">{e(f["name"])}</a> — {e(m["city"])}, {m["st"]}<span class="meta"> · checked {f["checked"]}</span></li>' for c,m,f in recent)+"</ul>")
 home=(f"<h1>Where do I take paint, chemicals, batteries, electronics &amp; tires?</h1><p>{n} drop-off sites from official government and operator sources across {len(D)} US metros. Every listing links to its source and shows when we last checked it.</p>"
  "<h2>By material</h2><p class=tags>"+" ".join(f'<a href="/{s}/">{e(nm)}</a>' for s,nm,_ in MAT)+"</p>"
- "<h2>By city</h2><ul class=grid>"+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in sorted(D,key=lambda x:x["city"]))+"</ul><h2>By state</h2><ul class=grid>"+"".join(f'<li><a href="/{slug(st)}/">{e(sn)}</a></li>' for sn,st in sorted(states))+"</ul>"+signup_box())
+ "<h2>By city</h2><ul class=grid>"+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in sorted(D,key=lambda x:x["city"]))+"</ul><h2>By state</h2><ul class=grid>"+"".join(f'<li><a href="/{slug(st)}/">{e(sn)}</a></li>' for sn,st in sorted(states))+"</ul>"+home_events+home_recent+signup_box())
 page("/","TossMap: where to dump paint, hazardous waste, e-waste & tires by city","Find official drop-off sites for paint, chemicals, batteries, electronics and tires in 50+ US metros, addresses, hours, fees and source links, checked regularly.",home,
      [{"@type":"Organization","@id":ORG_ID,"name":"TossMap","url":BASE+"/"},{"@type":"WebSite","@id":BASE+"/#website","name":"TossMap","url":BASE+"/","publisher":{"@id":ORG_ID}}],max(f["checked"] for m in D for f in m["facilities"]))
 page("/privacy.html","Privacy | TossMap","TossMap privacy policy: no cookies on our pages; newsletter sign-ups are handled by Kit and we do not sell your email.","<h1>Privacy</h1><p>TossMap sets no cookies. We use GoatCounter, a privacy-friendly analytics service that does not track individuals.</p><p>If you sign up for the <a href=\"/newsletter/\">TossMap newsletter</a>, your email is collected by Kit, our email provider, so we can send drop-off updates. We do not sell your email. Kit will send a confirmation email first, and you can unsubscribe anytime.</p><p>If ads are added, ad partners may use cookies; this page will be updated before that happens.</p><p>Listings come from public government sources and may change; confirm with the source before visiting.</p>")

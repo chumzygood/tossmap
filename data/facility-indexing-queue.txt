@@ -12,6 +12,9 @@ https://tossmap.com/va/richmond/hanover-doswell-convenience-center/
 https://tossmap.com/va/richmond/hanover-montpelier-convenience-center/
 https://tossmap.com/va/richmond/securis-first-saturday-electronics-recycling-henrico/
 https://tossmap.com/va/richmond/hanover-route-301-transfer-station/
+https://tossmap.com/va/richmond/goochland-central-convenience-center/
+https://tossmap.com/va/richmond/goochland-western-convenience-center/
+https://tossmap.com/va/richmond/powhatan-county-convenience-center/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-port-richmond/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northwest-philadelphia/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northeast-philadelphia/
@@ -78,6 +81,8 @@ https://tossmap.com/tx/houston/residential-drop-off-center-northeast/
 https://tossmap.com/tx/houston/residential-drop-off-center-southeast/
 https://tossmap.com/tx/houston/residential-drop-off-center-south/
 https://tossmap.com/tx/houston/residential-drop-off-center-southwest/
+https://tossmap.com/tx/houston/westpark-consumer-recycling-center/
+https://tossmap.com/tx/houston/ellington-clear-lake-neighborhood-recycling-center/
 https://tossmap.com/az/phoenix/north-gateway-transfer-station/
 https://tossmap.com/az/phoenix/27th-avenue-transfer-station/
 https://tossmap.com/il/chicago/household-chemicals-computer-recycling-facility/
