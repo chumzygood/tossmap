@@ -15,6 +15,8 @@ https://tossmap.com/va/richmond/hanover-route-301-transfer-station/
 https://tossmap.com/va/richmond/goochland-central-convenience-center/
 https://tossmap.com/va/richmond/goochland-western-convenience-center/
 https://tossmap.com/va/richmond/powhatan-county-convenience-center/
+https://tossmap.com/va/richmond/new-kent-county-main-refuse-site-route-618/
+https://tossmap.com/va/richmond/prince-george-county-convenience-center/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-port-richmond/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northwest-philadelphia/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northeast-philadelphia/
@@ -109,6 +111,12 @@ https://tossmap.com/nc/raleigh/east-wake-hhw-facility/
 https://tossmap.com/nc/raleigh/north-wake-multi-material-recycling-facility/
 https://tossmap.com/nc/raleigh/south-wake-multi-material-recycling-facility/
 https://tossmap.com/nc/raleigh/east-wake-multi-material-recycling-facility/
+https://tossmap.com/fl/tampa/sheldon-road-hhw-collection-center/
+https://tossmap.com/fl/tampa/south-county-hhw-collection/
+https://tossmap.com/fl/tampa/hillsborough-heights-hhw-collection-site/
+https://tossmap.com/fl/tampa/northwest-county-solid-waste-facility/
+https://tossmap.com/fl/tampa/aldermans-ford-solid-waste-facility/
+https://tossmap.com/fl/tampa/wimauma-solid-waste-facility/
 https://tossmap.com/tx/el-paso/citizen-collection-station-northeast/
 https://tossmap.com/tx/el-paso/citizen-collection-station-central/
 https://tossmap.com/tx/el-paso/citizen-collection-station-westside/
@@ -149,9 +157,6 @@ https://tossmap.com/ca/riverside/palm-springs-hhw-facility/
 https://tossmap.com/ut/salt-lake-city/salt-lake-county-hhw-collection-center/
 https://tossmap.com/ut/salt-lake-city/trans-jordan-landfill-hhw/
 https://tossmap.com/ut/salt-lake-city/salt-lake-valley-landfill-hhw/
-https://tossmap.com/fl/tampa/sheldon-road-hhw-collection-center/
-https://tossmap.com/fl/tampa/south-county-hhw-collection/
-https://tossmap.com/fl/tampa/hillsborough-heights-hhw-collection-site/
 https://tossmap.com/in/indianapolis/toxdrop-traders-point-collection-facility/
 https://tossmap.com/in/indianapolis/toxdrop-perry-township-government-center/
 https://tossmap.com/nv/las-vegas/republic-services-hhw-north-las-vegas/

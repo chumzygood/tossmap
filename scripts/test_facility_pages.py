@@ -48,7 +48,7 @@ class FacilityTests(unittest.TestCase):
                 for k,a in f['questions'].items():
                     self.assertIn(a['answer'],('yes','no',UNKNOWN))
                     if a['answer']!=UNKNOWN: self.assertTrue(a['evidence'],(f['name'],k))
-        self.assertEqual(len(paths),188)
+        self.assertEqual(len(paths),193)
         self.assertEqual(len(set(paths)),len(paths))
     def test_all_facility_pages_and_visible_schema(self):
         sitemap={u.text for u in ET.parse('docs/sitemap.xml').getroot().iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
@@ -79,9 +79,9 @@ class FacilityTests(unittest.TestCase):
                     if f['questions'][key]['answer']=='yes':
                         anchor=f'/{ms}/#{slug(m["city"])}-{slug(m["st"])}'
                         self.assertIn(anchor,doc.links); self.assertIn(anchor.split('#')[1],read(f'/{ms}/').ids)
-        self.assertEqual(len(queue),188); self.assertEqual(len(set(queue)),188)
+        self.assertEqual(len(queue),193); self.assertEqual(len(set(queue)),193)
         self.assertTrue(queue[0].startswith(BASE+'/va/richmond/'))
-        self.assertEqual(len(sitemap),285)
+        self.assertEqual(len(sitemap),290)
     def test_state_pages_itemlist_matches_city_links(self):
         states={}
         for m in D: states.setdefault(m['st'],[]).append(m)
@@ -142,6 +142,19 @@ class FacilityTests(unittest.TestCase):
                     if d>=today: self.assertIn(facility_path(m,f),home.links,f['name'])
         self.assertIn('Upcoming collection days',text); self.assertIn('Recently added or re-checked',text)
         self.assertTrue(any(facility_path(m,f) in home.links for m in D for f in m['facilities'] if f['checked']==latest))
+    def test_past_one_day_events_have_no_event_schema_and_say_so(self):
+        import datetime
+        today=datetime.date.today().isoformat(); months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+        for m in D:
+            for f in m['facilities']:
+                mm=re.search(r'Event:\s*(?:Sat|Sun|Mon|Tue|Wed|Thu|Fri)\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2}),\s*(20\d{2})',f['hours'])
+                if not mm: continue
+                d=datetime.date(int(mm.group(3)),months.index(mm.group(1))+1,int(mm.group(2))).isoformat()
+                html_text=Path('docs'+facility_path(m,f)+'index.html').read_text()
+                if d<today:
+                    self.assertNotIn('"@type": "Event"',html_text,f['name']); self.assertIn('Past event:',html_text,f['name'])
+                else:
+                    self.assertIn('"@type": "Event"',html_text,f['name']); self.assertNotIn('Past event:',html_text,f['name'])
     def test_known_rejection_and_conditional_cases(self):
         facilities={f['name']:f for m in D for f in m['facilities']}
         self.assertEqual(facilities['Keʻehi Transfer Station']['questions']['tires']['answer'],'no')
@@ -150,5 +163,8 @@ class FacilityTests(unittest.TestCase):
         self.assertEqual(facilities['Metro Central Hazardous Waste']['questions']['businesses_accepted']['answer'],'yes')
         self.assertIn('fire damage',facilities['North Wake HHW Facility']['source_notice'])
         self.assertEqual(facilities['ERG Environmental Services (Wayne County HHW)']['questions']['appointment_required']['answer'],'yes')
+        self.assertEqual(facilities['New Kent County Main Refuse Site (Route 618)']['questions']['tires']['answer'],'no')
+        self.assertEqual(facilities['Sheldon Road HHW Collection Center']['questions']['e_waste']['answer'],'no')
+        self.assertEqual(facilities['Prince George County Convenience Center']['questions']['paint']['answer'],'no')
 
 if __name__=='__main__': unittest.main(verbosity=2)

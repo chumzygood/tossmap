@@ -88,6 +88,19 @@ def is_event(f):
         return True
     return bool(re.match(r"Collection days:", h, re.I))
 
+# A one-day event whose own date is before today's build date has passed: no Event markup, and pages say so plainly.
+_EVMON=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+def event_day(f):
+    mm=re.search(r"Event:\s*(?:Sat|Sun|Mon|Tue|Wed|Thu|Fri)\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2}),\s*(20\d{2})", f.get("hours") or "")
+    return f"{int(mm.group(3)):04d}-{_EVMON.index(mm.group(1))+1:02d}-{int(mm.group(2)):02d}" if mm else None
+def is_past_event(f):
+    d=event_day(f)
+    return bool(d and d<TODAY)
+def past_event_note(f):
+    if not is_past_event(f): return ""
+    d=datetime.date.fromisoformat(event_day(f)).strftime("%B %-d, %Y")
+    return f"This collection event ({d}) has already taken place. It is kept here for reference; check the official source for the next date before you go."
+
 def parse_address(addr):
     core=addr.strip(); parent=None
     pm=re.match(r"^(.*?)(\s*\([^)]+\))\s*$", core)
@@ -278,7 +291,7 @@ def city_overview_qa(m):
     elif events and not standing:
         parts.append(f"TossMap does not list a permanent drop-off site in {city}, {st}.")
         for f in events:
-            parts.append(f'The official source lists {f["name"]} at {f["address"]}. Hours recorded: {f["hours"]}.')
+            parts.append(f'The official source lists {f["name"]} at {f["address"]}. Hours recorded: {f["hours"]}.'+(" That date has passed; check the source for the next one." if is_past_event(f) else ""))
         parts.append("This is a scheduled collection event, not a year-round drop-off site.")
     else:
         parts.append(f"TossMap lists {len(standing)} official standing drop-off site{'s' if len(standing)!=1 else ''} and {len(events)} scheduled collection event{'s' if len(events)!=1 else ''} in {city}, {st}.")
@@ -321,7 +334,7 @@ def material_qa(m, s, fs, html=True):
             sent+=f" The listing records acceptance as: {e(acc) if as_html else acc}."
         if is_event(f):
             hrs=e(f["hours"]) if as_html else f["hours"]
-            sent+=f" Recorded hours: {hrs}. This is a scheduled event, not a permanent drop-off site."
+            sent+=f" Recorded hours: {hrs}. This is a scheduled event, not a permanent drop-off site."+(" That date has passed; check the source for the next one." if is_past_event(f) else "")
         stt=appointment_status(f)
         notes_already=(f.get("notes") or "")
         if stt=="yes" and "appoint" not in notes_already.lower():
@@ -503,7 +516,7 @@ def fac(f,m):
     tags=" ".join(f'<a href="/{s}/">{e(n)}</a>' for s,n,_ in mats(f))
     return f"""<div class="card" id="{slug(f['name'])}"><h3><a href="{fpath(f,m)}">{e(f['name'])}</a></h3><div>{e(f['address'])}</div>
 <p><b>Accepts:</b> {e(f['accepts'])}<br><b>Hours:</b> {e(f['hours'])}{'<br><b>Fees:</b> '+e(f['fees']) if f['fees'] else ''}{'<br><b>Notes:</b> '+e(f['notes']) if f['notes'] else ''}</p>
-{'<p class="note">'+e(f['source_notice'])+'</p>' if f.get('source_notice') else ''}{'<p class="tags">'+tags+'</p>' if tags else ''}<div class="meta">Source: <a href="{e(f['source'])}" rel="nofollow noopener">{e(f['source'])}</a> · Last checked {f['checked']}</div></div>"""
+{'<p class="note">'+e(f['source_notice'])+'</p>' if f.get('source_notice') else ''}{'<p class="note"><strong>Past event:</strong> '+e(past_event_note(f))+'</p>' if is_past_event(f) else ''}{'<p class="tags">'+tags+'</p>' if tags else ''}<div class="meta">Source: <a href="{e(f['source'])}" rel="nofollow noopener">{e(f['source'])}</a> · Last checked {f['checked']}</div></div>"""
 def facility_page(f,m):
     fp=fpath(f,m)
     vis,bl=crumbs([("Home","/"),(m["state"],f"/{slug(m['st'])}/"),(m["city"],cpath(m)),(f["name"],fp)])
@@ -518,6 +531,7 @@ def facility_page(f,m):
     others=[o for o in m["facilities"] if o is not f]
     body=(vis+f'<h1>{e(f["name"])}</h1><p>Waste and recycling drop-off information for {e(m["city"])}, {e(m["st"])}. This is an independent source-backed listing, not the operator’s website.</p>'
           +(f'<p class="note">{e(f["source_notice"])}</p>' if f.get("source_notice") else "")
+          +(f'<p class="note"><strong>Past event:</strong> {e(past_event_note(f))}</p>' if is_past_event(f) else "")
           +'<section class="card"><h2>Before you go</h2><dl>'
           +''.join(f'<dt><strong>{e(label)}</strong></dt><dd>{e(value or UNKNOWN)}</dd>' for label,value in [
               ("Operator",f["operator"]),("Full address",f["address"]),("Accepted materials",f["accepts"]),
@@ -547,7 +561,7 @@ STATE_TZ={"DC":"America/New_York","MA":"America/New_York","MD":"America/New_York
 MONTHS={m:i+1 for i,m in enumerate(["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"])}
 def event_ld(f,m,place):
     mm=re.search(r"Event:\s*(?:Sat|Sun|Mon|Tue|Wed|Thu|Fri)\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2}),\s*(20\d{2})(?:,\s*([0-9:]+(?:am|pm)?)\s*[–-]\s*([0-9:]+(?:am|pm)|noon))?",f.get("hours") or "")
-    if not mm: return None
+    if not mm or is_past_event(f): return None
     from datetime import datetime
     from zoneinfo import ZoneInfo
     y,mo,d=int(mm.group(3)),MONTHS[mm.group(1)],int(mm.group(2))

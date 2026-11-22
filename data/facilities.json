@@ -4460,7 +4460,7 @@
     "fees": "Free",
     "notes": "DC residents only; register in advance on Eventbrite; bring proof of residency and registration. The Nov 14 event has been held; no later 2026–27 date is listed yet.",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "checked": "2026-11-21",
+    "checked": "2026-11-22",
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "questions": {
      "residents_only": {
@@ -4514,7 +4514,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-21"
+    "questions_reviewed": "2026-11-22"
    }
   ],
   "note": "No permanent HHW or e-cycling drop-off. Fort Totten takes up to 4 tires during regular hours. HHW and electronics are collected at registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding"
@@ -4530,9 +4530,9 @@
     "hours": "Event: Sat Nov 21, 2026, 8:30am–noon",
     "accepts": "Hazardous chemicals (20 gal limit), oil-based paint, rechargeable/lithium batteries, electronics (computers, phones, TVs, printers), fluorescent bulbs/mercury items, car & bike tires (8 each), car batteries, propane tanks, fire extinguishers",
     "fees": "Free",
-    "notes": "Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. Do not arrive before 8:30am; no entry after noon. This Nov 21 event is the only Zero Waste Day the City currently lists; no later date is posted yet.",
+    "notes": "Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. The Nov 21, 2026 event has been held, and as of Nov 22 the City's Zero Waste Days page says there are no related events available; no next date is posted yet.",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "checked": "2026-11-21",
+    "checked": "2026-11-22",
     "slug": "zero-waste-day-drop-off-millennium-park",
     "questions": {
      "residents_only": {
@@ -4586,7 +4586,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-21"
+    "questions_reviewed": "2026-11-22"
    }
   ],
   "note": ""
@@ -5404,12 +5404,12 @@
     "fees": "",
     "notes": "Photo ID with Hillsborough address",
     "source": "https://hcfl.gov/locations/sheldon-road-household-hazardous-collection-center",
-    "checked": "2026-11-02",
+    "checked": "2026-11-22",
     "slug": "sheldon-road-hhw-collection-center",
     "questions": {
      "residents_only": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): “All Hillsborough County household residents can use HHW Collections”; “Must show State-issued photo ID with a Hillsborough County residential address”."
      },
      "id_required": {
       "answer": "yes",
@@ -5432,33 +5432,33 @@
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): Not accepted at household hazardous waste collections: “Electronics (residential/household) Household electronics are accepted at Community Collection Centers”."
      },
      "batteries": {
       "answer": "yes",
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "motor_oil": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): Automotive products accepted: “Antifreeze/engine coolant, motor oil, waxes, cleaners, polishes, gasoline/diesel (maximum container size one 5-gallon …)”."
      },
      "household_chemicals": {
       "answer": "yes",
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "quantity_limits": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): Paint products “Limit 10 one-gallon containers or 5 five-gallon containers per month”; propane/helium tanks “Limit: five 30-pound tanks or less”; fluorescent lamps “Limit: 10 bulbs four feet and longer”; gasoline/diesel “maximum container size one 5-gallon”."
      },
      "businesses_accepted": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): “Business waste is not accepted at household hazardous waste collections.” “No business waste is accepted”."
      }
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-02"
+    "questions_reviewed": "2026-11-22"
    },
    {
     "name": "South County HHW Collection",
@@ -5468,16 +5468,16 @@
     "fees": "",
     "notes": "",
     "source": "https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste",
-    "checked": "2026-11-02",
+    "checked": "2026-11-22",
     "slug": "south-county-hhw-collection",
     "questions": {
      "residents_only": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): “All Hillsborough County household residents can use HHW Collections”; “Must show State-issued photo ID with a Hillsborough County residential address”."
      },
      "id_required": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): “Must show State-issued photo ID with a Hillsborough County residential address”."
      },
      "appointment_required": {
       "answer": "not stated by source",
@@ -5496,33 +5496,33 @@
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): Not accepted at household hazardous waste collections: “Electronics (residential/household) Household electronics are accepted at Community Collection Centers”."
      },
      "batteries": {
       "answer": "yes",
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "motor_oil": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): Automotive products accepted: “Antifreeze/engine coolant, motor oil, waxes, cleaners, polishes, gasoline/diesel (maximum container size one 5-gallon …)”."
      },
      "household_chemicals": {
       "answer": "yes",
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "quantity_limits": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): Paint products “Limit 10 one-gallon containers or 5 five-gallon containers per month”; propane/helium tanks “Limit: five 30-pound tanks or less”; fluorescent lamps “Limit: 10 bulbs four feet and longer”; gasoline/diesel “maximum container size one 5-gallon”."
      },
      "businesses_accepted": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): “Business waste is not accepted at household hazardous waste collections.” “No business waste is accepted”."
      }
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-02"
+    "questions_reviewed": "2026-11-22"
    },
    {
     "name": "Hillsborough Heights HHW Collection Site",
@@ -5532,16 +5532,16 @@
     "fees": "",
     "notes": "",
     "source": "https://hcfl.gov/locations/hillsborough-heights-household-hazardous-waste-collection-site",
-    "checked": "2026-11-02",
+    "checked": "2026-11-22",
     "slug": "hillsborough-heights-hhw-collection-site",
     "questions": {
      "residents_only": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): “All Hillsborough County household residents can use HHW Collections”; “Must show State-issued photo ID with a Hillsborough County residential address”."
      },
      "id_required": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): “Must show State-issued photo ID with a Hillsborough County residential address”."
      },
      "appointment_required": {
       "answer": "not stated by source",
@@ -5560,33 +5560,225 @@
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): Not accepted at household hazardous waste collections: “Electronics (residential/household) Household electronics are accepted at Community Collection Centers”."
      },
      "batteries": {
       "answer": "yes",
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "motor_oil": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): Automotive products accepted: “Antifreeze/engine coolant, motor oil, waxes, cleaners, polishes, gasoline/diesel (maximum container size one 5-gallon …)”."
      },
      "household_chemicals": {
       "answer": "yes",
       "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
      },
      "quantity_limits": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): Paint products “Limit 10 one-gallon containers or 5 five-gallon containers per month”; propane/helium tanks “Limit: five 30-pound tanks or less”; fluorescent lamps “Limit: 10 bulbs four feet and longer”; gasoline/diesel “maximum container size one 5-gallon”."
      },
      "businesses_accepted": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Hillsborough County Discarding Household Hazardous Waste page (https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste, fetched 2026-11-22): “Business waste is not accepted at household hazardous waste collections.” “No business waste is accepted”."
      }
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-02"
+    "questions_reviewed": "2026-11-22"
+   },
+   {
+    "name": "Northwest County Solid Waste Facility (Community Collection Center)",
+    "address": "8001 W. Linebaugh Ave., Tampa, FL 33625",
+    "hours": "Mon–Sat 7:30am–5pm",
+    "accepts": "Electronics (computers, monitors, keyboards, routers, phones, TVs, printers, fax machines, radios, stereo components, VCR/DVD players); paint (latex and oil-based), stain and varnish; rechargeable batteries (individually bagged) and lead-acid batteries (auto, marine, motorcycle); tires; appliances and bulky items; scrap metal; recycling drop-off. Not accepted: alkaline batteries, commercial waste, large batteries over 12 x 12 in.; yard and wood waste; cooking oil (CORE cabinet); donation drop-off",
+    "fees": "Residential customers' annual solid waste assessment includes 10 cubic yards of bulky waste/appliance disposal per year and up to 12 tires per year; tires over 12 per year must go to the Southeast County Landfill at the tipping fee",
+    "notes": "Hillsborough County Community Collection Center (CCC). Bring a photo ID with your Hillsborough County residential address (photo ID only for batteries, paint and electronics; no ID for recyclables). Tires, bulky waste and appliances are only for County Solid Waste customers and also need a printed or digital copy of your current property tax bill; residents of Tampa, Temple Terrace and Plant City who pay a city for waste service should use their city's options for tires and bulky items. Limits: 5 intact electronic items per household per month (monitors, keyboards, routers and mice not counted); 10 one-gallon and 5 five-gallon paint containers per household per month; 12 tires per year. Businesses are not authorized to use CCCs. Hand unloading only. Paint/electronics limits: https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-paint-and-electronics. (813) 272-5680",
+    "source": "https://hcfl.gov/locations/northwest-county-solid-waste-facility",
+    "checked": "2026-11-22",
+    "slug": "northwest-county-solid-waste-facility",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Community Collection Centers page (fetched 2026-11-22): Batteries, paint and electronics: “Any County resident with a photo ID”; tires and bulky waste “Only available for County Solid Waste customers”."
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Northwest County Solid Waste Facility location page (fetched 2026-11-22): “Photo ID showing the Hillsborough County residential address of the property owner and a printed or digital copy of your current tax assessment are required … No ID is required for recyclables; photo ID only for batteries, paint, and electronics.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Northwest County Solid Waste Facility location page (fetched 2026-11-22): Items accepted here include “Tires”. Hillsborough County Community Collection Centers page (fetched 2026-11-22): Tires “Only available for County Solid Waste customers … Need a photo ID and a copy of your property tax bill … Limit of 12 tires per year”."
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Paint & Electronics page (fetched 2026-11-22): Accepted items: “Paint (latex and oil-based) Stain Varnish”; residents “can take paint and electronics … to CCC's during normal operating times.”"
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Paint & Electronics page (fetched 2026-11-22): Accepted electronics: “Computers (laptops, desktops, tablets) Computer components (monitors, keyboards, routers, mice) … Telephones/cellphones Televisions Printers, fax machines Radios, stereo components, VCR/DVD players”."
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Northwest County Solid Waste Facility location page (fetched 2026-11-22): Items accepted here include batteries — “Rechargeable batteries (individual bagging required)” and “Lead-acid batteries (Auto, marine, motorcycle, etc.)”. Hillsborough County Discarding Batteries page (fetched 2026-11-22): alkaline batteries are not accepted at CCCs or HHW events."
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Paint & Electronics page (fetched 2026-11-22): “Five (5) intact household electronic items are accepted per household each month at Community Collection Centers (CCC)”; paint “10 one-gallon containers and 5 five-gallon containers are accepted per household each month”. Hillsborough County Northwest County Solid Waste Facility location page (fetched 2026-11-22): “Residents may dispose of up to 12 tires per year as part of their annual assessment.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Hillsborough County Northwest County Solid Waste Facility location page (fetched 2026-11-22): “Businesses are not authorized to use CCCs.”"
+     }
+    },
+    "operator": "Hillsborough County Solid Waste Management",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-22"
+   },
+   {
+    "name": "Alderman's Ford Solid Waste Facility (Community Collection Center)",
+    "address": "9402 County Road 39, Plant City, FL 33567",
+    "hours": "Mon–Sat 7:30am–5pm (hand-unloading only)",
+    "accepts": "Electronics (computers, monitors, keyboards, routers, phones, TVs, printers, fax machines, radios, stereo components, VCR/DVD players); paint (latex and oil-based), stain and varnish; rechargeable batteries (individually bagged) and lead-acid batteries (auto, marine, motorcycle); tires; appliances and bulky items; scrap metal; recycling drop-off. Not accepted: alkaline batteries, commercial waste, large batteries over 12 x 12 in.",
+    "fees": "Residential customers' annual solid waste assessment includes 10 cubic yards of bulky waste/appliance disposal per year and up to 12 tires per year; tires over 12 per year must go to the Southeast County Landfill at the tipping fee",
+    "notes": "Hillsborough County Community Collection Center (CCC). Bring a photo ID with your Hillsborough County residential address (photo ID only for batteries, paint and electronics; no ID for recyclables). Tires, bulky waste and appliances are only for County Solid Waste customers and also need a printed or digital copy of your current property tax bill; residents of Tampa, Temple Terrace and Plant City who pay a city for waste service should use their city's options for tires and bulky items. Limits: 5 intact electronic items per household per month (monitors, keyboards, routers and mice not counted); 10 one-gallon and 5 five-gallon paint containers per household per month; 12 tires per year. Businesses are not authorized to use CCCs. Hand unloading only. Paint/electronics limits: https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-paint-and-electronics. (813) 272-5680",
+    "source": "https://hcfl.gov/locations/aldermans-ford-solid-waste-facility",
+    "checked": "2026-11-22",
+    "slug": "aldermans-ford-solid-waste-facility",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Community Collection Centers page (fetched 2026-11-22): Batteries, paint and electronics: “Any County resident with a photo ID”; tires and bulky waste “Only available for County Solid Waste customers”."
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Alderman's Ford Solid Waste Facility location page (fetched 2026-11-22): “Photo ID showing the Hillsborough County residential address of the property owner and a printed or digital copy of your current tax assessment are required … No ID is required for recyclables; photo ID only for batteries, paint, and electronics.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Alderman's Ford Solid Waste Facility location page (fetched 2026-11-22): Items accepted here include “Tires”. Hillsborough County Community Collection Centers page (fetched 2026-11-22): Tires “Only available for County Solid Waste customers … Need a photo ID and a copy of your property tax bill … Limit of 12 tires per year”."
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Paint & Electronics page (fetched 2026-11-22): Accepted items: “Paint (latex and oil-based) Stain Varnish”; residents “can take paint and electronics … to CCC's during normal operating times.”"
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Paint & Electronics page (fetched 2026-11-22): Accepted electronics: “Computers (laptops, desktops, tablets) Computer components (monitors, keyboards, routers, mice) … Telephones/cellphones Televisions Printers, fax machines Radios, stereo components, VCR/DVD players”."
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Alderman's Ford Solid Waste Facility location page (fetched 2026-11-22): Items accepted here include batteries — “Rechargeable batteries (individual bagging required)” and “Lead-acid batteries (Auto, marine, motorcycle, etc.)”. Hillsborough County Discarding Batteries page (fetched 2026-11-22): alkaline batteries are not accepted at CCCs or HHW events."
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Paint & Electronics page (fetched 2026-11-22): “Five (5) intact household electronic items are accepted per household each month at Community Collection Centers (CCC)”; paint “10 one-gallon containers and 5 five-gallon containers are accepted per household each month”. Hillsborough County Alderman's Ford Solid Waste Facility location page (fetched 2026-11-22): “Residents may dispose of up to 12 tires per year as part of their annual assessment.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Hillsborough County Alderman's Ford Solid Waste Facility location page (fetched 2026-11-22): “Businesses are not authorized to use CCCs.”"
+     }
+    },
+    "operator": "Hillsborough County Solid Waste Management",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-22"
+   },
+   {
+    "name": "Wimauma Solid Waste Facility (Community Collection Center)",
+    "address": "16180 West Lake Drive, Wimauma, FL 33598",
+    "hours": "Mon–Sat 7:30am–5pm",
+    "accepts": "Electronics (computers, monitors, keyboards, routers, phones, TVs, printers, fax machines, radios, stereo components, VCR/DVD players); paint (latex and oil-based), stain and varnish; rechargeable batteries (individually bagged) and lead-acid batteries (auto, marine, motorcycle); tires; appliances and bulky items; scrap metal; recycling drop-off. Not accepted: alkaline batteries, commercial waste, large batteries over 12 x 12 in.",
+    "fees": "Residential customers' annual solid waste assessment includes 10 cubic yards of bulky waste/appliance disposal per year and up to 12 tires per year; tires over 12 per year must go to the Southeast County Landfill at the tipping fee",
+    "notes": "Hillsborough County Community Collection Center (CCC). Bring a photo ID with your Hillsborough County residential address (photo ID only for batteries, paint and electronics; no ID for recyclables). Tires, bulky waste and appliances are only for County Solid Waste customers and also need a printed or digital copy of your current property tax bill; residents of Tampa, Temple Terrace and Plant City who pay a city for waste service should use their city's options for tires and bulky items. Limits: 5 intact electronic items per household per month (monitors, keyboards, routers and mice not counted); 10 one-gallon and 5 five-gallon paint containers per household per month; 12 tires per year. Businesses are not authorized to use CCCs. Hand unloading only. Paint/electronics limits: https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-paint-and-electronics. (813) 272-5680",
+    "source": "https://hcfl.gov/locations/wimauma-solid-waste-facility",
+    "checked": "2026-11-22",
+    "slug": "wimauma-solid-waste-facility",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Community Collection Centers page (fetched 2026-11-22): Batteries, paint and electronics: “Any County resident with a photo ID”; tires and bulky waste “Only available for County Solid Waste customers”."
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Wimauma Solid Waste Facility location page (fetched 2026-11-22): “Photo ID showing the Hillsborough County residential address of the property owner and a printed or digital copy of your current tax assessment are required … No ID is required for recyclables; photo ID only for batteries, paint, and electronics.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Wimauma Solid Waste Facility location page (fetched 2026-11-22): Items accepted here include “Tires”. Hillsborough County Community Collection Centers page (fetched 2026-11-22): Tires “Only available for County Solid Waste customers … Need a photo ID and a copy of your property tax bill … Limit of 12 tires per year”."
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Paint & Electronics page (fetched 2026-11-22): Accepted items: “Paint (latex and oil-based) Stain Varnish”; residents “can take paint and electronics … to CCC's during normal operating times.”"
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Paint & Electronics page (fetched 2026-11-22): Accepted electronics: “Computers (laptops, desktops, tablets) Computer components (monitors, keyboards, routers, mice) … Telephones/cellphones Televisions Printers, fax machines Radios, stereo components, VCR/DVD players”."
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Wimauma Solid Waste Facility location page (fetched 2026-11-22): Items accepted here include batteries (“Batteries”). Hillsborough County Discarding Batteries page (fetched 2026-11-22): alkaline batteries are not accepted at CCCs or HHW events."
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Hillsborough County Discarding Paint & Electronics page (fetched 2026-11-22): “Five (5) intact household electronic items are accepted per household each month at Community Collection Centers (CCC)”; paint “10 one-gallon containers and 5 five-gallon containers are accepted per household each month”. Hillsborough County Wimauma Solid Waste Facility location page (fetched 2026-11-22): “Residents may dispose of up to 12 tires per year as part of their annual assessment.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "Hillsborough County Wimauma Solid Waste Facility location page (fetched 2026-11-22): “Businesses are not authorized to use CCCs.”"
+     }
+    },
+    "operator": "Hillsborough County Solid Waste Management",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-22"
    }
   ],
   "note": ""
@@ -5932,7 +6124,7 @@
     "fees": "Free",
     "notes": "Baltimore City residents only; materials in original labeled packaging; no commercial vehicles. 410-396-7250",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "checked": "2026-11-21",
+    "checked": "2026-11-22",
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "questions": {
      "residents_only": {
@@ -5986,7 +6178,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-21"
+    "questions_reviewed": "2026-11-22"
    },
    {
     "name": "Eastern Residential Recycling Center",
@@ -8668,7 +8860,7 @@
     "fees": "Free",
     "notes": "City of Cleveland residents only",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "checked": "2026-11-21",
+    "checked": "2026-11-22",
     "slug": "carr-center-division-of-waste",
     "questions": {
      "residents_only": {
@@ -8722,7 +8914,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-21"
+    "questions_reviewed": "2026-11-22"
    },
    {
     "name": "Ridge Road Transfer Station",
@@ -8732,7 +8924,7 @@
     "fees": "Free for qualifying resident drop-offs; fee may apply beyond tire/dump limits",
     "notes": "City of Cleveland residents only; proof of residency required for drop-off",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "checked": "2026-11-21",
+    "checked": "2026-11-22",
     "slug": "ridge-road-transfer-station",
     "questions": {
      "residents_only": {
@@ -8786,7 +8978,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-21"
+    "questions_reviewed": "2026-11-22"
    },
    {
     "name": "Cuyahoga County Solid Waste District HQ (electronics drop-off bins)",
@@ -9754,9 +9946,9 @@
     "hours": "Event: Sat Nov 21, 2026, 8am–noon",
     "accepts": "Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint",
     "fees": "Free (Cuyahoga County HHW program)",
-    "notes": "Parma's 2026 HHW drop-off days were March 28, October 3 and November 21 (the first two have been held; November 21 is the last 2026 date and no 2027 dates are posted yet); the District says most communities accept waste only from their own residents, so call the city before going. Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public.",
+    "notes": "Parma's 2026 HHW drop-off days were March 28, October 3 and November 21 (all three have been held; no 2027 dates are posted yet); the District says most communities accept waste only from their own residents, so call the city before going. Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public.",
     "source": "https://cuyahogarecycles.org/recycle-in/parma/household_hazardous_waste/",
-    "checked": "2026-11-21",
+    "checked": "2026-11-22",
     "slug": "parma-service-garage-hhw-drop-off-day",
     "questions": {
      "residents_only": {
@@ -9810,7 +10002,7 @@
     },
     "operator": "City of Parma (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-21"
+    "questions_reviewed": "2026-11-22"
    },
    {
     "name": "Brecksville Service Garage (HHW drop-off)",
@@ -11172,7 +11364,7 @@
     "fees": "Fees apply to some items (e.g. computers/laptops with hard drives $5, LCD TV $25, CRT TV $28–$35, LCD monitor $10); many items free. Credit or debit cards only (no cash or checks)",
     "notes": "Central Virginia Waste Management Authority (CVWMA) contractor Securis runs this monthly event; CVWMA says it is open to all residents of Central Virginia. Item list and fee table: https://securis.com/events/richmond-recycling-events/",
     "source": "https://cvwma.com/cvwma-locations/henrico-2/",
-    "checked": "2026-11-21",
+    "checked": "2026-11-22",
     "slug": "securis-first-saturday-electronics-recycling-henrico",
     "questions": {
      "residents_only": {
@@ -11226,7 +11418,7 @@
     },
     "operator": "Securis (Central Virginia Waste Management Authority electronics recycling contractor)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-21"
+    "questions_reviewed": "2026-11-22"
    },
    {
     "name": "Hanover Route 301 Transfer Station",
@@ -11483,6 +11675,134 @@
     "operator": "Powhatan County Department of Public Works",
     "source_notice": "",
     "questions_reviewed": "2026-11-21"
+   },
+   {
+    "name": "New Kent County Main Refuse Site (Route 618)",
+    "address": "6301 Olivet Church Road, New Kent, VA 23124",
+    "hours": "Daily 7am–7pm (closed Thanksgiving, Christmas and New Year's Day)",
+    "accepts": "Televisions and computer monitors (one per day); lead-acid batteries; used paint; used motor oil, oil filters and antifreeze; empty propane tanks; scrap metal; appliances (washers, dryers, refrigerators, stoves); household brush up to 6 in. diameter; bagged leaves; household trash; drop-off recycling (cardboard, mixed paper, newspapers, aluminum, glass, plastics #1–7). Not accepted: tires, toxic chemicals, gasoline, automobile chassis, concrete and bricks, brush over 6 in.",
+    "fees": "No charge for county residents dropping off trash and recycling. CVWMA's New Kent guide lists a $15 fee to remove Freon from appliances",
+    "notes": "Operated by New Kent County General Services; county residents only. Proof of residency each visit: a New Kent refuse & recycling decal, a valid driver's license, or a signed Temporary Refuse & Recycling Authorization Form. Not designed for commercial waste or construction materials. Rechargeable batteries and small electronics per the CVWMA New Kent recycling guide: https://cvwma.com/recycling/new-kent/. The county's other three sites (Route 612 Quinton, Route 634 Barhamsville, Route 647 Lanexa) also take used motor oil, oil filters and antifreeze. (804) 966-2686",
+    "source": "https://www.newkent-va.us/300/Refuse-Recycling",
+    "checked": "2026-11-22",
+    "slug": "new-kent-county-main-refuse-site-route-618",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "New Kent County Refuse & Recycling page (fetched 2026-11-22): “These centers may be utilized by County residents dropping off their trash and recycling, at no charge.” “In order to use any of the refuse & recycling sites, you must show proof of residency.”"
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "New Kent County Refuse & Recycling page (fetched 2026-11-22): proof of residency by “(1) display of a New Kent refuse & recycling decal on your vehicle windshield, (2) providing your valid driver’s license each time you visit a refuse site or (3) possession of a signed Temporary Refuse & Recycling Authorization Form”."
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "Conditional — New Kent County Refuse & Recycling page (fetched 2026-11-22): trash and recycling drop-off is “at no charge” for County residents; CVWMA Recycling in New Kent guide (https://cvwma.com/recycling/new-kent/, fetched 2026-11-22): “Appliances ( $15 fee to remove Freon)”."
+     },
+     "tires": {
+      "answer": "no",
+      "evidence": "New Kent County Refuse & Recycling page (fetched 2026-11-22): Items Not Accepted: “Tires”."
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "Type not specified — New Kent County Refuse & Recycling page (fetched 2026-11-22): Main Refuse Site: “Lead acid batteries, empty propane tanks, used paint, scrap metals, and appliances … are accepted.”"
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "TVs and monitors — New Kent County Refuse & Recycling page (fetched 2026-11-22): Main Refuse Site “Accepts televisions or computer monitors for recycling, one per day.” CVWMA Recycling in New Kent guide (https://cvwma.com/recycling/new-kent/, fetched 2026-11-22): small appliances: “Recycle at permanent elctronics trailer at Main Refuse Convenience Center (Rt. 618)”."
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "New Kent County Refuse & Recycling page (fetched 2026-11-22): Main Refuse Site accepts “Lead acid batteries”. CVWMA Recycling in New Kent guide (https://cvwma.com/recycling/new-kent/, fetched 2026-11-22): “Rechargeable . Recycle at New Kent County Main Convenience Center on Route 618 (6301 Olivet Church Road)”; alkaline “Safe for disposal in your trash”."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "New Kent County Refuse & Recycling page (fetched 2026-11-22): “All sites will accept regular household waste and recyclable items including used motor oil, oil filters, anti-freeze …”"
+     },
+     "household_chemicals": {
+      "answer": "no",
+      "evidence": "New Kent County Refuse & Recycling page (fetched 2026-11-22): Items Not Accepted: “Toxic chemicals” and “Gasoline”."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "New Kent County Refuse & Recycling page (fetched 2026-11-22): “televisions or computer monitors for recycling, one per day”; “Household brush up to 6 inches in diameter.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "New Kent County Refuse & Recycling page (fetched 2026-11-22): “Sites are not designed to accept commercial waste or construction materials.”"
+     }
+    },
+    "operator": "New Kent County General Services Department",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-22"
+   },
+   {
+    "name": "Prince George County Convenience Center",
+    "address": "3100 Union Branch Road, South Prince George, VA 23805",
+    "hours": "Daily 7am–6pm during Daylight Saving Time (early March–early November); daily 8am–5pm during Eastern Standard Time. Closed New Year's Day, Easter Sunday, Memorial Day, July 4, Labor Day, Thanksgiving and Christmas Day; closes at noon New Year's Eve and Christmas Eve",
+    "accepts": "Car and light-duty truck tires (fee; no rims, no farm implement, tractor or commercial tires); electronics (TVs, monitors and terminals carry a fee); used motor oil only (no cooking oil); used antifreeze; fluorescent bulbs; NiCad and automotive batteries; appliances/items containing Freon (fee); mattresses and box springs (fee); household trash (by weight); recycling (glass, plastics, paper, cardboard, cans); yard waste and metals (by weight). Not accepted: propane tanks; oil-based paint and other household hazardous waste (county says to use a professional hazardous waste disposal company); latex paint goes in the trash once dried",
+    "fees": "Recycling: no charge. Trash and debris 6 cents per pound (minimum $3). Tires $10 each (varies by size). Televisions, monitors, terminals $30 each. Items containing Freon $20 each. Mattress or box spring $30 each",
+    "notes": "Operated by Meridian Waste for Prince George County. Residents present identification establishing county residency. Battery types per the county Recycling Centers page: https://www.princegeorgecountyva.gov/departments/general_services/convenience_center_-_refuse_recycling/recycling_centers.php. Department of General Services (804) 722-0775; center (804) 733-2795",
+    "source": "https://www.princegeorgecountyva.gov/departments/general_services/convenience_center_-_refuse_recycling/index.php",
+    "checked": "2026-11-22",
+    "slug": "prince-george-county-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Prince George County Convenience Center page (fetched 2026-11-22): “Any resident of Prince George County may dispose of household refuse in the containers at the convenience station for a fee when presenting identification establishing him or her as a resident of the County.”"
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "Prince George County Convenience Center page (fetched 2026-11-22): “when presenting identification establishing him or her as a resident of the County.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "Prince George County Convenience Center page (fetched 2026-11-22): “Recycling - NO CHARGE”; “All other trash and debris will be weighed and charged 6 Cents per pound”; “Minimum charge $3.00”; “Televisions, Monitors, Terminals - $30.00 each”; “Tires - $10.00 each (Varies per size)”; “Items containing Freon - $20.00 each”; “Mattress & Box Spring - $30.00 each”."
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Prince George County Convenience Center page (fetched 2026-11-22): “Tires - $10.00 each (Varies per size) NOT Accepting Farm Implement tires, Tractor Tires and any Commercial Tires. NO RIMS - Tires with RIMS will NOT be Accepted.”"
+     },
+     "paint": {
+      "answer": "no",
+      "evidence": "Prince George County Convenience Center page (fetched 2026-11-22): “Latex paint can be allowed to dry/harden and then placed with normal household trash for disposal. Oil based paint must be disposed of by a professional hazardous waste disposal company.”"
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Prince George County Convenience Center page (fetched 2026-11-22): expanded Recycling Area accepts “Electronics (Note: Televisions, Monitors, Terminals $30 Fee)”."
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Prince George County Recycling Centers page (fetched 2026-11-22): Convenience Station “Accepts … NiCad Batteries, automotive batteries, and used Motor Oil (no Cooking Oil).”"
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Prince George County Convenience Center page (fetched 2026-11-22): “Used Motor Oil Only (No Cooking Oil)”; “Used Anti-Freeze as of 5/1/2026”."
+     },
+     "household_chemicals": {
+      "answer": "no",
+      "evidence": "Prince George County Convenience Center page (fetched 2026-11-22): “Disposal of Household Hazardous items to include, oil based paints, pesticides …, paint thinners and solvents, unwanted fuels (gasoline, kerosene), unwanted household cleaners … must be disposed of by a professional hazardous waste disposal company.”"
+     },
+     "quantity_limits": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "businesses_accepted": {
+      "answer": "not stated by source",
+      "evidence": ""
+     }
+    },
+    "operator": "Meridian Waste for Prince George County (Department of General Services)",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-22"
    }
   ],
   "note": ""

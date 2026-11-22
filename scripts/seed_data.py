@@ -482,6 +482,41 @@ REVERIFIED21={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Resid
 for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED21: f["checked"]=D21
+# --- Nov 22 2026 daily pass additions (each verified against cited official source on 2026-11-22) ---
+D22="2026-11-22"
+NKS="https://www.newkent-va.us/300/Refuse-Recycling"
+add("Richmond",
+  F("New Kent County Main Refuse Site (Route 618)","6301 Olivet Church Road, New Kent, VA 23124","Daily 7am–7pm (closed Thanksgiving, Christmas and New Year's Day)",NKS,
+    "Televisions and computer monitors (one per day); lead-acid batteries; used paint; used motor oil, oil filters and antifreeze; empty propane tanks; scrap metal; appliances (washers, dryers, refrigerators, stoves); household brush up to 6 in. diameter; bagged leaves; household trash; drop-off recycling (cardboard, mixed paper, newspapers, aluminum, glass, plastics #1–7). Not accepted: tires, toxic chemicals, gasoline, automobile chassis, concrete and bricks, brush over 6 in.",
+    "No charge for county residents dropping off trash and recycling. CVWMA's New Kent guide lists a $15 fee to remove Freon from appliances",
+    "Operated by New Kent County General Services; county residents only. Proof of residency each visit: a New Kent refuse & recycling decal, a valid driver's license, or a signed Temporary Refuse & Recycling Authorization Form. Not designed for commercial waste or construction materials. Rechargeable batteries and small electronics per the CVWMA New Kent recycling guide: https://cvwma.com/recycling/new-kent/. The county's other three sites (Route 612 Quinton, Route 634 Barhamsville, Route 647 Lanexa) also take used motor oil, oil filters and antifreeze. (804) 966-2686",D22),
+  F("Prince George County Convenience Center","3100 Union Branch Road, South Prince George, VA 23805","Daily 7am–6pm during Daylight Saving Time (early March–early November); daily 8am–5pm during Eastern Standard Time. Closed New Year's Day, Easter Sunday, Memorial Day, July 4, Labor Day, Thanksgiving and Christmas Day; closes at noon New Year's Eve and Christmas Eve",
+    "https://www.princegeorgecountyva.gov/departments/general_services/convenience_center_-_refuse_recycling/index.php",
+    "Car and light-duty truck tires (fee; no rims, no farm implement, tractor or commercial tires); electronics (TVs, monitors and terminals carry a fee); used motor oil only (no cooking oil); used antifreeze; fluorescent bulbs; NiCad and automotive batteries; appliances/items containing Freon (fee); mattresses and box springs (fee); household trash (by weight); recycling (glass, plastics, paper, cardboard, cans); yard waste and metals (by weight). Not accepted: propane tanks; oil-based paint and other household hazardous waste (county says to use a professional hazardous waste disposal company); latex paint goes in the trash once dried",
+    "Recycling: no charge. Trash and debris 6 cents per pound (minimum $3). Tires $10 each (varies by size). Televisions, monitors, terminals $30 each. Items containing Freon $20 each. Mattress or box spring $30 each",
+    "Operated by Meridian Waste for Prince George County. Residents present identification establishing county residency. Battery types per the county Recycling Centers page: https://www.princegeorgecountyva.gov/departments/general_services/convenience_center_-_refuse_recycling/recycling_centers.php. Department of General Services (804) 722-0775; center (804) 733-2795",D22))
+HCC="https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/community-collection-centers-ccc"
+hccacc="Electronics (computers, monitors, keyboards, routers, phones, TVs, printers, fax machines, radios, stereo components, VCR/DVD players); paint (latex and oil-based), stain and varnish; rechargeable batteries (individually bagged) and lead-acid batteries (auto, marine, motorcycle); tires; appliances and bulky items; scrap metal; recycling drop-off. Not accepted: alkaline batteries, commercial waste, large batteries over 12 x 12 in."
+hccfee="Residential customers' annual solid waste assessment includes 10 cubic yards of bulky waste/appliance disposal per year and up to 12 tires per year; tires over 12 per year must go to the Southeast County Landfill at the tipping fee"
+hccnote=("Hillsborough County Community Collection Center (CCC). Bring a photo ID with your Hillsborough County residential address (photo ID only for batteries, paint and electronics; no ID for recyclables). Tires, bulky waste and appliances are only for County Solid Waste customers and also need a printed or digital copy of your current property tax bill; residents of Tampa, Temple Terrace and Plant City who pay a city for waste service should use their city's options for tires and bulky items. "
+  "Limits: 5 intact electronic items per household per month (monitors, keyboards, routers and mice not counted); 10 one-gallon and 5 five-gallon paint containers per household per month; 12 tires per year. Businesses are not authorized to use CCCs. Hand unloading only. Paint/electronics limits: https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-paint-and-electronics. (813) 272-5680")
+add("Tampa",
+  F("Northwest County Solid Waste Facility (Community Collection Center)","8001 W. Linebaugh Ave., Tampa, FL 33625","Mon–Sat 7:30am–5pm","https://hcfl.gov/locations/northwest-county-solid-waste-facility",hccacc+"; yard and wood waste; cooking oil (CORE cabinet); donation drop-off",hccfee,hccnote,D22),
+  F("Alderman's Ford Solid Waste Facility (Community Collection Center)","9402 County Road 39, Plant City, FL 33567","Mon–Sat 7:30am–5pm (hand-unloading only)","https://hcfl.gov/locations/aldermans-ford-solid-waste-facility",hccacc,hccfee,hccnote,D22),
+  F("Wimauma Solid Waste Facility (Community Collection Center)","16180 West Lake Drive, Wimauma, FL 33598","Mon–Sat 7:30am–5pm","https://hcfl.gov/locations/wimauma-solid-waste-facility",hccacc,hccfee,hccnote,D22))
+# Re-verified against the official page on 2026-11-22. Boston's events list now shows no upcoming Zero Waste Day; Parma's Nov 21 day (last 2026 date) has been held.
+for m in M:
+    for f in m["facilities"]:
+        if f["name"]=="Zero Waste Day Drop-Off – Millennium Park":
+            f["notes"]="Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. The Nov 21, 2026 event has been held, and as of Nov 22 the City's Zero Waste Days page says there are no related events available; no next date is posted yet."
+        if f["name"]=="Parma Service Garage (HHW drop-off day)":
+            f["notes"]=f["notes"].replace("March 28, October 3 and November 21 (the first two have been held; November 21 is the last 2026 date and no 2027 dates are posted yet)","March 28, October 3 and November 21 (all three have been held; no 2027 dates are posted yet)")
+REVERIFIED22={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Residential Recycling Center (HHW days)","DPW Special Waste Collection Event – RFK Stadium Lot 8",
+  "Carr Center (Division of Waste)","Ridge Road Transfer Station","Parma Service Garage (HHW drop-off day)","Securis First Saturday Electronics Recycling (CVWMA)",
+  "Sheldon Road HHW Collection Center","South County HHW Collection","Hillsborough Heights HHW Collection Site"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED22: f["checked"]=D22
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re
