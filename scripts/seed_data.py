@@ -517,6 +517,35 @@ REVERIFIED22={"Zero Waste Day Drop-Off – Millennium Park","Sisson Street Resid
 for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED22: f["checked"]=D22
+# --- Nov 23 2026 daily pass additions (each verified against cited official source on 2026-11-23) ---
+D23="2026-11-23"
+add("Cleveland",
+  F("Brook Park Service Garage (HHW drop-off)","19065 Holland Road, Brook Park, OH","Year-round. April–November: Mon–Fri 8am–7pm and Sat 9am–1pm. November–April: Saturdays only, 9am–1pm",CUYU.format("brookpark"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the Brook Park Service Garage; "+CUYCALL+CUY,D23))
+NKA="Used motor oil, oil filters and antifreeze; household trash; bagged leaves; drop-off recycling (corrugated cardboard, mixed paper and boxes, newspapers, aluminum, glass, plastics #1–7; no plastic bags or Styrofoam). Not accepted: tires, toxic chemicals, gasoline, automobile chassis, concrete and bricks, brush over 6 in. TVs/monitors, lead-acid batteries, paint and appliances are listed only for the Main Refuse Site (Route 618)"
+NKN="Operated by New Kent County General Services; county residents only. Proof of residency each visit: a New Kent refuse & recycling decal, a valid driver's license, or a signed Temporary Refuse & Recycling Authorization Form. Closed-toe shoes required. Not designed for commercial waste or construction materials. Closed Thanksgiving, Christmas and New Year's Day. General Services (804) 966-8514. "
+add("Richmond",
+  F("New Kent County Refuse Site (Route 612, Quinton)","7050 Airport Drive, Quinton, VA 23141","Daily 7am–8pm (closed Thanksgiving, Christmas and New Year's Day)",NKS,NKA,"No charge for county residents",NKN+"Site phone (804) 932-8745",D23),
+  F("New Kent County Refuse Site (Route 634, Barhamsville)","17120 Polishtown Road, Barhamsville, VA 23011","Mon–Wed and Fri–Sat 7am–7pm; Sun 10am–7pm; closed Thu (and Thanksgiving, Christmas, New Year's Day)",NKS,NKA,"No charge for county residents",NKN+"Site phone (804) 843-3496",D23),
+  F("New Kent County Refuse Site (Route 647, Lanexa)","12400 Old Telegraph Road, Lanexa, VA 23089","Tue–Sat 7am–7pm; Sun 10am–7pm; closed Mon (and Thanksgiving, Christmas, New Year's Day)",NKS,NKA,"No charge for county residents",NKN+"Site phone (804) 966-5203",D23))
+add("Columbus",
+  F("SWACO Recycling Convenience Center","2566 Jackson Pike, Columbus, OH 43223","Mon–Fri 9:30am–5pm; Sat 9am–4pm (see SWACO's 2026 holiday schedule for limited hours and closures)","https://www.swaco.org/disposal/facilities/recycling-convenience-center/",
+    "Tires (fee); car batteries; motor oil, oil filters and antifreeze; electronics: CRT and flat computer monitors, CRT and LCD TVs (fees), household electronics including cell phones, printers and VCRs, string lights; household batteries including alkaline and lithium-ion, and power batteries; paint: latex, oil-based and spray paint; fluorescent bulbs and CFLs; appliances (including Freon appliances); fats, oils and grease; food scraps; select yard waste; scrap metal; bicycles; Styrofoam; paper shredding; mattresses and box springs (until Nov 30, 2026); basic recycling (cardboard, paper, cartons, glass, cans, plastic bottles). Not accepted: soil or dirt, treated wood",
+    "Fees for some items: tires $5.00 each; LCD TV $15.00; CRTs under 20 in. $25.00, under 35 in. $35.00, over 35 in. $45.00 (fees subject to change). Credit, debit or check only; 3% card processing fee",
+    "Operated by the Solid Waste Authority of Central Ohio (SWACO) for Franklin County residents only. Household chemicals not taken here go to SWACO's free HHW Facility at 645 E. 8th Avenue. SWACO (614) 871-5100",D23))
+add("Kansas City",
+  F("KCMO Waste Tire Drop-Off (Environmental Campus)","4707 Deramus Ave., Kansas City, MO 64120","First Saturday of each month, March through November (except holidays), 8am–noon. No December–February drop-off days",
+    "https://www.kcmo.gov/city-hall/trash/ncap",
+    "Waste tires, rimmed or rimless: car, truck, tractor, lawnmower and bike tires; rims without tires",
+    "Cash only. Car tire $1.50 rimless / $3.00 on rim; truck tire $4.00 / $8.00; tractor tire $11.00 / $17.00; rim without tire $0.50; lawnmower or bike tire $0.50; $2.00 extra per muddy tire. Neighborhood groups with an approved letter drop off at no charge",
+    "City of Kansas City, MO residents only; proof of residence required. Not intended for businesses. Tires are not collected with residential trash. Questions: Arthur.Baker@kcmo.org. KCMO 311: 816-513-1313",D23))
+# Re-verified against the official page on 2026-11-23 (event dates unchanged; source-backed answers reviewed).
+REVERIFIED23={"Sisson Street Residential Recycling Center (HHW days)","DPW Special Waste Collection Event – RFK Stadium Lot 8",
+  "Carr Center (Division of Waste)","Ridge Road Transfer Station","Securis First Saturday Electronics Recycling (CVWMA)",
+  "SWACO Household Hazardous Waste Drop-Off","Household Hazardous Waste Facility","Jefferson Parish Metairie Drop-Off Site","Jefferson Parish Marrero Drop-Off Site"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED23 and not (f["name"]=="Household Hazardous Waste Facility" and m["city"]!="Kansas City"): f["checked"]=D23
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

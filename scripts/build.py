@@ -74,6 +74,7 @@ for m in D: states.setdefault((m["state"],m["st"]),[]).append(m)
 cpath=lambda m:f"/{slug(m['st'])}/{slug(m['city'])}/"
 fpath=lambda f,m:cpath(m)+f["slug"]+"/"
 
+MAT_H1={"household-chemicals":"hazardous waste","tires":"tires","e-waste":"e-waste","paint":"paint","motor-oil":"motor oil","batteries":"batteries"}  # city H1 priority order
 MAT_SHORT={"e-waste":"electronics","household-chemicals":"household chemicals","motor-oil":"motor oil","paint":"paint","tires":"tires","batteries":"batteries"}
 ORG_ID=BASE+"/#organization"
 DAY_ABBR=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
@@ -606,8 +607,10 @@ for (sn,st),ms in sorted(states.items()):
         have=[(s,n) for s,n,_ in MAT if m in matidx[s]]
         nearby=[o for o in ms if o is not m]
         ans_html,faq=faq_block(city_qas(m, have))
-        h1=f'Where to dump hazardous waste, paint & e-waste in {m["city"]}, {st}'
-        body=(vis+f'<h1>Where to dump hazardous waste, paint &amp; e-waste in {e(m["city"])}, {st}</h1>'+note+ans_html
+        # H1 names only materials this city's listings actually accept (same source-backed index as the title), not a fixed phrase.
+        hs={s for s,_ in have}; hl=[w for k,w in MAT_H1.items() if k in hs][:3]
+        h1=f'Where to dump {and_list(hl) if hl else "household hazardous waste"} in {m["city"]}, {st}'
+        body=(vis+f'<h1>{e(h1)}</h1>'+note+ans_html
               +"".join(fac(f,m) for f in fs)+("<p>No permanent drop-off site listed yet. See the note above for event-based or alternate official options, and check back after the next source review.</p>" if not fs else "")
               +weekend_block(m)
               +(f'<h2>By material</h2><p class="tags">'+" ".join(f'<a href="/{s}/">{e(n)} drop-off</a>' for s,n in have)+"</p>" if have else "")
@@ -619,10 +622,16 @@ for (sn,st),ms in sorted(states.items()):
         what=", ".join(n.split(" (")[0].lower() for _,n in have[:4]) or "household hazardous waste"
         desc=(f"{plural(len(fs),'official drop-off site')} in {m['city']}, {st} for {what}: addresses, hours, fees and source links, last checked {chk}." if fs
               else f"How {m['city']}, {st} handles household hazardous waste, from official sources.")
-        collection={"@type":"CollectionPage","@id":BASE+cp+"#page","url":BASE+cp,"name":h1,"publisher":{"@id":ORG_ID}}
+        collection={"@type":"CollectionPage","@id":BASE+cp+"#page","url":BASE+cp,"name":h1,"publisher":{"@id":ORG_ID},"isPartOf":{"@id":BASE+"/#website"}}
         cites=unique_sources(fs)
         if cites: collection["citation"]=[{"@type":"WebPage","url":u} for u in cites]
-        graph=[bl,collection]+[ldj(f,m) for f in fs]+([faq] if faq else [])
+        # City pages: ItemList of the facility pages they link to (same names and URLs as the visible cards).
+        sites=[]
+        if fs:
+            collection["mainEntity"]={"@id":BASE+cp+"#sites"}
+            sites=[{"@type":"ItemList","@id":BASE+cp+"#sites","name":f'Official drop-off sites in {m["city"]}, {st}',"numberOfItems":len(fs),
+                    "itemListElement":[{"@type":"ListItem","position":k+1,"name":f["name"],"url":BASE+fpath(f,m)} for k,f in enumerate(fs)]}]
+        graph=[bl,collection]+sites+[ldj(f,m) for f in fs]+([faq] if faq else [])
         page(cp,title,desc,body,graph,chk)
     vis,bl=crumbs([("Home","/"),(sn,sp)])
     nst=sum(len(m["facilities"]) for m in ms)

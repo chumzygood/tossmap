@@ -17,6 +17,9 @@ https://tossmap.com/va/richmond/goochland-western-convenience-center/
 https://tossmap.com/va/richmond/powhatan-county-convenience-center/
 https://tossmap.com/va/richmond/new-kent-county-main-refuse-site-route-618/
 https://tossmap.com/va/richmond/prince-george-county-convenience-center/
+https://tossmap.com/va/richmond/new-kent-county-refuse-site-route-612-quinton/
+https://tossmap.com/va/richmond/new-kent-county-refuse-site-route-634-barhamsville/
+https://tossmap.com/va/richmond/new-kent-county-refuse-site-route-647-lanexa/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-port-richmond/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northwest-philadelphia/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northeast-philadelphia/
@@ -62,6 +65,7 @@ https://tossmap.com/oh/cleveland/richmond-heights-service-garage-hhw/
 https://tossmap.com/oh/cleveland/linndale-village-service-garage-hhw/
 https://tossmap.com/oh/cleveland/bratenahl-village-service-garage-hhw/
 https://tossmap.com/oh/cleveland/orange-village-service-department-hhw/
+https://tossmap.com/oh/cleveland/brook-park-service-garage-hhw/
 https://tossmap.com/ky/louisville/haz-bin/
 https://tossmap.com/ky/louisville/waste-reduction-center/
 https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-bronx/
@@ -157,8 +161,12 @@ https://tossmap.com/ca/riverside/palm-springs-hhw-facility/
 https://tossmap.com/ut/salt-lake-city/salt-lake-county-hhw-collection-center/
 https://tossmap.com/ut/salt-lake-city/trans-jordan-landfill-hhw/
 https://tossmap.com/ut/salt-lake-city/salt-lake-valley-landfill-hhw/
+https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/
+https://tossmap.com/oh/columbus/swaco-recycling-convenience-center/
 https://tossmap.com/in/indianapolis/toxdrop-traders-point-collection-facility/
 https://tossmap.com/in/indianapolis/toxdrop-perry-township-government-center/
+https://tossmap.com/mo/kansas-city/household-hazardous-waste-facility/
+https://tossmap.com/mo/kansas-city/kcmo-waste-tire-drop-off-environmental-campus/
 https://tossmap.com/nv/las-vegas/republic-services-hhw-north-las-vegas/
 https://tossmap.com/nv/las-vegas/republic-services-hhw-henderson/
 https://tossmap.com/wi/milwaukee/mmsd-south-drop-off-center/
@@ -174,12 +182,10 @@ https://tossmap.com/dc/washington/dpw-special-waste-collection-event-rfk-stadium
 https://tossmap.com/nm/albuquerque/hhw-collection-center-safety-kleen/
 https://tossmap.com/tx/austin/recycle-reuse-drop-off-center/
 https://tossmap.com/oh/cincinnati/cincinnati-recycling-reuse-hub/
-https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/
 https://tossmap.com/co/denver/rooney-road-recycling-center/
 https://tossmap.com/mi/detroit/erg-environmental-services-wayne-county-hhw/
 https://tossmap.com/ca/fresno/environmental-compliance-center/
 https://tossmap.com/fl/jacksonville/household-hazardous-waste-facility/
-https://tossmap.com/mo/kansas-city/household-hazardous-waste-facility/
 https://tossmap.com/tn/memphis/shelby-county-hhw-facility/
 https://tossmap.com/ok/oklahoma-city/household-hazardous-waste-collection-center/
 https://tossmap.com/ne/omaha/under-the-sink/
