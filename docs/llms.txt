@@ -2,16 +2,16 @@
 
 > TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
 
-Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 199 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 206 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
-- [Paint](https://tossmap.com/paint/): 130 official listings in 50 metro areas
-- [Electronics (e-waste)](https://tossmap.com/e-waste/): 87 official listings in 28 metro areas
-- [Tires](https://tossmap.com/tires/): 89 official listings in 25 metro areas
-- [Batteries](https://tossmap.com/batteries/): 130 official listings in 50 metro areas
-- [Motor oil](https://tossmap.com/motor-oil/): 86 official listings in 24 metro areas
-- [Household chemicals](https://tossmap.com/household-chemicals/): 121 official listings in 48 metro areas
+- [Paint](https://tossmap.com/paint/): 134 official listings in 50 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 93 official listings in 28 metro areas
+- [Tires](https://tossmap.com/tires/): 93 official listings in 25 metro areas
+- [Batteries](https://tossmap.com/batteries/): 135 official listings in 50 metro areas
+- [Motor oil](https://tossmap.com/motor-oil/): 94 official listings in 25 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 125 official listings in 48 metro areas
 
 ## Cities
 - [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
@@ -76,6 +76,10 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Sisson Street Residential Recycling Center (HHW days) — Baltimore, MD](https://tossmap.com/md/baltimore/sisson-street-residential-recycling-center-hhw-days/)
 - [Eastern Residential Recycling Center — Baltimore, MD](https://tossmap.com/md/baltimore/eastern-residential-recycling-center/)
 - [Northwest Transfer Station (residential drop-off) — Baltimore, MD](https://tossmap.com/md/baltimore/northwest-transfer-station-residential-drop-off/)
+- [Quarantine Road Landfill & Residential Recycling Center — Baltimore, MD](https://tossmap.com/md/baltimore/quarantine-road-landfill-residential-recycling-center/)
+- [Baltimore County Eastern Sanitary Landfill Drop-Off Center (White Marsh) — Baltimore, MD](https://tossmap.com/md/baltimore/baltimore-county-eastern-sanitary-landfill-drop-off-white-marsh/)
+- [Baltimore County Central Acceptance Facility (Cockeysville) — Baltimore, MD](https://tossmap.com/md/baltimore/baltimore-county-central-acceptance-facility-cockeysville/)
+- [Baltimore County Western Acceptance Facility (Halethorpe) — Baltimore, MD](https://tossmap.com/md/baltimore/baltimore-county-western-acceptance-facility-halethorpe/)
 - [Zero Waste Day Drop-Off – Millennium Park — Boston, MA](https://tossmap.com/ma/boston/zero-waste-day-drop-off-millennium-park/)
 - [Compost Central Disposal & Recycling Center — Charlotte, NC](https://tossmap.com/nc/charlotte/compost-central-disposal-recycling-center/)
 - [Foxhole Disposal & Recycling Center — Charlotte, NC](https://tossmap.com/nc/charlotte/foxhole-disposal-recycling-center/)
@@ -111,6 +115,7 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Bratenahl Village Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/bratenahl-village-service-garage-hhw/)
 - [Orange Village Service Department (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/orange-village-service-department-hhw/)
 - [Brook Park Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/brook-park-service-garage-hhw/)
+- [Bay Village Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/bay-village-service-garage-hhw/)
 - [SWACO Household Hazardous Waste Drop-Off — Columbus, OH](https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/)
 - [SWACO Recycling Convenience Center — Columbus, OH](https://tossmap.com/oh/columbus/swaco-recycling-convenience-center/)
 - [Dallas County Home Chemical Collection Center — Dallas, TX](https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/)
@@ -269,6 +274,8 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Landfill & Resource Recovery Center HHW — Virginia Beach, VA](https://tossmap.com/va/virginia-beach/landfill-resource-recovery-center-hhw/)
 - [Fort Totten Transfer Station (tires) — Washington, DC](https://tossmap.com/dc/washington/fort-totten-transfer-station-tires/)
 - [DPW Special Waste Collection Event – RFK Stadium Lot 8 — Washington, DC](https://tossmap.com/dc/washington/dpw-special-waste-collection-event-rfk-stadium-lot-8/)
+- [Fairfax County I-66 Transfer Station (HHW & e-waste) — Washington, DC](https://tossmap.com/dc/washington/fairfax-county-i-66-transfer-station-hhw-e-waste/)
+- [Fairfax County I-95 Landfill Complex (HHW & e-waste) — Washington, DC](https://tossmap.com/dc/washington/fairfax-county-i-95-landfill-complex-hhw-e-waste/)
 
 ## Optional
 - [Privacy](https://tossmap.com/privacy.html)

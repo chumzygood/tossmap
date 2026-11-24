@@ -58,7 +58,34 @@ def crumbs(items):
     vis='<p class="crumbs">'+" › ".join(f'<a href="{u}">{e(n)}</a>' for n,u in items)+"</p>"
     ld={"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":i+1,"name":n,"item":BASE+u} for i,(n,u) in enumerate(items)]}
     return vis,ld
+# Hand-written titles/metas for pages that get Search Console impressions (Nov 24 review). Every claim is checked against the listing data;
+# keep titles near 60 chars and metas near 155. Pages not listed here use the generated templates.
+SEO_OVERRIDE={
+ "/or/portland/":("Portland, OR battery, paint & hazardous waste disposal | TossMap",
+   "Battery, paint and household hazardous waste disposal in Portland, OR: Metro Central (NW 61st Ave) and Metro South (Oregon City). Hours, limits, fees, sources."),
+ "/tx/dallas/":("Dallas tire, e-waste, paint & battery drop-off sites | TossMap",
+   "Dallas, TX drop-offs: tires and electronics at McCommas Bluff and 3 transfer stations; paint and batteries at the Dallas County Home Chemical Center."),
+ "/ca/san-francisco/":("San Francisco paint, battery & HHW disposal (Recology) | TossMap",
+   "Recology SF Household Hazardous Waste Facility, 501 Tunnel Ave: paint, batteries, motor oil and chemicals, Thu–Sat 8am–4pm. SF residents only; ID required."),
+ "/ne/omaha/":("Under the Sink Omaha: hazardous waste & paint drop-off | TossMap",
+   "Omaha's household hazardous waste drop-off is Under the Sink, 4001 S 120th St: paint, batteries, motor oil and chemicals for Douglas and Sarpy County homes."),
+ "/ne/omaha/under-the-sink/":("Under The Sink Omaha: hours, accepted items & fees | TossMap",
+   "Under The Sink, 4001 S 120th St, Omaha: household chemical drop-off for Douglas & Sarpy County homes. Paint, batteries, motor oil; Wed–Fri, Sat by appointment."),
+ "/oh/cincinnati/cincinnati-recycling-reuse-hub/":("Cincinnati Recycling & Reuse Hub: e-waste & tires | TossMap",
+   "Cincinnati Recycling & Reuse Hub, 911 Evans St: drop off electronics, TVs, car and bike tires, batteries and bulbs. Tue, Thu and Sat hours, item fees, closures."),
+ "/tx/fort-worth/environmental-collection-center/":("Fort Worth Environmental Collection Center hours | TossMap",
+   "Fort Worth Environmental Collection Center, 6400 Bridge St: paint, batteries, auto fluids, cleaners and pool chemicals. Thu–Fri 11am–7pm, Sat 9am–3pm."),
+ "/ca/los-angeles/ucla-s-a-f-e-collection-center/":("UCLA S.A.F.E. Center: free HHW & e-waste drop-off, LA | TossMap",
+   "UCLA S.A.F.E. Collection Center, 550 Charles E Young Dr: free drop-off for paint, motor oil, e-waste, batteries and sharps. Fri, Sat, first Sun 9am–3pm."),
+ "/nc/raleigh/south-wake-multi-material-recycling-facility/":("South Wake Recycling Facility, Apex: e-waste & oil | TossMap",
+   "South Wake Multi-Material Recycling Facility, 6130 Old Smithfield Rd, Apex, NC: electronics, large appliances, motor oil and antifreeze. Mon–Sat 8am–4pm."),
+ "/ca/san-jose/santa-clara-county-hhw-san-jose/":("Santa Clara County HHW San Jose: appointments & items | TossMap",
+   "Santa Clara County HHW drop-off, 1608 Las Plumas Ave, San Jose: free, by appointment Thu–Sat with proof of residency. Paint, batteries, chemicals, auto fluids."),
+}
+# City pages whose main facility has a well-known name people search for: H1 and first FAQ name it (data comes from that listing).
+CITY_NAMED={("NE","Omaha"):"Under The Sink"}
 def page(path,title,desc,body,graph=(),checked=None):
+    title,desc=SEO_OVERRIDE.get(path,(title,desc))
     urls.append((path,checked or STATIC_LASTMOD)); p=f"{OUT}{path}"+("index.html" if path.endswith("/") else "")
     os.makedirs(os.path.dirname(p),exist_ok=True)
     ld=ldscript({"@context":"https://schema.org","@graph":list(graph)}) if graph else ""
@@ -272,6 +299,8 @@ def city_overview_qa(m):
     city,st,fs=m["city"],m["st"],m["facilities"]
     note=(m.get("note") or "").strip()
     q=f"Where can I drop off hazardous waste in {city}?"
+    named=next((f for f in fs if f["name"]==CITY_NAMED.get((st,city))),None)
+    if named: q=f"Where can I drop off hazardous waste in {city} (Under the Sink)?" if named["name"]=="Under The Sink" else f"Where can I drop off hazardous waste in {city} ({named['name']})?"
     if not fs:
         parts=[f"TossMap does not list a permanent drop-off site in {city}, {st}."]
         if note: parts.append(note)
@@ -285,6 +314,7 @@ def city_overview_qa(m):
     elif have: mat_list=have[0]
     else: mat_list="the materials named in the listings"
     parts=[]
+    if named: parts.append(f'{city}\'s household hazardous waste drop-off is {named["name"]} at {named["address"]}. Hours recorded: {named["hours"]}.')
     if standing and not events:
         n=len(standing)
         parts.append(f"TossMap lists {n} official drop-off site{'s' if n!=1 else ''} in {city}, {st}.")
@@ -447,20 +477,20 @@ def material_seo(s, n, nsites, nmetros):
         h1="Electronics (e-waste) recycling near you: official drop-off sites by city"
         desc=f"Electronics and e-waste recycling near you: {nsites} official drop-off sites in {nmetros} US metros, with accepted items, hours, fees and a source link for every listing."
     elif s=="batteries":
-        title=f"Battery recycling near me: {nsites} official drop-off sites by city | TossMap"
+        title=f"Battery disposal & recycling near me: {nsites} sites | TossMap"
         h1="Battery recycling and disposal near you"
         # Battery types differ by site (some take only vehicle/lead-acid batteries); each listing states what it takes.
-        desc=f"Battery recycling and disposal near you: {nsites} official drop-off sites in {nmetros} US metros. Accepted battery types, hours and a source link for every listing."
+        desc=f"Battery disposal near you: {nsites} official drop-off sites in {nmetros} US metros, from Portland to NYC. Battery types each site takes, hours and source links."
     elif s=="household-chemicals":
         title=f"Household hazardous waste disposal near me: {nsites} sites by city | TossMap"
         h1="Household hazardous waste disposal near you"
         # Do not claim every listing takes cleaners and pesticides; those appear on some, not all, household-chemicals sites.
         desc=f"Household hazardous waste (HHW) disposal near you: {nsites} official drop-off sites in {nmetros} US metros, with hours, limits and source links."
     elif s=="paint":
-        title=f"Paint disposal near me: {nsites} official drop-off sites by city | TossMap"
+        title=f"Paint disposal near me: {nsites} official drop-off sites | TossMap"
         h1="Paint disposal near you: where to drop off old paint"
         # Many sites take only oil-based paint (no latex); each listing states which.
-        desc=f"Paint disposal near you: {nsites} official drop-off sites in {nmetros} US metros. Some take only oil-based paint, not latex; each listing shows what it accepts, hours and a source link."
+        desc=f"Where to dispose of paint near you: {nsites} official drop-off sites in {nmetros} US metros. Some take only oil-based paint; each listing says what it accepts."
     elif s=="motor-oil":
         title=f"Used motor oil disposal near me: {nsites} official drop-off sites | TossMap"
         h1="Used motor oil recycling and disposal near you"
@@ -469,7 +499,7 @@ def material_seo(s, n, nsites, nmetros):
 
 def material_page_qas(s, n, nsites, nmetros):
     low=n.split(" (")[0].lower()
-    lead_q={"tires":"Where is tire disposal near me?","e-waste":"Where can I recycle electronics near me?","batteries":"Where can I recycle batteries near me?","paint":"Where can I get rid of old paint near me?","motor-oil":"Where can I recycle used motor oil near me?","household-chemicals":"Where can I dispose of household hazardous waste near me?"}.get(s,f"Where can I drop off {low} near you?")
+    lead_q={"tires":"Where is tire disposal near me?","e-waste":"Where can I recycle electronics near me?","batteries":"Where can I recycle batteries near me?","paint":"Where can I dispose of paint near me?","motor-oil":"Where can I recycle used motor oil near me?","household-chemicals":"Where can I dispose of household hazardous waste near me?"}.get(s,f"Where can I drop off {low} near you?")
     lead=(f"TossMap lists {nsites} official drop-off site{'s' if nsites!=1 else ''} in {nmetros} US metro area{'s' if nmetros!=1 else ''} that list {low} as accepted. "
           "Rules, limits and residency requirements vary. Each city section below links to the listing and its official source, with a last-checked date. "
           "Confirm with that source before you go.")
@@ -610,6 +640,8 @@ for (sn,st),ms in sorted(states.items()):
         # H1 names only materials this city's listings actually accept (same source-backed index as the title), not a fixed phrase.
         hs={s for s,_ in have}; hl=[w for k,w in MAT_H1.items() if k in hs][:3]
         h1=f'Where to dump {and_list(hl) if hl else "household hazardous waste"} in {m["city"]}, {st}'
+        named=CITY_NAMED.get((m["st"],m["city"]))
+        if named and any(f["name"]==named for f in fs): h1=f'{named}: where to dump {and_list(hl) if hl else "household hazardous waste"} in {m["city"]}, {st}'
         body=(vis+f'<h1>{e(h1)}</h1>'+note+ans_html
               +"".join(fac(f,m) for f in fs)+("<p>No permanent drop-off site listed yet. See the note above for event-based or alternate official options, and check back after the next source review.</p>" if not fs else "")
               +weekend_block(m)

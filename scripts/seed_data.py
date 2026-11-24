@@ -546,6 +546,60 @@ REVERIFIED23={"Sisson Street Residential Recycling Center (HHW days)","DPW Speci
 for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED23 and not (f["name"]=="Household Hazardous Waste Facility" and m["city"]!="Kansas City"): f["checked"]=D23
+# --- Nov 24 2026 daily pass additions (each verified against cited official source on 2026-11-24) ---
+D24="2026-11-24"
+add("Cleveland",
+  F("Bay Village Service Garage (HHW drop-off)","31300 Naigle Road, Bay Village, OH","Seasonal: last Friday of each month, March–October, 7:30am–3pm; 2026 Saturday drop-offs Apr 25 and Sep 26, 8am–noon. No drop-off dates in January, February, November or December",CUYU.format("bay-village"),
+    CUYACC+". Bay Village also does not take ammunition, medical waste or smoke detectors","Free (Cuyahoga County HHW program)","Drop-off is at the Bay Village Service Garage; "+CUYCALL+CUY+" Bay Village Service Department (440) 871-1221",D24))
+BALG2="https://www.baltimorecity.gov/publicworks/trash-recycling/drop-off-center-guide"
+add("Baltimore",
+  F("Quarantine Road Landfill & Residential Recycling Center","6100 Quarantine Road, Baltimore, MD","Mon–Sat 9am–3:30pm (small/large haulers and landfill use: Mon–Sat 9am–3:30pm)",BAL,balacc,
+    "Free for Baltimore City residents dropping off recycling, electronics, appliances and household waste. Effective Nov 1, 2025, $135 per ton for commercial haulers and for residents disposing of non-hazardous solid waste at the landfill; residential C&D accepted only here, at the scale house, for $135 per ton",
+    balnote+". Small haulers with a valid permit may use this site, and all large haulers must use it. Does not accept hazardous C&D materials, lead-based or asbestos-containing materials, or free-flowing liquids such as wet paint. 410-396-3772",D24))
+BCO="https://www.baltimorecountymd.gov/departments/public-works/solid-waste/drop-off-centers"
+BCM="https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials"
+bcfee="In most cases free for Baltimore County residents, up to 10 visits per year; after 10 visits, materials must go to the Eastern Sanitary Landfill at a prorated $125 per ton. Commercial haulers need a Baltimore County commercial account (MSW $125/ton, special handling $200/ton, organics and brush $65/ton); non-account holders pay a $10 minimum per transaction"
+bcnote=("Operated by the Baltimore County Bureau of Solid Waste Management (Baltimore County, Maryland — separate from Baltimore City) for county residents; commercial haulers need a county commercial account. "
+  "Item-by-facility rules: "+BCM+". Customer service for all three county drop-off centers: 410-887-2000")
+bcbase="Tires: up to four clean passenger tires, off rims (no racing slicks); electronics (PCs, VCRs, phones, TVs, monitors; residential only); used motor oil, diesel, heating and hydraulic oil (max 25 gallons, no 55-gallon drums); antifreeze; lead-acid (auto, boat) and rechargeable household/tool batteries; propane tanks up to 20 lb; mercury thermometers and thermostats; fluorescent bulbs (10 per visit); scrap metal; single-stream recycling; household trash; yard materials"
+add("Baltimore",
+  F("Baltimore County Eastern Sanitary Landfill Drop-Off Center (White Marsh)","6259 Days Cove Road, White Marsh, MD 21162","Mon–Sat 7:30am–3:30pm (no admittance after 3:15pm)",BCO,
+    bcbase+"; gasoline (max 25 gallons). Not accepted here: paint, household chemicals/solvents and pesticides (take those to the Central Acceptance Facility in Cockeysville)",bcfee,bcnote,D24),
+  F("Baltimore County Central Acceptance Facility (Cockeysville)","201 West Warren Road, Cockeysville, MD 21030","Mon–Sat 7am–4pm (entrance on Drop Off Drive, off Warren Road)",BCO,
+    bcbase+"; gasoline (max 25 gallons); household hazardous waste: latex and oil paint (max 20 gallons per visit, residential only), acids, chemicals and solvents, pesticides and herbicides (residential only), cooking oil, oil filters",bcfee,bcnote,D24),
+  F("Baltimore County Western Acceptance Facility (Halethorpe)","3310 Transway Road, Halethorpe, MD 21227","Mon–Sat 7am–4pm",BCO,
+    bcbase+". Not accepted here: gasoline, paint, household chemicals/solvents and pesticides (take paint and chemicals to the Central Acceptance Facility in Cockeysville)",bcfee,bcnote,D24))
+FXH="https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste"
+fxacc=("Household hazardous waste: aerosols, antifreeze and automotive fluids, gasoline, motor oil, rechargeable batteries, cooking oil, pool chemicals, household cleaners, lawn and garden chemicals and pesticides, oil-based paint, paint thinners, stains and varnish, mercury devices, CFLs and fluorescent tubes, propane tanks up to 20 lb; "
+  "e-waste (TVs, computers, gaming systems, keyboards, speakers, cords); separated recycling incl. used motor oil, antifreeze and automobile batteries; bicycles; textiles; household trash. "
+  "Not accepted at HHW: ammunition, explosives, illegal fireworks, LED bulbs, radioactive materials, hazardous waste pharmaceuticals, propane tanks over 20 lb, compressed gas cylinders, business hazardous waste")
+fxfee="Household hazardous waste is free for Fairfax County residents; common 20 lb barbecue propane tanks are accepted for a fee"
+fxnote=("Operated by Fairfax County Department of Public Works and Environmental Services (Fairfax County, Virginia; it serves Fairfax County residents, not DC residents). Free HHW disposal is for Fairfax County residents only; proof of residency may be required (driver's license, state ID, property tax bill or utility bill). "
+  "Business hazardous waste is not accepted. Latex paint: let it dry and put it in the trash, or bring cans you can't dry to the HHW area. HHW program: "+FXH+"; HHW questions 703-324-5230. ")
+add("Washington",
+  F("Fairfax County I-66 Transfer Station (HHW & e-waste)","4618 West Ox Road, Fairfax, VA 22030","Residents: trash, recycling and food scraps Mon–Fri 7am–5pm, Sat–Sun 7am–4pm. HHW and e-waste: Mon 7am–5pm; Tue and Thu 12–5pm; Fri 7am–5pm; Sat–Sun 7am–4pm; closed Wed. Holiday closures: see the county's holiday hours (complex closed Thanksgiving Day)",
+    "https://www.fairfaxcounty.gov/publicworks/recycling-trash/i-66-transfer-station",fxacc,fxfee,fxnote+"I-66 Transfer Station 703-631-1179",D24),
+  F("Fairfax County I-95 Landfill Complex (HHW & e-waste)","9850 Furnace Road, Lorton, VA 22079","Residents: trash, recycling and food scraps Mon–Fri 7am–5pm, Sat–Sun 7am–4pm. HHW and e-waste: Wed 7am–5pm and Sat 7am–4pm only. Latex-paint-only drop-off (Lot B): Mon–Fri 7am–5pm, Sat–Sun 7am–4pm. Holiday closures: see the county's holiday hours",
+    "https://www.fairfaxcounty.gov/publicworks/recycling-trash/i-95-landfill-complex",fxacc+". Latex paint only drop-off at Lot B daily",fxfee,fxnote+"I-95 Landfill Complex 703-690-1703",D24))
+next(m for m in M if m["city"]=="Washington")["note"]=("Inside DC there is no permanent HHW or e-cycling drop-off: Fort Totten takes up to 4 tires during regular hours, and HHW and electronics go to registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding. "
+  "Fairfax County, Virginia residents can use the county's permanent HHW and e-waste drop-offs at the I-66 Transfer Station and I-95 Landfill Complex (Fairfax County residents only).")
+# Under The Sink re-verified 2026-11-24 against its Location & Hours, What's Accepted, What's Not Accepted and Common Questions pages.
+for m in M:
+    for f in m["facilities"]:
+        if m["city"]=="Omaha" and f["name"]=="Under The Sink":
+            f["accepts"]=("Household hazardous waste: latex and oil-based paint, spray paint, paint thinner and remover, stains and varnish; pesticides, weed killers and garden chemicals; pool chemicals; cleaning products, drain and oven cleaners; "
+              "motor oil, oil filters, antifreeze, gasoline and automotive fluids; automotive batteries, lithium and rechargeable batteries; fluorescent tubes and CFLs; mercury devices; propane bottles up to 1 lb; sharps in a rigid labeled container. "
+              "Not accepted: business waste, single-use (alkaline/button) batteries, electronics, tires, appliances, medications, fire extinguishers, smoke detectors, propane tanks over 1 lb")
+            f["fees"]="Free, except latex paint and water-based coatings: $1.00 per container, quart size and larger (credit card only)"
+            f["notes"]="Under The Sink is the Omaha region's household chemicals disposal facility. Open to Douglas and Sarpy County households only; no waste from farms, businesses, offices, schools or institutions. Saturday drop-off by appointment only (home must be in Douglas or Sarpy County). Holiday schedule: closed Thu–Sat Nov 26–28, 2026 and Dec 25, 2026. 402-444-7465"
+            f["checked"]=D24
+# Re-verified against the official page on 2026-11-24 (event dates unchanged; no new dates posted).
+REVERIFIED24={"Sisson Street Residential Recycling Center (HHW days)","DPW Special Waste Collection Event – RFK Stadium Lot 8",
+  "Carr Center (Division of Waste)","Ridge Road Transfer Station","Securis First Saturday Electronics Recycling (CVWMA)",
+  "Eastern Residential Recycling Center","Gretna Burmaster Waste Drop-Off Site"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED24: f["checked"]=D24
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

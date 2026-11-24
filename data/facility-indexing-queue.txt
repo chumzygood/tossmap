@@ -66,6 +66,7 @@ https://tossmap.com/oh/cleveland/linndale-village-service-garage-hhw/
 https://tossmap.com/oh/cleveland/bratenahl-village-service-garage-hhw/
 https://tossmap.com/oh/cleveland/orange-village-service-department-hhw/
 https://tossmap.com/oh/cleveland/brook-park-service-garage-hhw/
+https://tossmap.com/oh/cleveland/bay-village-service-garage-hhw/
 https://tossmap.com/ky/louisville/haz-bin/
 https://tossmap.com/ky/louisville/waste-reduction-center/
 https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-bronx/
@@ -102,6 +103,13 @@ https://tossmap.com/hi/honolulu/waianae-convenience-center/
 https://tossmap.com/hi/honolulu/ewa-beach-convenience-center/
 https://tossmap.com/hi/honolulu/laie-convenience-center/
 https://tossmap.com/hi/honolulu/wahiawa-convenience-center/
+https://tossmap.com/md/baltimore/sisson-street-residential-recycling-center-hhw-days/
+https://tossmap.com/md/baltimore/eastern-residential-recycling-center/
+https://tossmap.com/md/baltimore/northwest-transfer-station-residential-drop-off/
+https://tossmap.com/md/baltimore/quarantine-road-landfill-residential-recycling-center/
+https://tossmap.com/md/baltimore/baltimore-county-eastern-sanitary-landfill-drop-off-white-marsh/
+https://tossmap.com/md/baltimore/baltimore-county-central-acceptance-facility-cockeysville/
+https://tossmap.com/md/baltimore/baltimore-county-western-acceptance-facility-halethorpe/
 https://tossmap.com/fl/miami/home-chemical-collection-center-west-dade/
 https://tossmap.com/fl/miami/home-chemical-collection-center-south-dade/
 https://tossmap.com/fl/miami/golden-glades-trash-and-recycling-center/
@@ -149,9 +157,10 @@ https://tossmap.com/wa/seattle/north-seattle-hhw-facility/
 https://tossmap.com/wa/seattle/south-seattle-hhw-facility/
 https://tossmap.com/wa/seattle/north-transfer-station-seattle-public-utilities/
 https://tossmap.com/wa/seattle/south-transfer-station-seattle-public-utilities/
-https://tossmap.com/md/baltimore/sisson-street-residential-recycling-center-hhw-days/
-https://tossmap.com/md/baltimore/eastern-residential-recycling-center/
-https://tossmap.com/md/baltimore/northwest-transfer-station-residential-drop-off/
+https://tossmap.com/dc/washington/fort-totten-transfer-station-tires/
+https://tossmap.com/dc/washington/dpw-special-waste-collection-event-rfk-stadium-lot-8/
+https://tossmap.com/dc/washington/fairfax-county-i-66-transfer-station-hhw-e-waste/
+https://tossmap.com/dc/washington/fairfax-county-i-95-landfill-complex-hhw-e-waste/
 https://tossmap.com/tn/nashville/east-convenience-center/
 https://tossmap.com/tn/nashville/ezell-pike-convenience-center/
 https://tossmap.com/tn/nashville/omohundro-convenience-center/
@@ -177,8 +186,6 @@ https://tossmap.com/or/portland/metro-central-hazardous-waste/
 https://tossmap.com/or/portland/metro-south-hazardous-waste/
 https://tossmap.com/mo/st-louis/st-louis-county-hhw-south/
 https://tossmap.com/mo/st-louis/st-louis-county-hhw-north/
-https://tossmap.com/dc/washington/fort-totten-transfer-station-tires/
-https://tossmap.com/dc/washington/dpw-special-waste-collection-event-rfk-stadium-lot-8/
 https://tossmap.com/nm/albuquerque/hhw-collection-center-safety-kleen/
 https://tossmap.com/tx/austin/recycle-reuse-drop-off-center/
 https://tossmap.com/oh/cincinnati/cincinnati-recycling-reuse-hub/

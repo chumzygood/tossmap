@@ -4524,7 +4524,7 @@
     "fees": "Free",
     "notes": "DC residents only; register in advance on Eventbrite; bring proof of residency and registration. The Nov 14 event has been held; no later 2026–27 date is listed yet.",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "checked": "2026-11-23",
+    "checked": "2026-11-24",
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "questions": {
      "residents_only": {
@@ -4578,10 +4578,138 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-23"
+    "questions_reviewed": "2026-11-24"
+   },
+   {
+    "name": "Fairfax County I-66 Transfer Station (HHW & e-waste)",
+    "address": "4618 West Ox Road, Fairfax, VA 22030",
+    "hours": "Residents: trash, recycling and food scraps Mon–Fri 7am–5pm, Sat–Sun 7am–4pm. HHW and e-waste: Mon 7am–5pm; Tue and Thu 12–5pm; Fri 7am–5pm; Sat–Sun 7am–4pm; closed Wed. Holiday closures: see the county's holiday hours (complex closed Thanksgiving Day)",
+    "accepts": "Household hazardous waste: aerosols, antifreeze and automotive fluids, gasoline, motor oil, rechargeable batteries, cooking oil, pool chemicals, household cleaners, lawn and garden chemicals and pesticides, oil-based paint, paint thinners, stains and varnish, mercury devices, CFLs and fluorescent tubes, propane tanks up to 20 lb; e-waste (TVs, computers, gaming systems, keyboards, speakers, cords); separated recycling incl. used motor oil, antifreeze and automobile batteries; bicycles; textiles; household trash. Not accepted at HHW: ammunition, explosives, illegal fireworks, LED bulbs, radioactive materials, hazardous waste pharmaceuticals, propane tanks over 20 lb, compressed gas cylinders, business hazardous waste",
+    "fees": "Household hazardous waste is free for Fairfax County residents; common 20 lb barbecue propane tanks are accepted for a fee",
+    "notes": "Operated by Fairfax County Department of Public Works and Environmental Services (Fairfax County, Virginia; it serves Fairfax County residents, not DC residents). Free HHW disposal is for Fairfax County residents only; proof of residency may be required (driver's license, state ID, property tax bill or utility bill). Business hazardous waste is not accepted. Latex paint: let it dry and put it in the trash, or bring cans you can't dry to the HHW area. HHW program: https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste; HHW questions 703-324-5230. I-66 Transfer Station 703-631-1179",
+    "source": "https://www.fairfaxcounty.gov/publicworks/recycling-trash/i-66-transfer-station",
+    "checked": "2026-11-24",
+    "slug": "fairfax-county-i-66-transfer-station-hhw-e-waste",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Conditional — Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): “FREE disposal of household hazardous waste is available to Fairfax County residents only.” (The facility also serves commercial pay customers for trash.)"
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "Conditional — Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): “The Fairfax County Household Hazardous Waste Program accepts hazardous materials from residents free of charge.” “Common 20 lb. barbecue-style propane tanks are accepted for a fee.”"
+     },
+     "tires": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): Materials Accepted include Paint Supplies: “Paint Paint Thinner Polishes Stains … Varnish”. Latex paint: “If you are unable to let the latex paint dry, you may take the container to one of the household hazardous waste sites at I-66 Transfer Station and I-95 Landfill Complex.”"
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Fairfax County I-66 Transfer Station page (fetched 2026-11-24): “Electronics such as televisions, computers, gaming systems, keyboards, speakers, cords, etc., may be dropped off during hours.”"
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): Materials Accepted: “Batteries, Rechargeable”. Fairfax County I-66 Transfer Station page (fetched 2026-11-24): recycling materials accepted include “Automobile Batteries”."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Fairfax County I-66 Transfer Station page (fetched 2026-11-24): “The I-66 Transfer Station and I-95 Landfill Complex accept the following separated materials for recycling … Antifreeze Used Motor Oil Automobile Batteries”."
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): Materials Accepted include “Household Cleaners Acids Ammonia … Bleach”, “Pool Chemicals” and “Lawn Care Algaecide Fungicides Herbicides Insecticides Pesticides”."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): “Propane Tanks All types up to 20 lbs.”; “Tanks larger than common 20 lb. barbeque-style must be returned to a local supplier.”"
+     },
+     "businesses_accepted": {
+      "answer": "yes",
+      "evidence": "Conditional — Fairfax County I-66 Transfer Station page (fetched 2026-11-24): commercial pay customer hours are listed, but “Commercial Hazardous Waste is not accepted at this disposal facility.” Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): “Hazardous wastes from businesses are regulated separately and may not be brought to the Household Hazardous Waste Program.”"
+     }
+    },
+    "operator": "Fairfax County Department of Public Works and Environmental Services",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-24"
+   },
+   {
+    "name": "Fairfax County I-95 Landfill Complex (HHW & e-waste)",
+    "address": "9850 Furnace Road, Lorton, VA 22079",
+    "hours": "Residents: trash, recycling and food scraps Mon–Fri 7am–5pm, Sat–Sun 7am–4pm. HHW and e-waste: Wed 7am–5pm and Sat 7am–4pm only. Latex-paint-only drop-off (Lot B): Mon–Fri 7am–5pm, Sat–Sun 7am–4pm. Holiday closures: see the county's holiday hours",
+    "accepts": "Household hazardous waste: aerosols, antifreeze and automotive fluids, gasoline, motor oil, rechargeable batteries, cooking oil, pool chemicals, household cleaners, lawn and garden chemicals and pesticides, oil-based paint, paint thinners, stains and varnish, mercury devices, CFLs and fluorescent tubes, propane tanks up to 20 lb; e-waste (TVs, computers, gaming systems, keyboards, speakers, cords); separated recycling incl. used motor oil, antifreeze and automobile batteries; bicycles; textiles; household trash. Not accepted at HHW: ammunition, explosives, illegal fireworks, LED bulbs, radioactive materials, hazardous waste pharmaceuticals, propane tanks over 20 lb, compressed gas cylinders, business hazardous waste. Latex paint only drop-off at Lot B daily",
+    "fees": "Household hazardous waste is free for Fairfax County residents; common 20 lb barbecue propane tanks are accepted for a fee",
+    "notes": "Operated by Fairfax County Department of Public Works and Environmental Services (Fairfax County, Virginia; it serves Fairfax County residents, not DC residents). Free HHW disposal is for Fairfax County residents only; proof of residency may be required (driver's license, state ID, property tax bill or utility bill). Business hazardous waste is not accepted. Latex paint: let it dry and put it in the trash, or bring cans you can't dry to the HHW area. HHW program: https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste; HHW questions 703-324-5230. I-95 Landfill Complex 703-690-1703",
+    "source": "https://www.fairfaxcounty.gov/publicworks/recycling-trash/i-95-landfill-complex",
+    "checked": "2026-11-24",
+    "slug": "fairfax-county-i-95-landfill-complex-hhw-e-waste",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Conditional — Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): “FREE disposal of household hazardous waste is available to Fairfax County residents only.” (The facility also serves commercial pay customers for trash.)"
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "Conditional — Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): “The Fairfax County Household Hazardous Waste Program accepts hazardous materials from residents free of charge.” “Common 20 lb. barbecue-style propane tanks are accepted for a fee.”"
+     },
+     "tires": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): Materials Accepted include Paint Supplies: “Paint Paint Thinner Polishes Stains … Varnish”. Latex paint: “If you are unable to let the latex paint dry, you may take the container to one of the household hazardous waste sites at I-66 Transfer Station and I-95 Landfill Complex.”"
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Fairfax County I-95 Landfill Complex page (fetched 2026-11-24): “Electronics such as televisions, computers, gaming systems, keyboards, speakers, cords, etc., may be dropped off during hours.”"
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): Materials Accepted: “Batteries, Rechargeable”. Fairfax County I-95 Landfill Complex page (fetched 2026-11-24): recycling materials accepted include “Automobile Batteries”."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Fairfax County I-95 Landfill Complex page (fetched 2026-11-24): “The I-66 Transfer Station and I-95 Landfill Complex accept the following separated materials for recycling … Antifreeze Used Motor Oil Automobile Batteries”."
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): Materials Accepted include “Household Cleaners Acids Ammonia … Bleach”, “Pool Chemicals” and “Lawn Care Algaecide Fungicides Herbicides Insecticides Pesticides”."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): “Propane Tanks All types up to 20 lbs.”; “Tanks larger than common 20 lb. barbeque-style must be returned to a local supplier.”"
+     },
+     "businesses_accepted": {
+      "answer": "yes",
+      "evidence": "Conditional — Fairfax County I-95 Landfill Complex page (fetched 2026-11-24): commercial pay customer hours are listed, but “Commercial Hazardous Waste is not accepted at this disposal facility.” Fairfax County Household Hazardous Waste page (https://www.fairfaxcounty.gov/publicworks/recycling-trash/household-hazardous-waste, fetched 2026-11-24): “Hazardous wastes from businesses are regulated separately and may not be brought to the Household Hazardous Waste Program.”"
+     }
+    },
+    "operator": "Fairfax County Department of Public Works and Environmental Services",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-24"
    }
   ],
-  "note": "No permanent HHW or e-cycling drop-off. Fort Totten takes up to 4 tires during regular hours. HHW and electronics are collected at registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding"
+  "note": "Inside DC there is no permanent HHW or e-cycling drop-off: Fort Totten takes up to 4 tires during regular hours, and HHW and electronics go to registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding. Fairfax County, Virginia residents can use the county's permanent HHW and e-waste drop-offs at the I-66 Transfer Station and I-95 Landfill Complex (Fairfax County residents only)."
  },
  {
   "city": "Boston",
@@ -6188,7 +6316,7 @@
     "fees": "Free",
     "notes": "Baltimore City residents only; materials in original labeled packaging; no commercial vehicles. 410-396-7250",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "checked": "2026-11-23",
+    "checked": "2026-11-24",
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "questions": {
      "residents_only": {
@@ -6242,7 +6370,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-23"
+    "questions_reviewed": "2026-11-24"
    },
    {
     "name": "Eastern Residential Recycling Center",
@@ -6252,7 +6380,7 @@
     "fees": "Free for Baltimore City residents",
     "notes": "Baltimore City residents with valid ID only; a resident who is not a small hauler is limited to 2 loads per day and 5 per week; passenger car, unmodified van/minivan or unmodified pickup up to 3/4 ton only (commercial vehicles, modified pickups and trailers need a Baltimore City small haulers permit). Accepted-items guide: https://www.baltimorecity.gov/publicworks/trash-recycling/drop-off-center-guide. 410-396-9950",
     "source": "https://www.baltimorecity.gov/publicworks/trash-recycling/recycle-drop-off-centers",
-    "checked": "2026-11-15",
+    "checked": "2026-11-24",
     "slug": "eastern-residential-recycling-center",
     "questions": {
      "residents_only": {
@@ -6300,13 +6428,13 @@
       "evidence": "Baltimore City DPW: “A resident who is not a small hauler is limited to no more than two (2) loads per day and no more than five (5) loads per week.” Used motor oil: “up to 5 quarts”."
      },
      "businesses_accepted": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Baltimore City DPW Residential Recycling Drop-Off Centers page (fetched 2026-11-24): “The Residential Drop-Off Centers are exclusively for use by Baltimore City residents with valid IDs.” “Small haulers with a valid permit may use the Quarantine Road Landfill (6100 Quarantine Road) and the Drop-off Center at Northwest Transfer Station (5030 Reisterstown Road).” (Eastern is not listed for haulers)"
      }
     },
     "operator": "Baltimore City Department of Public Works",
     "source_notice": "",
-    "questions_reviewed": "2026-11-15"
+    "questions_reviewed": "2026-11-24"
    },
    {
     "name": "Northwest Transfer Station (residential drop-off)",
@@ -6371,6 +6499,262 @@
     "operator": "Baltimore City Department of Public Works",
     "source_notice": "",
     "questions_reviewed": "2026-11-15"
+   },
+   {
+    "name": "Quarantine Road Landfill & Residential Recycling Center",
+    "address": "6100 Quarantine Road, Baltimore, MD",
+    "hours": "Mon–Sat 9am–3:30pm (small/large haulers and landfill use: Mon–Sat 9am–3:30pm)",
+    "accepts": "Tires without rims; electronics; used motor oil (up to 5 quarts); household trash; furniture and bulk items; appliances; scrap metal; recyclables (cans, glass, plastics, paper, cardboard); bagged yard waste. NOT accepted: paint, solvents, pesticides, pool chemicals, acids, caustics, gasoline, mercury thermometers/thermostats, syringes, fire extinguishers, propane and helium tanks, batteries, fluorescent bulbs",
+    "fees": "Free for Baltimore City residents dropping off recycling, electronics, appliances and household waste. Effective Nov 1, 2025, $135 per ton for commercial haulers and for residents disposing of non-hazardous solid waste at the landfill; residential C&D accepted only here, at the scale house, for $135 per ton",
+    "notes": "Baltimore City residents with valid ID only; a resident who is not a small hauler is limited to 2 loads per day and 5 per week; passenger car, unmodified van/minivan or unmodified pickup up to 3/4 ton only (commercial vehicles, modified pickups and trailers need a Baltimore City small haulers permit). Accepted-items guide: https://www.baltimorecity.gov/publicworks/trash-recycling/drop-off-center-guide. Small haulers with a valid permit may use this site, and all large haulers must use it. Does not accept hazardous C&D materials, lead-based or asbestos-containing materials, or free-flowing liquids such as wet paint. 410-396-3772",
+    "source": "https://www.baltimorecity.gov/publicworks/trash-recycling/recycle-drop-off-centers",
+    "checked": "2026-11-24",
+    "slug": "quarantine-road-landfill-residential-recycling-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Baltimore City DPW Residential Recycling Drop-Off Centers page (fetched 2026-11-24): “City Residents Only : The Residential Drop-Off Centers are exclusively for use by Baltimore City residents with valid IDs.” (permitted small and large haulers may also use Quarantine Road)"
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "Baltimore City DPW Residential Recycling Drop-Off Centers page (fetched 2026-11-24): “The Residential Drop-Off Centers are exclusively for use by Baltimore City residents with valid IDs.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "Conditional — Baltimore City DPW drop-off center guide (https://www.baltimorecity.gov/publicworks/trash-recycling/drop-off-center-guide, fetched 2026-11-24): “Effective November 1, 2025, a fee of $135 per ton will apply to all commercial haulers and residents disposing of non-hazardous solid waste at the Quarantine Road Landfill. Baltimore City residents may continue to dispose of recycling, electronics, appliances, and household waste at DPW’s five Residential Drop-off Centers at no cost.”"
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Baltimore City DPW drop-off center guide (https://www.baltimorecity.gov/publicworks/trash-recycling/drop-off-center-guide, fetched 2026-11-24): Items You Can Drop-Off include “Tires without rims”, “Electronics” and “Used motor oil - up to 5 quarts”."
+     },
+     "paint": {
+      "answer": "no",
+      "evidence": "Baltimore City DPW drop-off center guide (https://www.baltimorecity.gov/publicworks/trash-recycling/drop-off-center-guide, fetched 2026-11-24): Items You Should Not Drop Off include “Paint”, “Solvents”, “Pesticides”, “Pool chemicals”, “Acids”, “Caustics” and “Batteries”."
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Baltimore City DPW drop-off center guide (https://www.baltimorecity.gov/publicworks/trash-recycling/drop-off-center-guide, fetched 2026-11-24): Items You Can Drop-Off include “Tires without rims”, “Electronics” and “Used motor oil - up to 5 quarts”."
+     },
+     "batteries": {
+      "answer": "no",
+      "evidence": "Baltimore City DPW drop-off center guide (https://www.baltimorecity.gov/publicworks/trash-recycling/drop-off-center-guide, fetched 2026-11-24): Items You Should Not Drop Off include “Paint”, “Solvents”, “Pesticides”, “Pool chemicals”, “Acids”, “Caustics” and “Batteries”."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Baltimore City DPW drop-off center guide (https://www.baltimorecity.gov/publicworks/trash-recycling/drop-off-center-guide, fetched 2026-11-24): Items You Can Drop-Off include “Tires without rims”, “Electronics” and “Used motor oil - up to 5 quarts”."
+     },
+     "household_chemicals": {
+      "answer": "no",
+      "evidence": "Baltimore City DPW drop-off center guide (https://www.baltimorecity.gov/publicworks/trash-recycling/drop-off-center-guide, fetched 2026-11-24): Items You Should Not Drop Off include “Paint”, “Solvents”, “Pesticides”, “Pool chemicals”, “Acids”, “Caustics” and “Batteries”."
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Baltimore City DPW Residential Recycling Drop-Off Centers page (fetched 2026-11-24): “A resident who is not a small hauler is limited to no more than two (2) loads per day and no more than five (5) loads per week.” Used motor oil: “up to 5 quarts”."
+     },
+     "businesses_accepted": {
+      "answer": "yes",
+      "evidence": "Conditional — Baltimore City DPW Residential Recycling Drop-Off Centers page (fetched 2026-11-24): “Small haulers with a valid permit may use the Quarantine Road Landfill (6100 Quarantine Road) and the Drop-off Center at Northwest Transfer Station”; “All large haulers must use the Quarantine Road Landfill.”"
+     }
+    },
+    "operator": "Baltimore City Department of Public Works",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-24"
+   },
+   {
+    "name": "Baltimore County Eastern Sanitary Landfill Drop-Off Center (White Marsh)",
+    "address": "6259 Days Cove Road, White Marsh, MD 21162",
+    "hours": "Mon–Sat 7:30am–3:30pm (no admittance after 3:15pm)",
+    "accepts": "Tires: up to four clean passenger tires, off rims (no racing slicks); electronics (PCs, VCRs, phones, TVs, monitors; residential only); used motor oil, diesel, heating and hydraulic oil (max 25 gallons, no 55-gallon drums); antifreeze; lead-acid (auto, boat) and rechargeable household/tool batteries; propane tanks up to 20 lb; mercury thermometers and thermostats; fluorescent bulbs (10 per visit); scrap metal; single-stream recycling; household trash; yard materials; gasoline (max 25 gallons). Not accepted here: paint, household chemicals/solvents and pesticides (take those to the Central Acceptance Facility in Cockeysville)",
+    "fees": "In most cases free for Baltimore County residents, up to 10 visits per year; after 10 visits, materials must go to the Eastern Sanitary Landfill at a prorated $125 per ton. Commercial haulers need a Baltimore County commercial account (MSW $125/ton, special handling $200/ton, organics and brush $65/ton); non-account holders pay a $10 minimum per transaction",
+    "notes": "Operated by the Baltimore County Bureau of Solid Waste Management (Baltimore County, Maryland — separate from Baltimore City) for county residents; commercial haulers need a county commercial account. Item-by-facility rules: https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials. Customer service for all three county drop-off centers: 410-887-2000",
+    "source": "https://www.baltimorecountymd.gov/departments/public-works/solid-waste/drop-off-centers",
+    "checked": "2026-11-24",
+    "slug": "baltimore-county-eastern-sanitary-landfill-drop-off-white-marsh",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Conditional — Baltimore County Drop-Off Centers page (fetched 2026-11-24): “Baltimore County operates three facilities where County residents can take residential trash and recyclables.” Commercial haulers may use them only with a county commercial account."
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "Conditional — Baltimore County Drop-Off Centers page (fetched 2026-11-24): “In most cases, Baltimore County residents may take material to residential drop-off facilities free of charge, with up to 10 visits per year. After 10 visits, materials will have to be delivered to the Eastern Sanitary Landfill, where a prorated fee of $125 per ton will be charged.”"
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): Tires accepted for recycling at ESL, CAF and WAF: “Up to four clean tires (passenger size only), no racing slicks. Regulations require tires to be off rims.”"
+     },
+     "paint": {
+      "answer": "no",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Paint (latex)” and “Paint (oil)” are marked Not Accepted at ESL; “Place in designated area at CAF.”"
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Electronics—PCs, VCRs, Phones, TVs and Monitors Residential electronics only.” accepted for recycling at ESL, CAF and WAF."
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Batteries (lead-acid, auto, boat)” and “Batteries (rechargeable household and tool)” accepted for recycling at ESL, CAF and WAF; non-rechargeable alkaline batteries go in the trash."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Oil (motor) Maximum of 25 gallons; no 55 gallon drums. Place in designated motor oil container.” accepted at ESL, CAF and WAF."
+     },
+     "household_chemicals": {
+      "answer": "no",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Household hazardous waste” and “Acid, chemicals, solvents” are marked Not Accepted at ESL; “Place in designated area at CAF.”"
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): Tires: “Up to four clean tires (passenger size only)”; motor oil “Maximum of 25 gallons”; “Fluorescent bulbs Residential bulbs only, limit of 10 bulbs per visit.” Baltimore County Drop-Off Centers page (fetched 2026-11-24): free “with up to 10 visits per year”."
+     },
+     "businesses_accepted": {
+      "answer": "yes",
+      "evidence": "Conditional — Baltimore County Drop-Off Centers page (fetched 2026-11-24): “The Bureau of Solid Waste Management will require commercial haulers to have a commercial account with Baltimore County in order to use all three of Baltimore County's drop-off facilities.” Rates: “Commercial—Non Special MSW: $125 per ton”."
+     }
+    },
+    "operator": "Baltimore County Bureau of Solid Waste Management",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-24"
+   },
+   {
+    "name": "Baltimore County Central Acceptance Facility (Cockeysville)",
+    "address": "201 West Warren Road, Cockeysville, MD 21030",
+    "hours": "Mon–Sat 7am–4pm (entrance on Drop Off Drive, off Warren Road)",
+    "accepts": "Tires: up to four clean passenger tires, off rims (no racing slicks); electronics (PCs, VCRs, phones, TVs, monitors; residential only); used motor oil, diesel, heating and hydraulic oil (max 25 gallons, no 55-gallon drums); antifreeze; lead-acid (auto, boat) and rechargeable household/tool batteries; propane tanks up to 20 lb; mercury thermometers and thermostats; fluorescent bulbs (10 per visit); scrap metal; single-stream recycling; household trash; yard materials; gasoline (max 25 gallons); household hazardous waste: latex and oil paint (max 20 gallons per visit, residential only), acids, chemicals and solvents, pesticides and herbicides (residential only), cooking oil, oil filters",
+    "fees": "In most cases free for Baltimore County residents, up to 10 visits per year; after 10 visits, materials must go to the Eastern Sanitary Landfill at a prorated $125 per ton. Commercial haulers need a Baltimore County commercial account (MSW $125/ton, special handling $200/ton, organics and brush $65/ton); non-account holders pay a $10 minimum per transaction",
+    "notes": "Operated by the Baltimore County Bureau of Solid Waste Management (Baltimore County, Maryland — separate from Baltimore City) for county residents; commercial haulers need a county commercial account. Item-by-facility rules: https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials. Customer service for all three county drop-off centers: 410-887-2000",
+    "source": "https://www.baltimorecountymd.gov/departments/public-works/solid-waste/drop-off-centers",
+    "checked": "2026-11-24",
+    "slug": "baltimore-county-central-acceptance-facility-cockeysville",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Conditional — Baltimore County Drop-Off Centers page (fetched 2026-11-24): “Baltimore County operates three facilities where County residents can take residential trash and recyclables.” Commercial haulers may use them only with a county commercial account."
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "Conditional — Baltimore County Drop-Off Centers page (fetched 2026-11-24): “In most cases, Baltimore County residents may take material to residential drop-off facilities free of charge, with up to 10 visits per year. After 10 visits, materials will have to be delivered to the Eastern Sanitary Landfill, where a prorated fee of $125 per ton will be charged.”"
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): Tires accepted for recycling at ESL, CAF and WAF: “Up to four clean tires (passenger size only), no racing slicks. Regulations require tires to be off rims.”"
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Paint (latex) and paint balls” and “Paint (oil)”: “Place in designated area at CAF. Maximum of 20 gallons per visit. Residential material only.” (accepted at CAF only)"
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Electronics—PCs, VCRs, Phones, TVs and Monitors Residential electronics only.” accepted for recycling at ESL, CAF and WAF."
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Batteries (lead-acid, auto, boat)” and “Batteries (rechargeable household and tool)” accepted for recycling at ESL, CAF and WAF; non-rechargeable alkaline batteries go in the trash."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Oil (motor) Maximum of 25 gallons; no 55 gallon drums. Place in designated motor oil container.” accepted at ESL, CAF and WAF."
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Household hazardous waste Place in designated area at CAF.”; “Acid, chemicals, solvents Place in designated area at CAF.”; “Pesticides and herbicides Residential material only, no farms or businesses.” (CAF only)"
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): Tires: “Up to four clean tires (passenger size only)”; motor oil “Maximum of 25 gallons”; “Fluorescent bulbs Residential bulbs only, limit of 10 bulbs per visit.” Baltimore County Drop-Off Centers page (fetched 2026-11-24): free “with up to 10 visits per year”."
+     },
+     "businesses_accepted": {
+      "answer": "yes",
+      "evidence": "Conditional — Baltimore County Drop-Off Centers page (fetched 2026-11-24): “The Bureau of Solid Waste Management will require commercial haulers to have a commercial account with Baltimore County in order to use all three of Baltimore County's drop-off facilities.” Rates: “Commercial—Non Special MSW: $125 per ton”."
+     }
+    },
+    "operator": "Baltimore County Bureau of Solid Waste Management",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-24"
+   },
+   {
+    "name": "Baltimore County Western Acceptance Facility (Halethorpe)",
+    "address": "3310 Transway Road, Halethorpe, MD 21227",
+    "hours": "Mon–Sat 7am–4pm",
+    "accepts": "Tires: up to four clean passenger tires, off rims (no racing slicks); electronics (PCs, VCRs, phones, TVs, monitors; residential only); used motor oil, diesel, heating and hydraulic oil (max 25 gallons, no 55-gallon drums); antifreeze; lead-acid (auto, boat) and rechargeable household/tool batteries; propane tanks up to 20 lb; mercury thermometers and thermostats; fluorescent bulbs (10 per visit); scrap metal; single-stream recycling; household trash; yard materials. Not accepted here: gasoline, paint, household chemicals/solvents and pesticides (take paint and chemicals to the Central Acceptance Facility in Cockeysville)",
+    "fees": "In most cases free for Baltimore County residents, up to 10 visits per year; after 10 visits, materials must go to the Eastern Sanitary Landfill at a prorated $125 per ton. Commercial haulers need a Baltimore County commercial account (MSW $125/ton, special handling $200/ton, organics and brush $65/ton); non-account holders pay a $10 minimum per transaction",
+    "notes": "Operated by the Baltimore County Bureau of Solid Waste Management (Baltimore County, Maryland — separate from Baltimore City) for county residents; commercial haulers need a county commercial account. Item-by-facility rules: https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials. Customer service for all three county drop-off centers: 410-887-2000",
+    "source": "https://www.baltimorecountymd.gov/departments/public-works/solid-waste/drop-off-centers",
+    "checked": "2026-11-24",
+    "slug": "baltimore-county-western-acceptance-facility-halethorpe",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "Conditional — Baltimore County Drop-Off Centers page (fetched 2026-11-24): “Baltimore County operates three facilities where County residents can take residential trash and recyclables.” Commercial haulers may use them only with a county commercial account."
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "Conditional — Baltimore County Drop-Off Centers page (fetched 2026-11-24): “In most cases, Baltimore County residents may take material to residential drop-off facilities free of charge, with up to 10 visits per year. After 10 visits, materials will have to be delivered to the Eastern Sanitary Landfill, where a prorated fee of $125 per ton will be charged.”"
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): Tires accepted for recycling at ESL, CAF and WAF: “Up to four clean tires (passenger size only), no racing slicks. Regulations require tires to be off rims.”"
+     },
+     "paint": {
+      "answer": "no",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Paint (latex)” and “Paint (oil)” are marked Not Accepted at WAF; “Place in designated area at CAF.”"
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Electronics—PCs, VCRs, Phones, TVs and Monitors Residential electronics only.” accepted for recycling at ESL, CAF and WAF."
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Batteries (lead-acid, auto, boat)” and “Batteries (rechargeable household and tool)” accepted for recycling at ESL, CAF and WAF; non-rechargeable alkaline batteries go in the trash."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Oil (motor) Maximum of 25 gallons; no 55 gallon drums. Place in designated motor oil container.” accepted at ESL, CAF and WAF."
+     },
+     "household_chemicals": {
+      "answer": "no",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): “Household hazardous waste” and “Acid, chemicals, solvents” are marked Not Accepted at WAF; “Place in designated area at CAF.”"
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "Baltimore County Accepted Materials Directory (https://www.baltimorecountymd.gov/departments/public-works/solid-waste/hhw/accepted-materials, fetched 2026-11-24; per-facility columns ESL/CAF/WAF): Tires: “Up to four clean tires (passenger size only)”; motor oil “Maximum of 25 gallons”; “Fluorescent bulbs Residential bulbs only, limit of 10 bulbs per visit.” Baltimore County Drop-Off Centers page (fetched 2026-11-24): free “with up to 10 visits per year”."
+     },
+     "businesses_accepted": {
+      "answer": "yes",
+      "evidence": "Conditional — Baltimore County Drop-Off Centers page (fetched 2026-11-24): “The Bureau of Solid Waste Management will require commercial haulers to have a commercial account with Baltimore County in order to use all three of Baltimore County's drop-off facilities.” Rates: “Commercial—Non Special MSW: $125 per ton”."
+     }
+    },
+    "operator": "Baltimore County Bureau of Solid Waste Management",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-24"
    }
   ],
   "note": ""
@@ -7744,16 +8128,16 @@
     "name": "Under The Sink",
     "address": "4001 S 120th St, Omaha, NE 68137",
     "hours": "Wed 9am–4:45pm; Thu 9am–6:15pm; Fri 9am–4:45pm; Sat by appointment",
-    "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
-    "fees": "",
-    "notes": "402-444-7465",
+    "accepts": "Household hazardous waste: latex and oil-based paint, spray paint, paint thinner and remover, stains and varnish; pesticides, weed killers and garden chemicals; pool chemicals; cleaning products, drain and oven cleaners; motor oil, oil filters, antifreeze, gasoline and automotive fluids; automotive batteries, lithium and rechargeable batteries; fluorescent tubes and CFLs; mercury devices; propane bottles up to 1 lb; sharps in a rigid labeled container. Not accepted: business waste, single-use (alkaline/button) batteries, electronics, tires, appliances, medications, fire extinguishers, smoke detectors, propane tanks over 1 lb",
+    "fees": "Free, except latex paint and water-based coatings: $1.00 per container, quart size and larger (credit card only)",
+    "notes": "Under The Sink is the Omaha region's household chemicals disposal facility. Open to Douglas and Sarpy County households only; no waste from farms, businesses, offices, schools or institutions. Saturday drop-off by appointment only (home must be in Douglas or Sarpy County). Holiday schedule: closed Thu–Sat Nov 26–28, 2026 and Dec 25, 2026. 402-444-7465",
     "source": "https://www.underthesink.org/drop-off-info/location-hours/",
-    "checked": "2026-11-02",
+    "checked": "2026-11-24",
     "slug": "under-the-sink",
     "questions": {
      "residents_only": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Under The Sink Common Questions page (https://www.underthesink.org/drop-off-info/common-questions/, fetched 2026-11-24): “All residents of Douglas and Sarpy Counties will be eligible: households only.”"
      },
      "id_required": {
       "answer": "not stated by source",
@@ -7761,48 +8145,48 @@
      },
      "appointment_required": {
       "answer": "yes",
-      "evidence": "Wed 9am–4:45pm; Thu 9am–6:15pm; Fri 9am–4:45pm; Sat by appointment; 402-444-7465"
+      "evidence": "Saturday only — Under The Sink Location & Hours page (fetched 2026-11-24): Wednesday–Friday “Drop-offs Accepted”; “Saturday Drop-offs Accepted by Appointment Only.”"
      },
      "fee_charged": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Conditional — Under The Sink What’s Accepted page (https://www.underthesink.org/drop-off-info/whats-accepted/, fetched 2026-11-24): “With the exception of latex paint and water-based coatings, Under the Sink is free to use.” “There is a charge of $1.00 per container for latex paint and water-based coatings, quart size and larger. Credit card payments only.”"
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Under The Sink What’s Not Accepted page (https://www.underthesink.org/drop-off-info/whats-not-accepted/, fetched 2026-11-24): “Under The Sink does not accept these items” — list includes “Tires”."
      },
      "paint": {
       "answer": "yes",
-      "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
+      "evidence": "Under The Sink What’s Accepted page (https://www.underthesink.org/drop-off-info/whats-accepted/, fetched 2026-11-24): accepted items include “Latex Paint”, “Oil Based Paint”, “Paint Remover”, “Paint Thinner” and “Spray Paint”; latex paint and water-based coatings cost $1.00 per container, quart size and larger."
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Under The Sink What’s Not Accepted page (https://www.underthesink.org/drop-off-info/whats-not-accepted/, fetched 2026-11-24): “Under The Sink does not accept these items” — list includes “Electronics”."
      },
      "batteries": {
       "answer": "yes",
-      "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
+      "evidence": "Under The Sink What’s Accepted page (https://www.underthesink.org/drop-off-info/whats-accepted/, fetched 2026-11-24): accepted items include “Automotive Batteries”, “Lithium Batteries” and “Batteries (Rechargeable only)”. Under The Sink What’s Not Accepted page (https://www.underthesink.org/drop-off-info/whats-not-accepted/, fetched 2026-11-24): not accepted: “Single Use Batteries: Alkaline, Hearing Aid, Watch, or similar Button Cells”."
      },
      "motor_oil": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Under The Sink What’s Accepted page (https://www.underthesink.org/drop-off-info/whats-accepted/, fetched 2026-11-24): Garage & Workshop items accepted include “Motor Oil”, “Oil Filters”, “Antifreeze” and “Automotive Fluids”."
      },
      "household_chemicals": {
       "answer": "yes",
-      "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
+      "evidence": "Under The Sink What’s Accepted page (https://www.underthesink.org/drop-off-info/whats-accepted/, fetched 2026-11-24): accepted items include “Pesticides”, “Pool Chemicals”, “Cleaning Products”, “Drain Cleaners”, “Oven Cleaner” and “Weed Killer”."
      },
      "quantity_limits": {
       "answer": "not stated by source",
       "evidence": ""
      },
      "businesses_accepted": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "Under The Sink Common Questions page (https://www.underthesink.org/drop-off-info/common-questions/, fetched 2026-11-24): “No waste from farms, businesses, offices, schools or institutions will be accepted.” Under The Sink What’s Not Accepted page (https://www.underthesink.org/drop-off-info/whats-not-accepted/, fetched 2026-11-24): not accepted: “Any Business Related Waste”."
      }
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-02"
+    "questions_reviewed": "2026-11-24"
    }
   ],
   "note": ""
@@ -8988,7 +9372,7 @@
     "fees": "Free",
     "notes": "City of Cleveland residents only",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "checked": "2026-11-23",
+    "checked": "2026-11-24",
     "slug": "carr-center-division-of-waste",
     "questions": {
      "residents_only": {
@@ -9042,7 +9426,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-23"
+    "questions_reviewed": "2026-11-24"
    },
    {
     "name": "Ridge Road Transfer Station",
@@ -9052,7 +9436,7 @@
     "fees": "Free for qualifying resident drop-offs; fee may apply beyond tire/dump limits",
     "notes": "City of Cleveland residents only; proof of residency required for drop-off",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "checked": "2026-11-23",
+    "checked": "2026-11-24",
     "slug": "ridge-road-transfer-station",
     "questions": {
      "residents_only": {
@@ -9106,7 +9490,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-23"
+    "questions_reviewed": "2026-11-24"
    },
    {
     "name": "Cuyahoga County Solid Waste District HQ (electronics drop-off bins)",
@@ -10771,6 +11155,70 @@
     "operator": "City of Brook Park (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
     "questions_reviewed": "2026-11-23"
+   },
+   {
+    "name": "Bay Village Service Garage (HHW drop-off)",
+    "address": "31300 Naigle Road, Bay Village, OH",
+    "hours": "Seasonal: last Friday of each month, March–October, 7:30am–3pm; 2026 Saturday drop-offs Apr 25 and Sep 26, 8am–noon. No drop-off dates in January, February, November or December",
+    "accepts": "Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint. Bay Village also does not take ammunition, medical waste or smoke detectors",
+    "fees": "Free (Cuyahoga County HHW program)",
+    "notes": "Drop-off is at the Bay Village Service Garage; the District says most communities accept waste only from their own residents, so call the city before going. Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public. Bay Village Service Department (440) 871-1221",
+    "source": "https://cuyahogarecycles.org/recycle-in/bay-village/household_hazardous_waste/",
+    "checked": "2026-11-24",
+    "slug": "bay-village-service-garage-hhw",
+    "questions": {
+     "residents_only": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles Bay Village HHW page (fetched 2026-11-24): “The program is free to all Cuyahoga County households”."
+     },
+     "tires": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "Oil-based only — CuyahogaRecycles Bay Village HHW page (fetched 2026-11-24): HHW examples include “oil or solvent-based paint, sealers, primers, or coatings”; Bay Village: “No latex paint, ammunition, medical waste, or smoke detectors.”"
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles Bay Village HHW page (fetched 2026-11-24): “Latex paint, batteries, and fluorescent bulbs are not accepted in this program.”"
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Bay Village HHW page (fetched 2026-11-24): HHW examples include “oils and grease, automotive fluids”."
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Bay Village HHW page (fetched 2026-11-24): “In 2026, Bay Village will have a drop-off for household hazardous waste on the last Friday of the month (March through October) at the Bay Village Service Garage.” Examples of HHW include “solvents, paint thinner, varnishes and polyurethanes, … automotive fluids, aerosols, … pesticides, pool chemicals, hand sanitizer, and household cleaners.”"
+     },
+     "quantity_limits": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles Bay Village HHW page (fetched 2026-11-24): “Waste from Businesses or Commercial Properties … Businesses must contract with a licensed company for proper disposal or recycling.”"
+     }
+    },
+    "operator": "City of Bay Village (Cuyahoga County Solid Waste District program)",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-24"
    }
   ],
   "note": ""
@@ -11556,7 +12004,7 @@
     "fees": "Fees apply to some items (e.g. computers/laptops with hard drives $5, LCD TV $25, CRT TV $28–$35, LCD monitor $10); many items free. Credit or debit cards only (no cash or checks)",
     "notes": "Central Virginia Waste Management Authority (CVWMA) contractor Securis runs this monthly event; CVWMA says it is open to all residents of Central Virginia. Item list and fee table: https://securis.com/events/richmond-recycling-events/",
     "source": "https://cvwma.com/cvwma-locations/henrico-2/",
-    "checked": "2026-11-23",
+    "checked": "2026-11-24",
     "slug": "securis-first-saturday-electronics-recycling-henrico",
     "questions": {
      "residents_only": {
@@ -11610,7 +12058,7 @@
     },
     "operator": "Securis (Central Virginia Waste Management Authority electronics recycling contractor)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-23"
+    "questions_reviewed": "2026-11-24"
    },
    {
     "name": "Hanover Route 301 Transfer Station",
@@ -12396,12 +12844,12 @@
     "fees": "Free to Gretna residents; $35 gate fee for contractors and residents with small trailers (6 ft or less)",
     "notes": "Operated by the City of Gretna. Replaced Jefferson Parish's Meadowbrook Drop-Off Site (484 Wall Blvd) on Nov 3, 2026; through a parish partnership all Jefferson Parish residents may use it free for residential waste (https://www.jeffparish.gov/1337/Drop-Off-Sites). City contact 504-363-1500",
     "source": "https://www.gretnala.com/waste-drop-off-site/",
-    "checked": "2026-11-13",
+    "checked": "2026-11-24",
     "slug": "gretna-burmaster-waste-drop-off-site",
     "questions": {
      "residents_only": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "no",
+      "evidence": "City of Gretna Waste Drop-Off Site page (https://www.gretnala.com/waste-drop-off-site/, fetched 2026-11-24): “Free to Gretna residents”; “A gate fee of $35.00 will be charged to contractors and residents with small trailers six feet or less.”"
      },
      "id_required": {
       "answer": "not stated by source",
@@ -12450,7 +12898,7 @@
     },
     "operator": "City of Gretna",
     "source_notice": "",
-    "questions_reviewed": "2026-11-13"
+    "questions_reviewed": "2026-11-24"
    },
    {
     "name": "Jefferson Parish Lafitte Drop-Off Site",
