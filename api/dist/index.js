@@ -21494,6 +21494,15 @@ var domains = {
   "eip155:84532": { name: "USDC", version: "2" },
   "eip155:8453": { name: "USD Coin", version: "2" }
 };
+var DEFAULT_FACILITATOR = "https://facilitator.payai.network";
+var TESTNET_FACILITATOR = "https://x402.org/facilitator";
+function facilitatorConfig(value, network) {
+  const url2 = value || DEFAULT_FACILITATOR;
+  if (url2 !== DEFAULT_FACILITATOR && url2 !== TESTNET_FACILITATOR) return { url: url2, error: "Payments unavailable: FACILITATOR_URL is not allowed" };
+  if (url2 === TESTNET_FACILITATOR && network === "eip155:8453") return { url: url2, error: "Payments unavailable: x402.org facilitator is testnet-only" };
+  return { url: url2 };
+}
+__name(facilitatorConfig, "facilitatorConfig");
 
 // src/caller.ts
 import { isIP } from "node:net";
@@ -21538,6 +21547,7 @@ var State = class extends DurableObject {
       const previous = await this.ctx.storage.get("payment");
       if (previous) {
         if (previous.resource !== body.resource) return Response.json({ error: "Signature already used for a different request" }, { status: 409 });
+        if (previous.status === "failed") return Response.json(previous.result, { status: 502 });
         if (previous.status === "done" && Date.now() - previous.time < 9e5) return Response.json(previous.result);
         return Response.json({ error: "Payment already submitted or settlement outcome unknown" }, { status: 409 });
       }
@@ -21549,7 +21559,7 @@ var State = class extends DurableObject {
       }
       const r = body.requirements;
       if (payload.x402Version !== 2 || !payload.accepted || ["scheme", "network", "asset", "amount", "payTo", "maxTimeoutSeconds"].some((k) => payload.accepted[k] !== r[k]) || payload.accepted.extra?.name !== r.extra.name || payload.accepted.extra?.version !== r.extra.version) return Response.json({ error: "Payment requirements do not match" }, { status: 400 });
-      const client = new HTTPFacilitatorClient({ url: "https://facilitator.payai.network" });
+      const client = new HTTPFacilitatorClient({ url: body.facilitatorUrl });
       try {
         const verify = await client.verify(payload, r);
         if (!verify.isValid) return Response.json({ error: "Payment verification failed", ...typeof verify.invalidReason === "string" ? { reason: verify.invalidReason } : {} }, { status: 402 });
@@ -21559,7 +21569,13 @@ var State = class extends DurableObject {
       await this.ctx.storage.put("payment", { status: "pending", resource: body.resource, time: Date.now() });
       try {
         const settled = await client.settle(payload, r);
-        if (!settled.success) return Response.json({ error: "Payment settlement failed", ...typeof settled.errorReason === "string" ? { reason: settled.errorReason } : {} }, { status: 502 });
+        if (!settled.success) {
+          const reason = typeof settled.errorReason === "string" ? settled.errorReason : void 0;
+          const result2 = { error: "Payment settlement failed", ...reason !== void 0 ? { reason } : {} };
+          await this.ctx.storage.put("payment", { status: "failed", resource: body.resource, time: Date.now(), result: result2 });
+          console.error(JSON.stringify({ event: "payment_settlement_failed", errorReason: reason }));
+          return Response.json(result2, { status: 502 });
+        }
         const result = { receipt: encodePaymentResponseHeader(settled), transaction: settled.transaction };
         await this.ctx.storage.put("payment", { status: "done", resource: body.resource, time: Date.now(), result });
         return Response.json(result);
@@ -21581,7 +21597,7 @@ var rates = { search: { amount: "10000", price: "$0.01" }, facility: { amount: "
 var sha = /* @__PURE__ */ __name(async (s) => Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s)))).map((x) => x.toString(16).padStart(2, "0")).join(""), "sha");
 var json2 = /* @__PURE__ */ __name((body, status = 200, headers = {}) => Response.json(body, { status, headers }), "json");
 var call = /* @__PURE__ */ __name(async (env, key, body) => env.STATE.get(env.STATE.idFromName(key)).fetch("https://state/", { method: "POST", body: JSON.stringify(body) }), "call");
-var docs = /* @__PURE__ */ __name((network, asset, payTo) => `# TossMap API for agents
+var docs = /* @__PURE__ */ __name((network, asset, payTo, facilitator) => `# TossMap API for agents
 
 TossMap lists places to recycle or dispose of household materials in covered US metros. Confirm with the operator before driving; a listing does not guarantee acceptance.
 
@@ -21597,7 +21613,7 @@ TossMap lists places to recycle or dispose of household materials in covered US 
 Searches with zero results are free. Three searches with results per IPv4 address or IPv6 /64 prefix per UTC day are free; later searches with results cost $0.01 USDC. X-Free-Searches-Remaining reports the balance on free search responses and challenges. Count is before limit.
 
 ## Payment (x402 v2 exact)
-Current network: ${network}; USDC asset: ${asset || "unsupported"}; payTo: ${payTo || "not configured"}; facilitator: https://facilitator.payai.network. These values reflect the current Worker configuration. Amounts are USDC base units (6 decimals).
+Current network: ${network}; USDC asset: ${asset || "unsupported"}; payTo: ${payTo || "not configured"}; facilitator: ${facilitator}. These values reflect the current Worker configuration. Amounts are USDC base units (6 decimals).
 1. GET a paid resource. A 402 has JSON describing the price and a base64 PAYMENT-REQUIRED header; search challenges include match count without results.
 2. Inspect network, asset, amount and payTo. Use an x402 v2 client to sign the accepted requirements.
 3. Retry the same URL with PAYMENT-SIGNATURE. On success PAYMENT-RESPONSE contains the base64 settlement receipt. Retrying the same signature and URL within 15 minutes returns the cached receipt.
@@ -21624,12 +21640,12 @@ Example with @x402/fetch, @x402/evm and viem (supply your own account securely):
 Geocoding: US Census Bureau and \xA9 OpenStreetMap contributors (Nominatim). Coordinates are approximate; some facilities have no coordinates and do not appear in radius searches.
 `, "docs");
 async function handle(req, env, ip, info) {
-  const url2 = new URL(req.url), path = url2.pathname, network = env.X402_NETWORK || "eip155:84532", payTo = env.PAY_TO_ADDRESS || "", asset = assets[network];
+  const url2 = new URL(req.url), path = url2.pathname, network = env.X402_NETWORK || "eip155:84532", payTo = env.PAY_TO_ADDRESS || "", asset = assets[network], facilitator = facilitatorConfig(env.FACILITATOR_URL, network);
   if (req.method === "OPTIONS") return new Response(null, { status: 204 });
   if (req.method !== "GET") return json2({ error: "Method not allowed" }, 405);
-  if (path === "/" || path === "/llms.txt") return new Response(docs(network, asset, payTo), { headers: { "content-type": "text/markdown; charset=utf-8" } });
+  if (path === "/" || path === "/llms.txt") return new Response(docs(network, asset, payTo, facilitator.url), { headers: { "content-type": "text/markdown; charset=utf-8" } });
   if (path === "/openapi.json") return json2(openapi);
-  if (path === "/.well-known/x402") return json2({ x402Version: 2, network, asset, payTo: payTo || null, facilitator: "https://facilitator.payai.network", resources: [{ path: "/v1/search", price: "$0.01", condition: "results after three free searches per IPv4 address or IPv6 /64 prefix per UTC day" }, { path: "/v1/facilities/{id}", price: "$0.005" }, { path: "/v1/snapshot", price: "$5.00" }], disclaimer });
+  if (path === "/.well-known/x402") return json2({ x402Version: 2, network, asset, payTo: payTo || null, facilitator: facilitator.url, resources: [{ path: "/v1/search", price: "$0.01", condition: "results after three free searches per IPv4 address or IPv6 /64 prefix per UTC day" }, { path: "/v1/facilities/{id}", price: "$0.005" }, { path: "/v1/snapshot", price: "$5.00" }], disclaimer });
   const dataset = { ...version_default, facilities_total: fs.length, geocoding_attribution: "US Census Bureau and \xA9 OpenStreetMap contributors (Nominatim)." };
   if (path === "/v1/meta") return json2({ dataset, metros: ms.length, prices: rates, network, asset, disclaimer });
   if (path === "/v1/metros") return json2({ dataset, metros: ms.map((m) => ({ ...m, facilities: fs.filter((f) => f.metro === m.id).length })), disclaimer });
@@ -21674,6 +21690,7 @@ async function handle(req, env, ip, info) {
     rate = rates.snapshot;
   } else return json2({ error: "Not found" }, 404);
   info.price = rate.price;
+  if (facilitator.error) return json2({ error: facilitator.error }, 503);
   if (!asset || !/^0x[0-9a-fA-F]{40}$/.test(payTo) || /^0x0{40}$/i.test(payTo)) return json2({ error: "Payments unavailable: invalid or missing PAY_TO_ADDRESS or X402_NETWORK" }, 503);
   const requirements = { scheme: "exact", network, asset, amount: rate.amount, payTo, maxTimeoutSeconds: 300, extra: domains[network] };
   const resource = { url: url2.toString(), description: `TossMap ${path} (${rate.price} USDC)`, mimeType: "application/json" };
@@ -21687,7 +21704,7 @@ async function handle(req, env, ip, info) {
     return json2({ error: "Payment required", description: resource.description, price: rate.price, currency: "USDC", matches: count, how_to_pay: path === "/v1/snapshot" ? "Use an x402 v2 client; retry with PAYMENT-SIGNATURE. @x402/core 2.23+ clients default to a $1 spend limit; raise your client spend limit to at least $5 for this snapshot." : "Use an x402 v2 client; retry with PAYMENT-SIGNATURE.", disclaimer }, 402, { "PAYMENT-REQUIRED": encodePaymentRequiredHeader(required2), "Cache-Control": "no-store", "X-Free-Searches-Remaining": "0" });
   }
   const ready = JSON.stringify(result);
-  const state = await call(env, "signature:" + await sha(signature), { action: "payment", signature, requirements, resource: url2.toString() });
+  const state = await call(env, "signature:" + await sha(signature), { action: "payment", signature, requirements, resource: url2.toString(), facilitatorUrl: facilitator.url });
   const outcome = await state.json();
   if (!state.ok) return json2(outcome, state.status);
   info.kind = "paid";

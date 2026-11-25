@@ -37,6 +37,11 @@
       "type": "plain_text",
       "name": "PAY_TO_ADDRESS",
       "text": ""
+    },
+    {
+      "type": "plain_text",
+      "name": "FACILITATOR_URL",
+      "text": ""
     }
   ],
   "observability": {
