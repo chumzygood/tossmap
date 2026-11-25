@@ -13,10 +13,10 @@ export class State extends DurableObject {
    const r=body.requirements;
    if(payload.x402Version!==2||!payload.accepted||['scheme','network','asset','amount','payTo','maxTimeoutSeconds'].some(k=>(payload.accepted as any)[k]!==r[k])||payload.accepted.extra?.name!==r.extra.name||payload.accepted.extra?.version!==r.extra.version) return Response.json({error:'Payment requirements do not match'}, {status:400});
    const client=new HTTPFacilitatorClient({url:'https://facilitator.payai.network'});
-   try {const verify=await client.verify(payload,r);if(!verify.isValid)return Response.json({error:'Payment verification failed'}, {status:402});}
+   try {const verify=await client.verify(payload,r);if(!verify.isValid)return Response.json({error:'Payment verification failed',...(typeof verify.invalidReason==='string'?{reason:verify.invalidReason}:{})}, {status:402});}
    catch{return Response.json({error:'Payment verification unavailable'}, {status:503});}
    await this.ctx.storage.put('payment',{status:'pending',resource:body.resource,time:Date.now()});
-   try {const settled=await client.settle(payload,r);if(!settled.success)return Response.json({error:'Payment settlement failed'}, {status:502}); const result={receipt:encodePaymentResponseHeader(settled),transaction:settled.transaction};await this.ctx.storage.put('payment',{status:'done',resource:body.resource,time:Date.now(),result});return Response.json(result);}
+   try {const settled=await client.settle(payload,r);if(!settled.success)return Response.json({error:'Payment settlement failed',...(typeof settled.errorReason==='string'?{reason:settled.errorReason}:{})}, {status:502}); const result={receipt:encodePaymentResponseHeader(settled),transaction:settled.transaction};await this.ctx.storage.put('payment',{status:'done',resource:body.resource,time:Date.now(),result});return Response.json(result);}
    catch{return Response.json({error:'Payment settlement outcome unknown; contact the operator'}, {status:503});}
   });
   return Response.json({error:'Unknown action'},{status:400});

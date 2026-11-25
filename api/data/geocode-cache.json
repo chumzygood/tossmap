@@ -1429,7 +1429,13 @@
     "source": "US Census",
     "zip": "22079"
   },
-  "facility:washington-dc:fort-totten-transfer-station-tires": null,
+  "facility:washington-dc:fort-totten-transfer-station-tires": {
+    "lat": 38.9470715,
+    "lng": -77.0023181,
+    "quality": "recycling POI (Fort Totten Transfer Station)",
+    "source": "Nominatim",
+    "zip": null
+  },
   "metro:albuquerque-nm": {
     "lat": 35.0841034,
     "lng": -106.650985,

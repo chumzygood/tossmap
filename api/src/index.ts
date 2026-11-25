@@ -6,6 +6,7 @@ import zips from './data/zips.json';
 import version from './data/version.json';
 import { locate, search, type Facility, type Metro } from './search';
 import {openapi} from './openapi';
+import {domains} from './payment';
 export { State } from './state';
 interface Env {STATE:DurableObjectNamespace; GENERAL_LIMIT:RateLimit; CHALLENGE_LIMIT:RateLimit; X402_NETWORK?:string; PAY_TO_ADDRESS?:string}
 const disclaimer='Confirm with the operator before driving; a listing does not guarantee acceptance.';
@@ -15,11 +16,52 @@ const rates={search:{amount:'10000',price:'$0.01'},facility:{amount:'5000',price
 const sha=async(s:string)=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))).map(x=>x.toString(16).padStart(2,'0')).join('');
 const json=(body:unknown,status=200,headers:HeadersInit={})=>Response.json(body,{status,headers});
 const call=async(env:Env,key:string,body:unknown)=>env.STATE.get(env.STATE.idFromName(key)).fetch('https://state/',{method:'POST',body:JSON.stringify(body)});
-const docs=`# TossMap API\n\nConfirm with the operator before driving; a listing does not guarantee acceptance.\n\nFree coverage and three searches with results per IP per UTC day. Search with no results is free. Further searches cost $0.01 USDC, facility detail $0.005, and snapshot $5 via x402 v2 on Base.\n\n\`curl 'https://api.tossmap.com/v1/coverage?zip=10001'\`\n\`curl 'https://api.tossmap.com/v1/search?zip=10001&material=paint'\`\n\nWhen the free allowance is exhausted, inspect the PAYMENT-REQUIRED header on the 402 response. Sign using an x402 v2 client and retry with PAYMENT-SIGNATURE; the PAYMENT-RESPONSE header contains the receipt. See /openapi.json and /.well-known/x402.\n`;
+const docs=(network:string,asset:string|undefined,payTo:string)=>`# TossMap API for agents
+
+TossMap lists places to recycle or dispose of household materials in covered US metros. Confirm with the operator before driving; a listing does not guarantee acceptance.
+
+## Endpoints
+- GET /v1/meta: dataset metadata and prices, free.
+- GET /v1/metros: covered metros, free.
+- GET /v1/coverage?zip=10001: nearest metro, distance and covered (within 100 miles), free. Supply zip, lat and lng, or city and state (covered metro names).
+- GET /v1/search?zip=10001&material=paint: location as above plus at least one material or filter. Materials: tires, paint, e_waste, batteries, motor_oil, household_chemicals (hyphens also accepted). Filters businesses_accepted, fee_charged, residents_only accept yes or no. radius_mi defaults to 25, maximum 100; limit defaults to 10, maximum 10. Results are sorted by distance.
+- GET /v1/facilities/{id}: full facility record, $0.005 USDC.
+- GET /v1/snapshot: full dataset, $5.00 USDC.
+- GET /openapi.json: API specification; GET /.well-known/x402: payment discovery.
+
+Searches with zero results are free. Three searches with results per IP per UTC day are free; later searches with results cost $0.01 USDC. X-Free-Searches-Remaining reports the balance on free search responses and challenges. Count is before limit.
+
+## Payment (x402 v2 exact)
+Current network: ${network}; USDC asset: ${asset||'unsupported'}; payTo: ${payTo||'not configured'}; facilitator: https://facilitator.payai.network. These values reflect the current Worker configuration. Amounts are USDC base units (6 decimals).
+1. GET a paid resource. A 402 has JSON describing the price and a base64 PAYMENT-REQUIRED header; search challenges include match count without results.
+2. Inspect network, asset, amount and payTo. Use an x402 v2 client to sign the accepted requirements.
+3. Retry the same URL with PAYMENT-SIGNATURE. On success PAYMENT-RESPONSE contains the base64 settlement receipt. Retrying the same signature and URL within 15 minutes returns the cached receipt.
+
+Example with @x402/fetch, @x402/evm and viem (supply your own account securely):
+
+    import { wrapFetchWithPaymentFromConfig } from '@x402/fetch';
+    import { ExactEvmScheme } from '@x402/evm/exact/client';
+    const paidFetch = wrapFetchWithPaymentFromConfig(fetch, { schemes: [{ network: 'eip155:*', client: new ExactEvmScheme(account) }] });
+    const response = await paidFetch('https://api.tossmap.com/v1/facilities/dsny-special-waste-drop-off-bronx');
+    console.log(await response.json());
+
+## Examples (trimmed)
+    GET /v1/coverage?zip=10001
+    {"nearest_metro":{"city":"New York","state":"NY","distance_mi":1.2},"covered":true,"disclaimer":"..."}
+    GET /v1/search?zip=10001&material=paint
+    {"count":1,"results":[{"id":"...","name":"...","location":{"distance_mi":2.1}}],"disclaimer":"..."}
+    GET /v1/facilities/dsny-special-waste-drop-off-bronx
+    {"facility":{"id":"dsny-special-waste-drop-off-bronx","name":"...","questions":{}},"disclaimer":"..."}
+
+## Errors
+400: correct the location, filters or signature. 402: inspect PAYMENT-REQUIRED and pay, or inspect reason if verification failed. 404: check endpoint or facility ID. 409: signature already used or settlement uncertain; contact the operator. 429: wait for Retry-After seconds. 502: facilitator rejected settlement; inspect reason and contact the operator. 503: configuration or facilitator unavailable, or settlement outcome unknown; contact the operator if settlement is uncertain.
+
+Geocoding: US Census Bureau and © OpenStreetMap contributors (Nominatim). Coordinates are approximate; some facilities have no coordinates and do not appear in radius searches.
+`;
 async function handle(req:Request,env:Env,ip:string,info:{kind:string;price:string;tx?:string}):Promise<Response>{
  const url=new URL(req.url),path=url.pathname,network=env.X402_NETWORK||'eip155:84532',payTo=env.PAY_TO_ADDRESS||'',asset=assets[network];
  if(req.method==='OPTIONS')return new Response(null,{status:204}); if(req.method!=='GET')return json({error:'Method not allowed'},405);
- if(path==='/'||path==='/llms.txt')return new Response(docs,{headers:{'content-type':'text/markdown; charset=utf-8'}});
+ if(path==='/'||path==='/llms.txt')return new Response(docs(network,asset,payTo),{headers:{'content-type':'text/markdown; charset=utf-8'}});
  if(path==='/openapi.json')return json(openapi);
  if(path==='/.well-known/x402')return json({x402Version:2,network,asset,payTo:payTo||null,facilitator:'https://facilitator.payai.network',resources:[{path:'/v1/search',price:'$0.01',condition:'results after three free searches per IP per UTC day'},{path:'/v1/facilities/{id}',price:'$0.005'},{path:'/v1/snapshot',price:'$5.00'}],disclaimer});
  const dataset={...version,facilities_total:fs.length,geocoding_attribution:'US Census Bureau and © OpenStreetMap contributors (Nominatim).'};
@@ -37,7 +79,7 @@ async function handle(req:Request,env:Env,ip:string,info:{kind:string;price:stri
  else return json({error:'Not found'},404);
  info.price=rate.price;
  if(!asset||!/^0x[0-9a-fA-F]{40}$/.test(payTo)||/^0x0{40}$/i.test(payTo))return json({error:'Payments unavailable: invalid or missing PAY_TO_ADDRESS or X402_NETWORK'},503);
- const requirements={scheme:'exact',network:network as `eip155:${string}`,asset,amount:rate.amount,payTo,maxTimeoutSeconds:300,extra:{name:'USDC',version:'2'}};
+ const requirements={scheme:'exact',network:network as `eip155:${string}`,asset,amount:rate.amount,payTo,maxTimeoutSeconds:300,extra:domains[network]};
  const resource={url:url.toString(),description:`TossMap ${path} (${rate.price} USDC)`,mimeType:'application/json'};
  const signature=req.headers.get('PAYMENT-SIGNATURE');
  if(!signature){if(!(await env.CHALLENGE_LIMIT.limit({key:ip})).success)return json({error:'Too many payment challenges'},429,{'Retry-After':'60'});info.kind='402';const extensions=declareDiscoveryExtension({input:path==='/v1/search'?{zip:'10001',material:'paint'}:{},inputSchema:{type:'object',description:'Location and material or filter for searches',properties:{zip:{type:'string'},lat:{type:'number'},lng:{type:'number'},city:{type:'string'},state:{type:'string'},material:{type:'string'},radius_mi:{type:'number'}}},output:{example:{disclaimer},schema:{type:'object',description:resource.description,properties:{disclaimer:{type:'string'}}}}}); (extensions.bazaar.info.input as unknown as {method:string}).method='GET'; const required={x402Version:2,resource,accepts:[requirements],extensions};return json({error:'Payment required',description:resource.description,price:rate.price,currency:'USDC',matches:count,how_to_pay:'Use an x402 v2 client; retry with PAYMENT-SIGNATURE.',disclaimer},402,{'PAYMENT-REQUIRED':encodePaymentRequiredHeader(required),'Cache-Control':'no-store','X-Free-Searches-Remaining':'0'});}

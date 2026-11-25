@@ -1,1 +1,1 @@
-This folder contains the built output assets for the worker "tossmap-api" generated at 2026-11-25T23:15:33.561Z.
+This folder contains the built output assets for the worker "tossmap-api" generated at 2026-11-25T23:22:02.875Z.
