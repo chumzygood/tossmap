@@ -39,12 +39,6 @@
       "text": ""
     }
   ],
-  "migrations": {
-    "new_tag": "v1",
-    "new_sqlite_classes": [
-      "State"
-    ]
-  },
   "observability": {
     "enabled": true
   }
