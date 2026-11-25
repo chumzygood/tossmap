@@ -2993,7 +2993,7 @@
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "operator": "not stated by source",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "source_checked": "2026-11-24",
+    "source_checked": "2026-11-25",
     "listing_fingerprint": "3cce5280546fd7f5402893d06e443c3764c18a67cf9478d558cfd5acacd92962",
     "questions": {
       "residents_only": {
@@ -3045,7 +3045,7 @@
         "evidence": "DC DPW page: “No commercial waste will be allowed.”"
       }
     },
-    "questions_reviewed": "2026-11-24"
+    "questions_reviewed": "2026-11-25"
   },
   "MA|Boston|Zero Waste Day Drop-Off – Millennium Park": {
     "slug": "zero-waste-day-drop-off-millennium-park",
@@ -3740,7 +3740,7 @@
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "operator": "not stated by source",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "source_checked": "2026-11-24",
+    "source_checked": "2026-11-25",
     "listing_fingerprint": "318c7d7e979e297128ceb0a17516118269fdaa7fcbac89846caa312d1448952b",
     "questions": {
       "residents_only": {
@@ -3792,13 +3792,13 @@
         "evidence": "Baltimore DPW HHW page: “Businesses & Commercial Users must use a private vendor. Commercial Vehicles are not permitted.”"
       }
     },
-    "questions_reviewed": "2026-11-24"
+    "questions_reviewed": "2026-11-25"
   },
   "CA|Sacramento|North Area Recovery Station HHW Drop-Off": {
     "slug": "north-area-recovery-station-hhw-drop-off",
     "operator": "not stated by source",
     "source": "https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/north-area-recovery-station/nars-hhw-drop-off.html",
-    "source_checked": "2026-11-02",
+    "source_checked": "2026-11-25",
     "listing_fingerprint": "04d6d1ef9b46747b573ea23bdb4d213f524a84af905506291578db6df37c342d",
     "questions": {
       "residents_only": {
@@ -3806,16 +3806,16 @@
         "evidence": ""
       },
       "id_required": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Sacramento County NARS HHW Drop-Off Facility page (fetched 2026-11-25): “Remain in your vehicle upon arrival at the facility, prepare to show your driver’s license, and allow staff to offload your household hazardous waste.”"
       },
       "appointment_required": {
         "answer": "not stated by source",
         "evidence": ""
       },
       "fee_charged": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Sacramento County NARS HHW Drop-Off Facility page (fetched 2026-11-25): “Residents can drop off up to 15 gallons or 125 pounds of HHW per month at the NARS HHW Facility for free.” (Businesses pay: “Businesses that qualify as a Very Small Quantity Generator (VSQG) to drop off accepted Hazardous Waste (HHW) at the NARS HHW Facility for a fee , must make an appointment in advance.”)"
       },
       "tires": {
         "answer": "not stated by source",
@@ -3842,15 +3842,15 @@
         "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
       },
       "quantity_limits": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Sacramento County NARS HHW Drop-Off Facility page (fetched 2026-11-25): “Residents can drop off up to 15 gallons or 125 pounds of HHW per month”; “Fluorescent tubes and bulbs (up to 12 tubes per month)”; “Propane tanks (barbecue style, limit two, maximum 5-7 gallons)”."
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Conditional — Sacramento County NARS HHW Drop-Off Facility page (fetched 2026-11-25): “Businesses that qualify as a Very Small Quantity Generator (VSQG) to drop off accepted Hazardous Waste (HHW) at the NARS HHW Facility for a fee , must make an appointment in advance.”"
       }
     },
-    "questions_reviewed": "2026-11-10"
+    "questions_reviewed": "2026-11-25"
   },
   "MO|Kansas City|Household Hazardous Waste Facility": {
     "slug": "household-hazardous-waste-facility",
@@ -4546,7 +4546,7 @@
     "slug": "salt-lake-county-hhw-collection-center",
     "operator": "not stated by source",
     "source": "https://www.saltlakecounty.gov/health/household-hazardous-waste/",
-    "source_checked": "2026-11-02",
+    "source_checked": "2026-11-25",
     "listing_fingerprint": "ff0daba1c353504bc97289919186325eab988d56599affb663a48922b5aeb187",
     "questions": {
       "residents_only": {
@@ -4562,28 +4562,28 @@
         "evidence": ""
       },
       "fee_charged": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Salt Lake County HHW Safe Disposal page (https://www.saltlakecounty.gov/health/household-hazardous-waste/safe-disposal/, fetched 2026-11-25): “Disposal of common household amounts is free for people who live in Salt Lake County.” (business waste: Salt Lake County HHW For Businesses page (https://www.saltlakecounty.gov/health/household-hazardous-waste/businesses/, fetched 2026-11-25): “There is a fee for disposal of business waste.”)"
       },
       "tires": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Salt Lake County HHW Safe Disposal page (https://www.saltlakecounty.gov/health/household-hazardous-waste/safe-disposal/, fetched 2026-11-25): Automotive: “The following locations accept antifreeze, car batteries, and oil. They cannot accept tires.” (locations listed: Household Hazardous Waste Collection Center, Salt Lake Valley Landfill HHW Collection Site, Trans-Jordan Landfill HHW Collection Site)"
       },
       "paint": {
         "answer": "yes",
         "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
       },
       "e_waste": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Salt Lake County HHW Safe Disposal page (https://www.saltlakecounty.gov/health/household-hazardous-waste/safe-disposal/, fetched 2026-11-25): Electronics — Household Hazardous Waste Facility: “We accept electronic waste from Salt Lake County residents only. We cannot accept business waste or waste from people who live outside Salt Lake County.”"
       },
       "batteries": {
         "answer": "yes",
         "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
       },
       "motor_oil": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Salt Lake County HHW Safe Disposal page (https://www.saltlakecounty.gov/health/household-hazardous-waste/safe-disposal/, fetched 2026-11-25): Automotive: “The following locations accept antifreeze, car batteries, and oil. They cannot accept tires.” (locations listed: Household Hazardous Waste Collection Center, Salt Lake Valley Landfill HHW Collection Site, Trans-Jordan Landfill HHW Collection Site)"
       },
       "household_chemicals": {
         "answer": "yes",
@@ -4594,16 +4594,17 @@
         "evidence": ""
       },
       "businesses_accepted": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Conditional — Salt Lake County HHW For Businesses page (https://www.saltlakecounty.gov/health/household-hazardous-waste/businesses/, fetched 2026-11-25): “Business waste disposal requires an appointment.” “Eligible businesses pay a disposal fee based on the quantity and type of waste.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-25"
   },
   "UT|Salt Lake City|Trans-Jordan Landfill HHW": {
     "slug": "trans-jordan-landfill-hhw",
     "operator": "not stated by source",
     "source": "https://www.saltlakecounty.gov/health/household-hazardous-waste/",
-    "source_checked": "2026-11-02",
+    "source_checked": "2026-11-25",
     "listing_fingerprint": "e053ea50d05f2769bbae0a5e3b49605360aecac595257916e6f3fccfe776675d",
     "questions": {
       "residents_only": {
@@ -4623,8 +4624,8 @@
         "evidence": ""
       },
       "tires": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Salt Lake County HHW Safe Disposal page (https://www.saltlakecounty.gov/health/household-hazardous-waste/safe-disposal/, fetched 2026-11-25): Automotive: “The following locations accept antifreeze, car batteries, and oil. They cannot accept tires.” (locations listed: Household Hazardous Waste Collection Center, Salt Lake Valley Landfill HHW Collection Site, Trans-Jordan Landfill HHW Collection Site)"
       },
       "paint": {
         "answer": "yes",
@@ -4639,8 +4640,8 @@
         "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
       },
       "motor_oil": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Salt Lake County HHW Safe Disposal page (https://www.saltlakecounty.gov/health/household-hazardous-waste/safe-disposal/, fetched 2026-11-25): Automotive: “The following locations accept antifreeze, car batteries, and oil. They cannot accept tires.” (locations listed: Household Hazardous Waste Collection Center, Salt Lake Valley Landfill HHW Collection Site, Trans-Jordan Landfill HHW Collection Site)"
       },
       "household_chemicals": {
         "answer": "yes",
@@ -4654,13 +4655,14 @@
         "answer": "not stated by source",
         "evidence": ""
       }
-    }
+    },
+    "questions_reviewed": "2026-11-25"
   },
   "UT|Salt Lake City|Salt Lake Valley Landfill HHW": {
     "slug": "salt-lake-valley-landfill-hhw",
     "operator": "not stated by source",
     "source": "https://www.saltlakecounty.gov/health/household-hazardous-waste/",
-    "source_checked": "2026-11-02",
+    "source_checked": "2026-11-25",
     "listing_fingerprint": "35d9fa94d68d5bdf2a7ed43a82362bf35ca4acad49087aa87a0b6814c5291279",
     "questions": {
       "residents_only": {
@@ -4680,8 +4682,8 @@
         "evidence": ""
       },
       "tires": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "no",
+        "evidence": "Salt Lake County HHW Safe Disposal page (https://www.saltlakecounty.gov/health/household-hazardous-waste/safe-disposal/, fetched 2026-11-25): Automotive: “The following locations accept antifreeze, car batteries, and oil. They cannot accept tires.” (locations listed: Household Hazardous Waste Collection Center, Salt Lake Valley Landfill HHW Collection Site, Trans-Jordan Landfill HHW Collection Site)"
       },
       "paint": {
         "answer": "yes",
@@ -4696,8 +4698,8 @@
         "evidence": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)"
       },
       "motor_oil": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Salt Lake County HHW Safe Disposal page (https://www.saltlakecounty.gov/health/household-hazardous-waste/safe-disposal/, fetched 2026-11-25): Automotive: “The following locations accept antifreeze, car batteries, and oil. They cannot accept tires.” (locations listed: Household Hazardous Waste Collection Center, Salt Lake Valley Landfill HHW Collection Site, Trans-Jordan Landfill HHW Collection Site)"
       },
       "household_chemicals": {
         "answer": "yes",
@@ -4711,7 +4713,8 @@
         "answer": "not stated by source",
         "evidence": ""
       }
-    }
+    },
+    "questions_reviewed": "2026-11-25"
   },
   "NE|Omaha|Under The Sink": {
     "slug": "under-the-sink",
@@ -5764,7 +5767,7 @@
     "slug": "carr-center-division-of-waste",
     "operator": "not stated by source",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "source_checked": "2026-11-24",
+    "source_checked": "2026-11-25",
     "listing_fingerprint": "4ad530d9788cd4468e8e8f28795e0091f72248f4a84bdbdf24a8f26c2820a956",
     "questions": {
       "residents_only": {
@@ -5816,13 +5819,13 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-24"
+    "questions_reviewed": "2026-11-25"
   },
   "OH|Cleveland|Ridge Road Transfer Station": {
     "slug": "ridge-road-transfer-station",
     "operator": "not stated by source",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "source_checked": "2026-11-24",
+    "source_checked": "2026-11-25",
     "listing_fingerprint": "8faa0e6a7049ca9f7444519102fe20c5f240cf2b0cd08cad06684154e484b398",
     "questions": {
       "residents_only": {
@@ -5874,7 +5877,7 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-24"
+    "questions_reviewed": "2026-11-25"
   },
   "OH|Cleveland|Cuyahoga County Solid Waste District HQ (electronics drop-off bins)": {
     "slug": "cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins",
@@ -9412,7 +9415,7 @@
     "slug": "securis-first-saturday-electronics-recycling-henrico",
     "operator": "Securis (Central Virginia Waste Management Authority electronics recycling contractor)",
     "source": "https://cvwma.com/cvwma-locations/henrico-2/",
-    "source_checked": "2026-11-24",
+    "source_checked": "2026-11-25",
     "listing_fingerprint": "ba331cf93621b0fcfe1009a66b9e2d7768fedbe6fbc3f0775b3af0115ac76ad2",
     "questions": {
       "residents_only": {
@@ -9464,7 +9467,7 @@
         "evidence": ""
       }
     },
-    "questions_reviewed": "2026-11-24"
+    "questions_reviewed": "2026-11-25"
   },
   "WA|Seattle|North Transfer Station (Seattle Public Utilities)": {
     "slug": "north-transfer-station-seattle-public-utilities",
@@ -11901,5 +11904,411 @@
       }
     },
     "questions_reviewed": "2026-11-24"
+  },
+  "CA|Sacramento|Kiefer Landfill (tires, e-waste & ABOP drop-off)": {
+    "slug": "kiefer-landfill-tires-e-waste-abop",
+    "operator": "Sacramento County Department of Waste Management & Recycling",
+    "source": "https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill.html",
+    "source_checked": "2026-11-25",
+    "listing_fingerprint": "a1d46f62025fb8b8527f27f6315596c63a1e3234ab66bd3a0f075a33e9421b5c",
+    "questions": {
+      "residents_only": {
+        "answer": "no",
+        "evidence": "Sacramento County Kiefer Landfill page (fetched 2026-11-25): “Customers are not required to be residents of Sacramento County.” (free e-waste and ABOP drop-off are for residents)"
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "yes",
+        "evidence": "Conditional — Sacramento County Kiefer Landfill Facility Fees page (https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill/fees.html, fetched 2026-11-25): “Cars/Station Wagons/Small SUVs $10.00 each … Pickup Trucks $35.00 each”; “Tires - Passenger Vehicle/Light Truck (1 - 4 per day) No Fee”; “Tires - Passenger Vehicle/Light Truck (5 - 8 per day) $10.00 each”; electronic waste “Residents Only: No Fee”."
+      },
+      "tires": {
+        "answer": "yes",
+        "evidence": "Sacramento County Free Residential Drop Off Items page (https://wmr.saccounty.gov/content/wmr/us/en/residential-services/free-drop-off-locations/free-drop-off-items.html, fetched 2026-11-25): “Tires - Passenger Vehicle/Light Truck (rims OK; limit 4 per day)” accepted for free at Kiefer Landfill and the North Area Recovery Station."
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "Sacramento County Kiefer ABOP & Special Waste page (https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill/special-waste.html, fetched 2026-11-25): Items Accepted at the Kiefer ABOP & Special Waste Facility include “Paint (latex/oil-based)”."
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "Sacramento County Free Residential Drop Off Items page (https://wmr.saccounty.gov/content/wmr/us/en/residential-services/free-drop-off-locations/free-drop-off-items.html, fetched 2026-11-25): Electronics Waste: “Cellphones; … Laptops; Computers; Tablet PCs; … TVs; … Printers & fax machines”."
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "Sacramento County Kiefer ABOP & Special Waste page (https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill/special-waste.html, fetched 2026-11-25): Items Accepted include “Batteries (household & car) - if taped, only clear tape”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "Sacramento County Kiefer ABOP & Special Waste page (https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill/special-waste.html, fetched 2026-11-25): Items Accepted include “Oil (motor & filters / cooking)”."
+      },
+      "household_chemicals": {
+        "answer": "no",
+        "evidence": "Sacramento County Kiefer ABOP & Special Waste page (https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill/special-waste.html, fetched 2026-11-25): Items Not Accepted at the Kiefer ABOP & Special Waste Facility include “Household cleaners​”, “Pesticides and herbicides”, “Pool chemicals and poisons” and “Solvents​”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "Sacramento County Kiefer ABOP & Special Waste page (https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill/special-waste.html, fetched 2026-11-25): “Residents can drop off up to 15 gallons or 125 pounds of accepted items per month”; Sacramento County Free Residential Drop Off Items page (https://wmr.saccounty.gov/content/wmr/us/en/residential-services/free-drop-off-locations/free-drop-off-items.html, fetched 2026-11-25): tires “limit 4 per day”; appliances “up to two per day”."
+      },
+      "businesses_accepted": {
+        "answer": "yes",
+        "evidence": "Conditional — Sacramento County Kiefer Landfill page (fetched 2026-11-25): “Kiefer landfill accepts household waste from the public, businesses, and private waste haulers”. Sacramento County Kiefer Landfill Facility Fees page (https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill/fees.html, fetched 2026-11-25): ABOP for businesses: “Must make an appointment, call 916-876-9458”."
+      }
+    },
+    "questions_reviewed": "2026-11-25"
+  },
+  "CA|Sacramento|Elk Grove Special Waste Collection Center": {
+    "slug": "elk-grove-special-waste-collection-center",
+    "operator": "City of Elk Grove",
+    "source": "https://elkgrove.gov/recycling-and-waste/household-hazardous-waste",
+    "source_checked": "2026-11-25",
+    "listing_fingerprint": "e5ada116743af2c006ce7f82e38347d2d4120c45be837dc50febe9ab162fdf41",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "City of Elk Grove Household Hazardous Waste page (fetched 2026-11-25): “All residents of Elk Grove, eligible residents of Sacramento County, and certain small businesses can take their hazardous waste to the Special Waste Collection Center”. City of Elk Grove Recycling & Waste FAQ (https://elkgrove.gov/departments-and-divisions/recycling-waste, fetched 2026-11-25): “There is no fee for Sacramento County residents but must provide proof of residency”."
+      },
+      "id_required": {
+        "answer": "yes",
+        "evidence": "City of Elk Grove Recycling & Waste FAQ (https://elkgrove.gov/departments-and-divisions/recycling-waste, fetched 2026-11-25): “must provide proof of residency via photo ID, utility bill, or similar.”"
+      },
+      "appointment_required": {
+        "answer": "no",
+        "evidence": "City of Elk Grove Household Hazardous Waste page (fetched 2026-11-25): Residents: “Saturday to Wednesday 9:00am to 4:00pm”; only “Small Businesses Wednesdays, by appointment only.”"
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "City of Elk Grove Recycling & Waste FAQ (https://elkgrove.gov/departments-and-divisions/recycling-waste, fetched 2026-11-25): “There is no fee for Sacramento County residents but must provide proof of residency via photo ID, utility bill, or similar.”"
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "City of Elk Grove Acceptable/Unacceptable Hazardous Waste page (https://elkgrove.gov/special-waste-collection-center/acceptableunacceptable-hazardous-waste, fetched 2026-11-25): Paint Products: “Enamel and Oil-based Paint”, “Latex and Water-based Paint”, “Paint Stripper & Paint Thinner”."
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "City of Elk Grove Acceptable/Unacceptable Hazardous Waste page (https://elkgrove.gov/special-waste-collection-center/acceptableunacceptable-hazardous-waste, fetched 2026-11-25): Electronic Devices: “Cell Phones”, “CRT's and Rear Projection Televisions”, “Computers and Laptops”, “Computer Monitors”, “LCD and Plasma Televisions”, “Printers”."
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "City of Elk Grove Acceptable/Unacceptable Hazardous Waste page (https://elkgrove.gov/special-waste-collection-center/acceptableunacceptable-hazardous-waste, fetched 2026-11-25): Universal Waste: “Batteries”; Automotive Products: “Auto and Motorcycle Batteries”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "City of Elk Grove Acceptable/Unacceptable Hazardous Waste page (https://elkgrove.gov/special-waste-collection-center/acceptableunacceptable-hazardous-waste, fetched 2026-11-25): Automotive Products include “Anti-freeze”, “Motor Oil” and “Transmission Fluid”."
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "City of Elk Grove Acceptable/Unacceptable Hazardous Waste page (https://elkgrove.gov/special-waste-collection-center/acceptableunacceptable-hazardous-waste, fetched 2026-11-25): accepted items include “Household Cleaners”, “Pesticides & Garden Products” and “Pool Chemicals”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "City of Elk Grove Acceptable/Unacceptable Hazardous Waste page (https://elkgrove.gov/special-waste-collection-center/acceptableunacceptable-hazardous-waste, fetched 2026-11-25): “Propane cylinders (5 gal or less)”; non-friable asbestos: “The maximum amount that can be transported at one time is 125 pounds.”"
+      },
+      "businesses_accepted": {
+        "answer": "yes",
+        "evidence": "Conditional — City of Elk Grove Household Hazardous Waste page (fetched 2026-11-25): “Small Businesses Wednesdays, by appointment only.”"
+      }
+    },
+    "questions_reviewed": "2026-11-25"
+  },
+  "CA|Sacramento|City of Sacramento HHW Facility (Sacramento Recycling and Transfer Station)": {
+    "slug": "city-of-sacramento-hhw-facility-srts",
+    "operator": "City of Sacramento Recycling & Solid Waste Division",
+    "source": "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/2026-27-service-guide/2026-2027-service-guide-/SacRecycles_2026-2027_ServiceGuide_WEB_v1.0-A_508.pdf",
+    "source_checked": "2026-11-25",
+    "listing_fingerprint": "f58f30b5a93808ef79eaa4a12c71463156375dca1c946a9686845e7652eaac91",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "City of Sacramento Recycling & Solid Waste 2026–2027 Service Guide (fetched 2026-11-25), Household Hazardous Waste: “Household Hazardous Waste can be taken to the following locations, free of charge (maximum of 15 gals or 125 lbs. per trip)”, including “Sacramento Recycling and Transfer Station HHW Facility 8491 Fruitridge Road”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "City of Sacramento Recycling & Solid Waste 2026–2027 Service Guide (fetched 2026-11-25), Household Hazardous Waste: accepted: “Paints (oil-based or latex)”, “Paint thinners”."
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "City of Sacramento Recycling & Solid Waste 2026–2027 Service Guide (fetched 2026-11-25), Household Hazardous Waste: accepted: “Electronic waste (has a plug or runs on batteries)”."
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "City of Sacramento Recycling & Solid Waste 2026–2027 Service Guide (fetched 2026-11-25), Household Hazardous Waste: accepted: “Batteries”, “Car batteries (lead acid/car, 6 volt or more)”, “Household batteries”."
+      },
+      "motor_oil": {
+        "answer": "yes",
+        "evidence": "City of Sacramento Recycling & Solid Waste 2026–2027 Service Guide (fetched 2026-11-25), Household Hazardous Waste: accepted: “Used motor oil and filters”, “Antifreeze”."
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "City of Sacramento Recycling & Solid Waste 2026–2027 Service Guide (fetched 2026-11-25), Household Hazardous Waste: accepted: “Household cleaners”, “Pesticides”, “Pool chemicals”, “Solvents”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "City of Sacramento Recycling & Solid Waste 2026–2027 Service Guide (fetched 2026-11-25), Household Hazardous Waste: “free of charge (maximum of 15 gals or 125 lbs. per trip)”."
+      },
+      "businesses_accepted": {
+        "answer": "yes",
+        "evidence": "Conditional — City of Sacramento Recycling & Solid Waste 2026–2027 Service Guide (fetched 2026-11-25), Household Hazardous Waste: Unacceptable: “Contractor or business waste (must call to make an appointment)”."
+      }
+    },
+    "questions_reviewed": "2026-11-25"
+  },
+  "OH|Cleveland|Euclid Service Garage (HHW drop-off)": {
+    "slug": "euclid-service-garage-hhw",
+    "operator": "City of Euclid (Cuyahoga County Solid Waste District program)",
+    "source": "https://cuyahogarecycles.org/recycle-in/euclid/household_hazardous_waste/",
+    "source_checked": "2026-11-25",
+    "listing_fingerprint": "dab2a4742696742b3131f95ee4ff0af1b633ca0f6c556fe7d66afd85cfc774c2",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles Euclid HHW page (fetched 2026-11-25): “The program is free to all Cuyahoga County households”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "Oil-based only — CuyahogaRecycles Euclid HHW page (fetched 2026-11-25): HHW examples include “oil or solvent-based paint, sealers, primers, or coatings”; Euclid: “No latex paint.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles Euclid HHW page (fetched 2026-11-25): “Latex paint, batteries, and fluorescent bulbs are not accepted in this program.”"
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles Euclid HHW page (fetched 2026-11-25): “In 2026, Euclid has a drop-off for household hazardous waste from March 8-13, June 7-12, and September 13-18 at the Euclid Service Garage.” Examples of HHW include “solvents, paint thinner, varnishes and polyurethanes, … automotive fluids, aerosols, … pesticides, pool chemicals, hand sanitizer, and household cleaners.”"
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles Euclid HHW page (fetched 2026-11-25): “Waste from Businesses or Commercial Properties … Businesses must contract with a licensed company for proper disposal or recycling.”"
+      }
+    },
+    "questions_reviewed": "2026-11-25"
+  },
+  "OH|Cleveland|North Olmsted Service Garage (HHW drop-off)": {
+    "slug": "north-olmsted-service-garage-hhw",
+    "operator": "City of North Olmsted (Cuyahoga County Solid Waste District program)",
+    "source": "https://cuyahogarecycles.org/recycle-in/north-olmsted/household_hazardous_waste/",
+    "source_checked": "2026-11-25",
+    "listing_fingerprint": "8d84e7a5d7e1d0e0f422896f684eb6b5b28f6d8d391b79b532e29f6d80a7f5b2",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles North Olmsted HHW page (fetched 2026-11-25): “The program is free to all Cuyahoga County households”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "Oil-based only — CuyahogaRecycles North Olmsted HHW page (fetched 2026-11-25): HHW examples include “oil or solvent-based paint, sealers, primers, or coatings”; North Olmsted: “No latex paint.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles North Olmsted HHW page (fetched 2026-11-25): “Latex paint, batteries, and fluorescent bulbs are not accepted in this program.”"
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles North Olmsted HHW page (fetched 2026-11-25): “In 2026, North Olmsted has a seasonal drop-off for household hazardous waste on April 20-25, July 20-25, and October 19-24 at the North Olmsted Service Garage (south side of city hall).” Examples of HHW include “solvents, paint thinner, varnishes and polyurethanes, … automotive fluids, aerosols, … pesticides, pool chemicals, hand sanitizer, and household cleaners.”"
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles North Olmsted HHW page (fetched 2026-11-25): “Waste from Businesses or Commercial Properties … Businesses must contract with a licensed company for proper disposal or recycling.”"
+      }
+    },
+    "questions_reviewed": "2026-11-25"
+  },
+  "OH|Cleveland|Westlake Service Center (HHW drop-off)": {
+    "slug": "westlake-service-center-hhw",
+    "operator": "City of Westlake (Cuyahoga County Solid Waste District program)",
+    "source": "https://cuyahogarecycles.org/recycle-in/westlake/household_hazardous_waste/",
+    "source_checked": "2026-11-25",
+    "listing_fingerprint": "2dc146022893254e23bec401208ab5f0b8057fe374b40874dd04975f308fa314",
+    "questions": {
+      "residents_only": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles Westlake HHW page (fetched 2026-11-25): “The program is free to all Cuyahoga County households”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "Oil-based only — CuyahogaRecycles Westlake HHW page (fetched 2026-11-25): HHW examples include “oil or solvent-based paint, sealers, primers, or coatings”; Westlake: “No latex paint.”"
+      },
+      "e_waste": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "batteries": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles Westlake HHW page (fetched 2026-11-25): “Latex paint, batteries, and fluorescent bulbs are not accepted in this program.”"
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CuyahogaRecycles Westlake HHW page (fetched 2026-11-25): “In 2026, Westlake will have a drop-off for household hazardous waste at the Westlake Service Center on May 11-16 and September 14-19.” Examples of HHW include “solvents, paint thinner, varnishes and polyurethanes, … automotive fluids, aerosols, … pesticides, pool chemicals, hand sanitizer, and household cleaners.”"
+      },
+      "quantity_limits": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "businesses_accepted": {
+        "answer": "no",
+        "evidence": "CuyahogaRecycles Westlake HHW page (fetched 2026-11-25): “Waste from Businesses or Commercial Properties … Businesses must contract with a licensed company for proper disposal or recycling.”"
+      }
+    },
+    "questions_reviewed": "2026-11-25"
+  },
+  "VA|Richmond|Chesterfield County Shred, E-Cycle & HHW Recycling Event (Fairgrounds)": {
+    "slug": "chesterfield-county-shred-e-cycle-hhw-event-fairgrounds",
+    "operator": "Chesterfield County",
+    "source": "https://cvwma.com/event/chesterfield-county-shred-e-cycle-and-household-hazardous-waste-recycling/",
+    "source_checked": "2026-11-25",
+    "listing_fingerprint": "181e5c1855c0eb3f37249601216b3aadde7dbcbc434785fc43ab372833777af9",
+    "questions": {
+      "residents_only": {
+        "answer": "yes",
+        "evidence": "CVWMA event page for the Mar 13, 2027 Chesterfield County Shred, E-Cycle and Household Hazardous Waste Recycling event (fetched 2026-11-25): “Chesterfield County will host a recycling event for county residents on Saturday, March 13, 2027, 9 a.m. until noon, at the Chesterfield County Fairgrounds.”"
+      },
+      "id_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "appointment_required": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "fee_charged": {
+        "answer": "yes",
+        "evidence": "Conditional — CVWMA event page for the Mar 13, 2027 Chesterfield County Shred, E-Cycle and Household Hazardous Waste Recycling event (fetched 2026-11-25): “Household Hazardous Waste (HHW) Accepted Items (No Fees)”; “CRT televisions are charged based on size … ($28 per television) … ($37 per television)”; “Other electronics ($5.25-$40 per item)”."
+      },
+      "tires": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "paint": {
+        "answer": "yes",
+        "evidence": "Oil-based only — CVWMA event page for the Mar 13, 2027 Chesterfield County Shred, E-Cycle and Household Hazardous Waste Recycling event (fetched 2026-11-25): “Oil-based paints (limit five gallons)”."
+      },
+      "e_waste": {
+        "answer": "yes",
+        "evidence": "CVWMA event page for the Mar 13, 2027 Chesterfield County Shred, E-Cycle and Household Hazardous Waste Recycling event (fetched 2026-11-25): Shred and E-Cycling Accepted Items include “CRT televisions”, “Hard drive, cell phone and tablet shredding” and “Other electronics ($5.25-$40 per item)”."
+      },
+      "batteries": {
+        "answer": "yes",
+        "evidence": "CVWMA event page for the Mar 13, 2027 Chesterfield County Shred, E-Cycle and Household Hazardous Waste Recycling event (fetched 2026-11-25): “Rechargeable batteries (limit five) Ni-Cad Ni-MH Li-Ion”."
+      },
+      "motor_oil": {
+        "answer": "not stated by source",
+        "evidence": ""
+      },
+      "household_chemicals": {
+        "answer": "yes",
+        "evidence": "CVWMA event page for the Mar 13, 2027 Chesterfield County Shred, E-Cycle and Household Hazardous Waste Recycling event (fetched 2026-11-25): HHW accepted: “Acids … Drain Cleaner Bases … Bleach Ammonia Solvents … Pool chemicals … Pesticides/herbicides”."
+      },
+      "quantity_limits": {
+        "answer": "yes",
+        "evidence": "CVWMA event page for the Mar 13, 2027 Chesterfield County Shred, E-Cycle and Household Hazardous Waste Recycling event (fetched 2026-11-25): “Acids (limit less than five gallons total)”; “Oil-based paints (limit five gallons)”; “Rechargeable batteries (limit five)”; “Aerosol cans (limit 10 total)”."
+      },
+      "businesses_accepted": {
+        "answer": "not stated by source",
+        "evidence": ""
+      }
+    },
+    "questions_reviewed": "2026-11-25"
   }
 }

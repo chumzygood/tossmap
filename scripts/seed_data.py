@@ -600,6 +600,57 @@ REVERIFIED24={"Sisson Street Residential Recycling Center (HHW days)","DPW Speci
 for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED24: f["checked"]=D24
+# --- Nov 25 2026 daily pass additions (each verified against cited official source on 2026-11-25) ---
+D25="2026-11-25"
+CUYPAST=" All 2026 windows have passed; the District has not posted 2027 dates yet"
+add("Cleveland",
+  F("Euclid Service Garage (HHW drop-off)","25200 Lakeland Boulevard, Euclid, OH","Seasonal (2026): Mar 8–13, Jun 7–12 and Sep 13–18, 8am–3pm."+CUYPAST,CUYU.format("euclid"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the Euclid Service Garage; "+CUYCALL+CUY,D25),
+  F("North Olmsted Service Garage (HHW drop-off)","5200 Dover Center Road, North Olmsted, OH","Seasonal (2026): Apr 20–25, Jul 20–25 and Oct 19–24; Mon–Fri 7am–3pm, Sat 9am–noon."+CUYPAST,CUYU.format("north-olmsted"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the North Olmsted Service Garage, on the south side of city hall; "+CUYCALL+CUY,D25),
+  F("Westlake Service Center (HHW drop-off)","741 Bassett Road, Westlake, OH","Seasonal (2026): May 11–16 and Sep 14–19; Mon–Fri 8am–6pm, Sat 7:30am–noon."+CUYPAST,CUYU.format("westlake"),
+    CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the Westlake Service Center; "+CUYCALL+CUY,D25))
+SACW="https://wmr.saccounty.gov/content/wmr/us/en/"
+add("Sacramento",
+  F("Kiefer Landfill (tires, e-waste & ABOP drop-off)","12701 Kiefer Blvd., Sloughhouse, CA 95683",
+    "Landfill: Mon–Fri 6:30am–4:30pm; Sat–Sun 8:30am–4:30pm (arrive at least 15 minutes before closing; may close early if the daily vehicle limit is reached). Thanksgiving Day closes at 2pm; Christmas and New Year's Day close at 2pm on weekdays, all day on weekends. ABOP & Special Waste drop-off: Tue–Sat 8:30am–4pm (closed Thanksgiving, Christmas and New Year's Day)",
+    SACW+"county-facilities/kiefer-landfill.html",
+    "Free residential drop-off: passenger/light-truck tires (rims OK, 4 per day free), e-waste (TVs, CRTs, monitors, computers, laptops, tablets, phones, printers, gaming consoles, stereos), large appliances (2 per day free), small corded appliances and power tools, mattresses and box springs, clean metal, clean inerts. "
+    "ABOP & Special Waste facility (residents): antifreeze, household and car batteries, motor oil and filters, cooking oil, latex and oil-based paint, aerosol cans, brake/transmission fluid, fluorescent tubes and bulbs (12 tubes per month), home-generated sharps in sealed containers, mercury thermometers and switches, barbecue propane tanks (limit two). "
+    "Not accepted at ABOP: acids, household cleaners, pesticides and herbicides, solvents, paint thinners, gasoline, pool chemicals, ammunition, explosives, medical waste. Products with built-in batteries go to the e-waste area. Also takes household trash, green waste and treated wood (fees)",
+    "Free for residents: tires 1–4 per day, e-waste, appliances 1–2 per day, mattresses, clean metal, and ABOP items up to 15 gallons or 125 pounds per month (a load must contain only free items). Tires 5–8 per day $10 each; commercial/semi tires $30 each; trash loads $10 (cars) to $45 (large vans) per vehicle, or $61.35 per ton weighed (2026 fees)",
+    "Operated by Sacramento County Department of Waste Management & Recycling. The landfill takes waste from the public, businesses and haulers, and customers do not need to be Sacramento County residents; free e-waste and ABOP drop-off are for residents. Businesses: ABOP and e-waste via the county's Commercial Hazardous Waste program by appointment (916-876-9458), for a fee. "
+    "Fees: "+SACW+"county-facilities/kiefer-landfill/fees.html; ABOP: "+SACW+"county-facilities/kiefer-landfill/special-waste.html; free items: "+SACW+"residential-services/free-drop-off-locations/free-drop-off-items.html. (916) 875-5555",D25),
+  F("Elk Grove Special Waste Collection Center","9255 Disposal Lane, Elk Grove, CA 95624",
+    "Residents: Sat–Wed 9am–4pm. Reuse Room: Sat–Wed 9am–3:30pm (Elk Grove residents only). Small businesses: Wednesdays by appointment only. Closed all City holidays, including Thanksgiving, Christmas Eve, Christmas Day, New Year's Eve and New Year's Day",
+    "https://elkgrove.gov/recycling-and-waste/household-hazardous-waste",
+    "Household hazardous waste: latex and oil-based paint, paint thinner and stripper, varnish; motor oil, antifreeze, transmission fluid, gasoline and diesel; auto and motorcycle batteries and household batteries; fluorescent and LED bulbs, mercury devices; pesticides, herbicides and fertilizer; pool chemicals; household cleaners; aerosol cans; cooking oil and grease; propane cylinders (5 gal or less); household fire extinguishers; smoke alarms; over-the-counter medicines; sharps in rigid containers; non-friable asbestos (special packaging, max 125 lb). "
+    "Electronics: TVs (CRT, LCD, plasma), computers, laptops, monitors, tablets, cell phones, telephones, printers, copiers, fax machines, radios and stereos, VCR/DVD players. "
+    "Not accepted: trash, mattresses, Styrofoam (EPS), explosives and ammunition, infectious medical waste, large compressed gas cylinders, radioactive waste, treated wood, prescription (controlled) medications",
+    "No fee for Sacramento County residents; proof of residency required (photo ID, utility bill or similar)",
+    "Operated by the City of Elk Grove. Open to Elk Grove residents and eligible Sacramento County residents for household hazardous waste and electronics; residents outside Elk Grove may not use the Recycling Area, EPS recycling or the Reuse Room. Qualifying small businesses: Wednesdays by appointment. "
+    "Accepted-items list: https://elkgrove.gov/special-waste-collection-center/acceptableunacceptable-hazardous-waste. HHW information line (916) 478-2228 (option 2)",D25),
+  F("City of Sacramento HHW Facility (Sacramento Recycling and Transfer Station)","8491 Fruitridge Road, Sacramento, CA 95826","Tue–Sat 8am–5pm",
+    "https://www.cityofsacramento.gov/content/dam/portal/pw/RSW/2026-27-service-guide/2026-2027-service-guide-/SacRecycles_2026-2027_ServiceGuide_WEB_v1.0-A_508.pdf",
+    "Household hazardous waste: latex and oil-based paint, paint thinners, solvents; used motor oil and filters, antifreeze, brake/transmission fluid, automotive products, gasoline and other flammables; car batteries and household batteries; fluorescent lamps and tubes, mercury thermometers; pesticides and herbicides; pool chemicals; household cleaners; acids and bases; aerosol cans; kitchen oils; propane cylinders; flares; vape pens and e-cigarettes; sharps (special packaging); electronic waste (anything with a plug or that runs on batteries). "
+    "Not accepted: air bags, ammunition, asbestos, compressed gas cylinders (except propane and handheld aerosols), explosives and fireworks, infectious and medical waste (except sharps), medications, radioactive and reactive waste, treated wood",
+    "Free (maximum 15 gallons or 125 lbs per trip)",
+    "City of Sacramento HHW drop-off at the Sacramento Recycling and Transfer Station (City of Sacramento Recycling & Solid Waste Division 2026–2027 Service Guide). Contractor or business waste: call to make an appointment. (916) 737-4880",D25))
+CHF="https://cvwma.com/event/chesterfield-county-shred-e-cycle-and-household-hazardous-waste-recycling/"
+add("Richmond",
+  F("Chesterfield County Shred, E-Cycle & HHW Recycling Event (Fairgrounds)","Chesterfield County Fairgrounds, 10300 Courthouse Road, Chesterfield, VA",
+    "Event: Sat Mar 13, 2027, 9am–noon. Next listed date: Sat Oct 30, 2027, 9am–noon",CHF,
+    "Household hazardous waste (no fee): acids, drain cleaner, bleach, ammonia, paint thinner, lighter fluid, brake fluid, pool chemicals, oil-based paint (limit 5 gallons), rechargeable batteries (limit 5), fertilizers, pesticides/herbicides, thermostats/thermometers, aerosol cans (limit 10), fluorescent tubes, CFL and LED bulbs (limit 6 each), 3D printing chemicals. "
+    "Electronics (fees) and paper shredding (up to 5 small boxes or bags free)",
+    "HHW and paper shredding free; CRT TVs $28 (27 inch or less) or $37 (over 27 inch); hard drive, phone and tablet shredding $8–$10.50 per item; other electronics $5.25–$40 per item",
+    "Chesterfield County recycling event for county residents, listed on the CVWMA events calendar (Oct 30, 2027 event: https://cvwma.com/event/chesterfield-county-shred-e-cycle-and-household-household-waste-recycling-event/). Limits: acids, bases and solvents under 5 gallons each; pool chemicals 2 bags or 5 containers, under 3 gallons; pesticides/herbicides 5 containers, under 3 gallons; fertilizers 2 bags; thermostats/thermometers 2",D25))
+# Re-verified against the official page on 2026-11-25 (event dates unchanged).
+REVERIFIED25={"Sisson Street Residential Recycling Center (HHW days)","DPW Special Waste Collection Event – RFK Stadium Lot 8",
+  "Carr Center (Division of Waste)","Ridge Road Transfer Station","Securis First Saturday Electronics Recycling (CVWMA)",
+  "North Area Recovery Station HHW Drop-Off","Salt Lake County HHW Collection Center","Salt Lake Valley Landfill HHW","Trans-Jordan Landfill HHW"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED25: f["checked"]=D25
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

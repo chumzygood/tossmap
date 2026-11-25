@@ -2,16 +2,16 @@
 
 > TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
 
-Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 206 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 213 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
-- [Paint](https://tossmap.com/paint/): 134 official listings in 50 metro areas
-- [Electronics (e-waste)](https://tossmap.com/e-waste/): 93 official listings in 28 metro areas
-- [Tires](https://tossmap.com/tires/): 93 official listings in 25 metro areas
-- [Batteries](https://tossmap.com/batteries/): 135 official listings in 50 metro areas
-- [Motor oil](https://tossmap.com/motor-oil/): 94 official listings in 25 metro areas
-- [Household chemicals](https://tossmap.com/household-chemicals/): 125 official listings in 48 metro areas
+- [Paint](https://tossmap.com/paint/): 141 official listings in 50 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 98 official listings in 30 metro areas
+- [Tires](https://tossmap.com/tires/): 94 official listings in 26 metro areas
+- [Batteries](https://tossmap.com/batteries/): 139 official listings in 50 metro areas
+- [Motor oil](https://tossmap.com/motor-oil/): 100 official listings in 26 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 131 official listings in 48 metro areas
 
 ## Cities
 - [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
@@ -116,6 +116,9 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [Orange Village Service Department (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/orange-village-service-department-hhw/)
 - [Brook Park Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/brook-park-service-garage-hhw/)
 - [Bay Village Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/bay-village-service-garage-hhw/)
+- [Euclid Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/euclid-service-garage-hhw/)
+- [North Olmsted Service Garage (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/north-olmsted-service-garage-hhw/)
+- [Westlake Service Center (HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/westlake-service-center-hhw/)
 - [SWACO Household Hazardous Waste Drop-Off — Columbus, OH](https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/)
 - [SWACO Recycling Convenience Center — Columbus, OH](https://tossmap.com/oh/columbus/swaco-recycling-convenience-center/)
 - [Dallas County Home Chemical Collection Center — Dallas, TX](https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/)
@@ -242,10 +245,14 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 - [New Kent County Refuse Site (Route 612, Quinton) — Richmond, VA](https://tossmap.com/va/richmond/new-kent-county-refuse-site-route-612-quinton/)
 - [New Kent County Refuse Site (Route 634, Barhamsville) — Richmond, VA](https://tossmap.com/va/richmond/new-kent-county-refuse-site-route-634-barhamsville/)
 - [New Kent County Refuse Site (Route 647, Lanexa) — Richmond, VA](https://tossmap.com/va/richmond/new-kent-county-refuse-site-route-647-lanexa/)
+- [Chesterfield County Shred, E-Cycle & HHW Recycling Event (Fairgrounds) — Richmond, VA](https://tossmap.com/va/richmond/chesterfield-county-shred-e-cycle-hhw-event-fairgrounds/)
 - [Agua Mansa Permanent HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/agua-mansa-permanent-hhw-facility/)
 - [Lake Elsinore HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/lake-elsinore-hhw-facility/)
 - [Palm Springs HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/palm-springs-hhw-facility/)
 - [North Area Recovery Station HHW Drop-Off — Sacramento, CA](https://tossmap.com/ca/sacramento/north-area-recovery-station-hhw-drop-off/)
+- [Kiefer Landfill (tires, e-waste & ABOP drop-off) — Sacramento, CA](https://tossmap.com/ca/sacramento/kiefer-landfill-tires-e-waste-abop/)
+- [Elk Grove Special Waste Collection Center — Sacramento, CA](https://tossmap.com/ca/sacramento/elk-grove-special-waste-collection-center/)
+- [City of Sacramento HHW Facility (Sacramento Recycling and Transfer Station) — Sacramento, CA](https://tossmap.com/ca/sacramento/city-of-sacramento-hhw-facility-srts/)
 - [Salt Lake County HHW Collection Center — Salt Lake City, UT](https://tossmap.com/ut/salt-lake-city/salt-lake-county-hhw-collection-center/)
 - [Trans-Jordan Landfill HHW — Salt Lake City, UT](https://tossmap.com/ut/salt-lake-city/trans-jordan-landfill-hhw/)
 - [Salt Lake Valley Landfill HHW — Salt Lake City, UT](https://tossmap.com/ut/salt-lake-city/salt-lake-valley-landfill-hhw/)

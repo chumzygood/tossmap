@@ -79,6 +79,8 @@ SEO_OVERRIDE={
    "UCLA S.A.F.E. Collection Center, 550 Charles E Young Dr: free drop-off for paint, motor oil, e-waste, batteries and sharps. Fri, Sat, first Sun 9am–3pm."),
  "/nc/raleigh/south-wake-multi-material-recycling-facility/":("South Wake Recycling Facility, Apex: e-waste & oil | TossMap",
    "South Wake Multi-Material Recycling Facility, 6130 Old Smithfield Rd, Apex, NC: electronics, large appliances, motor oil and antifreeze. Mon–Sat 8am–4pm."),
+ "/ca/sacramento/":("Sacramento tire, e-waste & hazardous waste drop-offs | TossMap",
+   "Sacramento-area drop-offs: free resident tires (4/day) and e-waste at Kiefer Landfill; paint, batteries and chemicals at NARS, Fruitridge Rd and Elk Grove."),
  "/ca/san-jose/santa-clara-county-hhw-san-jose/":("Santa Clara County HHW San Jose: appointments & items | TossMap",
    "Santa Clara County HHW drop-off, 1608 Las Plumas Ave, San Jose: free, by appointment Thu–Sat with proof of residency. Paint, batteries, chemicals, auto fluids."),
 }
@@ -443,6 +445,9 @@ def facility_place(f, m):
     phones={re.sub(r"\D","",x) for x in re.findall(r"\(?\b\d{3}\)?[ .-]\d{3}-\d{4}\b",f.get("notes") or "")}
     if len(phones)==1:
         d=phones.pop(); place["telephone"]=f"+1-{d[:3]}-{d[3:6]}-{d[6:]}"
+    # Free-entry flag only when the reviewed fee answer is an evidence-backed "no" (never inferred from blank or conditional fees).
+    fee=(f.get("questions") or {}).get("fee_charged") or {}
+    if fee.get("answer")=="no" and fee.get("evidence"): place["isAccessibleForFree"]=True
     spec=opening_hours_spec(f["hours"])
     if spec: place["openingHoursSpecification"]=spec
     elif f.get("hours"):
