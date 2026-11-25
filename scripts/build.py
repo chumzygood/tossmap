@@ -17,7 +17,7 @@ CSS="""*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,sans-serif
 header,footer{background:#1f4d3a;color:#fff;padding:14px 20px}header a,footer a{color:#fff}main{max-width:900px;margin:0 auto;padding:20px}
 a{color:#1f6b4d}.card{background:#fff;border:1px solid #dfe5e0;border-radius:8px;padding:16px;margin:14px 0}
 .card h3{margin:0 0 6px}.meta{font-size:13px;color:#5b6b63}.crumbs{font-size:14px}
-ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4px solid #e0b030;padding:10px 14px}.tags a{display:inline-block;margin:0 8px 6px 0}
+ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4px solid #e0b030;padding:10px 14px}.lead{margin:0 0 14px}.tags a{display:inline-block;margin:0 8px 6px 0}
 .signup{background:#fff;border:1px solid #dfe5e0;border-radius:8px;padding:16px;margin:14px 0}
 .signup h2{margin:0 0 6px;font-size:1.15em}.signup p{margin:0 0 10px}
 .signup-form{display:flex;flex-wrap:wrap;gap:8px;align-items:flex-end;margin:10px 0}
@@ -621,6 +621,94 @@ def fac(f,m):
     return f"""<div class="card" id="{slug(f['name'])}"><h3><a href="{fpath(f,m)}">{e(f['name'])}</a></h3><div>{e(f['address'])}</div>
 <p><b>Accepts:</b> {e(f['accepts'])}<br><b>Hours:</b> {e(f['hours'])}{'<br><b>Fees:</b> '+e(f['fees']) if f['fees'] else ''}{'<br><b>Notes:</b> '+e(f['notes']) if f['notes'] else ''}</p>
 {'<p class="note">'+e(f['source_notice'])+'</p>' if f.get('source_notice') else ''}{'<p class="note"><strong>Past event:</strong> '+e(past_event_note(f))+'</p>' if is_past_event(f) else ''}{'<p class="tags">'+tags+'</p>' if tags else ''}<div class="meta">Source: <a href="{e(f['source'])}" rel="nofollow noopener">{e(f['source'])}</a> · Last checked {f['checked']}</div></div>"""
+
+CITY_ALIASES={
+    "New York":("nyc","new york city"),
+    "San Francisco":("sf",),
+    "Los Angeles":("la county","l.a.","los angeles county"),
+    "Washington":("d.c.","district of columbia","washington, dc"),
+    "Honolulu":("oahu","city and county of honolulu"),
+}
+def residency_ok_for_city(f,m):
+    """True when it is safe to say '{city} residents can drop off...'. Skip that claim if the listing limits use to a different place."""
+    blob=" ".join((
+        f.get("notes") or "",
+        ((f.get("questions") or {}).get("residents_only") or {}).get("evidence") or "",
+        f.get("fees") or "",
+    )).lower()
+    names=[m["city"].lower(), *CITY_ALIASES.get(m["city"],())]
+    # "Fairfax County residents" / "county residents" — do not attribute that access to the metro city.
+    for phrase in re.findall(r"((?:[a-z]+ ){0,3}(?:county|parish|city) residents|[a-z]+ residents)", blob):
+        if not any(n and n in phrase for n in names):
+            return False
+    ro=((f.get("questions") or {}).get("residents_only") or {}).get("answer")
+    if ro!="yes":
+        return True
+    if any(n and n in blob for n in names+[m["st"].lower(), (m.get("state") or "").lower()]):
+        return True
+    if not re.search(r"resident|county|city of|only", blob):
+        return True
+    return False
+
+def facility_direct_answer(f,m):
+    """One short sentence from verified fields only. Skip unknown fields rather than invent them."""
+    materials=[MAT_SHORT[s] for s,_,_ in mats(f)]
+    hours=(f.get("hours") or "").strip()
+    fees=(f.get("fees") or "").strip()
+    if materials:
+        if residency_ok_for_city(f,m):
+            lead=f"{m['city']} residents can drop off {and_list(materials)} at {f['name']}"
+        else:
+            lead=f"{f['name']} in {m['city']}, {m['st']} accepts {and_list(materials)}"
+    else:
+        lead=f"{f['name']} is a listed drop-off site in {m['city']}, {m['st']}"
+    if hours:
+        lead+=f", {hours}"
+    if fees:
+        lead+=f", {fees}"
+    lead+="."
+    src=(f.get("source") or "").strip()
+    html_lead=e(lead)
+    if src:
+        html_lead+=f' Source: <a href="{e(src)}" rel="noopener">{e(src)}</a>.'
+    return f'<p class="lead">{html_lead}</p>'
+
+def city_direct_answer(m,have):
+    fs=m["facilities"]
+    if not fs:
+        return ""
+    materials=[MAT_SHORT[s] for s,_ in have]
+    named=CITY_NAMED.get((m["st"],m["city"]))
+    site=next((f for f in fs if f["name"]==named), fs[0])
+    hours=(site.get("hours") or "").strip()
+    fees=(site.get("fees") or "").strip()
+    if materials:
+        if all(residency_ok_for_city(f,m) for f in fs):
+            lead=f"{m['city']} residents can drop off {and_list(materials)}"
+            if len(fs)==1:
+                lead+=f" at {site['name']}"
+            else:
+                lead+=f" at {len(fs)} official sites, including {site['name']}"
+        else:
+            n=len(fs)
+            sites=f"{n} official site" + ("" if n==1 else "s")
+            lead=f"{m['city']}, {m['st']} has {sites} listed for {and_list(materials)}, including {site['name']}"
+    else:
+        if len(fs)==1:
+            lead=f"{site['name']} is listed for {m['city']}, {m['st']}"
+        else:
+            lead=f"{m['city']}, {m['st']} has {len(fs)} official drop-off sites listed, including {site['name']}"
+    if hours:
+        lead+=f", {hours}"
+    if len(fs)==1 and fees:
+        lead+=f", {fees}"
+    lead+="."
+    src=(site.get("source") or "").strip()
+    html_lead=e(lead)
+    if src:
+        html_lead+=f' Source: <a href="{e(src)}" rel="noopener">{e(src)}</a>.'
+    return f'<p class="lead">{html_lead}</p>'
+
 def facility_page(f,m):
     fp=fpath(f,m)
     vis,bl=crumbs([("Home","/"),(m["state"],f"/{slug(m['st'])}/"),(m["city"],cpath(m)),(f["name"],fp)])
@@ -633,7 +721,7 @@ def facility_page(f,m):
         entities.append({"@type":"Question","name":label,"acceptedAnswer":{"@type":"Answer","text":text}})
     materials=" · ".join(f'<a href="/{ms}/">{e(n)}</a>' for ms,n,_ in mats(f))
     others=[o for o in m["facilities"] if o is not f]
-    body=(vis+f'<h1>{e(f["name"])}</h1><p>Waste and recycling drop-off information for {e(m["city"])}, {e(m["st"])}. This is an independent source-backed listing, not the operator’s website.</p>'
+    body=(vis+f'<h1>{e(f["name"])}</h1>'+facility_direct_answer(f,m)+f'<p>Waste and recycling drop-off information for {e(m["city"])}, {e(m["st"])}. This is an independent source-backed listing, not the operator’s website.</p>'
           +(f'<p class="note">{e(f["source_notice"])}</p>' if f.get("source_notice") else "")
           +(f'<p class="note"><strong>Past event:</strong> {e(past_event_note(f))}</p>' if is_past_event(f) else "")
           +'<section class="card"><h2>Before you go</h2><dl>'
@@ -718,7 +806,7 @@ for (sn,st),ms in sorted(states.items()):
         h1=f'Where to dump {and_list(hl) if hl else "household hazardous waste"} in {m["city"]}, {st}'
         named=CITY_NAMED.get((m["st"],m["city"]))
         if named and any(f["name"]==named for f in fs): h1=f'{named}: where to dump {and_list(hl) if hl else "household hazardous waste"} in {m["city"]}, {st}'
-        body=(vis+f'<h1>{e(h1)}</h1>'+note+ans_html
+        body=(vis+f'<h1>{e(h1)}</h1>'+city_direct_answer(m, have)+note+ans_html
               +"".join(fac(f,m) for f in fs)+("<p>No permanent drop-off site listed yet. See the note above for event-based or alternate official options, and check back after the next source review.</p>" if not fs else "")
               +weekend_block(m)
               +(('<h2>By material</h2>'+"".join(f'<h3><a href="/{s}/">{e(n)} drop-off</a></h3><ul>'+"".join(f'<li><a href="{fpath(f,m)}">{e(f["name"])}</a></li>' for f in m["facilities"] if any(x[0]==s for x in mats(f)))+"</ul>" for s,n in have)) if have else "")

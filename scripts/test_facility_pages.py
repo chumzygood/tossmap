@@ -3,6 +3,7 @@ import json
 import re
 import unittest
 import xml.etree.ElementTree as ET
+from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit, unquote
@@ -210,6 +211,33 @@ class FacilityTests(unittest.TestCase):
         key=Path('data/indexnow-key.txt').read_text().strip()
         self.assertRegex(key, r'^[A-Fa-f0-9]{32}$')
         self.assertEqual(Path('docs/'+key+'.txt').read_text().strip(), key)
+
+    def test_direct_answer_lines_use_verified_fields(self):
+        for m in D:
+            city=Path('docs'+city_path(m)+'index.html').read_text()
+            self.assertIn('<p class="lead">', city, city_path(m))
+            if m['facilities']:
+                self.assertIn(m['facilities'][0]['name'], city)
+                self.assertIn(m['facilities'][0]['source'], city)
+            for f in m['facilities']:
+                p=facility_path(m,f)
+                html=Path('docs'+p+'index.html').read_text()
+                self.assertIn('<p class="lead">', html, p)
+                self.assertIn(f['name'], html)
+                self.assertIn(f['source'], html)
+                # Lead sits immediately after H1 and uses only known fields.
+                lead=re.search(r'<h1>.*?</h1><p class="lead">(.*?)</p>', html, re.S).group(1)
+                visible=unescape(re.sub(r'<[^>]+>','',lead))
+                if f.get('hours'):
+                    self.assertIn(f['hours'], visible, p)
+                else:
+                    self.assertNotIn('hours not listed', visible.lower())
+                if f.get('fees'):
+                    self.assertIn(f['fees'], visible, p)
+                else:
+                    self.assertNotRegex(visible, r', not listed\.?$', p)
+                self.assertNotIn('None', visible)
+                self.assertNotIn(UNKNOWN, visible)
 
     def test_known_rejection_and_conditional_cases(self):
         facilities={f['name']:f for m in D for f in m['facilities']}
