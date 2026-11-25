@@ -1,3 +1,33 @@
+# robots.txt — tossmap.com.
+# Every group repeats Allow because robots groups do not inherit.
+# AI answer-engines are welcome: listings are first-party, source-backed drop-off data.
+
 User-agent: *
 Allow: /
+
+# AI answer-engines are explicitly welcome.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://tossmap.com/sitemap.xml

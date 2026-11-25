@@ -183,6 +183,34 @@ class FacilityTests(unittest.TestCase):
         html=Path('docs'+fac+'index.html').read_text()
         self.assertIn('Is this info wrong? Suggest a fix', html)
         self.assertGreaterEqual(read(fac).links.count('mailto:toolshed@mail.grokbot.com?subject='+quote(f'TossMap fix: {fac}', safe='')), 2)
+    def test_robots_allows_ai_crawlers_and_keeps_sitemap(self):
+        text=Path('docs/robots.txt').read_text()
+        self.assertIn('User-agent: *\nAllow: /', text)
+        for bot in ('GPTBot','ChatGPT-User','OAI-SearchBot','ClaudeBot','Claude-SearchBot','Claude-User','PerplexityBot','Google-Extended'):
+            self.assertIn(f'User-agent: {bot}\nAllow: /', text)
+        self.assertIn('Sitemap: https://tossmap.com/sitemap.xml', text)
+
+    def test_llms_intro_and_full_listings(self):
+        llms=Path('docs/llms.txt').read_text()
+        full=Path('docs/llms-full.txt').read_text()
+        n=sum(len(m['facilities']) for m in D)
+        self.assertIn(f'{n} drop-off sites', llms)
+        self.assertIn(f'across {len(D)} US metro areas', llms)
+        self.assertIn('https://tossmap.com/llms-full.txt', llms)
+        self.assertRegex(llms.split('##',1)[0], r'verified against an official government or facility-operator source')
+        self.assertIn('last-checked date', llms.split('##',1)[0])
+        for m in D:
+            for f in m['facilities']:
+                self.assertIn(f['name'], full)
+                self.assertIn(f['source'], full)
+                self.assertIn(BASE+facility_path(m,f), full)
+                self.assertIn(f"Last checked: {f['checked']}", full)
+
+    def test_indexnow_key_file_is_published(self):
+        key=Path('data/indexnow-key.txt').read_text().strip()
+        self.assertRegex(key, r'^[A-Fa-f0-9]{32}$')
+        self.assertEqual(Path('docs/'+key+'.txt').read_text().strip(), key)
+
     def test_known_rejection_and_conditional_cases(self):
         facilities={f['name']:f for m in D for f in m['facilities']}
         self.assertEqual(facilities['Keʻehi Transfer Station']['questions']['tires']['answer'],'no')

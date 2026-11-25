@@ -1,8 +1,10 @@
 # TossMap
 
-> TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.
+> Every TossMap listing is verified against an official government or facility-operator source. Each of the 213 sites includes that source link and a last-checked date. The data is unique because it is a source-backed, dated record — not an unverified aggregate. TossMap does not operate the listed facilities.
 
-Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. 213 drop-off sites are listed across 54 US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+TossMap lists 213 drop-off sites across 54 US metro areas in 31 states. Listings include accepted materials, addresses, hours, fees and eligibility notes when the official source provides them. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+
+A complete plain-text dump of every listing is in [llms-full.txt](https://tossmap.com/llms-full.txt).
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
@@ -287,3 +289,4 @@ Listings include accepted materials, addresses, hours, fees, eligibility notes, 
 ## Optional
 - [Privacy](https://tossmap.com/privacy.html)
 - [Newsletter](https://tossmap.com/newsletter/): local drop-off updates
+- [Full listings (plain text)](https://tossmap.com/llms-full.txt)

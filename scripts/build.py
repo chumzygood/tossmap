@@ -521,9 +521,11 @@ def material_page_qas(s, n, nsites, nmetros):
 
 def write_llms(matidx):
     n=sum(len(m["facilities"]) for m in D)
+    nstates=len(states)
     lines=["# TossMap","",
-           "> TossMap is an independent directory of waste and recycling drop-off options in US cities, using government and facility-operator sources. It does not operate the listed facilities.","",
-           f"Listings include accepted materials, addresses, hours, fees, eligibility notes, source links and last-checked dates where available. {n} drop-off sites are listed across {len(D)} US metros. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.","",
+           f"> Every TossMap listing is verified against an official government or facility-operator source. Each of the {n} sites includes that source link and a last-checked date. The data is unique because it is a source-backed, dated record — not an unverified aggregate. TossMap does not operate the listed facilities.","",
+           f"TossMap lists {n} drop-off sites across {len(D)} US metro areas in {nstates} states. Listings include accepted materials, addresses, hours, fees and eligibility notes when the official source provides them. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.","",
+           f"A complete plain-text dump of every listing is in [llms-full.txt]({BASE}/llms-full.txt).","",
            "## Find a drop-off",
            f"- [Cities and materials]({BASE}/): directory index"]
     for s,nm,_ in MAT:
@@ -537,8 +539,71 @@ def write_llms(matidx):
     for m in sorted(D,key=lambda x:(x["city"],x["st"])):
         for f in m["facilities"]:
             lines.append(f"- [{f['name']} — {m['city']}, {m['st']}]({BASE}{fpath(f,m)})")
-    lines += ["","## Optional",f"- [Privacy]({BASE}/privacy.html)",f"- [Newsletter]({BASE}/newsletter/): local drop-off updates",""]
+    lines += ["","## Optional",f"- [Privacy]({BASE}/privacy.html)",f"- [Newsletter]({BASE}/newsletter/): local drop-off updates",f"- [Full listings (plain text)]({BASE}/llms-full.txt)",""]
     open(f"{OUT}/llms.txt","w").write("\n".join(lines))
+
+def write_llms_full():
+    n=sum(len(m["facilities"]) for m in D)
+    nstates=len(states)
+    lines=["# TossMap — full facility listings","",
+           f"Every listing below is verified against an official government or facility-operator source and includes that source URL and a last-checked date. TossMap lists {n} drop-off sites across {len(D)} US metro areas in {nstates} states. TossMap does not operate these facilities. Rules and hours can change; confirm with the official source before driving.","",
+           f"A shorter index is in {BASE}/llms.txt.","",]
+    by_state={}
+    for m in D:
+        by_state.setdefault((m["state"],m["st"]),[]).append(m)
+    for (state,st),metros in sorted(by_state.items(), key=lambda x:x[0][0]):
+        lines.append(f"## {state}")
+        lines.append("")
+        for m in sorted(metros, key=lambda x:x["city"]):
+            lines.append(f"### {m['city']}, {st}")
+            lines.append("")
+            for f in m["facilities"]:
+                fees=(f.get("fees") or "").strip() or "not listed"
+                lines += [
+                    f"Name: {f['name']}",
+                    f"City/state: {m['city']}, {st}",
+                    f"Address: {f['address']}",
+                    f"Materials accepted: {f['accepts']}",
+                    f"Hours: {f['hours']}",
+                    f"Fees: {fees}",
+                    f"Official source: {f['source']}",
+                    f"Last checked: {f['checked']}",
+                    f"TossMap page: {BASE}{fpath(f,m)}",
+                    "",
+                ]
+    open(f"{OUT}/llms-full.txt","w").write("\n".join(lines))
+
+AI_BOTS=("GPTBot","ChatGPT-User","OAI-SearchBot","ClaudeBot","Claude-SearchBot","Claude-User","PerplexityBot","Google-Extended")
+
+def write_robots():
+    lines=["# robots.txt — tossmap.com.",
+           "# Every group repeats Allow because robots groups do not inherit.",
+           "# AI answer-engines are welcome: listings are first-party, source-backed drop-off data.",
+           "","User-agent: *","Allow: /","",
+           "# AI answer-engines are explicitly welcome."]
+    for bot in AI_BOTS:
+        lines += [f"User-agent: {bot}","Allow: /",""]
+    lines += [f"Sitemap: {BASE}/sitemap.xml",""]
+    open(f"{OUT}/robots.txt","w").write("\n".join(lines))
+
+def load_indexnow_key():
+    for path in ("/workspace/tossmap/indexnow-key.txt","data/indexnow-key.txt"):
+        if os.path.isfile(path):
+            key=open(path).read().strip()
+            if re.fullmatch(r"[A-Fa-f0-9]{32}", key):
+                return key
+    raise SystemExit("IndexNow key file missing; expected data/indexnow-key.txt")
+
+def write_indexnow_key():
+    key=load_indexnow_key()
+    open(f"{OUT}/{key}.txt","w").write(key+"\n")
+    try:
+        os.makedirs("/workspace/tossmap", exist_ok=True)
+        dest="/workspace/tossmap/indexnow-key.txt"
+        if not os.path.isfile(dest) or open(dest).read().strip()!=key:
+            open(dest,"w").write(key+"\n")
+    except OSError:
+        pass
 
 def ldj(f, m):
     place=facility_place(f, m)
@@ -796,7 +861,9 @@ for m in sorted(D,key=lambda x:(priority.index(x["city"]) if x["city"] in priori
 open("data/facility-indexing-queue.txt","w").write("\n".join(facility_queue)+"\n")
 
 write_llms(matidx)
-open(f"{OUT}/robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
+write_llms_full()
+write_robots()
+write_indexnow_key()
 open(f"{OUT}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+"".join(f"<url><loc>{BASE}{u}</loc><lastmod>{d}</lastmod></url>" for u,d in urls)+"</urlset>\n")
 print(len(urls),"pages;",len(states),"states;",n,"facilities")
 open(f"{OUT}/CNAME","w").write("tossmap.com\n"); open(f"{OUT}/.nojekyll","w").write("")
