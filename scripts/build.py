@@ -1,4 +1,5 @@
 import json,html,re,os,datetime
+from urllib.parse import quote
 BASE="https://tossmap.com"
 D=json.load(open("data/facilities.json")); OUT="docs"
 # Facility page paths (used so city FAQ answers link straight to each facility page).
@@ -86,6 +87,8 @@ SEO_OVERRIDE={
 }
 # City pages whose main facility has a well-known name people search for: H1 and first FAQ name it (data comes from that listing).
 CITY_NAMED={("NE","Omaha"):"Under The Sink"}
+def fix_mailto(path):
+    return "mailto:toolshed@mail.grokbot.com?subject="+quote(f"TossMap fix: {path}", safe="")
 def page(path,title,desc,body,graph=(),checked=None):
     title,desc=SEO_OVERRIDE.get(path,(title,desc))
     urls.append((path,checked or STATIC_LASTMOD)); p=f"{OUT}{path}"+("index.html" if path.endswith("/") else "")
@@ -97,7 +100,7 @@ def page(path,title,desc,body,graph=(),checked=None):
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{BASE}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="TossMap"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="{e(title)}"><meta name="twitter:description" content="{e(desc)}">
 <link rel="stylesheet" href="/style.css">{ld}
 {GC}</head><body><header><a href="/"><strong>TossMap</strong></a> · where to toss hazardous waste, paint, e-waste &amp; tires · <a href="/newsletter/">Newsletter</a></header><main>{body}</main>
-<footer>{foot} · <a href="/newsletter/">Newsletter</a> · <a href="/privacy.html">Privacy</a> · <a href="/embed/">Embed widget</a> · <a href="/for-cities/">For cities</a> · <a href="/partners/">Partners</a> · <a href="mailto:toolshed@mail.grokbot.com">Support</a></footer></body></html>""")
+<footer>{foot} · <a href="/newsletter/">Newsletter</a> · <a href="/privacy.html">Privacy</a> · <a href="/embed/">Embed widget</a> · <a href="/for-cities/">For cities</a> · <a href="/partners/">Partners</a> · <a href="{fix_mailto(path)}">Suggest a fix or leave a review</a> · <a href="mailto:toolshed@mail.grokbot.com">Support</a></footer></body></html>""")
 states={}
 for m in D: states.setdefault((m["state"],m["st"]),[]).append(m)
 cpath=lambda m:f"/{slug(m['st'])}/{slug(m['city'])}/"
@@ -572,7 +575,7 @@ def facility_page(f,m):
           +''.join(f'<dt><strong>{e(label)}</strong></dt><dd>{e(value or UNKNOWN)}</dd>' for label,value in [
               ("Operator",f["operator"]),("Full address",f["address"]),("Accepted materials",f["accepts"]),
               ("Hours / collection schedule",f["hours"]),("Fees",f["fees"]),("Eligibility, ID and other notes",f["notes"])])
-          +f'</dl><p><a href="{e(f["source"])}" rel="noopener">Official source and current rules</a> · Last checked {e(f["checked"])}</p></section>'
+          +f'</dl><p><a href="{e(f["source"])}" rel="noopener">Official source and current rules</a> · Last checked {e(f["checked"])} · <a href="{fix_mailto(fp)}">Is this info wrong? Suggest a fix</a></p></section>'
           +f'<h2>Common questions</h2><p class="meta">Question set reviewed {e(f.get("questions_reviewed",f["checked"]))}.</p><p>Yes and no apply only to the material types, users and conditions in the accompanying evidence. A fee answer of no means the listed service is free under those conditions; it does not waive eligibility rules. “Not stated by source” means no explicit answer is recorded in our source-backed listing, not that the source has no further information. Check the official source before driving.</p>'
           +'<table class="questions"><caption>Facility requirements and material acceptance</caption><thead><tr><th scope="col">Question</th><th scope="col">Answer and source-backed detail</th></tr></thead><tbody>'+''.join(rows)+'</tbody></table>'
           +(f'<h2>Browse accepted materials</h2><p>{materials}</p>' if materials else '')
@@ -619,6 +622,9 @@ def event_ld(f,m,place):
     return ev
 
 def and_list(xs): return ", ".join(xs[:-1])+" and "+xs[-1] if len(xs)>1 else "".join(xs)
+def fac_link_text(f):
+    names=[MAT_SHORT[s] for s,_,_ in mats(f)]
+    return e(f["name"])+(f" — {e(and_list(names))}" if names else "")
 # Weekend quick list on larger city pages, derived only from each listing's own hours text ("closed Sun" segments ignored).
 WKND=re.compile(r"(?i)\b(Sat|Sun)(urday|day)?s?\b|\bdaily\b|\b(7|seven) days\b")
 def weekend_block(m):
@@ -650,7 +656,7 @@ for (sn,st),ms in sorted(states.items()):
         body=(vis+f'<h1>{e(h1)}</h1>'+note+ans_html
               +"".join(fac(f,m) for f in fs)+("<p>No permanent drop-off site listed yet. See the note above for event-based or alternate official options, and check back after the next source review.</p>" if not fs else "")
               +weekend_block(m)
-              +(f'<h2>By material</h2><p class="tags">'+" ".join(f'<a href="/{s}/">{e(n)} drop-off</a>' for s,n in have)+"</p>" if have else "")
+              +(('<h2>By material</h2>'+"".join(f'<h3><a href="/{s}/">{e(n)} drop-off</a></h3><ul>'+"".join(f'<li><a href="{fpath(f,m)}">{e(f["name"])}</a></li>' for f in m["facilities"] if any(x[0]==s for x in mats(f)))+"</ul>" for s,n in have)) if have else "")
               +f'<p class="meta">Run a local site? <a href="/embed/">Embed this list for free</a>.</p>'+(f'<h2>Other cities in {e(sn)}</h2><ul>'+"".join(f'<li><a href="{cpath(o)}">{e(o["city"])}</a></li>' for o in nearby)+"</ul>" if nearby else "")
               +signup_box())
         short={"Electronics (e-waste)":"e-waste","Household chemicals":"chemicals"}
@@ -672,13 +678,15 @@ for (sn,st),ms in sorted(states.items()):
         page(cp,title,desc,body,graph,chk)
     vis,bl=crumbs([("Home","/"),(sn,sp)])
     nst=sum(len(m["facilities"]) for m in ms)
-    def state_li(m):
+    def state_city_block(m):
         mh=[(s,n) for s,n,_ in MAT if m in matidx[s]]
-        return (f'<li><a href="{cpath(m)}">{e(m["city"])}</a> ({plural(len(m["facilities"]),"site")})'
-                +(' — '+", ".join(f'<a href="/{s}/">{e(n.split(" (")[0].lower())}</a>' for s,n in mh) if mh else "")+"</li>")
+        head=f'<h2><a href="{cpath(m)}">{e(m["city"])}</a> ({plural(len(m["facilities"]),"site")})</h2>'
+        mats_line=('<p class="tags">'+" ".join(f'<a href="/{s}/">{e(n.split(" (")[0].lower())}</a>' for s,n in mh)+"</p>") if mh else ""
+        items="".join(f'<li><a href="{fpath(f,m)}">{fac_link_text(f)}</a></li>' for f in m["facilities"])
+        return head+mats_line+(f"<ul>{items}</ul>" if items else "")
     page(sp,f"Hazardous waste, paint & e-waste drop-off in {sn} | TossMap",
          f"{plural(nst,'official drop-off site')} in {sn} ({', '.join(m['city'] for m in ms)}) for {and_list([n.split(" (")[0].lower() for s,n,_ in MAT if any(m in matidx[s] for m in ms)]) or "household hazardous waste"}, with source links.",
-         vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1><p>{plural(nst,"official drop-off site")} across {plural(len(ms),"metro area")} in {e(sn)}. Each city page lists addresses, hours, fees, eligibility rules and a link to the official source, with the date we last checked it.</p><ul>'+"".join(state_li(m) for m in ms)+"</ul>",
+         vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1><p>{plural(nst,"official drop-off site")} across {plural(len(ms),"metro area")} in {e(sn)}. Each city page lists addresses, hours, fees, eligibility rules and a link to the official source, with the date we last checked it.</p>'+"".join(state_city_block(m) for m in ms),
          # State hubs: CollectionPage + ItemList of the city pages they link to (same names and URLs as the visible list).
          [bl,{"@type":"CollectionPage","@id":BASE+sp+"#page","url":BASE+sp,"name":f"Hazardous waste drop-off in {sn}","publisher":{"@id":ORG_ID},"isPartOf":{"@id":BASE+"/#website"},"mainEntity":{"@id":BASE+sp+"#cities"}},
           {"@type":"ItemList","@id":BASE+sp+"#cities","name":f"{sn} metro areas with official drop-off sites","numberOfItems":len(ms),"itemListElement":[{"@type":"ListItem","position":k+1,"name":f'{m["city"]}, {m["st"]}',"url":BASE+cpath(m)} for k,m in enumerate(ms)]}],

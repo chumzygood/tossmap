@@ -90,7 +90,10 @@ class FacilityTests(unittest.TestCase):
             il=next(x for x in graph if x['@type']=='ItemList')
             self.assertEqual(il['numberOfItems'],len(ms))
             self.assertEqual([x['url'] for x in il['itemListElement']],[BASE+city_path(m) for m in ms])
-            for m in ms: self.assertIn(city_path(m),doc.links)
+            for m in ms:
+                self.assertIn(city_path(m),doc.links)
+                for f in m['facilities']:
+                    self.assertIn(facility_path(m,f),doc.links)
             self.assertTrue(any(x['@type']=='CollectionPage' for x in graph))
     def test_city_pages_itemlist_matches_facility_cards(self):
         for m in D:
@@ -165,6 +168,21 @@ class FacilityTests(unittest.TestCase):
                     self.assertNotIn('"@type": "Event"',html_text,f['name']); self.assertIn('Past event:',html_text,f['name'])
                 else:
                     self.assertIn('"@type": "Event"',html_text,f['name']); self.assertNotIn('Past event:',html_text,f['name'])
+    def test_suggest_fix_mailto_includes_page_path(self):
+        from urllib.parse import quote
+        samples=['/','/oh/','/oh/cleveland/']
+        m=next(x for x in D if x['city']=='Cleveland')
+        fac=facility_path(m,m['facilities'][0])
+        samples.append(fac)
+        for path in samples:
+            href='mailto:toolshed@mail.grokbot.com?subject='+quote(f'TossMap fix: {path}', safe='')
+            doc=read(path)
+            self.assertIn(href, doc.links, path)
+            html=Path('docs'+path+'index.html').read_text()
+            self.assertIn('Suggest a fix or leave a review', html)
+        html=Path('docs'+fac+'index.html').read_text()
+        self.assertIn('Is this info wrong? Suggest a fix', html)
+        self.assertGreaterEqual(read(fac).links.count('mailto:toolshed@mail.grokbot.com?subject='+quote(f'TossMap fix: {fac}', safe='')), 2)
     def test_known_rejection_and_conditional_cases(self):
         facilities={f['name']:f for m in D for f in m['facilities']}
         self.assertEqual(facilities['Keʻehi Transfer Station']['questions']['tires']['answer'],'no')
