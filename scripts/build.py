@@ -662,8 +662,16 @@ def facility_place_label(f,m):
         return f"{mm.group(1).strip()}, {mm.group(2)}"
     return f"{m['city']}, {m['st']}"
 
+def hours_is_short(hours):
+    """True when hours are a short, single-line phrase (no sentence breaks)."""
+    h=(hours or "").strip().rstrip(" .")
+    if not h or len(h)>70:
+        return False
+    tmp=re.sub(r"(?i)\b[ap]\.m\.","",h)
+    return not re.search(r"\.", tmp)
+
 def fee_clause(fees):
-    """Attach fees in a natural way. Omit the field when it is empty; never invent a value."""
+    """Attach only a short fee phrase. Omit long or multi-clause fee prose; never invent a value."""
     raw=(fees or "").strip()
     if not raw:
         return ""
@@ -671,9 +679,12 @@ def fee_clause(fees):
     if re.fullmatch(r"free", text, re.I):
         return ", and it's free"
     m=re.match(r"(?i)^free(\s+(?:for|with)\s+.{1,40})$", text)
-    if m and not re.search(r"[;:$]", text):
+    if m and not re.search(r"[;.$]", text) and len(text)<=60:
         return f", and it's free{m.group(1)}"
-    return f"; fees: {text}"
+    tmp=re.sub(r"(?i)\b[ap]\.m\.","",text)
+    if len(text)<=60 and not re.search(r"[;.]", tmp):
+        return f"; fees: {text}"
+    return ""
 
 def source_domain(url):
     host=urlparse(url).netloc.lower()
@@ -688,11 +699,38 @@ def source_sentence(url):
     label=source_domain(url) or url
     return f' Source: <a href="{e(url)}" rel="noopener">{e(label)}</a>.'
 
-def attach_hours_fees(lead, hours, fees):
-    hours=(hours or "").strip().rstrip(" .")
-    if hours:
-        lead+=f", {hours}"
-    return lead+fee_clause(fees)+"."
+def _lead_word_count(sentence, url):
+    vis=sentence
+    if url:
+        vis+=f" Source: {source_domain(url) or url}."
+    return len(vis.split())
+
+def _sentence_with_hours_fees(lead, hours_core, fee):
+    if hours_core=="see":
+        return lead+fee+". See hours below." if fee else lead+". See hours below."
+    if hours_core:
+        return lead+f", {hours_core}"+fee+"."
+    return lead+fee+"."
+
+def attach_hours_fees(lead, hours, fees, source_url=""):
+    """Add short hours/fees only. Long hours become 'See hours below.'; long fees are omitted. Keep the line to about 35 words."""
+    hours_core=(hours or "").strip().rstrip(" .")
+    fee=fee_clause(fees)
+    candidates=[]
+    if hours_core and hours_is_short(hours_core):
+        candidates.append(_sentence_with_hours_fees(lead, hours_core, fee))
+        if fee:
+            candidates.append(_sentence_with_hours_fees(lead, hours_core, ""))
+    if hours_core:
+        candidates.append(_sentence_with_hours_fees(lead, "see", fee))
+        candidates.append(_sentence_with_hours_fees(lead, "see", ""))
+    else:
+        candidates.append(_sentence_with_hours_fees(lead, "", fee))
+        candidates.append(lead+".")
+    for sentence in candidates:
+        if _lead_word_count(sentence, source_url)<=35:
+            return sentence
+    return lead+"."
 
 def facility_direct_answer(f,m):
     """One short sentence from verified fields only. Skip unknown fields rather than invent them."""
@@ -705,8 +743,9 @@ def facility_direct_answer(f,m):
             lead=f"{f['name']} in {place} accepts {and_list(materials)}"
     else:
         lead=f"{f['name']} is a listed drop-off site in {place}"
-    html_lead=e(attach_hours_fees(lead, f.get("hours") or "", f.get("fees") or ""))
-    html_lead+=source_sentence(f.get("source") or "")
+    src=f.get("source") or ""
+    html_lead=e(attach_hours_fees(lead, f.get("hours") or "", f.get("fees") or "", src))
+    html_lead+=source_sentence(src)
     return f'<p class="lead">{html_lead}</p>'
 
 def city_direct_answer(m,have):
@@ -734,7 +773,7 @@ def city_direct_answer(m,have):
             lead=f"{m['city']}, {m['st']} has {len(fs)} official drop-off sites listed, including {site['name']}"
     # Hours and fees belong to one site; only attach them on single-site city pages to keep the sentence short.
     if len(fs)==1:
-        sentence=attach_hours_fees(lead, site.get("hours") or "", site.get("fees") or "")
+        sentence=attach_hours_fees(lead, site.get("hours") or "", site.get("fees") or "", site.get("source") or "")
     else:
         sentence=lead+"."
     return f'<p class="lead">{e(sentence)+source_sentence(site.get("source") or "")}</p>'

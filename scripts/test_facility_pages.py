@@ -229,10 +229,15 @@ class FacilityTests(unittest.TestCase):
                 lead=re.search(r'<h1>.*?</h1><p class="lead">(.*?)</p>', html, re.S).group(1)
                 visible=unescape(re.sub(r'<[^>]+>','',lead))
                 hours=(f.get('hours') or '').strip().rstrip(' .')
-                if hours:
-                    self.assertIn(hours, visible, p)
+                hours_short=bool(hours) and len(hours)<=70 and not re.search(r'\.', re.sub(r'(?i)\b[ap]\.m\.','',hours))
+                if hours_short and hours in visible:
+                    pass  # short hours may still be dropped to meet the word cap
+                elif hours:
+                    self.assertIn('See hours below', visible, p)
+                    self.assertNotIn(hours, visible, p)
                 else:
                     self.assertNotIn('hours not listed', visible.lower())
+                    self.assertNotIn('See hours below', visible, p)
                 fees=(f.get('fees') or '').strip()
                 if not fees:
                     self.assertNotRegex(visible, r', not listed\.?$', p)
@@ -240,15 +245,28 @@ class FacilityTests(unittest.TestCase):
                 else:
                     fee_text=fees.rstrip(' .')
                     simple=re.match(r'(?i)^free(\s+(?:for|with)\s+.{1,40})$', fee_text)
-                    if re.fullmatch(r'free', fee_text, re.I):
-                        self.assertIn("and it's free", visible, p)
-                        self.assertNotIn(', Free', visible, p)
-                    elif simple and not re.search(r'[;:$]', fee_text):
-                        self.assertIn("and it's free"+simple.group(1), visible, p)
-                        self.assertNotIn(', Free', visible, p)
+                    short_free=bool(re.fullmatch(r'free', fee_text, re.I))
+                    short_for=bool(simple and not re.search(r'[;.$]', fee_text) and len(fee_text)<=60)
+                    tmp=re.sub(r'(?i)\b[ap]\.m\.','',fee_text)
+                    short_other=len(fee_text)<=60 and not re.search(r'[;.]', tmp) and not short_free and not short_for
+                    if short_free:
+                        if "and it's free" not in visible:
+                            # Omitted only to keep the line within the word cap.
+                            self.assertLessEqual(len(visible.split()), 35, p)
+                        else:
+                            self.assertNotIn(', Free', visible, p)
+                    elif short_for:
+                        if "and it's free"+simple.group(1) not in visible:
+                            self.assertLessEqual(len(visible.split()), 35, p)
+                        else:
+                            self.assertNotIn(', Free', visible, p)
+                    elif short_other:
+                        if fee_text not in visible:
+                            self.assertLessEqual(len(visible.split()), 35, p)
                     else:
-                        self.assertIn(fee_text, visible, p)
-                        self.assertNotRegex(visible, r', Free\.', p)
+                        self.assertNotIn(fee_text, visible, p)
+                    self.assertNotRegex(visible, r', Free\.', p)
+                self.assertLessEqual(len(visible.split()), 35, (p, len(visible.split()), visible))
                 self.assertNotIn('None', visible)
                 self.assertNotIn(UNKNOWN, visible)
                 self.assertNotIn('[', visible, p)
