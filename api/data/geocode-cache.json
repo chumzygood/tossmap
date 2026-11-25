@@ -1,0 +1,1811 @@
+{
+  "facility:albuquerque-nm:hhw-collection-center-safety-kleen": {
+    "lat": 35.112628247752,
+    "lng": -106.613734089951,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "87107"
+  },
+  "facility:atlanta-ga:charm-center-for-hard-to-recycle-materials": {
+    "lat": 33.724930806037,
+    "lng": -84.378507092267,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "30315"
+  },
+  "facility:austin-tx:recycle-reuse-drop-off-center": {
+    "lat": 30.212990852521,
+    "lng": -97.738066649024,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "78744"
+  },
+  "facility:baltimore-md:baltimore-county-central-acceptance-facility-cockeysville": {
+    "lat": 39.474431980434,
+    "lng": -76.634591484411,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "21030"
+  },
+  "facility:baltimore-md:baltimore-county-eastern-sanitary-landfill-drop-off-white-marsh": {
+    "lat": 39.396384938294,
+    "lng": -76.391375104248,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "21162"
+  },
+  "facility:baltimore-md:baltimore-county-western-acceptance-facility-halethorpe": {
+    "lat": 39.234519516278,
+    "lng": -76.672941299618,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "21227"
+  },
+  "facility:baltimore-md:eastern-residential-recycling-center": {
+    "lat": 39.318343250766,
+    "lng": -76.550949370464,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "21206"
+  },
+  "facility:baltimore-md:northwest-transfer-station-residential-drop-off": {
+    "lat": 39.341693448541,
+    "lng": -76.680224784629,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "21215"
+  },
+  "facility:baltimore-md:quarantine-road-landfill-residential-recycling-center": {
+    "lat": 39.206436293613,
+    "lng": -76.559194218185,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "21226"
+  },
+  "facility:baltimore-md:sisson-street-residential-recycling-center-hhw-days": {
+    "lat": 39.320598859249,
+    "lng": -76.626566916565,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "21211"
+  },
+  "facility:boston-ma:zero-waste-day-drop-off-millennium-park": {
+    "lat": 42.280517203713,
+    "lng": -71.177046386171,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "02132"
+  },
+  "facility:charlotte-nc:compost-central-disposal-recycling-center": {
+    "lat": 35.284485193187,
+    "lng": -80.919793288753,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "28214"
+  },
+  "facility:charlotte-nc:foxhole-disposal-recycling-center": {
+    "lat": 35.017190546676,
+    "lng": -80.850282526022,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "28277"
+  },
+  "facility:charlotte-nc:hickory-grove-disposal-recycling-center": {
+    "lat": 35.218597870682,
+    "lng": -80.697514336343,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "28215"
+  },
+  "facility:charlotte-nc:north-mecklenburg-disposal-recycling-center": {
+    "lat": 35.387633647847,
+    "lng": -80.84697569689,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "28078"
+  },
+  "facility:chicago-il:household-chemicals-computer-recycling-facility": {
+    "lat": 41.901780042215,
+    "lng": -87.654107514944,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "60642"
+  },
+  "facility:cincinnati-oh:cincinnati-recycling-reuse-hub": {
+    "lat": 39.106585221937,
+    "lng": -84.548324172964,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "45204"
+  },
+  "facility:cleveland-oh:bay-village-service-garage-hhw": {
+    "lat": 41.4781535519,
+    "lng": -81.965393207699,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44140"
+  },
+  "facility:cleveland-oh:beachwood-public-service-center-hhw": {
+    "lat": 41.458686847673,
+    "lng": -81.511703158732,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44122"
+  },
+  "facility:cleveland-oh:bedford-heights-service-garage-hhw": {
+    "lat": 41.38512155953,
+    "lng": -81.499596271898,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44146"
+  },
+  "facility:cleveland-oh:bentleyville-service-department-hhw": {
+    "lat": 41.408935256816,
+    "lng": -81.428547272292,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44022"
+  },
+  "facility:cleveland-oh:bratenahl-village-service-garage-hhw": {
+    "lat": 41.544344593679,
+    "lng": -81.620987416523,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44108"
+  },
+  "facility:cleveland-oh:brecksville-service-garage-hhw": {
+    "lat": 41.317911635761,
+    "lng": -81.626777707154,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44141"
+  },
+  "facility:cleveland-oh:broadview-heights-service-garage-hhw": {
+    "lat": 41.304619252712,
+    "lng": -81.68461200341,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44147"
+  },
+  "facility:cleveland-oh:brook-park-service-garage-hhw": {
+    "lat": 41.394990165786,
+    "lng": -81.835364607033,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44142"
+  },
+  "facility:cleveland-oh:brooklyn-service-garage-hhw": {
+    "lat": 41.44014069096,
+    "lng": -81.750025348261,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44144"
+  },
+  "facility:cleveland-oh:carr-center-division-of-waste": {
+    "lat": 41.501538995438,
+    "lng": -81.650906984473,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44103"
+  },
+  "facility:cleveland-oh:cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins": {
+    "lat": 41.431123254187,
+    "lng": -81.592866145027,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44105"
+  },
+  "facility:cleveland-oh:euclid-service-garage-hhw": {
+    "lat": 41.598418830835,
+    "lng": -81.506892467429,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44132"
+  },
+  "facility:cleveland-oh:hunting-valley-service-garage-hhw": {
+    "lat": 41.4917487,
+    "lng": -81.4176108,
+    "quality": "house",
+    "source": "Nominatim",
+    "zip": "44022"
+  },
+  "facility:cleveland-oh:lakewood-service-garage-hhw": {
+    "lat": 41.4716658,
+    "lng": -81.7745621,
+    "quality": "secondary",
+    "source": "Nominatim",
+    "zip": "44111"
+  },
+  "facility:cleveland-oh:linndale-village-service-garage-hhw": null,
+  "facility:cleveland-oh:lyndhurst-service-garage-hhw": {
+    "lat": 41.519999748356,
+    "lng": -81.488262102992,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44124"
+  },
+  "facility:cleveland-oh:maple-heights-service-garage-hhw": {
+    "lat": 41.4102463644,
+    "lng": -81.57525278313,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44137"
+  },
+  "facility:cleveland-oh:moreland-hills-service-garage-hhw": {
+    "lat": 41.437124921796,
+    "lng": -81.443819989771,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44022"
+  },
+  "facility:cleveland-oh:north-olmsted-service-garage-hhw": {
+    "lat": 41.414209025859,
+    "lng": -81.923489126873,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44070"
+  },
+  "facility:cleveland-oh:north-royalton-service-garage-hhw": {
+    "lat": 41.315825817347,
+    "lng": -81.773097981855,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44133"
+  },
+  "facility:cleveland-oh:olmsted-falls-service-garage-hhw": {
+    "lat": 41.359304491269,
+    "lng": -81.903929182764,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44138"
+  },
+  "facility:cleveland-oh:olmsted-township-service-garage-hhw": {
+    "lat": 41.375293412565,
+    "lng": -81.922256797643,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44138"
+  },
+  "facility:cleveland-oh:orange-village-service-department-hhw": null,
+  "facility:cleveland-oh:parma-service-garage-hhw-drop-off-day": {
+    "lat": 41.408968536221,
+    "lng": -81.768971461131,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44130"
+  },
+  "facility:cleveland-oh:pepper-pike-service-garage-hhw": {
+    "lat": 41.478568327825,
+    "lng": -81.482119049677,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44124"
+  },
+  "facility:cleveland-oh:richmond-heights-service-garage-hhw": {
+    "lat": 41.575311928725,
+    "lng": -81.494660541797,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44143"
+  },
+  "facility:cleveland-oh:ridge-road-transfer-station": {
+    "lat": 41.454535232507,
+    "lng": -81.737542381335,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44144"
+  },
+  "facility:cleveland-oh:rocky-river-transfer-station-hhw": {
+    "lat": 41.481505684582,
+    "lng": -81.868621851392,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44116"
+  },
+  "facility:cleveland-oh:solon-service-department-hhw": {
+    "lat": 41.379824982205,
+    "lng": -81.46931105574,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44139"
+  },
+  "facility:cleveland-oh:south-euclid-service-garage-hhw": {
+    "lat": 41.537663555462,
+    "lng": -81.5284869915,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44121"
+  },
+  "facility:cleveland-oh:warrensville-heights-service-garage-hhw": {
+    "lat": 41.43328423292,
+    "lng": -81.54331242925,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44128"
+  },
+  "facility:cleveland-oh:westlake-service-center-hhw": {
+    "lat": 41.476168149069,
+    "lng": -81.948783925601,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "44145"
+  },
+  "facility:columbus-oh:swaco-household-hazardous-waste-drop-off": {
+    "lat": 39.990664806403,
+    "lng": -82.988386335348,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "43201"
+  },
+  "facility:columbus-oh:swaco-recycling-convenience-center": {
+    "lat": 39.9059678,
+    "lng": -83.0224875,
+    "quality": "commercial",
+    "source": "Nominatim",
+    "zip": "43201"
+  },
+  "facility:dallas-tx:dallas-county-home-chemical-collection-center": {
+    "lat": 32.9018107,
+    "lng": -96.7006982,
+    "quality": "house",
+    "source": "Nominatim",
+    "zip": "75243"
+  },
+  "facility:dallas-tx:mccommas-bluff-landfill": {
+    "lat": 32.674477308271,
+    "lng": -96.737462925939,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "75241"
+  },
+  "facility:dallas-tx:northeast-fair-oaks-transfer-station": {
+    "lat": 32.876511244222,
+    "lng": -96.753759421681,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "75231"
+  },
+  "facility:dallas-tx:northwest-bachman-transfer-station": {
+    "lat": 32.845611228328,
+    "lng": -96.874980452808,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "75220"
+  },
+  "facility:dallas-tx:southwest-westmoreland-transfer-station": {
+    "lat": 32.687891439024,
+    "lng": -96.882285998743,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "75237"
+  },
+  "facility:denver-co:rooney-road-recycling-center": {
+    "lat": 39.712848321569,
+    "lng": -105.197081632707,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "80401"
+  },
+  "facility:detroit-mi:erg-environmental-services-wayne-county-hhw": {
+    "lat": 42.377647079316,
+    "lng": -83.352925908011,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "48150"
+  },
+  "facility:el-paso-tx:citizen-collection-station-central": {
+    "lat": 31.813868381546,
+    "lng": -106.467104301549,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "79930"
+  },
+  "facility:el-paso-tx:citizen-collection-station-eastside": {
+    "lat": 31.794193804092,
+    "lng": -106.293717473305,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "79936"
+  },
+  "facility:el-paso-tx:citizen-collection-station-mission-valley": {
+    "lat": 31.7267135097,
+    "lng": -106.319380025581,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "79907"
+  },
+  "facility:el-paso-tx:citizen-collection-station-northeast": {
+    "lat": 31.869765152025,
+    "lng": -106.437034416011,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "79904"
+  },
+  "facility:el-paso-tx:citizen-collection-station-westside": {
+    "lat": 31.817519985104,
+    "lng": -106.561421920391,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "79922"
+  },
+  "facility:fort-worth-tx:brennan-drop-off-station": {
+    "lat": 32.790306472473,
+    "lng": -97.334041682842,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "76106"
+  },
+  "facility:fort-worth-tx:environmental-collection-center": {
+    "lat": 32.762472151922,
+    "lng": -97.220223882976,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "76112"
+  },
+  "facility:fort-worth-tx:hillshire-north-service-center-drop-off-station": {
+    "lat": 32.9278266,
+    "lng": -97.3555654,
+    "quality": "recycling",
+    "source": "Nominatim",
+    "zip": "76052"
+  },
+  "facility:fort-worth-tx:old-hemphill-road-drop-off-station": {
+    "lat": 32.659371247726,
+    "lng": -97.323820970205,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "76134"
+  },
+  "facility:fort-worth-tx:southeast-drop-off-station": {
+    "lat": 32.6941285,
+    "lng": -97.244692,
+    "quality": "house",
+    "source": "Nominatim",
+    "zip": "76119"
+  },
+  "facility:fresno-ca:environmental-compliance-center": {
+    "lat": 36.7386107,
+    "lng": -119.8365367,
+    "quality": "unclassified",
+    "source": "Nominatim",
+    "zip": "93708"
+  },
+  "facility:honolulu-hi:ewa-beach-convenience-center": {
+    "lat": 21.329541420179,
+    "lng": -158.034283284809,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "96706"
+  },
+  "facility:honolulu-hi:kapa-a-transfer-station": {
+    "lat": 21.3773152,
+    "lng": -157.7668472,
+    "quality": "unclassified",
+    "source": "Nominatim",
+    "zip": "96734"
+  },
+  "facility:honolulu-hi:kapolei-convenience-center": {
+    "lat": 21.30208730259,
+    "lng": -158.110370076503,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "96707"
+  },
+  "facility:honolulu-hi:kawailoa-transfer-station": {
+    "lat": 21.606983235222,
+    "lng": -158.089820344028,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "96712"
+  },
+  "facility:honolulu-hi:ke-ehi-transfer-station": {
+    "lat": 21.3360815,
+    "lng": -157.8925766,
+    "quality": "waste_transfer_station",
+    "source": "Nominatim",
+    "zip": "96819"
+  },
+  "facility:honolulu-hi:laie-convenience-center": {
+    "lat": 21.6386912,
+    "lng": -157.9191902,
+    "quality": "bus_stop",
+    "source": "Nominatim",
+    "zip": "96762"
+  },
+  "facility:honolulu-hi:wahiawa-convenience-center": {
+    "lat": 21.5120855,
+    "lng": -158.0612216,
+    "quality": "secondary",
+    "source": "Nominatim",
+    "zip": "96957"
+  },
+  "facility:honolulu-hi:waianae-convenience-center": {
+    "lat": 21.45162575332,
+    "lng": -158.178642684577,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "96792"
+  },
+  "facility:honolulu-hi:waimanalo-convenience-center": {
+    "lat": 21.340052968003,
+    "lng": -157.71169196299,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "96795"
+  },
+  "facility:honolulu-hi:waipahu-convenience-center": {
+    "lat": 21.381839912705,
+    "lng": -158.005398493875,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "96797"
+  },
+  "facility:houston-tx:ellington-clear-lake-neighborhood-recycling-center": {
+    "lat": 29.7222257,
+    "lng": -95.2657152,
+    "quality": "house",
+    "source": "Nominatim",
+    "zip": "77012"
+  },
+  "facility:houston-tx:environmental-service-center-north": {
+    "lat": 29.8103302,
+    "lng": -95.3375763,
+    "quality": "house",
+    "source": "Nominatim",
+    "zip": "77026"
+  },
+  "facility:houston-tx:environmental-service-center-south": {
+    "lat": 29.648790869787,
+    "lng": -95.463834044631,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "77035"
+  },
+  "facility:houston-tx:residential-drop-off-center-north": {
+    "lat": 29.82967463413,
+    "lng": -95.398391524646,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "77022"
+  },
+  "facility:houston-tx:residential-drop-off-center-northeast": {
+    "lat": 29.808047330965,
+    "lng": -95.291734486279,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "77028"
+  },
+  "facility:houston-tx:residential-drop-off-center-northwest": {
+    "lat": 29.8641066,
+    "lng": -95.548743,
+    "quality": "tertiary",
+    "source": "Nominatim",
+    "zip": "77041"
+  },
+  "facility:houston-tx:residential-drop-off-center-south": {
+    "lat": 29.650876417992,
+    "lng": -95.347429944081,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "77033"
+  },
+  "facility:houston-tx:residential-drop-off-center-southeast": {
+    "lat": 29.702436164706,
+    "lng": -95.26776006357,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "77017"
+  },
+  "facility:houston-tx:residential-drop-off-center-southwest": {
+    "lat": 29.66429255916,
+    "lng": -95.553574881168,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "77074"
+  },
+  "facility:houston-tx:westpark-consumer-recycling-center": {
+    "lat": 29.7249758,
+    "lng": -95.4829164,
+    "quality": "recycling",
+    "source": "Nominatim",
+    "zip": "77063"
+  },
+  "facility:indianapolis-in:toxdrop-perry-township-government-center": {
+    "lat": 39.694392192332,
+    "lng": -86.139183704155,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "46227"
+  },
+  "facility:indianapolis-in:toxdrop-traders-point-collection-facility": {
+    "lat": 39.888510875416,
+    "lng": -86.300918736033,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "46278"
+  },
+  "facility:jacksonville-fl:household-hazardous-waste-facility": {
+    "lat": 30.336708446102,
+    "lng": -81.711754692339,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "32254"
+  },
+  "facility:kansas-city-mo:household-hazardous-waste-facility": {
+    "lat": 39.137585277684,
+    "lng": -94.524582365385,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "64120"
+  },
+  "facility:kansas-city-mo:kcmo-waste-tire-drop-off-environmental-campus": {
+    "lat": 39.137585277684,
+    "lng": -94.524582365385,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "64120"
+  },
+  "facility:las-vegas-nv:republic-services-hhw-henderson": {
+    "lat": 36.06018727305,
+    "lng": -115.017674961776,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "89011"
+  },
+  "facility:las-vegas-nv:republic-services-hhw-north-las-vegas": {
+    "lat": 36.224827574987,
+    "lng": -115.143843864421,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "89032"
+  },
+  "facility:los-angeles-ca:s-a-f-e-center-gaffey-st": {
+    "lat": 33.763963870999,
+    "lng": -118.293338575699,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "90731"
+  },
+  "facility:los-angeles-ca:s-a-f-e-center-hyperion": {
+    "lat": 33.930713002127,
+    "lng": -118.430629275233,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "90293"
+  },
+  "facility:los-angeles-ca:s-a-f-e-center-nicole-bernson": {
+    "lat": 34.256429960807,
+    "lng": -118.502415196913,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "91325"
+  },
+  "facility:los-angeles-ca:s-a-f-e-center-randall-st": {
+    "lat": 34.237890633828,
+    "lng": -118.370433396444,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "91352"
+  },
+  "facility:los-angeles-ca:s-a-f-e-center-washington-blvd": {
+    "lat": 34.017521872893,
+    "lng": -118.226872199614,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "90021"
+  },
+  "facility:los-angeles-ca:ucla-s-a-f-e-collection-center": {
+    "lat": 34.0695409,
+    "lng": -118.4402402,
+    "quality": "unclassified",
+    "source": "Nominatim",
+    "zip": "90095"
+  },
+  "facility:louisville-ky:haz-bin": {
+    "lat": 38.141783058532,
+    "lng": -85.738095877777,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "40219"
+  },
+  "facility:louisville-ky:waste-reduction-center": {
+    "lat": 38.227080712997,
+    "lng": -85.745843386258,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "40217"
+  },
+  "facility:memphis-tn:shelby-county-hhw-facility": {
+    "lat": 35.150315039645,
+    "lng": -89.85232849131,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "38134"
+  },
+  "facility:miami-fl:golden-glades-trash-and-recycling-center": {
+    "lat": 25.921536643726,
+    "lng": -80.202839126935,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "33169"
+  },
+  "facility:miami-fl:home-chemical-collection-center-south-dade": null,
+  "facility:miami-fl:home-chemical-collection-center-west-dade": {
+    "lat": 25.826321282264,
+    "lng": -80.339814477316,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "33178"
+  },
+  "facility:miami-fl:moody-drive-trash-and-recycling-center": {
+    "lat": 25.518154536953,
+    "lng": -80.401723221594,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "33032"
+  },
+  "facility:miami-fl:north-dade-trash-and-recycling-center": null,
+  "facility:miami-fl:palm-springs-north-trash-and-recycling-center": {
+    "lat": 25.935036352517,
+    "lng": -80.329076350532,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "33015"
+  },
+  "facility:miami-fl:sunset-kendall-trash-and-recycling-center": {
+    "lat": 25.694798426552,
+    "lng": -80.366103807592,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "33173"
+  },
+  "facility:milwaukee-wi:mmsd-13th-street-drop-off": {
+    "lat": 42.934175749553,
+    "lng": -87.92949399595,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "53221"
+  },
+  "facility:milwaukee-wi:mmsd-south-drop-off-center": {
+    "lat": 43.00291007614,
+    "lng": -87.962649412979,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "53215"
+  },
+  "facility:minneapolis-mn:hennepin-county-drop-off-bloomington": {
+    "lat": 44.829983737414,
+    "lng": -93.297581152486,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "55431"
+  },
+  "facility:minneapolis-mn:hennepin-county-drop-off-brooklyn-park": {
+    "lat": 45.102949,
+    "lng": -93.4003298,
+    "quality": "waste_transfer_station",
+    "source": "Nominatim",
+    "zip": "55445"
+  },
+  "facility:nashville-tn:east-convenience-center": {
+    "lat": 36.2065107,
+    "lng": -86.7472008,
+    "quality": "service",
+    "source": "Nominatim",
+    "zip": "37216"
+  },
+  "facility:nashville-tn:ezell-pike-convenience-center": {
+    "lat": 36.085199257729,
+    "lng": -86.688730457776,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "37211"
+  },
+  "facility:nashville-tn:omohundro-convenience-center": {
+    "lat": 36.157101600914,
+    "lng": -86.739541072542,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "37210"
+  },
+  "facility:new-orleans-la:gretna-burmaster-waste-drop-off-site": {
+    "lat": 29.929678803286,
+    "lng": -90.046278489045,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "70053"
+  },
+  "facility:new-orleans-la:jefferson-parish-lafitte-drop-off-site": {
+    "lat": 29.7349635,
+    "lng": -90.1242689,
+    "quality": "residential",
+    "source": "Nominatim",
+    "zip": "70067"
+  },
+  "facility:new-orleans-la:jefferson-parish-marrero-drop-off-site": {
+    "lat": 29.875943830691,
+    "lng": -90.116400747031,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "70072"
+  },
+  "facility:new-orleans-la:jefferson-parish-metairie-drop-off-site": {
+    "lat": 29.982495082931,
+    "lng": -90.212622174827,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "70003"
+  },
+  "facility:new-orleans-la:recycling-drop-off-center": {
+    "lat": 29.986337554069,
+    "lng": -90.058100408249,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "70122"
+  },
+  "facility:new-york-ny:dsny-special-waste-drop-off-bronx": {
+    "lat": 40.8028902,
+    "lng": -73.8736545,
+    "quality": "unclassified",
+    "source": "Nominatim",
+    "zip": "10474"
+  },
+  "facility:new-york-ny:dsny-special-waste-drop-off-brooklyn": {
+    "lat": 40.735610477394,
+    "lng": -73.944736317305,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "11222"
+  },
+  "facility:new-york-ny:dsny-special-waste-drop-off-manhattan": {
+    "lat": 40.712034092761,
+    "lng": -73.992564733623,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "10002"
+  },
+  "facility:new-york-ny:dsny-special-waste-drop-off-queens": {
+    "lat": 40.771327001828,
+    "lng": -73.846525012193,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "11354"
+  },
+  "facility:new-york-ny:dsny-special-waste-drop-off-staten-island": {
+    "lat": 40.5740517,
+    "lng": -74.1963066,
+    "quality": "residential",
+    "source": "Nominatim",
+    "zip": "10312"
+  },
+  "facility:oklahoma-city-ok:household-hazardous-waste-collection-center": {
+    "lat": 35.44724990083,
+    "lng": -97.58338724106,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "73108"
+  },
+  "facility:omaha-ne:under-the-sink": {
+    "lat": 41.22053,
+    "lng": -96.099907,
+    "quality": "recycling",
+    "source": "Nominatim",
+    "zip": "68137"
+  },
+  "facility:orlando-fl:mcleod-road-transfer-station": {
+    "lat": 28.50472531378,
+    "lng": -81.445708269508,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "32811"
+  },
+  "facility:orlando-fl:orange-county-landfill": {
+    "lat": 28.49474748717,
+    "lng": -81.233099668351,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "32829"
+  },
+  "facility:orlando-fl:porter-transfer-station-hhw": {
+    "lat": 28.560767812913,
+    "lng": -81.50498889849,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "32818"
+  },
+  "facility:orlando-fl:seminole-county-central-transfer-station": null,
+  "facility:orlando-fl:seminole-county-landfill": {
+    "lat": 28.785394922047,
+    "lng": -81.073000533623,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "32732"
+  },
+  "facility:philadelphia-pa:sanitation-convenience-center-northeast-philadelphia": {
+    "lat": 40.03702112537,
+    "lng": -75.011209402809,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "19136"
+  },
+  "facility:philadelphia-pa:sanitation-convenience-center-northwest-philadelphia": {
+    "lat": 40.042241285379,
+    "lng": -75.237697143462,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "19128"
+  },
+  "facility:philadelphia-pa:sanitation-convenience-center-port-richmond": {
+    "lat": 39.982442912092,
+    "lng": -75.08367710125,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "19137"
+  },
+  "facility:philadelphia-pa:sanitation-convenience-center-southwest-philadelphia": {
+    "lat": 39.918844278441,
+    "lng": -75.219986266248,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "19153"
+  },
+  "facility:philadelphia-pa:sanitation-convenience-center-strawberry-mansion": {
+    "lat": 39.986136113213,
+    "lng": -75.177555068843,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "19121"
+  },
+  "facility:philadelphia-pa:sanitation-convenience-center-west-philadelphia": {
+    "lat": 39.936979022266,
+    "lng": -75.212287525328,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "19143"
+  },
+  "facility:phoenix-az:27th-avenue-transfer-station": {
+    "lat": 33.416645443736,
+    "lng": -112.117296010638,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "85009"
+  },
+  "facility:phoenix-az:north-gateway-transfer-station": {
+    "lat": 33.759342,
+    "lng": -112.1160558,
+    "quality": "waste_transfer_station",
+    "source": "Nominatim",
+    "zip": "85085"
+  },
+  "facility:pittsburgh-pa:noble-environmental-hhw-electronics-drop-off": {
+    "lat": 40.460264931063,
+    "lng": -79.974394397417,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "15222"
+  },
+  "facility:portland-or:metro-central-hazardous-waste": {
+    "lat": 45.565106290416,
+    "lng": -122.748873456358,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "97210"
+  },
+  "facility:portland-or:metro-south-hazardous-waste": {
+    "lat": 45.369404371444,
+    "lng": -122.590951726696,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "97045"
+  },
+  "facility:raleigh-nc:east-wake-hhw-facility": {
+    "lat": 35.796776557659,
+    "lng": -78.346976912255,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "27591"
+  },
+  "facility:raleigh-nc:east-wake-multi-material-recycling-facility": {
+    "lat": 35.796776557659,
+    "lng": -78.346976912255,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "27591"
+  },
+  "facility:raleigh-nc:north-wake-hhw-facility": {
+    "lat": 35.905782167171,
+    "lng": -78.577174034897,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "27614"
+  },
+  "facility:raleigh-nc:north-wake-multi-material-recycling-facility": {
+    "lat": 35.905517029949,
+    "lng": -78.577749805063,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "27614"
+  },
+  "facility:raleigh-nc:south-wake-hhw-facility": {
+    "lat": 35.6821791,
+    "lng": -78.8454606,
+    "quality": "recycling",
+    "source": "Nominatim",
+    "zip": "27539"
+  },
+  "facility:raleigh-nc:south-wake-multi-material-recycling-facility": {
+    "lat": 35.6822306,
+    "lng": -78.8446661,
+    "quality": "recycling",
+    "source": "Nominatim",
+    "zip": "27539"
+  },
+  "facility:richmond-va:chesterfield-county-shred-e-cycle-hhw-event-fairgrounds": {
+    "lat": 37.387225042292,
+    "lng": -77.497279766795,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23832"
+  },
+  "facility:richmond-va:chesterfield-northern-area-convenience-center": {
+    "lat": 37.446308400502,
+    "lng": -77.626825085495,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23112"
+  },
+  "facility:richmond-va:chesterfield-southern-area-convenience-center": null,
+  "facility:richmond-va:east-richmond-road-convenience-center": {
+    "lat": 37.531340276924,
+    "lng": -77.392892630853,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23223"
+  },
+  "facility:richmond-va:goochland-central-convenience-center": null,
+  "facility:richmond-va:goochland-western-convenience-center": {
+    "lat": 37.796759810896,
+    "lng": -78.019525010503,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23063"
+  },
+  "facility:richmond-va:hanover-beaverdam-convenience-center": {
+    "lat": 37.914721456551,
+    "lng": -77.660125295594,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23015"
+  },
+  "facility:richmond-va:hanover-courthouse-convenience-center": {
+    "lat": 37.751772367876,
+    "lng": -77.35963996043,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23069"
+  },
+  "facility:richmond-va:hanover-doswell-convenience-center": {
+    "lat": 37.858379862038,
+    "lng": -77.48734668785,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23047"
+  },
+  "facility:richmond-va:hanover-elmont-convenience-center": {
+    "lat": 37.711784839944,
+    "lng": -77.47405319601,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23005"
+  },
+  "facility:richmond-va:hanover-mechanicsville-convenience-center": {
+    "lat": 37.645796339698,
+    "lng": -77.35526631345,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23116"
+  },
+  "facility:richmond-va:hanover-montpelier-convenience-center": {
+    "lat": 37.817611085958,
+    "lng": -77.69743208309,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23192"
+  },
+  "facility:richmond-va:hanover-route-301-transfer-station": {
+    "lat": 37.756576254197,
+    "lng": -77.351098689223,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23069"
+  },
+  "facility:richmond-va:henrico-charles-city-road-public-use-area-east-end": {
+    "lat": 37.511796882436,
+    "lng": -77.367639545481,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23231"
+  },
+  "facility:richmond-va:henrico-springfield-road-public-use-area-west-end": {
+    "lat": 37.676854643314,
+    "lng": -77.564117540643,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23059"
+  },
+  "facility:richmond-va:new-kent-county-main-refuse-site-route-618": {
+    "lat": 37.4913205,
+    "lng": -77.0596453,
+    "quality": "waste_transfer_station",
+    "source": "Nominatim",
+    "zip": "23140"
+  },
+  "facility:richmond-va:new-kent-county-refuse-site-route-612-quinton": null,
+  "facility:richmond-va:new-kent-county-refuse-site-route-634-barhamsville": {
+    "lat": 37.496463656596,
+    "lng": -76.867010173226,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23011"
+  },
+  "facility:richmond-va:new-kent-county-refuse-site-route-647-lanexa": null,
+  "facility:richmond-va:powhatan-county-convenience-center": {
+    "lat": 37.550056855576,
+    "lng": -77.922302202418,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23139"
+  },
+  "facility:richmond-va:prince-george-county-convenience-center": {
+    "lat": 37.158132301709,
+    "lng": -77.345968881933,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23805"
+  },
+  "facility:richmond-va:richmond-southside-transfer-station": {
+    "lat": 37.50157235065,
+    "lng": -77.456587787593,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23224"
+  },
+  "facility:richmond-va:securis-first-saturday-electronics-recycling-henrico": {
+    "lat": 37.627357629662,
+    "lng": -77.503765779664,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23228"
+  },
+  "facility:riverside-ca:agua-mansa-permanent-hhw-facility": {
+    "lat": 34.027124606491,
+    "lng": -117.377061314715,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "92509"
+  },
+  "facility:riverside-ca:lake-elsinore-hhw-facility": {
+    "lat": 33.67618429336,
+    "lng": -117.328603034061,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "92530"
+  },
+  "facility:riverside-ca:palm-springs-hhw-facility": {
+    "lat": 33.83768942229,
+    "lng": -116.532491196669,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "92262"
+  },
+  "facility:sacramento-ca:city-of-sacramento-hhw-facility-srts": {
+    "lat": 38.525232950422,
+    "lng": -121.391173541032,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "95826"
+  },
+  "facility:sacramento-ca:elk-grove-special-waste-collection-center": {
+    "lat": 38.3787979,
+    "lng": -121.3563739,
+    "quality": "recycling",
+    "source": "Nominatim",
+    "zip": "95624"
+  },
+  "facility:sacramento-ca:kiefer-landfill-tires-e-waste-abop": {
+    "lat": 38.51473816679,
+    "lng": -121.195422211509,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "95683"
+  },
+  "facility:sacramento-ca:north-area-recovery-station-hhw-drop-off": {
+    "lat": 38.648909685042,
+    "lng": -121.393571096899,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "95660"
+  },
+  "facility:salt-lake-city-ut:salt-lake-county-hhw-collection-center": {
+    "lat": 40.592060881387,
+    "lng": -111.910141492107,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "84070"
+  },
+  "facility:salt-lake-city-ut:salt-lake-valley-landfill-hhw": {
+    "lat": 40.74031054142,
+    "lng": -112.043344543898,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "84104"
+  },
+  "facility:salt-lake-city-ut:trans-jordan-landfill-hhw": {
+    "lat": 40.5636811,
+    "lng": -112.0631022,
+    "quality": "primary",
+    "source": "Nominatim",
+    "zip": "84081"
+  },
+  "facility:san-antonio-tx:bulky-waste-collection-center-bitters": {
+    "lat": 29.5420055,
+    "lng": -98.4679628,
+    "quality": "recycling",
+    "source": "Nominatim",
+    "zip": "78216"
+  },
+  "facility:san-antonio-tx:bulky-waste-collection-center-culebra": {
+    "lat": 29.45162694129,
+    "lng": -98.628005120572,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "78238"
+  },
+  "facility:san-antonio-tx:bulky-waste-collection-center-frio-city-road": {
+    "lat": 29.395137827901,
+    "lng": -98.53394103672,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "78226"
+  },
+  "facility:san-antonio-tx:bulky-waste-collection-center-rigsby-road": {
+    "lat": 29.398599166981,
+    "lng": -98.412471605276,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "78222"
+  },
+  "facility:san-antonio-tx:household-hazardous-waste-drop-off-center": {
+    "lat": 29.45162694129,
+    "lng": -98.628005120572,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "78238"
+  },
+  "facility:san-diego-ca:hhw-transfer-facility-miramar-landfill": {
+    "lat": 32.83536691353,
+    "lng": -117.152395415022,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "92111"
+  },
+  "facility:san-francisco-ca:recology-sf-household-hazardous-waste-facility": {
+    "lat": 37.709015264266,
+    "lng": -122.401258110127,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "94134"
+  },
+  "facility:san-jose-ca:santa-clara-county-hhw-san-jose": {
+    "lat": 37.359911373412,
+    "lng": -121.868965788882,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "95133"
+  },
+  "facility:seattle-wa:north-seattle-hhw-facility": {
+    "lat": 47.720254835852,
+    "lng": -122.342137008494,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "98133"
+  },
+  "facility:seattle-wa:north-transfer-station-seattle-public-utilities": {
+    "lat": 47.648247146283,
+    "lng": -122.340465260697,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "98103"
+  },
+  "facility:seattle-wa:south-seattle-hhw-facility": {
+    "lat": 47.5310819977,
+    "lng": -122.331433055861,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "98108"
+  },
+  "facility:seattle-wa:south-transfer-station-seattle-public-utilities": {
+    "lat": 47.532089285901,
+    "lng": -122.333415440434,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "98108"
+  },
+  "facility:st-louis-mo:st-louis-county-hhw-north": {
+    "lat": 38.776871375685,
+    "lng": -90.277024581515,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "63033"
+  },
+  "facility:st-louis-mo:st-louis-county-hhw-south": {
+    "lat": 38.533920861897,
+    "lng": -90.275790777974,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "63125"
+  },
+  "facility:tampa-fl:aldermans-ford-solid-waste-facility": {
+    "lat": 27.870788574209,
+    "lng": -82.136787586329,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "33567"
+  },
+  "facility:tampa-fl:hillsborough-heights-hhw-collection-site": {
+    "lat": 28.015977359757,
+    "lng": -82.302430536786,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "33584"
+  },
+  "facility:tampa-fl:northwest-county-solid-waste-facility": {
+    "lat": 28.040276339234,
+    "lng": -82.572194841042,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "33625"
+  },
+  "facility:tampa-fl:sheldon-road-hhw-collection-center": {
+    "lat": 28.038294030416,
+    "lng": -82.582756451684,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "33635"
+  },
+  "facility:tampa-fl:south-county-hhw-collection": {
+    "lat": 27.797903914895,
+    "lng": -82.384313762521,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "33534"
+  },
+  "facility:tampa-fl:wimauma-solid-waste-facility": {
+    "lat": 27.731918247311,
+    "lng": -82.318326444451,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "33598"
+  },
+  "facility:tucson-az:los-reales-sustainability-campus-hhw": {
+    "lat": 32.119407988317,
+    "lng": -110.877269972197,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "85756"
+  },
+  "facility:tulsa-ok:household-pollutant-collection-facility": {
+    "lat": 36.098239636419,
+    "lng": -95.995817268227,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "74107"
+  },
+  "facility:virginia-beach-va:landfill-resource-recovery-center-hhw": {
+    "lat": 36.789948537137,
+    "lng": -76.201559752403,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "23464"
+  },
+  "facility:washington-dc:dpw-special-waste-collection-event-rfk-stadium-lot-8": {
+    "lat": 38.887971333145,
+    "lng": -76.971759931942,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "20003"
+  },
+  "facility:washington-dc:fairfax-county-i-66-transfer-station-hhw-e-waste": {
+    "lat": 38.854165520503,
+    "lng": -77.37237527932,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "22030"
+  },
+  "facility:washington-dc:fairfax-county-i-95-landfill-complex-hhw-e-waste": {
+    "lat": 38.698633779513,
+    "lng": -77.23921448502,
+    "quality": "address match",
+    "source": "US Census",
+    "zip": "22079"
+  },
+  "facility:washington-dc:fort-totten-transfer-station-tires": null,
+  "metro:albuquerque-nm": {
+    "lat": 35.0841034,
+    "lng": -106.650985,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:atlanta-ga": {
+    "lat": 33.7544657,
+    "lng": -84.3898151,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:austin-tx": {
+    "lat": 30.2649261,
+    "lng": -97.7474086,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:baltimore-md": {
+    "lat": 39.2908816,
+    "lng": -76.610759,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:boston-ma": {
+    "lat": 42.3588336,
+    "lng": -71.0578303,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:charlotte-nc": {
+    "lat": 35.2272086,
+    "lng": -80.8430827,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:chicago-il": {
+    "lat": 41.8755616,
+    "lng": -87.6244212,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:cincinnati-oh": {
+    "lat": 39.1012809,
+    "lng": -84.5127405,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:cleveland-oh": {
+    "lat": 41.4996574,
+    "lng": -81.6936772,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:columbus-oh": {
+    "lat": 39.9622601,
+    "lng": -83.0007065,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:dallas-tx": {
+    "lat": 32.7762719,
+    "lng": -96.7968559,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:denver-co": {
+    "lat": 39.7392364,
+    "lng": -104.984862,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:detroit-mi": {
+    "lat": 42.3315509,
+    "lng": -83.0466403,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:el-paso-tx": {
+    "lat": 31.7601001,
+    "lng": -106.4870476,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:fort-worth-tx": {
+    "lat": 32.753177,
+    "lng": -97.3327459,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:fresno-ca": {
+    "lat": 36.7394421,
+    "lng": -119.78483,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:honolulu-hi": {
+    "lat": 21.304547,
+    "lng": -157.855676,
+    "quality": "city",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:houston-tx": {
+    "lat": 29.7589382,
+    "lng": -95.3676974,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:indianapolis-in": {
+    "lat": 39.7683331,
+    "lng": -86.1583502,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:jacksonville-fl": {
+    "lat": 30.3262247,
+    "lng": -81.6579179,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:kansas-city-mo": {
+    "lat": 39.100105,
+    "lng": -94.5781416,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:las-vegas-nv": {
+    "lat": 36.1674263,
+    "lng": -115.1484131,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:los-angeles-ca": {
+    "lat": 34.0536923,
+    "lng": -118.2427676,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:louisville-ky": {
+    "lat": 38.2542376,
+    "lng": -85.759407,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:memphis-tn": {
+    "lat": 35.146026,
+    "lng": -90.0517786,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:miami-fl": {
+    "lat": 25.7741566,
+    "lng": -80.1935973,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:milwaukee-wi": {
+    "lat": 43.0386475,
+    "lng": -87.9090751,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:minneapolis-mn": {
+    "lat": 44.9772995,
+    "lng": -93.2654692,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:nashville-tn": {
+    "lat": 36.1622767,
+    "lng": -86.7742984,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:new-orleans-la": {
+    "lat": 29.9574657,
+    "lng": -90.0629493,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:new-york-ny": {
+    "lat": 40.7127281,
+    "lng": -74.0060152,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:oklahoma-city-ok": {
+    "lat": 35.4729886,
+    "lng": -97.5170536,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:omaha-ne": {
+    "lat": 41.2587459,
+    "lng": -95.9383758,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:orlando-fl": {
+    "lat": 28.5421218,
+    "lng": -81.379045,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:philadelphia-pa": {
+    "lat": 39.9527237,
+    "lng": -75.1635262,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:phoenix-az": {
+    "lat": 33.4484367,
+    "lng": -112.074141,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:pittsburgh-pa": {
+    "lat": 40.4406968,
+    "lng": -80.0025666,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:portland-or": {
+    "lat": 45.5202471,
+    "lng": -122.674194,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:raleigh-nc": {
+    "lat": 35.7803977,
+    "lng": -78.6390989,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:richmond-va": {
+    "lat": 37.5385087,
+    "lng": -77.43428,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:riverside-ca": {
+    "lat": 33.9732079,
+    "lng": -117.3730926,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:sacramento-ca": {
+    "lat": 38.5810606,
+    "lng": -121.493895,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:salt-lake-city-ut": {
+    "lat": 40.7596198,
+    "lng": -111.886797,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:san-antonio-tx": {
+    "lat": 29.4246002,
+    "lng": -98.4951405,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:san-diego-ca": {
+    "lat": 32.7157062,
+    "lng": -117.1638284,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:san-francisco-ca": {
+    "lat": 37.7879363,
+    "lng": -122.4075201,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:san-jose-ca": {
+    "lat": 37.3361663,
+    "lng": -121.890591,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:seattle-wa": {
+    "lat": 47.6038321,
+    "lng": -122.330062,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:st-louis-mo": {
+    "lat": 38.6254063,
+    "lng": -90.190009,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:tampa-fl": {
+    "lat": 27.9449854,
+    "lng": -82.4583107,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:tucson-az": {
+    "lat": 32.2228765,
+    "lng": -110.974847,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:tulsa-ok": {
+    "lat": 36.1563122,
+    "lng": -95.9927516,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:virginia-beach-va": {
+    "lat": 36.8496579,
+    "lng": -75.9760751,
+    "quality": "administrative",
+    "source": "Nominatim",
+    "zip": ""
+  },
+  "metro:washington-dc": {
+    "lat": 38.8950982,
+    "lng": -77.0363849,
+    "quality": "city",
+    "source": "Nominatim",
+    "zip": ""
+  }
+}

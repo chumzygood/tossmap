@@ -1,0 +1,30 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "check": "tsc --noEmit",
+    "dev": "wrangler dev --local"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@x402/core": "^2.32.0",
+    "@x402/evm": "^2.32.0",
+    "@x402/extensions": "^2.32.0",
+    "@x402/fetch": "^2.32.0",
+    "hono": "^4.13.22",
+    "viem": "^2.58.6"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261125.1",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.2",
+    "wrangler": "^4.168.0"
+  },
+  "private": true,
+  "type": "module"
+}

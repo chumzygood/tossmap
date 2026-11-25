@@ -1,0 +1,14 @@
+{
+  "main_module": "index.js",
+  "compatibility_date": "2026-11-25",
+  "compatibility_flags": ["nodejs_compat"],
+  "bindings": [
+    {"type": "durable_object_namespace", "name": "STATE", "class_name": "State"},
+    {"type": "ratelimit", "name": "GENERAL_LIMIT", "namespace_id": "1001", "simple": {"limit": 60, "period": 60}},
+    {"type": "ratelimit", "name": "CHALLENGE_LIMIT", "namespace_id": "1002", "simple": {"limit": 20, "period": 60}},
+    {"type": "plain_text", "name": "X402_NETWORK", "text": "eip155:84532"},
+    {"type": "plain_text", "name": "PAY_TO_ADDRESS", "text": ""}
+  ],
+  "migrations": {"new_tag": "v1", "new_sqlite_classes": ["State"]},
+  "observability": {"enabled": true}
+}

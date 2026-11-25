@@ -1,0 +1,51 @@
+import { declareDiscoveryExtension } from '@x402/extensions/bazaar';
+import { encodePaymentRequiredHeader } from '@x402/core/http';
+import facilities from './data/facilities.json';
+import metros from './data/metros.json';
+import zips from './data/zips.json';
+import version from './data/version.json';
+import { locate, search, type Facility, type Metro } from './search';
+import {openapi} from './openapi';
+export { State } from './state';
+interface Env {STATE:DurableObjectNamespace; GENERAL_LIMIT:RateLimit; CHALLENGE_LIMIT:RateLimit; X402_NETWORK?:string; PAY_TO_ADDRESS?:string}
+const disclaimer='Confirm with the operator before driving; a listing does not guarantee acceptance.';
+const assets:Record<string,string>={'eip155:84532':'0x036CbD53842c5426634e7929541eC2318f3dCF7e','eip155:8453':'0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913'};
+const fs=facilities as Facility[], ms=metros as Metro[], zs=zips as Record<string,number[]>;
+const rates={search:{amount:'10000',price:'$0.01'},facility:{amount:'5000',price:'$0.005'},snapshot:{amount:'5000000',price:'$5.00'}};
+const sha=async(s:string)=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))).map(x=>x.toString(16).padStart(2,'0')).join('');
+const json=(body:unknown,status=200,headers:HeadersInit={})=>Response.json(body,{status,headers});
+const call=async(env:Env,key:string,body:unknown)=>env.STATE.get(env.STATE.idFromName(key)).fetch('https://state/',{method:'POST',body:JSON.stringify(body)});
+const docs=`# TossMap API\n\nConfirm with the operator before driving; a listing does not guarantee acceptance.\n\nFree coverage and three searches with results per IP per UTC day. Search with no results is free. Further searches cost $0.01 USDC, facility detail $0.005, and snapshot $5 via x402 v2 on Base.\n\n\`curl 'https://api.tossmap.com/v1/coverage?zip=10001'\`\n\`curl 'https://api.tossmap.com/v1/search?zip=10001&material=paint'\`\n\nWhen the free allowance is exhausted, inspect the PAYMENT-REQUIRED header on the 402 response. Sign using an x402 v2 client and retry with PAYMENT-SIGNATURE; the PAYMENT-RESPONSE header contains the receipt. See /openapi.json and /.well-known/x402.\n`;
+async function handle(req:Request,env:Env,ip:string,info:{kind:string;price:string;tx?:string}):Promise<Response>{
+ const url=new URL(req.url),path=url.pathname,network=env.X402_NETWORK||'eip155:84532',payTo=env.PAY_TO_ADDRESS||'',asset=assets[network];
+ if(req.method==='OPTIONS')return new Response(null,{status:204}); if(req.method!=='GET')return json({error:'Method not allowed'},405);
+ if(path==='/'||path==='/llms.txt')return new Response(docs,{headers:{'content-type':'text/markdown; charset=utf-8'}});
+ if(path==='/openapi.json')return json(openapi);
+ if(path==='/.well-known/x402')return json({x402Version:2,network,asset,payTo:payTo||null,facilitator:'https://facilitator.payai.network',resources:[{path:'/v1/search',price:'$0.01',condition:'results after three free searches per IP per UTC day'},{path:'/v1/facilities/{id}',price:'$0.005'},{path:'/v1/snapshot',price:'$5.00'}],disclaimer});
+ const dataset={...version,facilities_total:fs.length,geocoding_attribution:'US Census Bureau and © OpenStreetMap contributors (Nominatim).'};
+ if(path==='/v1/meta')return json({dataset,metros:ms.length,prices:rates,network,asset,disclaimer});
+ if(path==='/v1/metros')return json({dataset,metros:ms.map(m=>({...m,facilities:fs.filter(f=>f.metro===m.id).length})),disclaimer});
+ if(path==='/v1/coverage'){try{const l=locate(url.searchParams,ms,zs);return json({nearest_metro:l.nearest,covered:!!l.nearest&&l.nearest.distance_mi<=100,disclaimer});}catch(e){return json({error:(e as Error).message,disclaimer},400);}}
+ let result:unknown, rate:typeof rates.search, count:number|undefined;
+ if(path==='/v1/search'){
+  try{const s=search(url.searchParams,fs,ms,zs);count=s.count;result={query:Object.fromEntries(url.searchParams),dataset,...s,disclaimer};}catch(e){return json({error:(e as Error).message,disclaimer},400);}
+  if(!count){info.kind='free';const left:any=await (await call(env,'ip:'+await sha(ip),{action:'remaining'})).json();return json(result,200,{'X-Free-Searches-Remaining':String(left.remaining)});}
+  if(!req.headers.has('PAYMENT-SIGNATURE')) {const res=await call(env,'ip:'+await sha(ip),{action:'allowance'}); const a:any=await res.json();if(a.allowed){info.kind='free';return json(result,200,{'X-Free-Searches-Remaining':String(a.remaining)});}}
+  rate=rates.search;
+ } else if(path.startsWith('/v1/facilities/')) {const f=fs.find(x=>x.id===decodeURIComponent(path.slice('/v1/facilities/'.length)));if(!f)return json({error:'Facility not found',disclaimer},404);result={dataset,facility:f,disclaimer};rate=rates.facility;}
+ else if(path==='/v1/snapshot'){result={dataset,facilities:fs,disclaimer};rate=rates.snapshot;}
+ else return json({error:'Not found'},404);
+ info.price=rate.price;
+ if(!asset||!/^0x[0-9a-fA-F]{40}$/.test(payTo)||/^0x0{40}$/i.test(payTo))return json({error:'Payments unavailable: invalid or missing PAY_TO_ADDRESS or X402_NETWORK'},503);
+ const requirements={scheme:'exact',network:network as `eip155:${string}`,asset,amount:rate.amount,payTo,maxTimeoutSeconds:300,extra:{name:'USDC',version:'2'}};
+ const resource={url:url.toString(),description:`TossMap ${path} (${rate.price} USDC)`,mimeType:'application/json'};
+ const signature=req.headers.get('PAYMENT-SIGNATURE');
+ if(!signature){if(!(await env.CHALLENGE_LIMIT.limit({key:ip})).success)return json({error:'Too many payment challenges'},429,{'Retry-After':'60'});info.kind='402';const extensions=declareDiscoveryExtension({input:path==='/v1/search'?{zip:'10001',material:'paint'}:{},inputSchema:{type:'object',description:'Location and material or filter for searches',properties:{zip:{type:'string'},lat:{type:'number'},lng:{type:'number'},city:{type:'string'},state:{type:'string'},material:{type:'string'},radius_mi:{type:'number'}}},output:{example:{disclaimer},schema:{type:'object',description:resource.description,properties:{disclaimer:{type:'string'}}}}}); (extensions.bazaar.info.input as unknown as {method:string}).method='GET'; const required={x402Version:2,resource,accepts:[requirements],extensions};return json({error:'Payment required',description:resource.description,price:rate.price,currency:'USDC',matches:count,how_to_pay:'Use an x402 v2 client; retry with PAYMENT-SIGNATURE.',disclaimer},402,{'PAYMENT-REQUIRED':encodePaymentRequiredHeader(required),'Cache-Control':'no-store','X-Free-Searches-Remaining':'0'});}
+ const ready=JSON.stringify(result); // finish preparing content before charging
+ const state=await call(env,'signature:'+await sha(signature),{action:'payment',signature,requirements,resource:url.toString()});const outcome:any=await state.json();if(!state.ok)return json(outcome,state.status);
+ info.kind='paid';info.tx=outcome.transaction;return new Response(ready,{headers:{'content-type':'application/json','PAYMENT-RESPONSE':outcome.receipt,'Cache-Control':'private, no-store'}});
+}
+export default {async fetch(req:Request,env:Env):Promise<Response>{const ip=req.headers.get('CF-Connecting-IP')||'unknown',url=new URL(req.url),info:{kind:string;price:string;tx?:string}={kind:'free',price:'0'};let res:Response;
+ try{if(!(await env.GENERAL_LIMIT.limit({key:ip})).success)res=json({error:'Rate limit exceeded'},429,{'Retry-After':'60'});else res=await handle(req,env,ip,info);}catch{res=json({error:'Service unavailable'},503);}
+ const headers=new Headers(res.headers);headers.set('Access-Control-Allow-Origin','*');headers.set('Access-Control-Allow-Methods','GET, OPTIONS');headers.set('Access-Control-Allow-Headers','PAYMENT-SIGNATURE, Content-Type');headers.set('Access-Control-Expose-Headers','PAYMENT-REQUIRED, PAYMENT-RESPONSE, X-Free-Searches-Remaining, Retry-After');
+ console.log(JSON.stringify({route:url.pathname,status:res.status,kind:info.kind,price:info.price,network:env.X402_NETWORK||'eip155:84532',transaction:info.tx,ip_hash:await sha(ip)}));return new Response(res.body,{status:res.status,headers});}};

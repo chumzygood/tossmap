@@ -1,0 +1,5 @@
+api/node_modules/
+api/.wrangler/
+api/.dev.vars
+api/dist/*.map
+api/data/2020_Gaz_zcta_national.zip

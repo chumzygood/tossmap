@@ -525,7 +525,8 @@ def write_llms(matidx):
     lines=["# TossMap","",
            f"> Every TossMap listing is verified against an official government or facility-operator source. Each of the {n} sites includes that source link and a last-checked date. The data is unique because it is a source-backed, dated record — not an unverified aggregate. TossMap does not operate the listed facilities.","",
            f"TossMap lists {n} drop-off sites across {len(D)} US metro areas in {nstates} states. Listings include accepted materials, addresses, hours, fees and eligibility notes when the official source provides them. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.","",
-           f"A complete plain-text dump of every listing is in [llms-full.txt]({BASE}/llms-full.txt).","",
+           f"A complete plain-text dump of every listing is in [llms-full.txt]({BASE}/llms-full.txt).",
+           "API for agents: https://api.tossmap.com/llms.txt — paid per call in USDC via x402; free coverage checks and 3 free searches/day.","",
            "## Find a drop-off",
            f"- [Cities and materials]({BASE}/): directory index"]
     for s,nm,_ in MAT:
