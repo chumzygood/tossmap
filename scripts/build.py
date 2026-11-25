@@ -1,5 +1,5 @@
 import json,html,re,os,datetime
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 BASE="https://tossmap.com"
 D=json.load(open("data/facilities.json")); OUT="docs"
 # Facility page paths (used so city FAQ answers link straight to each facility page).
@@ -650,27 +650,63 @@ def residency_ok_for_city(f,m):
         return True
     return False
 
+def facility_place_label(f,m):
+    """City and state from the listing address, not the metro directory city."""
+    pa=parse_address(f.get("address") or "")
+    loc=(pa.get("addressLocality") or "").strip()
+    region=(pa.get("addressRegion") or "").strip() or m["st"]
+    if loc:
+        return f"{loc}, {region}"
+    mm=re.search(r",\s*([^,]+),\s*([A-Z]{2})(?:\s+\d{5}(?:-\d{4})?)?\s*$", (f.get("address") or "").strip())
+    if mm:
+        return f"{mm.group(1).strip()}, {mm.group(2)}"
+    return f"{m['city']}, {m['st']}"
+
+def fee_clause(fees):
+    """Attach fees in a natural way. Omit the field when it is empty; never invent a value."""
+    raw=(fees or "").strip()
+    if not raw:
+        return ""
+    text=raw.rstrip(" .")
+    if re.fullmatch(r"free", text, re.I):
+        return ", and it's free"
+    m=re.match(r"(?i)^free(\s+(?:for|with)\s+.{1,40})$", text)
+    if m and not re.search(r"[;:$]", text):
+        return f", and it's free{m.group(1)}"
+    return f"; fees: {text}"
+
+def source_domain(url):
+    host=urlparse(url).netloc.lower()
+    if host.startswith("www."):
+        host=host[4:]
+    return host
+
+def source_sentence(url):
+    url=(url or "").strip()
+    if not url:
+        return ""
+    label=source_domain(url) or url
+    return f' Source: <a href="{e(url)}" rel="noopener">{e(label)}</a>.'
+
+def attach_hours_fees(lead, hours, fees):
+    hours=(hours or "").strip().rstrip(" .")
+    if hours:
+        lead+=f", {hours}"
+    return lead+fee_clause(fees)+"."
+
 def facility_direct_answer(f,m):
     """One short sentence from verified fields only. Skip unknown fields rather than invent them."""
     materials=[MAT_SHORT[s] for s,_,_ in mats(f)]
-    hours=(f.get("hours") or "").strip()
-    fees=(f.get("fees") or "").strip()
+    place=facility_place_label(f,m)
     if materials:
         if residency_ok_for_city(f,m):
             lead=f"{m['city']} residents can drop off {and_list(materials)} at {f['name']}"
         else:
-            lead=f"{f['name']} in {m['city']}, {m['st']} accepts {and_list(materials)}"
+            lead=f"{f['name']} in {place} accepts {and_list(materials)}"
     else:
-        lead=f"{f['name']} is a listed drop-off site in {m['city']}, {m['st']}"
-    if hours:
-        lead+=f", {hours}"
-    if fees:
-        lead+=f", {fees}"
-    lead+="."
-    src=(f.get("source") or "").strip()
-    html_lead=e(lead)
-    if src:
-        html_lead+=f' Source: <a href="{e(src)}" rel="noopener">{e(src)}</a>.'
+        lead=f"{f['name']} is a listed drop-off site in {place}"
+    html_lead=e(attach_hours_fees(lead, f.get("hours") or "", f.get("fees") or ""))
+    html_lead+=source_sentence(f.get("source") or "")
     return f'<p class="lead">{html_lead}</p>'
 
 def city_direct_answer(m,have):
@@ -680,8 +716,6 @@ def city_direct_answer(m,have):
     materials=[MAT_SHORT[s] for s,_ in have]
     named=CITY_NAMED.get((m["st"],m["city"]))
     site=next((f for f in fs if f["name"]==named), fs[0])
-    hours=(site.get("hours") or "").strip()
-    fees=(site.get("fees") or "").strip()
     if materials:
         if all(residency_ok_for_city(f,m) for f in fs):
             lead=f"{m['city']} residents can drop off {and_list(materials)}"
@@ -698,16 +732,12 @@ def city_direct_answer(m,have):
             lead=f"{site['name']} is listed for {m['city']}, {m['st']}"
         else:
             lead=f"{m['city']}, {m['st']} has {len(fs)} official drop-off sites listed, including {site['name']}"
-    if hours:
-        lead+=f", {hours}"
-    if len(fs)==1 and fees:
-        lead+=f", {fees}"
-    lead+="."
-    src=(site.get("source") or "").strip()
-    html_lead=e(lead)
-    if src:
-        html_lead+=f' Source: <a href="{e(src)}" rel="noopener">{e(src)}</a>.'
-    return f'<p class="lead">{html_lead}</p>'
+    # Hours and fees belong to one site; only attach them on single-site city pages to keep the sentence short.
+    if len(fs)==1:
+        sentence=attach_hours_fees(lead, site.get("hours") or "", site.get("fees") or "")
+    else:
+        sentence=lead+"."
+    return f'<p class="lead">{e(sentence)+source_sentence(site.get("source") or "")}</p>'
 
 def facility_page(f,m):
     fp=fpath(f,m)

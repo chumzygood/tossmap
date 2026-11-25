@@ -228,16 +228,44 @@ class FacilityTests(unittest.TestCase):
                 # Lead sits immediately after H1 and uses only known fields.
                 lead=re.search(r'<h1>.*?</h1><p class="lead">(.*?)</p>', html, re.S).group(1)
                 visible=unescape(re.sub(r'<[^>]+>','',lead))
-                if f.get('hours'):
-                    self.assertIn(f['hours'], visible, p)
+                hours=(f.get('hours') or '').strip().rstrip(' .')
+                if hours:
+                    self.assertIn(hours, visible, p)
                 else:
                     self.assertNotIn('hours not listed', visible.lower())
-                if f.get('fees'):
-                    self.assertIn(f['fees'], visible, p)
-                else:
+                fees=(f.get('fees') or '').strip()
+                if not fees:
                     self.assertNotRegex(visible, r', not listed\.?$', p)
+                    self.assertNotIn(', Free.', visible, p)
+                else:
+                    fee_text=fees.rstrip(' .')
+                    simple=re.match(r'(?i)^free(\s+(?:for|with)\s+.{1,40})$', fee_text)
+                    if re.fullmatch(r'free', fee_text, re.I):
+                        self.assertIn("and it's free", visible, p)
+                        self.assertNotIn(', Free', visible, p)
+                    elif simple and not re.search(r'[;:$]', fee_text):
+                        self.assertIn("and it's free"+simple.group(1), visible, p)
+                        self.assertNotIn(', Free', visible, p)
+                    else:
+                        self.assertIn(fee_text, visible, p)
+                        self.assertNotRegex(visible, r', Free\.', p)
                 self.assertNotIn('None', visible)
                 self.assertNotIn(UNKNOWN, visible)
+                self.assertNotIn('[', visible, p)
+                self.assertNotIn('[', lead, p)
+                a=re.search(r'Source: <a href="([^"]+)"[^>]*>([^<]+)</a>', lead)
+                self.assertIsNotNone(a, p)
+                self.assertEqual(unescape(a.group(1)), f['source'], p)
+                host=urlsplit(f['source']).netloc.lower()
+                if host.startswith('www.'):
+                    host=host[4:]
+                self.assertEqual(unescape(a.group(2)), host, p)
+                # Do not place a site in the metro core city when the address is elsewhere.
+                loc=re.search(r',\s*([^,]+),\s*([A-Z]{2})(?:\s+\d{5}(?:-\d{4})?)?\s*$', (f.get('address') or '').strip())
+                if loc:
+                    city_from_addr=loc.group(1).strip()
+                    if city_from_addr.lower()!=m['city'].lower() and m['city'].lower() not in city_from_addr.lower():
+                        self.assertNotIn(f"in {m['city']}, {m['st']}", visible, p)
 
     def test_known_rejection_and_conditional_cases(self):
         facilities={f['name']:f for m in D for f in m['facilities']}
