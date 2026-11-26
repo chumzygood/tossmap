@@ -1,0 +1,1 @@
+{"$schema":"https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json","name":"com.tossmap/tossmap","title":"TossMap","description":"Find US hazardous-waste, paint, battery and e-waste drop-off sites by ZIP or city","version":"1.0.0","websiteUrl":"https://tossmap.com","remotes":[{"type":"streamable-http","url":"https://api.tossmap.com/mcp"}]}

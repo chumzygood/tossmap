@@ -21443,7 +21443,7 @@ function distance(a, b, c, d) {
   return 2 * 3958.8 * Math.asin(Math.min(1, Math.sqrt(Math.sin(p / 2) ** 2 + Math.cos(a * r) * Math.cos(c * r) * Math.sin(q / 2) ** 2)));
 }
 __name(distance, "distance");
-function locate(p, metros, zips) {
+function locate(p, metros, zips, facilities = []) {
   let lat, lng;
   if (p.has("zip")) {
     let z2 = p.get("zip");
@@ -21453,25 +21453,32 @@ function locate(p, metros, zips) {
     lat = Number(p.get("lat"));
     lng = Number(p.get("lng"));
     if (!p.get("lat") || !p.get("lng") || !Number.isFinite(lat) || !Number.isFinite(lng) || Math.abs(lat) > 90 || Math.abs(lng) > 180) throw Error("Invalid latitude or longitude");
-  } else if (p.has("city") && p.has("state")) {
-    const m = metros.find((m2) => m2.city.toLowerCase() === p.get("city").trim().toLowerCase() && m2.state.toLowerCase() === p.get("state").trim().toLowerCase());
-    if (!m?.location) throw Error("Unknown covered city and state");
-    ({ lat, lng } = m.location);
+  } else if (p.has("city")) {
+    const city = p.get("city").trim().toLowerCase(), state = p.get("state")?.trim().toLowerCase();
+    if (state && !/^[a-z]{2}$/.test(state)) throw Error("Invalid state");
+    const matches = metros.filter((m) => m.city.toLowerCase() === city && (!state || m.state.toLowerCase() === state));
+    if (matches.length === 1 && matches[0].location) ({ lat, lng } = matches[0].location);
+    else {
+      const hits = facilities.filter((f) => f.lat !== null && f.lng !== null && (!state || f.state.toLowerCase() === state) && typeof f.address === "string" && f.address.split(",").some((part) => part.trim().toLowerCase() === city));
+      if (!hits.length || new Set(hits.map((f) => f.state)).size > 1) throw Error("Unknown or ambiguous covered city; provide state");
+      lat = hits.reduce((n, f) => n + f.lat, 0) / hits.length;
+      lng = hits.reduce((n, f) => n + f.lng, 0) / hits.length;
+    }
   } else throw Error("Provide zip, lat and lng, or city and state");
   const nearest = metros.filter((m) => m.location).map((m) => ({ ...m, distance_mi: Math.round(distance(lat, lng, m.location.lat, m.location.lng) * 10) / 10 })).sort((a, b) => a.distance_mi - b.distance_mi)[0] || null;
   return { lat, lng, nearest };
 }
 __name(locate, "locate");
 function search(p, facilities, metros, zips) {
-  const location2 = locate(p, metros, zips), material = p.get("material")?.replace(/-/g, "_");
+  const location3 = locate(p, metros, zips, facilities), material = p.get("material")?.replace(/-/g, "_");
   const mats = ["tires", "paint", "e_waste", "batteries", "motor_oil", "household_chemicals"], filters = ["businesses_accepted", "fee_charged", "residents_only"];
   if (material && !mats.includes(material)) throw Error("Unknown material");
   if (!material && !filters.some((k) => p.has(k))) throw Error("Provide a material or filter");
   for (const k of filters) if (p.has(k) && !["yes", "no"].includes(p.get(k))) throw Error(`${k} must be yes or no`);
   const radius = p.has("radius_mi") ? Number(p.get("radius_mi")) : 25, limit = p.has("limit") ? Number(p.get("limit")) : 10;
   if (!Number.isFinite(radius) || radius <= 0 || radius > 100 || !Number.isInteger(limit) || limit < 1 || limit > 10) throw Error("radius_mi must be > 0 and <= 100; limit must be 1\u201310");
-  const all = facilities.filter((f) => f.lat !== null && f.lng !== null && (!material || f.questions[material]?.answer === "yes") && filters.every((k) => !p.has(k) || f.questions[k]?.answer === p.get(k))).map((f) => ({ ...f, location: { lat: f.lat, lng: f.lng, distance_mi: Math.round(distance(location2.lat, location2.lng, f.lat, f.lng) * 10) / 10 } })).filter((f) => f.location.distance_mi <= radius).sort((a, b) => a.location.distance_mi - b.location.distance_mi || a.id.localeCompare(b.id));
-  return { count: all.length, results: all.slice(0, limit), nearest_metro: location2.nearest };
+  const all = facilities.filter((f) => f.lat !== null && f.lng !== null && (!material || f.questions[material]?.answer === "yes") && filters.every((k) => !p.has(k) || f.questions[k]?.answer === p.get(k))).map((f) => ({ ...f, location: { lat: f.lat, lng: f.lng, distance_mi: Math.round(distance(location3.lat, location3.lng, f.lat, f.lng) * 10) / 10 } })).filter((f) => f.location.distance_mi <= radius).sort((a, b) => a.location.distance_mi - b.location.distance_mi || a.id.localeCompare(b.id));
+  return { count: all.length, results: all.slice(0, limit), nearest_metro: location3.nearest };
 }
 __name(search, "search");
 
@@ -21493,7 +21500,7 @@ var searchParameters = [
 var freeResponses = { "200": { description: "Successful response" }, "400": { description: "Invalid request" }, "429": { description: "Rate limit exceeded; see Retry-After" } };
 var paidResponses = /* @__PURE__ */ __name((description) => ({ ...freeResponses, "200": { description: "JSON response. Confirm with the operator before driving; a listing does not guarantee acceptance.", headers: { "PAYMENT-RESPONSE": { description: "Base64-encoded x402 settlement receipt for paid requests", schema: { type: "string" } } } }, "402": { description, headers: { "PAYMENT-REQUIRED": { description: "Base64-encoded x402 v2 payment requirements", schema: { type: "string" } } } }, "404": { description: "Facility not found" }, "409": { description: "Signature already used or settlement outcome uncertain" }, "502": { description: "Facilitator rejected settlement; inspect reason" }, "503": { description: "Payment configuration or facilitator unavailable" } }), "paidResponses");
 var payment = /* @__PURE__ */ __name((amount) => ({ protocols: [{ x402: {} }], price: { mode: "fixed", currency: "USD", amount } }), "payment");
-var openapi = { openapi: "3.1.0", info: { title: "TossMap API", version: "1.0.0", description: "Coverage is free. Three searches with results per IPv4 address or IPv6 /64 prefix per UTC day and all empty searches are free. Other paid calls use x402 v2 exact USDC.", "x-guidance": "Check free coverage first, then search. Search costs $0.01 after three free result-bearing searches per day; empty searches are free. Facility details cost $0.005 and snapshots $5.00. Confirm with the operator before driving; a listing does not guarantee acceptance.", contact: { url: "https://tossmap.com" } }, servers: [{ url: "https://api.tossmap.com" }], paths: {
+var openapi = { openapi: "3.1.0", info: { title: "TossMap API", version: "1.0.0", description: "Coverage is free. Three searches with results per IPv4 address or IPv6 /64 prefix per UTC day and all empty searches are free. Other paid calls use x402 v2 exact USDC. MCP tools are available at https://api.tossmap.com/mcp.", "x-guidance": "Check free coverage first, then search. Search costs $0.01 after three free result-bearing searches per day; empty searches are free. Facility details cost $0.005 and snapshots $5.00. Confirm with the operator before driving; a listing does not guarantee acceptance.", contact: { url: "https://tossmap.com" } }, "x-mcp": { url: "https://api.tossmap.com/mcp", transport: "streamable-http" }, servers: [{ url: "https://api.tossmap.com" }], paths: {
   "/": { get: { operationId: "getGuide", summary: "API guide", security: [], responses: freeResponses } },
   "/llms.txt": { get: { operationId: "getAgentGuide", summary: "Agent guide", security: [], responses: freeResponses } },
   "/openapi.json": { get: { operationId: "getOpenApi", summary: "OpenAPI specification", security: [], responses: freeResponses } },
@@ -21502,6 +21509,7 @@ var openapi = { openapi: "3.1.0", info: { title: "TossMap API", version: "1.0.0"
   "/v1/metros": { get: { operationId: "listMetros", summary: "Covered metros", security: [], responses: freeResponses } },
   "/v1/coverage": { get: { operationId: "getCoverage", summary: "Nearest covered metro", security: [], parameters: location, responses: freeResponses } },
   "/v1/search": { get: { operationId: "searchFacilities", summary: "Search facilities", description: "Requires a location and a material or filter. The first 3 searches per day with results and all empty searches are free; later searches with results cost $0.01 USDC via x402 v2 per IPv4 address or IPv6 /64 prefix per UTC day.", parameters: searchParameters, "x-payment-info": payment("0.01"), responses: paidResponses("$0.01 USDC payment required after free allowance") } },
+  "/v1/search/paid": { get: { operationId: "searchFacilitiesPaid", summary: "Paid search for directories", description: "Search with results costs $0.01; empty searches are free.", parameters: searchParameters, "x-payment-info": payment("0.01"), responses: paidResponses("$0.01 USDC payment required") } },
   "/v1/facilities/{id}": { get: { operationId: "getFacility", summary: "Facility detail", description: "$0.005 USDC via x402 v2.", parameters: [{ name: "id", in: "path", required: true, schema: { type: "string", example: "dsny-special-waste-drop-off-bronx" } }], "x-payment-info": payment("0.005"), responses: paidResponses("$0.005 USDC payment required") } },
   "/v1/snapshot": { get: { operationId: "getSnapshot", summary: "Full dataset", description: "$5 USDC via x402 v2. @x402/core 2.23+ client libraries default to a $1 spend limit; raise your client spend limit to at least $5 to buy the snapshot.", "x-payment-info": payment("5.00"), responses: paidResponses("$5 USDC payment required. Raise the client spend limit to at least $5.") } }
 } };
@@ -21542,6 +21550,21 @@ function callerKey(address) {
   return groups.slice(0, 4).map((group) => group.padStart(4, "0")).join(":") + "::/64";
 }
 __name(callerKey, "callerKey");
+
+// server.json
+var server_default = { $schema: "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json", name: "com.tossmap/tossmap", title: "TossMap", description: "Find US hazardous-waste, paint, battery and e-waste drop-off sites by ZIP or city", version: "1.0.0", websiteUrl: "https://tossmap.com", remotes: [{ type: "streamable-http", url: "https://api.tossmap.com/mcp" }] };
+
+// src/mcp.ts
+var protocolVersion = "2025-11-25";
+var location2 = { zip: { type: "string", pattern: "^[0-9]{5}$" }, city: { type: "string", minLength: 1 }, state: { type: "string", pattern: "^[A-Za-z]{2}$" } };
+var annotations = { readOnlyHint: true, openWorldHint: false };
+var outputSchema = { type: "object", additionalProperties: true };
+var tools = [
+  { name: "search_facilities", description: "Find facilities by ZIP or covered city and material.", inputSchema: { type: "object", properties: { ...location2, material: { type: "string", enum: ["tires", "paint", "e_waste", "batteries", "motor_oil", "household_chemicals"] }, limit: { type: "integer", minimum: 1, maximum: 10 } }, required: ["material"], anyOf: [{ required: ["zip"] }, { required: ["city"] }], additionalProperties: false }, outputSchema, annotations },
+  { name: "get_facility", description: "Get a facility by ID.", inputSchema: { type: "object", properties: { id: { type: "string", minLength: 1 } }, required: ["id"], additionalProperties: false }, outputSchema, annotations },
+  { name: "coverage", description: "Check coverage by ZIP or covered city.", inputSchema: { type: "object", properties: location2, anyOf: [{ required: ["zip"] }, { required: ["city"] }], additionalProperties: false }, outputSchema, annotations }
+];
+var card = { $schema: "https://static.modelcontextprotocol.io/schemas/mcp-server-card/v1.json", version: "1.0", protocolVersion, serverInfo: { name: "tossmap", title: "TossMap", version: "1.0.0" }, description: server_default.description, documentationUrl: "https://api.tossmap.com/llms.txt", transport: { type: "streamable-http", endpoint: "https://api.tossmap.com/mcp" }, capabilities: { tools: {} }, authentication: { required: false }, tools, resources: [], prompts: [] };
 
 // src/state.ts
 import { DurableObject } from "cloudflare:workers";
@@ -21631,6 +21654,11 @@ TossMap lists places to recycle or dispose of household materials in covered US 
 
 Searches with zero results are free. Three searches with results per IPv4 address or IPv6 /64 prefix per UTC day are free; later searches with results cost $0.01 USDC. X-Free-Searches-Remaining reports the balance on free search responses and challenges. Count is before limit.
 
+## MCP server
+Streamable HTTP endpoint: https://api.tossmap.com/mcp. Tools: search_facilities, get_facility, coverage. Coverage and empty searches are free; three result-bearing searches or facility lookups per caller per day are free. Further calls use the paid REST API.
+
+    {"mcpServers":{"tossmap":{"url":"https://api.tossmap.com/mcp"}}}
+
 ## Payment (x402 v2 exact)
 Current network: ${network}; USDC asset: ${asset || "unsupported"}; payTo: ${payTo || "not configured"}; facilitator: ${facilitator}. These values reflect the current Worker configuration. Amounts are USDC base units (6 decimals).
 1. GET a paid resource. A 402 has JSON describing the price and a base64 PAYMENT-REQUIRED header; search challenges include match count without results.
@@ -21661,23 +21689,30 @@ Geocoding: US Census Bureau and \xA9 OpenStreetMap contributors (Nominatim). Coo
 async function handle(req, env, ip, info) {
   const url2 = new URL(req.url), path = url2.pathname, network = env.X402_NETWORK || "eip155:84532", payTo = env.PAY_TO_ADDRESS || "", asset = assets[network], facilitator = facilitatorConfig(env.FACILITATOR_URL, network);
   if (req.method === "OPTIONS") return new Response(null, { status: 204 });
+  if (path === "/mcp") {
+    if (req.method !== "POST") return new Response(null, { status: 405, headers: { Allow: "POST" } });
+    return mcp(req, env, ip, info);
+  }
   if (req.method !== "GET") return json2({ error: "Method not allowed" }, 405);
+  if (path === "/server.json") return json2(server_default);
+  if (path === "/.well-known/mcp/server-card.json" || path === "/.well-known/mcp.json") return json2(card);
+  if (path === "/.well-known/402index-verify.txt") return env.INDEX402_VERIFY_HASH ? new Response(env.INDEX402_VERIFY_HASH, { headers: { "content-type": "text/plain; charset=utf-8" } }) : new Response(null, { status: 404 });
   if (path === "/" || path === "/llms.txt") return new Response(docs(network, asset, payTo, facilitator.url), { headers: { "content-type": "text/markdown; charset=utf-8" } });
   if (path === "/openapi.json") return json2(openapi);
-  if (path === "/.well-known/x402") return json2({ version: 1, x402Version: 2, network, asset, payTo: payTo || null, facilitator: facilitator.url, resources: ["https://api.tossmap.com/v1/search?zip=10001&material=paint", "https://api.tossmap.com/v1/facilities/dsny-special-waste-drop-off-bronx", "https://api.tossmap.com/v1/snapshot"], paidResources: [{ path: "/v1/search", price: "$0.01", condition: "results after three free searches per IPv4 address or IPv6 /64 prefix per UTC day" }, { path: "/v1/facilities/{id}", price: "$0.005" }, { path: "/v1/snapshot", price: "$5.00" }], disclaimer });
+  if (path === "/.well-known/x402") return json2({ version: 1, x402Version: 2, network, asset, payTo: payTo || null, facilitator: facilitator.url, mcp: "https://api.tossmap.com/mcp", resources: ["https://api.tossmap.com/v1/search/paid?zip=10001&material=paint", "https://api.tossmap.com/v1/facilities/dsny-special-waste-drop-off-bronx", "https://api.tossmap.com/v1/snapshot"], paidResources: [{ path: "/v1/search", price: "$0.01", condition: "results after three free searches per IPv4 address or IPv6 /64 prefix per UTC day" }, { path: "/v1/facilities/{id}", price: "$0.005" }, { path: "/v1/snapshot", price: "$5.00" }], disclaimer });
   const dataset = { ...version_default, facilities_total: fs.length, geocoding_attribution: "US Census Bureau and \xA9 OpenStreetMap contributors (Nominatim)." };
   if (path === "/v1/meta") return json2({ dataset, metros: ms.length, prices: rates, network, asset, disclaimer });
   if (path === "/v1/metros") return json2({ dataset, metros: ms.map((m) => ({ ...m, facilities: fs.filter((f) => f.metro === m.id).length })), disclaimer });
   if (path === "/v1/coverage") {
     try {
-      const l = locate(url2.searchParams, ms, zs);
+      const l = locate(url2.searchParams, ms, zs, fs);
       return json2({ nearest_metro: l.nearest, covered: !!l.nearest && l.nearest.distance_mi <= 100, disclaimer });
     } catch (e) {
       return json2({ error: e.message, disclaimer }, 400);
     }
   }
   let result, rate, count;
-  if (path === "/v1/search") {
+  if (path === "/v1/search" || path === "/v1/search/paid") {
     try {
       const s = search(url2.searchParams, fs, ms, zs);
       count = s.count;
@@ -21690,7 +21725,7 @@ async function handle(req, env, ip, info) {
       const left = await (await call(env, "ip:" + await sha(ip), { action: "remaining" })).json();
       return json2(result, 200, { "X-Free-Searches-Remaining": String(left.remaining) });
     }
-    if (!req.headers.has("PAYMENT-SIGNATURE")) {
+    if (path === "/v1/search" && !req.headers.has("PAYMENT-SIGNATURE")) {
       const res = await call(env, "ip:" + await sha(ip), { action: "allowance" });
       const a = await res.json();
       if (a.allowed) {
@@ -21717,7 +21752,7 @@ async function handle(req, env, ip, info) {
   if (!signature) {
     if (!(await env.CHALLENGE_LIMIT.limit({ key: ip })).success) return json2({ error: "Too many payment challenges" }, 429, { "Retry-After": "60" });
     info.kind = "402";
-    const extensions = declareDiscoveryExtension({ input: path === "/v1/search" ? { zip: "10001", material: "paint" } : {}, inputSchema: path === "/v1/search" ? { type: "object", description: "Use a location and a material or filter", properties: Object.fromEntries(searchParameters.map((p) => [p.name, p.schema])) } : { type: "object", properties: {} }, ...path.startsWith("/v1/facilities/") ? { pathParams: { id: decodeURIComponent(path.slice("/v1/facilities/".length)) }, pathParamsSchema: { type: "object", properties: { id: { type: "string", description: "Facility ID in the URL path" } }, required: ["id"] } } : {}, output: { example: { disclaimer }, schema: { type: "object", description: resource.description, properties: { disclaimer: { type: "string" } } } } });
+    const extensions = declareDiscoveryExtension({ input: path.startsWith("/v1/search") ? { zip: "10001", material: "paint" } : {}, inputSchema: path.startsWith("/v1/search") ? { type: "object", description: "Use a location and a material or filter", properties: Object.fromEntries(searchParameters.map((p) => [p.name, p.schema])) } : { type: "object", properties: {} }, ...path.startsWith("/v1/facilities/") ? { pathParams: { id: decodeURIComponent(path.slice("/v1/facilities/".length)) }, pathParamsSchema: { type: "object", properties: { id: { type: "string", description: "Facility ID in the URL path" } }, required: ["id"] } } : {}, output: { example: { disclaimer }, schema: { type: "object", description: resource.description, properties: { disclaimer: { type: "string" } } } } });
     extensions.bazaar.info.input.method = "GET";
     const required2 = { x402Version: 2, resource, accepts: [requirements], extensions };
     return json2({ ...required2, error: "Payment required", description: resource.description, price: rate.price, currency: "USDC", matches: count, how_to_pay: path === "/v1/snapshot" ? "Use an x402 v2 client; retry with PAYMENT-SIGNATURE. @x402/core 2.23+ clients default to a $1 spend limit; raise your client spend limit to at least $5 for this snapshot." : "Use an x402 v2 client; retry with PAYMENT-SIGNATURE.", disclaimer }, 402, { "PAYMENT-REQUIRED": encodePaymentRequiredHeader(required2), "Cache-Control": "no-store", "X-Free-Searches-Remaining": "0" });
@@ -21731,6 +21766,63 @@ async function handle(req, env, ip, info) {
   return new Response(ready, { headers: { "content-type": "application/json", "PAYMENT-RESPONSE": outcome.receipt, "Cache-Control": "private, no-store" } });
 }
 __name(handle, "handle");
+async function mcp(req, env, ip, info) {
+  let body;
+  try {
+    body = await req.json();
+  } catch {
+    return json2({ jsonrpc: "2.0", id: null, error: { code: -32700, message: "Parse error" } });
+  }
+  const one = /* @__PURE__ */ __name(async (msg) => {
+    if (!msg || typeof msg !== "object" || Array.isArray(msg) || msg.jsonrpc !== "2.0" || typeof msg.method !== "string" || "id" in msg && msg.id !== null && typeof msg.id !== "string" && typeof msg.id !== "number") return { jsonrpc: "2.0", id: null, error: { code: -32600, message: "Invalid Request" } };
+    if (!Object.prototype.hasOwnProperty.call(msg, "id")) return null;
+    const reply = /* @__PURE__ */ __name((result) => ({ jsonrpc: "2.0", id: msg.id, result }), "reply");
+    const error62 = /* @__PURE__ */ __name((code, message) => ({ jsonrpc: "2.0", id: msg.id, error: { code, message } }), "error");
+    if (msg.method === "initialize") return reply({ protocolVersion: ["2025-11-25", "2025-06-18", "2025-03-26"].includes(msg.params?.protocolVersion) ? msg.params.protocolVersion : protocolVersion, capabilities: { tools: { listChanged: false } }, serverInfo: card.serverInfo, instructions: "TossMap finds US disposal sites. Three result-bearing searches or facility lookups per day are free; see https://api.tossmap.com/llms.txt for paid API access." });
+    if (msg.method === "ping") return reply({});
+    if (msg.method === "tools/list") return reply({ tools });
+    if (msg.method !== "tools/call") return error62(-32601, "Method not found");
+    const name = msg.params?.name, args = msg.params?.arguments ?? {};
+    const def = tools.find((t) => t.name === name);
+    if (!def) return error62(-32602, "Unknown tool");
+    if (!args || typeof args !== "object" || Array.isArray(args) || Object.keys(args).some((k) => !(k in def.inputSchema.properties))) return error62(-32602, "Invalid tool arguments");
+    if (name === "get_facility" ? typeof args.id !== "string" || !args.id : !args.zip && !args.city || args.zip !== void 0 && (typeof args.zip !== "string" || !/^\d{5}$/.test(args.zip)) || args.city !== void 0 && (typeof args.city !== "string" || !args.city.trim()) || args.state !== void 0 && (typeof args.state !== "string" || !/^[a-z]{2}$/i.test(args.state)) || name === "search_facilities" && (!["tires", "paint", "e_waste", "batteries", "motor_oil", "household_chemicals"].includes(args.material) || args.limit !== void 0 && (!Number.isInteger(args.limit) || args.limit < 1 || args.limit > 10))) return error62(-32602, "Invalid tool arguments");
+    const params = new URLSearchParams();
+    for (const [k, v] of Object.entries(args)) if (k !== "id") params.set(k, String(v));
+    const paidUrl = name === "get_facility" ? "https://api.tossmap.com/v1/facilities/" + encodeURIComponent(args.id) : "https://api.tossmap.com/v1/search?" + params;
+    const endpoint = name === "coverage" ? "https://api.tossmap.com/v1/coverage?" + params : paidUrl;
+    if (name === "get_facility") {
+      const f = fs.find((f2) => f2.id === args.id);
+      if (f) {
+        const a = await (await call(env, "ip:" + await sha(ip), { action: "allowance" })).json();
+        if (a.allowed) {
+          info.kind = "free";
+          const data2 = { dataset: { ...version_default, facilities_total: fs.length, geocoding_attribution: "US Census Bureau and \xA9 OpenStreetMap contributors (Nominatim)." }, facility: f, disclaimer };
+          return reply({ content: [{ type: "text", text: JSON.stringify(data2) }], structuredContent: data2 });
+        }
+      }
+    }
+    const res = await handle(new Request(endpoint), env, ip, info), data = await res.json();
+    if (res.status === 402) {
+      const { x402Version: x402Version2, resource, accepts, extensions } = data;
+      const paymentRequired = { x402Version: x402Version2, resource, accepts, extensions };
+      return reply({ isError: true, content: [{ type: "text", text: `Payment required: ${data.price} USDC. Pay with x402 at ${paidUrl}` }], structuredContent: { paymentRequired, paidUrl, docs: "https://api.tossmap.com/llms.txt" } });
+    }
+    return reply({ ...res.ok ? {} : { isError: true }, content: [{ type: "text", text: JSON.stringify(data) }], structuredContent: data });
+  }, "one");
+  if (Array.isArray(body)) {
+    if (!body.length) return json2({ jsonrpc: "2.0", id: null, error: { code: -32600, message: "Invalid Request" } });
+    const replies = [];
+    for (const item of body) {
+      const result = await one(item);
+      if (result) replies.push(result);
+    }
+    return replies.length ? json2(replies) : new Response(null, { status: 202 });
+  }
+  const response = await one(body);
+  return response ? json2(response) : new Response(null, { status: 202 });
+}
+__name(mcp, "mcp");
 var index_default = { async fetch(req, env) {
   const ip = callerKey(req.headers.get("CF-Connecting-IP") || "unknown"), url2 = new URL(req.url), info = { kind: "free", price: "0" };
   let res;
@@ -21742,9 +21834,9 @@ var index_default = { async fetch(req, env) {
   }
   const headers = new Headers(res.headers);
   headers.set("Access-Control-Allow-Origin", "*");
-  headers.set("Access-Control-Allow-Methods", "GET, OPTIONS");
-  headers.set("Access-Control-Allow-Headers", "PAYMENT-SIGNATURE, Content-Type");
-  headers.set("Access-Control-Expose-Headers", "PAYMENT-REQUIRED, PAYMENT-RESPONSE, X-Free-Searches-Remaining, Retry-After");
+  headers.set("Access-Control-Allow-Methods", "GET, POST, DELETE, OPTIONS");
+  headers.set("Access-Control-Allow-Headers", "PAYMENT-SIGNATURE, Content-Type, Authorization, Mcp-Session-Id, MCP-Protocol-Version");
+  headers.set("Access-Control-Expose-Headers", "PAYMENT-REQUIRED, PAYMENT-RESPONSE, X-Free-Searches-Remaining, Retry-After, Mcp-Session-Id");
   console.log(JSON.stringify({ route: url2.pathname, status: res.status, kind: info.kind, price: info.price, network: env.X402_NETWORK || "eip155:84532", transaction: info.tx, ip_hash: await sha(ip) }));
   return new Response(res.body, { status: res.status, headers });
 } };

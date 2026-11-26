@@ -42,6 +42,11 @@
       "type": "plain_text",
       "name": "FACILITATOR_URL",
       "text": ""
+    },
+    {
+      "type": "plain_text",
+      "name": "INDEX402_VERIFY_HASH",
+      "text": ""
     }
   ],
   "observability": {
