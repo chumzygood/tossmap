@@ -25,7 +25,7 @@ ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4
 .signup-form input[type=email]{flex:1 1 220px;font:inherit;padding:8px 10px;border:1px solid #c5d0ca;border-radius:6px}
 .signup-form button{font:inherit;padding:8px 14px;border:0;border-radius:6px;background:#1f4d3a;color:#fff;cursor:pointer}
 .signup .meta{margin:0}
-.questions{width:100%;border-collapse:collapse;background:#fff}.questions th,.questions td{padding:12px;border:1px solid #dfe5e0;text-align:left;vertical-align:top;overflow-wrap:anywhere}.questions th{width:30%}dd{margin:0 0 12px}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #ad5700;outline-offset:3px}@media(max-width:600px){.questions,.questions tbody,.questions tr,.questions th,.questions td{display:block;width:100%}.questions thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.questions th{padding-bottom:4px;border-bottom:0}.questions td{padding-top:4px;border-top:0;margin-bottom:8px}} .answers h2{font-size:1.15em;margin:1.15em 0 6px}.answers p{margin:0 0 12px}a,.meta,p,li,dd,h1,h2,h3,.card,.answers{overflow-wrap:anywhere}a,.meta{word-break:break-word}img,iframe,video,pre,table{max-width:100%}pre{white-space:pre-wrap;overflow-x:auto}"""
+.questions{width:100%;border-collapse:collapse;background:#fff}.questions th,.questions td{padding:12px;border:1px solid #dfe5e0;text-align:left;vertical-align:top;overflow-wrap:anywhere}.questions th{width:30%}dd{margin:0 0 12px}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #ad5700;outline-offset:3px}@media(max-width:600px){.questions,.questions tbody,.questions tr,.questions th,.questions td{display:block;width:100%}.questions thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.questions th{padding-bottom:4px;border-bottom:0}.questions td{padding-top:4px;border-top:0;margin-bottom:8px}} .answers h2{font-size:1.15em;margin:1.15em 0 6px}.answers p{margin:0 0 12px}a,.meta,p,li,dd,h1,h2,h3,.card,.answers{overflow-wrap:anywhere}a,.meta{word-break:break-word}img,iframe,video,pre,table{max-width:100%}pre{white-space:pre-wrap;overflow-x:auto}.facts{padding-left:18px}.facts li{margin:0 0 8px}.freshness{margin:0 0 14px}"""
 open(f"{OUT}/style.css","w").write(CSS)
 GC='<meta name="google-site-verification" content="jAhRn0yYvjC37jRpBEzda-xllydn360g3kgkVonTDKA" /><script data-goatcounter="https://tossmap.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
 KIT_ACTION="https://app.kit.com/forms/10171028/subscriptions"
@@ -240,6 +240,37 @@ def checked_phrase(fs):
     if dates[0]==dates[-1]: return f"Last checked {dates[0]}."
     return f"Last checked {dates[0]} to {dates[-1]}."
 
+def field_or_check(val):
+    v=(val or "").strip()
+    return v if v else "check source"
+
+def format_updated(iso):
+    return datetime.date.fromisoformat(iso).strftime("%B %-d, %Y")
+
+def checked_month_label(fs):
+    dates=sorted({f["checked"] for f in fs if f.get("checked")})
+    if not dates: return ""
+    months=sorted({datetime.date.fromisoformat(d).strftime("%b %Y") for d in dates})
+    if len(months)==1:
+        return f"Checked {months[0]}"
+    a=datetime.date.fromisoformat(dates[0]); b=datetime.date.fromisoformat(dates[-1])
+    if a.year==b.year:
+        return f"Checked {a.strftime('%b %-d')}–{b.strftime('%b %-d, %Y')}"
+    return f"Checked {a.strftime('%b %-d, %Y')}–{b.strftime('%b %-d, %Y')}"
+
+def freshness_plain(fs):
+    dates=[f["checked"] for f in fs if f.get("checked")]
+    if not dates: return ""
+    text=f"Updated {format_updated(max(dates))}."
+    label=checked_month_label(fs)
+    if label: text+=f" {label}."
+    text+=" Confirm with the official source before you go."
+    return text
+
+def freshness_html(fs):
+    text=freshness_plain(fs)
+    return f'<p class="meta freshness">{e(text)}</p>' if text else ""
+
 def unique_sources(fs):
     seen=[]
     for f in fs:
@@ -430,9 +461,29 @@ def generic_material_faq(s):
 
 def faq_block(qas):
     if not qas: return "", None
-    html_out='<section class="answers">'+" ".join(f"<h2>{e(q)}</h2><p>{h}</p>" for q,h,_ in qas)+"</section>"
+    parts=[]
+    for q,h,_ in qas:
+        wrap="div" if re.search(r"<(ul|ol|table|section|div)\b", h) else "p"
+        parts.append(f"<h2>{e(q)}</h2><{wrap}>{h}</{wrap}>")
+    html_out='<section class="answers">'+"".join(parts)+"</section>"
     faq={"@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":p}} for q,_,p in qas]}
     return html_out, faq
+
+def city_hours_fees_qa(m):
+    fs=m["facilities"]
+    if not fs: return None
+    q=f"What hours, fees and accepted items are listed in {m['city']}?"
+    intro="These hours, fees and accepted items come from each listing's official source. "+freshness_plain(fs)
+    def item_plain(f):
+        return (f'{f["name"]}: hours {field_or_check(f.get("hours"))}; '
+                f'fees {field_or_check(f.get("fees"))}; '
+                f'accepts {field_or_check(f.get("accepts"))}.')
+    items="".join(
+        f'<li><a href="{fpath(f,m)}">{e(item_plain(f))}</a></li>'
+        for f in fs)
+    html=e(intro)+f'<ul class="facts">{items}</ul>'
+    plain=intro+" "+" ".join(item_plain(f) for f in fs)
+    return q, html, plain
 
 def facility_place(f, m):
     place={"@type":"Place","@id":f"{BASE}{cpath(m)}#{slug(f['name'])}","name":f["name"],
@@ -459,6 +510,8 @@ def facility_place(f, m):
 
 def city_qas(m, have):
     qas=[city_overview_qa(m)]
+    hf=city_hours_fees_qa(m)
+    if hf: qas.append(hf)
     for s,n in have:
         fs=[f for f in m["facilities"] if any(x[0]==s for x in mats(f))]
         qa=material_qa(m,s,fs)
@@ -798,7 +851,7 @@ def facility_page(f,m):
           +''.join(f'<dt><strong>{e(label)}</strong></dt><dd>{e(value or UNKNOWN)}</dd>' for label,value in [
               ("Operator",f["operator"]),("Full address",f["address"]),("Accepted materials",f["accepts"]),
               ("Hours / collection schedule",f["hours"]),("Fees",f["fees"]),("Eligibility, ID and other notes",f["notes"])])
-          +f'</dl><p><a href="{e(f["source"])}" rel="noopener">Official source and current rules</a> · Last checked {e(f["checked"])} · <a href="{fix_mailto(fp)}">Is this info wrong? Suggest a fix</a></p></section>'
+          +f'</dl><p><a href="{e(f["source"])}" rel="noopener">Official source and current rules</a> · Updated {e(format_updated(f["checked"]))}. Last checked {e(f["checked"])}. · <a href="{fix_mailto(fp)}">Is this info wrong? Suggest a fix</a></p></section>'
           +f'<h2>Common questions</h2><p class="meta">Question set reviewed {e(f.get("questions_reviewed",f["checked"]))}.</p><p>Yes and no apply only to the material types, users and conditions in the accompanying evidence. A fee answer of no means the listed service is free under those conditions; it does not waive eligibility rules. “Not stated by source” means no explicit answer is recorded in our source-backed listing, not that the source has no further information. Check the official source before driving.</p>'
           +'<table class="questions"><caption>Facility requirements and material acceptance</caption><thead><tr><th scope="col">Question</th><th scope="col">Answer and source-backed detail</th></tr></thead><tbody>'+''.join(rows)+'</tbody></table>'
           +(f'<h2>Browse accepted materials</h2><p>{materials}</p>' if materials else '')
@@ -876,7 +929,7 @@ for (sn,st),ms in sorted(states.items()):
         h1=f'Where to dump {and_list(hl) if hl else "household hazardous waste"} in {m["city"]}, {st}'
         named=CITY_NAMED.get((m["st"],m["city"]))
         if named and any(f["name"]==named for f in fs): h1=f'{named}: where to dump {and_list(hl) if hl else "household hazardous waste"} in {m["city"]}, {st}'
-        body=(vis+f'<h1>{e(h1)}</h1>'+city_direct_answer(m, have)+note+ans_html
+        body=(vis+f'<h1>{e(h1)}</h1>'+city_direct_answer(m, have)+freshness_html(fs)+note+ans_html
               +"".join(fac(f,m) for f in fs)+("<p>No permanent drop-off site listed yet. See the note above for event-based or alternate official options, and check back after the next source review.</p>" if not fs else "")
               +weekend_block(m)
               +(('<h2>By material</h2>'+"".join(f'<h3><a href="/{s}/">{e(n)} drop-off</a></h3><ul>'+"".join(f'<li><a href="{fpath(f,m)}">{e(f["name"])}</a></li>' for f in m["facilities"] if any(x[0]==s for x in mats(f)))+"</ul>" for s,n in have)) if have else "")
@@ -888,7 +941,8 @@ for (sn,st),ms in sorted(states.items()):
         what=", ".join(n.split(" (")[0].lower() for _,n in have[:4]) or "household hazardous waste"
         desc=(f"{plural(len(fs),'official drop-off site')} in {m['city']}, {st} for {what}: addresses, hours, fees and source links, last checked {chk}." if fs
               else f"How {m['city']}, {st} handles household hazardous waste, from official sources.")
-        collection={"@type":"CollectionPage","@id":BASE+cp+"#page","url":BASE+cp,"name":h1,"publisher":{"@id":ORG_ID},"isPartOf":{"@id":BASE+"/#website"}}
+        collection={"@type":"CollectionPage","@id":BASE+cp+"#page","url":BASE+cp,"name":h1,"publisher":{"@id":ORG_ID},"isPartOf":{"@id":BASE+"/#website"},"inLanguage":"en-US"}
+        if chk: collection["dateModified"]=chk
         cites=unique_sources(fs)
         if cites: collection["citation"]=[{"@type":"WebPage","url":u} for u in cites]
         # City pages: ItemList of the facility pages they link to (same names and URLs as the visible cards).
@@ -907,13 +961,17 @@ for (sn,st),ms in sorted(states.items()):
         mats_line=('<p class="tags">'+" ".join(f'<a href="/{s}/">{e(n.split(" (")[0].lower())}</a>' for s,n in mh)+"</p>") if mh else ""
         items="".join(f'<li><a href="{fpath(f,m)}">{fac_link_text(f)}</a></li>' for f in m["facilities"])
         return head+mats_line+(f"<ul>{items}</ul>" if items else "")
+    st_fs=[f for m in ms for f in m["facilities"]]
+    st_chk=max([f["checked"] for f in st_fs],default=None)
+    st_collection={"@type":"CollectionPage","@id":BASE+sp+"#page","url":BASE+sp,"name":f"Hazardous waste drop-off in {sn}","publisher":{"@id":ORG_ID},"isPartOf":{"@id":BASE+"/#website"},"mainEntity":{"@id":BASE+sp+"#cities"},"inLanguage":"en-US"}
+    if st_chk: st_collection["dateModified"]=st_chk
     page(sp,f"Hazardous waste, paint & e-waste drop-off in {sn} | TossMap",
          f"{plural(nst,'official drop-off site')} in {sn} ({', '.join(m['city'] for m in ms)}) for {and_list([n.split(" (")[0].lower() for s,n,_ in MAT if any(m in matidx[s] for m in ms)]) or "household hazardous waste"}, with source links.",
-         vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1><p>{plural(nst,"official drop-off site")} across {plural(len(ms),"metro area")} in {e(sn)}. Each city page lists addresses, hours, fees, eligibility rules and a link to the official source, with the date we last checked it.</p>'+"".join(state_city_block(m) for m in ms),
+         vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1>'+freshness_html(st_fs)+f'<p>{plural(nst,"official drop-off site")} across {plural(len(ms),"metro area")} in {e(sn)}. Each city page lists addresses, hours, fees, eligibility rules and a link to the official source, with the date we last checked it.</p>'+"".join(state_city_block(m) for m in ms),
          # State hubs: CollectionPage + ItemList of the city pages they link to (same names and URLs as the visible list).
-         [bl,{"@type":"CollectionPage","@id":BASE+sp+"#page","url":BASE+sp,"name":f"Hazardous waste drop-off in {sn}","publisher":{"@id":ORG_ID},"isPartOf":{"@id":BASE+"/#website"},"mainEntity":{"@id":BASE+sp+"#cities"}},
+         [bl,st_collection,
           {"@type":"ItemList","@id":BASE+sp+"#cities","name":f"{sn} metro areas with official drop-off sites","numberOfItems":len(ms),"itemListElement":[{"@type":"ListItem","position":k+1,"name":f'{m["city"]}, {m["st"]}',"url":BASE+cpath(m)} for k,m in enumerate(ms)]}],
-         max([f["checked"] for m in ms for f in m["facilities"]],default=None))
+         st_chk)
 for s,n,_ in MAT:
     ms=sorted(matidx[s],key=lambda x:x["city"]); low=n.split(" (")[0].lower()
     vis,bl=crumbs([("Home","/"),(n,f"/{s}/")])
@@ -921,7 +979,7 @@ for s,n,_ in MAT:
     nsites=sum(len(fs) for _,fs in hits); nmetros=len(ms)
     title,h1,desc=material_seo(s,n,nsites,nmetros)
     ans_html,faq=faq_block(material_page_qas(s,n,nsites,nmetros))
-    body=(vis+f"<h1>{e(h1)}</h1><p>{plural(nsites,'official drop-off site')} in {plural(nmetros,'metro area')} list {e(low)} as accepted. Rules, limits and residency requirements vary, so check each listing's source link before you go.</p>"
+    body=(vis+f"<h1>{e(h1)}</h1>"+freshness_html([f for _,fs in hits for f in fs])+f"<p>{plural(nsites,'official drop-off site')} in {plural(nmetros,'metro area')} list {e(low)} as accepted. Rules, limits and residency requirements vary, so check each listing's source link before you go.</p>"
       +ans_html
       +"<ul class=grid>"+"".join(f'<li><a href="#{slug(m["city"])}-{slug(m["st"])}">{e(m["city"])}, {m["st"]}</a></li>' for m in ms)+"</ul>"
       +"".join(f'<h2 id="{slug(m["city"])}-{slug(m["st"])}">{e(low.capitalize())} drop-off in <a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></h2><ul>'
@@ -929,10 +987,12 @@ for s,n,_ in MAT:
       +"<p>Other materials: "+" · ".join(f'<a href="/{o}/">{e(on)}</a>' for o,on,_ in MAT if o!=s)+"</p>"
       +signup_box())
     il={"@type":"ItemList","name":f"{n} drop-off sites by city","numberOfItems":nsites,"itemListElement":[{"@type":"ListItem","position":k+1,"name":f'{f["name"]} ({m["city"]}, {m["st"]})',"url":f'{BASE}{fpath(f,m)}'} for k,(m,f) in enumerate((m,f) for m,fs in hits for f in fs)]}
-    collection={"@type":"CollectionPage","@id":BASE+f"/{s}/#page","url":BASE+f"/{s}/","name":h1,"publisher":{"@id":ORG_ID}}
+    mat_fs=[f for _,fs in hits for f in fs]
+    mat_chk=max([f["checked"] for f in mat_fs],default=None)
+    collection={"@type":"CollectionPage","@id":BASE+f"/{s}/#page","url":BASE+f"/{s}/","name":h1,"publisher":{"@id":ORG_ID},"inLanguage":"en-US"}
+    if mat_chk: collection["dateModified"]=mat_chk
     graph=[bl,collection,il]+([faq] if faq else [])
-    page(f"/{s}/",title,desc,body,graph,
-         max([f["checked"] for _,fs in hits for f in fs],default=None))
+    page(f"/{s}/",title,desc,body,graph,mat_chk)
 n=sum(len(m["facilities"]) for m in D)
 # Home page crawl paths: (1) upcoming dated collection days parsed only from each listing's own hours text, dropped once past;
 # (2) the most recently added/re-checked listings so new facility pages get a link from the home page.

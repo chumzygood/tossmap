@@ -1,4 +1,5 @@
 """Offline regression checks; run after seed_data.py and build.py (stdlib only)."""
+import datetime
 import json
 import re
 import unittest
@@ -106,6 +107,55 @@ class FacilityTests(unittest.TestCase):
             self.assertEqual(il['numberOfItems'],len(m['facilities']))
             self.assertEqual([x['url'] for x in il['itemListElement']],[BASE+facility_path(m,f) for f in m['facilities']])
             for f in m['facilities']: self.assertIn(facility_path(m,f),doc.links)
+    def test_city_and_state_pages_are_answer_ready(self):
+        ns='{http://www.sitemaps.org/schemas/sitemap/0.9}'
+        lastmod={}
+        for url in ET.parse('docs/sitemap.xml').getroot():
+            loc=url.find(f'{ns}loc'); lm=url.find(f'{ns}lastmod')
+            if loc is not None and lm is not None:
+                lastmod[loc.text]=lm.text
+        for m in D:
+            if not m['facilities']: continue
+            doc=read(city_path(m)); text=norm(' '.join(doc.visible))
+            chk=max(f['checked'] for f in m['facilities'])
+            updated=f"Updated {datetime.date.fromisoformat(chk).strftime('%B %-d, %Y')}."
+            self.assertIn(updated, text)
+            self.assertIn('Checked Nov 2026', text)
+            graph=doc.jsonld[0]['@graph']
+            cp=next(x for x in graph if x['@type']=='CollectionPage')
+            self.assertEqual(cp.get('dateModified'), chk, city_path(m))
+            self.assertEqual(lastmod[BASE+city_path(m)], chk)
+            faq=next(x for x in graph if x['@type']=='FAQPage')
+            hours_q=next((qa for qa in faq['mainEntity'] if qa['name']==f"What hours, fees and accepted items are listed in {m['city']}?"), None)
+            self.assertIsNotNone(hours_q, city_path(m))
+            ans=hours_q['acceptedAnswer']['text']
+            self.assertIn(norm(ans), text)
+            for f in m['facilities']:
+                self.assertIn(f['name'], ans)
+                self.assertIn(f['hours'], ans)
+                self.assertIn(f['accepts'], ans)
+                if (f.get('fees') or '').strip():
+                    self.assertIn(f['fees'], ans)
+                else:
+                    self.assertIn(f"{f['name']}: hours {f['hours']}; fees check source;", ans)
+                fdoc=read(facility_path(m,f)); ftext=norm(' '.join(fdoc.visible))
+                wp=next(x for x in fdoc.jsonld[0]['@graph'] if x['@type']=='WebPage')
+                self.assertEqual(wp['dateModified'], f['checked'])
+                self.assertEqual(lastmod[BASE+facility_path(m,f)], f['checked'])
+                self.assertIn(f"Updated {datetime.date.fromisoformat(f['checked']).strftime('%B %-d, %Y')}.", ftext)
+                self.assertIn(f"Last checked {f['checked']}.", ftext)
+                # Existing Place / Event schema stays in place.
+                self.assertTrue(any(x['@type']=='Place' for x in fdoc.jsonld[0]['@graph']))
+        states={}
+        for m in D: states.setdefault(m['st'],[]).append(m)
+        for st,ms in states.items():
+            doc=read(f'/{slug(st)}/')
+            chk=max(f['checked'] for m in ms for f in m['facilities'])
+            cp=next(x for x in doc.jsonld[0]['@graph'] if x['@type']=='CollectionPage')
+            self.assertEqual(cp.get('dateModified'), chk, st)
+            self.assertEqual(lastmod[BASE+f'/{slug(st)}/'], chk)
+            self.assertIn('Checked Nov 2026', norm(' '.join(doc.visible)))
+        self.assertIn('API for agents: https://api.tossmap.com/llms.txt', Path('docs/llms.txt').read_text())
     def test_material_links_match_explicit_answers(self):
         for path,key in [('paint','paint'),('tires','tires'),('e-waste','e_waste'),('batteries','batteries'),('motor-oil','motor_oil'),('household-chemicals','household_chemicals')]:
             mat=read('/'+path+'/')
