@@ -21713,14 +21713,22 @@ async function handle(req, env, ip, info) {
   }
   let result, rate, count;
   if (path === "/v1/search" || path === "/v1/search/paid") {
+    const discovery = path === "/v1/search/paid" && !req.headers.has("PAYMENT-SIGNATURE") && !["zip", "lat", "lng", "city"].some((k) => url2.searchParams.has(k));
     try {
-      const s = search(url2.searchParams, fs, ms, zs);
-      count = s.count;
-      result = { query: Object.fromEntries(url2.searchParams), dataset, ...s, disclaimer };
+      if (discovery) {
+        const params = new URLSearchParams(url2.searchParams);
+        params.set("zip", "10001");
+        if (!params.has("material") && !["businesses_accepted", "fee_charged", "residents_only"].some((k) => params.has(k))) params.set("material", "paint");
+        search(params, fs, ms, zs);
+      } else {
+        const s = search(url2.searchParams, fs, ms, zs);
+        count = s.count;
+        result = { query: Object.fromEntries(url2.searchParams), dataset, ...s, disclaimer };
+      }
     } catch (e) {
       return json2({ error: e.message, disclaimer }, 400);
     }
-    if (!count) {
+    if (!discovery && !count) {
       info.kind = "free";
       const left = await (await call(env, "ip:" + await sha(ip), { action: "remaining" })).json();
       return json2(result, 200, { "X-Free-Searches-Remaining": String(left.remaining) });
@@ -21747,7 +21755,7 @@ async function handle(req, env, ip, info) {
   if (facilitator.error) return json2({ error: facilitator.error }, 503);
   if (!asset || !/^0x[0-9a-fA-F]{40}$/.test(payTo) || /^0x0{40}$/i.test(payTo)) return json2({ error: "Payments unavailable: invalid or missing PAY_TO_ADDRESS or X402_NETWORK" }, 503);
   const requirements = { scheme: "exact", network, asset, amount: rate.amount, payTo, maxTimeoutSeconds: 300, extra: domains[network] };
-  const resource = { url: url2.toString(), description: `TossMap ${path} (${rate.price} USDC)`, mimeType: "application/json" };
+  const resource = { url: path === "/v1/search/paid" && !["zip", "lat", "lng", "city"].some((k) => url2.searchParams.has(k)) ? "https://api.tossmap.com/v1/search/paid" : url2.toString(), description: `TossMap ${path} (${rate.price} USDC)`, mimeType: "application/json" };
   const signature = req.headers.get("PAYMENT-SIGNATURE");
   if (!signature) {
     if (!(await env.CHALLENGE_LIMIT.limit({ key: ip })).success) return json2({ error: "Too many payment challenges" }, 429, { "Retry-After": "60" });

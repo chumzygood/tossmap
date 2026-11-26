@@ -1,9 +1,22 @@
-import {expect,it} from 'vitest';
+import {expect,it,vi} from 'vitest';
 import worker from '../src/index';
 import {decodePaymentRequiredHeader} from '@x402/core/http';
 const limit={limit:async()=>({success:true})};
 const env={GENERAL_LIMIT:limit,CHALLENGE_LIMIT:limit,STATE:{idFromName:(key:string)=>key,get:()=>({fetch:async()=>Response.json({allowed:false,remaining:0})})},PAY_TO_ADDRESS:'0x000000000000000000000000000000000000dEaD'};
 const get=(path:string)=>worker.fetch(new Request('https://api.tossmap.com'+path),env as any);
+it('challenges bare paid search without accepting payment for an invalid search',async()=>{
+ const state=vi.fn(async()=>Response.json({allowed:false,remaining:0}));
+ const testEnv={...env,STATE:{idFromName:(key:string)=>key,get:()=>({fetch:state})}};
+ const request=(path:string,signature=false)=>worker.fetch(new Request('https://api.tossmap.com'+path,{headers:signature?{'PAYMENT-SIGNATURE':'test'}:{}}),testEnv as any);
+ const bare=await request('/v1/search/paid');expect(bare.status).toBe(402);
+ const body:any=await bare.json(), header:any=decodePaymentRequiredHeader(bare.headers.get('PAYMENT-REQUIRED')!);
+ for(const field of ['x402Version','accepts','resource','extensions'])expect(body[field]).toEqual(header[field]);
+ expect(body.resource.url).toBe('https://api.tossmap.com/v1/search/paid');expect(body.accepts[0].amount).toBe('10000');
+ const normal:any=await (await request('/v1/search/paid?zip=10001&material=paint')).json();expect(body.extensions).toEqual(normal.extensions);
+ expect((await request('/v1/search/paid',true)).status).toBe(400);expect(state).not.toHaveBeenCalled();
+ for(const path of ['/v1/search','/v1/search/paid?zip=bad&material=paint','/v1/search/paid?material=unknown','/v1/search/paid?lat=40','/v1/search/paid?limit=99'])expect((await request(path)).status).toBe(400);
+ expect((await request('/v1/search/paid?zip=99501&material=paint')).status).toBe(200);
+});
 it('classifies operations and describes paid inputs and prices',async()=>{
  const spec:any=await (await get('/openapi.json')).json();
  expect(spec.info['x-guidance']).toContain('coverage');expect(spec.info.contact).toEqual({url:'https://tossmap.com'});
