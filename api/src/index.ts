@@ -108,15 +108,39 @@ async function mcp(req:Request,env:Env,ip:string,info:{kind:string;price:string;
   const reply=(result:unknown)=>({jsonrpc:'2.0',id:msg.id,result}); const error=(code:number,message:string)=>({jsonrpc:'2.0',id:msg.id,error:{code,message}});
   if(msg.method==='initialize')return reply({protocolVersion:['2025-11-25','2025-06-18','2025-03-26'].includes(msg.params?.protocolVersion)?msg.params.protocolVersion:protocolVersion,capabilities:{tools:{listChanged:false}},serverInfo:card.serverInfo,instructions:'TossMap finds US disposal sites. Three result-bearing searches or facility lookups per day are free; see https://api.tossmap.com/llms.txt for paid API access.'});
   if(msg.method==='ping')return reply({}); if(msg.method==='tools/list')return reply({tools}); if(msg.method!=='tools/call')return error(-32601,'Method not found');
-  const name=msg.params?.name, args=msg.params?.arguments??{}; const def=tools.find(t=>t.name===name);
+  const name=msg.params?.name, raw=msg.params?.arguments??{}; const def=tools.find(t=>t.name===name);
   if(!def)return error(-32602,'Unknown tool');
-  if(!args||typeof args!=='object'||Array.isArray(args)||Object.keys(args).some(k=>!(k in def.inputSchema.properties)))return error(-32602,'Invalid tool arguments');
-  if(name==='get_facility'?(typeof args.id!=='string'||!args.id):(!args.zip&&!args.city)|| (args.zip!==undefined&&(typeof args.zip!=='string'||!/^\d{5}$/.test(args.zip))) || (args.city!==undefined&&(typeof args.city!=='string'||!args.city.trim())) || (args.state!==undefined&&(typeof args.state!=='string'||!/^[a-z]{2}$/i.test(args.state))) || (name==='search_facilities'&&(!['tires','paint','e_waste','batteries','motor_oil','household_chemicals'].includes(args.material)||(args.limit!==undefined&&(!Number.isInteger(args.limit)||args.limit<1||args.limit>10)))))return error(-32602,'Invalid tool arguments');
+  const example=name==='get_facility'?'{"name":"get_facility","arguments":{"id":"dsny-special-waste-drop-off-bronx"}}':name==='coverage'?'{"name":"coverage","arguments":{"zip":"10001"}}':'{"name":"search_facilities","arguments":{"zip":"10001","material":"paint"}}';
+  const invalid=(reason:string)=>reply({isError:true,content:[{type:'text',text:`${reason} Example call: ${example}`} ]});
+  if(!raw||typeof raw!=='object'||Array.isArray(raw))return invalid('Arguments must be an object.');
+  const extra=Object.keys(raw).filter(k=>!Object.prototype.hasOwnProperty.call(def.inputSchema.properties,k));
+  if(extra.length)return invalid(`Unknown argument(s): ${extra.join(', ')}.`);
+  const args:Record<string,any>=Object.fromEntries(Object.entries(raw).map(([k,v])=>[k,typeof v==='string'?v.trim():v]));
+  if(typeof args.zip==='number'&&Number.isInteger(args.zip)&&args.zip>=0&&args.zip<=99999)args.zip=String(args.zip).padStart(5,'0');
+  if(typeof args.zip==='string'&&/^\d{5}-\d{4}$/.test(args.zip))args.zip=args.zip.slice(0,5);
+  if(typeof args.state==='string')args.state=args.state.toUpperCase();
+  if(typeof args.material==='string')args.material=args.material.toLowerCase().replace(/-/g,'_');
+  if(typeof args.limit==='string'&&/^\d+$/.test(args.limit))args.limit=Number(args.limit);
+  if(name==='get_facility') {
+   if(typeof args.id!=='string'||!args.id)return invalid('id must be a nonempty facility ID.');
+   if(!fs.some(f=>f.id===args.id))return invalid(`Facility ID "${args.id}" was not found.`);
+  } else {
+   if(!args.zip&&!args.city)return invalid('Provide a ZIP or city.');
+   if(args.zip!==undefined&&(typeof args.zip!=='string'||!/^\d{5}$/.test(args.zip)))return invalid('ZIP must be five digits or ZIP+4, or an integer from 0 to 99999.');
+   if(args.city!==undefined&&(typeof args.city!=='string'||!args.city))return invalid('City must be a nonempty string.');
+   if(args.state!==undefined&&(typeof args.state!=='string'||!/^[A-Z]{2}$/.test(args.state)))return invalid('State must be a two-letter code.');
+   if(name==='search_facilities') {
+    const materials=['tires','paint','e_waste','batteries','motor_oil','household_chemicals'];
+    if(!materials.includes(args.material))return invalid(`Material is missing or unknown. Allowed materials: ${materials.join(', ')}.`);
+    if(args.limit!==undefined&&(!Number.isInteger(args.limit)||args.limit<1||args.limit>10))return invalid('Limit must be an integer from 1 to 10.');
+   }
+  }
   const params=new URLSearchParams(); for(const [k,v] of Object.entries(args))if(k!=='id')params.set(k,String(v));
   const paidUrl=name==='get_facility'?'https://api.tossmap.com/v1/facilities/'+encodeURIComponent(args.id):'https://api.tossmap.com/v1/search?'+params;
   const endpoint=name==='coverage'?'https://api.tossmap.com/v1/coverage?'+params:paidUrl;
   if(name==='get_facility') {const f=fs.find(f=>f.id===args.id); if(f){const a:any=await (await call(env,'ip:'+await sha(ip),{action:'allowance'})).json(); if(a.allowed){info.kind='free';const data={dataset:{...version,facilities_total:fs.length,geocoding_attribution:'US Census Bureau and © OpenStreetMap contributors (Nominatim).'},facility:f,disclaimer};return reply({content:[{type:'text',text:JSON.stringify(data)}],structuredContent:data});}}}
   const res=await handle(new Request(endpoint),env,ip,info), data:any=await res.json();
+  if(res.status===400)return invalid(data.error || 'Invalid tool arguments.');
   if(res.status===402){const {x402Version,resource,accepts,extensions}=data; const paymentRequired={x402Version,resource,accepts,extensions}; return reply({isError:true,content:[{type:'text',text:`Payment required: ${data.price} USDC. Pay with x402 at ${paidUrl}`}],structuredContent:{paymentRequired,paidUrl,docs:'https://api.tossmap.com/llms.txt'}});}
   return reply({...(res.ok?{}:{isError:true}),content:[{type:'text',text:JSON.stringify(data)}],structuredContent:data});
  };
