@@ -4524,7 +4524,7 @@
     "fees": "Free",
     "notes": "DC residents only; register in advance on Eventbrite; bring proof of residency and registration. The Nov 14 event has been held; no later 2026–27 date is listed yet.",
     "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "checked": "2026-11-25",
+    "checked": "2026-11-26",
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "questions": {
      "residents_only": {
@@ -4578,7 +4578,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-25"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Fairfax County I-66 Transfer Station (HHW & e-waste)",
@@ -6316,7 +6316,7 @@
     "fees": "Free",
     "notes": "Baltimore City residents only; materials in original labeled packaging; no commercial vehicles. 410-396-7250",
     "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-    "checked": "2026-11-25",
+    "checked": "2026-11-26",
     "slug": "sisson-street-residential-recycling-center-hhw-days",
     "questions": {
      "residents_only": {
@@ -6370,7 +6370,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-25"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Eastern Residential Recycling Center",
@@ -9564,7 +9564,7 @@
     "fees": "Free",
     "notes": "City of Cleveland residents only",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "checked": "2026-11-25",
+    "checked": "2026-11-26",
     "slug": "carr-center-division-of-waste",
     "questions": {
      "residents_only": {
@@ -9618,7 +9618,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-25"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Ridge Road Transfer Station",
@@ -9628,7 +9628,7 @@
     "fees": "Free for qualifying resident drop-offs; fee may apply beyond tire/dump limits",
     "notes": "City of Cleveland residents only; proof of residency required for drop-off",
     "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-    "checked": "2026-11-25",
+    "checked": "2026-11-26",
     "slug": "ridge-road-transfer-station",
     "questions": {
      "residents_only": {
@@ -9682,7 +9682,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-25"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Cuyahoga County Solid Waste District HQ (electronics drop-off bins)",
@@ -9784,8 +9784,8 @@
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Maple Heights: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Maple Heights page (https://cuyahogarecycles.org/recycle-in/maple-heights/, fetched 2026-11-26): “Maple Heights has a year-round drop-off for computer equipment at the Maple Heights Service Garage. Hours are Monday-Friday from 8:00 AM-3:00 PM. Residents only. No TVs accepted. Service Garage: 5501 Dunham Road, Maple Heights”"
      },
      "batteries": {
       "answer": "no",
@@ -9810,7 +9810,7 @@
     },
     "operator": "City of Maple Heights (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Warrensville Heights Service Garage (HHW drop-off)",
@@ -9904,16 +9904,16 @@
       "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Lakewood page (https://cuyahogarecycles.org/recycle-in/lakewood/, fetched 2026-11-26): “Lakewood has a year-round drop-off for scrap tires at the Lakewood Service Garage. Hours are Monday-Friday from 8:00 AM-2:00 PM and Saturdays from 8:00 AM-12:00 PM. Residents only. Automotive tires only (20\" or less) and no tires on rims. Service Garage: 12920 Berea Road, Lakewood”"
      },
      "paint": {
       "answer": "yes",
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Lakewood: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Lakewood page (https://cuyahogarecycles.org/recycle-in/lakewood/, fetched 2026-11-26): “Lakewood has a year-round drop-off for computer equipment at the Lakewood Service Garage. Hours are Monday-Friday from 8:00 AM-2:00 PM and Saturdays from 8:00 AM-12:00 PM. Residents only. No TVs accepted. Service Garage: 12920 Berea Road, Lakewood”"
      },
      "batteries": {
       "answer": "no",
@@ -9938,7 +9938,7 @@
     },
     "operator": "City of Lakewood (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "South Euclid Service Garage (HHW drop-off)",
@@ -10032,16 +10032,16 @@
       "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Beachwood page (https://cuyahogarecycles.org/recycle-in/beachwood/, fetched 2026-11-26): “Beachwood has a year-round drop-off for scrap tires at the Beachwood Public Service Center (west driveway). Hours are Monday-Friday from 7:30 AM-3:30 PM. Automotive tires only (20\" or less) and no tires on rims. Public Service Center: 23355 Mercantile Road, Beachwood”"
      },
      "paint": {
       "answer": "yes",
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Beachwood: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Beachwood page (https://cuyahogarecycles.org/recycle-in/beachwood/, fetched 2026-11-26): “Beachwood has a year-round drop-off for computer equipment at the Beachwood Public Service Center (west driveway). Hours are Monday-Friday from 7:30 AM-3:30 PM. No TVs accepted. Public Service Center: 23355 Mercantile Road, Beachwood”"
      },
      "batteries": {
       "answer": "no",
@@ -10066,7 +10066,7 @@
     },
     "operator": "City of Beachwood (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Bedford Heights Service Garage (HHW drop-off)",
@@ -10096,16 +10096,16 @@
       "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Bedford Heights page (https://cuyahogarecycles.org/recycle-in/bedford-heights/, fetched 2026-11-26): “Bedford Heights has a year-round drop-off for scrap tires at the Bedford Heights Service Garage. Automotive only (20\" or less) and no tires on rims. Hours are Monday-Friday from 7:30 AM-3:00 PM. Service Garage Drop-Off: 25401 Solon Road, Bedford Heights”"
      },
      "paint": {
       "answer": "yes",
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Bedford Heights: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Bedford Heights page (https://cuyahogarecycles.org/recycle-in/bedford-heights/, fetched 2026-11-26): “Bedford Heights has a year-round drop-off for computer equipment at the Bedford Heights Service Garage. Hours are Monday-Friday from 7:30 AM-3:00 PM. No TVs accepted. Service Garage Drop-Off: 25401 Solon Road, Bedford Heights”"
      },
      "batteries": {
       "answer": "no",
@@ -10130,7 +10130,7 @@
     },
     "operator": "City of Bedford Heights (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Brooklyn Service Garage (HHW drop-off)",
@@ -10160,16 +10160,16 @@
       "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Brooklyn page (https://cuyahogarecycles.org/recycle-in/brooklyn/, fetched 2026-11-26): “Brooklyn has a year-round drop-off for scrap tires at the Brooklyn Service Garage. Hours are Monday-Friday from 7:00 AM-2:30 PM. Automotive only (20\" or less) and no tires on rims. Call for details. Service Garage: 9400 Memphis Avenue, Brooklyn”"
      },
      "paint": {
       "answer": "yes",
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Brooklyn: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Brooklyn page (https://cuyahogarecycles.org/recycle-in/brooklyn/, fetched 2026-11-26): “Brooklyn has a year-round drop-off for computer equipment at the Brooklyn Service Garage. Hours are Monday-Friday from 7:00 AM–2:30 PM. No TVs accepted. Service Garage: 9400 Memphis Avenue, Brooklyn”"
      },
      "batteries": {
       "answer": "no",
@@ -10194,7 +10194,7 @@
     },
     "operator": "City of Brooklyn (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Lyndhurst Service Garage (HHW drop-off)",
@@ -10232,8 +10232,8 @@
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Lyndhurst: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Lyndhurst page (https://cuyahogarecycles.org/recycle-in/lyndhurst/, fetched 2026-11-26): “Lyndhurst has a year-round drop-off for computer equipment Monday-Friday from 7:00 AM-3:00 PM at the Lyndhurst Service Garage. There is also a seasonal drop-off on Saturdays and Sundays in April-November from 11:30 AM-3:30 PM. Residents only; proof of residency is required. No TVs accepted. No businesses or commercial properties. Service Garage: 5301 Mayfield Road, Lyndhurst”"
      },
      "batteries": {
       "answer": "no",
@@ -10258,7 +10258,7 @@
     },
     "operator": "City of Lyndhurst (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Solon Service Department (HHW drop-off)",
@@ -10296,8 +10296,8 @@
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Solon: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Solon page (https://cuyahogarecycles.org/recycle-in/solon/, fetched 2026-11-26): “Solon has a year-round drop-off for computer equipment at the Solon Service Department. Hours are Monday-Friday from 8:00-11:00 AM and 12:00-3:00 PM. No TVs accepted. Service Department: 6600 Cochran Road, Solon”"
      },
      "batteries": {
       "answer": "no",
@@ -10322,7 +10322,7 @@
     },
     "operator": "City of Solon (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Rocky River Transfer Station (HHW drop-off)",
@@ -10352,8 +10352,8 @@
       "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Rocky River page (https://cuyahogarecycles.org/recycle-in/rocky-river/, fetched 2026-11-26): “Rocky River has a year-round drop-off for scrap tires at the Rocky River Transfer Station. Hours are Monday-Friday from 7:00 AM-3:00 PM or Saturdays from 8:00 AM-12:00 PM. Automotive only (20\" or less) and no tires on rims. Transfer Station: 22401 Lake Road, Rocky River”"
      },
      "paint": {
       "answer": "yes",
@@ -10386,7 +10386,7 @@
     },
     "operator": "City of Rocky River (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Broadview Heights Service Garage (HHW drop-off)",
@@ -10424,8 +10424,8 @@
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Broadview Heights: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Broadview Heights page (https://cuyahogarecycles.org/recycle-in/broadview-heights/, fetched 2026-11-26): “Broadview Heights has a year-round drop-off for computer equipment at the Broadview Heights Service Garage. Hours are Monday-Friday from 7:00 AM–3:00 PM. No TVs accepted. Service Garage: 9543 Broadview Road, Bldg. 11, Broadview Heights”"
      },
      "batteries": {
       "answer": "no",
@@ -10450,7 +10450,7 @@
     },
     "operator": "City of Broadview Heights (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Olmsted Falls Service Garage (HHW drop-off)",
@@ -10480,16 +10480,16 @@
       "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Olmsted Falls page (https://cuyahogarecycles.org/recycle-in/olmsted-falls/, fetched 2026-11-26): “Olmsted Falls has a year-round drop-off for scrap tires at the Olmsted Falls Service Garage. Automotive only (20\" or less) and no tires on rims. Hours are Monday-Friday from 8:00 AM-4:00 PM. Service Garage: 9234 Columbia Road, Olmsted Falls”"
      },
      "paint": {
       "answer": "yes",
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Olmsted Falls: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Olmsted Falls page (https://cuyahogarecycles.org/recycle-in/olmsted-falls/, fetched 2026-11-26): “Olmsted Falls has a year-round drop-off for computer equipment at the Olmsted Falls Service Garage. Hours are Monday-Friday from 8:00 AM-4:00 PM. No TVs accepted. Service Garage: 9234 Columbia Road, Olmsted Falls”"
      },
      "batteries": {
       "answer": "no",
@@ -10514,7 +10514,7 @@
     },
     "operator": "City of Olmsted Falls (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "North Royalton Service Garage (HHW drop-off)",
@@ -10552,8 +10552,8 @@
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” North Royalton: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles North Royalton page (https://cuyahogarecycles.org/recycle-in/north-royalton/, fetched 2026-11-26): “North Royalton has a year-round drop-off for computer equipment on the first and third Saturdays of the month at the North Royalton Service Garage. Hours are 8:00 AM-3:00 PM. No TVs accepted. Service Garage: 11545 Royalton Road, North Royalton”"
      },
      "batteries": {
       "answer": "no",
@@ -10578,7 +10578,7 @@
     },
     "operator": "City of North Royalton (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Moreland Hills Service Garage (HHW drop-off)",
@@ -10616,8 +10616,8 @@
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Moreland Hills: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Moreland Hills page (https://cuyahogarecycles.org/recycle-in/moreland-hills/, fetched 2026-11-26): “Moreland Hills has a year-round drop-off for computer equipment at the Moreland Hills Service Garage. Hours are Monday-Friday from 7:00 AM-3:00 PM. No TVs accepted. Service Garage: 4350 SOM Center Road, Moreland Hills”"
      },
      "batteries": {
       "answer": "no",
@@ -10642,7 +10642,7 @@
     },
     "operator": "Village of Moreland Hills (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Parma Service Garage (HHW drop-off day)",
@@ -10744,8 +10744,8 @@
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Brecksville: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Brecksville page (https://cuyahogarecycles.org/recycle-in/brecksville/, fetched 2026-11-26): “Brecksville has a year-round drop-off for computer equipment on Saturdays for residents only at the Brecksville Service Garage. Hours are 8:00 AM-12:00 PM. No TVs accepted. Service Garage: 9023 Brecksville Road, Brecksville”"
      },
      "batteries": {
       "answer": "no",
@@ -10770,7 +10770,7 @@
     },
     "operator": "City of Brecksville (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Bentleyville Service Department (HHW drop-off)",
@@ -10800,16 +10800,16 @@
       "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Bentleyville page (https://cuyahogarecycles.org/recycle-in/bentleyville/, fetched 2026-11-26): “Bentleyville has a year-round drop-off for scrap tires at the Bentleyville Service Department. Automotive only (20\" or less) and no tires on rims. Hours are Monday-Friday from 7:00 AM-3:00 PM. Service Department: 35075 Cannon Road, Bentleyville”"
      },
      "paint": {
       "answer": "yes",
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Bentleyville: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Bentleyville page (https://cuyahogarecycles.org/recycle-in/bentleyville/, fetched 2026-11-26): “Bentleyville has a year-round drop-off for computer equipment at the Bentleyville Service Department. Hours are Monday-Friday from 7:00 AM-3:00 PM. No TVs accepted. Service Department: 35075 Cannon Road, Bentleyville”"
      },
      "batteries": {
       "answer": "no",
@@ -10834,7 +10834,7 @@
     },
     "operator": "Village of Bentleyville (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Hunting Valley Service Garage (HHW drop-off)",
@@ -10864,16 +10864,16 @@
       "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Hunting Valley page (https://cuyahogarecycles.org/recycle-in/hunting-valley/, fetched 2026-11-26): “Hunting Valley has a year-round drop-off for scrap tires at the Hunting Valley Service Garage. Automotive only (20\" or less) and no tires on rims. Residents only. Hours are Monday-Friday from 8:00-2:00. Service Garage: 38251 Fairmount Boulevard, Hunting Valley”"
      },
      "paint": {
       "answer": "yes",
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Hunting Valley: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Hunting Valley page (https://cuyahogarecycles.org/recycle-in/hunting-valley/, fetched 2026-11-26): “Hunting Valley has a year-round drop-off for computer equipment at the Hunting Valley Service Garage. Residents only. Hours are Monday-Friday from 8:00-2:00. No TVs accepted. Service Garage: 38251 Fairmount Boulevard, Hunting Valley”"
      },
      "batteries": {
       "answer": "no",
@@ -10898,7 +10898,7 @@
     },
     "operator": "Village of Hunting Valley (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Pepper Pike Service Garage (HHW drop-off)",
@@ -10928,8 +10928,8 @@
       "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Pepper Pike page (https://cuyahogarecycles.org/recycle-in/pepper-pike/, fetched 2026-11-26): “Pepper Pike has a year-round drop-off for scrap tires at the city service garage. Automotive only (20\" or less) and no tires on rims. Hours are Monday-Friday from 7:00 AM-2:00 PM. 28000 Shaker Boulevard, Pepper Pike”"
      },
      "paint": {
       "answer": "yes",
@@ -10962,7 +10962,7 @@
     },
     "operator": "City of Pepper Pike (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Olmsted Township Service Garage (HHW drop-off)",
@@ -10992,16 +10992,16 @@
       "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Olmsted Township page (https://cuyahogarecycles.org/recycle-in/olmsted-township/, fetched 2026-11-26): “Olmsted Township has a year-round drop-off for scrap tires on the first Saturday of the month at the Olmsted Township Service Garage. Automotive only (20\" or less) and no tires on rims. Service Garage: 7924 Fitch Road, Olmsted Township”"
      },
      "paint": {
       "answer": "yes",
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Olmsted Township: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Olmsted Township page (https://cuyahogarecycles.org/recycle-in/olmsted-township/, fetched 2026-11-26): “Olmsted Township has a year-round drop-off for computer equipment on the first Saturday of the month at the Olmsted Township Service Garage. No TVs accepted. Service Garage: 7924 Fitch Road, Olmsted Township”"
      },
      "batteries": {
       "answer": "no",
@@ -11026,7 +11026,7 @@
     },
     "operator": "Olmsted Township (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-17"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Richmond Heights Service Garage (HHW drop-off)",
@@ -11184,16 +11184,16 @@
       "evidence": "CuyahogaRecycles (Cuyahoga County Solid Waste District): “The program is free to all Cuyahoga County households”."
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Bratenahl Village page (https://cuyahogarecycles.org/recycle-in/bratenahl-village/, fetched 2026-11-26): “Bratenahl Village has a year-round drop-off for scrap tires at the Bratenahl Service Garage. Automotive only (20\" or less) and no tires on rims. Hours are Monday-Friday from 7:00 AM-3:00 PM. Service Garage: 57 Garfield Lane, Bratenahl Village”"
      },
      "paint": {
       "answer": "yes",
       "evidence": "CuyahogaRecycles: HHW examples include “oil or solvent-based paint, sealers, primers… solvents, paint thinner… automotive fluids, aerosols… lawn and garden products, pesticides, pool chemicals… and household cleaners.” Bratenahl: “Bratenahl Village has a year-round drop-off for household hazardous waste at the Bratenahl Service Garage. Hours are Monday-Friday from 7:00 AM-3:00 PM. No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Bratenahl Village page (https://cuyahogarecycles.org/recycle-in/bratenahl-village/, fetched 2026-11-26): “Bratenahl Village has a year-round drop-off for computer equipment at the Bratenahl Service Garage. Hours are Monday-Friday from 7:00 AM-3:00 PM. No TVs accepted. Service Garage: 57 Garfield Lane, Bratenahl Village”"
      },
      "batteries": {
       "answer": "no",
@@ -11218,7 +11218,7 @@
     },
     "operator": "Village of Bratenahl (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-19"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Orange Village Service Department (HHW drop-off)",
@@ -11312,16 +11312,16 @@
       "evidence": "CuyahogaRecycles Brook Park HHW page (fetched 2026-11-23): “The program is free to all Cuyahoga County households”."
      },
      "tires": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Brook Park page (https://cuyahogarecycles.org/recycle-in/brookpark/, fetched 2026-11-26): “Brook Park has a year-round drop-off for scrap tires at the Brook Park Service Garage. Automotive only (20\" or less) and no tires on rims. From April-November, hours are Monday-Friday from 8:00 AM–7:00 PM and Saturday from 9:00 AM-1:00 PM. From November-April, hours are Saturdays only from 9:00 AM-1:00 PM. No TVs accepted. Tax receipts are not provided. Service Garage: 19065 Holland Road, Brook Park”"
      },
      "paint": {
       "answer": "yes",
       "evidence": "Oil-based only — CuyahogaRecycles Brook Park HHW page (fetched 2026-11-23): HHW examples include “oil or solvent-based paint, sealers, primers, or coatings”; Brook Park: “No latex paint.”"
      },
      "e_waste": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Brook Park page (https://cuyahogarecycles.org/recycle-in/brookpark/, fetched 2026-11-26): “Brook Park has a year-round drop-off for computer equipment at the Brook Park Service Garage. From April-November, hours are Monday-Friday from 8:00 AM–7:00 PM and Saturday from 9:00 AM-1:00 PM. From November-April, hours are Saturdays only from 9:00 AM-1:00 PM. No TVs accepted. Tax receipts are not provided. Service Garage: 19065 Holland Road, Brook Park”"
      },
      "batteries": {
       "answer": "no",
@@ -11346,7 +11346,7 @@
     },
     "operator": "City of Brook Park (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-23"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Bay Village Service Garage (HHW drop-off)",
@@ -11603,6 +11603,262 @@
     "operator": "City of Westlake (Cuyahoga County Solid Waste District program)",
     "source_notice": "",
     "questions_reviewed": "2026-11-25"
+   },
+   {
+    "name": "Garfield Heights Service Garage (scrap tires & HHW drop-off)",
+    "address": "13600 McCracken Road, Garfield Heights, OH",
+    "hours": "Scrap tires: year-round, Mon–Fri 7:30am–3pm. HHW (2026): May 4–8, May 11–15, Sep 8–11 and Sep 14–18, Mon–Fri 7:30am–3pm. All 2026 HHW windows have passed; the District has not posted 2027 dates yet",
+    "accepts": "Year-round: scrap tires (automotive only, 20 in. or less, no rims). Seasonal: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint",
+    "fees": "HHW free (Cuyahoga County HHW program); tire drop-off fee not stated by source",
+    "notes": "City of Garfield Heights Service Garage. Service Department (216) 475-1107. the District says most communities accept waste only from their own residents, so call the city before going. Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public.",
+    "source": "https://cuyahogarecycles.org/recycle-in/garfield-heights/",
+    "checked": "2026-11-26",
+    "slug": "garfield-heights-service-garage-tires-hhw",
+    "questions": {
+     "residents_only": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "HHW only — CuyahogaRecycles community HHW page (fetched 2026-11-26): “The program is free to all Cuyahoga County households”. (Tire drop-off fee not stated.)"
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Garfield Heights page (https://cuyahogarecycles.org/recycle-in/garfield-heights/, fetched 2026-11-26): “Garfield Heights has a year-round drop-off for scrap tires at the Garfield Heights Service Garage. Automotive only (20\" or less) and no tires on rims. Hours are Monday-Friday 7:30 AM-3:00 PM. Service Garage: 13600 McCracken Road, Garfield Heights”"
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "Oil-based only — CuyahogaRecycles community HHW page (fetched 2026-11-26): HHW examples include “oil or solvent-based paint, sealers, primers, or coatings”; Garfield Heights: “No latex paint.”"
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-26): “Latex paint, batteries, and fluorescent bulbs are not accepted in this program.”"
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Garfield Heights page (https://cuyahogarecycles.org/recycle-in/garfield-heights/, fetched 2026-11-26): “In 2026, Garfield Heights will have a drop-off for household hazardous waste on May 4-8, May 11-15, September 8-11, and September 14-18 at the Garfield Heights Service Garage. Hours are Monday-Friday 7:30 AM-3:00 PM. No latex paint. Service Garage: 13600 McCracken Road, Garfield Heights” CuyahogaRecycles community HHW page (fetched 2026-11-26): examples of HHW include “solvents, paint thinner, varnishes and polyurethanes, … automotive fluids, aerosols, … pesticides, pool chemicals, hand sanitizer, and household cleaners.”"
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Garfield Heights page (https://cuyahogarecycles.org/recycle-in/garfield-heights/, fetched 2026-11-26): tires: “Automotive only (20\" or less) and no tires on rims.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-26): “Waste from Businesses or Commercial Properties … Businesses must contract with a licensed company for proper disposal or recycling.”"
+     }
+    },
+    "operator": "City of Garfield Heights (Cuyahoga County Solid Waste District program)",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-26"
+   },
+   {
+    "name": "Strongsville Service Garage & Transfer Station (computers, tires & HHW)",
+    "address": "16099 Foltz Industrial Parkway, Strongsville, OH",
+    "hours": "Computer equipment (Service Garage loading dock): year-round, Mon–Fri 7am–2:30pm. Scrap tires (Transfer Station): year-round, Mon–Fri 7am–4:30pm, Sat–Sun 8am–2pm. HHW and rechargeable batteries (2026): Apr 28–29 and Aug 25–26, 7:30am–2:30pm. All 2026 HHW windows have passed; the District has not posted 2027 dates yet",
+    "accepts": "Year-round: computer equipment including cell phones (no TVs); scrap tires (no rims); needles and sharps in a SHARPS container or heavy bottle marked SHARPS (Transfer Station). Seasonal: rechargeable batteries; Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint",
+    "fees": "HHW free (Cuyahoga County HHW program); fees for computers and tires not stated by source",
+    "notes": "City of Strongsville Service Garage and Transfer Station share this address. Service Department (440) 580-3124. the District says most communities accept waste only from their own residents, so call the city before going. Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public.",
+    "source": "https://cuyahogarecycles.org/recycle-in/strongsville/",
+    "checked": "2026-11-26",
+    "slug": "strongsville-service-garage-transfer-station",
+    "questions": {
+     "residents_only": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "HHW only — CuyahogaRecycles community HHW page (fetched 2026-11-26): “The program is free to all Cuyahoga County households”. (Computer and tire drop-off fees not stated.)"
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Strongsville page (https://cuyahogarecycles.org/recycle-in/strongsville/, fetched 2026-11-26): “Strongsville has a year-round drop-off for scrap tires at the Strongsville Transfer Station. No tires on rims. Hours are Monday-Friday 7:00-4:30 and Saturday-Sunday 8:00-2:00. Transfer Station: 16099 Foltz Industrial Parkway, Strongsville”"
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "Oil-based only — CuyahogaRecycles community HHW page (fetched 2026-11-26): HHW examples include “oil or solvent-based paint, sealers, primers, or coatings”; Strongsville: “No latex paint.”"
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Strongsville page (https://cuyahogarecycles.org/recycle-in/strongsville/, fetched 2026-11-26): “Strongsville has a year-round drop-off for computer equipment at the Strongsville Service Garage (loading dock). Hours are Monday-Friday 7:00-2:30. No TVs accepted. Service Garage: 16099 Foltz Industrial Parkway, Strongsville”"
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Rechargeable only, on HHW dates — CuyahogaRecycles Strongsville page (https://cuyahogarecycles.org/recycle-in/strongsville/, fetched 2026-11-26): “In 2026, Strongsville will have a drop-off for rechargeable batteries from April 28-29 and August 25-26 at the Strongsville Service Garage. Hours are 7:30-2:30. Service Garage: 16099 Foltz Industrial Parkway, Strongsville”"
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Strongsville page (https://cuyahogarecycles.org/recycle-in/strongsville/, fetched 2026-11-26): “In 2026, Strongsville will have a drop-off for household hazardous waste from April 28-29 and August 25-26 at the Strongsville Service Garage. Hours are 7:30-2:30. No latex paint. Service Garage: 16099 Foltz Industrial Parkway, Strongsville” CuyahogaRecycles community HHW page (fetched 2026-11-26): examples of HHW include “solvents, paint thinner, varnishes and polyurethanes, … automotive fluids, aerosols, … pesticides, pool chemicals, hand sanitizer, and household cleaners.”"
+     },
+     "quantity_limits": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-26): “Waste from Businesses or Commercial Properties … Businesses must contract with a licensed company for proper disposal or recycling.”"
+     }
+    },
+    "operator": "City of Strongsville (Cuyahoga County Solid Waste District program)",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-26"
+   },
+   {
+    "name": "Cleveland Heights Service Center (computer drop-off)",
+    "address": "14200 Superior Road, Cleveland Heights, OH",
+    "hours": "Computer equipment: year-round, Mon–Fri 7am–3:30pm",
+    "accepts": "Computer equipment, including cell phones. Scrap tires and household hazardous waste are not dropped off here: Cleveland Heights collects them curbside (call (216) 691-7300; HHW must be labeled, sealed and boxed; no latex paint; no tires on rims)",
+    "fees": "",
+    "notes": "City of Cleveland Heights Service Center. Service Department (216) 691-7300",
+    "source": "https://cuyahogarecycles.org/recycle-in/cleveland-heights/",
+    "checked": "2026-11-26",
+    "slug": "cleveland-heights-service-center-computer-drop-off",
+    "questions": {
+     "residents_only": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles Cleveland Heights page (https://cuyahogarecycles.org/recycle-in/cleveland-heights/, fetched 2026-11-26): “Cleveland Heights has a curbside collection for scrap tires. No tires on rims. Call (216) 691-7300 for more details.” (curbside collection, not a drop-off at the Service Center)"
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles Cleveland Heights page (https://cuyahogarecycles.org/recycle-in/cleveland-heights/, fetched 2026-11-26): “Cleveland Heights has a year-round drop-off for computer equipment at the Cleveland Heights Service Center. Hours are Monday-Friday from 7:00 AM-3:30 PM. Service Center: 14200 Superior Road, Cleveland Heights” Cell phones: “Cleveland Heights has a year-round drop-off for computer equipment, including cell phones, at the Cleveland Heights Service Center. Hours are Monday-Friday from 7:00 AM-3:30 PM. Service Center: 14200 Superior Road, Cleveland Heights”"
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles Cleveland Heights page (https://cuyahogarecycles.org/recycle-in/cleveland-heights/, fetched 2026-11-26): “Cleveland Heights has a special curbside collection for household hazardous waste. Residents should call (216) 691-7300 to schedule a pick-up. Items must be labeled, sealed, non-leaking, and in a sturdy box. No latex paint.” (curbside pick-up, not a drop-off at the Service Center)"
+     },
+     "quantity_limits": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "businesses_accepted": {
+      "answer": "not stated by source",
+      "evidence": ""
+     }
+    },
+    "operator": "City of Cleveland Heights",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-26"
+   },
+   {
+    "name": "University Heights Service Garage (computers, tires & HHW)",
+    "address": "2300 Warrensville Center Road, University Heights, OH",
+    "hours": "Computer equipment: year-round, 8am–3pm. Scrap tires: year-round (hours not stated; call city hall). HHW (2026): Mar 7 and Oct 31, 9am–1pm; the city says events are usually held on the weekends when clocks change. Both 2026 HHW dates have passed",
+    "accepts": "Year-round: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims). Seasonal: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint",
+    "fees": "HHW free (Cuyahoga County HHW program); fees for computers and tires not stated by source",
+    "notes": "City of University Heights service garage. City hall (216) 932-7800. Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public.",
+    "source": "https://cuyahogarecycles.org/recycle-in/university-heights/",
+    "checked": "2026-11-26",
+    "slug": "university-heights-service-garage",
+    "questions": {
+     "residents_only": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "no",
+      "evidence": "HHW only — CuyahogaRecycles community HHW page (fetched 2026-11-26): “The program is free to all Cuyahoga County households”. (Computer and tire drop-off fees not stated.)"
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles University Heights page (https://cuyahogarecycles.org/recycle-in/university-heights/, fetched 2026-11-26): “University Heights has a year-round drop-off for scrap tires at the city service garage. Automotive only (20\" or less) and no tires on rims. 2300 Warrensville Center Road, University Heights”"
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "Oil-based only — CuyahogaRecycles community HHW page (fetched 2026-11-26): HHW examples include “oil or solvent-based paint, sealers, primers, or coatings”; University Heights: “No latex paint.”"
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles University Heights page (https://cuyahogarecycles.org/recycle-in/university-heights/, fetched 2026-11-26): “University Heights has a year-round drop-off for computer equipment, including cell phones. Hours are 8:00 AM-3:00 PM at the city service garage. No TVs accepted. 2300 Warrensville Center Road, University Heights”"
+     },
+     "batteries": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-26): “Latex paint, batteries, and fluorescent bulbs are not accepted in this program.”"
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles University Heights page (https://cuyahogarecycles.org/recycle-in/university-heights/, fetched 2026-11-26): “In 2026, University Heights has a drop-off for household hazardous waste on March 7 and October 31. Hours are 9:00 AM-1:00 PM at the city service garage. Events are usually held every year on the weekends when clocks change. Call city hall for details. 2300 Warrensville Center Road, University Heights” CuyahogaRecycles community HHW page (fetched 2026-11-26): examples of HHW include “solvents, paint thinner, varnishes and polyurethanes, … automotive fluids, aerosols, … pesticides, pool chemicals, hand sanitizer, and household cleaners.”"
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "CuyahogaRecycles University Heights page (https://cuyahogarecycles.org/recycle-in/university-heights/, fetched 2026-11-26): tires: “Automotive only (20\" or less) and no tires on rims.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "CuyahogaRecycles community HHW page (fetched 2026-11-26): “Waste from Businesses or Commercial Properties … Businesses must contract with a licensed company for proper disposal or recycling.”"
+     }
+    },
+    "operator": "City of University Heights (Cuyahoga County Solid Waste District program)",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-26"
    }
   ],
   "note": ""
@@ -12388,7 +12644,7 @@
     "fees": "Fees apply to some items (e.g. computers/laptops with hard drives $5, LCD TV $25, CRT TV $28–$35, LCD monitor $10); many items free. Credit or debit cards only (no cash or checks)",
     "notes": "Central Virginia Waste Management Authority (CVWMA) contractor Securis runs this monthly event; CVWMA says it is open to all residents of Central Virginia. Item list and fee table: https://securis.com/events/richmond-recycling-events/",
     "source": "https://cvwma.com/cvwma-locations/henrico-2/",
-    "checked": "2026-11-25",
+    "checked": "2026-11-26",
     "slug": "securis-first-saturday-electronics-recycling-henrico",
     "questions": {
      "residents_only": {
@@ -12442,7 +12698,7 @@
     },
     "operator": "Securis (Central Virginia Waste Management Authority electronics recycling contractor)",
     "source_notice": "",
-    "questions_reviewed": "2026-11-25"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Hanover Route 301 Transfer Station",
@@ -13028,7 +13284,7 @@
     "fees": "HHW and paper shredding free; CRT TVs $28 (27 inch or less) or $37 (over 27 inch); hard drive, phone and tablet shredding $8–$10.50 per item; other electronics $5.25–$40 per item",
     "notes": "Chesterfield County recycling event for county residents, listed on the CVWMA events calendar (Oct 30, 2027 event: https://cvwma.com/event/chesterfield-county-shred-e-cycle-and-household-household-waste-recycling-event/). Limits: acids, bases and solvents under 5 gallons each; pool chemicals 2 bags or 5 containers, under 3 gallons; pesticides/herbicides 5 containers, under 3 gallons; fertilizers 2 bags; thermostats/thermometers 2",
     "source": "https://cvwma.com/event/chesterfield-county-shred-e-cycle-and-household-hazardous-waste-recycling/",
-    "checked": "2026-11-25",
+    "checked": "2026-11-26",
     "slug": "chesterfield-county-shred-e-cycle-hhw-event-fairgrounds",
     "questions": {
      "residents_only": {
@@ -13082,7 +13338,135 @@
     },
     "operator": "Chesterfield County",
     "source_notice": "",
-    "questions_reviewed": "2026-11-25"
+    "questions_reviewed": "2026-11-26"
+   },
+   {
+    "name": "Colonial Heights Recycling Center",
+    "address": "2701 Conduit Road, Colonial Heights, VA 23834",
+    "hours": "Fri, Sat & Mon 8am–5pm (closed for lunch 12–1pm)",
+    "accepts": "Category 1 household hazardous waste: latex and oil-based paints, varnish/shellac, stains and tints, lacquer thinners, polyurethane, primers, paint reducers, Varsol, mineral spirits, turpentine, other flammable solvents, leaded and unleaded gasoline and additives, cooking oil, motor oil, oil additives, oil filters, antifreeze. Also batteries, brush, tree limbs, leaves and grass, appliances, air conditioners, metals, cardboard. Not accepted: insecticides, poisons, acids and other caustic compounds, PCB-containing appliances; electronic devices (TVs, cell phones, computers, monitors) are prohibited",
+    "fees": "$10 Freon (CFC) removal fee per appliance, paid in advance at the Billing and Collections Office (201 James Avenue); other fees not stated by source",
+    "notes": "Operated by the City of Colonial Heights. Valid proof of city residency required. Daily limits: paints 2 gallons, motor oil 4 gallons, antifreeze 4 gallons, other Category 1 HHW 1 gallon; stumps and limbs under 6 inches in diameter. Closed to commercial haulers and contractors; small businesses and apartment complexes need City Manager approval to bring recyclables. (804) 479-7056",
+    "source": "https://www.colonialheightsva.gov/322/Recycling-Center",
+    "checked": "2026-11-26",
+    "slug": "colonial-heights-recycling-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "City of Colonial Heights Recycling Center page (https://www.colonialheightsva.gov/322/Recycling-Center, fetched 2026-11-26): “Valid proof of city residency is required to dispose of materials at the Recycling Center.”"
+     },
+     "id_required": {
+      "answer": "yes",
+      "evidence": "City of Colonial Heights Recycling Center page (https://www.colonialheightsva.gov/322/Recycling-Center, fetched 2026-11-26): “Valid proof of city residency is required to dispose of materials at the Recycling Center.”"
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "Appliances only — City of Colonial Heights Recycling Center page (https://www.colonialheightsva.gov/322/Recycling-Center, fetched 2026-11-26): “Chlorofluorocarbon (commonly found in Freon) must be safely removed from all appliances before disposal at the Recycling Center. There is a $10.00 fee for this service”."
+     },
+     "tires": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "paint": {
+      "answer": "yes",
+      "evidence": "City of Colonial Heights Recycling Center page (https://www.colonialheightsva.gov/322/Recycling-Center, fetched 2026-11-26): Category 1 Household Hazardous Waste: “Latex Paints”, “Oil-based Paints”, “Varnish/Shellac”, “Stains & Tints”."
+     },
+     "e_waste": {
+      "answer": "no",
+      "evidence": "City of Colonial Heights Recycling Center page (https://www.colonialheightsva.gov/322/Recycling-Center, fetched 2026-11-26): “Disposal of electronic devices including, but not limited to televisions, cell phones, computers or monitors at the Recycling Center is prohibited.”"
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "City of Colonial Heights Recycling Center page (https://www.colonialheightsva.gov/322/Recycling-Center, fetched 2026-11-26): Other Materials: “Batteries”."
+     },
+     "motor_oil": {
+      "answer": "yes",
+      "evidence": "City of Colonial Heights Recycling Center page (https://www.colonialheightsva.gov/322/Recycling-Center, fetched 2026-11-26): Category 1 Household Hazardous Waste: “Motor Oil”, “Oil Filters”, “Anti-Freeze”."
+     },
+     "household_chemicals": {
+      "answer": "no",
+      "evidence": "City of Colonial Heights Recycling Center page (https://www.colonialheightsva.gov/322/Recycling-Center, fetched 2026-11-26): “Disposal of insecticides, poisons, acids and other caustic compounds, appliances containing Polychlorinated Biphenyls (PCB's) or other toxic materials is prohibited.” (Category 1 solvents, thinners and fuels are accepted.)"
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "City of Colonial Heights Recycling Center page (https://www.colonialheightsva.gov/322/Recycling-Center, fetched 2026-11-26): “Paints, 2 gallons per day. Motor Oil, 4 gallons per day. Antifreeze, 4 gallons per day. Other Category 1 Household Hazardous Waste, 1 gallon per day.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "City of Colonial Heights Recycling Center page (https://www.colonialheightsva.gov/322/Recycling-Center, fetched 2026-11-26): “The recycling center shall be closed to all commercial haulers, which shall include commercial refuse haulers, contractors or any other person or persons hauling for hire”; small businesses may bring recyclables only “with approval from the City Manager prior to entering the facility.”"
+     }
+    },
+    "operator": "City of Colonial Heights",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-26"
+   },
+   {
+    "name": "Hopewell Citizen's Convenience Center",
+    "address": "507 Station Street, Hopewell, VA 23860",
+    "hours": "Tue, Wed & Fri 12:30–3:30pm; Sat 8am–4:30pm; closed on observed holidays and in inclement weather",
+    "accepts": "Tires without rims (up to 8 per year); residential waste; household furniture; mattresses; car seats; major appliances (washers, dryers, stoves, water heaters); refrigerators, freezers, air conditioners and dehumidifiers (CFC removal fee); brush up to 6 in. diameter, yard and garden waste, leaves and pine needles; propane grill tanks (4–40 lb); rechargeable batteries and cell phones; homeowner-performed construction and demolition debris (building permit required). Not accepted: kitchen or food waste, liquids, paint, petroleum-based products, wet-cell batteries, asbestos and other hazardous products, automobile parts, concrete and masonry, stumps and logs over 6 in.",
+    "fees": "Tires $1 per passenger tire, $2 per light-truck tire; residential waste $3 (car), $10 (pickup/SUV or single-axle trailer), $35 (dual-axle trailer); brush and yard waste free (dual-axle trailer $10); construction debris $3–$50; $10 CFC removal per appliance; $10 extra for vehicles with raised sides",
+    "notes": "Operated by the City of Hopewell Department of Public Works, next to the Animal Shelter. City of Hopewell residents only, for waste generated within city limits; businesses and contractors are not allowed. Fees and items from the city's Convenience Center Fees sheet (dated March 2025): https://www.hopewellva.gov/DocumentCenter/View/473/Convenience-Center-Fees-PDF. City of Hopewell 804-541-2200",
+    "source": "https://www.hopewellva.gov/548/Citizens-Convenience-Center",
+    "checked": "2026-11-26",
+    "slug": "hopewell-citizens-convenience-center",
+    "questions": {
+     "residents_only": {
+      "answer": "yes",
+      "evidence": "City of Hopewell Citizen’s Convenience Center page (https://www.hopewellva.gov/548/Citizens-Convenience-Center, fetched 2026-11-26): “Only City of Hopewell residents may use the Citizen’s Convenience Center to dispose of waste generated on property located within the City limits.”"
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "yes",
+      "evidence": "City of Hopewell Convenience Center Fees sheet (PDF dated March 2025, linked from the center page, fetched 2026-11-26): “Tires - Up to 8 tires/year without rims. $1.00/ passenger tire and $2.oo/LT truck tire.” Residential solid waste: car “$3.00”, pick up / SUV “$10.00”."
+     },
+     "tires": {
+      "answer": "yes",
+      "evidence": "City of Hopewell Convenience Center Fees sheet (PDF dated March 2025, linked from the center page, fetched 2026-11-26): Items accepted: “Tires - Up to 8 tires/year without rims.”"
+     },
+     "paint": {
+      "answer": "no",
+      "evidence": "City of Hopewell Convenience Center Fees sheet (PDF dated March 2025, linked from the center page, fetched 2026-11-26): Items not accepted: “Paint and other liquids.”"
+     },
+     "e_waste": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "batteries": {
+      "answer": "yes",
+      "evidence": "Rechargeable only — City of Hopewell Convenience Center Fees sheet (PDF dated March 2025, linked from the center page, fetched 2026-11-26): “The following recyclable materials are collected: yard waste, appliances, scrap metal, tires, \"freon\" gas, propane tanks, rechargeable batteries, and cell phones.” Not accepted: “Wet cell batteries.”"
+     },
+     "motor_oil": {
+      "answer": "no",
+      "evidence": "City of Hopewell Convenience Center Fees sheet (PDF dated March 2025, linked from the center page, fetched 2026-11-26): Items not accepted: “Petroleum based products.”; City of Hopewell Citizen’s Convenience Center page (https://www.hopewellva.gov/548/Citizens-Convenience-Center, fetched 2026-11-26): residents may dispose of most residential waste “except kitchen or food waste, liquids, hazards or rotten waste.”"
+     },
+     "household_chemicals": {
+      "answer": "no",
+      "evidence": "City of Hopewell Convenience Center Fees sheet (PDF dated March 2025, linked from the center page, fetched 2026-11-26): Items not accepted: “Asbestos and other hazardous products.”"
+     },
+     "quantity_limits": {
+      "answer": "yes",
+      "evidence": "City of Hopewell Convenience Center Fees sheet (PDF dated March 2025, linked from the center page, fetched 2026-11-26): “Tires - Up to 8 tires/year without rims”; “Brush - any length brush up to 6 inches in diameter.”"
+     },
+     "businesses_accepted": {
+      "answer": "no",
+      "evidence": "City of Hopewell Citizen’s Convenience Center page (https://www.hopewellva.gov/548/Citizens-Convenience-Center, fetched 2026-11-26): “Businesses and contractors are not allowed to use the Center.”"
+     }
+    },
+    "operator": "City of Hopewell Department of Public Works",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-26"
    }
   ],
   "note": ""
@@ -14059,6 +14443,134 @@
     "operator": "City and County of Honolulu",
     "source_notice": "",
     "questions_reviewed": "2026-11-21"
+   },
+   {
+    "name": "E-Opala (e-waste drop-off, Māpunapuna)",
+    "address": "2627 Kilihau Street, Honolulu, HI 96819",
+    "hours": "Daily 9am–4:30pm",
+    "accepts": "Covered electronic devices under Hawaii's Electronic Device Recycling and Recovery Law: computers, monitors, laptops, tablets and e-readers, printers, TVs (9 in. screen or larger), fax machines, VCRs, DVD players and recorders, portable digital music players, household routers and modems, and peripherals (keyboards, mice, cords, power supplies and adapters, computer or TV speakers and sound bars, video game consoles)",
+    "fees": "",
+    "notes": "Listed by the Hawaii State Department of Health as an Oahu (City & County of Honolulu) collection location for covered electronic devices. Pick-up collection is available for a fee (contact E-Opala for a quote). (808) 232-2000. Oahu residents can also use the City's e-waste bins at its convenience centers and transfer stations",
+    "source": "https://health.hawaii.gov/ewaste/e-waste-collection-locations/",
+    "checked": "2026-11-26",
+    "slug": "e-opala-e-waste-drop-off-mapunapuna",
+    "questions": {
+     "residents_only": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Hawaii State Department of Health E-waste Collection Locations page (https://health.hawaii.gov/ewaste/e-waste-collection-locations/, fetched 2026-11-26): “Recycling Options for Computers, Monitors, Laptops, Tablets/E-Readers, Printers, Television, facsimile machines, videocassette recorders, … video game consoles.” City & County of Honolulu (Oahu): “E-Opala inc 2627 Kilihau St. (Mapunapuna) Honolulu, 96819 Hours: Daily 9:00 am – 4:30 pm”."
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "businesses_accepted": {
+      "answer": "not stated by source",
+      "evidence": ""
+     }
+    },
+    "operator": "E-Opala Inc. (Hawaii DOH-listed collector)",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-26"
+   },
+   {
+    "name": "T&N Computer Recycling (South Beretania Street)",
+    "address": "1436 S Beretania Street, Honolulu, HI 96814",
+    "hours": "Mon–Fri 9:15am–4:45pm; Sat 8am–3pm; closed for lunch 12:30–1pm",
+    "accepts": "Covered electronic devices under Hawaii's Electronic Device Recycling and Recovery Law: computers, monitors, laptops, tablets and e-readers, printers, TVs (9 in. screen or larger), fax machines, VCRs, DVD players and recorders, portable digital music players, household routers and modems, and peripherals (keyboards, mice, cords, power supplies and adapters, computer or TV speakers and sound bars, video game consoles)",
+    "fees": "",
+    "notes": "Listed by the Hawaii State Department of Health as an Oahu collection location for covered electronic devices; T&N also has listed locations at 548 Kapahulu Avenue and 693 North King Street, Honolulu, and Ala Loa Street, Kaneohe. (808) 371-0281",
+    "source": "https://health.hawaii.gov/ewaste/e-waste-collection-locations/",
+    "checked": "2026-11-26",
+    "slug": "t-n-computer-recycling-south-beretania",
+    "questions": {
+     "residents_only": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "id_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "appointment_required": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "fee_charged": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "tires": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "paint": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "e_waste": {
+      "answer": "yes",
+      "evidence": "Hawaii State Department of Health E-waste Collection Locations page (https://health.hawaii.gov/ewaste/e-waste-collection-locations/, fetched 2026-11-26): “Recycling Options for Computers, Monitors, Laptops, Tablets/E-Readers, Printers, Television, facsimile machines, videocassette recorders, … video game consoles.” City & County of Honolulu (Oahu): “T & N Computer Recycling 1436 S Beretania Street, Honolulu 96814 Hours: Monday-Friday: 9:15 am – 4:45 pm, Saturday: 8:00 am – 3:00 pm, Closed for lunch from 12:30 pm – 1:00 pm”."
+     },
+     "batteries": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "motor_oil": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "household_chemicals": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "quantity_limits": {
+      "answer": "not stated by source",
+      "evidence": ""
+     },
+     "businesses_accepted": {
+      "answer": "not stated by source",
+      "evidence": ""
+     }
+    },
+    "operator": "T&N Computer Recycling (Hawaii DOH-listed collector)",
+    "source_notice": "",
+    "questions_reviewed": "2026-11-26"
    }
   ],
   "note": "Household chemical HHW is appointment-only at city drop-off events (200-appointment cap). The final 2026 event was held Sat Nov 7; 2027 dates are TBD. Call (808) 768-3201 or email hhw@honolulu.gov. Source: https://www.honolulu.gov/env/ref/hhw-2/ (checked 2026-11-10)"

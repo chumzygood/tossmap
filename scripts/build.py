@@ -866,10 +866,26 @@ def facility_page(f,m):
     # Many facility names are generic ("Waste Reduction Center"), so the city goes in the title.
     ttl=f'{f["name"]}, {m["city"]} {m["st"]}: hours & rules | TossMap'
     if m["city"].lower() in f["name"].lower(): ttl=f'{f["name"]} ({m["st"]}): hours, materials & rules | TossMap'
+    # SEO length guard (Nov 26 2026): long names push titles past ~60 characters, so step down to shorter forms only when needed.
+    short=re.sub(r"\s*\([^)]*\)","",f["name"]).strip()
+    if sum(re.sub(r"\s*\([^)]*\)","",o["name"]).strip()==short for o in m["facilities"])>1: short=f["name"]  # keep titles unique
+    for cand in ([f'{f["name"]} ({m["st"]}) | TossMap',f'{short} ({m["st"]}) | TossMap',f'{short}, {m["st"]}'] if m["city"].lower() in f["name"].lower()
+                 else [f'{f["name"]}, {m["city"]} {m["st"]} | TossMap',f'{short}, {m["city"]} {m["st"]} | TossMap',f'{short}, {m["city"]} {m["st"]}']):
+        if len(ttl)<=60: break
+        ttl=cand
     mnames=[n.split(" (")[0].lower() for _,n,_ in mats(f)]
     takes=f' Takes {and_list(mnames)}.' if mnames else ''
+    where=f'{"in" if m["city"].lower() in f["address"].lower() else "in the"} {m["city"]}, {m["st"]}{"" if m["city"].lower() in f["address"].lower() else " area"}'
+    desc=f'{f["name"]} {where}: address, hours, fees, eligibility and official source.{takes} Last checked {f["checked"]}.'
+    # Same guard for the meta description (~160 characters): drop the qualifier in parentheses, then the long phrase, never the facts.
+    for cand in [f'{short} {where}: address, hours, fees, eligibility and official source.{takes} Last checked {f["checked"]}.',
+                 f'{short} {where}: hours, fees, rules and official source.{takes} Checked {f["checked"]}.',
+                 f'{short} {where}: hours, fees, rules and official source.{takes}',
+                 f'{short} {where}: hours, fees, accepted materials and official source. Checked {f["checked"]}.']:
+        if len(desc)<=160: break
+        desc=cand
     page(fp,ttl,
-         f'{f["name"]} {"in" if m["city"].lower() in f["address"].lower() else "in the"} {m["city"]}, {m["st"]}{"" if m["city"].lower() in f["address"].lower() else " area"}: address, hours, fees, eligibility and official source.{takes} Last checked {f["checked"]}.',
+         desc,
          body,[bl,webpage,place,{"@type":"FAQPage","mainEntity":entities}]+([event_ld(f,m,place)] if event_ld(f,m,place) else []),f["checked"])
 
 # One-day collection events ("Event: Sat Dec 12, 2026, 8am–2pm") get schema.org Event markup, using only the listing's own date/time text.
@@ -966,8 +982,14 @@ for (sn,st),ms in sorted(states.items()):
     st_chk=max([f["checked"] for f in st_fs],default=None)
     st_collection={"@type":"CollectionPage","@id":BASE+sp+"#page","url":BASE+sp,"name":f"Hazardous waste drop-off in {sn}","publisher":{"@id":ORG_ID},"isPartOf":{"@id":BASE+"/#website"},"mainEntity":{"@id":BASE+sp+"#cities"},"inLanguage":"en-US"}
     if st_chk: st_collection["dateModified"]=st_chk
+    st_matl=[n.split(" (")[0].lower() for s,n,_ in MAT if any(m in matidx[s] for m in ms)]
+    st_mats=and_list(st_matl) or "household hazardous waste"
+    st_desc=f"{plural(nst,'official drop-off site')} in {sn} ({', '.join(m['city'] for m in ms)}) for {st_mats}, with source links."
+    # SEO length guard (Nov 26 2026): states with many metros name the first three and count the rest.
+    if len(st_desc)>160 and len(ms)>3: st_desc=f"{plural(nst,'official drop-off site')} in {sn} ({', '.join(m['city'] for m in ms[:3])} and {len(ms)-3} more) for {st_mats}, with source links."
+    if len(st_desc)>160 and len(st_matl)>3: st_desc=f"{plural(nst,'official drop-off site')} in {sn} ({', '.join(m['city'] for m in ms[:3])}{f' and {len(ms)-3} more' if len(ms)>3 else ''}) for {', '.join(st_matl[:3])} and more, with source links."
     page(sp,f"Hazardous waste, paint & e-waste drop-off in {sn} | TossMap",
-         f"{plural(nst,'official drop-off site')} in {sn} ({', '.join(m['city'] for m in ms)}) for {and_list([n.split(" (")[0].lower() for s,n,_ in MAT if any(m in matidx[s] for m in ms)]) or "household hazardous waste"}, with source links.",
+         st_desc,
          vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1>'+freshness_html(st_fs)+f'<p>{plural(nst,"official drop-off site")} across {plural(len(ms),"metro area")} in {e(sn)}. Each city page lists addresses, hours, fees, eligibility rules and a link to the official source, with the date we last checked it.</p>'+"".join(state_city_block(m) for m in ms),
          # State hubs: CollectionPage + ItemList of the city pages they link to (same names and URLs as the visible list).
          [bl,st_collection,

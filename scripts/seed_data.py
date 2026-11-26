@@ -651,6 +651,66 @@ REVERIFIED25={"Sisson Street Residential Recycling Center (HHW days)","DPW Speci
 for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED25: f["checked"]=D25
+# --- Nov 26 2026 daily pass additions (each verified against cited official source on 2026-11-26) ---
+D26="2026-11-26"
+CUYM="https://cuyahogarecycles.org/recycle-in/{}/"
+CUYTIRE="scrap tires (automotive only, 20 in. or less, no rims)"
+add("Cleveland",
+  F("Garfield Heights Service Garage (scrap tires & HHW drop-off)","13600 McCracken Road, Garfield Heights, OH",
+    "Scrap tires: year-round, Mon–Fri 7:30am–3pm. HHW (2026): May 4–8, May 11–15, Sep 8–11 and Sep 14–18, Mon–Fri 7:30am–3pm. All 2026 HHW windows have passed; the District has not posted 2027 dates yet",
+    CUYM.format("garfield-heights"),
+    "Year-round: "+CUYTIRE+". Seasonal: "+CUYACC,
+    "HHW free (Cuyahoga County HHW program); tire drop-off fee not stated by source",
+    "City of Garfield Heights Service Garage. Service Department (216) 475-1107. "+CUYCALL+CUY,D26),
+  F("Strongsville Service Garage & Transfer Station (computers, tires & HHW)","16099 Foltz Industrial Parkway, Strongsville, OH",
+    "Computer equipment (Service Garage loading dock): year-round, Mon–Fri 7am–2:30pm. Scrap tires (Transfer Station): year-round, Mon–Fri 7am–4:30pm, Sat–Sun 8am–2pm. HHW and rechargeable batteries (2026): Apr 28–29 and Aug 25–26, 7:30am–2:30pm. All 2026 HHW windows have passed; the District has not posted 2027 dates yet",
+    CUYM.format("strongsville"),
+    "Year-round: computer equipment including cell phones (no TVs); scrap tires (no rims); needles and sharps in a SHARPS container or heavy bottle marked SHARPS (Transfer Station). Seasonal: rechargeable batteries; "+CUYACC,
+    "HHW free (Cuyahoga County HHW program); fees for computers and tires not stated by source",
+    "City of Strongsville Service Garage and Transfer Station share this address. Service Department (440) 580-3124. "+CUYCALL+CUY,D26),
+  F("Cleveland Heights Service Center (computer drop-off)","14200 Superior Road, Cleveland Heights, OH",
+    "Computer equipment: year-round, Mon–Fri 7am–3:30pm",
+    CUYM.format("cleveland-heights"),
+    "Computer equipment, including cell phones. Scrap tires and household hazardous waste are not dropped off here: Cleveland Heights collects them curbside (call (216) 691-7300; HHW must be labeled, sealed and boxed; no latex paint; no tires on rims)",
+    "",
+    "City of Cleveland Heights Service Center. Service Department (216) 691-7300",D26),
+  F("University Heights Service Garage (computers, tires & HHW)","2300 Warrensville Center Road, University Heights, OH",
+    "Computer equipment: year-round, 8am–3pm. Scrap tires: year-round (hours not stated; call city hall). HHW (2026): Mar 7 and Oct 31, 9am–1pm; the city says events are usually held on the weekends when clocks change. Both 2026 HHW dates have passed",
+    CUYM.format("university-heights"),
+    "Year-round: computer equipment including cell phones (no TVs); "+CUYTIRE+". Seasonal: "+CUYACC,
+    "HHW free (Cuyahoga County HHW program); fees for computers and tires not stated by source",
+    "City of University Heights service garage. City hall (216) 932-7800. "+CUY,D26))
+add("Richmond",
+  F("Colonial Heights Recycling Center","2701 Conduit Road, Colonial Heights, VA 23834",
+    "Fri, Sat & Mon 8am–5pm (closed for lunch 12–1pm)",
+    "https://www.colonialheightsva.gov/322/Recycling-Center",
+    "Category 1 household hazardous waste: latex and oil-based paints, varnish/shellac, stains and tints, lacquer thinners, polyurethane, primers, paint reducers, Varsol, mineral spirits, turpentine, other flammable solvents, leaded and unleaded gasoline and additives, cooking oil, motor oil, oil additives, oil filters, antifreeze. "
+    "Also batteries, brush, tree limbs, leaves and grass, appliances, air conditioners, metals, cardboard. "
+    "Not accepted: insecticides, poisons, acids and other caustic compounds, PCB-containing appliances; electronic devices (TVs, cell phones, computers, monitors) are prohibited",
+    "$10 Freon (CFC) removal fee per appliance, paid in advance at the Billing and Collections Office (201 James Avenue); other fees not stated by source",
+    "Operated by the City of Colonial Heights. Valid proof of city residency required. Daily limits: paints 2 gallons, motor oil 4 gallons, antifreeze 4 gallons, other Category 1 HHW 1 gallon; stumps and limbs under 6 inches in diameter. Closed to commercial haulers and contractors; small businesses and apartment complexes need City Manager approval to bring recyclables. (804) 479-7056",D26),
+  F("Hopewell Citizen's Convenience Center","507 Station Street, Hopewell, VA 23860",
+    "Tue, Wed & Fri 12:30–3:30pm; Sat 8am–4:30pm; closed on observed holidays and in inclement weather",
+    "https://www.hopewellva.gov/548/Citizens-Convenience-Center",
+    "Tires without rims (up to 8 per year); residential waste; household furniture; mattresses; car seats; major appliances (washers, dryers, stoves, water heaters); refrigerators, freezers, air conditioners and dehumidifiers (CFC removal fee); brush up to 6 in. diameter, yard and garden waste, leaves and pine needles; propane grill tanks (4–40 lb); rechargeable batteries and cell phones; homeowner-performed construction and demolition debris (building permit required). "
+    "Not accepted: kitchen or food waste, liquids, paint, petroleum-based products, wet-cell batteries, asbestos and other hazardous products, automobile parts, concrete and masonry, stumps and logs over 6 in.",
+    "Tires $1 per passenger tire, $2 per light-truck tire; residential waste $3 (car), $10 (pickup/SUV or single-axle trailer), $35 (dual-axle trailer); brush and yard waste free (dual-axle trailer $10); construction debris $3–$50; $10 CFC removal per appliance; $10 extra for vehicles with raised sides",
+    "Operated by the City of Hopewell Department of Public Works, next to the Animal Shelter. City of Hopewell residents only, for waste generated within city limits; businesses and contractors are not allowed. Fees and items from the city's Convenience Center Fees sheet (dated March 2025): https://www.hopewellva.gov/DocumentCenter/View/473/Convenience-Center-Fees-PDF. City of Hopewell 804-541-2200",D26))
+HDOH="https://health.hawaii.gov/ewaste/e-waste-collection-locations/"
+HDACC=("Covered electronic devices under Hawaii's Electronic Device Recycling and Recovery Law: computers, monitors, laptops, tablets and e-readers, printers, TVs (9 in. screen or larger), fax machines, VCRs, DVD players and recorders, portable digital music players, household routers and modems, "
+  "and peripherals (keyboards, mice, cords, power supplies and adapters, computer or TV speakers and sound bars, video game consoles)")
+add("Honolulu",
+  F("E-Opala (e-waste drop-off, Māpunapuna)","2627 Kilihau Street, Honolulu, HI 96819","Daily 9am–4:30pm",HDOH,HDACC,"",
+    "Listed by the Hawaii State Department of Health as an Oahu (City & County of Honolulu) collection location for covered electronic devices. Pick-up collection is available for a fee (contact E-Opala for a quote). (808) 232-2000. Oahu residents can also use the City's e-waste bins at its convenience centers and transfer stations",D26),
+  F("T&N Computer Recycling (South Beretania Street)","1436 S Beretania Street, Honolulu, HI 96814","Mon–Fri 9:15am–4:45pm; Sat 8am–3pm; closed for lunch 12:30–1pm",HDOH,HDACC,"",
+    "Listed by the Hawaii State Department of Health as an Oahu collection location for covered electronic devices; T&N also has listed locations at 548 Kapahulu Avenue and 693 North King Street, Honolulu, and Ala Loa Street, Kaneohe. (808) 371-0281",D26))
+# Re-verified against the official page on 2026-11-26 (event dates unchanged; DC's Eventbrite list still shows Sat Dec 12, 2026 at RFK Lot 8).
+REVERIFIED26={"Sisson Street Residential Recycling Center (HHW days)","DPW Special Waste Collection Event – RFK Stadium Lot 8",
+  "Carr Center (Division of Waste)","Ridge Road Transfer Station","Securis First Saturday Electronics Recycling (CVWMA)",
+  "Chesterfield County Shred, E-Cycle & HHW Recycling Event (Fairgrounds)"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED26: f["checked"]=D26
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

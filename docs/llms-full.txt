@@ -1,6 +1,6 @@
 # TossMap — full facility listings
 
-Every listing below is verified against an official government or facility-operator source and includes that source URL and a last-checked date. TossMap lists 213 drop-off sites across 54 US metro areas in 31 states. TossMap does not operate these facilities. Rules and hours can change; confirm with the official source before driving.
+Every listing below is verified against an official government or facility-operator source and includes that source URL and a last-checked date. TossMap lists 221 drop-off sites across 54 US metro areas in 31 states. TossMap does not operate these facilities. Rules and hours can change; confirm with the official source before driving.
 
 A shorter index is in https://tossmap.com/llms.txt.
 
@@ -261,7 +261,7 @@ Materials accepted: HHW (paints, chemicals, batteries, CFLs, motor oil, auto flu
 Hours: Event: Sat Dec 12, 2026, 8am–2pm (registration required; no entry after 2pm)
 Fees: Free
 Official source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding
-Last checked: 2026-11-25
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/dc/washington/dpw-special-waste-collection-event-rfk-stadium-lot-8/
 
 Name: Fairfax County I-66 Transfer Station (HHW & e-waste)
@@ -602,6 +602,26 @@ Official source: https://www.honolulu.gov/env/ref/waste-drop-off-locations/
 Last checked: 2026-11-12
 TossMap page: https://tossmap.com/hi/honolulu/wahiawa-convenience-center/
 
+Name: E-Opala (e-waste drop-off, Māpunapuna)
+City/state: Honolulu, HI
+Address: 2627 Kilihau Street, Honolulu, HI 96819
+Materials accepted: Covered electronic devices under Hawaii's Electronic Device Recycling and Recovery Law: computers, monitors, laptops, tablets and e-readers, printers, TVs (9 in. screen or larger), fax machines, VCRs, DVD players and recorders, portable digital music players, household routers and modems, and peripherals (keyboards, mice, cords, power supplies and adapters, computer or TV speakers and sound bars, video game consoles)
+Hours: Daily 9am–4:30pm
+Fees: not listed
+Official source: https://health.hawaii.gov/ewaste/e-waste-collection-locations/
+Last checked: 2026-11-26
+TossMap page: https://tossmap.com/hi/honolulu/e-opala-e-waste-drop-off-mapunapuna/
+
+Name: T&N Computer Recycling (South Beretania Street)
+City/state: Honolulu, HI
+Address: 1436 S Beretania Street, Honolulu, HI 96814
+Materials accepted: Covered electronic devices under Hawaii's Electronic Device Recycling and Recovery Law: computers, monitors, laptops, tablets and e-readers, printers, TVs (9 in. screen or larger), fax machines, VCRs, DVD players and recorders, portable digital music players, household routers and modems, and peripherals (keyboards, mice, cords, power supplies and adapters, computer or TV speakers and sound bars, video game consoles)
+Hours: Mon–Fri 9:15am–4:45pm; Sat 8am–3pm; closed for lunch 12:30–1pm
+Fees: not listed
+Official source: https://health.hawaii.gov/ewaste/e-waste-collection-locations/
+Last checked: 2026-11-26
+TossMap page: https://tossmap.com/hi/honolulu/t-n-computer-recycling-south-beretania/
+
 ## Illinois
 
 ### Chicago, IL
@@ -729,7 +749,7 @@ Materials accepted: Automotive fluids, batteries, household cleaners, fungicides
 Hours: Collection days: Dec 4–5, 2026, 9am–5pm (Nov 6–7 already held)
 Fees: Free
 Official source: https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling
-Last checked: 2026-11-25
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/md/baltimore/sisson-street-residential-recycling-center-hhw-days/
 
 Name: Eastern Residential Recycling Center
@@ -1125,7 +1145,7 @@ Materials accepted: E-waste: computers and cell phones (Mon–Fri; no TVs). HHW 
 Hours: Recycling, shredding & computer/cell-phone disposal: Mon–Fri 9am–3pm. HHW: first Friday of each month only, 9am–3pm (next: Fri Dec 4, 2026)
 Fees: Free
 Official source: https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste
-Last checked: 2026-11-25
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/carr-center-division-of-waste/
 
 Name: Ridge Road Transfer Station
@@ -1135,7 +1155,7 @@ Materials accepted: Passenger tires without rims (residents; up to 4 free dumps/
 Hours: Recycling: Mon–Sat 9am–3pm. Regular waste disposal: Sat 9am–3pm. HHW: first Friday of each month only, 9am–3pm (next: Fri Dec 4, 2026). Bulky/tire drop-off for residents (limits apply)
 Fees: Free for qualifying resident drop-offs; fee may apply beyond tire/dump limits
 Official source: https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste
-Last checked: 2026-11-25
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/ridge-road-transfer-station/
 
 Name: Cuyahoga County Solid Waste District HQ (electronics drop-off bins)
@@ -1437,6 +1457,46 @@ Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/westlake/household_hazardous_waste/
 Last checked: 2026-11-25
 TossMap page: https://tossmap.com/oh/cleveland/westlake-service-center-hhw/
+
+Name: Garfield Heights Service Garage (scrap tires & HHW drop-off)
+City/state: Cleveland, OH
+Address: 13600 McCracken Road, Garfield Heights, OH
+Materials accepted: Year-round: scrap tires (automotive only, 20 in. or less, no rims). Seasonal: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Hours: Scrap tires: year-round, Mon–Fri 7:30am–3pm. HHW (2026): May 4–8, May 11–15, Sep 8–11 and Sep 14–18, Mon–Fri 7:30am–3pm. All 2026 HHW windows have passed; the District has not posted 2027 dates yet
+Fees: HHW free (Cuyahoga County HHW program); tire drop-off fee not stated by source
+Official source: https://cuyahogarecycles.org/recycle-in/garfield-heights/
+Last checked: 2026-11-26
+TossMap page: https://tossmap.com/oh/cleveland/garfield-heights-service-garage-tires-hhw/
+
+Name: Strongsville Service Garage & Transfer Station (computers, tires & HHW)
+City/state: Cleveland, OH
+Address: 16099 Foltz Industrial Parkway, Strongsville, OH
+Materials accepted: Year-round: computer equipment including cell phones (no TVs); scrap tires (no rims); needles and sharps in a SHARPS container or heavy bottle marked SHARPS (Transfer Station). Seasonal: rechargeable batteries; Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Hours: Computer equipment (Service Garage loading dock): year-round, Mon–Fri 7am–2:30pm. Scrap tires (Transfer Station): year-round, Mon–Fri 7am–4:30pm, Sat–Sun 8am–2pm. HHW and rechargeable batteries (2026): Apr 28–29 and Aug 25–26, 7:30am–2:30pm. All 2026 HHW windows have passed; the District has not posted 2027 dates yet
+Fees: HHW free (Cuyahoga County HHW program); fees for computers and tires not stated by source
+Official source: https://cuyahogarecycles.org/recycle-in/strongsville/
+Last checked: 2026-11-26
+TossMap page: https://tossmap.com/oh/cleveland/strongsville-service-garage-transfer-station/
+
+Name: Cleveland Heights Service Center (computer drop-off)
+City/state: Cleveland, OH
+Address: 14200 Superior Road, Cleveland Heights, OH
+Materials accepted: Computer equipment, including cell phones. Scrap tires and household hazardous waste are not dropped off here: Cleveland Heights collects them curbside (call (216) 691-7300; HHW must be labeled, sealed and boxed; no latex paint; no tires on rims)
+Hours: Computer equipment: year-round, Mon–Fri 7am–3:30pm
+Fees: not listed
+Official source: https://cuyahogarecycles.org/recycle-in/cleveland-heights/
+Last checked: 2026-11-26
+TossMap page: https://tossmap.com/oh/cleveland/cleveland-heights-service-center-computer-drop-off/
+
+Name: University Heights Service Garage (computers, tires & HHW)
+City/state: Cleveland, OH
+Address: 2300 Warrensville Center Road, University Heights, OH
+Materials accepted: Year-round: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims). Seasonal: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Hours: Computer equipment: year-round, 8am–3pm. Scrap tires: year-round (hours not stated; call city hall). HHW (2026): Mar 7 and Oct 31, 9am–1pm; the city says events are usually held on the weekends when clocks change. Both 2026 HHW dates have passed
+Fees: HHW free (Cuyahoga County HHW program); fees for computers and tires not stated by source
+Official source: https://cuyahogarecycles.org/recycle-in/university-heights/
+Last checked: 2026-11-26
+TossMap page: https://tossmap.com/oh/cleveland/university-heights-service-garage/
 
 ### Columbus, OH
 
@@ -2121,7 +2181,7 @@ Materials accepted: Electronics: computers, laptops, monitors and TVs (including
 Hours: First Saturday of each month, 10am–2pm (next: Sat Dec 5, 2026)
 Fees: Fees apply to some items (e.g. computers/laptops with hard drives $5, LCD TV $25, CRT TV $28–$35, LCD monitor $10); many items free. Credit or debit cards only (no cash or checks)
 Official source: https://cvwma.com/cvwma-locations/henrico-2/
-Last checked: 2026-11-25
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/va/richmond/securis-first-saturday-electronics-recycling-henrico/
 
 Name: Hanover Route 301 Transfer Station
@@ -2221,8 +2281,28 @@ Materials accepted: Household hazardous waste (no fee): acids, drain cleaner, bl
 Hours: Event: Sat Mar 13, 2027, 9am–noon. Next listed date: Sat Oct 30, 2027, 9am–noon
 Fees: HHW and paper shredding free; CRT TVs $28 (27 inch or less) or $37 (over 27 inch); hard drive, phone and tablet shredding $8–$10.50 per item; other electronics $5.25–$40 per item
 Official source: https://cvwma.com/event/chesterfield-county-shred-e-cycle-and-household-hazardous-waste-recycling/
-Last checked: 2026-11-25
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/va/richmond/chesterfield-county-shred-e-cycle-hhw-event-fairgrounds/
+
+Name: Colonial Heights Recycling Center
+City/state: Richmond, VA
+Address: 2701 Conduit Road, Colonial Heights, VA 23834
+Materials accepted: Category 1 household hazardous waste: latex and oil-based paints, varnish/shellac, stains and tints, lacquer thinners, polyurethane, primers, paint reducers, Varsol, mineral spirits, turpentine, other flammable solvents, leaded and unleaded gasoline and additives, cooking oil, motor oil, oil additives, oil filters, antifreeze. Also batteries, brush, tree limbs, leaves and grass, appliances, air conditioners, metals, cardboard. Not accepted: insecticides, poisons, acids and other caustic compounds, PCB-containing appliances; electronic devices (TVs, cell phones, computers, monitors) are prohibited
+Hours: Fri, Sat & Mon 8am–5pm (closed for lunch 12–1pm)
+Fees: $10 Freon (CFC) removal fee per appliance, paid in advance at the Billing and Collections Office (201 James Avenue); other fees not stated by source
+Official source: https://www.colonialheightsva.gov/322/Recycling-Center
+Last checked: 2026-11-26
+TossMap page: https://tossmap.com/va/richmond/colonial-heights-recycling-center/
+
+Name: Hopewell Citizen's Convenience Center
+City/state: Richmond, VA
+Address: 507 Station Street, Hopewell, VA 23860
+Materials accepted: Tires without rims (up to 8 per year); residential waste; household furniture; mattresses; car seats; major appliances (washers, dryers, stoves, water heaters); refrigerators, freezers, air conditioners and dehumidifiers (CFC removal fee); brush up to 6 in. diameter, yard and garden waste, leaves and pine needles; propane grill tanks (4–40 lb); rechargeable batteries and cell phones; homeowner-performed construction and demolition debris (building permit required). Not accepted: kitchen or food waste, liquids, paint, petroleum-based products, wet-cell batteries, asbestos and other hazardous products, automobile parts, concrete and masonry, stumps and logs over 6 in.
+Hours: Tue, Wed & Fri 12:30–3:30pm; Sat 8am–4:30pm; closed on observed holidays and in inclement weather
+Fees: Tires $1 per passenger tire, $2 per light-truck tire; residential waste $3 (car), $10 (pickup/SUV or single-axle trailer), $35 (dual-axle trailer); brush and yard waste free (dual-axle trailer $10); construction debris $3–$50; $10 CFC removal per appliance; $10 extra for vehicles with raised sides
+Official source: https://www.hopewellva.gov/548/Citizens-Convenience-Center
+Last checked: 2026-11-26
+TossMap page: https://tossmap.com/va/richmond/hopewell-citizens-convenience-center/
 
 ### Virginia Beach, VA
 
