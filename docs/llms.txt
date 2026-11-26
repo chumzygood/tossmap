@@ -6,6 +6,7 @@ TossMap lists 213 drop-off sites across 54 US metro areas in 31 states. Listings
 
 A complete plain-text dump of every listing is in [llms-full.txt](https://tossmap.com/llms-full.txt).
 API for agents: https://api.tossmap.com/llms.txt — paid per call in USDC via x402; free coverage checks and 3 free searches/day.
+MCP server for agents: https://api.tossmap.com/mcp (Streamable HTTP; tools: search_facilities, get_facility, coverage).
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
