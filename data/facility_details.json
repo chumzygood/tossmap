@@ -1612,7 +1612,7 @@
   "TX|Dallas|Dallas County Home Chemical Collection Center": {
     "slug": "dallas-county-home-chemical-collection-center",
     "operator": "not stated by source",
-    "source": "http://www.dallascounty.org/departments/consolidated-services/hhw/",
+    "source": "https://www.dallascounty.org/departments/consolidated-services/hhw/",
     "source_checked": "2026-11-02",
     "listing_fingerprint": "0717bf9c10dcb60219823a1d02920e3ab78642c57c04ea3a294ba370a5a32305",
     "questions": {

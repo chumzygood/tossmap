@@ -2379,7 +2379,7 @@
     "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
     "fees": "",
     "notes": "Residents of participating cities; 214-553-1765",
-    "source": "http://www.dallascounty.org/departments/consolidated-services/hhw/",
+    "source": "https://www.dallascounty.org/departments/consolidated-services/hhw/",
     "checked": "2026-11-02",
     "slug": "dallas-county-home-chemical-collection-center",
     "questions": {

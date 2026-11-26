@@ -1714,7 +1714,7 @@ Address: 11234 Plano Rd, Dallas, TX 75243
 Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
 Hours: Tue 9am–7:30pm; Wed–Thu 8:30am–5pm; 2nd & 4th Sat 9am–3pm
 Fees: not listed
-Official source: http://www.dallascounty.org/departments/consolidated-services/hhw/
+Official source: https://www.dallascounty.org/departments/consolidated-services/hhw/
 Last checked: 2026-11-02
 TossMap page: https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/
 
