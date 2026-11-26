@@ -1,4 +1,4 @@
-import json,html,re,os,datetime
+import json,html,re,os,datetime,shutil
 from urllib.parse import quote, urlparse
 BASE="https://tossmap.com"
 D=json.load(open("data/facilities.json")); OUT="docs"
@@ -28,6 +28,7 @@ ul.grid{columns:3 200px;padding-left:18px}.note{background:#fff7e0;border-left:4
 .questions{width:100%;border-collapse:collapse;background:#fff}.questions th,.questions td{padding:12px;border:1px solid #dfe5e0;text-align:left;vertical-align:top;overflow-wrap:anywhere}.questions th{width:30%}dd{margin:0 0 12px}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #ad5700;outline-offset:3px}@media(max-width:600px){.questions,.questions tbody,.questions tr,.questions th,.questions td{display:block;width:100%}.questions thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}.questions th{padding-bottom:4px;border-bottom:0}.questions td{padding-top:4px;border-top:0;margin-bottom:8px}} .answers h2{font-size:1.15em;margin:1.15em 0 6px}.answers p{margin:0 0 12px}a,.meta,p,li,dd,h1,h2,h3,.card,.answers{overflow-wrap:anywhere}a,.meta{word-break:break-word}img,iframe,video,pre,table{max-width:100%}pre{white-space:pre-wrap;overflow-x:auto}.facts{padding-left:18px}.facts li{margin:0 0 8px}.freshness{margin:0 0 14px}"""
 open(f"{OUT}/style.css","w").write(CSS)
 GC='<meta name="google-site-verification" content="jAhRn0yYvjC37jRpBEzda-xllydn360g3kgkVonTDKA" /><script data-goatcounter="https://tossmap.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
+ICONS='<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">'
 KIT_ACTION="https://app.kit.com/forms/10171028/subscriptions"
 KIT_HOSTED="https://tossmap.kit.com/f14ed9078b"
 def signup_form():
@@ -98,7 +99,7 @@ def page(path,title,desc,body,graph=(),checked=None):
     open(p,"w").write(f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(title)}</title><meta name="description" content="{e(desc)}"><link rel="canonical" href="{BASE}{path}">
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(desc)}"><meta property="og:url" content="{BASE}{path}"><meta property="og:type" content="website"><meta property="og:site_name" content="TossMap"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="{e(title)}"><meta name="twitter:description" content="{e(desc)}">
-<link rel="stylesheet" href="/style.css">{ld}
+{ICONS}<link rel="stylesheet" href="/style.css">{ld}
 {GC}</head><body><header><a href="/"><strong>TossMap</strong></a> · where to toss hazardous waste, paint, e-waste &amp; tires · <a href="/newsletter/">Newsletter</a></header><main>{body}</main>
 <footer>{foot} · <a href="/newsletter/">Newsletter</a> · <a href="/privacy.html">Privacy</a> · <a href="/embed/">Embed widget</a> · <a href="/for-cities/">For cities</a> · <a href="/partners/">Partners</a> · <a href="{fix_mailto(path)}">Suggest a fix or leave a review</a> · <a href="mailto:toolshed@mail.grokbot.com">Support</a></footer></body></html>""")
 states={}
@@ -1040,7 +1041,7 @@ def snippet(m): return f'<iframe src="{BASE}/embed{cpath(m)}" title="Hazardous w
 for m in D:
     p=f"{OUT}/embed{cpath(m)}index.html"; os.makedirs(os.path.dirname(p),exist_ok=True)
     fs="".join(f'<div class="f"><b>{e(f["name"])}</b>{e(f["address"])}<br>Accepts: {e(f["accepts"])}<br>Hours: {e(f["hours"])}<div class="m"><a href="{e(f["source"])}" target="_blank" rel="nofollow noopener">Official source</a> · checked {f["checked"]}</div></div>' for f in m["facilities"]) or f'<p>{e(m["note"]) or "No permanent drop-off site found in official sources."}</p>'
-    open(p,"w").write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><link rel="canonical" href="{BASE}{cpath(m)}"><title>Drop-off sites in {e(m["city"])} | TossMap</title><style>{EMB_CSS}</style>{GC}</head><body><div class="w"><h2>Where to drop off hazardous waste in {e(m["city"])}, {m["st"]}</h2>{fs}<div class="by">Full list and updates at <a href="{BASE}{cpath(m)}" target="_blank">TossMap</a></div></div></body></html>')
+    open(p,"w").write(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><link rel="canonical" href="{BASE}{cpath(m)}"><title>Drop-off sites in {e(m["city"])} | TossMap</title><style>{EMB_CSS}</style>{ICONS}{GC}</head><body><div class="w"><h2>Where to drop off hazardous waste in {e(m["city"])}, {m["st"]}</h2>{fs}<div class="by">Full list and updates at <a href="{BASE}{cpath(m)}" target="_blank">TossMap</a></div></div></body></html>')
 ex=sorted(D,key=lambda x:-len(x["facilities"]))[0]
 emb_body=(crumbs([("Home","/"),("Embed","/embed/")])[0]+"<h1>Free drop-off map widget for your website</h1><p>City pages, libraries, neighborhood groups and local news sites can embed TossMap's list of official drop-off sites for any metro. It's free, needs no account, sets no cookies, and updates whenever we re-check the listings.</p>"
  f"<h2>How to add it</h2><p>Copy this snippet into your page and change the city path if you like:</p><pre style='white-space:pre-wrap;background:#fff;border:1px solid #dfe5e0;padding:10px'>{e(snippet(ex))}</pre>"
@@ -1108,3 +1109,5 @@ write_indexnow_key()
 open(f"{OUT}/sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+"".join(f"<url><loc>{BASE}{u}</loc><lastmod>{d}</lastmod></url>" for u,d in urls)+"</urlset>\n")
 print(len(urls),"pages;",len(states),"states;",n,"facilities")
 open(f"{OUT}/CNAME","w").write("tossmap.com\n"); open(f"{OUT}/.nojekyll","w").write("")
+for _name in ("favicon.ico","favicon-32.png","apple-touch-icon.png"):
+    shutil.copyfile(f"assets/{_name}", f"{OUT}/{_name}")
