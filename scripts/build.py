@@ -834,6 +834,24 @@ def city_direct_answer(m,have):
         sentence=lead+"."
     return f'<p class="lead">{e(sentence)+source_sentence(site.get("source") or "")}</p>'
 
+
+def facility_overview(f,m):
+    """Sourced overview that weaves this listing's address, hours and accepted items into the copy. No invented facts."""
+    name=f["name"]; addr=(f.get("address") or "").strip(); hours=(f.get("hours") or "").strip()
+    accepts=(f.get("accepts") or "").strip(); fees=(f.get("fees") or "").strip()
+    parts=[]
+    if addr: parts.append(f"{name} is at {addr}.")
+    else: parts.append(f"{name} is a listed drop-off site in {m['city']}, {m['st']}.")
+    if hours: parts.append(f"Hours: {hours}.")
+    if accepts:
+        a=accepts.rstrip(".")
+        if a and a[0].isupper() and not a[:2].isupper():
+            a=a[0].lower()+a[1:]
+        parts.append("It accepts "+a+".")
+    if fees: parts.append("Fees: "+fees.rstrip(".")+".")
+    parts.append("This is an independent source-backed listing, not the operator’s website.")
+    return "<p>"+e(" ".join(parts))+"</p>"
+
 def facility_page(f,m):
     fp=fpath(f,m)
     vis,bl=crumbs([("Home","/"),(m["state"],f"/{slug(m['st'])}/"),(m["city"],cpath(m)),(f["name"],fp)])
@@ -846,7 +864,7 @@ def facility_page(f,m):
         entities.append({"@type":"Question","name":label,"acceptedAnswer":{"@type":"Answer","text":text}})
     materials=" · ".join(f'<a href="/{ms}/">{e(n)}</a>' for ms,n,_ in mats(f))
     others=[o for o in m["facilities"] if o is not f]
-    body=(vis+f'<h1>{e(f["name"])}</h1>'+facility_direct_answer(f,m)+f'<p>Waste and recycling drop-off information for {e(m["city"])}, {e(m["st"])}. This is an independent source-backed listing, not the operator’s website.</p>'
+    body=(vis+f'<h1>{e(f["name"])}</h1>'+facility_direct_answer(f,m)+facility_overview(f,m)
           +(f'<p class="note">{e(f["source_notice"])}</p>' if f.get("source_notice") else "")
           +(f'<p class="note"><strong>Past event:</strong> {e(past_event_note(f))}</p>' if is_past_event(f) else "")
           +'<section class="card"><h2>Before you go</h2><dl>'

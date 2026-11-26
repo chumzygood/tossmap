@@ -233,11 +233,11 @@ TossMap page: https://tossmap.com/ca/san-jose/santa-clara-county-hhw-san-jose/
 Name: Rooney Road Recycling Center
 City/state: Denver, CO
 Address: 151 S Rooney Rd, Golden, CO 80401
-Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
+Materials accepted: Most household hazardous waste (see the operator’s Accepted Items page for the current list and the Pricing page for fees).
 Hours: Wed & Sat 8am–2pm, by appointment
 Fees: not listed
 Official source: https://www.rooneyroadrecycling.org/
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/co/denver/rooney-road-recycling-center/
 
 ## District of Columbia
@@ -667,11 +667,11 @@ TossMap page: https://tossmap.com/in/indianapolis/toxdrop-perry-township-governm
 Name: Haz Bin
 City/state: Louisville, KY
 Address: 7501 Grade Ln, Louisville, KY 40219
-Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
+Materials accepted: Household hazardous materials including asbestos floor tiles (less than 25 lbs), automotive fluids, batteries (auto, household and rechargeable), cleaners, driveway sealers, fertilizers, fire extinguishers, fluorescent and LED bulbs, Freon, furniture polishes and waxes, gasoline (including boat gas), hearing-aid and watch batteries, kerosene, lawn and garden hazardous chemicals (container must be left at the Haz Bin), mercury thermometers and thermostats, metal polishes and rust removers, mildew removers, mineral spirits/turpentine, mothballs, nail polish and removers, oil-based or lead paint, oven and drain cleaners, pesticides, herbicides, fungicides and insecticides (container must be left at the Haz Bin), propane tanks (grill and camping size), smoke detectors, solvents and degreasers, spray paint, swimming pool chemicals, vapes and e-cigarettes, varnishes and stains, and wood preservatives. Not accepted: items from businesses; containers larger than 5 gallons or 40 pounds; more than 25 lbs of asbestos; helium tanks; ammunition; expired medication; or latex paint.
 Hours: Tue–Sat 9:30am–4pm
-Fees: not listed
+Fees: Free for Louisville/Jefferson County residents
 Official source: https://louisvilleky.gov/government/public-works/services/hazardous-materials-disposal-haz-bin
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/ky/louisville/haz-bin/
 
 Name: Waste Reduction Center
@@ -847,21 +847,21 @@ TossMap page: https://tossmap.com/mi/detroit/erg-environmental-services-wayne-co
 Name: Hennepin County Drop-off – Brooklyn Park
 City/state: Minneapolis, MN
 Address: 8100 Jefferson Hwy, Brooklyn Park, MN
-Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
-Hours: Tue–Sat 9am–5pm
-Fees: not listed
+Materials accepted: Household hazardous waste and problem materials including paint, stain, varnish, solvents and driveway sealer (five-gallon pails limited to three per year); pesticides; fluorescent bulbs (limit 25 per year); aerosols; pool chemicals; mercury thermometers and thermostats; oil filters; automotive fluids; motor oil in containers of 5 gallons or less; gas, fuels and other fluids in containers of 5 gallons or less (cans are left at the facility); batteries of all types (bag household batteries or tape the terminals); needles and sharps (follow the county’s preparation guide); electronics (computer peripherals, audio and video equipment, phones and rechargeable products; TVs, monitors and laptops for a fee; limit of five of the same electronics type per year); tires for a fee (under 4 feet, no bicycle tires). Recycling and organics are also accepted under county rules. Mattresses and box springs are accepted at the Brooklyn Park Transfer Station only. Not accepted: garbage, ammunition, asbestos, business hazardous waste, carpet, concrete or asphalt, construction materials, empty gas cans, explosives, furniture, infectious waste, medicines, non-reusable textiles, remodeling debris, wood, or yard and tree waste.
+Hours: Tue–Sat 9am–5pm; closed Memorial Day, Juneteenth, Independence Day, Labor Day, Thanksgiving Day, Christmas Day, and New Year’s Day
+Fees: Tires $5 each (with or without rims, less than 4 feet in diameter, no bicycle tires; up to 16 per load and 32 per household per year); TVs, computer monitors and laptops $10 each; large appliances $15 each. Mattresses and box springs are $25 each at the Brooklyn Park Transfer Station only.
 Official source: https://www.hennepincounty.gov/services/environment/hazardous-waste-households/drop-off-household-hazardous-waste-recycling
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/mn/minneapolis/hennepin-county-drop-off-brooklyn-park/
 
 Name: Hennepin County Drop-off – Bloomington
 City/state: Minneapolis, MN
 Address: 1400 W 96th St, Bloomington, MN
-Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
-Hours: Tue–Sat 9am–5pm
-Fees: not listed
+Materials accepted: Household hazardous waste and problem materials including paint, stain, varnish, solvents and driveway sealer (five-gallon pails limited to three per year); pesticides; fluorescent bulbs (limit 25 per year); aerosols; pool chemicals; mercury thermometers and thermostats; oil filters; automotive fluids; motor oil in containers of 5 gallons or less; gas, fuels and other fluids in containers of 5 gallons or less (cans are left at the facility); batteries of all types (bag household batteries or tape the terminals); needles and sharps (follow the county’s preparation guide); electronics (computer peripherals, audio and video equipment, phones and rechargeable products; TVs, monitors and laptops for a fee; limit of five of the same electronics type per year); tires for a fee (under 4 feet, no bicycle tires). Recycling and organics are also accepted under county rules. Not accepted: garbage, ammunition, asbestos, business hazardous waste, carpet, concrete or asphalt, construction materials, empty gas cans, explosives, furniture, infectious waste, medicines, non-reusable textiles, remodeling debris, wood, or yard and tree waste. Mattresses are not accepted at this site.
+Hours: Tue–Sat 9am–5pm; closed Memorial Day, Juneteenth, Independence Day, Labor Day, Thanksgiving Day, Christmas Day, and New Year’s Day
+Fees: Tires $5 each (with or without rims, less than 4 feet in diameter, no bicycle tires; up to 16 per load and 32 per household per year); TVs, computer monitors and laptops $10 each; large appliances $15 each. Mattresses and box springs ($25 each) are accepted at the Brooklyn Park Transfer Station only, not at this Bloomington facility.
 Official source: https://www.hennepincounty.gov/services/environment/hazardous-waste-households/drop-off-household-hazardous-waste-recycling
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/mn/minneapolis/hennepin-county-drop-off-bloomington/
 
 ## Missouri
@@ -941,11 +941,11 @@ TossMap page: https://tossmap.com/nv/las-vegas/republic-services-hhw-north-las-v
 Name: Republic Services HHW – Henderson
 City/state: Las Vegas, NV
 Address: 560 Cape Horn Dr, Henderson, NV 89011
-Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
+Materials accepted: Household hazardous waste (call 702.599.5768 for the current list of accepted and unaccepted materials and rates).
 Hours: Wed–Sat 9am–1pm on scheduled dates
 Fees: not listed
 Official source: https://www.republicservices.com/municipality/southern-nevada/service-information
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/nv/las-vegas/republic-services-hhw-henderson/
 
 ## New Mexico
@@ -1075,7 +1075,7 @@ TossMap page: https://tossmap.com/nc/raleigh/north-wake-hhw-facility/
 Name: South Wake HHW Facility
 City/state: Raleigh, NC
 Address: 6150 Old Smithfield Rd, Apex, NC 27539
-Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
+Materials accepted: Batteries (non-rechargeable alkaline and household batteries; lead-acid, limit 6, including vehicle, boat and motorcycle; rechargeable lithium-ion from phones, devices, power tools, toys and 12-volt batteries — tape terminals of lithium batteries); chemicals (acids, ammonia, bases, bleach, chlorine, corrosive cleaners, degreasers, fertilizers, herbicides, pesticides, fungicides, insecticides, engine cleaners, photographic chemicals, pool and spa chemicals, poisons, solvents, weed killers); dry-chemical fire extinguishers; flammables (gasoline, fuel oil, kerosene, lighter fluid, mineral spirits, paint thinners and diesel fuel, in a pourable container no larger than 5 gallons); fluorescent bulbs and CFLs (tubes limited to 12, in a box); mercury thermometers and mercury switches from thermostats; oil-based paints, lacquers, varnishes, polishers, finishes, spray paints, stains and solvents; latex paint (10-gallon limit); propane tanks up to 20 lb.
 Hours: Mon–Sat 8am–4pm
 Fees: not listed
 Official source: https://www.wake.gov/departments-government/waste-recycling/facilities/household-hazardous-waste-facilities/south-wake-household-hazardous-waste-facility
@@ -1171,147 +1171,147 @@ TossMap page: https://tossmap.com/oh/cleveland/cuyahoga-county-solid-waste-distr
 Name: Maple Heights Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 5501 Dunham Road, Maple Heights, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 8am–3pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/maple-heights/household_hazardous_waste/
-Last checked: 2026-11-13
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/maple-heights-service-garage-hhw/
 
 Name: Warrensville Heights Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 19700 Miles Avenue, Warrensville Heights, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). Latex paint accepted
+Materials accepted: seasonal scrap tires (April–September; automotive only, 20 in. or less, no rims); household hazardous waste, including latex paint, oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners.
 Hours: Year-round, Mon–Fri 8am–3pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/warrensville-heights/household_hazardous_waste/
-Last checked: 2026-11-13
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/warrensville-heights-service-garage-hhw/
 
 Name: Lakewood Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 12920 Berea Road, Lakewood, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (20 in. or less, no rims); household lithium batteries; household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 8am–2pm; Sat 8am–12pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/lakewood/household_hazardous_waste/
-Last checked: 2026-11-14
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/lakewood-service-garage-hhw/
 
 Name: South Euclid Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 4224 Monticello Boulevard, South Euclid, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs; April 1–30 and August 3–28); scrap tires (August 24–September 18, 2026; automotive only, 20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 8am–3pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/south-euclid/household_hazardous_waste/
-Last checked: 2026-11-14
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/south-euclid-service-garage-hhw/
 
 Name: Beachwood Public Service Center (HHW drop-off)
 City/state: Cleveland, OH
 Address: 23355 Mercantile Road, Beachwood, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (20 in. or less, no rims); rechargeable batteries; household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 7:30am–3:30pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/beachwood/household_hazardous_waste/
-Last checked: 2026-11-15
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/beachwood-public-service-center-hhw/
 
 Name: Bedford Heights Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 25401 Solon Road, Bedford Heights, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 8am–3pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/bedford-heights/household_hazardous_waste/
-Last checked: 2026-11-15
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/bedford-heights-service-garage-hhw/
 
 Name: Brooklyn Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 9400 Memphis Avenue, Brooklyn, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); rechargeable batteries; household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 7am–2:30pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/brooklyn/household_hazardous_waste/
-Last checked: 2026-11-15
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/brooklyn-service-garage-hhw/
 
 Name: Lyndhurst Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 5301 Mayfield Road, Lyndhurst, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 7am–3pm; seasonal Sat–Sun 11:30am–3:30pm (April–November)
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/lyndhurst/household_hazardous_waste/
-Last checked: 2026-11-15
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/lyndhurst-service-garage-hhw/
 
 Name: Solon Service Department (HHW drop-off)
 City/state: Cleveland, OH
 Address: 6600 Cochran Road, Solon, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 8–11am and 12–3pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/solon/household_hazardous_waste/
-Last checked: 2026-11-15
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/solon-service-department-hhw/
 
 Name: Rocky River Transfer Station (HHW drop-off)
 City/state: Cleveland, OH
 Address: 22401 Lake Road, Rocky River, OH
-Materials accepted: Household hazardous waste (oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners)
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); rechargeable batteries; household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners).
 Hours: Year-round, Mon–Fri 7am–3pm; Sat 8am–12pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/rocky-river/household_hazardous_waste/
-Last checked: 2026-11-16
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/rocky-river-transfer-station-hhw/
 
 Name: Broadview Heights Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 9543 Broadview Road, Bldg. 11, Broadview Heights, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); rechargeable batteries; household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 7am–3pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/broadview-heights/household_hazardous_waste/
-Last checked: 2026-11-16
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/broadview-heights-service-garage-hhw/
 
 Name: Olmsted Falls Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 9234 Columbia Road, Olmsted Falls, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 8am–4pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/olmsted-falls/household_hazardous_waste/
-Last checked: 2026-11-16
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/olmsted-falls-service-garage-hhw/
 
 Name: North Royalton Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 11545 Royalton Road, North Royalton, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round: 1st and 3rd Saturdays (May–September), 1st Saturday only (October–April), 8am–3pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/north-royalton/household_hazardous_waste/
-Last checked: 2026-11-16
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/north-royalton-service-garage-hhw/
 
 Name: Moreland Hills Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 4350 SOM Center Road, Moreland Hills, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); rechargeable batteries; household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 7am–3pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/moreland-hills/household_hazardous_waste/
-Last checked: 2026-11-16
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/moreland-hills-service-garage-hhw/
 
 Name: Parma Service Garage (HHW drop-off day)
 City/state: Cleveland, OH
 Address: 5680 Chevrolet Boulevard, Parma, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Event: Sat Nov 21, 2026, 8am–noon
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/parma/household_hazardous_waste/
@@ -1321,141 +1321,141 @@ TossMap page: https://tossmap.com/oh/cleveland/parma-service-garage-hhw-drop-off
 Name: Brecksville Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 9023 Brecksville Road, Brecksville, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners).
 Hours: Year-round, Saturdays 8am–12pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/brecksville/household_hazardous_waste/
-Last checked: 2026-11-17
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/brecksville-service-garage-hhw/
 
 Name: Bentleyville Service Department (HHW drop-off)
 City/state: Cleveland, OH
 Address: 35075 Cannon Road, Bentleyville, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); rechargeable batteries; household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 7am–3pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/bentleyville/household_hazardous_waste/
-Last checked: 2026-11-17
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/bentleyville-service-department-hhw/
 
 Name: Hunting Valley Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 38251 Fairmount Boulevard, Hunting Valley, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 8am–2pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/hunting-valley/household_hazardous_waste/
-Last checked: 2026-11-17
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/hunting-valley-service-garage-hhw/
 
 Name: Pepper Pike Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 28000 Shaker Boulevard, Pepper Pike, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Last Friday of every month, 7am–2pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/pepper-pike/household_hazardous_waste/
-Last checked: 2026-11-17
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/pepper-pike-service-garage-hhw/
 
 Name: Olmsted Township Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 7924 Fitch Road, Olmsted Township, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, first Saturday of the month (hours not stated; call ahead)
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/olmsted-township/household_hazardous_waste/
-Last checked: 2026-11-17
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/olmsted-township-service-garage-hhw/
 
 Name: Richmond Heights Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 26260 Chardonview Road, Richmond Heights, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (every Saturday in August; automotive only, 20 in. or less, no rims); household hazardous waste every Saturday in January and July (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Every Saturday in January and July, 9–11am
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/richmond-heights/household_hazardous_waste/
-Last checked: 2026-11-17
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/richmond-heights-service-garage-hhw/
 
 Name: Linndale Village Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 4016 W. 119 Street, Linndale, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); every Monday: household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, every Monday (hours not stated; call ahead)
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/linndale/household_hazardous_waste/
-Last checked: 2026-11-18
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/linndale-village-service-garage-hhw/
 
 Name: Bratenahl Village Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 57 Garfield Lane, Bratenahl, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round, Mon–Fri 7am–3pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/bratenahl-village/household_hazardous_waste/
-Last checked: 2026-11-19
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/bratenahl-village-service-garage-hhw/
 
 Name: Orange Village Service Department (HHW drop-off)
 City/state: Cleveland, OH
 Address: 4680 Lander Road, Orange Village, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); rechargeable batteries; household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: First Friday of every month, 7am–3pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/orange-village/household_hazardous_waste/
-Last checked: 2026-11-19
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/orange-village-service-department-hhw/
 
 Name: Brook Park Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 19065 Holland Road, Brook Park, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); rechargeable batteries; household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Year-round. April–November: Mon–Fri 8am–7pm and Sat 9am–1pm. November–April: Saturdays only, 9am–1pm
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/brookpark/household_hazardous_waste/
-Last checked: 2026-11-23
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/brook-park-service-garage-hhw/
 
 Name: Bay Village Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 31300 Naigle Road, Bay Village, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint. Bay Village also does not take ammunition, medical waste or smoke detectors
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint, ammunition, medical waste, or smoke detectors.
 Hours: Seasonal: last Friday of each month, March–October, 7:30am–3pm; 2026 Saturday drop-offs Apr 25 and Sep 26, 8am–noon. No drop-off dates in January, February, November or December
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/bay-village/household_hazardous_waste/
-Last checked: 2026-11-24
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/bay-village-service-garage-hhw/
 
 Name: Euclid Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 25200 Lakeland Boulevard, Euclid, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Seasonal (2026): Mar 8–13, Jun 7–12 and Sep 13–18, 8am–3pm. All 2026 windows have passed; the District has not posted 2027 dates yet
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/euclid/household_hazardous_waste/
-Last checked: 2026-11-25
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/euclid-service-garage-hhw/
 
 Name: North Olmsted Service Garage (HHW drop-off)
 City/state: Cleveland, OH
 Address: 5200 Dover Center Road, North Olmsted, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Seasonal (2026): Apr 20–25, Jul 20–25 and Oct 19–24; Mon–Fri 7am–3pm, Sat 9am–noon. All 2026 windows have passed; the District has not posted 2027 dates yet
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/north-olmsted/household_hazardous_waste/
-Last checked: 2026-11-25
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/north-olmsted-service-garage-hhw/
 
 Name: Westlake Service Center (HHW drop-off)
 City/state: Cleveland, OH
 Address: 741 Bassett Road, Westlake, OH
-Materials accepted: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Materials accepted: computer equipment including cell phones (no TVs); scrap tires (20 in. or less, no rims); household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners); no latex paint.
 Hours: Seasonal (2026): May 11–16 and Sep 14–19; Mon–Fri 8am–6pm, Sat 7:30am–noon. All 2026 windows have passed; the District has not posted 2027 dates yet
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/westlake/household_hazardous_waste/
-Last checked: 2026-11-25
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/westlake-service-center-hhw/
 
 Name: Garfield Heights Service Garage (scrap tires & HHW drop-off)
@@ -1653,11 +1653,11 @@ TossMap page: https://tossmap.com/pa/pittsburgh/noble-environmental-hhw-electron
 Name: Shelby County HHW Facility
 City/state: Memphis, TN
 Address: 6305 Haley Rd, Memphis, TN 38134
-Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
-Hours: Tue, Thu, Sat 8am–1pm
+Materials accepted: Household hazardous waste from residential homes, including oil-based paint. Latex paint is not accepted (dry it and place it in regular trash). Computer screens, monitors and keyboards are accepted. Televisions and scrap metals are not accepted.
+Hours: Tue, Thu, Sat 8am–1pm; 2026 holiday closings: Jan. 1, July 4, Thanksgiving Day (Nov. 26), and Christmas (listed on the official 2026 schedule as Thursday, Dec. 24)
 Fees: not listed
 Official source: https://www.shelbycountytn.gov/439/Household-Hazardous-Waste
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/tn/memphis/shelby-county-hhw-facility/
 
 ### Nashville, TN
@@ -2323,21 +2323,21 @@ TossMap page: https://tossmap.com/va/virginia-beach/landfill-resource-recovery-c
 Name: North Seattle HHW Facility
 City/state: Seattle, WA
 Address: 12550 Stone Ave N, Seattle, WA 98133
-Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
-Hours: Sun–Tue 9am–5pm
+Materials accepted: Adhesives and caulks, antifreeze, automotive products, batteries (lead-acid, alkaline, button, rechargeable), fluorescent lights, gasoline, household cleaners, lawn and garden products, marine flares, mercury products, motor oil, oil-based paints and stains, paint thinner and other solvents, pesticides, pool and spa chemicals, and propane and butane tanks (up to 8 gallons, 5 items max). Not accepted: appliances, asbestos-containing materials, electronics, TVs and computers, empty containers, electric vehicle batteries, explosives, medical sharps, medicines, smoke detectors, Styrofoam, tires, or latex paint (King County directs latex paint to PaintCare drop-off sites).
+Hours: Sun–Tue 9am–5pm; closed July 4, Thanksgiving Day, Christmas Day, and New Year’s Day
 Fees: Free
 Official source: https://kingcounty.gov/en/dept/dnrp/waste-services/hazardous-waste-program/household/disposal-facilities
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/wa/seattle/north-seattle-hhw-facility/
 
 Name: South Seattle HHW Facility
 City/state: Seattle, WA
 Address: 8100 2nd Ave S, Seattle, WA 98108
-Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
-Hours: Thu–Sat 9am–5pm
+Materials accepted: Adhesives and caulks, antifreeze, automotive products, batteries (lead-acid, alkaline, button, rechargeable), fluorescent lights, gasoline, household cleaners, lawn and garden products, marine flares, mercury products, motor oil, oil-based paints and stains, paint thinner and other solvents, pesticides, pool and spa chemicals, and propane and butane tanks (up to 8 gallons, 5 items max). Not accepted: appliances, asbestos-containing materials, electronics, TVs and computers, empty containers, electric vehicle batteries, explosives, medical sharps, medicines, smoke detectors, Styrofoam, tires, or latex paint (King County directs latex paint to PaintCare drop-off sites).
+Hours: Thu–Sat 9am–5pm; closed July 4, Thanksgiving Day, Christmas Day, and New Year’s Day
 Fees: Free
 Official source: https://kingcounty.gov/en/dept/dnrp/waste-services/hazardous-waste-program/household/disposal-facilities
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/wa/seattle/south-seattle-hhw-facility/
 
 Name: North Transfer Station (Seattle Public Utilities)
@@ -2367,19 +2367,19 @@ TossMap page: https://tossmap.com/wa/seattle/south-transfer-station-seattle-publ
 Name: MMSD South Drop Off Center
 City/state: Milwaukee, WI
 Address: 3879 W Lincoln Ave, Milwaukee, WI 53215
-Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
-Hours: Thu–Sat 7am–3pm
+Materials accepted: Household hazardous waste from Milwaukee County homes and apartments, including automotive fluids (antifreeze, brake fluid, gasoline, oil and oil filters, transmission fluid and related products); latex paint (limit 20 gallons per visit) and non-latex paint (no limit); paint thinner, solvents, adhesives, driveway sealer and varnish; household cleaners, pesticides, pool chemicals, fertilizers and mercury thermometers and thermostats; button, lithium-ion, rechargeable and reusable batteries (car batteries are not accepted); fluorescent tubes (limit 20 per visit), CFLs, LEDs and holiday lights; and 1-lb and 20-lb propane tanks at no additional charge. Not accepted: ammunition, compressed gas cylinders, car batteries, clothes dryers, computers, containers larger than 15 gallons, explosives, fire extinguishers, fireworks, helium tanks, marine flares, medical waste, microwaves, oxygen tanks, prescription drugs, radioactive wastes, refrigerators, sharps/needles, smoke detectors, stereos, televisions, or tires of any type. Asbestos is accepted only at the Menomonee Falls collection center (limit two contractor-sized bags, triple bagged), not at this site.
+Hours: Thu–Sat 7am–3pm; 2026 closed days: Jan. 1, Apr. 3, Jun. 19, July 4, Nov. 26, Nov. 27, Dec. 24, Dec. 25, and Jan. 1, 2027
 Fees: not listed
 Official source: https://www.mmsd.com/what-you-can-do/home-haz-mat-collection
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/wi/milwaukee/mmsd-south-drop-off-center/
 
 Name: MMSD 13th Street Drop Off
 City/state: Milwaukee, WI
 Address: 6060 S 13th St, Milwaukee, WI 53221
-Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
-Hours: Tue 11am–6pm; Sat 8am–2pm
+Materials accepted: Household hazardous waste from Milwaukee County homes and apartments, including automotive fluids (antifreeze, brake fluid, gasoline, oil and oil filters, transmission fluid and related products); latex paint (limit 20 gallons per visit) and non-latex paint (no limit); paint thinner, solvents, adhesives, driveway sealer and varnish; household cleaners, pesticides, pool chemicals, fertilizers and mercury thermometers and thermostats; button, lithium-ion, rechargeable and reusable batteries (car batteries are not accepted); fluorescent tubes (limit 20 per visit), CFLs, LEDs and holiday lights; and 1-lb and 20-lb propane tanks at no additional charge. Not accepted: ammunition, compressed gas cylinders, car batteries, clothes dryers, computers, containers larger than 15 gallons, explosives, fire extinguishers, fireworks, helium tanks, marine flares, medical waste, microwaves, oxygen tanks, prescription drugs, radioactive wastes, refrigerators, sharps/needles, smoke detectors, stereos, televisions, or tires of any type. Asbestos is accepted only at the Menomonee Falls collection center (limit two contractor-sized bags, triple bagged), not at this site.
+Hours: Tue 11am–6pm; Sat 8am–2pm; 2026 closed days: May 23, July 4, Sept. 5, Nov. 28, and Dec. 26
 Fees: not listed
 Official source: https://www.mmsd.com/what-you-can-do/home-haz-mat-collection
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/wi/milwaukee/mmsd-13th-street-drop-off/

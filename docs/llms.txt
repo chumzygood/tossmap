@@ -10,12 +10,12 @@ MCP server for agents: https://api.tossmap.com/mcp (Streamable HTTP; tools: sear
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
-- [Paint](https://tossmap.com/paint/): 145 official listings in 50 metro areas
-- [Electronics (e-waste)](https://tossmap.com/e-waste/): 120 official listings in 30 metro areas
-- [Tires](https://tossmap.com/tires/): 110 official listings in 26 metro areas
-- [Batteries](https://tossmap.com/batteries/): 142 official listings in 51 metro areas
-- [Motor oil](https://tossmap.com/motor-oil/): 101 official listings in 26 metro areas
-- [Household chemicals](https://tossmap.com/household-chemicals/): 134 official listings in 48 metro areas
+- [Paint](https://tossmap.com/paint/): 143 official listings in 49 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 134 official listings in 32 metro areas
+- [Tires](https://tossmap.com/tires/): 124 official listings in 27 metro areas
+- [Batteries](https://tossmap.com/batteries/): 149 official listings in 50 metro areas
+- [Motor oil](https://tossmap.com/motor-oil/): 107 official listings in 29 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 132 official listings in 47 metro areas
 
 ## Cities
 - [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
