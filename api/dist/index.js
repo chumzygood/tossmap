@@ -3279,10 +3279,10 @@ function isValidJWT(token, algorithm = null) {
     const tokensParts = token.split(".");
     if (tokensParts.length !== 3)
       return false;
-    const [header2] = tokensParts;
-    if (!header2)
+    const [header] = tokensParts;
+    if (!header)
       return false;
-    const parsedHeader = JSON.parse(atob(header2));
+    const parsedHeader = JSON.parse(atob(header));
     if ("typ" in parsedHeader && parsedHeader?.typ !== "JWT")
       return false;
     if (!parsedHeader.alg)
@@ -20694,10 +20694,10 @@ function isAbortOrTimeoutError(error62) {
 __name(isAbortOrTimeoutError, "isAbortOrTimeoutError");
 var EXTENSION_RESPONSE_LOG_FIELD_ALLOWLIST = ["status", "rejectedReason", "reason", "code"];
 function extractExtensionResponsesHeader(response) {
-  const header2 = response.headers.get("EXTENSION-RESPONSES");
-  if (!header2) return void 0;
+  const header = response.headers.get("EXTENSION-RESPONSES");
+  if (!header) return void 0;
   try {
-    const decoded = JSON.parse(safeBase64Decode(header2));
+    const decoded = JSON.parse(safeBase64Decode(header));
     if (!decoded || typeof decoded !== "object" || Array.isArray(decoded)) {
       return void 0;
     }
@@ -21476,17 +21476,34 @@ function search(p, facilities, metros, zips) {
 __name(search, "search");
 
 // src/openapi.ts
-var location = ["zip", "lat", "lng", "city", "state"].map((name) => ({ name, in: "query", required: false, schema: { type: ["lat", "lng"].includes(name) ? "number" : "string" }, description: "Use ZIP, lat and lng, or a covered city and state." }));
-var searchParameters = [...location, { name: "radius_mi", in: "query", schema: { type: "number", exclusiveMinimum: 0, maximum: 100, default: 25 } }, { name: "limit", in: "query", schema: { type: "integer", minimum: 1, maximum: 10, default: 10 } }, { name: "material", in: "query", description: "Hyphens may replace underscores", schema: { type: "string", enum: ["paint", "tires", "e_waste", "batteries", "motor_oil", "household_chemicals"] } }, ...["businesses_accepted", "fee_charged", "residents_only"].map((name) => ({ name, in: "query", schema: { type: "string", enum: ["yes", "no"] } }))];
-var header = { "PAYMENT-REQUIRED": { description: "Base64-encoded x402 v2 payment requirements", schema: { type: "string" } } };
-var responses = /* @__PURE__ */ __name((description, paid = true) => ({ "200": { description: "JSON response. Confirm with the operator before driving; a listing does not guarantee acceptance.", headers: { "PAYMENT-RESPONSE": { description: "Base64-encoded x402 settlement receipt for paid requests", schema: { type: "string" } } } }, "400": { description: "Invalid request" }, ...paid ? { "402": { description, headers: header } } : {}, "404": { description: "Facility or endpoint not found" }, "409": { description: "Signature already used or settlement outcome uncertain" }, "429": { description: "Rate limit exceeded; see Retry-After" }, "502": { description: "Facilitator rejected settlement; inspect reason" }, "503": { description: "Payment configuration or facilitator unavailable" } }), "responses");
-var openapi = { openapi: "3.1.0", info: { title: "TossMap API", version: "1.0.0", description: "Coverage is free. Three searches with results per IPv4 address or IPv6 /64 prefix per UTC day and all empty searches are free. Other paid calls use x402 v2 exact USDC." }, servers: [{ url: "https://api.tossmap.com" }], paths: {
-  "/v1/meta": { get: { summary: "Dataset metadata", responses: responses("Free", false) } },
-  "/v1/metros": { get: { summary: "Covered metros", responses: responses("Free", false) } },
-  "/v1/coverage": { get: { summary: "Nearest covered metro", parameters: location, responses: responses("Free", false) } },
-  "/v1/search": { get: { summary: "Search facilities", description: "Requires a location and a material or filter. Zero results are always free; after three searches with results per IPv4 address or IPv6 /64 prefix per UTC day, costs $0.01 USDC via x402 v2.", parameters: searchParameters, "x-payment": { scheme: "exact", currency: "USDC", price: "$0.01", condition: "after three free searches with results per IPv4 address or IPv6 /64 prefix per UTC day" }, responses: responses("$0.01 USDC payment required after free allowance") } },
-  "/v1/facilities/{id}": { get: { summary: "Facility detail", description: "$0.005 USDC via x402 v2.", "x-payment": { scheme: "exact", currency: "USDC", price: "$0.005" }, parameters: [{ name: "id", in: "path", required: true, schema: { type: "string" } }], responses: responses("$0.005 USDC payment required") } },
-  "/v1/snapshot": { get: { summary: "Full dataset", description: "$5 USDC via x402 v2. @x402/core 2.23+ client libraries default to a $1 spend limit; raise your client spend limit to at least $5 to buy the snapshot.", "x-payment": { scheme: "exact", currency: "USDC", price: "$5.00" }, responses: responses("$5 USDC payment required. @x402/core 2.23+ clients default to a $1 spend limit; raise the client spend limit to at least $5.") } }
+var location = [
+  { name: "zip", in: "query", schema: { type: "string", pattern: "^[0-9]{5}$", example: "10001" } },
+  { name: "lat", in: "query", schema: { type: "number", minimum: -90, maximum: 90 } },
+  { name: "lng", in: "query", schema: { type: "number", minimum: -180, maximum: 180 } },
+  { name: "city", in: "query", schema: { type: "string" } },
+  { name: "state", in: "query", schema: { type: "string" } }
+].map((p) => ({ ...p, required: false, description: "Use ZIP, lat and lng, or a covered city and state." }));
+var searchParameters = [
+  ...location,
+  { name: "radius_mi", in: "query", schema: { type: "number", exclusiveMinimum: 0, maximum: 100, default: 25 } },
+  { name: "limit", in: "query", schema: { type: "integer", minimum: 1, maximum: 10, default: 10 } },
+  { name: "material", in: "query", description: "Hyphens may replace underscores", schema: { type: "string", enum: ["paint", "tires", "e_waste", "batteries", "motor_oil", "household_chemicals", "e-waste", "motor-oil", "household-chemicals"], example: "paint" } },
+  ...["businesses_accepted", "fee_charged", "residents_only"].map((name) => ({ name, in: "query", schema: { type: "string", enum: ["yes", "no"] } }))
+];
+var freeResponses = { "200": { description: "Successful response" }, "400": { description: "Invalid request" }, "429": { description: "Rate limit exceeded; see Retry-After" } };
+var paidResponses = /* @__PURE__ */ __name((description) => ({ ...freeResponses, "200": { description: "JSON response. Confirm with the operator before driving; a listing does not guarantee acceptance.", headers: { "PAYMENT-RESPONSE": { description: "Base64-encoded x402 settlement receipt for paid requests", schema: { type: "string" } } } }, "402": { description, headers: { "PAYMENT-REQUIRED": { description: "Base64-encoded x402 v2 payment requirements", schema: { type: "string" } } } }, "404": { description: "Facility not found" }, "409": { description: "Signature already used or settlement outcome uncertain" }, "502": { description: "Facilitator rejected settlement; inspect reason" }, "503": { description: "Payment configuration or facilitator unavailable" } }), "paidResponses");
+var payment = /* @__PURE__ */ __name((amount) => ({ protocols: [{ x402: {} }], price: { mode: "fixed", currency: "USD", amount } }), "payment");
+var openapi = { openapi: "3.1.0", info: { title: "TossMap API", version: "1.0.0", description: "Coverage is free. Three searches with results per IPv4 address or IPv6 /64 prefix per UTC day and all empty searches are free. Other paid calls use x402 v2 exact USDC.", "x-guidance": "Check free coverage first, then search. Search costs $0.01 after three free result-bearing searches per day; empty searches are free. Facility details cost $0.005 and snapshots $5.00. Confirm with the operator before driving; a listing does not guarantee acceptance.", contact: { url: "https://tossmap.com" } }, servers: [{ url: "https://api.tossmap.com" }], paths: {
+  "/": { get: { operationId: "getGuide", summary: "API guide", security: [], responses: freeResponses } },
+  "/llms.txt": { get: { operationId: "getAgentGuide", summary: "Agent guide", security: [], responses: freeResponses } },
+  "/openapi.json": { get: { operationId: "getOpenApi", summary: "OpenAPI specification", security: [], responses: freeResponses } },
+  "/.well-known/x402": { get: { operationId: "getPaymentDiscovery", summary: "Payment discovery", security: [], responses: freeResponses } },
+  "/v1/meta": { get: { operationId: "getMetadata", summary: "Dataset metadata", security: [], responses: freeResponses } },
+  "/v1/metros": { get: { operationId: "listMetros", summary: "Covered metros", security: [], responses: freeResponses } },
+  "/v1/coverage": { get: { operationId: "getCoverage", summary: "Nearest covered metro", security: [], parameters: location, responses: freeResponses } },
+  "/v1/search": { get: { operationId: "searchFacilities", summary: "Search facilities", description: "Requires a location and a material or filter. The first 3 searches per day with results and all empty searches are free; later searches with results cost $0.01 USDC via x402 v2 per IPv4 address or IPv6 /64 prefix per UTC day.", parameters: searchParameters, "x-payment-info": payment("0.01"), responses: paidResponses("$0.01 USDC payment required after free allowance") } },
+  "/v1/facilities/{id}": { get: { operationId: "getFacility", summary: "Facility detail", description: "$0.005 USDC via x402 v2.", parameters: [{ name: "id", in: "path", required: true, schema: { type: "string", example: "dsny-special-waste-drop-off-bronx" } }], "x-payment-info": payment("0.005"), responses: paidResponses("$0.005 USDC payment required") } },
+  "/v1/snapshot": { get: { operationId: "getSnapshot", summary: "Full dataset", description: "$5 USDC via x402 v2. @x402/core 2.23+ client libraries default to a $1 spend limit; raise your client spend limit to at least $5 to buy the snapshot.", "x-payment-info": payment("5.00"), responses: paidResponses("$5 USDC payment required. Raise the client spend limit to at least $5.") } }
 } };
 
 // src/payment.ts
@@ -21647,7 +21664,7 @@ async function handle(req, env, ip, info) {
   if (req.method !== "GET") return json2({ error: "Method not allowed" }, 405);
   if (path === "/" || path === "/llms.txt") return new Response(docs(network, asset, payTo, facilitator.url), { headers: { "content-type": "text/markdown; charset=utf-8" } });
   if (path === "/openapi.json") return json2(openapi);
-  if (path === "/.well-known/x402") return json2({ x402Version: 2, network, asset, payTo: payTo || null, facilitator: facilitator.url, resources: [{ path: "/v1/search", price: "$0.01", condition: "results after three free searches per IPv4 address or IPv6 /64 prefix per UTC day" }, { path: "/v1/facilities/{id}", price: "$0.005" }, { path: "/v1/snapshot", price: "$5.00" }], disclaimer });
+  if (path === "/.well-known/x402") return json2({ version: 1, x402Version: 2, network, asset, payTo: payTo || null, facilitator: facilitator.url, resources: ["https://api.tossmap.com/v1/search?zip=10001&material=paint", "https://api.tossmap.com/v1/facilities/dsny-special-waste-drop-off-bronx", "https://api.tossmap.com/v1/snapshot"], paidResources: [{ path: "/v1/search", price: "$0.01", condition: "results after three free searches per IPv4 address or IPv6 /64 prefix per UTC day" }, { path: "/v1/facilities/{id}", price: "$0.005" }, { path: "/v1/snapshot", price: "$5.00" }], disclaimer });
   const dataset = { ...version_default, facilities_total: fs.length, geocoding_attribution: "US Census Bureau and \xA9 OpenStreetMap contributors (Nominatim)." };
   if (path === "/v1/meta") return json2({ dataset, metros: ms.length, prices: rates, network, asset, disclaimer });
   if (path === "/v1/metros") return json2({ dataset, metros: ms.map((m) => ({ ...m, facilities: fs.filter((f) => f.metro === m.id).length })), disclaimer });
@@ -21700,10 +21717,10 @@ async function handle(req, env, ip, info) {
   if (!signature) {
     if (!(await env.CHALLENGE_LIMIT.limit({ key: ip })).success) return json2({ error: "Too many payment challenges" }, 429, { "Retry-After": "60" });
     info.kind = "402";
-    const extensions = declareDiscoveryExtension({ input: path === "/v1/search" ? { zip: "10001", material: "paint" } : {}, inputSchema: { type: "object", description: "Location and material or filter for searches", properties: { zip: { type: "string" }, lat: { type: "number" }, lng: { type: "number" }, city: { type: "string" }, state: { type: "string" }, material: { type: "string" }, radius_mi: { type: "number" } } }, output: { example: { disclaimer }, schema: { type: "object", description: resource.description, properties: { disclaimer: { type: "string" } } } } });
+    const extensions = declareDiscoveryExtension({ input: path === "/v1/search" ? { zip: "10001", material: "paint" } : {}, inputSchema: path === "/v1/search" ? { type: "object", description: "Use a location and a material or filter", properties: Object.fromEntries(searchParameters.map((p) => [p.name, p.schema])) } : { type: "object", properties: {} }, ...path.startsWith("/v1/facilities/") ? { pathParams: { id: decodeURIComponent(path.slice("/v1/facilities/".length)) }, pathParamsSchema: { type: "object", properties: { id: { type: "string", description: "Facility ID in the URL path" } }, required: ["id"] } } : {}, output: { example: { disclaimer }, schema: { type: "object", description: resource.description, properties: { disclaimer: { type: "string" } } } } });
     extensions.bazaar.info.input.method = "GET";
     const required2 = { x402Version: 2, resource, accepts: [requirements], extensions };
-    return json2({ error: "Payment required", description: resource.description, price: rate.price, currency: "USDC", matches: count, how_to_pay: path === "/v1/snapshot" ? "Use an x402 v2 client; retry with PAYMENT-SIGNATURE. @x402/core 2.23+ clients default to a $1 spend limit; raise your client spend limit to at least $5 for this snapshot." : "Use an x402 v2 client; retry with PAYMENT-SIGNATURE.", disclaimer }, 402, { "PAYMENT-REQUIRED": encodePaymentRequiredHeader(required2), "Cache-Control": "no-store", "X-Free-Searches-Remaining": "0" });
+    return json2({ ...required2, error: "Payment required", description: resource.description, price: rate.price, currency: "USDC", matches: count, how_to_pay: path === "/v1/snapshot" ? "Use an x402 v2 client; retry with PAYMENT-SIGNATURE. @x402/core 2.23+ clients default to a $1 spend limit; raise your client spend limit to at least $5 for this snapshot." : "Use an x402 v2 client; retry with PAYMENT-SIGNATURE.", disclaimer }, 402, { "PAYMENT-REQUIRED": encodePaymentRequiredHeader(required2), "Cache-Control": "no-store", "X-Free-Searches-Remaining": "0" });
   }
   const ready = JSON.stringify(result);
   const state = await call(env, "signature:" + await sha(signature), { action: "payment", signature, requirements, resource: url2.toString(), facilitatorUrl: facilitator.url });
