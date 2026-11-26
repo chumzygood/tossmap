@@ -21496,9 +21496,11 @@ var domains = {
 };
 var DEFAULT_FACILITATOR = "https://facilitator.payai.network";
 var TESTNET_FACILITATOR = "https://x402.org/facilitator";
+var MOGAMI_FACILITATOR = "https://v2.facilitator.mogami.tech";
+var DEXTER_FACILITATOR = "https://x402.dexter.cash";
 function facilitatorConfig(value, network) {
-  const url2 = value || DEFAULT_FACILITATOR;
-  if (url2 !== DEFAULT_FACILITATOR && url2 !== TESTNET_FACILITATOR) return { url: url2, error: "Payments unavailable: FACILITATOR_URL is not allowed" };
+  const url2 = (value || DEFAULT_FACILITATOR).replace(/\/$/, "");
+  if (![DEFAULT_FACILITATOR, TESTNET_FACILITATOR, MOGAMI_FACILITATOR, DEXTER_FACILITATOR].includes(url2)) return { url: url2, error: "Payments unavailable: FACILITATOR_URL is not allowed" };
   if (url2 === TESTNET_FACILITATOR && network === "eip155:8453") return { url: url2, error: "Payments unavailable: x402.org facilitator is testnet-only" };
   return { url: url2 };
 }

@@ -14,8 +14,9 @@ it('reports configuration errors on paid routes while leaving free documentation
  expect((await call('https://evil.test','eip155:84532','/v1/meta')).response.status).toBe(200);
 });
 it('exposes and forwards the selected facilitator',async()=>{
- const url='https://x402.org/facilitator';
+ for(const url of ['https://facilitator.payai.network','https://x402.org/facilitator','https://v2.facilitator.mogami.tech','https://x402.dexter.cash']) {
  expect((await (await call(url,'eip155:84532','/.well-known/x402')).response.json() as any).facilitator).toBe(url);
  expect(await (await call(url,'eip155:84532','/llms.txt')).response.text()).toContain('facilitator: '+url);
  const {response,fetchState}=await call(url,'eip155:84532','/v1/snapshot',true);expect(response.status).toBe(200);expect(JSON.parse(fetchState.mock.calls[0][1].body as string).facilitatorUrl).toBe(url);
+ }
 });
