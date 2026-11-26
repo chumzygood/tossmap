@@ -155,9 +155,9 @@ City/state: Sacramento, CA
 Address: 4450 Roseville Rd, North Highlands, CA
 Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
 Hours: Tue, Thu, Fri, Sat 8:30am–4pm
-Fees: not listed
-Official source: https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/north-area-recovery-station/nars-hhw-drop-off.html
-Last checked: 2026-11-25
+Fees: Free for residents, up to 15 gallons or 125 pounds of HHW per month; Very Small Quantity Generator businesses by appointment for a fee
+Official source: https://wmr.saccounty.gov/us/en/county-facilities/north-area-recovery-station/nars-hhw-drop-off.html
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/ca/sacramento/north-area-recovery-station-hhw-drop-off/
 
 Name: Kiefer Landfill (tires, e-waste & ABOP drop-off)
@@ -166,8 +166,8 @@ Address: 12701 Kiefer Blvd., Sloughhouse, CA 95683
 Materials accepted: Free residential drop-off: passenger/light-truck tires (rims OK, 4 per day free), e-waste (TVs, CRTs, monitors, computers, laptops, tablets, phones, printers, gaming consoles, stereos), large appliances (2 per day free), small corded appliances and power tools, mattresses and box springs, clean metal, clean inerts. ABOP & Special Waste facility (residents): antifreeze, household and car batteries, motor oil and filters, cooking oil, latex and oil-based paint, aerosol cans, brake/transmission fluid, fluorescent tubes and bulbs (12 tubes per month), home-generated sharps in sealed containers, mercury thermometers and switches, barbecue propane tanks (limit two). Not accepted at ABOP: acids, household cleaners, pesticides and herbicides, solvents, paint thinners, gasoline, pool chemicals, ammunition, explosives, medical waste. Products with built-in batteries go to the e-waste area. Also takes household trash, green waste and treated wood (fees)
 Hours: Landfill: Mon–Fri 6:30am–4:30pm; Sat–Sun 8:30am–4:30pm (arrive at least 15 minutes before closing; may close early if the daily vehicle limit is reached). Thanksgiving Day closes at 2pm; Christmas and New Year's Day close at 2pm on weekdays, all day on weekends. ABOP & Special Waste drop-off: Tue–Sat 8:30am–4pm (closed Thanksgiving, Christmas and New Year's Day)
 Fees: Free for residents: tires 1–4 per day, e-waste, appliances 1–2 per day, mattresses, clean metal, and ABOP items up to 15 gallons or 125 pounds per month (a load must contain only free items). Tires 5–8 per day $10 each; commercial/semi tires $30 each; trash loads $10 (cars) to $45 (large vans) per vehicle, or $61.35 per ton weighed (2026 fees)
-Official source: https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill.html
-Last checked: 2026-11-25
+Official source: https://wmr.saccounty.gov/us/en/county-facilities/kiefer-landfill.html
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/ca/sacramento/kiefer-landfill-tires-e-waste-abop/
 
 Name: Elk Grove Special Waste Collection Center
@@ -208,10 +208,10 @@ Name: Recology SF Household Hazardous Waste Facility
 City/state: San Francisco, CA
 Address: 501 Tunnel Ave, San Francisco, CA
 Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
-Hours: Thu–Sat 8am–4pm
+Hours: Thu–Sat 8am–4pm; closed New Year’s Day, Fourth of July, Thanksgiving, the Friday after Thanksgiving, December 25 and December 26
 Fees: not listed
 Official source: https://www.recology.com/recology-san-francisco/hazardous-waste/
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/ca/san-francisco/recology-sf-household-hazardous-waste-facility/
 
 ### San Jose, CA
@@ -250,8 +250,8 @@ Address: 4900 John McCormack Rd NE, Washington, DC 20011
 Materials accepted: Passenger tires (up to 4); bulk trash, recycling, yard waste and appliances during regular hours
 Hours: Tue–Fri 10am–2pm; Sat 7am–2pm; closed Mon & District holidays
 Fees: Free for DC residents
-Official source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding
-Last checked: 2026-11-09
+Official source: https://dpw.dc.gov/specialwaste
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/dc/washington/fort-totten-transfer-station-tires/
 
 Name: DPW Special Waste Collection Event – RFK Stadium Lot 8
@@ -260,7 +260,7 @@ Address: 2500 Independence Ave SE, Washington, DC 20003
 Materials accepted: HHW (paints, chemicals, batteries, CFLs, motor oil, auto fluids, propane ≤20 lb); e-waste (computers, TVs, phones, printers, monitors); document shredding (up to 5 boxes)
 Hours: Event: Sat Dec 12, 2026, 8am–2pm (registration required; no entry after 2pm)
 Fees: Free
-Official source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding
+Official source: https://dpw.dc.gov/specialwaste
 Last checked: 2026-11-26
 TossMap page: https://tossmap.com/dc/washington/dpw-special-waste-collection-event-rfk-stadium-lot-8/
 
@@ -293,9 +293,9 @@ City/state: Jacksonville, FL
 Address: 2675 Commonwealth Ave, Jacksonville, FL 32254
 Materials accepted: Paint, motor oil, batteries, fluorescent/CFL bulbs, aerosols, fertilizers, photo chemicals, drain cleaners, fuels, fireworks, household e-waste
 Hours: Tue–Sat 8am–5pm
-Fees: not listed
+Fees: Duval County residents: free. Conditionally Exempt Small Quantity Generators and non-residents: flammable liquids $4.25 per gallon; latex $1.25 plus a documentation fee. Checks or money orders only, payable to Tax Collector
 Official source: https://www.jacksonville.gov/departments/office-of-administrative-services/solid-waste/disposal-operations/household-hazardous-wastes-(hhw)
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/fl/jacksonville/household-hazardous-waste-facility/
 
 ### Miami, FL
@@ -823,7 +823,7 @@ Materials accepted: Hazardous chemicals (20 gal limit), oil-based paint, recharg
 Hours: Event: Sat Nov 21, 2026, 8:30am–noon
 Fees: Free
 Official source: https://www.boston.gov/departments/public-works/zero-waste-day
-Last checked: 2026-11-22
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/ma/boston/zero-waste-day-drop-off-millennium-park/
 
 ## Michigan
@@ -873,9 +873,9 @@ City/state: Kansas City, MO
 Address: 4707 Deramus Ave, Kansas City, MO 64120
 Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
 Hours: Thu–Fri 9am–6pm; Sat 9am–4pm
-Fees: not listed
+Fees: No charge for residents of Kansas City, Mo., and participating communities (proof of residency required, such as a driver’s license or utility bill)
 Official source: https://www.kcwater.us/programs/hhw/
-Last checked: 2026-11-23
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/mo/kansas-city/household-hazardous-waste-facility/
 
 Name: KCMO Waste Tire Drop-Off (Environmental Campus)
@@ -1079,7 +1079,7 @@ Materials accepted: Household hazardous waste (paint, chemicals, pesticides, aut
 Hours: Mon–Sat 8am–4pm
 Fees: not listed
 Official source: https://www.wake.gov/departments-government/waste-recycling/facilities/household-hazardous-waste-facilities/south-wake-household-hazardous-waste-facility
-Last checked: 2026-11-18
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/nc/raleigh/south-wake-hhw-facility/
 
 Name: East Wake HHW Facility
@@ -1098,8 +1098,8 @@ Address: 9029 Deponie Drive, Raleigh, NC 27614
 Materials accepted: Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device); large appliances (A/C and heating units, refrigerators, freezers, washers, dryers, water heaters); motor oil, transmission fluid, hydraulic oils, power steering fluid and antifreeze (no drums; must pour into collection tank); oil filters; cooking oil; cardboard; scrap metal; wood pallets (limit 10)
 Hours: Mon–Sat 8am–4pm (closed listed holidays)
 Fees: not listed
-Official source: https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities
-Last checked: 2026-11-18
+Official source: https://www.wake.gov/departments-government/solid-waste-management/facilities/multi-material-recycling-facilities
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/nc/raleigh/north-wake-multi-material-recycling-facility/
 
 Name: South Wake Multi-Material Recycling Facility
@@ -1108,8 +1108,8 @@ Address: 6130 Old Smithfield Road, Apex, NC 27539
 Materials accepted: Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device); large appliances (A/C and heating units, refrigerators, freezers, washers, dryers, water heaters); motor oil, transmission fluid, hydraulic oils, power steering fluid and antifreeze (no drums; must pour into collection tank); oil filters; cooking oil; cardboard; scrap metal; wood pallets (limit 10)
 Hours: Mon–Sat 8am–4pm (closed listed holidays)
 Fees: not listed
-Official source: https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities
-Last checked: 2026-11-18
+Official source: https://www.wake.gov/departments-government/solid-waste-management/facilities/multi-material-recycling-facilities
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/nc/raleigh/south-wake-multi-material-recycling-facility/
 
 Name: East Wake Multi-Material Recycling Facility
@@ -1118,8 +1118,8 @@ Address: 5051 Wendell Boulevard, Wendell, NC 27591
 Materials accepted: Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device); large appliances (A/C and heating units, refrigerators, freezers, washers, dryers, water heaters); motor oil, transmission fluid, hydraulic oils, power steering fluid and antifreeze (no drums; must pour into collection tank); oil filters; cooking oil; cardboard
 Hours: Sat–Sun only, 8am–4pm (closed listed holidays)
 Fees: not listed
-Official source: https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities
-Last checked: 2026-11-18
+Official source: https://www.wake.gov/departments-government/solid-waste-management/facilities/multi-material-recycling-facilities
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/nc/raleigh/east-wake-multi-material-recycling-facility/
 
 ## Ohio
@@ -1315,7 +1315,7 @@ Materials accepted: Household hazardous waste (oil-based paint, solvents, automo
 Hours: Event: Sat Nov 21, 2026, 8am–noon
 Fees: Free (Cuyahoga County HHW program)
 Official source: https://cuyahogarecycles.org/recycle-in/parma/household_hazardous_waste/
-Last checked: 2026-11-22
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/parma-service-garage-hhw-drop-off-day/
 
 Name: Brecksville Service Garage (HHW drop-off)
@@ -1505,9 +1505,9 @@ City/state: Columbus, OH
 Address: 645 E 8th Ave, Columbus, OH 43201
 Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
 Hours: Mon–Fri 9am–5pm; 1st Sat 9am–2pm
-Fees: not listed
+Fees: Most items free for Franklin County residents. Latex and other water-based paints are not part of the free HHW program and can be disposed of for a fee — contact EEI, Inc. at 614-294-1300 (official page says typically $1.00 per gallon)
 Official source: https://www.swaco.org/diversion/residents/household-hazardous-waste/
-Last checked: 2026-11-23
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/
 
 Name: SWACO Recycling Convenience Center
@@ -1541,9 +1541,9 @@ City/state: Tulsa, OK
 Address: 4502 S Galveston Ave, Tulsa, OK 74107
 Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
 Hours: Wed & Sat 8–11:30am, noon–4:30pm
-Fees: not listed
+Fees: Free for Tulsa residents with a driver's license or City of Tulsa utility bill. Non-Tulsa residents $1.37 per pound (Mastercard or Visa). Residents of Bixby, Broken Arrow, Claremore, Collinsville, Glenpool, Jenks, Owasso, Sand Springs, and unincorporated Tulsa County can use a Metropolitan Environmental Trust voucher; a Sapulpa voucher covers 45 pounds, then $1.37/lb
 Official source: https://www.cityoftulsa.org/government/departments/public-works/household-pollutant-collection-facility/
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/ok/tulsa/household-pollutant-collection-facility/
 
 ## Oregon
@@ -1713,9 +1713,9 @@ City/state: Dallas, TX
 Address: 11234 Plano Rd, Dallas, TX 75243
 Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)
 Hours: Tue 9am–7:30pm; Wed–Thu 8:30am–5pm; 2nd & 4th Sat 9am–3pm
-Fees: not listed
+Fees: Free for residents of Addison, Dallas, DeSoto, Duncanville, Farmers Branch, Garland, Highland Park, Irving, Mesquite, Richardson, Rowlett, Sachse, Seagoville, Sunnyvale, University Park, and unincorporated areas of Dallas County (bring a driver’s license and a water or other utility bill as proof). Residents of all other cities must pay a minimum of $100.00 for waste management fees.
 Official source: https://www.dallascounty.org/departments/consolidated-services/hhw/
-Last checked: 2026-11-02
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/
 
 Name: McCommas Bluff Landfill
@@ -1870,8 +1870,8 @@ Address: 11500 S Post Oak Rd, Houston, TX 77035
 Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs); electronics (computers, monitors, printers, TVs, small electrical appliances; 5 large items per visit); tires (5 per residence, no commercial vehicle tires)
 Hours: Tue, Wed, Fri, Sat 8am–5pm
 Fees: not listed
-Official source: https://houstontx.gov/solidwaste/esc.html
-Last checked: 2026-11-15
+Official source: https://houstontx.gov/solidwaste/esc
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/tx/houston/environmental-service-center-south/
 
 Name: Environmental Service Center – North
@@ -1880,8 +1880,8 @@ Address: 5614 Neches St, Houston, TX 77026
 Materials accepted: Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs); electronics (computers, monitors, printers, TVs, small electrical appliances; 5 large items per visit); tires (5 per residence, no commercial vehicle tires)
 Hours: 2nd Thursday 9am–3pm
 Fees: not listed
-Official source: https://houstontx.gov/solidwaste/esc.html
-Last checked: 2026-11-15
+Official source: https://houstontx.gov/solidwaste/esc
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/tx/houston/environmental-service-center-north/
 
 Name: Residential Drop-Off Center – North
@@ -1890,8 +1890,8 @@ Address: 9003 N Main, Houston, TX 77022
 Materials accepted: Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)
 Hours: Tue–Sat 9am–6pm
 Fees: Free
-Official source: https://houstontx.gov/solidwaste/depository.html
-Last checked: 2026-11-03
+Official source: https://houstontx.gov/solidwaste/depository
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/tx/houston/residential-drop-off-center-north/
 
 Name: Residential Drop-Off Center – Northwest
@@ -1900,8 +1900,8 @@ Address: 14400 Sommermeyer, Houston, TX 77041
 Materials accepted: Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)
 Hours: Tue–Sat 9am–6pm
 Fees: Free
-Official source: https://houstontx.gov/solidwaste/depository.html
-Last checked: 2026-11-03
+Official source: https://houstontx.gov/solidwaste/depository
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/tx/houston/residential-drop-off-center-northwest/
 
 Name: Residential Drop-Off Center – Northeast
@@ -1910,8 +1910,8 @@ Address: 5565 Kirkpatrick, Houston, TX 77028
 Materials accepted: Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)
 Hours: Tue–Sat 9am–6pm
 Fees: Free
-Official source: https://houstontx.gov/solidwaste/depository.html
-Last checked: 2026-11-03
+Official source: https://houstontx.gov/solidwaste/depository
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/tx/houston/residential-drop-off-center-northeast/
 
 Name: Residential Drop-Off Center – Southeast
@@ -1920,8 +1920,8 @@ Address: 2240 Central Street, Houston, TX 77017
 Materials accepted: Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)
 Hours: Tue–Sat 9am–6pm
 Fees: Free
-Official source: https://houstontx.gov/solidwaste/depository.html
-Last checked: 2026-11-03
+Official source: https://houstontx.gov/solidwaste/depository
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/tx/houston/residential-drop-off-center-southeast/
 
 Name: Residential Drop-Off Center – South
@@ -1930,8 +1930,8 @@ Address: 5100 Sunbeam, Houston, TX 77033
 Materials accepted: Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)
 Hours: Tue–Sat 9am–6pm
 Fees: Free
-Official source: https://houstontx.gov/solidwaste/depository.html
-Last checked: 2026-11-03
+Official source: https://houstontx.gov/solidwaste/depository
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/tx/houston/residential-drop-off-center-south/
 
 Name: Residential Drop-Off Center – Southwest
@@ -1940,8 +1940,8 @@ Address: 10785 SW Freeway, Houston, TX 77074
 Materials accepted: Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)
 Hours: Tue–Sat 9am–6pm
 Fees: Free
-Official source: https://houstontx.gov/solidwaste/depository.html
-Last checked: 2026-11-03
+Official source: https://houstontx.gov/solidwaste/depository
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/tx/houston/residential-drop-off-center-southwest/
 
 Name: Westpark Consumer Recycling Center
@@ -1950,8 +1950,8 @@ Address: 5900 Westpark, Houston, TX 77057
 Materials accepted: Residential electronics (computers, laptops, monitors, printers, TVs including CRT TVs up to 36 in., cell phones, routers, cables, UPS units, copiers, fax machines, toner and ink cartridges); tires (up to 5, without rims); B.O.P.A. — batteries, oil, latex paint and antifreeze; scrap metal; recyclables (paper, cardboard, cartons, cans, glass, plastics #1–5 and #7). Not accepted: household hazardous waste chemicals, oil-based paint, heavy trash, garbage, alkaline household batteries in the electronics program
 Hours: Tue–Sat 8am–5pm
 Fees: Residential electronics accepted at no additional charge (other fees not stated)
-Official source: https://www.houstontx.gov/solidwaste/recycling_centers.html
-Last checked: 2026-11-21
+Official source: https://www.houstontx.gov/solidwaste/recycling-centers
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/tx/houston/westpark-consumer-recycling-center/
 
 Name: Ellington/Clear Lake Neighborhood Recycling Center
@@ -1960,8 +1960,8 @@ Address: 246 Loop Rd., Houston, TX 77034
 Materials accepted: Recyclables (paper, cardboard, cartons, cans, glass, plastics #1–5 and #7); residential electronics at the monthly 2nd-Saturday event (computers, laptops, monitors, printers, TVs including CRT TVs up to 36 in., cell phones, routers, cables, UPS units, copiers, fax machines, toner and ink cartridges). Not accepted at the electronics event: vacuum cleaners, CRT TVs over 36 in., radios, game consoles, microwaves and other appliances, fluorescent bulbs, smoke detectors, alkaline batteries, paint cans
 Hours: Open 7 days a week 8am–8pm; electronics recycling event 2nd Saturday of each month 9am–3pm
 Fees: not listed
-Official source: https://www.houstontx.gov/solidwaste/recycling_centers.html
-Last checked: 2026-11-21
+Official source: https://www.houstontx.gov/solidwaste/recycling-centers
+Last checked: 2026-11-26
 TossMap page: https://tossmap.com/tx/houston/ellington-clear-lake-neighborhood-recycling-center/
 
 ### San Antonio, TX

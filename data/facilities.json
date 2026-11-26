@@ -803,8 +803,8 @@
     "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs); electronics (computers, monitors, printers, TVs, small electrical appliances; 5 large items per visit); tires (5 per residence, no commercial vehicle tires)",
     "fees": "",
     "notes": "Texas ID or City utility bill required",
-    "source": "https://houstontx.gov/solidwaste/esc.html",
-    "checked": "2026-11-15",
+    "source": "https://houstontx.gov/solidwaste/esc",
+    "checked": "2026-11-26",
     "slug": "environmental-service-center-south",
     "questions": {
      "residents_only": {
@@ -867,8 +867,8 @@
     "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs); electronics (computers, monitors, printers, TVs, small electrical appliances; 5 large items per visit); tires (5 per residence, no commercial vehicle tires)",
     "fees": "",
     "notes": "Texas ID or City utility bill required",
-    "source": "https://houstontx.gov/solidwaste/esc.html",
-    "checked": "2026-11-15",
+    "source": "https://houstontx.gov/solidwaste/esc",
+    "checked": "2026-11-26",
     "slug": "environmental-service-center-north",
     "questions": {
      "residents_only": {
@@ -931,8 +931,8 @@
     "accepts": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)",
     "fees": "Free",
     "notes": "Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",
-    "source": "https://houstontx.gov/solidwaste/depository.html",
-    "checked": "2026-11-03",
+    "source": "https://houstontx.gov/solidwaste/depository",
+    "checked": "2026-11-26",
     "slug": "residential-drop-off-center-north",
     "questions": {
      "residents_only": {
@@ -995,8 +995,8 @@
     "accepts": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)",
     "fees": "Free",
     "notes": "Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",
-    "source": "https://houstontx.gov/solidwaste/depository.html",
-    "checked": "2026-11-03",
+    "source": "https://houstontx.gov/solidwaste/depository",
+    "checked": "2026-11-26",
     "slug": "residential-drop-off-center-northwest",
     "questions": {
      "residents_only": {
@@ -1059,8 +1059,8 @@
     "accepts": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)",
     "fees": "Free",
     "notes": "Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",
-    "source": "https://houstontx.gov/solidwaste/depository.html",
-    "checked": "2026-11-03",
+    "source": "https://houstontx.gov/solidwaste/depository",
+    "checked": "2026-11-26",
     "slug": "residential-drop-off-center-northeast",
     "questions": {
      "residents_only": {
@@ -1123,8 +1123,8 @@
     "accepts": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)",
     "fees": "Free",
     "notes": "Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",
-    "source": "https://houstontx.gov/solidwaste/depository.html",
-    "checked": "2026-11-03",
+    "source": "https://houstontx.gov/solidwaste/depository",
+    "checked": "2026-11-26",
     "slug": "residential-drop-off-center-southeast",
     "questions": {
      "residents_only": {
@@ -1187,8 +1187,8 @@
     "accepts": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)",
     "fees": "Free",
     "notes": "Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",
-    "source": "https://houstontx.gov/solidwaste/depository.html",
-    "checked": "2026-11-03",
+    "source": "https://houstontx.gov/solidwaste/depository",
+    "checked": "2026-11-26",
     "slug": "residential-drop-off-center-south",
     "questions": {
      "residents_only": {
@@ -1251,8 +1251,8 @@
     "accepts": "Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)",
     "fees": "Free",
     "notes": "Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",
-    "source": "https://houstontx.gov/solidwaste/depository.html",
-    "checked": "2026-11-03",
+    "source": "https://houstontx.gov/solidwaste/depository",
+    "checked": "2026-11-26",
     "slug": "residential-drop-off-center-southwest",
     "questions": {
      "residents_only": {
@@ -1315,8 +1315,8 @@
     "accepts": "Residential electronics (computers, laptops, monitors, printers, TVs including CRT TVs up to 36 in., cell phones, routers, cables, UPS units, copiers, fax machines, toner and ink cartridges); tires (up to 5, without rims); B.O.P.A. — batteries, oil, latex paint and antifreeze; scrap metal; recyclables (paper, cardboard, cartons, cans, glass, plastics #1–5 and #7). Not accepted: household hazardous waste chemicals, oil-based paint, heavy trash, garbage, alkaline household batteries in the electronics program",
     "fees": "Residential electronics accepted at no additional charge (other fees not stated)",
     "notes": "City of Houston Solid Waste Management Department. Proof of address: a current Texas-issued ID (driver's license, DPS ID, License to Carry or Consulate ID) or a current City of Houston utility bill or lease; for recycling only a current Texas-issued ID is sufficient. Residents may use the recycling centers up to 4 times per month (once per week); arrive at least 15–30 minutes before closing. The Recycling Centers page lists B.O.P.A. (batteries, oil, latex paint and antifreeze) as accepted but also lists “Hazardous materials: Chemicals, oil, fuel” as not accepted, so call 311 before bringing motor oil. Electronics details: https://www.houstontx.gov/solidwaste/ewaste.",
-    "source": "https://www.houstontx.gov/solidwaste/recycling_centers.html",
-    "checked": "2026-11-21",
+    "source": "https://www.houstontx.gov/solidwaste/recycling-centers",
+    "checked": "2026-11-26",
     "slug": "westpark-consumer-recycling-center",
     "questions": {
      "residents_only": {
@@ -1379,8 +1379,8 @@
     "accepts": "Recyclables (paper, cardboard, cartons, cans, glass, plastics #1–5 and #7); residential electronics at the monthly 2nd-Saturday event (computers, laptops, monitors, printers, TVs including CRT TVs up to 36 in., cell phones, routers, cables, UPS units, copiers, fax machines, toner and ink cartridges). Not accepted at the electronics event: vacuum cleaners, CRT TVs over 36 in., radios, game consoles, microwaves and other appliances, fluorescent bulbs, smoke detectors, alkaline batteries, paint cans",
     "fees": "",
     "notes": "City of Houston Solid Waste Management Department. Proof of address: a current Texas-issued ID (driver's license, DPS ID, License to Carry or Consulate ID) or a current City of Houston utility bill or lease; for recycling only a current Texas-issued ID is sufficient. Residents may use the recycling centers up to 4 times per month (once per week); arrive at least 15–30 minutes before closing. Electronics are taken only at the monthly 2nd-Saturday event (details: https://www.houstontx.gov/solidwaste/ewaste). The Recycling Centers page also lists tires and B.O.P.A. in a general accepted-materials list without naming sites, so call 311 before bringing tires, oil or batteries.",
-    "source": "https://www.houstontx.gov/solidwaste/recycling_centers.html",
-    "checked": "2026-11-21",
+    "source": "https://www.houstontx.gov/solidwaste/recycling-centers",
+    "checked": "2026-11-26",
     "slug": "ellington-clear-lake-neighborhood-recycling-center",
     "questions": {
      "residents_only": {
@@ -2377,10 +2377,10 @@
     "address": "11234 Plano Rd, Dallas, TX 75243",
     "hours": "Tue 9am–7:30pm; Wed–Thu 8:30am–5pm; 2nd & 4th Sat 9am–3pm",
     "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
-    "fees": "",
+    "fees": "Free for residents of Addison, Dallas, DeSoto, Duncanville, Farmers Branch, Garland, Highland Park, Irving, Mesquite, Richardson, Rowlett, Sachse, Seagoville, Sunnyvale, University Park, and unincorporated areas of Dallas County (bring a driver’s license and a water or other utility bill as proof). Residents of all other cities must pay a minimum of $100.00 for waste management fees.",
     "notes": "Residents of participating cities; 214-553-1765",
     "source": "https://www.dallascounty.org/departments/consolidated-services/hhw/",
-    "checked": "2026-11-02",
+    "checked": "2026-11-26",
     "slug": "dallas-county-home-chemical-collection-center",
     "questions": {
      "residents_only": {
@@ -2396,8 +2396,8 @@
       "evidence": ""
      },
      "fee_charged": {
-      "answer": "not stated by source",
-      "evidence": ""
+      "answer": "yes",
+      "evidence": "Dallas County Home Chemical Collection Center page (https://www.dallascounty.org/departments/hhs/hccc.php, fetched 2026-11-26): “This is a FREE service for residents of the following cities and areas: Addison, Dallas, DeSoto, Duncanville, Farmers Branch, Garland, Highland Park, Irving, Mesquite, Richardson, Rowlett, Sachse, Seagoville, Sunnyvale, University Park, and unincorporated areas of Dallas County.” “Residents of all other cities must pay a minimum of $100.00 for waste management fees.”"
      },
      "tires": {
       "answer": "not stated by source",
@@ -2434,7 +2434,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-02"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "McCommas Bluff Landfill",
@@ -2777,10 +2777,10 @@
     "address": "2675 Commonwealth Ave, Jacksonville, FL 32254",
     "hours": "Tue–Sat 8am–5pm",
     "accepts": "Paint, motor oil, batteries, fluorescent/CFL bulbs, aerosols, fertilizers, photo chemicals, drain cleaners, fuels, fireworks, household e-waste",
-    "fees": "",
+    "fees": "Duval County residents: free. Conditionally Exempt Small Quantity Generators and non-residents: flammable liquids $4.25 per gallon; latex $1.25 plus a documentation fee. Checks or money orders only, payable to Tax Collector",
     "notes": "Paint/oil limit 27 gal each per 30 days; CRT TVs/monitors max 3; 904-387-8847",
     "source": "https://www.jacksonville.gov/departments/office-of-administrative-services/solid-waste/disposal-operations/household-hazardous-wastes-(hhw)",
-    "checked": "2026-11-02",
+    "checked": "2026-11-26",
     "slug": "household-hazardous-waste-facility",
     "questions": {
      "residents_only": {
@@ -2797,7 +2797,7 @@
      },
      "fee_charged": {
       "answer": "yes",
-      "evidence": "Conditional — City of Jacksonville Household Hazardous Waste page (fetched 2026-11-20): Fee Schedule: “Duval Residents: Free”; “Others: Conditionally Exempt Small Quantity Generator and Non-Residents — Flammable Liquids – $4.25 / Per Gallon; Latex - $1.25 + Documentation Fee”; “Checks/money orders only”."
+      "evidence": "City of Jacksonville Household Hazardous Waste Facility page (fetched 2026-11-26): “Fee Schedule Duval Residents: Free Others: Conditionally Exempt Small Quantity Generator and Non-Residents Flammable Liquids – $4.25 / Per Gallon Latex - $1.25 + Documentation Fee Checks/money orders only to be made payable to Tax Collector.”"
      },
      "tires": {
       "answer": "not stated by source",
@@ -2834,7 +2834,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-02"
+    "questions_reviewed": "2026-11-26"
    }
   ],
   "note": ""
@@ -3177,10 +3177,10 @@
     "address": "645 E 8th Ave, Columbus, OH 43201",
     "hours": "Mon–Fri 9am–5pm; 1st Sat 9am–2pm",
     "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
-    "fees": "",
+    "fees": "Most items free for Franklin County residents. Latex and other water-based paints are not part of the free HHW program and can be disposed of for a fee — contact EEI, Inc. at 614-294-1300 (official page says typically $1.00 per gallon)",
     "notes": "614-294-1300; closed holidays",
     "source": "https://www.swaco.org/diversion/residents/household-hazardous-waste/",
-    "checked": "2026-11-23",
+    "checked": "2026-11-26",
     "slug": "swaco-household-hazardous-waste-drop-off",
     "questions": {
      "residents_only": {
@@ -3196,8 +3196,8 @@
       "evidence": ""
      },
      "fee_charged": {
-      "answer": "no",
-      "evidence": "SWACO Household Hazardous Waste page (https://www.swaco.org/diversion/residents/household-hazardous-waste/, fetched 2026-11-23): “Most items are free to dispose of, except latex and other water-based paints … latex and other water-based paints are not accepted as part of SWACO’s free HHW program.” “SWACO contracts with EEI to offer free residential recycling for HHW.”"
+      "answer": "yes",
+      "evidence": "SWACO Household Hazardous Waste page (fetched 2026-11-26): “Most items are free to dispose of, except latex and other water-based paints. Because they are not considered hazardous, latex and other water-based paints are not accepted as part of SWACO’s free HHW program. However, they can be disposed of for a fee — contact EEI, Inc. at 614-294-1300 for disposal prices (typically $1.00 per gallon).”"
      },
      "tires": {
       "answer": "no",
@@ -3234,7 +3234,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-23"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "SWACO Recycling Convenience Center",
@@ -4047,12 +4047,12 @@
    {
     "name": "Recology SF Household Hazardous Waste Facility",
     "address": "501 Tunnel Ave, San Francisco, CA",
-    "hours": "Thu–Sat 8am–4pm",
+    "hours": "Thu–Sat 8am–4pm; closed New Year’s Day, Fourth of July, Thanksgiving, the Friday after Thanksgiving, December 25 and December 26",
     "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
     "fees": "",
     "notes": "SF residents only; proof of residency",
     "source": "https://www.recology.com/recology-san-francisco/hazardous-waste/",
-    "checked": "2026-11-02",
+    "checked": "2026-11-26",
     "slug": "recology-sf-household-hazardous-waste-facility",
     "questions": {
      "residents_only": {
@@ -4459,8 +4459,8 @@
     "accepts": "Passenger tires (up to 4); bulk trash, recycling, yard waste and appliances during regular hours",
     "fees": "Free for DC residents",
     "notes": "DC residents only; proof of residency required. HHW and electronics are NOT accepted here — use Special Waste Collection Events.",
-    "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "checked": "2026-11-09",
+    "source": "https://dpw.dc.gov/specialwaste",
+    "checked": "2026-11-26",
     "slug": "fort-totten-transfer-station-tires",
     "questions": {
      "residents_only": {
@@ -4514,7 +4514,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-09"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "DPW Special Waste Collection Event – RFK Stadium Lot 8",
@@ -4523,7 +4523,7 @@
     "accepts": "HHW (paints, chemicals, batteries, CFLs, motor oil, auto fluids, propane ≤20 lb); e-waste (computers, TVs, phones, printers, monitors); document shredding (up to 5 boxes)",
     "fees": "Free",
     "notes": "DC residents only; register in advance on Eventbrite; bring proof of residency and registration. The Nov 14 event has been held; no later 2026–27 date is listed yet.",
-    "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
+    "source": "https://dpw.dc.gov/specialwaste",
     "checked": "2026-11-26",
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "questions": {
@@ -4709,7 +4709,7 @@
     "questions_reviewed": "2026-11-24"
    }
   ],
-  "note": "Inside DC there is no permanent HHW or e-cycling drop-off: Fort Totten takes up to 4 tires during regular hours, and HHW and electronics go to registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding. Fairfax County, Virginia residents can use the county's permanent HHW and e-waste drop-offs at the I-66 Transfer Station and I-95 Landfill Complex (Fairfax County residents only)."
+  "note": "Inside DC there is no permanent HHW or e-cycling drop-off: Fort Totten takes up to 4 tires during regular hours, and HHW and electronics go to registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/specialwaste. Fairfax County, Virginia residents can use the county's permanent HHW and e-waste drop-offs at the I-66 Transfer Station and I-95 Landfill Complex (Fairfax County residents only)."
  },
  {
   "city": "Boston",
@@ -4722,9 +4722,9 @@
     "hours": "Event: Sat Nov 21, 2026, 8:30am–noon",
     "accepts": "Hazardous chemicals (20 gal limit), oil-based paint, rechargeable/lithium batteries, electronics (computers, phones, TVs, printers), fluorescent bulbs/mercury items, car & bike tires (8 each), car batteries, propane tanks, fire extinguishers",
     "fees": "Free",
-    "notes": "Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. The Nov 21, 2026 event has been held, and as of Nov 22 the City's Zero Waste Days page says there are no related events available; no next date is posted yet.",
+    "notes": "Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. The Nov 21, 2026 event has been held, and as of Nov 26, 2026 the City's Zero Waste Days page says there are no related events available; no next date is posted.",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "checked": "2026-11-22",
+    "checked": "2026-11-26",
     "slug": "zero-waste-day-drop-off-millennium-park",
     "questions": {
      "residents_only": {
@@ -6769,10 +6769,10 @@
     "address": "4450 Roseville Rd, North Highlands, CA",
     "hours": "Tue, Thu, Fri, Sat 8:30am–4pm",
     "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
-    "fees": "",
+    "fees": "Free for residents, up to 15 gallons or 125 pounds of HHW per month; Very Small Quantity Generator businesses by appointment for a fee",
     "notes": "",
-    "source": "https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/north-area-recovery-station/nars-hhw-drop-off.html",
-    "checked": "2026-11-25",
+    "source": "https://wmr.saccounty.gov/us/en/county-facilities/north-area-recovery-station/nars-hhw-drop-off.html",
+    "checked": "2026-11-26",
     "slug": "north-area-recovery-station-hhw-drop-off",
     "questions": {
      "residents_only": {
@@ -6789,7 +6789,7 @@
      },
      "fee_charged": {
       "answer": "no",
-      "evidence": "Sacramento County NARS HHW Drop-Off Facility page (fetched 2026-11-25): “Residents can drop off up to 15 gallons or 125 pounds of HHW per month at the NARS HHW Facility for free.” (Businesses pay: “Businesses that qualify as a Very Small Quantity Generator (VSQG) to drop off accepted Hazardous Waste (HHW) at the NARS HHW Facility for a fee , must make an appointment in advance.”)"
+      "evidence": "Sacramento County NARS HHW Drop-Off page (https://wmr.saccounty.gov/us/en/county-facilities/north-area-recovery-station/nars-hhw-drop-off.html, fetched 2026-11-26): “Residents can drop off up to 15 gallons or 125 pounds of HHW per month at the NARS HHW Facility for free.” (Very Small Quantity Generator businesses are described separately as paying a fee by appointment.)"
      },
      "tires": {
       "answer": "not stated by source",
@@ -6826,7 +6826,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-25"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "Kiefer Landfill (tires, e-waste & ABOP drop-off)",
@@ -6834,9 +6834,9 @@
     "hours": "Landfill: Mon–Fri 6:30am–4:30pm; Sat–Sun 8:30am–4:30pm (arrive at least 15 minutes before closing; may close early if the daily vehicle limit is reached). Thanksgiving Day closes at 2pm; Christmas and New Year's Day close at 2pm on weekdays, all day on weekends. ABOP & Special Waste drop-off: Tue–Sat 8:30am–4pm (closed Thanksgiving, Christmas and New Year's Day)",
     "accepts": "Free residential drop-off: passenger/light-truck tires (rims OK, 4 per day free), e-waste (TVs, CRTs, monitors, computers, laptops, tablets, phones, printers, gaming consoles, stereos), large appliances (2 per day free), small corded appliances and power tools, mattresses and box springs, clean metal, clean inerts. ABOP & Special Waste facility (residents): antifreeze, household and car batteries, motor oil and filters, cooking oil, latex and oil-based paint, aerosol cans, brake/transmission fluid, fluorescent tubes and bulbs (12 tubes per month), home-generated sharps in sealed containers, mercury thermometers and switches, barbecue propane tanks (limit two). Not accepted at ABOP: acids, household cleaners, pesticides and herbicides, solvents, paint thinners, gasoline, pool chemicals, ammunition, explosives, medical waste. Products with built-in batteries go to the e-waste area. Also takes household trash, green waste and treated wood (fees)",
     "fees": "Free for residents: tires 1–4 per day, e-waste, appliances 1–2 per day, mattresses, clean metal, and ABOP items up to 15 gallons or 125 pounds per month (a load must contain only free items). Tires 5–8 per day $10 each; commercial/semi tires $30 each; trash loads $10 (cars) to $45 (large vans) per vehicle, or $61.35 per ton weighed (2026 fees)",
-    "notes": "Operated by Sacramento County Department of Waste Management & Recycling. The landfill takes waste from the public, businesses and haulers, and customers do not need to be Sacramento County residents; free e-waste and ABOP drop-off are for residents. Businesses: ABOP and e-waste via the county's Commercial Hazardous Waste program by appointment (916-876-9458), for a fee. Fees: https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill/fees.html; ABOP: https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill/special-waste.html; free items: https://wmr.saccounty.gov/content/wmr/us/en/residential-services/free-drop-off-locations/free-drop-off-items.html. (916) 875-5555",
-    "source": "https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill.html",
-    "checked": "2026-11-25",
+    "notes": "Operated by Sacramento County Department of Waste Management & Recycling. The landfill takes waste from the public, businesses and haulers, and customers do not need to be Sacramento County residents; free e-waste and ABOP drop-off are for residents. Businesses: ABOP and e-waste via the county's Commercial Hazardous Waste program by appointment (916-876-9458), for a fee. Fees: https://wmr.saccounty.gov/us/en/county-facilities/kiefer-landfill/fees.html; ABOP: https://wmr.saccounty.gov/us/en/county-facilities/kiefer-landfill/special-waste.html; free items: https://wmr.saccounty.gov/us/en/residential-services/free-drop-off-locations/free-drop-off-items.html. (916) 875-5555",
+    "source": "https://wmr.saccounty.gov/us/en/county-facilities/kiefer-landfill.html",
+    "checked": "2026-11-26",
     "slug": "kiefer-landfill-tires-e-waste-abop",
     "questions": {
      "residents_only": {
@@ -7033,10 +7033,10 @@
     "address": "4707 Deramus Ave, Kansas City, MO 64120",
     "hours": "Thu–Fri 9am–6pm; Sat 9am–4pm",
     "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
-    "fees": "",
+    "fees": "No charge for residents of Kansas City, Mo., and participating communities (proof of residency required, such as a driver’s license or utility bill)",
     "notes": "No appointment under 600 lb; 816-513-8400",
     "source": "https://www.kcwater.us/programs/hhw/",
-    "checked": "2026-11-23",
+    "checked": "2026-11-26",
     "slug": "household-hazardous-waste-facility",
     "questions": {
      "residents_only": {
@@ -7053,7 +7053,7 @@
      },
      "fee_charged": {
       "answer": "no",
-      "evidence": "KC Water Household Hazardous Waste page (https://www.kcwater.us/programs/hhw/, fetched 2026-11-23): “No charge for residents of Kansas City, Mo., and participating communities”."
+      "evidence": "KC Water Household Hazardous Waste Facility page (fetched 2026-11-26): “No charge for residents of Kansas City, Mo., and participating communities (see list below). Customers must provide proof of residency, such as a driver’s license or utility bill.”"
      },
      "tires": {
       "answer": "no",
@@ -7090,7 +7090,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-23"
+    "questions_reviewed": "2026-11-26"
    },
    {
     "name": "KCMO Waste Tire Drop-Off (Environmental Campus)",
@@ -7796,7 +7796,7 @@
     "fees": "",
     "notes": "Wake County residents",
     "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/household-hazardous-waste-facilities/south-wake-household-hazardous-waste-facility",
-    "checked": "2026-11-18",
+    "checked": "2026-11-26",
     "slug": "south-wake-hhw-facility",
     "questions": {
      "residents_only": {
@@ -7923,8 +7923,8 @@
     "accepts": "Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device); large appliances (A/C and heating units, refrigerators, freezers, washers, dryers, water heaters); motor oil, transmission fluid, hydraulic oils, power steering fluid and antifreeze (no drums; must pour into collection tank); oil filters; cooking oil; cardboard; scrap metal; wood pallets (limit 10)",
     "fees": "",
     "notes": "Wake County Solid Waste Management Division recycling drop-off for businesses and residents. Closed New Year's Day, Easter Sunday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Christmas Eve (from noon) and Christmas Day. 919-856-7400",
-    "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities",
-    "checked": "2026-11-18",
+    "source": "https://www.wake.gov/departments-government/solid-waste-management/facilities/multi-material-recycling-facilities",
+    "checked": "2026-11-26",
     "slug": "north-wake-multi-material-recycling-facility",
     "questions": {
      "residents_only": {
@@ -7987,8 +7987,8 @@
     "accepts": "Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device); large appliances (A/C and heating units, refrigerators, freezers, washers, dryers, water heaters); motor oil, transmission fluid, hydraulic oils, power steering fluid and antifreeze (no drums; must pour into collection tank); oil filters; cooking oil; cardboard; scrap metal; wood pallets (limit 10)",
     "fees": "",
     "notes": "Wake County Solid Waste Management Division recycling drop-off for businesses and residents. Closed New Year's Day, Easter Sunday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Christmas Eve (from noon) and Christmas Day. 919-856-7400",
-    "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities",
-    "checked": "2026-11-18",
+    "source": "https://www.wake.gov/departments-government/solid-waste-management/facilities/multi-material-recycling-facilities",
+    "checked": "2026-11-26",
     "slug": "south-wake-multi-material-recycling-facility",
     "questions": {
      "residents_only": {
@@ -8051,8 +8051,8 @@
     "accepts": "Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device); large appliances (A/C and heating units, refrigerators, freezers, washers, dryers, water heaters); motor oil, transmission fluid, hydraulic oils, power steering fluid and antifreeze (no drums; must pour into collection tank); oil filters; cooking oil; cardboard",
     "fees": "",
     "notes": "Open to Wake County residents only. Scrap metal and wood pallets are taken only at North and South Wake. Closed New Year's Day, Easter Sunday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Christmas Eve (from noon) and Christmas Day. 919-856-7400",
-    "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities",
-    "checked": "2026-11-18",
+    "source": "https://www.wake.gov/departments-government/solid-waste-management/facilities/multi-material-recycling-facilities",
+    "checked": "2026-11-26",
     "slug": "east-wake-multi-material-recycling-facility",
     "questions": {
      "residents_only": {
@@ -8673,10 +8673,10 @@
     "address": "4502 S Galveston Ave, Tulsa, OK 74107",
     "hours": "Wed & Sat 8–11:30am, noon–4:30pm",
     "accepts": "Household hazardous waste (paint, chemicals, pesticides, automotive fluids, batteries, bulbs)",
-    "fees": "",
+    "fees": "Free for Tulsa residents with a driver's license or City of Tulsa utility bill. Non-Tulsa residents $1.37 per pound (Mastercard or Visa). Residents of Bixby, Broken Arrow, Claremore, Collinsville, Glenpool, Jenks, Owasso, Sand Springs, and unincorporated Tulsa County can use a Metropolitan Environmental Trust voucher; a Sapulpa voucher covers 45 pounds, then $1.37/lb",
     "notes": "",
     "source": "https://www.cityoftulsa.org/government/departments/public-works/household-pollutant-collection-facility/",
-    "checked": "2026-11-02",
+    "checked": "2026-11-26",
     "slug": "household-pollutant-collection-facility",
     "questions": {
      "residents_only": {
@@ -8693,7 +8693,7 @@
      },
      "fee_charged": {
       "answer": "yes",
-      "evidence": "Conditional — City of Tulsa Household Pollutant Collection Facility page (fetched 2026-11-20): “Tulsa residents can drop-off for free by showing a drivers license or City of Tulsa utility bill.”; for voucher communities “If the weight is over 45 lbs, there will be a disposal fee”; without a voucher customers “will be charged the full disposal rate of $1.37 per pound”."
+      "evidence": "City of Tulsa Household Pollutant Collection Facility page (fetched 2026-11-26): “Tulsa residents can drop-off for free by showing a drivers license or City of Tulsa utility bill.” “Non-Tulsa Resident Pricing $1.37 per pound The disposal fee can be paid with Mastercard or Visa.” Residents of listed metro communities may use a Metropolitan Environmental Trust voucher; “Sapulpa resident voucher will cover 45 pounds of pollutants. Any pollutants collected after 45 pounds will be $1.37/lb.”"
      },
      "tires": {
       "answer": "no",
@@ -8730,7 +8730,7 @@
     },
     "operator": "not stated by source",
     "source_notice": "",
-    "questions_reviewed": "2026-11-16"
+    "questions_reviewed": "2026-11-26"
    }
   ],
   "note": ""
@@ -10650,9 +10650,9 @@
     "hours": "Event: Sat Nov 21, 2026, 8am–noon",
     "accepts": "Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint",
     "fees": "Free (Cuyahoga County HHW program)",
-    "notes": "Parma's 2026 HHW drop-off days were March 28, October 3 and November 21 (all three have been held; no 2027 dates are posted yet); the District says most communities accept waste only from their own residents, so call the city before going. Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public.",
+    "notes": "Parma's 2026 HHW drop-off days were March 28, October 3 and November 21 (all three have been held; no 2027 dates are posted as of Nov 26, 2026); the District says most communities accept waste only from their own residents, so call the city before going. Cuyahoga County Solid Waste District HHW program (Ohio): free to all Cuyahoga County households; examples include oil- or solvent-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals and household cleaners. The District's own facility is not open to the public.",
     "source": "https://cuyahogarecycles.org/recycle-in/parma/household_hazardous_waste/",
-    "checked": "2026-11-22",
+    "checked": "2026-11-26",
     "slug": "parma-service-garage-hhw-drop-off-day",
     "questions": {
      "residents_only": {

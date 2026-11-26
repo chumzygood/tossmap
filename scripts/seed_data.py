@@ -13,8 +13,8 @@ LA="https://sanitation.lacity.gov/programs/safe-centers-and-household-hazardous-
 laacc="Motor oil & filters, paint & solvents, e-waste, cleaners, batteries, fluorescent bulbs, sharps, unused medicine (no tires)"
 metro("Los Angeles","California","CA",[F(n,a,"Sat–Sun 9am–3pm",LA,laacc,"Free") for n,a in [("S.A.F.E. Center – Nicole Bernson","10241 N Balboa Blvd, Northridge, CA 91325"),("S.A.F.E. Center – Gaffey St","1400 N Gaffey St, San Pedro, CA 90731"),("S.A.F.E. Center – Hyperion","7660 W Imperial Hwy, Gate B, Playa del Rey, CA 90293"),("S.A.F.E. Center – Randall St","11025 Randall St, Sun Valley, CA 91352"),("S.A.F.E. Center – Washington Blvd","2649 E Washington Blvd, Los Angeles, CA 90021")]]+[F("UCLA S.A.F.E. Collection Center","550 Charles E Young Dr, Los Angeles, CA","Fri, Sat & first Sun 9am–3pm","https://ehs.ucla.edu/safe-collection-center-operations-ucla",laacc,"Free")],"LA-Glendale S.A.F.E. Center (4600 Colorado Blvd) is listed by the city as temporarily closed.")
 metro("Chicago","Illinois","IL",[F("Household Chemicals & Computer Recycling Facility","1150 N North Branch St, Chicago, IL 60642","Tue 7am–12pm; Thu 2–7pm; 1st Sat 8am–3pm","https://www.chicago.gov/hccrf/","Chemicals, oil-based paint, solvents, CFLs, computers & electronics, cell phones (no latex paint)","Free")])
-H="https://houstontx.gov/solidwaste/esc.html"
-metro("Houston","Texas","TX",[F("Environmental Service Center – South","11500 S Post Oak Rd, Houston, TX 77035","Tue, Wed, Fri, Sat 8am–5pm",H,notes="Texas ID or City utility bill required"),F("Environmental Service Center – North","5614 Neches St, Houston, TX 77026","2nd Thursday 9am–3pm",H,notes="Texas ID or City utility bill required")]+[F(f"Residential Drop-Off Center – {n}",a,"Tue–Sat 9am–6pm","https://houstontx.gov/solidwaste/depository.html","Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)","Free","Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",checked="2026-11-03") for n,a in [("North","9003 N Main, Houston, TX 77022"),("Northwest","14400 Sommermeyer, Houston, TX 77041"),("Northeast","5565 Kirkpatrick, Houston, TX 77028"),("Southeast","2240 Central Street, Houston, TX 77017"),("South","5100 Sunbeam, Houston, TX 77033"),("Southwest","10785 SW Freeway, Houston, TX 77074")]])
+H="https://houstontx.gov/solidwaste/esc"
+metro("Houston","Texas","TX",[F("Environmental Service Center – South","11500 S Post Oak Rd, Houston, TX 77035","Tue, Wed, Fri, Sat 8am–5pm",H,notes="Texas ID or City utility bill required"),F("Environmental Service Center – North","5614 Neches St, Houston, TX 77026","2nd Thursday 9am–3pm",H,notes="Texas ID or City utility bill required")]+[F(f"Residential Drop-Off Center – {n}",a,"Tue–Sat 9am–6pm","https://houstontx.gov/solidwaste/depository","Passenger tires (5 per visit, 10 per month), used motor oil (5 qt), aerosol cans, bulk items, appliances, mattresses, recyclables (no paint, chemicals, TVs or truck tires)","Free","Houston residents; Texas ID or City utility bill/lease; up to 4 visits per month",checked="2026-11-03") for n,a in [("North","9003 N Main, Houston, TX 77022"),("Northwest","14400 Sommermeyer, Houston, TX 77041"),("Northeast","5565 Kirkpatrick, Houston, TX 77028"),("Southeast","2240 Central Street, Houston, TX 77017"),("South","5100 Sunbeam, Houston, TX 77033"),("Southwest","10785 SW Freeway, Houston, TX 77074")]])
 PHX="https://www.phoenix.gov/administration/departments/publicworks/about-us/transfer-stations.html"
 phxacc="Passenger car tires (5 per year, rims removed; no off-road, semi or motorcycle tires), appliances, CRT and non-CRT TVs (2 CRTs/month free), household trash"
 metro("Phoenix","Arizona","AZ",[F(n,a,"Mon–Fri 5:30am–5pm; Sat 6am–3pm; closed Sun & city holidays (closed Wed Nov 11, 2026)",PHX,phxacc,"Residents: one load up to 1 ton/month free with city services bill + matching photo ID; otherwise $55/ton ($40 min); extra CRTs $20 each","Household hazardous waste is prohibited",checked="2026-11-04") for n,a in [("North Gateway Transfer Station","30205 N. Black Canyon Hwy., Phoenix, AZ 85085"),("27th Avenue Transfer Station","3060 S. 27th Ave., Phoenix, AZ 85009")]],"Phoenix has no public HHW drop-off; residential customers get one at-home HHW collection per year. The 27th Ave Transfer Station does not accept HHW. Source: https://www.phoenix.gov/administration/departments/publicworks/residential-trash-recycling/household-hazardous-waste-collection.html")
@@ -40,7 +40,7 @@ PM="https://www.oregonmetro.gov/waste-disposal-and-prevention/need-get-rid-somet
 metro("Portland","Oregon","OR",[F("Metro Central Hazardous Waste","6161 NW 61st Ave, Portland, OR 97210","Mon–Sat 9am–4pm",PM,fees="Free for households (up to 35 gal/visit)"),F("Metro South Hazardous Waste","2001 Washington St, Oregon City, OR 97045","Daily 9am–4pm",PM,fees="Free for households (up to 35 gal/visit)")])
 NS="https://www.nashville.gov/departments/waste-services/convenience-centers/household-hazardous-waste"
 metro("Nashville","Tennessee","TN",[F(n,a,"Tue–Sat 8:30am–4:30pm",NS,fees="Free",notes="Davidson County residents; TN driver's license; 15 gal or 100 lb/month") for n,a in [("East Convenience Center","943A Doctor Richard G. Adams Dr, Nashville, TN 37207"),("Ezell Pike Convenience Center","3254 Ezell Pike, Nashville, TN 37211")]])
-metro("Washington","District of Columbia","DC",[F("Fort Totten Transfer Station (tires)","4900 John McCormack Rd NE, Washington, DC 20011","Tue–Fri 10am–2pm; Sat 7am–2pm; closed Mon & District holidays","https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",accepts="Passenger tires (up to 4); bulk trash, recycling, yard waste and appliances during regular hours",fees="Free for DC residents",notes="DC residents only; proof of residency required. HHW and electronics are NOT accepted here — use Special Waste Collection Events.",checked="2026-11-09"),F("DPW Special Waste Collection Event – RFK Stadium Lot 8","2500 Independence Ave SE, Washington, DC 20003","Event: Sat Nov 14, 2026, 8am–2pm (registration required; no entry after 2pm)","https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",accepts="HHW (paints, chemicals, batteries, CFLs, motor oil, auto fluids, propane ≤20 lb); e-waste (computers, TVs, phones, printers, monitors); document shredding (up to 5 boxes)",fees="Free",notes="DC residents only; register in advance on Eventbrite; bring proof of residency and registration. Next listed event after this: Sat Dec 12, 2026, also at RFK Lot 8.",checked="2026-11-09")],"No permanent HHW or e-cycling drop-off. Fort Totten takes up to 4 tires during regular hours. HHW and electronics are collected at registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding")
+metro("Washington","District of Columbia","DC",[F("Fort Totten Transfer Station (tires)","4900 John McCormack Rd NE, Washington, DC 20011","Tue–Fri 10am–2pm; Sat 7am–2pm; closed Mon & District holidays","https://dpw.dc.gov/specialwaste",accepts="Passenger tires (up to 4); bulk trash, recycling, yard waste and appliances during regular hours",fees="Free for DC residents",notes="DC residents only; proof of residency required. HHW and electronics are NOT accepted here — use Special Waste Collection Events.",checked="2026-11-09"),F("DPW Special Waste Collection Event – RFK Stadium Lot 8","2500 Independence Ave SE, Washington, DC 20003","Event: Sat Nov 14, 2026, 8am–2pm (registration required; no entry after 2pm)","https://dpw.dc.gov/specialwaste",accepts="HHW (paints, chemicals, batteries, CFLs, motor oil, auto fluids, propane ≤20 lb); e-waste (computers, TVs, phones, printers, monitors); document shredding (up to 5 boxes)",fees="Free",notes="DC residents only; register in advance on Eventbrite; bring proof of residency and registration. Next listed event after this: Sat Dec 12, 2026, also at RFK Lot 8.",checked="2026-11-09")],"No permanent HHW or e-cycling drop-off. Fort Totten takes up to 4 tires during regular hours. HHW and electronics are collected at registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/specialwaste")
 metro("Boston","Massachusetts","MA",[F("Zero Waste Day Drop-Off – Millennium Park","315 Gardner St, West Roxbury, MA 02132","Event: Sat Nov 21, 2026, 8:30am–noon","https://www.boston.gov/departments/public-works/zero-waste-day","Hazardous chemicals (20 gal limit), oil-based paint, rechargeable/lithium batteries, electronics (computers, phones, TVs, printers), fluorescent bulbs/mercury items, car & bike tires (8 each), car batteries, propane tanks, fire extinguishers","Free","Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. Do not arrive before 8:30am; no entry after noon.",checked="2026-11-09")])
 RS="https://www.republicservices.com/municipality/southern-nevada/service-information"
 metro("Las Vegas","Nevada","NV",[F("Republic Services HHW – North Las Vegas","333 W Gowan Rd (Gate B), North Las Vegas, NV 89032","Wed–Sat 9am–1pm on scheduled dates",RS,notes="Sites rotate; check 2026 HHW calendar"),F("Republic Services HHW – Henderson","560 Cape Horn Dr, Henderson, NV 89011","Wed–Sat 9am–1pm on scheduled dates",RS,notes="Sites rotate; check 2026 HHW calendar")])
@@ -52,7 +52,7 @@ metro("Miami","Florida","FL",[F("Home Chemical Collection Center – West Dade",
 metro("Tampa","Florida","FL",[F("Sheldon Road HHW Collection Center","9805 Sheldon Rd, Tampa, FL 33635","1st Sat 8am–2pm","https://hcfl.gov/locations/sheldon-road-household-hazardous-collection-center",notes="Photo ID with Hillsborough address"),F("South County HHW Collection","13000 US Hwy 41, Gibsonton, FL","2nd Sat 8am–2pm","https://hcfl.gov/residents/property-owners-and-renters/trash-and-recycling/discarding-household-hazardous-waste"),F("Hillsborough Heights HHW Collection Site","6209 County Road 579, Seffner, FL","3rd Sat 8am–2pm","https://hcfl.gov/locations/hillsborough-heights-household-hazardous-waste-collection-site")])
 metro("Orlando","Florida","FL",[F("Porter Transfer Station HHW","1326 Good Homes Rd, Orlando, FL 32818","Mon–Sat 8am–5pm","https://www.orangecountyfl.net/watergarbagerecycling/householdhazardouswaste.aspx",fees="Free for Orange County residents",notes="Paint/chemicals max 25 gal per vehicle")])
 metro("Baltimore","Maryland","MD",[F("Sisson Street Residential Recycling Center (HHW days)","2840 Sisson St, Baltimore, MD 21211","Collection days: Dec 4–5, 2026, 9am–5pm (Nov 6–7 already held)","https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",accepts="Automotive fluids, batteries, household cleaners, fungicides/herbicides, insecticides/pesticides, oil paint, thinners, pool chemicals, propane tanks, rust removers, solvents, fire extinguishers, thermometers, fluorescent bulbs",fees="Free",notes="Baltimore City residents only; materials in original labeled packaging; no commercial vehicles. 410-396-7250",checked="2026-11-09")])
-metro("Sacramento","California","CA",[F("North Area Recovery Station HHW Drop-Off","4450 Roseville Rd, North Highlands, CA","Tue, Thu, Fri, Sat 8:30am–4pm","https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/north-area-recovery-station/nars-hhw-drop-off.html")])
+metro("Sacramento","California","CA",[F("North Area Recovery Station HHW Drop-Off","4450 Roseville Rd, North Highlands, CA","Tue, Thu, Fri, Sat 8:30am–4pm","https://wmr.saccounty.gov/us/en/county-facilities/north-area-recovery-station/nars-hhw-drop-off.html")])
 metro("Kansas City","Missouri","MO",[F("Household Hazardous Waste Facility","4707 Deramus Ave, Kansas City, MO 64120","Thu–Fri 9am–6pm; Sat 9am–4pm","https://www.kcwater.us/programs/hhw/",notes="No appointment under 600 lb; 816-513-8400")])
 MM="https://www.mmsd.com/what-you-can-do/home-haz-mat-collection"
 metro("Milwaukee","Wisconsin","WI",[F("MMSD South Drop Off Center","3879 W Lincoln Ave, Milwaukee, WI 53215","Thu–Sat 7am–3pm",MM,notes="Milwaukee County households"),F("MMSD 13th Street Drop Off","6060 S 13th St, Milwaukee, WI 53221","Tue 11am–6pm; Sat 8am–2pm",MM,notes="Milwaukee County households")])
@@ -350,7 +350,7 @@ spunote="Seattle Public Utilities transfer station. Loads must be secured or may
 add("Seattle",
   F("North Transfer Station (Seattle Public Utilities)","1350 North 34th Street, Seattle, WA 98103","Daily 8am–5:30pm (first Wednesday of the month 10am–5:30pm); closed Thanksgiving, Christmas Day, New Year's Day and July 4",SPU,spuacc,spufee,spunote,D18),
   F("South Transfer Station (Seattle Public Utilities)","130 South Kenyon Street, Seattle, WA 98108","Daily 8am–5:30pm (first Wednesday of the month 10am–5:30pm); closed Thanksgiving, Christmas Day and New Year's Day",SPU,spuacc,spufee,spunote,D18))
-WMM="https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities"
+WMM="https://www.wake.gov/departments-government/solid-waste-management/facilities/multi-material-recycling-facilities"
 wmmacc="Electronics (TVs, cell phones, computers, monitors, game consoles, stereos, microwaves, any corded device); large appliances (A/C and heating units, refrigerators, freezers, washers, dryers, water heaters); motor oil, transmission fluid, hydraulic oils, power steering fluid and antifreeze (no drums; must pour into collection tank); oil filters; cooking oil; cardboard"
 wmmnote="Wake County Solid Waste Management Division recycling drop-off for businesses and residents. Closed New Year's Day, Easter Sunday, Memorial Day, Independence Day, Labor Day, Thanksgiving Day, Christmas Eve (from noon) and Christmas Day. 919-856-7400"
 add("Raleigh",
@@ -458,7 +458,7 @@ add("Richmond",
     "Used tires (fee); used motor oil, automatic transmission and power-steering fluid, gear and hydraulic oil, diesel and fuel oil; motor-oil additives; oil filters; antifreeze; gasoline; oil-based paint, varnish/shellac, stains and tints, lacquer thinners, polyurethane, primers, mineral spirits, turpentine and other flammable solvents; lead-acid and rechargeable batteries (no fee); propane tanks; appliances/white goods; household trash; drop-off recycling (cans, bottles, paper, cardboard, cartons); Goodwill donation trailer. Latex paint not accepted for recycling (dry it out and put it in the trash)",
     "Tires: passenger car/small truck $2, on rims $7, large truck (over 19 in.) $13, large truck on rim $19, tractor $26. Appliances with CFCs $25, without $15. Pickup-load disposal $30 small / $40 regular / $70 larger (up to 10 cu yd); one free pickup load of residential C&D waste per month. No fee for car and rechargeable batteries",
     "Operated by Powhatan County Public Works. A Powhatan Convenience Center sticker is required as proof of residency (bring vehicle registration showing a Powhatan County address to get one). Commercial waste is not accepted. Fees: https://www.powhatanva.gov/307/Fee-Schedule. Item locations per the CVWMA Powhatan recycling guide: https://cvwma.com/recycling/powhatan/. Electronics: CVWMA says to use reputable recyclers or special events such as the first-Saturday Securis event in Henrico; the county's Recycling page lists electronics among acceptable items, so call before bringing them. 804-598-5673",D21))
-HOURC="https://www.houstontx.gov/solidwaste/recycling_centers.html"
+HOURC="https://www.houstontx.gov/solidwaste/recycling-centers"
 HOUE="https://www.houstontx.gov/solidwaste/ewaste"
 houid="Proof of address: a current Texas-issued ID (driver's license, DPS ID, License to Carry or Consulate ID) or a current City of Houston utility bill or lease; for recycling only a current Texas-issued ID is sufficient. Residents may use the recycling centers up to 4 times per month (once per week); arrive at least 15–30 minutes before closing. "
 add("Houston",
@@ -581,7 +581,7 @@ add("Washington",
     "https://www.fairfaxcounty.gov/publicworks/recycling-trash/i-66-transfer-station",fxacc,fxfee,fxnote+"I-66 Transfer Station 703-631-1179",D24),
   F("Fairfax County I-95 Landfill Complex (HHW & e-waste)","9850 Furnace Road, Lorton, VA 22079","Residents: trash, recycling and food scraps Mon–Fri 7am–5pm, Sat–Sun 7am–4pm. HHW and e-waste: Wed 7am–5pm and Sat 7am–4pm only. Latex-paint-only drop-off (Lot B): Mon–Fri 7am–5pm, Sat–Sun 7am–4pm. Holiday closures: see the county's holiday hours",
     "https://www.fairfaxcounty.gov/publicworks/recycling-trash/i-95-landfill-complex",fxacc+". Latex paint only drop-off at Lot B daily",fxfee,fxnote+"I-95 Landfill Complex 703-690-1703",D24))
-next(m for m in M if m["city"]=="Washington")["note"]=("Inside DC there is no permanent HHW or e-cycling drop-off: Fort Totten takes up to 4 tires during regular hours, and HHW and electronics go to registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding. "
+next(m for m in M if m["city"]=="Washington")["note"]=("Inside DC there is no permanent HHW or e-cycling drop-off: Fort Totten takes up to 4 tires during regular hours, and HHW and electronics go to registered DPW Special Waste Collection Events. Source: https://dpw.dc.gov/specialwaste. "
   "Fairfax County, Virginia residents can use the county's permanent HHW and e-waste drop-offs at the I-66 Transfer Station and I-95 Landfill Complex (Fairfax County residents only).")
 # Under The Sink re-verified 2026-11-24 against its Location & Hours, What's Accepted, What's Not Accepted and Common Questions pages.
 for m in M:
@@ -610,7 +610,7 @@ add("Cleveland",
     CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the North Olmsted Service Garage, on the south side of city hall; "+CUYCALL+CUY,D25),
   F("Westlake Service Center (HHW drop-off)","741 Bassett Road, Westlake, OH","Seasonal (2026): May 11–16 and Sep 14–19; Mon–Fri 8am–6pm, Sat 7:30am–noon."+CUYPAST,CUYU.format("westlake"),
     CUYACC,"Free (Cuyahoga County HHW program)","Drop-off is at the Westlake Service Center; "+CUYCALL+CUY,D25))
-SACW="https://wmr.saccounty.gov/content/wmr/us/en/"
+SACW="https://wmr.saccounty.gov/us/en/"
 add("Sacramento",
   F("Kiefer Landfill (tires, e-waste & ABOP drop-off)","12701 Kiefer Blvd., Sloughhouse, CA 95683",
     "Landfill: Mon–Fri 6:30am–4:30pm; Sat–Sun 8:30am–4:30pm (arrive at least 15 minutes before closing; may close early if the daily vehicle limit is reached). Thanksgiving Day closes at 2pm; Christmas and New Year's Day close at 2pm on weekdays, all day on weekends. ABOP & Special Waste drop-off: Tue–Sat 8:30am–4pm (closed Thanksgiving, Christmas and New Year's Day)",
@@ -711,6 +711,90 @@ REVERIFIED26={"Sisson Street Residential Recycling Center (HHW days)","DPW Speci
 for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED26: f["checked"]=D26
+# --- Nov 26 2026 afternoon data-quality pass (official pages fetched 2026-11-26) ---
+# Redirected source URLs already switched to their final https canonicals in the
+# constants above. Fees and event notes below are copied only from those pages.
+# Recology SF: no general drop-off fee is stated (the "Free; limit of 125 lbs/trip"
+# line is under asbestos; the fee table is under the VSQG business program), so fees stay empty.
+D26B="2026-11-26"
+for m in M:
+    for f in m["facilities"]:
+        n=f["name"]
+        if n=="Dallas County Home Chemical Collection Center":
+            f["fees"]=("Free for residents of Addison, Dallas, DeSoto, Duncanville, Farmers Branch, Garland, Highland Park, Irving, Mesquite, Richardson, Rowlett, Sachse, Seagoville, Sunnyvale, University Park, and unincorporated areas of Dallas County (bring a driver’s license and a water or other utility bill as proof). Residents of all other cities must pay a minimum of $100.00 for waste management fees.")
+            f["notes"]="Residents of participating cities; 214-553-1765"
+        elif n=="North Area Recovery Station HHW Drop-Off":
+            f["fees"]="Free for residents, up to 15 gallons or 125 pounds of HHW per month; Very Small Quantity Generator businesses by appointment for a fee"
+        elif n=="SWACO Household Hazardous Waste Drop-Off":
+            f["fees"]="Most items free for Franklin County residents. Latex and other water-based paints are not part of the free HHW program and can be disposed of for a fee — contact EEI, Inc. at 614-294-1300 (official page says typically $1.00 per gallon)"
+        elif n=="Household Hazardous Waste Facility" and m["city"]=="Kansas City":
+            f["fees"]="No charge for residents of Kansas City, Mo., and participating communities (proof of residency required, such as a driver’s license or utility bill)"
+        elif n=="Household Pollutant Collection Facility":
+            f["fees"]="Free for Tulsa residents with a driver's license or City of Tulsa utility bill. Non-Tulsa residents $1.37 per pound (Mastercard or Visa). Residents of Bixby, Broken Arrow, Claremore, Collinsville, Glenpool, Jenks, Owasso, Sand Springs, and unincorporated Tulsa County can use a Metropolitan Environmental Trust voucher; a Sapulpa voucher covers 45 pounds, then $1.37/lb"
+        elif n=="Household Hazardous Waste Facility" and m["city"]=="Jacksonville":
+            f["fees"]="Duval County residents: free. Conditionally Exempt Small Quantity Generators and non-residents: flammable liquids $4.25 per gallon; latex $1.25 plus a documentation fee. Checks or money orders only, payable to Tax Collector"
+        elif n=="Recology SF Household Hazardous Waste Facility":
+            if "New Year" not in f["hours"]:
+                f["hours"]=f["hours"].rstrip(".")+"; closed New Year’s Day, Fourth of July, Thanksgiving, the Friday after Thanksgiving, December 25 and December 26"
+        elif n=="Zero Waste Day Drop-Off – Millennium Park":
+            f["notes"]="Boston residents only; photo ID, utility bill or lease. Rescheduled from Sept 26. The Nov 21, 2026 event has been held, and as of Nov 26, 2026 the City's Zero Waste Days page says there are no related events available; no next date is posted."
+        elif n=="Parma Service Garage (HHW drop-off day)":
+            note=f.get("notes") or ""
+            if "as of Nov 26" not in note:
+                if "all three have been held" in note:
+                    f["notes"]=note.replace("no 2027 dates are posted yet)","no 2027 dates are posted as of Nov 26, 2026)")
+                else:
+                    f["notes"]=(note.rstrip(".")+". The official 2026 drop-off dates (March 28, October 3 and November 21) have all been held; as of Nov 26, 2026 the official Parma page lists no later date.").lstrip(". ")
+REVERIFIED26B={
+    "Dallas County Home Chemical Collection Center",
+    "Recology SF Household Hazardous Waste Facility",
+    "Zero Waste Day Drop-Off – Millennium Park",
+    "Parma Service Garage (HHW drop-off day)",
+    "North Area Recovery Station HHW Drop-Off",
+    "Kiefer Landfill (tires, e-waste & ABOP drop-off)",
+    "SWACO Household Hazardous Waste Drop-Off",
+    "Household Pollutant Collection Facility",
+    "Environmental Service Center – South",
+    "Environmental Service Center – North",
+    "Residential Drop-Off Center – North",
+    "Residential Drop-Off Center – Northwest",
+    "Residential Drop-Off Center – Northeast",
+    "Residential Drop-Off Center – Southeast",
+    "Residential Drop-Off Center – South",
+    "Residential Drop-Off Center – Southwest",
+    "Westpark Consumer Recycling Center",
+    "Ellington/Clear Lake Neighborhood Recycling Center",
+    "Fort Totten Transfer Station (tires)",
+    "DPW Special Waste Collection Event – RFK Stadium Lot 8",
+    "North Wake Multi-Material Recycling Facility",
+    "South Wake Multi-Material Recycling Facility",
+    "East Wake Multi-Material Recycling Facility",
+    "South Wake HHW Facility",
+}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED26B:
+            # Jacksonville and Kansas City share the name "Household Hazardous Waste Facility"
+            if f["name"]=="Household Hazardous Waste Facility" and m["city"] not in ("Jacksonville","Kansas City"):
+                continue
+            f["checked"]=D26B
+# Kansas City and Jacksonville HHW share a name; set checked explicitly.
+for m in M:
+    for f in m["facilities"]:
+        if f["name"]=="Household Hazardous Waste Facility" and m["city"] in ("Jacksonville","Kansas City"):
+            f["checked"]=D26B
+# Preserve previously seeded official fee/hours/notes that the early F() rows
+# do not carry. These three were not re-verified on 2026-11-26; do not bump checked.
+for m in M:
+    for f in m["facilities"]:
+        if f["name"]=="Recycle & Reuse Drop-off Center" and m["city"]=="Austin":
+            f["fees"]="Use of the facility is free for Austin and Travis County residents, except for tires. Fees apply if you do not live in Austin or Travis County."
+        elif f["name"]=="ERG Environmental Services (Wayne County HHW)":
+            f["fees"]="for a fee"
+            f["hours"]="by appointment"
+            f["notes"]="Our processing contractor, Environmental Recycling Group in Livonia, accepts residential drop off of HHW by appointment for a fee. You can call them at 734-437-9650. The county also lists a limited free-voucher program."
+        elif f["name"]=="Environmental Compliance Center" and m["city"]=="Fresno":
+            f["fees"]="Residential (Free, No Appointment Needed). Businesses (Fees May Apply, Appointment Required)."
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

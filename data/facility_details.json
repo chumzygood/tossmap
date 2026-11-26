@@ -686,8 +686,8 @@
   "TX|Houston|Environmental Service Center – South": {
     "slug": "environmental-service-center-south",
     "operator": "City of Houston Solid Waste Management Department",
-    "source": "https://houstontx.gov/solidwaste/esc.html",
-    "source_checked": "2026-11-15",
+    "source": "https://houstontx.gov/solidwaste/esc",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "a8e06866f34ea23113b4a5c174bdcd6cf5ae8f75a3fb0aedb9ba1b7c6ff7abd0",
     "questions": {
       "residents_only": {
@@ -744,8 +744,8 @@
   "TX|Houston|Environmental Service Center – North": {
     "slug": "environmental-service-center-north",
     "operator": "City of Houston Solid Waste Management Department",
-    "source": "https://houstontx.gov/solidwaste/esc.html",
-    "source_checked": "2026-11-15",
+    "source": "https://houstontx.gov/solidwaste/esc",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "2bf3390c7f75d54e8b3be242043ab318df58ae91612b8199e813e94be9ee925d",
     "questions": {
       "residents_only": {
@@ -802,8 +802,8 @@
   "TX|Houston|Residential Drop-Off Center – North": {
     "slug": "residential-drop-off-center-north",
     "operator": "City of Houston Solid Waste Management Department",
-    "source": "https://houstontx.gov/solidwaste/depository.html",
-    "source_checked": "2026-11-03",
+    "source": "https://houstontx.gov/solidwaste/depository",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "189b3eb4bfc25fac012cd1bd2fb18f63d6d50021525b4746d34697d75d62af7f",
     "questions": {
       "residents_only": {
@@ -860,8 +860,8 @@
   "TX|Houston|Residential Drop-Off Center – Northwest": {
     "slug": "residential-drop-off-center-northwest",
     "operator": "City of Houston Solid Waste Management Department",
-    "source": "https://houstontx.gov/solidwaste/depository.html",
-    "source_checked": "2026-11-03",
+    "source": "https://houstontx.gov/solidwaste/depository",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "189b3eb4bfc25fac012cd1bd2fb18f63d6d50021525b4746d34697d75d62af7f",
     "questions": {
       "residents_only": {
@@ -918,8 +918,8 @@
   "TX|Houston|Residential Drop-Off Center – Northeast": {
     "slug": "residential-drop-off-center-northeast",
     "operator": "City of Houston Solid Waste Management Department",
-    "source": "https://houstontx.gov/solidwaste/depository.html",
-    "source_checked": "2026-11-03",
+    "source": "https://houstontx.gov/solidwaste/depository",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "189b3eb4bfc25fac012cd1bd2fb18f63d6d50021525b4746d34697d75d62af7f",
     "questions": {
       "residents_only": {
@@ -976,8 +976,8 @@
   "TX|Houston|Residential Drop-Off Center – Southeast": {
     "slug": "residential-drop-off-center-southeast",
     "operator": "City of Houston Solid Waste Management Department",
-    "source": "https://houstontx.gov/solidwaste/depository.html",
-    "source_checked": "2026-11-03",
+    "source": "https://houstontx.gov/solidwaste/depository",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "189b3eb4bfc25fac012cd1bd2fb18f63d6d50021525b4746d34697d75d62af7f",
     "questions": {
       "residents_only": {
@@ -1034,8 +1034,8 @@
   "TX|Houston|Residential Drop-Off Center – South": {
     "slug": "residential-drop-off-center-south",
     "operator": "City of Houston Solid Waste Management Department",
-    "source": "https://houstontx.gov/solidwaste/depository.html",
-    "source_checked": "2026-11-03",
+    "source": "https://houstontx.gov/solidwaste/depository",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "189b3eb4bfc25fac012cd1bd2fb18f63d6d50021525b4746d34697d75d62af7f",
     "questions": {
       "residents_only": {
@@ -1092,8 +1092,8 @@
   "TX|Houston|Residential Drop-Off Center – Southwest": {
     "slug": "residential-drop-off-center-southwest",
     "operator": "City of Houston Solid Waste Management Department",
-    "source": "https://houstontx.gov/solidwaste/depository.html",
-    "source_checked": "2026-11-03",
+    "source": "https://houstontx.gov/solidwaste/depository",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "189b3eb4bfc25fac012cd1bd2fb18f63d6d50021525b4746d34697d75d62af7f",
     "questions": {
       "residents_only": {
@@ -1613,8 +1613,8 @@
     "slug": "dallas-county-home-chemical-collection-center",
     "operator": "not stated by source",
     "source": "https://www.dallascounty.org/departments/consolidated-services/hhw/",
-    "source_checked": "2026-11-02",
-    "listing_fingerprint": "0717bf9c10dcb60219823a1d02920e3ab78642c57c04ea3a294ba370a5a32305",
+    "source_checked": "2026-11-26",
+    "listing_fingerprint": "9d1f39e384858e178e43f998afa3f1b9e5a38681a447350a47870280e4e3ffc0",
     "questions": {
       "residents_only": {
         "answer": "yes",
@@ -1629,8 +1629,8 @@
         "evidence": ""
       },
       "fee_charged": {
-        "answer": "not stated by source",
-        "evidence": ""
+        "answer": "yes",
+        "evidence": "Dallas County Home Chemical Collection Center page (https://www.dallascounty.org/departments/hhs/hccc.php, fetched 2026-11-26): “This is a FREE service for residents of the following cities and areas: Addison, Dallas, DeSoto, Duncanville, Farmers Branch, Garland, Highland Park, Irving, Mesquite, Richardson, Rowlett, Sachse, Seagoville, Sunnyvale, University Park, and unincorporated areas of Dallas County.” “Residents of all other cities must pay a minimum of $100.00 for waste management fees.”"
       },
       "tires": {
         "answer": "not stated by source",
@@ -1664,14 +1664,15 @@
         "answer": "not stated by source",
         "evidence": ""
       }
-    }
+    },
+    "questions_reviewed": "2026-11-26"
   },
   "TX|Austin|Recycle & Reuse Drop-off Center": {
     "slug": "recycle-reuse-drop-off-center",
     "operator": "Austin Resource Recovery",
     "source": "https://www.austintexas.gov/resource-recovery/locations/recycle-and-reuse-drop-center",
     "source_checked": "2026-11-02",
-    "listing_fingerprint": "1f1df2ba8c0f69f84cda29289932852f28f040939d2c1371f1c16cf0c91a463e",
+    "listing_fingerprint": "1dab71510e6a417835b8e06fba884c1263372cde87e74ffe456f2b8b01775b97",
     "questions": {
       "residents_only": {
         "answer": "no",
@@ -1731,8 +1732,8 @@
     "slug": "household-hazardous-waste-facility",
     "operator": "not stated by source",
     "source": "https://www.jacksonville.gov/departments/office-of-administrative-services/solid-waste/disposal-operations/household-hazardous-wastes-(hhw)",
-    "source_checked": "2026-11-02",
-    "listing_fingerprint": "b17da068bf686cef96b3f00c63099a09062b8e25676e4b6df99b16f69d2f3d1f",
+    "source_checked": "2026-11-26",
+    "listing_fingerprint": "ec708e0764b1b5893ec21807ad086e44c343208cd3b915b0b3ab5e694ee9d058",
     "questions": {
       "residents_only": {
         "answer": "no",
@@ -1748,7 +1749,7 @@
       },
       "fee_charged": {
         "answer": "yes",
-        "evidence": "Conditional — City of Jacksonville Household Hazardous Waste page (fetched 2026-11-20): Fee Schedule: “Duval Residents: Free”; “Others: Conditionally Exempt Small Quantity Generator and Non-Residents — Flammable Liquids – $4.25 / Per Gallon; Latex - $1.25 + Documentation Fee”; “Checks/money orders only”."
+        "evidence": "City of Jacksonville Household Hazardous Waste Facility page (fetched 2026-11-26): “Fee Schedule Duval Residents: Free Others: Conditionally Exempt Small Quantity Generator and Non-Residents Flammable Liquids – $4.25 / Per Gallon Latex - $1.25 + Documentation Fee Checks/money orders only to be made payable to Tax Collector.”"
       },
       "tires": {
         "answer": "not stated by source",
@@ -1782,7 +1783,8 @@
         "answer": "yes",
         "evidence": "Conditional — City of Jacksonville Household Hazardous Waste page (fetched 2026-11-20): Fee Schedule: “Others: Conditionally Exempt Small Quantity Generator and Non-Residents” pay per gallon (flammable liquids $4.25/gal). For e-waste: “Businesses should check for available recycling centers to arrange for the recycling and/or disposal of any e-wastes.”"
       }
-    }
+    },
+    "questions_reviewed": "2026-11-26"
   },
   "TX|Fort Worth|Environmental Collection Center": {
     "slug": "environmental-collection-center",
@@ -2073,8 +2075,8 @@
     "slug": "swaco-household-hazardous-waste-drop-off",
     "operator": "not stated by source",
     "source": "https://www.swaco.org/diversion/residents/household-hazardous-waste/",
-    "source_checked": "2026-11-23",
-    "listing_fingerprint": "4ee4ecc4ba1622b5156735932316d4fc8e48ffbc38c67d01e7c45bc0ee428356",
+    "source_checked": "2026-11-26",
+    "listing_fingerprint": "f66b729428d4f657d256b7e8991e6bffdf9e656afadfa0db483e728975bb2056",
     "questions": {
       "residents_only": {
         "answer": "yes",
@@ -2089,8 +2091,8 @@
         "evidence": ""
       },
       "fee_charged": {
-        "answer": "no",
-        "evidence": "SWACO Household Hazardous Waste page (https://www.swaco.org/diversion/residents/household-hazardous-waste/, fetched 2026-11-23): “Most items are free to dispose of, except latex and other water-based paints … latex and other water-based paints are not accepted as part of SWACO’s free HHW program.” “SWACO contracts with EEI to offer free residential recycling for HHW.”"
+        "answer": "yes",
+        "evidence": "SWACO Household Hazardous Waste page (fetched 2026-11-26): “Most items are free to dispose of, except latex and other water-based paints. Because they are not considered hazardous, latex and other water-based paints are not accepted as part of SWACO’s free HHW program. However, they can be disposed of for a fee — contact EEI, Inc. at 614-294-1300 for disposal prices (typically $1.00 per gallon).”"
       },
       "tires": {
         "answer": "no",
@@ -2125,7 +2127,7 @@
         "evidence": "SWACO Household Hazardous Waste page (https://www.swaco.org/diversion/residents/household-hazardous-waste/, fetched 2026-11-23): “Note for Franklin County Businesses This program is not offered to businesses. Businesses should contact EEI, Inc. at 614-294-1300 to inquire about the cost to collect or accept their hazardous materials.”"
       }
     },
-    "questions_reviewed": "2026-11-23"
+    "questions_reviewed": "2026-11-26"
   },
   "NC|Charlotte|Compost Central Disposal & Recycling Center": {
     "slug": "compost-central-disposal-recycling-center",
@@ -2648,8 +2650,8 @@
     "slug": "recology-sf-household-hazardous-waste-facility",
     "operator": "Recology San Francisco",
     "source": "https://www.recology.com/recology-san-francisco/hazardous-waste/",
-    "source_checked": "2026-11-02",
-    "listing_fingerprint": "e14368b66589ebf665865ac5931a5cd90bd41e714556e4ba2930903c41380f75",
+    "source_checked": "2026-11-26",
+    "listing_fingerprint": "eaa53af0df48511dbe67b197b81dfb7e40b692b598664b4178b21230bbede66d",
     "questions": {
       "residents_only": {
         "answer": "yes",
@@ -2935,8 +2937,8 @@
   "DC|Washington|Fort Totten Transfer Station (tires)": {
     "slug": "fort-totten-transfer-station-tires",
     "operator": "not stated by source",
-    "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
-    "source_checked": "2026-11-09",
+    "source": "https://dpw.dc.gov/specialwaste",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "0872513337799b6b8e88ccc3f198008c65cc42217d4c9d32329edbc9a9823363",
     "questions": {
       "residents_only": {
@@ -2992,7 +2994,7 @@
   "DC|Washington|DPW Special Waste Collection Event – RFK Stadium Lot 8": {
     "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
     "operator": "not stated by source",
-    "source": "https://dpw.dc.gov/service/household-hazardous-waste-hhw-e-cycling-document-shredding",
+    "source": "https://dpw.dc.gov/specialwaste",
     "source_checked": "2026-11-26",
     "listing_fingerprint": "3cce5280546fd7f5402893d06e443c3764c18a67cf9478d558cfd5acacd92962",
     "questions": {
@@ -3051,8 +3053,8 @@
     "slug": "zero-waste-day-drop-off-millennium-park",
     "operator": "not stated by source",
     "source": "https://www.boston.gov/departments/public-works/zero-waste-day",
-    "source_checked": "2026-11-22",
-    "listing_fingerprint": "54ee8d746029ce202b997c1876a6fb6088406dc4a705fefc3bbe27159ceda356",
+    "source_checked": "2026-11-26",
+    "listing_fingerprint": "e47f7549ab548ec91c37d55dabdcdf463d8dd6e5d9c4a58c37aae900dfada6e5",
     "questions": {
       "residents_only": {
         "answer": "yes",
@@ -3797,9 +3799,9 @@
   "CA|Sacramento|North Area Recovery Station HHW Drop-Off": {
     "slug": "north-area-recovery-station-hhw-drop-off",
     "operator": "not stated by source",
-    "source": "https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/north-area-recovery-station/nars-hhw-drop-off.html",
-    "source_checked": "2026-11-25",
-    "listing_fingerprint": "04d6d1ef9b46747b573ea23bdb4d213f524a84af905506291578db6df37c342d",
+    "source": "https://wmr.saccounty.gov/us/en/county-facilities/north-area-recovery-station/nars-hhw-drop-off.html",
+    "source_checked": "2026-11-26",
+    "listing_fingerprint": "983f8ace654f4db9d0e467a78d03d27b7256944e9b4103eb71c72aff604f0e62",
     "questions": {
       "residents_only": {
         "answer": "not stated by source",
@@ -3815,7 +3817,7 @@
       },
       "fee_charged": {
         "answer": "no",
-        "evidence": "Sacramento County NARS HHW Drop-Off Facility page (fetched 2026-11-25): “Residents can drop off up to 15 gallons or 125 pounds of HHW per month at the NARS HHW Facility for free.” (Businesses pay: “Businesses that qualify as a Very Small Quantity Generator (VSQG) to drop off accepted Hazardous Waste (HHW) at the NARS HHW Facility for a fee , must make an appointment in advance.”)"
+        "evidence": "Sacramento County NARS HHW Drop-Off page (https://wmr.saccounty.gov/us/en/county-facilities/north-area-recovery-station/nars-hhw-drop-off.html, fetched 2026-11-26): “Residents can drop off up to 15 gallons or 125 pounds of HHW per month at the NARS HHW Facility for free.” (Very Small Quantity Generator businesses are described separately as paying a fee by appointment.)"
       },
       "tires": {
         "answer": "not stated by source",
@@ -3850,14 +3852,14 @@
         "evidence": "Conditional — Sacramento County NARS HHW Drop-Off Facility page (fetched 2026-11-25): “Businesses that qualify as a Very Small Quantity Generator (VSQG) to drop off accepted Hazardous Waste (HHW) at the NARS HHW Facility for a fee , must make an appointment in advance.”"
       }
     },
-    "questions_reviewed": "2026-11-25"
+    "questions_reviewed": "2026-11-26"
   },
   "MO|Kansas City|Household Hazardous Waste Facility": {
     "slug": "household-hazardous-waste-facility",
     "operator": "not stated by source",
     "source": "https://www.kcwater.us/programs/hhw/",
-    "source_checked": "2026-11-23",
-    "listing_fingerprint": "db6b7bbf5f1ac47778508af68f93cbd73d99cc79a59c744437b95558a9e3de42",
+    "source_checked": "2026-11-26",
+    "listing_fingerprint": "31d19b753dcbabda5d869c5f4ea0ac785d54ea0a29174a6ed487e056a929add4",
     "questions": {
       "residents_only": {
         "answer": "yes",
@@ -3873,7 +3875,7 @@
       },
       "fee_charged": {
         "answer": "no",
-        "evidence": "KC Water Household Hazardous Waste page (https://www.kcwater.us/programs/hhw/, fetched 2026-11-23): “No charge for residents of Kansas City, Mo., and participating communities”."
+        "evidence": "KC Water Household Hazardous Waste Facility page (fetched 2026-11-26): “No charge for residents of Kansas City, Mo., and participating communities (see list below). Customers must provide proof of residency, such as a driver’s license or utility bill.”"
       },
       "tires": {
         "answer": "no",
@@ -3908,7 +3910,7 @@
         "evidence": "KC Water Household Hazardous Waste page (https://www.kcwater.us/programs/hhw/, fetched 2026-11-23): “KC Water is not permitted to accept hazardous waste from businesses or organizations, including churches, schools, government entities, nonprofit organizations, home-based businesses, and materials used to maintain rental properties.”"
       }
     },
-    "questions_reviewed": "2026-11-23"
+    "questions_reviewed": "2026-11-26"
   },
   "WI|Milwaukee|MMSD South Drop Off Center": {
     "slug": "mmsd-south-drop-off-center",
@@ -4430,7 +4432,7 @@
     "slug": "south-wake-hhw-facility",
     "operator": "not stated by source",
     "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/household-hazardous-waste-facilities/south-wake-household-hazardous-waste-facility",
-    "source_checked": "2026-11-18",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "71b4314d8c12daa094a2fc8835c8295d2e0271d7ac3efb99021d1bcf0d44b007",
     "questions": {
       "residents_only": {
@@ -4950,7 +4952,7 @@
     "operator": "Environmental Recycling Group",
     "source": "https://www.waynecountymi.gov/Government/Departments/Environmental-Services/Land-Resource-Management",
     "source_checked": "2026-11-02",
-    "listing_fingerprint": "a4c154e1a96e10940f0a612bb0d509ef617276cf9a4efa1866b1fcc79f192c8f",
+    "listing_fingerprint": "c22808749c423f86154eb07b4a5e30286b896ff05e21ad0479af373d0dcdcac6",
     "questions": {
       "residents_only": {
         "answer": "not stated by source",
@@ -5013,8 +5015,8 @@
     "slug": "household-pollutant-collection-facility",
     "operator": "not stated by source",
     "source": "https://www.cityoftulsa.org/government/departments/public-works/household-pollutant-collection-facility/",
-    "source_checked": "2026-11-02",
-    "listing_fingerprint": "6b1fae9747bb00123f6017616e7365c74365b6096b521ca717680e1fb721d79d",
+    "source_checked": "2026-11-26",
+    "listing_fingerprint": "ae35904b4d1def475e2d829d749c9275d27574aaa85a61d1a1bca1cee18af362",
     "questions": {
       "residents_only": {
         "answer": "no",
@@ -5030,7 +5032,7 @@
       },
       "fee_charged": {
         "answer": "yes",
-        "evidence": "Conditional — City of Tulsa Household Pollutant Collection Facility page (fetched 2026-11-20): “Tulsa residents can drop-off for free by showing a drivers license or City of Tulsa utility bill.”; for voucher communities “If the weight is over 45 lbs, there will be a disposal fee”; without a voucher customers “will be charged the full disposal rate of $1.37 per pound”."
+        "evidence": "City of Tulsa Household Pollutant Collection Facility page (fetched 2026-11-26): “Tulsa residents can drop-off for free by showing a drivers license or City of Tulsa utility bill.” “Non-Tulsa Resident Pricing $1.37 per pound The disposal fee can be paid with Mastercard or Visa.” Residents of listed metro communities may use a Metropolitan Environmental Trust voucher; “Sapulpa resident voucher will cover 45 pounds of pollutants. Any pollutants collected after 45 pounds will be $1.37/lb.”"
       },
       "tires": {
         "answer": "no",
@@ -5065,7 +5067,7 @@
         "evidence": "City of Tulsa Household Pollutant Collection Facility page (fetched 2026-11-16): “a year-round facility open to residential customers”; Non-Accepted Items Include “Industrial or Commercially Generated Waste (including NHIW waste)”."
       }
     },
-    "questions_reviewed": "2026-11-16"
+    "questions_reviewed": "2026-11-26"
   },
   "CA|Riverside|Agua Mansa Permanent HHW Facility": {
     "slug": "agua-mansa-permanent-hhw-facility",
@@ -5360,7 +5362,7 @@
     "operator": "not stated by source",
     "source": "https://cleanupfresnocounty.com/drop-off-locations/",
     "source_checked": "2026-11-02",
-    "listing_fingerprint": "6a7edc06ce1770edf0aee7bae3a8d9d426f70b9faa1ea48e06fe8657becd53bd",
+    "listing_fingerprint": "c304b6c44daa18509edc1c9c4fd30b271a1f3b2d13634adfa33d388425e13414",
     "questions": {
       "residents_only": {
         "answer": "no",
@@ -9009,8 +9011,8 @@
     "slug": "parma-service-garage-hhw-drop-off-day",
     "operator": "City of Parma (Cuyahoga County Solid Waste District program)",
     "source": "https://cuyahogarecycles.org/recycle-in/parma/household_hazardous_waste/",
-    "source_checked": "2026-11-22",
-    "listing_fingerprint": "89654b43aec13ee1ff1eb0ae537fdb937332644426f3b473053b769c22c777f7",
+    "source_checked": "2026-11-26",
+    "listing_fingerprint": "b033f652d1a59bb47a4dc6a8f3462f62992c9241cf39d29d5aef21cbc45feb4a",
     "questions": {
       "residents_only": {
         "answer": "not stated by source",
@@ -9588,8 +9590,8 @@
   "NC|Raleigh|North Wake Multi-Material Recycling Facility": {
     "slug": "north-wake-multi-material-recycling-facility",
     "operator": "Wake County Solid Waste Management Division",
-    "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities",
-    "source_checked": "2026-11-18",
+    "source": "https://www.wake.gov/departments-government/solid-waste-management/facilities/multi-material-recycling-facilities",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "9892279ccbd999b2fbbc7e7919063d6402bc25a0fa9aec234676cf2cb18296f9",
     "questions": {
       "residents_only": {
@@ -9646,8 +9648,8 @@
   "NC|Raleigh|South Wake Multi-Material Recycling Facility": {
     "slug": "south-wake-multi-material-recycling-facility",
     "operator": "Wake County Solid Waste Management Division",
-    "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities",
-    "source_checked": "2026-11-18",
+    "source": "https://www.wake.gov/departments-government/solid-waste-management/facilities/multi-material-recycling-facilities",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "9892279ccbd999b2fbbc7e7919063d6402bc25a0fa9aec234676cf2cb18296f9",
     "questions": {
       "residents_only": {
@@ -9704,8 +9706,8 @@
   "NC|Raleigh|East Wake Multi-Material Recycling Facility": {
     "slug": "east-wake-multi-material-recycling-facility",
     "operator": "Wake County Solid Waste Management Division",
-    "source": "https://www.wake.gov/departments-government/waste-recycling/facilities/multi-material-recycling-facilities",
-    "source_checked": "2026-11-18",
+    "source": "https://www.wake.gov/departments-government/solid-waste-management/facilities/multi-material-recycling-facilities",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "5ffabb73e8f7bdd488cf9861996a7a58157981b7aae3f9814761379f022fd0a4",
     "questions": {
       "residents_only": {
@@ -10574,8 +10576,8 @@
   "TX|Houston|Westpark Consumer Recycling Center": {
     "slug": "westpark-consumer-recycling-center",
     "operator": "City of Houston Solid Waste Management Department",
-    "source": "https://www.houstontx.gov/solidwaste/recycling_centers.html",
-    "source_checked": "2026-11-21",
+    "source": "https://www.houstontx.gov/solidwaste/recycling-centers",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "789d5c730b33d2835db1bae798f9362d880e22fd17f1b4e2e5c7fd741ec0fe5f",
     "questions": {
       "residents_only": {
@@ -10632,8 +10634,8 @@
   "TX|Houston|Ellington/Clear Lake Neighborhood Recycling Center": {
     "slug": "ellington-clear-lake-neighborhood-recycling-center",
     "operator": "City of Houston Solid Waste Management Department",
-    "source": "https://www.houstontx.gov/solidwaste/recycling_centers.html",
-    "source_checked": "2026-11-21",
+    "source": "https://www.houstontx.gov/solidwaste/recycling-centers",
+    "source_checked": "2026-11-26",
     "listing_fingerprint": "0e2c4dc14973e02beb50bc7865802ded235ca117e666077cd9c52efde6678fc4",
     "questions": {
       "residents_only": {
@@ -11908,9 +11910,9 @@
   "CA|Sacramento|Kiefer Landfill (tires, e-waste & ABOP drop-off)": {
     "slug": "kiefer-landfill-tires-e-waste-abop",
     "operator": "Sacramento County Department of Waste Management & Recycling",
-    "source": "https://wmr.saccounty.gov/content/wmr/us/en/county-facilities/kiefer-landfill.html",
-    "source_checked": "2026-11-25",
-    "listing_fingerprint": "a1d46f62025fb8b8527f27f6315596c63a1e3234ab66bd3a0f075a33e9421b5c",
+    "source": "https://wmr.saccounty.gov/us/en/county-facilities/kiefer-landfill.html",
+    "source_checked": "2026-11-26",
+    "listing_fingerprint": "ce16c4c4907ad7e936a8988917d13f9676e388c2cc5020e52cdbd4c0f13e55f8",
     "questions": {
       "residents_only": {
         "answer": "no",
