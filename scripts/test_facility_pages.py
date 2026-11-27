@@ -50,7 +50,7 @@ class FacilityTests(unittest.TestCase):
                 for k,a in f['questions'].items():
                     self.assertIn(a['answer'],('yes','no',UNKNOWN))
                     if a['answer']!=UNKNOWN: self.assertTrue(a['evidence'],(f['name'],k))
-        self.assertEqual(len(paths),221)
+        self.assertEqual(len(paths),226)
         self.assertEqual(len(set(paths)),len(paths))
     def test_all_facility_pages_and_visible_schema(self):
         sitemap={u.text for u in ET.parse('docs/sitemap.xml').getroot().iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
@@ -81,9 +81,9 @@ class FacilityTests(unittest.TestCase):
                     if f['questions'][key]['answer']=='yes':
                         anchor=f'/{ms}/#{slug(m["city"])}-{slug(m["st"])}'
                         self.assertIn(anchor,doc.links); self.assertIn(anchor.split('#')[1],read(f'/{ms}/').ids)
-        self.assertEqual(len(queue),221); self.assertEqual(len(set(queue)),221)
+        self.assertEqual(len(queue),226); self.assertEqual(len(set(queue)),226)
         self.assertTrue(queue[0].startswith(BASE+'/va/richmond/'))
-        self.assertEqual(len(sitemap),318)
+        self.assertEqual(len(sitemap),323)
     def test_state_pages_itemlist_matches_city_links(self):
         states={}
         for m in D: states.setdefault(m['st'],[]).append(m)
@@ -192,7 +192,7 @@ class FacilityTests(unittest.TestCase):
         self.assertIn(f'<title>Household hazardous waste disposal near me: {hn} sites by city | TossMap</title>',hhw)
         self.assertIn('<h1>Household hazardous waste disposal near you</h1>',hhw)
         self.assertIn(f'content="Household hazardous waste (HHW) disposal near you: {hn} official drop-off sites in {hm} US metros, with hours, limits and source links."',hhw)
-        self.assertIn('metros, addresses, hours, fees and source links, checked regularly.',home)
+        self.assertIn('metros: addresses, hours, fees and sources, checked regularly.',home)
         self.assertNotIn('metros—addresses',home)
     def test_home_links_upcoming_and_recent_listings(self):
         import datetime

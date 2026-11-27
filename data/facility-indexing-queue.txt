@@ -23,6 +23,7 @@ https://tossmap.com/va/richmond/new-kent-county-refuse-site-route-647-lanexa/
 https://tossmap.com/va/richmond/chesterfield-county-shred-e-cycle-hhw-event-fairgrounds/
 https://tossmap.com/va/richmond/colonial-heights-recycling-center/
 https://tossmap.com/va/richmond/hopewell-citizens-convenience-center/
+https://tossmap.com/va/richmond/charles-city-munford-road-convenience-center/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-port-richmond/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northwest-philadelphia/
 https://tossmap.com/pa/philadelphia/sanitation-convenience-center-northeast-philadelphia/
@@ -77,6 +78,9 @@ https://tossmap.com/oh/cleveland/garfield-heights-service-garage-tires-hhw/
 https://tossmap.com/oh/cleveland/strongsville-service-garage-transfer-station/
 https://tossmap.com/oh/cleveland/cleveland-heights-service-center-computer-drop-off/
 https://tossmap.com/oh/cleveland/university-heights-service-garage/
+https://tossmap.com/oh/cleveland/middleburg-heights-service-department/
+https://tossmap.com/oh/cleveland/medina-county-recycling-center/
+https://tossmap.com/oh/cleveland/lake-county-solid-waste-facility/
 https://tossmap.com/ky/louisville/haz-bin/
 https://tossmap.com/ky/louisville/waste-reduction-center/
 https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-bronx/
@@ -115,6 +119,7 @@ https://tossmap.com/hi/honolulu/laie-convenience-center/
 https://tossmap.com/hi/honolulu/wahiawa-convenience-center/
 https://tossmap.com/hi/honolulu/e-opala-e-waste-drop-off-mapunapuna/
 https://tossmap.com/hi/honolulu/t-n-computer-recycling-south-beretania/
+https://tossmap.com/hi/honolulu/pacific-commercial-services-e-waste-kapolei/
 https://tossmap.com/md/baltimore/sisson-street-residential-recycling-center-hhw-days/
 https://tossmap.com/md/baltimore/eastern-residential-recycling-center/
 https://tossmap.com/md/baltimore/northwest-transfer-station-residential-drop-off/

@@ -1,6 +1,6 @@
 # TossMap — full facility listings
 
-Every listing below is verified against an official government or facility-operator source and includes that source URL and a last-checked date. TossMap lists 221 drop-off sites across 54 US metro areas in 31 states. TossMap does not operate these facilities. Rules and hours can change; confirm with the official source before driving.
+Every listing below is verified against an official government or facility-operator source and includes that source URL and a last-checked date. TossMap lists 226 drop-off sites across 54 US metro areas in 31 states. TossMap does not operate these facilities. Rules and hours can change; confirm with the official source before driving.
 
 A shorter index is in https://tossmap.com/llms.txt.
 
@@ -261,7 +261,7 @@ Materials accepted: HHW (paints, chemicals, batteries, CFLs, motor oil, auto flu
 Hours: Event: Sat Dec 12, 2026, 8am–2pm (registration required; no entry after 2pm)
 Fees: Free
 Official source: https://dpw.dc.gov/specialwaste
-Last checked: 2026-11-26
+Last checked: 2026-11-27
 TossMap page: https://tossmap.com/dc/washington/dpw-special-waste-collection-event-rfk-stadium-lot-8/
 
 Name: Fairfax County I-66 Transfer Station (HHW & e-waste)
@@ -622,6 +622,16 @@ Official source: https://health.hawaii.gov/ewaste/e-waste-collection-locations/
 Last checked: 2026-11-26
 TossMap page: https://tossmap.com/hi/honolulu/t-n-computer-recycling-south-beretania/
 
+Name: Pacific Commercial Services (e-waste drop-off, Kapolei)
+City/state: Honolulu, HI
+Address: 91-254 Olai Street, Kapolei, HI 96707
+Materials accepted: Covered electronic devices under Hawaii's Electronic Device Recycling and Recovery Law: computers, monitors, laptops, tablets and e-readers, printers, TVs (9 in. screen or larger), fax machines, VCRs, DVD players and recorders, portable digital music players, household routers and modems, and peripherals (keyboards, mice, cords, power supplies and adapters, computer or TV speakers and sound bars, video game consoles)
+Hours: 1st Wednesday of each month 8am–4pm; call to schedule an appointment
+Fees: not listed
+Official source: https://health.hawaii.gov/ewaste/e-waste-collection-locations/
+Last checked: 2026-11-27
+TossMap page: https://tossmap.com/hi/honolulu/pacific-commercial-services-e-waste-kapolei/
+
 ## Illinois
 
 ### Chicago, IL
@@ -749,7 +759,7 @@ Materials accepted: Automotive fluids, batteries, household cleaners, fungicides
 Hours: Collection days: Dec 4–5, 2026, 9am–5pm (Nov 6–7 already held)
 Fees: Free
 Official source: https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling
-Last checked: 2026-11-26
+Last checked: 2026-11-27
 TossMap page: https://tossmap.com/md/baltimore/sisson-street-residential-recycling-center-hhw-days/
 
 Name: Eastern Residential Recycling Center
@@ -1145,7 +1155,7 @@ Materials accepted: E-waste: computers and cell phones (Mon–Fri; no TVs). HHW 
 Hours: Recycling, shredding & computer/cell-phone disposal: Mon–Fri 9am–3pm. HHW: first Friday of each month only, 9am–3pm (next: Fri Dec 4, 2026)
 Fees: Free
 Official source: https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste
-Last checked: 2026-11-26
+Last checked: 2026-11-27
 TossMap page: https://tossmap.com/oh/cleveland/carr-center-division-of-waste/
 
 Name: Ridge Road Transfer Station
@@ -1155,7 +1165,7 @@ Materials accepted: Passenger tires without rims (residents; up to 4 free dumps/
 Hours: Recycling: Mon–Sat 9am–3pm. Regular waste disposal: Sat 9am–3pm. HHW: first Friday of each month only, 9am–3pm (next: Fri Dec 4, 2026). Bulky/tire drop-off for residents (limits apply)
 Fees: Free for qualifying resident drop-offs; fee may apply beyond tire/dump limits
 Official source: https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste
-Last checked: 2026-11-26
+Last checked: 2026-11-27
 TossMap page: https://tossmap.com/oh/cleveland/ridge-road-transfer-station/
 
 Name: Cuyahoga County Solid Waste District HQ (electronics drop-off bins)
@@ -1497,6 +1507,36 @@ Fees: HHW free (Cuyahoga County HHW program); fees for computers and tires not s
 Official source: https://cuyahogarecycles.org/recycle-in/university-heights/
 Last checked: 2026-11-26
 TossMap page: https://tossmap.com/oh/cleveland/university-heights-service-garage/
+
+Name: Middleburg Heights Service Department (computers, tires & HHW)
+City/state: Cleveland, OH
+Address: 7375 Engle Road, Middleburg Heights, OH
+Materials accepted: Year-round: computer equipment including cell phones (no TVs); scrap tires (automotive only, 20 in. or less, no rims); clean, dry, flattened cardboard. Seasonal: Household hazardous waste (oil-based paint, solvents, automotive fluids, aerosols, pesticides, pool chemicals, household cleaners). No latex paint
+Hours: Computer equipment and scrap tires: year-round, Wed & Fri 8am–3pm. HHW (2026): Sat Apr 25 9am–noon; Fri Aug 14 and Fri Oct 30 8am–3pm. All 2026 HHW dates have passed; the District has not posted 2027 dates yet
+Fees: HHW free (Cuyahoga County HHW program); fees for computers and tires not stated by source
+Official source: https://cuyahogarecycles.org/recycle-in/middleburg-heights/
+Last checked: 2026-11-27
+TossMap page: https://tossmap.com/oh/cleveland/middleburg-heights-service-department/
+
+Name: Medina County Recycling Center (specialty waste & HHW drop-off)
+City/state: Cleveland, OH
+Address: 8730 Lake Road, Seville, OH 44273
+Materials accepted: Household hazardous waste (aerosol cans, antifreeze, household cleaners, pesticides, oil-based paint, liquid latex paint, used motor oil); batteries (button-cell, coin, lithium, nickel-cadmium, nickel-metal hydride, lithium-ion, lead-acid); electronics (computer monitors, computer towers and hard drives, televisions, UPS battery backups, toner and ink cartridges); passenger, light-truck, oversized pickup and racing tires off the rim (no agricultural or semi tires); window air conditioners and other appliances with Freon. Not accepted: ammunition, asbestos
+Hours: Specialty waste and HHW (including tires and electronics): Mon & Wed 8am–4:30pm; Sat 7am–noon. Trash and recycling: Mon–Fri 7:30am–4:30pm; Sat 7am–noon. Closed Sundays and New Year's Day, Memorial Day, July 4, Labor Day, Thanksgiving and Christmas
+Fees: Tires $2.50 each (passenger and light truck), $13 each (oversized pickup and racing); computer monitors, computer towers and TVs $5 each; window air conditioners $10 each; aerosol cans, antifreeze, household cleaners and pesticides no charge. Cash or check only
+Official source: https://recyclemedinacounty.com/accepted-items/
+Last checked: 2026-11-27
+TossMap page: https://tossmap.com/oh/cleveland/medina-county-recycling-center/
+
+Name: Lake County Solid Waste Facility (e-waste, tires & Saturday HHW)
+City/state: Cleveland, OH
+Address: 2039 Blase Nemeth Road, Painesville, OH 44077
+Materials accepted: E-waste: all residential electronics, including computers, laptops, tablets, hard drives, mice, keyboards, modems, routers, cables, printers, scanners, copiers, phones, TVs and monitors, and most other items that plug in or take batteries (not major appliances). Tires without rims (car and pickup up to 20 in., semi, tractor and agricultural; 6 max.). Saturdays, Lake County residents only: aerosol cans, antifreeze, motor oil and other automotive lubricants, lithium-ion, NiCad, lead-acid and alkaline batteries, fertilizer, fluorescent bulbs, mercury thermometers, thermostats and switches, oil-based paints and stains, solvents, paint thinners and strippers, pesticides, household cleaners and pool chemicals. Not accepted: latex paint (dry it and put it in the trash), propane and acetylene tanks, fire extinguishers, gasoline, kerosene, ammunition, medical waste
+Hours: Mon–Fri 7am–3:30pm; Sat 9am–1pm (Saturdays for Lake County residents only). E-waste: all operating hours. Universal waste (household hazardous waste): Sat 9am–1pm only
+Fees: E-waste free except TVs and monitors ($5 each for 27 in. or smaller; $10 each for larger, projection and console TVs); tires $3 each (car and pickup), $5 each (semi), $15 each (tractor and agricultural); Saturday universal waste free; trash from $5 (car load) or $10 (pickup load)
+Official source: https://www.lakecountyohio.gov/utilities/community-recycling-options/
+Last checked: 2026-11-27
+TossMap page: https://tossmap.com/oh/cleveland/lake-county-solid-waste-facility/
 
 ### Columbus, OH
 
@@ -2181,7 +2221,7 @@ Materials accepted: Electronics: computers, laptops, monitors and TVs (including
 Hours: First Saturday of each month, 10am–2pm (next: Sat Dec 5, 2026)
 Fees: Fees apply to some items (e.g. computers/laptops with hard drives $5, LCD TV $25, CRT TV $28–$35, LCD monitor $10); many items free. Credit or debit cards only (no cash or checks)
 Official source: https://cvwma.com/cvwma-locations/henrico-2/
-Last checked: 2026-11-26
+Last checked: 2026-11-27
 TossMap page: https://tossmap.com/va/richmond/securis-first-saturday-electronics-recycling-henrico/
 
 Name: Hanover Route 301 Transfer Station
@@ -2281,7 +2321,7 @@ Materials accepted: Household hazardous waste (no fee): acids, drain cleaner, bl
 Hours: Event: Sat Mar 13, 2027, 9am–noon. Next listed date: Sat Oct 30, 2027, 9am–noon
 Fees: HHW and paper shredding free; CRT TVs $28 (27 inch or less) or $37 (over 27 inch); hard drive, phone and tablet shredding $8–$10.50 per item; other electronics $5.25–$40 per item
 Official source: https://cvwma.com/event/chesterfield-county-shred-e-cycle-and-household-hazardous-waste-recycling/
-Last checked: 2026-11-26
+Last checked: 2026-11-27
 TossMap page: https://tossmap.com/va/richmond/chesterfield-county-shred-e-cycle-hhw-event-fairgrounds/
 
 Name: Colonial Heights Recycling Center
@@ -2301,8 +2341,18 @@ Materials accepted: Tires without rims (up to 8 per year); residential waste; ho
 Hours: Tue, Wed & Fri 12:30–3:30pm; Sat 8am–4:30pm; closed on observed holidays and in inclement weather
 Fees: Tires $1 per passenger tire, $2 per light-truck tire; residential waste $3 (car), $10 (pickup/SUV or single-axle trailer), $35 (dual-axle trailer); brush and yard waste free (dual-axle trailer $10); construction debris $3–$50; $10 CFC removal per appliance; $10 extra for vehicles with raised sides
 Official source: https://www.hopewellva.gov/548/Citizens-Convenience-Center
-Last checked: 2026-11-26
+Last checked: 2026-11-27
 TossMap page: https://tossmap.com/va/richmond/hopewell-citizens-convenience-center/
+
+Name: Charles City County Munford Road Convenience Center
+City/state: Richmond, VA
+Address: 15000 Munford Road, Providence Forge, VA
+Materials accepted: Used motor oil and used antifreeze (residential only, 5 gallons or less; other fluids and oil filters not accepted); lead-acid batteries; household trash; recyclables (cardboard, mixed paper, #1 and #2 narrow-neck plastic bottles, aluminum and steel cans, glass bottles and jars); appliances with liquids drained; push mowers and weed eaters (motors stripped and drained); latex paint only when dried out in the can. Not accepted: oil-based paints and solvents. For tires, CVWMA points residents to tire retailers or the county's annual Tire Amnesty Day; for electronics, to CVWMA electronics recycling events
+Hours: Mon, Wed, Fri & Sat 7am–5pm; Tue & Thu 9am–7pm; closed Sun and on New Year's Day, Easter, Memorial Day, July 4, Labor Day, Thanksgiving and Christmas (times subject to change without notice)
+Fees: No cost to Charles City residents; fees may apply for Freon removal from appliances
+Official source: https://charlescityva.us/514/Waste-Management-Convenience-Centers
+Last checked: 2026-11-27
+TossMap page: https://tossmap.com/va/richmond/charles-city-munford-road-convenience-center/
 
 ### Virginia Beach, VA
 

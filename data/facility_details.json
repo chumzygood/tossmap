@@ -2998,7 +2998,7 @@
   "slug": "dpw-special-waste-collection-event-rfk-stadium-lot-8",
   "operator": "not stated by source",
   "source": "https://dpw.dc.gov/specialwaste",
-  "source_checked": "2026-11-26",
+  "source_checked": "2026-11-27",
   "listing_fingerprint": "3cce5280546fd7f5402893d06e443c3764c18a67cf9478d558cfd5acacd92962",
   "questions": {
    "residents_only": {
@@ -3748,7 +3748,7 @@
   "slug": "sisson-street-residential-recycling-center-hhw-days",
   "operator": "not stated by source",
   "source": "https://www.baltimorecity.gov/publicworks/recycling-services/household-hazardous-waste-recycling",
-  "source_checked": "2026-11-26",
+  "source_checked": "2026-11-27",
   "listing_fingerprint": "318c7d7e979e297128ceb0a17516118269fdaa7fcbac89846caa312d1448952b",
   "questions": {
    "residents_only": {
@@ -5779,7 +5779,7 @@
   "slug": "carr-center-division-of-waste",
   "operator": "not stated by source",
   "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-  "source_checked": "2026-11-26",
+  "source_checked": "2026-11-27",
   "listing_fingerprint": "4ad530d9788cd4468e8e8f28795e0091f72248f4a84bdbdf24a8f26c2820a956",
   "questions": {
    "residents_only": {
@@ -5815,8 +5815,8 @@
     "evidence": ""
    },
    "motor_oil": {
-    "answer": "not stated by source",
-    "evidence": ""
+    "answer": "yes",
+    "evidence": "First Friday HHW only — City of Cleveland Division of Waste page (https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste, fetched 2026-11-27): “Oil, cleaners, solvents, pesticides, and other household chemicals can be flammable, toxic, or corrosive. The Division of Waste accepts household hazardous wastes like these on the first Friday of the month, at two (2) locations: Carr Center (5600 Carnegie Ave.) and the Ridge Road Transfer Station (3727 Ridge Road).”"
    },
    "household_chemicals": {
     "answer": "yes",
@@ -5831,13 +5831,13 @@
     "evidence": ""
    }
   },
-  "questions_reviewed": "2026-11-26"
+  "questions_reviewed": "2026-11-27"
  },
  "OH|Cleveland|Ridge Road Transfer Station": {
   "slug": "ridge-road-transfer-station",
   "operator": "not stated by source",
   "source": "https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste",
-  "source_checked": "2026-11-26",
+  "source_checked": "2026-11-27",
   "listing_fingerprint": "8faa0e6a7049ca9f7444519102fe20c5f240cf2b0cd08cad06684154e484b398",
   "questions": {
    "residents_only": {
@@ -5873,8 +5873,8 @@
     "evidence": ""
    },
    "motor_oil": {
-    "answer": "not stated by source",
-    "evidence": ""
+    "answer": "yes",
+    "evidence": "First Friday HHW only — City of Cleveland Division of Waste page (https://www.clevelandohio.gov/city-hall/departments/public-works/divisions/waste/waste, fetched 2026-11-27): “Oil, cleaners, solvents, pesticides, and other household chemicals can be flammable, toxic, or corrosive. The Division of Waste accepts household hazardous wastes like these on the first Friday of the month, at two (2) locations: Carr Center (5600 Carnegie Ave.) and the Ridge Road Transfer Station (3727 Ridge Road).”"
    },
    "household_chemicals": {
     "answer": "yes",
@@ -5889,7 +5889,7 @@
     "evidence": ""
    }
   },
-  "questions_reviewed": "2026-11-26"
+  "questions_reviewed": "2026-11-27"
  },
  "OH|Cleveland|Cuyahoga County Solid Waste District HQ (electronics drop-off bins)": {
   "slug": "cuyahoga-county-solid-waste-district-hq-electronics-drop-off-bins",
@@ -9427,7 +9427,7 @@
   "slug": "securis-first-saturday-electronics-recycling-henrico",
   "operator": "Securis (Central Virginia Waste Management Authority electronics recycling contractor)",
   "source": "https://cvwma.com/cvwma-locations/henrico-2/",
-  "source_checked": "2026-11-26",
+  "source_checked": "2026-11-27",
   "listing_fingerprint": "ba331cf93621b0fcfe1009a66b9e2d7768fedbe6fbc3f0775b3af0115ac76ad2",
   "questions": {
    "residents_only": {
@@ -12269,7 +12269,7 @@
   "slug": "chesterfield-county-shred-e-cycle-hhw-event-fairgrounds",
   "operator": "Chesterfield County",
   "source": "https://cvwma.com/event/chesterfield-county-shred-e-cycle-and-household-hazardous-waste-recycling/",
-  "source_checked": "2026-11-26",
+  "source_checked": "2026-11-27",
   "listing_fingerprint": "181e5c1855c0eb3f37249601216b3aadde7dbcbc434785fc43ab372833777af9",
   "questions": {
    "residents_only": {
@@ -12617,7 +12617,7 @@
   "slug": "hopewell-citizens-convenience-center",
   "operator": "City of Hopewell Department of Public Works",
   "source": "https://www.hopewellva.gov/548/Citizens-Convenience-Center",
-  "source_checked": "2026-11-26",
+  "source_checked": "2026-11-27",
   "listing_fingerprint": "22c0897dd38e3e41ac16c2259505fbe099fe62ea699bfe606a370b94ea0574d2",
   "questions": {
    "residents_only": {
@@ -12645,8 +12645,8 @@
     "evidence": "City of Hopewell Convenience Center Fees sheet (PDF dated March 2025, linked from the center page, fetched 2026-11-26): Items not accepted: “Paint and other liquids.”"
    },
    "e_waste": {
-    "answer": "not stated by source",
-    "evidence": ""
+    "answer": "yes",
+    "evidence": "Cell phones only — City of Hopewell Convenience Center Fees sheet (PDF dated March 2025, https://www.hopewellva.gov/DocumentCenter/View/473/Convenience-Center-Fees-PDF, fetched 2026-11-27): “The following recyclable materials are collected: yard waste, appliances, scrap metal, tires, \"freon\" gas, propane tanks, rechargeable batteries, and cell phones.”"
    },
    "batteries": {
     "answer": "yes",
@@ -12669,7 +12669,7 @@
     "evidence": "City of Hopewell Citizen’s Convenience Center page (https://www.hopewellva.gov/548/Citizens-Convenience-Center, fetched 2026-11-26): “Businesses and contractors are not allowed to use the Center.”"
    }
   },
-  "questions_reviewed": "2026-11-26"
+  "questions_reviewed": "2026-11-27"
  },
  "HI|Honolulu|E-Opala (e-waste drop-off, Māpunapuna)": {
   "slug": "e-opala-e-waste-drop-off-mapunapuna",
@@ -12786,5 +12786,295 @@
    }
   },
   "questions_reviewed": "2026-11-26"
+ },
+ "OH|Cleveland|Middleburg Heights Service Department (computers, tires & HHW)": {
+  "slug": "middleburg-heights-service-department",
+  "operator": "City of Middleburg Heights (Cuyahoga County Solid Waste District program)",
+  "source": "https://cuyahogarecycles.org/recycle-in/middleburg-heights/",
+  "source_checked": "2026-11-27",
+  "listing_fingerprint": "68b698d2b7dc5d0a915ef866adac1dd04ec424ac82bafa158b17327825e7f3af",
+  "questions": {
+   "residents_only": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "id_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "appointment_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "fee_charged": {
+    "answer": "no",
+    "evidence": "HHW only — CuyahogaRecycles Middleburg Heights household hazardous waste page (https://cuyahogarecycles.org/recycle-in/middleburg-heights/household_hazardous_waste/, fetched 2026-11-27): “The program is free to all Cuyahoga County households”. (Computer and tire drop-off fees not stated.)"
+   },
+   "tires": {
+    "answer": "yes",
+    "evidence": "CuyahogaRecycles Middleburg Heights page (https://cuyahogarecycles.org/recycle-in/middleburg-heights/, fetched 2026-11-27): “Middleburg Heights has a year-round drop-off for scrap tires on Wednesdays and Fridays at the Middleburg Heights Service Department. Automotive only (20\" or less) and no tires on rims.”"
+   },
+   "paint": {
+    "answer": "yes",
+    "evidence": "Oil-based only, on HHW dates — CuyahogaRecycles Middleburg Heights household hazardous waste page (https://cuyahogarecycles.org/recycle-in/middleburg-heights/household_hazardous_waste/, fetched 2026-11-27): HHW examples include “oil or solvent-based paint, sealers, primers, or coatings”; Middleburg Heights: “No latex paint.”"
+   },
+   "e_waste": {
+    "answer": "yes",
+    "evidence": "CuyahogaRecycles Middleburg Heights page (https://cuyahogarecycles.org/recycle-in/middleburg-heights/, fetched 2026-11-27): “Middleburg Heights has a year-round drop-off for computer equipment on Wednesdays and Fridays at the Middleburg Heights Service Department. Hours are 8:00 AM-3:00 PM. No TVs accepted.”"
+   },
+   "batteries": {
+    "answer": "no",
+    "evidence": "CuyahogaRecycles Middleburg Heights household hazardous waste page (https://cuyahogarecycles.org/recycle-in/middleburg-heights/household_hazardous_waste/, fetched 2026-11-27): “Latex paint, batteries, and fluorescent bulbs are not accepted in this program.”"
+   },
+   "motor_oil": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "household_chemicals": {
+    "answer": "yes",
+    "evidence": "Seasonal HHW dates only — CuyahogaRecycles Middleburg Heights page (https://cuyahogarecycles.org/recycle-in/middleburg-heights/, fetched 2026-11-27): “In 2026, Middleburg Heights will have a drop-off for household hazardous waste on April 25, August 14, and October 30 at the Middleburg Heights Service Department. Saturday hours are 9:00 AM-12:00 PM, and Friday hours are 8:00 AM-3:00 PM. No latex paint.” CuyahogaRecycles Middleburg Heights household hazardous waste page (https://cuyahogarecycles.org/recycle-in/middleburg-heights/household_hazardous_waste/, fetched 2026-11-27): examples include “solvents, paint thinner, varnishes and polyurethanes, … automotive fluids, aerosols, … pesticides, pool chemicals, hand sanitizer, and household cleaners.”"
+   },
+   "quantity_limits": {
+    "answer": "yes",
+    "evidence": "CuyahogaRecycles Middleburg Heights page (https://cuyahogarecycles.org/recycle-in/middleburg-heights/, fetched 2026-11-27): tires: “Automotive only (20\" or less) and no tires on rims.”"
+   },
+   "businesses_accepted": {
+    "answer": "no",
+    "evidence": "CuyahogaRecycles Middleburg Heights household hazardous waste page (https://cuyahogarecycles.org/recycle-in/middleburg-heights/household_hazardous_waste/, fetched 2026-11-27): “Waste from Businesses or Commercial Properties … Businesses must contract with a licensed company for proper disposal or recycling.”"
+   }
+  },
+  "questions_reviewed": "2026-11-27"
+ },
+ "OH|Cleveland|Medina County Recycling Center (specialty waste & HHW drop-off)": {
+  "slug": "medina-county-recycling-center",
+  "operator": "Medina County Solid Waste District",
+  "source": "https://recyclemedinacounty.com/accepted-items/",
+  "source_checked": "2026-11-27",
+  "listing_fingerprint": "b94286b6525aa06b9324d7080940b68830a469ec8843dbb01ca7b4b27b3abab8",
+  "questions": {
+   "residents_only": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "id_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "appointment_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "fee_charged": {
+    "answer": "yes",
+    "evidence": "Medina County Recycling Center & Solid Waste District Items We Accept page (https://recyclemedinacounty.com/accepted-items/, fetched 2026-11-27): Tires: “Passenger and light truck tires are charged at $2.50 per tire. Oversized pickup truck and racing tires are charged at $13.00 per tire.” Computer monitors, computer tower hard drives and televisions: “$5 each”. Aerosol cans, antifreeze, household cleaners and pesticides: “No charge”."
+   },
+   "tires": {
+    "answer": "yes",
+    "evidence": "Medina County Recycling Center & Solid Waste District Items We Accept page (https://recyclemedinacounty.com/accepted-items/, fetched 2026-11-27): Tires: “Includes passenger, light truck, oversized pickup truck, and racing tires. No agricultural or semi tires accepted. All tires must be off the rim.” “Specialty Waste & Household Hazardous Waste items are only accepted on Mondays and Wednesdays from 8am to 4:30pm and Saturdays from 7am to 12:00 Noon.”"
+   },
+   "paint": {
+    "answer": "yes",
+    "evidence": "Medina County Recycling Center & Solid Waste District Items We Accept page (https://recyclemedinacounty.com/accepted-items/, fetched 2026-11-27): “Oil-based Paint” and “Latex Paint” are listed with “Specialty Waste & Household Hazardous Waste items are only accepted on Mondays and Wednesdays from 8am to 4:30pm and Saturdays from 7am to 12:00 Noon.” (Latex paint: “It can be hardened in the can … and can go into your trash.”)"
+   },
+   "e_waste": {
+    "answer": "yes",
+    "evidence": "Medina County Recycling Center & Solid Waste District Items We Accept page (https://recyclemedinacounty.com/accepted-items/, fetched 2026-11-27): “Computer Monitors … Includes flat screen, CRT, and LCD.” “$5 each”; “Computer Tower Hard Drives Accepted … $5 each”; “Televisions … $5 each”. Medina County Recycling Center & Solid Waste District home page (https://recyclemedinacounty.com/, fetched 2026-11-27): “Household hazardous waste, electronics, tires, and appliances with freon are all considered specialty waste.”"
+   },
+   "batteries": {
+    "answer": "yes",
+    "evidence": "Medina County Recycling Center & Solid Waste District Items We Accept page (https://recyclemedinacounty.com/accepted-items/, fetched 2026-11-27): “Batteries such as button-cell, coin, lithium single-use, nickel cadmium, nickel-metal hydride, lithium-ion, and lead acid should not be put in trash, curbside recycling, or single stream drop off, as they pose a fire risk.” “Specialty Waste & Household Hazardous Waste items are only accepted on Mondays and Wednesdays from 8am to 4:30pm and Saturdays from 7am to 12:00 Noon.” (Alkaline and zinc-carbon batteries go in the trash.)"
+   },
+   "motor_oil": {
+    "answer": "yes",
+    "evidence": "Medina County Recycling Center & Solid Waste District Items We Accept page (https://recyclemedinacounty.com/accepted-items/, fetched 2026-11-27): “Used Motor Oil” is listed with “Specialty Waste & Household Hazardous Waste items are only accepted on Mondays and Wednesdays from 8am to 4:30pm and Saturdays from 7am to 12:00 Noon.”"
+   },
+   "household_chemicals": {
+    "answer": "yes",
+    "evidence": "Medina County Recycling Center & Solid Waste District Items We Accept page (https://recyclemedinacounty.com/accepted-items/, fetched 2026-11-27): “Household Cleaners Accepted” and “Pesticides Accepted”, each “No charge”, with “Specialty Waste & Household Hazardous Waste items are only accepted on Mondays and Wednesdays from 8am to 4:30pm and Saturdays from 7am to 12:00 Noon.”"
+   },
+   "quantity_limits": {
+    "answer": "yes",
+    "evidence": "Medina County Recycling Center & Solid Waste District home page (https://recyclemedinacounty.com/, fetched 2026-11-27): “There is a ten item limit per vehicle. You may box multiple items together to make one item/box.” Medina County Recycling Center & Solid Waste District Items We Accept page (https://recyclemedinacounty.com/accepted-items/, fetched 2026-11-27): Tires: “Ten or less tires per visit.”"
+   },
+   "businesses_accepted": {
+    "answer": "no",
+    "evidence": "Specialty waste (HHW, electronics, tires) — Medina County Recycling Center & Solid Waste District home page (https://recyclemedinacounty.com/, fetched 2026-11-27): “We cannot accept specialty waste from businesses per the Ohio EPA.”"
+   }
+  },
+  "questions_reviewed": "2026-11-27"
+ },
+ "OH|Cleveland|Lake County Solid Waste Facility (e-waste, tires & Saturday HHW)": {
+  "slug": "lake-county-solid-waste-facility",
+  "operator": "Lake County (Ohio) Department of Utilities, Solid Waste Division",
+  "source": "https://www.lakecountyohio.gov/utilities/community-recycling-options/",
+  "source_checked": "2026-11-27",
+  "listing_fingerprint": "632836cb49a2e968f69012a092071a495b6aec274f65415680c4951fe9cc6dae",
+  "questions": {
+   "residents_only": {
+    "answer": "yes",
+    "evidence": "Saturday universal waste (HHW) only — Lake County universal waste flyer (updated 8.17.26, linked from the county site, fetched 2026-11-27): “Who: Lake County Residents Only – No Businesses”. Lake County Solid Waste Division page (https://www.lakecountyohio.gov/utilities/solid-waste-division/, fetched 2026-11-27): “Saturday: 9:00AM – 1:00PM (Saturdays are for Lake County Residents Only)”"
+   },
+   "id_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "appointment_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "fee_charged": {
+    "answer": "yes",
+    "evidence": "Lake County (Ohio) Community Recycling Options page (https://www.lakecountyohio.gov/utilities/community-recycling-options/, fetched 2026-11-27): “There are small fees for dropping off televisions and monitors: $5.00 Each: Televisions (Tube, LCD, LED, Plasma, OLED) 27” diagonally or smaller $10.00 Each: Televisions that are larger than 27” diagonally, projection televisions and consoles” Lake County Solid Waste Division page (https://www.lakecountyohio.gov/utilities/solid-waste-division/, fetched 2026-11-27): “Car and Pick Up Tires – no rims, 6 max., up to 20” $3.00 / Each”"
+   },
+   "tires": {
+    "answer": "yes",
+    "evidence": "Lake County Solid Waste Division page (https://www.lakecountyohio.gov/utilities/solid-waste-division/, fetched 2026-11-27): Solid Waste Disposal Fees: “Car and Pick Up Tires – no rims, 6 max., up to 20” $3.00 / Each Semi Truck Tires – no rims, 6 max., over 20″ $5.00 / Each Tractor and Agricultural Tires – no rims, 6 max. $15.00 / Each”"
+   },
+   "paint": {
+    "answer": "yes",
+    "evidence": "Oil-based only, Saturdays — Lake County (Ohio) Community Recycling Options page (https://www.lakecountyohio.gov/utilities/community-recycling-options/, fetched 2026-11-27): “Paints : Oil-based; oil-based wood stains, aluminum-based paints”; not accepted: “latex paint”."
+   },
+   "e_waste": {
+    "answer": "yes",
+    "evidence": "Lake County (Ohio) Community Recycling Options page (https://www.lakecountyohio.gov/utilities/community-recycling-options/, fetched 2026-11-27): “ELECTRONICS WASTE (E-WASTE) DROP OFF : All Residential Electronics Are Accepted.” “E-waste is accepted during all operating hours of the Landfill; M-F 7:00 am -3:30 pm, Saturdays 9:00 am-1:00 pm.”"
+   },
+   "batteries": {
+    "answer": "yes",
+    "evidence": "Saturdays — Lake County (Ohio) Community Recycling Options page (https://www.lakecountyohio.gov/utilities/community-recycling-options/, fetched 2026-11-27): “Note: On Saturdays, batteries are also accepted in the same building as part of our universal waste program: Lithium-ion batteries, NiCad, Lead-Acid and Alkaline.”"
+   },
+   "motor_oil": {
+    "answer": "yes",
+    "evidence": "Saturdays, Lake County residents — Lake County (Ohio) Community Recycling Options page (https://www.lakecountyohio.gov/utilities/community-recycling-options/, fetched 2026-11-27): “Automotive Lubricants : Motor oil, brake oil, transmission fluid, gear grease”"
+   },
+   "household_chemicals": {
+    "answer": "yes",
+    "evidence": "Saturdays, Lake County residents — Lake County (Ohio) Community Recycling Options page (https://www.lakecountyohio.gov/utilities/community-recycling-options/, fetched 2026-11-27): “Pesticides : Liquid and granular Household Cleaners and Misc : Glass cleaners, car-detailing, grout cleaner, acid or base cleaners, pool chemicals”"
+   },
+   "quantity_limits": {
+    "answer": "yes",
+    "evidence": "Lake County Solid Waste Division page (https://www.lakecountyohio.gov/utilities/solid-waste-division/, fetched 2026-11-27): tires: “no rims, 6 max.”"
+   },
+   "businesses_accepted": {
+    "answer": "no",
+    "evidence": "Saturday universal waste (HHW) only — Lake County (Ohio) Community Recycling Options page (https://www.lakecountyohio.gov/utilities/community-recycling-options/, fetched 2026-11-27): “If you are a Lake County resident ( not for businesses), you can drop off the following universal waste”"
+   }
+  },
+  "questions_reviewed": "2026-11-27"
+ },
+ "VA|Richmond|Charles City County Munford Road Convenience Center": {
+  "slug": "charles-city-munford-road-convenience-center",
+  "operator": "Charles City County",
+  "source": "https://charlescityva.us/514/Waste-Management-Convenience-Centers",
+  "source_checked": "2026-11-27",
+  "listing_fingerprint": "3f57f60afab4755dbd12b23a6d6c4d9be41d7416da3e1109134c686ffa075102",
+  "questions": {
+   "residents_only": {
+    "answer": "yes",
+    "evidence": "Charles City County Waste Management Convenience Centers page (https://charlescityva.us/514/Waste-Management-Convenience-Centers, fetched 2026-11-27): “Charles City County offers three sites for residents to drop off household trash and recyclables.” CVWMA Recycling in Charles City page (https://cvwma.com/recycling/charles-city-2/, fetched 2026-11-27): “The centers are provided for the residents of Charles City at no cost to the citizens through our landfill agreement with WM.”"
+   },
+   "id_required": {
+    "answer": "yes",
+    "evidence": "CVWMA Recycling in Charles City page (https://cvwma.com/recycling/charles-city-2/, fetched 2026-11-27): “To use these sites, a customer must have one of the following: 1. Current Charles City County Vehicle Sticker; 2. Letter from Director of Public Utilities; or 3. Refuse Sticker or Permit issued by Charles City County Public Works.” Charles City County Waste Management Convenience Centers page (https://charlescityva.us/514/Waste-Management-Convenience-Centers, fetched 2026-11-27): “Refuse sticker or permit issued by Charles City County Treasurer's Office.”"
+   },
+   "appointment_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "fee_charged": {
+    "answer": "no",
+    "evidence": "CVWMA Recycling in Charles City page (https://cvwma.com/recycling/charles-city-2/, fetched 2026-11-27): “The centers are provided for the residents of Charles City at no cost to the citizens”. (Appliances: “Fees may apply for Freon removal.”)"
+   },
+   "tires": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "paint": {
+    "answer": "yes",
+    "evidence": "Dried latex only — CVWMA Recycling in Charles City page (https://cvwma.com/recycling/charles-city-2/, fetched 2026-11-27): “Latex Paint . Only paints that have been dried with kitty litter in the can or other drying agents accepted. Dispose of at Charles City County Solid Waste Convenience Centers. Other paints (oil-based) and solvents not accepted.”"
+   },
+   "e_waste": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "batteries": {
+    "answer": "yes",
+    "evidence": "Lead-acid only — CVWMA Recycling in Charles City page (https://cvwma.com/recycling/charles-city-2/, fetched 2026-11-27): “Lead acid . Recycle at Charles City County Convenience Centers, automotive supply stores, Battery Barn or Batteries Plus.”"
+   },
+   "motor_oil": {
+    "answer": "yes",
+    "evidence": "CVWMA Recycling in Charles City page (https://cvwma.com/recycling/charles-city-2/, fetched 2026-11-27): “Used Oil and Used Antifreeze (residential only) . Recycle at the Munford Road Convenience Center during normal business hours. Quantities of 5 gallons or less. Other fluids and oil filters not accepted.”"
+   },
+   "household_chemicals": {
+    "answer": "no",
+    "evidence": "CVWMA Recycling in Charles City page (https://cvwma.com/recycling/charles-city-2/, fetched 2026-11-27): “Other paints (oil-based) and solvents not accepted. Check with county staff for special household hazardous waste collection events.”"
+   },
+   "quantity_limits": {
+    "answer": "yes",
+    "evidence": "CVWMA Recycling in Charles City page (https://cvwma.com/recycling/charles-city-2/, fetched 2026-11-27): used oil and antifreeze: “Quantities of 5 gallons or less.”"
+   },
+   "businesses_accepted": {
+    "answer": "not stated by source",
+    "evidence": ""
+   }
+  },
+  "questions_reviewed": "2026-11-27"
+ },
+ "HI|Honolulu|Pacific Commercial Services (e-waste drop-off, Kapolei)": {
+  "slug": "pacific-commercial-services-e-waste-kapolei",
+  "operator": "Pacific Commercial Services, Inc. (Hawaii DOH-listed collector)",
+  "source": "https://health.hawaii.gov/ewaste/e-waste-collection-locations/",
+  "source_checked": "2026-11-27",
+  "listing_fingerprint": "93906aafe27ab32ac3471b1dfd91412917c976f5e850609125563ab618c8cbba",
+  "questions": {
+   "residents_only": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "id_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "appointment_required": {
+    "answer": "yes",
+    "evidence": "Hawaii State Department of Health E-waste Collection Locations page (https://health.hawaii.gov/ewaste/e-waste-collection-locations/, fetched 2026-11-27): “Pacific Commercial Services, Inc. 91-254 Olai Street, Kapolei 96707 Hours: 1 st Wednesday of each month 8:00 am – 4:00 pm, call to schedule an appointment”."
+   },
+   "fee_charged": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "tires": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "paint": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "e_waste": {
+    "answer": "yes",
+    "evidence": "Hawaii State Department of Health E-waste Collection Locations page (https://health.hawaii.gov/ewaste/e-waste-collection-locations/, fetched 2026-11-27): “Recycling Options for Computers, Monitors, Laptops, Tablets/E-Readers, Printers, Television, facsimile machines, videocassette recorders, … video game consoles.” City & County of Honolulu (Oahu): “Pacific Commercial Services, Inc. 91-254 Olai Street, Kapolei 96707 Hours: 1 st Wednesday of each month 8:00 am – 4:00 pm, call to schedule an appointment”."
+   },
+   "batteries": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "motor_oil": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "household_chemicals": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "quantity_limits": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "businesses_accepted": {
+    "answer": "not stated by source",
+    "evidence": ""
+   }
+  },
+  "questions_reviewed": "2026-11-27"
  }
 }

@@ -817,6 +817,47 @@ for m in M:
             f.update(CUY_CONTENT_FIX["thin"][n])
             f["checked"]=D26B
 
+# --- Nov 27 2026 daily pass additions (each verified against cited official source on 2026-11-27) ---
+D27="2026-11-27"
+add("Cleveland",
+  F("Middleburg Heights Service Department (computers, tires & HHW)","7375 Engle Road, Middleburg Heights, OH",
+    "Computer equipment and scrap tires: year-round, Wed & Fri 8am–3pm. HHW (2026): Sat Apr 25 9am–noon; Fri Aug 14 and Fri Oct 30 8am–3pm. All 2026 HHW dates have passed; the District has not posted 2027 dates yet",
+    CUYM.format("middleburg-heights"),
+    "Year-round: computer equipment including cell phones (no TVs); "+CUYTIRE+"; clean, dry, flattened cardboard. Seasonal: "+CUYACC,
+    "HHW free (Cuyahoga County HHW program); fees for computers and tires not stated by source",
+    "City of Middleburg Heights Service Department. Shredding events in 2026 were June 6, Aug 15 and Nov 7 (all held). "+CUYCALL+CUY,D27),
+  F("Medina County Recycling Center (specialty waste & HHW drop-off)","8730 Lake Road, Seville, OH 44273",
+    "Specialty waste and HHW (including tires and electronics): Mon & Wed 8am–4:30pm; Sat 7am–noon. Trash and recycling: Mon–Fri 7:30am–4:30pm; Sat 7am–noon. Closed Sundays and New Year's Day, Memorial Day, July 4, Labor Day, Thanksgiving and Christmas",
+    "https://recyclemedinacounty.com/accepted-items/",
+    "Household hazardous waste (aerosol cans, antifreeze, household cleaners, pesticides, oil-based paint, liquid latex paint, used motor oil); batteries (button-cell, coin, lithium, nickel-cadmium, nickel-metal hydride, lithium-ion, lead-acid); electronics (computer monitors, computer towers and hard drives, televisions, UPS battery backups, toner and ink cartridges); passenger, light-truck, oversized pickup and racing tires off the rim (no agricultural or semi tires); window air conditioners and other appliances with Freon. Not accepted: ammunition, asbestos",
+    "Tires $2.50 each (passenger and light truck), $13 each (oversized pickup and racing); computer monitors, computer towers and TVs $5 each; window air conditioners $10 each; aerosol cans, antifreeze, household cleaners and pesticides no charge. Cash or check only",
+    "Run by the Medina County Solid Waste District (Medina County Recycling Center), which says it serves residents of Medina County. Specialty waste is not accepted from businesses (per the Ohio EPA). Ten-item limit per vehicle (multiple items boxed together count as one; call if you have more than ten), and ten or fewer tires per visit. Enter at the Residential Entrance and go to Door “N” on the south side of the building. (330) 769-0289",D27),
+  F("Lake County Solid Waste Facility (e-waste, tires & Saturday HHW)","2039 Blase Nemeth Road, Painesville, OH 44077",
+    "Mon–Fri 7am–3:30pm; Sat 9am–1pm (Saturdays for Lake County residents only). E-waste: all operating hours. Universal waste (household hazardous waste): Sat 9am–1pm only",
+    "https://www.lakecountyohio.gov/utilities/community-recycling-options/",
+    "E-waste: all residential electronics, including computers, laptops, tablets, hard drives, mice, keyboards, modems, routers, cables, printers, scanners, copiers, phones, TVs and monitors, and most other items that plug in or take batteries (not major appliances). Tires without rims (car and pickup up to 20 in., semi, tractor and agricultural; 6 max.). Saturdays, Lake County residents only: aerosol cans, antifreeze, motor oil and other automotive lubricants, lithium-ion, NiCad, lead-acid and alkaline batteries, fertilizer, fluorescent bulbs, mercury thermometers, thermostats and switches, oil-based paints and stains, solvents, paint thinners and strippers, pesticides, household cleaners and pool chemicals. Not accepted: latex paint (dry it and put it in the trash), propane and acetylene tanks, fire extinguishers, gasoline, kerosene, ammunition, medical waste",
+    "E-waste free except TVs and monitors ($5 each for 27 in. or smaller; $10 each for larger, projection and console TVs); tires $3 each (car and pickup), $5 each (semi), $15 each (tractor and agricultural); Saturday universal waste free; trash from $5 (car load) or $10 (pickup load)",
+    "Operated by the Lake County Department of Utilities, Solid Waste Division (county landfill). Check in at the scale house window. Universal waste is for Lake County residents only, no businesses. All vehicles must be tarped; no commercial trucks or trailers on Saturdays. Tire and trash fees from the Solid Waste Division page: https://www.lakecountyohio.gov/utilities/solid-waste-division/. (440) 350-2644",D27))
+add("Honolulu",
+  F("Pacific Commercial Services (e-waste drop-off, Kapolei)","91-254 Olai Street, Kapolei, HI 96707",
+    "1st Wednesday of each month 8am–4pm; call to schedule an appointment",HDOH,HDACC,"",
+    "Listed by the Hawaii State Department of Health as an Oahu (City & County of Honolulu) collection location for covered electronic devices. The DOH listing also says “Collection Service starts at $400.00 (complete forms on website)”. (808) 545-4599",D27))
+add("Richmond",
+  F("Charles City County Munford Road Convenience Center","15000 Munford Road, Providence Forge, VA",
+    "Mon, Wed, Fri & Sat 7am–5pm; Tue & Thu 9am–7pm; closed Sun and on New Year's Day, Easter, Memorial Day, July 4, Labor Day, Thanksgiving and Christmas (times subject to change without notice)",
+    "https://charlescityva.us/514/Waste-Management-Convenience-Centers",
+    "Used motor oil and used antifreeze (residential only, 5 gallons or less; other fluids and oil filters not accepted); lead-acid batteries; household trash; recyclables (cardboard, mixed paper, #1 and #2 narrow-neck plastic bottles, aluminum and steel cans, glass bottles and jars); appliances with liquids drained; push mowers and weed eaters (motors stripped and drained); latex paint only when dried out in the can. Not accepted: oil-based paints and solvents. For tires, CVWMA points residents to tire retailers or the county's annual Tire Amnesty Day; for electronics, to CVWMA electronics recycling events",
+    "No cost to Charles City residents; fees may apply for Freon removal from appliances",
+    "Charles City County resident site, one of three county convenience centers. To use it you need a current Charles City County vehicle sticker, a letter from the Director of Public Utilities, or a refuse sticker or permit. Materials from CVWMA's Recycling in Charles City page: https://cvwma.com/recycling/charles-city-2/. County 804-652-4701",D27))
+# Re-verified against the official page on 2026-11-27 (event dates unchanged: Baltimore Dec 4–5, Cleveland first Friday Dec 4,
+# CVWMA Dec 5, DC Dec 12 on DPW's Eventbrite list, Chesterfield Mar 13 and Oct 30, 2027). Hopewell fee sheet re-read for the cell-phone answer.
+REVERIFIED27={"Sisson Street Residential Recycling Center (HHW days)","DPW Special Waste Collection Event – RFK Stadium Lot 8",
+  "Carr Center (Division of Waste)","Ridge Road Transfer Station","Securis First Saturday Electronics Recycling (CVWMA)",
+  "Chesterfield County Shred, E-Cycle & HHW Recycling Event (Fairgrounds)","Hopewell Citizen's Convenience Center"}
+for m in M:
+    for f in m["facilities"]:
+        if f["name"] in REVERIFIED27: f["checked"]=D27
+
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

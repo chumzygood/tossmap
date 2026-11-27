@@ -977,6 +977,11 @@ for (sn,st),ms in sorted(states.items()):
         what=", ".join(n.split(" (")[0].lower() for _,n in have[:4]) or "household hazardous waste"
         desc=(f"{plural(len(fs),'official drop-off site')} in {m['city']}, {st} for {what}: addresses, hours, fees and source links, last checked {chk}." if fs
               else f"How {m['city']}, {st} handles household hazardous waste, from official sources.")
+        # SEO length guard (Nov 27 2026): city metas over 160 chars drop "official", then shorten the trailer, never the facts.
+        if fs and len(desc)>160:
+            desc=f"{plural(len(fs),'drop-off site')} in {m['city']}, {st} for {what}: addresses, hours, fees and source links, last checked {chk}."
+        if fs and len(desc)>160:
+            desc=f"{plural(len(fs),'drop-off site')} in {m['city']}, {st} for {what}: addresses, hours, fees and sources, last checked {chk}."
         collection={"@type":"CollectionPage","@id":BASE+cp+"#page","url":BASE+cp,"name":h1,"publisher":{"@id":ORG_ID},"isPartOf":{"@id":BASE+"/#website"},"inLanguage":"en-US"}
         if chk: collection["dateModified"]=chk
         cites=unique_sources(fs)
@@ -1049,9 +1054,9 @@ home_recent=("<h2>Recently added or re-checked</h2><ul>"+"".join(f'<li><a href="
 home=(f"<h1>Where do I take paint, chemicals, batteries, electronics &amp; tires?</h1><p>{n} drop-off sites from official government and operator sources across {len(D)} US metros. Every listing links to its source and shows when we last checked it.</p>"
  "<h2>By material</h2><p class=tags>"+" ".join(f'<a href="/{s}/">{e(nm)}</a>' for s,nm,_ in MAT)+"</p>"
  "<h2>By city</h2><ul class=grid>"+"".join(f'<li><a href="{cpath(m)}">{e(m["city"])}, {m["st"]}</a></li>' for m in sorted(D,key=lambda x:x["city"]))+"</ul><h2>By state</h2><ul class=grid>"+"".join(f'<li><a href="/{slug(st)}/">{e(sn)}</a></li>' for sn,st in sorted(states))+"</ul>"+home_events+home_recent+signup_box())
-page("/","TossMap: where to dump paint, hazardous waste, e-waste & tires by city","Find official drop-off sites for paint, chemicals, batteries, electronics and tires in 50+ US metros, addresses, hours, fees and source links, checked regularly.",home,
+page("/","TossMap: where to dump paint, hazardous waste, e-waste & tires by city","Find official drop-off sites for paint, chemicals, batteries, electronics and tires in 50+ US metros: addresses, hours, fees and sources, checked regularly.",home,
      [{"@type":"Organization","@id":ORG_ID,"name":"TossMap","url":BASE+"/"},{"@type":"WebSite","@id":BASE+"/#website","name":"TossMap","url":BASE+"/","publisher":{"@id":ORG_ID}}],max(f["checked"] for m in D for f in m["facilities"]))
-page("/privacy.html","Privacy | TossMap","TossMap privacy policy: no cookies on our pages; newsletter sign-ups are handled by Kit and we do not sell your email.","<h1>Privacy</h1><p>TossMap sets no cookies. We use GoatCounter, a privacy-friendly analytics service that does not track individuals.</p><p>If you sign up for the <a href=\"/newsletter/\">TossMap newsletter</a>, your email is collected by Kit, our email provider, so we can send drop-off updates. We do not sell your email. Kit will send a confirmation email first, and you can unsubscribe anytime.</p><p>If ads are added, ad partners may use cookies; this page will be updated before that happens.</p><p>Listings come from public government sources and may change; confirm with the source before visiting.</p>")
+page("/privacy.html","Privacy policy: no cookies, and we do not sell your email | TossMap","TossMap privacy policy: no cookies on our pages; newsletter sign-ups are handled by Kit and we do not sell your email.","<h1>Privacy</h1><p>TossMap sets no cookies. We use GoatCounter, a privacy-friendly analytics service that does not track individuals.</p><p>If you sign up for the <a href=\"/newsletter/\">TossMap newsletter</a>, your email is collected by Kit, our email provider, so we can send drop-off updates. We do not sell your email. Kit will send a confirmation email first, and you can unsubscribe anytime.</p><p>If ads are added, ad partners may use cookies; this page will be updated before that happens.</p><p>Listings come from public government sources and may change; confirm with the source before visiting.</p>")
 open(f"{OUT}/404.html","w").write(open(f"{OUT}/index.html").read().replace("<h1>","<h1>Page not found.</h1><h2>",1).replace("</h1><p>","</h2><p>",1).replace(f'<link rel="canonical" href="{BASE}/">','<meta name="robots" content="noindex">'))
 # EMBED: compact, noindex widget per city for other sites (free iframe snippet)
 EMB_CSS="body{margin:0;font:14px/1.45 system-ui,sans-serif;color:#1d2a24;background:#fff}.w{padding:12px}.w h2{font-size:16px;margin:0 0 8px}.f{border-top:1px solid #e3e8e4;padding:8px 0}.f b{display:block}.m{font-size:12px;color:#5b6b63}a{color:#1f6b4d}.by{font-size:12px;margin-top:8px}"
@@ -1109,7 +1114,7 @@ nl_body=(nl_vis+"<h1>Get local drop-off updates, hazardous-waste days and new lo
  "<p class=\"meta\">When you sign up, Kit (our email provider) will send a confirmation email first. We will not add you until you confirm that address. We do not sell your email.</p></div>"
  "<p>If the form does not work, you can also use the <a href=\""+KIT_HOSTED+"\">hosted sign-up page</a>.</p>"
  "<h2>Privacy</h2><p>This form does not set cookies or add any trackers beyond the GoatCounter analytics already used on TossMap. Your email is stored by Kit so we can send the newsletter. See our <a href=\"/privacy.html\">privacy policy</a>.</p>")
-page("/newsletter/","Get local drop-off updates | TossMap","Free TossMap newsletter: local drop-off updates, hazardous-waste days and new locations. About weekly, unsubscribe anytime. Confirmation email first; we do not sell your email.",nl_body,[nl_bl])
+page("/newsletter/","Get local drop-off updates | TossMap","Free TossMap newsletter: local drop-off updates, hazardous-waste days and new locations. About weekly, unsubscribe anytime. We do not sell your email.",nl_body,[nl_bl])
 
 # This is a queue, not an automatic indexing submission. Request in small daily batches.
 priority=["Richmond","Philadelphia","Dallas","San Antonio","Atlanta","Boston","Cleveland","Louisville","New York","Los Angeles","Houston","Phoenix","Chicago"]
