@@ -1,8 +1,8 @@
 # TossMap
 
-> Every TossMap listing is verified against an official government or facility-operator source. Each of the 226 sites includes that source link and a last-checked date. The data is unique because it is a source-backed, dated record — not an unverified aggregate. TossMap does not operate the listed facilities.
+> Every TossMap listing is verified against an official government or facility-operator source. Each of the 230 sites includes that source link and a last-checked date. The data is unique because it is a source-backed, dated record — not an unverified aggregate. TossMap does not operate the listed facilities.
 
-TossMap lists 226 drop-off sites across 54 US metro areas in 31 states. Listings include accepted materials, addresses, hours, fees and eligibility notes when the official source provides them. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
+TossMap lists 230 drop-off sites across 54 US metro areas in 31 states. Listings include accepted materials, addresses, hours, fees and eligibility notes when the official source provides them. Rules and hours can change. Confirm with the linked operator before driving; a listing does not guarantee acceptance, availability or free service. Do not treat household waste listings as permission to bring commercial waste.
 
 A complete plain-text dump of every listing is in [llms-full.txt](https://tossmap.com/llms-full.txt).
 API for agents: https://api.tossmap.com/llms.txt — paid per call in USDC via x402; free coverage checks and 3 free searches/day.
@@ -10,12 +10,12 @@ MCP server for agents: https://api.tossmap.com/mcp (Streamable HTTP; tools: sear
 
 ## Find a drop-off
 - [Cities and materials](https://tossmap.com/): directory index
-- [Paint](https://tossmap.com/paint/): 147 official listings in 49 metro areas
-- [Electronics (e-waste)](https://tossmap.com/e-waste/): 139 official listings in 32 metro areas
-- [Tires](https://tossmap.com/tires/): 127 official listings in 27 metro areas
-- [Batteries](https://tossmap.com/batteries/): 152 official listings in 50 metro areas
-- [Motor oil](https://tossmap.com/motor-oil/): 112 official listings in 29 metro areas
-- [Household chemicals](https://tossmap.com/household-chemicals/): 135 official listings in 47 metro areas
+- [Paint](https://tossmap.com/paint/): 149 official listings in 49 metro areas
+- [Electronics (e-waste)](https://tossmap.com/e-waste/): 142 official listings in 32 metro areas
+- [Tires](https://tossmap.com/tires/): 129 official listings in 27 metro areas
+- [Batteries](https://tossmap.com/batteries/): 156 official listings in 51 metro areas
+- [Motor oil](https://tossmap.com/motor-oil/): 116 official listings in 30 metro areas
+- [Household chemicals](https://tossmap.com/household-chemicals/): 137 official listings in 47 metro areas
 
 ## Cities
 - [Albuquerque, NM](https://tossmap.com/nm/albuquerque/)
@@ -130,6 +130,8 @@ MCP server for agents: https://api.tossmap.com/mcp (Streamable HTTP; tools: sear
 - [Middleburg Heights Service Department (computers, tires & HHW) — Cleveland, OH](https://tossmap.com/oh/cleveland/middleburg-heights-service-department/)
 - [Medina County Recycling Center (specialty waste & HHW drop-off) — Cleveland, OH](https://tossmap.com/oh/cleveland/medina-county-recycling-center/)
 - [Lake County Solid Waste Facility (e-waste, tires & Saturday HHW) — Cleveland, OH](https://tossmap.com/oh/cleveland/lake-county-solid-waste-facility/)
+- [Lorain County Collection Center (HHW, tires & electronics) — Cleveland, OH](https://tossmap.com/oh/cleveland/lorain-county-collection-center/)
+- [Geauga Collection Facility (HHW, electronics & appliances) — Cleveland, OH](https://tossmap.com/oh/cleveland/geauga-collection-facility/)
 - [SWACO Household Hazardous Waste Drop-Off — Columbus, OH](https://tossmap.com/oh/columbus/swaco-household-hazardous-waste-drop-off/)
 - [SWACO Recycling Convenience Center — Columbus, OH](https://tossmap.com/oh/columbus/swaco-recycling-convenience-center/)
 - [Dallas County Home Chemical Collection Center — Dallas, TX](https://tossmap.com/tx/dallas/dallas-county-home-chemical-collection-center/)
@@ -208,6 +210,7 @@ MCP server for agents: https://api.tossmap.com/mcp (Streamable HTTP; tools: sear
 - [Jefferson Parish Marrero Drop-Off Site — New Orleans, LA](https://tossmap.com/la/new-orleans/jefferson-parish-marrero-drop-off-site/)
 - [Gretna Burmaster Waste Drop-Off Site — New Orleans, LA](https://tossmap.com/la/new-orleans/gretna-burmaster-waste-drop-off-site/)
 - [Jefferson Parish Lafitte Drop-Off Site — New Orleans, LA](https://tossmap.com/la/new-orleans/jefferson-parish-lafitte-drop-off-site/)
+- [Jefferson Parish Landfill (Citizens' Dump Area) — New Orleans, LA](https://tossmap.com/la/new-orleans/jefferson-parish-landfill-citizens-dump-area/)
 - [DSNY Special Waste Drop-Off – Bronx — New York, NY](https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-bronx/)
 - [DSNY Special Waste Drop-Off – Brooklyn — New York, NY](https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-brooklyn/)
 - [DSNY Special Waste Drop-Off – Manhattan — New York, NY](https://tossmap.com/ny/new-york/dsny-special-waste-drop-off-manhattan/)
@@ -263,6 +266,7 @@ MCP server for agents: https://api.tossmap.com/mcp (Streamable HTTP; tools: sear
 - [Colonial Heights Recycling Center — Richmond, VA](https://tossmap.com/va/richmond/colonial-heights-recycling-center/)
 - [Hopewell Citizen's Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/hopewell-citizens-convenience-center/)
 - [Charles City County Munford Road Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/charles-city-munford-road-convenience-center/)
+- [Dinwiddie Convenience Center — Richmond, VA](https://tossmap.com/va/richmond/dinwiddie-convenience-center/)
 - [Agua Mansa Permanent HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/agua-mansa-permanent-hhw-facility/)
 - [Lake Elsinore HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/lake-elsinore-hhw-facility/)
 - [Palm Springs HHW Facility — Riverside, CA](https://tossmap.com/ca/riverside/palm-springs-hhw-facility/)

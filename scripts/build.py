@@ -535,7 +535,7 @@ def material_seo(s, n, nsites, nmetros):
         h1="Tire disposal near you: official drop-off sites by city"
         desc=f"Tire disposal near you: {nsites} official drop-off sites in {nmetros} US metros, with addresses, hours, tire limits, fees and a source link for every listing."
     elif s=="e-waste":
-        title=f"Electronics recycling near me: {nsites} official e-waste drop-off sites | TossMap"
+        title=f"E-waste recycling near me: {nsites} official drop-off sites | TossMap"
         h1="Electronics (e-waste) recycling near you: official drop-off sites by city"
         desc=f"Electronics and e-waste recycling near you: {nsites} official drop-off sites in {nmetros} US metros, with accepted items, hours, fees and a source link for every listing."
     elif s=="batteries":
@@ -1012,7 +1012,7 @@ for (sn,st),ms in sorted(states.items()):
     # SEO length guard (Nov 26 2026): states with many metros name the first three and count the rest.
     if len(st_desc)>160 and len(ms)>3: st_desc=f"{plural(nst,'official drop-off site')} in {sn} ({', '.join(m['city'] for m in ms[:3])} and {len(ms)-3} more) for {st_mats}, with source links."
     if len(st_desc)>160 and len(st_matl)>3: st_desc=f"{plural(nst,'official drop-off site')} in {sn} ({', '.join(m['city'] for m in ms[:3])}{f' and {len(ms)-3} more' if len(ms)>3 else ''}) for {', '.join(st_matl[:3])} and more, with source links."
-    page(sp,f"Hazardous waste, paint & e-waste drop-off in {sn} | TossMap",
+    page(sp,(f"Hazardous waste, paint & e-waste drop-off in {sn} | TossMap" if len(sn)<=18 else f"Hazardous waste & e-waste drop-off in {sn} | TossMap"),
          st_desc,
          vis+f'<h1>Hazardous waste drop-off in {e(sn)}</h1>'+freshness_html(st_fs)+f'<p>{plural(nst,"official drop-off site")} across {plural(len(ms),"metro area")} in {e(sn)}. Each city page lists addresses, hours, fees, eligibility rules and a link to the official source, with the date we last checked it.</p>'+"".join(state_city_block(m) for m in ms),
          # State hubs: CollectionPage + ItemList of the city pages they link to (same names and URLs as the visible list).

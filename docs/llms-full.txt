@@ -1,6 +1,6 @@
 # TossMap — full facility listings
 
-Every listing below is verified against an official government or facility-operator source and includes that source URL and a last-checked date. TossMap lists 226 drop-off sites across 54 US metro areas in 31 states. TossMap does not operate these facilities. Rules and hours can change; confirm with the official source before driving.
+Every listing below is verified against an official government or facility-operator source and includes that source URL and a last-checked date. TossMap lists 230 drop-off sites across 54 US metro areas in 31 states. TossMap does not operate these facilities. Rules and hours can change; confirm with the official source before driving.
 
 A shorter index is in https://tossmap.com/llms.txt.
 
@@ -642,8 +642,8 @@ Address: 1150 N North Branch St, Chicago, IL 60642
 Materials accepted: Chemicals, oil-based paint, solvents, CFLs, computers & electronics, cell phones (no latex paint)
 Hours: Tue 7am–12pm; Thu 2–7pm; 1st Sat 8am–3pm
 Fees: Free
-Official source: https://www.chicago.gov/hccrf/
-Last checked: 2026-11-02
+Official source: https://www.chicago.gov/city/en/depts/env/supp_info/environmental-permitting-and-inspection/hccrf.html
+Last checked: 2026-11-28
 TossMap page: https://tossmap.com/il/chicago/household-chemicals-computer-recycling-facility/
 
 ## Indiana
@@ -747,6 +747,16 @@ Fees: Free for residents with curbside garbage collection in unincorporated Jeff
 Official source: https://www.jeffparish.gov/1337/Drop-Off-Sites
 Last checked: 2026-11-19
 TossMap page: https://tossmap.com/la/new-orleans/jefferson-parish-lafitte-drop-off-site/
+
+Name: Jefferson Parish Landfill (Citizens' Dump Area)
+City/state: New Orleans, LA
+Address: 5800 Highway 90 West, Waggaman, LA 70094
+Materials accepted: Household garbage and trash from Jefferson Parish residences and small businesses (residents use the containers at the Citizens' Dump Area ramp). Not accepted: discarded appliances, tires, used automotive fluids, used cooking oil, lead-acid batteries, e-waste and residential recycling (Jefferson Parish sends these to its Metairie or Marrero drop-off sites)
+Hours: Mon–Sat 6am–5pm; Sun 6am–noon
+Fees: Residents: two free loads per day. Commercial waste (including small businesses, churches, schools and non-primary-residence property) pays a commercial disposal fee, $5 minimum, credit card or check only (no cash)
+Official source: https://www.jeffparish.gov/1338/Jefferson-Parish-Landfill
+Last checked: 2026-11-28
+TossMap page: https://tossmap.com/la/new-orleans/jefferson-parish-landfill-citizens-dump-area/
 
 ## Maryland
 
@@ -1537,6 +1547,26 @@ Fees: E-waste free except TVs and monitors ($5 each for 27 in. or smaller; $10 e
 Official source: https://www.lakecountyohio.gov/utilities/community-recycling-options/
 Last checked: 2026-11-27
 TossMap page: https://tossmap.com/oh/cleveland/lake-county-solid-waste-facility/
+
+Name: Lorain County Collection Center (HHW, tires & electronics)
+City/state: Cleveland, OH
+Address: 540 South Abbe Road, Elyria, OH 44035
+Materials accepted: Household hazardous waste (residential only): acids and bases, adhesives, aerosol cans, vegetable oils, auto fluids (antifreeze, brake, hydraulic, power steering and transmission fluid, used oil and filters), batteries (button, lithium, rechargeable, lead-acid automotive), fuels, herbicides, pesticides and fertilizers, household cleaners, latex paint, paint thinner, MAPP gas and propane cylinders under 33 lb, mercury devices, pool chemicals, smoke detectors, solvents and sealers. Tires (residential only): automobile, bicycle or motorcycle tires up to 20 in. rim diameter. Electronics (residential and business): computers, TVs and monitors, cell phones, printers, hard drives, phones, radios, speakers, streaming devices, microwave ovens (the only appliance accepted) and more. Fluorescent bulbs and ballasts; general recyclables. Not accepted: appliances other than microwaves, air conditioners, dehumidifiers, ammunition and fireworks, asbestos, compressed gas cylinders, construction debris, prescription medications, sharps, tires over 20 in., trash
+Hours: Mon 9am–3pm; Wed noon–6pm; Sat 9am–3pm (subject to change). Holiday closures listed by the county include Sat Nov 28, Wed Dec 23, Sat Dec 26 and Wed Dec 30, 2026, and Sat Jan 2, 2027
+Fees: not listed
+Official source: https://www.loraincountyohio.gov/184/Lorain-County-Collection-Center
+Last checked: 2026-11-28
+TossMap page: https://tossmap.com/oh/cleveland/lorain-county-collection-center/
+
+Name: Geauga Collection Facility (HHW, electronics & appliances)
+City/state: Cleveland, OH
+Address: 12685 Merritt Road, Chardon, OH 44024
+Materials accepted: Household hazardous waste: cleaning products, pesticides, flammables (gasoline, diesel, kerosene, lighter fluid), propane cylinders, lawn and garden chemicals, antifreeze, brake and transmission fluid, lead-acid car batteries, used and new motor oil and filters, oil-based paint, aerosol paint, paint thinner, stripper, varnish and other workshop supplies, single-use and rechargeable batteries, fluorescent bulbs and CFLs, mercury items, cooking oil, fire extinguishers. Electronics: TVs and monitors, computers, laptops and tablets, printers, cell phones, game consoles, cords, vacuums, power tools, small household appliances. Appliances, including refrigerators, freezers, air conditioners and other Freon appliances. Foam (Styrofoam). Not accepted: latex paint, tires, medical waste, joint compounds, acetylene or unknown tanks, drums, trailer loads, business waste
+Hours: Fridays 10am–3pm, year-round; closed on government holidays. The 2026 once-a-month Saturday openings (May–October) have all passed
+Fees: Free (the District says all items are accepted free of charge)
+Official source: https://startrecycling.com/collection-facilities/
+Last checked: 2026-11-28
+TossMap page: https://tossmap.com/oh/cleveland/geauga-collection-facility/
 
 ### Columbus, OH
 
@@ -2353,6 +2383,16 @@ Fees: No cost to Charles City residents; fees may apply for Freon removal from a
 Official source: https://charlescityva.us/514/Waste-Management-Convenience-Centers
 Last checked: 2026-11-27
 TossMap page: https://tossmap.com/va/richmond/charles-city-munford-road-convenience-center/
+
+Name: Dinwiddie Convenience Center
+City/state: Richmond, VA
+Address: 13542 Boydton Plank Road, Dinwiddie, VA 23841
+Materials accepted: Household trash; batteries; tires (four per person per day, must be clean; no rims, no equipment or tractor tires); clothing and shoes; metal; used motor oil; electronics; furniture and appliances; recyclables. Not accepted: hazardous materials, propane and other pressurized tanks, dead animals, stumps, campers, boats, trailer loads
+Hours: Mon–Sat 7am–7pm; Sun 1–7pm
+Fees: Residential waste disposal is free for county residents
+Official source: https://www.dinwiddieva.us/365/Waste-Management
+Last checked: 2026-11-28
+TossMap page: https://tossmap.com/va/richmond/dinwiddie-convenience-center/
 
 ### Virginia Beach, VA
 

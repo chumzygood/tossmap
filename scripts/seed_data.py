@@ -858,6 +858,42 @@ for m in M:
     for f in m["facilities"]:
         if f["name"] in REVERIFIED27: f["checked"]=D27
 
+# --- Nov 28 2026 daily pass additions (each verified against cited official source on 2026-11-28) ---
+D28="2026-11-28"
+add("Cleveland",
+  F("Lorain County Collection Center (HHW, tires & electronics)","540 South Abbe Road, Elyria, OH 44035",
+    "Mon 9am–3pm; Wed noon–6pm; Sat 9am–3pm (subject to change). Holiday closures listed by the county include Sat Nov 28, Wed Dec 23, Sat Dec 26 and Wed Dec 30, 2026, and Sat Jan 2, 2027",
+    "https://www.loraincountyohio.gov/184/Lorain-County-Collection-Center",
+    "Household hazardous waste (residential only): acids and bases, adhesives, aerosol cans, vegetable oils, auto fluids (antifreeze, brake, hydraulic, power steering and transmission fluid, used oil and filters), batteries (button, lithium, rechargeable, lead-acid automotive), fuels, herbicides, pesticides and fertilizers, household cleaners, latex paint, paint thinner, MAPP gas and propane cylinders under 33 lb, mercury devices, pool chemicals, smoke detectors, solvents and sealers. Tires (residential only): automobile, bicycle or motorcycle tires up to 20 in. rim diameter. Electronics (residential and business): computers, TVs and monitors, cell phones, printers, hard drives, phones, radios, speakers, streaming devices, microwave ovens (the only appliance accepted) and more. Fluorescent bulbs and ballasts; general recyclables. Not accepted: appliances other than microwaves, air conditioners, dehumidifiers, ammunition and fireworks, asbestos, compressed gas cylinders, construction debris, prescription medications, sharps, tires over 20 in., trash",
+    "",
+    "Run by the Lorain County Solid Waste Management District. For Lorain County residents, businesses and organizations only; bring a valid driver's license or other ID to verify Lorain County residency. Businesses and organizations may bring only electronics, fluorescent bulbs and general recyclables (no hazardous waste, per the Ohio EPA). It is illegal to transport more than 10 tires at a time. Call to schedule an appointment for large loads. Accepted materials from the county's Collection Center Flyer 2026 (updated August 2026): https://www.loraincountyohio.gov/DocumentCenter/View/6155. (440) 329-5440",D28),
+  F("Geauga Collection Facility (HHW, electronics & appliances)","12685 Merritt Road, Chardon, OH 44024",
+    "Fridays 10am–3pm, year-round; closed on government holidays. The 2026 once-a-month Saturday openings (May–October) have all passed",
+    "https://startrecycling.com/collection-facilities/",
+    "Household hazardous waste: cleaning products, pesticides, flammables (gasoline, diesel, kerosene, lighter fluid), propane cylinders, lawn and garden chemicals, antifreeze, brake and transmission fluid, lead-acid car batteries, used and new motor oil and filters, oil-based paint, aerosol paint, paint thinner, stripper, varnish and other workshop supplies, single-use and rechargeable batteries, fluorescent bulbs and CFLs, mercury items, cooking oil, fire extinguishers. Electronics: TVs and monitors, computers, laptops and tablets, printers, cell phones, game consoles, cords, vacuums, power tools, small household appliances. Appliances, including refrigerators, freezers, air conditioners and other Freon appliances. Foam (Styrofoam). Not accepted: latex paint, tires, medical waste, joint compounds, acetylene or unknown tanks, drums, trailer loads, business waste",
+    "Free (the District says all items are accepted free of charge)",
+    "Geauga-Trumbull Solid Waste Management District drive-thru facility: Geauga and Trumbull County residents only, no business waste; stay in your vehicle and staff unload. Containers 5 gallons or smaller; 3 televisions per day. The District does not take tires at either facility; it funds community tire collections instead. Accepted items from the District's Acceptable Waste page: https://startrecycling.com/acceptable-waste/. 330-675-2673 or 800-707-2673",D28))
+add("Richmond",
+  F("Dinwiddie Convenience Center","13542 Boydton Plank Road, Dinwiddie, VA 23841",
+    "Mon–Sat 7am–7pm; Sun 1–7pm",
+    "https://www.dinwiddieva.us/365/Waste-Management",
+    "Household trash; batteries; tires (four per person per day, must be clean; no rims, no equipment or tractor tires); clothing and shoes; metal; used motor oil; electronics; furniture and appliances; recyclables. Not accepted: hazardous materials, propane and other pressurized tanks, dead animals, stumps, campers, boats, trailer loads",
+    "Residential waste disposal is free for county residents",
+    "Dinwiddie County manned convenience center. The county lists one set of accepted items for its convenience centers; it does not list items center by center. Hazardous materials are not taken by Waste Management; the county's Cooperative Extension Services sponsors an annual disposal event. Construction debris and commercial waste go only to the main center on Wheeler's Pond Road ($45/ton). Hours from the county facility page: https://www.dinwiddieva.us/Facilities/Facility/Details/Dinwiddie-Convenience-Center-4. Landfill 804-469-4545",D28))
+add("New Orleans",
+  F("Jefferson Parish Landfill (Citizens' Dump Area)","5800 Highway 90 West, Waggaman, LA 70094",
+    "Mon–Sat 6am–5pm; Sun 6am–noon",
+    "https://www.jeffparish.gov/1338/Jefferson-Parish-Landfill",
+    "Household garbage and trash from Jefferson Parish residences and small businesses (residents use the containers at the Citizens' Dump Area ramp). Not accepted: discarded appliances, tires, used automotive fluids, used cooking oil, lead-acid batteries, e-waste and residential recycling (Jefferson Parish sends these to its Metairie or Marrero drop-off sites)",
+    "Residents: two free loads per day. Commercial waste (including small businesses, churches, schools and non-primary-residence property) pays a commercial disposal fee, $5 minimum, credit card or check only (no cash)",
+    "Jefferson Parish landfill; contact Jefferson Parish Environmental Affairs. Commercial users may need to use the contractor's scale house next door at 2000 South Kenner Avenue, Waggaman. Commercial vehicles and truck-and-trailer combinations are generally limited to 35 feet. 504-436-0152",D28))
+# Chicago HCCRF: the old /hccrf/ short link now redirects to a general DOE page; the City's current HCCRF page
+# (re-read 2026-11-28; hours and accepted items unchanged) replaces it as the source.
+for m in M:
+    for f in m["facilities"]:
+        if f["name"]=="Household Chemicals & Computer Recycling Facility" and m["city"]=="Chicago":
+            f["source"]="https://www.chicago.gov/city/en/depts/env/supp_info/environmental-permitting-and-inspection/hccrf.html"; f["checked"]=D28
+
 # Stable facility URLs and reviewed answers live in a separate source-backed seed file.
 # A changed listing invalidates old answers instead of silently carrying them forward.
 import hashlib, re

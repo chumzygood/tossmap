@@ -50,7 +50,7 @@ class FacilityTests(unittest.TestCase):
                 for k,a in f['questions'].items():
                     self.assertIn(a['answer'],('yes','no',UNKNOWN))
                     if a['answer']!=UNKNOWN: self.assertTrue(a['evidence'],(f['name'],k))
-        self.assertEqual(len(paths),226)
+        self.assertEqual(len(paths),230)
         self.assertEqual(len(set(paths)),len(paths))
     def test_all_facility_pages_and_visible_schema(self):
         sitemap={u.text for u in ET.parse('docs/sitemap.xml').getroot().iter('{http://www.sitemaps.org/schemas/sitemap/0.9}loc')}
@@ -81,9 +81,9 @@ class FacilityTests(unittest.TestCase):
                     if f['questions'][key]['answer']=='yes':
                         anchor=f'/{ms}/#{slug(m["city"])}-{slug(m["st"])}'
                         self.assertIn(anchor,doc.links); self.assertIn(anchor.split('#')[1],read(f'/{ms}/').ids)
-        self.assertEqual(len(queue),226); self.assertEqual(len(set(queue)),226)
+        self.assertEqual(len(queue),230); self.assertEqual(len(set(queue)),230)
         self.assertTrue(queue[0].startswith(BASE+'/va/richmond/'))
-        self.assertEqual(len(sitemap),323)
+        self.assertEqual(len(sitemap),327)
     def test_state_pages_itemlist_matches_city_links(self):
         states={}
         for m in D: states.setdefault(m['st'],[]).append(m)

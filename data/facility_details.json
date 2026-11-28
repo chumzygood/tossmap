@@ -629,8 +629,8 @@
  "IL|Chicago|Household Chemicals & Computer Recycling Facility": {
   "slug": "household-chemicals-computer-recycling-facility",
   "operator": "not stated by source",
-  "source": "https://www.chicago.gov/hccrf/",
-  "source_checked": "2026-11-02",
+  "source": "https://www.chicago.gov/city/en/depts/env/supp_info/environmental-permitting-and-inspection/hccrf.html",
+  "source_checked": "2026-11-28",
   "listing_fingerprint": "654ef491df5a5fd1a8b19b5bc50f043d7422149f71731462fd14316f37f5dcfc",
   "questions": {
    "residents_only": {
@@ -650,8 +650,8 @@
     "evidence": "Free"
    },
    "tires": {
-    "answer": "not stated by source",
-    "evidence": ""
+    "answer": "no",
+    "evidence": "City of Chicago Household Chemicals & Computer Recycling Facility page (https://www.chicago.gov/city/en/depts/env/supp_info/environmental-permitting-and-inspection/hccrf.html, fetched 2026-11-28): Not Accepted: “Tires”."
    },
    "paint": {
     "answer": "yes",
@@ -662,12 +662,12 @@
     "evidence": "Chemicals, oil-based paint, solvents, CFLs, computers & electronics, cell phones (no latex paint)"
    },
    "batteries": {
-    "answer": "not stated by source",
-    "evidence": ""
+    "answer": "yes",
+    "evidence": "Not alkaline — City of Chicago Household Chemicals & Computer Recycling Facility page (https://www.chicago.gov/city/en/depts/env/supp_info/environmental-permitting-and-inspection/hccrf.html, fetched 2026-11-28): Accepted: “Batteries (e.g., rechargeable, car batteries, small lead acid, lithium batteries)”; Not Accepted: “Alkaline batteries”."
    },
    "motor_oil": {
-    "answer": "not stated by source",
-    "evidence": ""
+    "answer": "yes",
+    "evidence": "City of Chicago Household Chemicals & Computer Recycling Facility page (https://www.chicago.gov/city/en/depts/env/supp_info/environmental-permitting-and-inspection/hccrf.html, fetched 2026-11-28): Accepted: “Motor oil, gasoline, auto fluids”."
    },
    "household_chemicals": {
     "answer": "yes",
@@ -678,10 +678,11 @@
     "evidence": ""
    },
    "businesses_accepted": {
-    "answer": "not stated by source",
-    "evidence": ""
+    "answer": "no",
+    "evidence": "City of Chicago Household Chemicals & Computer Recycling Facility page (https://www.chicago.gov/city/en/depts/env/supp_info/environmental-permitting-and-inspection/hccrf.html, fetched 2026-11-28): Not Accepted: “Business/commercial sector waste (residential waste only)”. “Businesses and large groups must work with a private disposal company to have these materials properly disposed of.”"
    }
-  }
+  },
+  "questions_reviewed": "2026-11-28"
  },
  "TX|Houston|Environmental Service Center – South": {
   "slug": "environmental-service-center-south",
@@ -13076,5 +13077,237 @@
    }
   },
   "questions_reviewed": "2026-11-27"
+ },
+ "OH|Cleveland|Lorain County Collection Center (HHW, tires & electronics)": {
+  "slug": "lorain-county-collection-center",
+  "operator": "Lorain County Solid Waste Management District",
+  "source": "https://www.loraincountyohio.gov/184/Lorain-County-Collection-Center",
+  "source_checked": "2026-11-28",
+  "listing_fingerprint": "2fac4dfcf590b41ebf5b2001cbf3117391ba2970a3d6c8a0e8c593407f32a83b",
+  "questions": {
+   "residents_only": {
+    "answer": "yes",
+    "evidence": "Lorain County only — Lorain County Collection Center page (https://www.loraincountyohio.gov/184/Lorain-County-Collection-Center, fetched 2026-11-28): “Available for Use to Lorain County Residents, Businesses and Organizations ONLY.”"
+   },
+   "id_required": {
+    "answer": "yes",
+    "evidence": "Lorain County Collection Center Flyer 2026 (updated August 2026, https://www.loraincountyohio.gov/DocumentCenter/View/6155, fetched 2026-11-28): “Participants are required to provide a valid driver’s license or other acceptable form of ID to verify Lorain County residency.”"
+   },
+   "appointment_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "fee_charged": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "tires": {
+    "answer": "yes",
+    "evidence": "Residential only, up to 20 in. rim — Lorain County Collection Center Flyer 2026 (updated August 2026, https://www.loraincountyohio.gov/DocumentCenter/View/6155, fetched 2026-11-28): Tires (Residential Generated ONLY): “It is ILLEGAL to transport more than 10 tires at a time.” “Automobile, Bicycle or Motorcycle Tires NO larger than 20” Rim Diameter.”"
+   },
+   "paint": {
+    "answer": "yes",
+    "evidence": "Lorain County Collection Center Flyer 2026 (updated August 2026, https://www.loraincountyohio.gov/DocumentCenter/View/6155, fetched 2026-11-28): Household Hazardous Waste (Residential Generated ONLY) list includes “Latex Paint” and “Paint Thinner”."
+   },
+   "e_waste": {
+    "answer": "yes",
+    "evidence": "Lorain County Collection Center Flyer 2026 (updated August 2026, https://www.loraincountyohio.gov/DocumentCenter/View/6155, fetched 2026-11-28): “Electronic Waste (Residential & Business Generated)”: cable and receiver boxes, cell phones, “Computers (Desktop, Laptop, Tablet & Accessories)”, “CRT Televisions & Video Monitors”, “Flat-Screen Televisions & Monitors”, printers, radios, telephones and more."
+   },
+   "batteries": {
+    "answer": "yes",
+    "evidence": "Residential only — Lorain County Collection Center Flyer 2026 (updated August 2026, https://www.loraincountyohio.gov/DocumentCenter/View/6155, fetched 2026-11-28): “Batteries (Button Style, Lithium, Re-Chargeable, Lead Acid Automotive)”"
+   },
+   "motor_oil": {
+    "answer": "yes",
+    "evidence": "Residential only — Lorain County Collection Center Flyer 2026 (updated August 2026, https://www.loraincountyohio.gov/DocumentCenter/View/6155, fetched 2026-11-28): “Auto fluids (Antifreeze, Brake, Hydraulic, Power Steering, Transmission, Used Oil & Filters)”"
+   },
+   "household_chemicals": {
+    "answer": "yes",
+    "evidence": "Residential only — Lorain County Collection Center Flyer 2026 (updated August 2026, https://www.loraincountyohio.gov/DocumentCenter/View/6155, fetched 2026-11-28): Household Hazardous Waste list includes “Acids & Bases”, “Aerosol Cans”, “Herbicides, Pesticides, Insecticides, Lawn Fertilizers”, “Household Cleaners”, “Pool Chemicals”, “Solvents, Sealers”."
+   },
+   "quantity_limits": {
+    "answer": "yes",
+    "evidence": "Lorain County Collection Center Flyer 2026 (updated August 2026, https://www.loraincountyohio.gov/DocumentCenter/View/6155, fetched 2026-11-28): tires: “It is ILLEGAL to transport more than 10 tires at a time.” “Please call the District to schedule an appointment for large loads of acceptable materials.”"
+   },
+   "businesses_accepted": {
+    "answer": "yes",
+    "evidence": "Electronics, fluorescent bulbs and recyclables only — Lorain County Collection Center Flyer 2026 (updated August 2026, https://www.loraincountyohio.gov/DocumentCenter/View/6155, fetched 2026-11-28): “Businesses, Non-Profit Organizations, Not-for Profit Organizations, Government Entities, Schools and other Organizations are prohibited by the Ohio EPA from bringing any hazardous waste material (except electronics, fluorescent bulbs and general recyclables).”"
+   }
+  },
+  "questions_reviewed": "2026-11-28"
+ },
+ "OH|Cleveland|Geauga Collection Facility (HHW, electronics & appliances)": {
+  "slug": "geauga-collection-facility",
+  "operator": "Geauga-Trumbull Solid Waste Management District",
+  "source": "https://startrecycling.com/collection-facilities/",
+  "source_checked": "2026-11-28",
+  "listing_fingerprint": "7bf6d6555f2ac1cd75322784caa189c1d77e79a51f90f8c6470c4d6123056c98",
+  "questions": {
+   "residents_only": {
+    "answer": "yes",
+    "evidence": "Geauga-Trumbull Solid Waste Management District Collection Facilities page (https://startrecycling.com/collection-facilities/, fetched 2026-11-28): “Our collection facilities are open to Geauga and Trumbull County residents only for disposal of appliances, electronics, household hazardous waste, and foam.”"
+   },
+   "id_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "appointment_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "fee_charged": {
+    "answer": "no",
+    "evidence": "Geauga-Trumbull Solid Waste Management District Collection Facilities page (https://startrecycling.com/collection-facilities/, fetched 2026-11-28): “All items are accepted FREE of charge.”"
+   },
+   "tires": {
+    "answer": "no",
+    "evidence": "Geauga-Trumbull SWMD Scrap Tire Collection page (https://startrecycling.com/tire-collection-haulers/, fetched 2026-11-28): “The Geauga-Trumbull Solid Waste District does NOT accept old tires for recycling at either the Trumbull Collection Facility or the Geauga Collection Facility.”"
+   },
+   "paint": {
+    "answer": "yes",
+    "evidence": "Oil-based only — Geauga-Trumbull SWMD Acceptable Waste page (https://startrecycling.com/acceptable-waste/, fetched 2026-11-28): “Paint – Oil Based”, “Paint Products in Aerosol Cans”, “Paint Thinner”. Geauga-Trumbull Solid Waste Management District Collection Facilities page (https://startrecycling.com/collection-facilities/, fetched 2026-11-28): “NO LATEX PAINT”."
+   },
+   "e_waste": {
+    "answer": "yes",
+    "evidence": "Geauga-Trumbull Solid Waste Management District Collection Facilities page (https://startrecycling.com/collection-facilities/, fetched 2026-11-28): “We accept electronics and appliances all year round at both locations.” Geauga-Trumbull SWMD Acceptable Waste page (https://startrecycling.com/acceptable-waste/, fetched 2026-11-28): Electronics include “Televisions and computer monitors”, “Computers”, “Laptops/Tablets/iPads”, “Printers/Scanners/Copiers”, “Cell Phones”."
+   },
+   "batteries": {
+    "answer": "yes",
+    "evidence": "Geauga-Trumbull SWMD Acceptable Waste page (https://startrecycling.com/acceptable-waste/, fetched 2026-11-28): “Single-use and rechargeable batteries”; “Lead Acid/Car Batteries”; “Alkaline/Single-use Batteries”."
+   },
+   "motor_oil": {
+    "answer": "yes",
+    "evidence": "Geauga-Trumbull SWMD Acceptable Waste page (https://startrecycling.com/acceptable-waste/, fetched 2026-11-28): Automotive Products: “Used/New Motor Oil & Filters”"
+   },
+   "household_chemicals": {
+    "answer": "yes",
+    "evidence": "Geauga-Trumbull Solid Waste Management District Collection Facilities page (https://startrecycling.com/collection-facilities/, fetched 2026-11-28): Geauga Collection Facility: “Fridays year-round and Once-A-Month Saturdays in the summer We accept chemicals, oil-based paints, fluorescent light bulbs, automotive fluids, and other HHW materials.”"
+   },
+   "quantity_limits": {
+    "answer": "yes",
+    "evidence": "Geauga-Trumbull Solid Waste Management District Collection Facilities page (https://startrecycling.com/collection-facilities/, fetched 2026-11-28): “NO DRUMS, ONLY 5 GALLON CONTAINERS OR SMALLER TRAILER LOADS NOT ACCEPTED! 3 TELEVISIONS/DAY LIMIT”"
+   },
+   "businesses_accepted": {
+    "answer": "no",
+    "evidence": "Geauga-Trumbull Solid Waste Management District Collection Facilities page (https://startrecycling.com/collection-facilities/, fetched 2026-11-28): “NO BUSINESS WASTE WILL BE ACCEPTED”"
+   }
+  },
+  "questions_reviewed": "2026-11-28"
+ },
+ "VA|Richmond|Dinwiddie Convenience Center": {
+  "slug": "dinwiddie-convenience-center",
+  "operator": "Dinwiddie County",
+  "source": "https://www.dinwiddieva.us/365/Waste-Management",
+  "source_checked": "2026-11-28",
+  "listing_fingerprint": "9de24a3e2e781c13750dbd24fc8bf6f8cc3ba4be8b8c14070893df9c08d49b4e",
+  "questions": {
+   "residents_only": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "id_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "appointment_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "fee_charged": {
+    "answer": "no",
+    "evidence": "Residential waste — Dinwiddie County Waste Management page (https://www.dinwiddieva.us/365/Waste-Management, fetched 2026-11-28): “Dinwiddie County encourages recycling and offers residential waste disposal services to County residents at no charge.”"
+   },
+   "tires": {
+    "answer": "yes",
+    "evidence": "Dinwiddie County Waste Management page (https://www.dinwiddieva.us/365/Waste-Management, fetched 2026-11-28): What We Take: “Tires (four per person per day and must be clean)”; What We Do Not Take: “No rims, no equipment/tractor tires”."
+   },
+   "paint": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "e_waste": {
+    "answer": "yes",
+    "evidence": "Dinwiddie County Waste Management page (https://www.dinwiddieva.us/365/Waste-Management, fetched 2026-11-28): What We Take: “Electronics”."
+   },
+   "batteries": {
+    "answer": "yes",
+    "evidence": "Dinwiddie County Waste Management page (https://www.dinwiddieva.us/365/Waste-Management, fetched 2026-11-28): What We Take: “Batteries”."
+   },
+   "motor_oil": {
+    "answer": "yes",
+    "evidence": "Dinwiddie County Waste Management page (https://www.dinwiddieva.us/365/Waste-Management, fetched 2026-11-28): What We Take: “Used motor oil”."
+   },
+   "household_chemicals": {
+    "answer": "no",
+    "evidence": "Dinwiddie County Waste Management page (https://www.dinwiddieva.us/365/Waste-Management, fetched 2026-11-28): “Hazardous materials are not accepted by Waste Management, but an annual disposal event is sponsored by the County’s Cooperative Extension Services.” What We Do Not Take: “Hazardous materials”."
+   },
+   "quantity_limits": {
+    "answer": "yes",
+    "evidence": "Dinwiddie County Waste Management page (https://www.dinwiddieva.us/365/Waste-Management, fetched 2026-11-28): tires: “four per person per day”; “The Convenience Centers do not accept trailer loads, all trailer loads must go to the Main landfill on Wheelers Pond Rd.”"
+   },
+   "businesses_accepted": {
+    "answer": "no",
+    "evidence": "Not at this center — Dinwiddie County Waste Management page (https://www.dinwiddieva.us/365/Waste-Management, fetched 2026-11-28): “County generated construction debris and commercial waste disposal is only available at the main convenience center on Wheeler's Pond Road for a fee of $45/ton.”"
+   }
+  },
+  "questions_reviewed": "2026-11-28"
+ },
+ "LA|New Orleans|Jefferson Parish Landfill (Citizens' Dump Area)": {
+  "slug": "jefferson-parish-landfill-citizens-dump-area",
+  "operator": "Jefferson Parish",
+  "source": "https://www.jeffparish.gov/1338/Jefferson-Parish-Landfill",
+  "source_checked": "2026-11-28",
+  "listing_fingerprint": "ab214e6e1b4de4a39cb19456e11feec57ef9c4cc164e53342976926ce4fed0c3",
+  "questions": {
+   "residents_only": {
+    "answer": "no",
+    "evidence": "Jefferson Parish Landfill page (https://www.jeffparish.gov/1338/Jefferson-Parish-Landfill, read 2026-11-28): “The Jefferson Parish Landfill accepts municipal garbage and trash from residences and small businesses in Jefferson Parish.”"
+   },
+   "id_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "appointment_required": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "fee_charged": {
+    "answer": "no",
+    "evidence": "Residents (commercial waste pays) — Jefferson Parish Landfill page (https://www.jeffparish.gov/1338/Jefferson-Parish-Landfill, read 2026-11-28): “Residents are allowed two (2) free loads per day.” “Notice: The commercial disposal fee is a $5.00 minimum. Cash is not accepted; credit card or checks only.”"
+   },
+   "tires": {
+    "answer": "no",
+    "evidence": "Jefferson Parish Landfill page (https://www.jeffparish.gov/1338/Jefferson-Parish-Landfill, read 2026-11-28): “The landfill does not accept discarded appliances, tires, used automotive fluids, used cooking oil, lead acid batteries, E-Waste and residential recycling. These items may be brought to the Metairie or Marrero drop-off sites.”"
+   },
+   "paint": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "e_waste": {
+    "answer": "no",
+    "evidence": "Jefferson Parish Landfill page (https://www.jeffparish.gov/1338/Jefferson-Parish-Landfill, read 2026-11-28): “The landfill does not accept discarded appliances, tires, used automotive fluids, used cooking oil, lead acid batteries, E-Waste and residential recycling. These items may be brought to the Metairie or Marrero drop-off sites.”"
+   },
+   "batteries": {
+    "answer": "no",
+    "evidence": "Lead-acid batteries — Jefferson Parish Landfill page (https://www.jeffparish.gov/1338/Jefferson-Parish-Landfill, read 2026-11-28): “The landfill does not accept discarded appliances, tires, used automotive fluids, used cooking oil, lead acid batteries, E-Waste and residential recycling. These items may be brought to the Metairie or Marrero drop-off sites.”"
+   },
+   "motor_oil": {
+    "answer": "no",
+    "evidence": "Used automotive fluids — Jefferson Parish Landfill page (https://www.jeffparish.gov/1338/Jefferson-Parish-Landfill, read 2026-11-28): “The landfill does not accept discarded appliances, tires, used automotive fluids, used cooking oil, lead acid batteries, E-Waste and residential recycling. These items may be brought to the Metairie or Marrero drop-off sites.”"
+   },
+   "household_chemicals": {
+    "answer": "not stated by source",
+    "evidence": ""
+   },
+   "quantity_limits": {
+    "answer": "yes",
+    "evidence": "Jefferson Parish Landfill page (https://www.jeffparish.gov/1338/Jefferson-Parish-Landfill, read 2026-11-28): “Residents are allowed two (2) free loads per day.” “Commercial vehicles and truck-and-trailer combinations are generally limited to a maximum overall length of 35 feet.”"
+   },
+   "businesses_accepted": {
+    "answer": "yes",
+    "evidence": "For a commercial disposal fee — Jefferson Parish Landfill page (https://www.jeffparish.gov/1338/Jefferson-Parish-Landfill, read 2026-11-28): “The Jefferson Parish Landfill accepts municipal garbage and trash from residences and small businesses in Jefferson Parish.” “Small businesses must pay a commercial disposal fee.”"
+   }
+  },
+  "questions_reviewed": "2026-11-28"
  }
 }
